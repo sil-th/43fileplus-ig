@@ -1,0 +1,37 @@
+# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: sil-th-43files-plus
+canonical: https://fhir-ig.sil-th.org/43files
+version: 0.1.0
+name: Moph43FilesImplementaionGuide
+title: MOPH 43 Files Plus Implementation Guide
+status: draft
+publisher: Standards and Interoperability Lab - Thailand (SIL-TH)
+# contact:
+#   - name: Bill Cod
+#     telecom:
+#       - system: email
+#         value: cod@reef.gov
+jurisdiction: "urn:iso:std:iso:3166#TH"
+description: An implementation guide for adopting FHIR for health information exchange in 43files-plus format
+license: CC0-1.0
+fhirVersion: 4.3.0
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Artifacts Summary: artifacts.html
+  # Other Resources:
+  #   "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
