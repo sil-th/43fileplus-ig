@@ -6,16 +6,21 @@ Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"
 * type = #document
-* entry[+].fullUrl = "http://example.org/fhir/file-3-composition"
-* entry[=].resource = File3Composition
-* entry[+].fullUrl = "http://example.org/fhir/patient-3"
-* entry[=].resource = Patient3
-* entry[+].fullUrl = "http://example.org/fhir/cause-of-death-1"
-* entry[=].resource = CauseOfDeath1
-* entry[+].fullUrl = "http://example.org/fhir/cause-of-death-2"
-* entry[=].resource = CauseOfDeath2
-* entry[+].fullUrl = "http://example.org/fhir/death-encounter"
-* entry[=].resource = DeathEncounter
+* entry[0]
+  * fullUrl = "http://example.org/fhir/file-3-composition"
+  * resource = File3Composition
+* entry[+]
+  * fullUrl = "http://example.org/fhir/patient-3"
+  * resource = Patient3
+* entry[+]
+  * fullUrl = "http://example.org/fhir/cause-of-death-1"
+  * resource = CauseOfDeath1
+* entry[+]
+  * fullUrl = "http://example.org/fhir/cause-of-death-2"
+  * resource = CauseOfDeath2
+* entry[+]
+  * fullUrl = "http://example.org/fhir/death-encounter"
+  * resource = DeathEncounter
 
 
 Instance: File3Composition

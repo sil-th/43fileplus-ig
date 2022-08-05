@@ -5,12 +5,13 @@ Description: "มีข้อมูลครบถ้วนสมบูรณ์
 Usage: #example
 * extension[0]
   * url = $EX_HL7_Nationality
-  * extension
+  * extension[0]
     * url = "code"
     * valueCodeableConcept
       * coding[0] = $ISO3166#THA
       * coding[+] = $CS_THCC_Nationality#099
       * text = "ไทย"
+  * extension[+]
     * url = "period"
     * valuePeriod
       * start = "1960-04-25"
@@ -156,12 +157,13 @@ Description: "ตัวอย่างการบันทึกข้อมู
 Usage: #example
 * extension[0]
   * url = $EX_HL7_Nationality
-  * extension
+  * extension[0]
     * url = "code"
     * valueCodeableConcept
       * coding[0] = $ISO3166#USA
       * coding[+] = $CS_THCC_Nationality#029
       * text = "อเมริกัน"
+  * extension[+]
     * url = "period"
     * valuePeriod
       * start = "1960-04-25"
@@ -267,3 +269,59 @@ Usage: #example
   * district = "เมืองนนทบุรี"
   * state = "นนทบุรี"
   * postalCode = "11000"
+
+
+
+Instance: Patient4
+InstanceOf: Patient
+Title: "ผู้ป่วยรายที่ 4 หญิงไทย โรคเรื้อรัง"
+Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
+Usage: #example
+* identifier[0]
+  * use = #official
+  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * system = $ID_ThaiCid
+  * value = "2650591524440"
+  * period
+    * start = "2018-04-25"
+    * end = "2022-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * system = $ID_LO_PID
+  * value = "65-XXXXX"
+  * period
+    * start = "2018-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#MRN "Medical record number"
+  * system = $ID_LO_HN
+  * value = "65-XXXXX"
+* active = true
+* name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
+  * text = "นาง สมควร ใจดี"
+  * family = "ใจดี"
+  * given = "สมควร"
+  * prefix = "นาง"
+* telecom[0]
+  * system = #phone
+  * value = "088-8888888"
+  * use = #mobile
+* telecom[+]
+  * system = #email
+  * value = "somchaijaidee@jaidee.com"
+* gender = #female
+* birthDate = "1960-04-25"
+* address[0]
+  * use = #home
+  * text = "123 ถนนสมเด็จ ตำบลตาลสุม อำเภอตาลสุม จังหวัดอุบลราชธานี 34330"
+  * line = "123 ถนนสมเด็จ"
+  * city = "ตาลสุม"
+  * district = "ตาลสุม"
+  * state = "อุบลราชธานี"
+  * postalCode = "34330"
+* maritalStatus = $CS_HL7_MaritalStatus#M "Married"
+  * coding[1] = $CS_THCC_Marital#2 "คู่"

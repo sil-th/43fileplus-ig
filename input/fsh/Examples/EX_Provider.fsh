@@ -41,6 +41,13 @@ Description: "Under construction"
 * contact[=].telecom.value = "022-655 2335"
 
 
+Instance: OrganizationSecond
+InstanceOf: Organization
+Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Description: "Under construction"
+* name = "Sandwich University Medical Center"
+
+
 Instance: PractitionerDoctor1
 InstanceOf: Practitioner
 Title: "แพทย์ประจำสถานพยาบาล รายที่ 1"
@@ -55,3 +62,32 @@ Usage: #example
   * given = "สมหญิง"
   * prefix = "พญ."
 
+
+
+Instance: OrganizationNHSO
+InstanceOf: Organization
+Title: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+Description: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+* active = true
+* type = $CS_HL7_OrgType#pay "Payer"
+* name = "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+* telecom[0]
+  * system = #phone
+  * value = "1330"
+* telecom[+]
+  * system = #phone
+  * value = "021414000"
+* telecom[+]
+  * system = #fax
+  * value = "021439730-1"
+* telecom[+]
+  * system = #url
+  * value = "https://www.nhso.go.th"
+* address
+  * text = "เลขที่ 120 หมู่ 3 ชั้น 2-4 อาคารรวมหน่วยงานราชการ (อาคาร B) ศูนย์ราชการเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550 ถนนแจ้งวัฒนะ แขวงทุ่งสองห้อง เขตหลักสี่ กรุงเทพมหานคร ฯ 10210"
+  * line = "เลขที่ 120 หมู่ 3 ชั้น 2-4 อาคารรวมหน่วยงานราชการ (อาคาร B) ศูนย์ราชการเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550 ถนนแจ้งวัฒนะ"
+  * city = "ทุ่งสองห้อง"
+  * district = "หลักสี่"
+  * state = "กรุงเทพมหานคร"
+  * postalCode = "10210"
+  * country = "TH"

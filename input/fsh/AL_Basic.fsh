@@ -14,6 +14,9 @@ Alias: $CS_HL7_Religion = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffi
 Alias: $CS_HL7_ObservationCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $CS_HL7_RelationshipType = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $CS_HL7_EncounterClass = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $CS_HL7_ConditionCategory = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $CS_HL7_OrgType = http://terminology.hl7.org/CodeSystem/organization-type
+
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
@@ -36,6 +39,9 @@ Alias: $CS_THCC_PidRemoveReason = https://terms.sil-th.org/Codesystem/cs-thcc-pi
 Alias: $CS_THCC_PersonStatus = https://terms.sil-th.org/Codesystem/cs-thcc-person-status
 Alias: $CS_THCC_DeathLocType = https://terms.sil-th.org/Codesystem/cs-thcc-death-location-type
 Alias: $CS_THCC_DeathPregnancy = https://terms.sil-th.org/Codesystem/cs-thcc-death-pregnancy
+Alias: $CS_THCC_ChronicDischargeReason = https://terms.sil-th.org/Codesystem/cs-thcc-chronic-discharge-reason
+Alias: $CS_THCC_ProviderTypeCoverage = https://terms.sil-th.org/Codesystem/cs-thcc-provider-type-coverage
+Alias: $CS_THCC_CoverageType = https://terms.sil-th.org/Codesystem/cs-thcc-coverage-type
 
 
 // Identifier URL
@@ -88,3 +94,5 @@ Alias: $EX_TH_PidRemoveReason = https://terms.sil-th.org/Extension/TH-pid-remove
 Alias: $EX_TH_PersonStatus = https://terms.sil-th.org/Extension/TH-person-status
 Alias: $EX_TH_DeathLocType = https://terms.sil-th.org/Extension/TH-death-location-type
 Alias: $EX_TH_DeathPregnancy = https://terms.sil-th.org/Extension/TH-death-pregnancy
+Alias: $EX_TH_ChronicDischargeReason = https://terms.sil-th.org/Extension/TH-chronic-discharge-reason
+Alias: $EX_TH_ProviderTypeCoverage = https://terms.sil-th.org/Extension/TH-provider-type-coverage
