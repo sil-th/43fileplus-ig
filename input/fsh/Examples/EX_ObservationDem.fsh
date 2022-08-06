@@ -94,7 +94,7 @@ Usage: #example
   * coding[0] = $CS_THCC_Occupation#4412 "บุรุษไปรษณีย์"
   * text = "บุรุษไปรษณีย์"
 * component[0]
-  * code = $LNC#86188-0 "Employer"
+  * code = $LNC#80427-8 "Employer name"
   * valueString = "บริษัท จ้างงาน จำกัด"
 * component[+]
   * code

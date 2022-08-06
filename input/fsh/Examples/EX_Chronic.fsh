@@ -11,7 +11,7 @@ Usage: #example
 * status = #finished
 * diagnosis.condition = Reference(Condition/ChronicCondition1)
 * patient = Reference(Patient/Patient4) "นาง สมควร ใจดี"
-* managingOrganization = Reference(OrganizationMain)
+* managingOrganization = Reference(Organization/OrganizationMain)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * period
   * start = "2022-01-01"
@@ -22,10 +22,10 @@ InstanceOf: Condition
 Title: "โรคเบาหวานของผู้ป่วยรายที่ 4"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 4"
 Usage: #example
-* category.coding = $CS_HL7_ConditionCategory#encounter-diagnosis "Problem List Item"
+* category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * code
   * coding[0] = $SCT#73211009 "Diabetes mellitus"
-  * coding[+] = $ICD10#E14.9 "Unspecified diabetes mellitus without complications "
+  * coding[+] = $ICD10#E14.9 "Unspecified diabetes mellitus : Without complications"
   * text = "Diabetes mellitus"
 * subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
@@ -42,7 +42,7 @@ Usage: #example
 * period
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
-* serviceProvider = Reference(OrganizationMain)
+* serviceProvider = Reference(Organization/OrganizationMain)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 
 Instance: ChronicEncounter2
@@ -56,7 +56,7 @@ Usage: #example
 * period
   * start = "2022-04-01T12:30:02+07:00"
   * end = "2022-04-01T14:30:02+07:00"
-* serviceProvider = Reference(OrganizationMain)
+* serviceProvider = Reference(Organization/OrganizationMain)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 
 

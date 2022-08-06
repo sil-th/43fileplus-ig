@@ -1,12 +1,3 @@
-
-
-Instance: Patient1Home
-InstanceOf: Location
-Title: "ข้อมูลบ้านของผู้ป่วยรายที่ 1"
-Description: "Under construction"
-* name = "บ้าน"
-
-
 Instance: OrganizationMain
 InstanceOf: Organization
 Title: "สถานพยาบาลหลักที่บันทึกข้อมูล"
@@ -55,13 +46,31 @@ Description: "Under construction"
 Usage: #example
 * name[0]
   * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/language"
+    * url = $EX_HL7_Language
     * valueCode = #th
   * text = "พญ. สมหญิง จริงใจ"
   * family = "จริงใจ"
   * given = "สมหญิง"
   * prefix = "พญ."
 
+Instance: PractitionerVolunteer1
+InstanceOf: Practitioner
+Title: "อสม. รายที่ 1"
+Description: "Under construction"
+Usage: #example
+* identifier[0]
+  * use = #official
+  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * system = $ID_ThaiCid
+  * value = "2650591524440"
+* name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
+  * text = "นาง ใจดี ชอบช่วย"
+  * family = "ชอบช่วย"
+  * given = "ใจดี"
+  * prefix = "นาง"
 
 
 Instance: OrganizationNHSO
