@@ -224,8 +224,8 @@ Usage: #example
 
 Instance: Patient3
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 3 หญิงไทย ย้ายออก และเสียชีวิตแล้ว"
-Description: "ตัวอย่างการบันทึกข้อมูล กรณีผู้ป่วยย้ายออก และเสียชีวิตแล้ว (ข้อมูลโดยย่อ เฉพาะประเด็นสำคัญ)"
+Title: "ผู้ป่วยรายที่ 3 หญิงไทย พิการ ย้ายออก และเสียชีวิตแล้ว"
+Description: "ตัวอย่างการบันทึกข้อมูล กรณีผู้ป่วยพิการ ย้ายออก และเสียชีวิตแล้ว (ข้อมูลโดยย่อ เฉพาะประเด็นสำคัญ)"
 Usage: #example
 * extension[+]
   * url = $EX_TH_PidRemoveReason
@@ -237,6 +237,14 @@ Usage: #example
   * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
   * system = $ID_ThaiCid
   * value = "2650591524440"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * system = $ID_ThaiDisability
+  * value = "XXXXXXXX"
+  * period
+    * start = "2018-04-25"
+    * end = "2022-04-25"
 * identifier[+]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#PN "Person number"

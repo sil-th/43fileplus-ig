@@ -7,7 +7,7 @@ Usage: #example
 * status = #active
 * experimental = true
 * subjectType = #Location
-* date = "2022"
+* date = "2022-01-01"
 * code = $CS_THCC_QnType#HOME "ข้อมูลสุขาภิบาลของหลังคาเรือน ในแฟ้ม HOME"
 * item[0]
   * linkId = "1"
