@@ -2,10 +2,11 @@
 
 // From external terminology
 Alias: $SCT = http://snomed.info/sct
+Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ISO3166 = urn:iso:std:iso:3166
-Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
+Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
 
 // From terminology.hl7.org
 Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/3.1.0/CodeSystem-v2-0203.html
@@ -17,11 +18,16 @@ Alias: $CS_HL7_EncounterClass = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $CS_HL7_ConditionCategory = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $CS_HL7_OrgType = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $CS_HL7_RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $CS_HL7_AlleryActive = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $CS_HL7_AllergyVerify = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
 Alias: $CS_DOPA_NamePrefix = http://terms.sil-th.org/Codesystem/cs-dopa-nameprefix
 Alias: $CS_DOPA_Location = http://terms.sil-th.org/Codesystem/cs-dopa-location
+Alias: $CS_TMT = http://terms.sil-th.org/Codesystem/th-tmt
+Alias: $CS_TMLT = http://terms.sil-th.org/Codesystem/th-tmlt
+Alias: $CS_24Drug = http://terms.sil-th.org/Codesystem/th-24drug
 
 // From Thai MOPH codes
 Alias: $CS_THCC_43fileType = https://terms.sil-th.org/Codesystem/cs-thcc-43file-type
@@ -51,6 +57,12 @@ Alias: $CS_THCC_QualificationIssuer = https://terms.sil-th.org/Codesystem/cs-thc
 Alias: $CS_THCC_IndProviderType = https://terms.sil-th.org/Codesystem/cs-thcc-provider-type
 Alias: $CS_THCC_Contraceptive = https://terms.sil-th.org/Codesystem/cs-thcc-contraceptive
 Alias: $CS_THCC_NoContraceptive = https://terms.sil-th.org/Codesystem/cs-thcc-no-contraceptive
+Alias: $CS_THCC_AllergyVerify = http://terms.sil-th.org/ValueSet/cs-thcc-allergy-verify 
+Alias: $CS_THCC_AllergyManifest = http://terms.sil-th.org/ValueSet/cs-thcc-allergy-manifest
+Alias: $CS_THCC_AllergyCertainy = http://terms.sil-th.org/ValueSet/cs-thcc-allergy-certainty
+Alias: $CS_THCC_AllergySeverity = http://terms.sil-th.org/ValueSet/cs-thcc-allergy-severity
+Alias: $CS_THCC_AllergyAssertType = http://terms.sil-th.org/ValueSet/cs-thcc-allergy-assert-type
+
 
 
 // Identifier URL
@@ -84,7 +96,7 @@ Alias: $ID_LO_VN = https://terms.sil-th.org/hcode/5/XXXXX/VN
 Alias: $ID_LO_PID = https://terms.sil-th.org/hcode/5/XXXXX/PID
 Alias: $ID_LO_House = https://terms.sil-th.org/hcode/5/XXXXX/House
 Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
-
+Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
 
 
 
@@ -124,6 +136,11 @@ Alias: $EX_TH_VillageUnlistDate = https://fhir-ig.sil-th.org/43filesplus/Extensi
 Alias: $EX_TH_DisabilityType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-disability-type
 Alias: $EX_TH_QualificationIssuer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-qualification-issuer
 Alias: $EX_TH_ProviderMove = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-move
+Alias: $EX_TH_AllergyCertainy = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-certainy
+Alias: $EX_TH_AllergySeverity = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-severity
+Alias: $EX_TH_AllergyAssertType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-type
+Alias: $EX_TH_AllergyAssertOrg = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-org
+
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home
