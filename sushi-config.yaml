@@ -32,6 +32,7 @@ releaseLabel: ci-build
 menu:
   IG Home: index.html
   Table of Contents: toc.html
+  43plus Files: files-listing.html
   Artifacts Summary: artifacts.html
   # Other Resources:
   #   "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
