@@ -322,7 +322,7 @@ Usage: #example
   * system = #email
   * value = "somchaijaidee@jaidee.com"
 * gender = #female
-* birthDate = "1960-04-25"
+* birthDate = "1990-04-25"
 * address[0]
   * use = #home
   * text = "123 ถนนสมเด็จ ตำบลตาลสุม อำเภอตาลสุม จังหวัดอุบลราชธานี 34330"

@@ -8,8 +8,9 @@ Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
-* code = $LNC#34532-2 "Blood type and Indirect antibody screen panel - Blood"
-* code.text = "Blood Group"
+* code
+  * coding[0] = $LNC#34532-2 "Blood type and Indirect antibody screen panel - Blood"
+  * text = "Blood Group"
 * subject = Reference(Patient/Patient1) "นาย สมชาย ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * hasMember[0] = Reference(Observation/BloodGroupABO)
@@ -25,8 +26,9 @@ Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
-* code = $LNC#883-9 "ABO group [Type] in Blood"
-* code.text = "ABO Blood Group"
+* code
+  * coding[0] = $LNC#883-9 "ABO group [Type] in Blood"
+  * text = "ABO Blood Group"
 * subject = Reference(Patient/Patient1) "นาย สมชาย ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueCodeableConcept = $SCT#112144000 "Blood group A (finding)"
@@ -40,8 +42,9 @@ Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
-* code = $LNC#10331-7 "Rh [Type] in Blood"
-* code.text = "Rh Blood Group"
+* code
+  * coding[0] = $LNC#10331-7 "Rh [Type] in Blood"
+  * text = "Rh Blood Group"
 * subject = Reference(Patient/Patient1) "นาย สมชาย ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueCodeableConcept = $SCT#165747007 "RhD positive (finding)"
@@ -56,7 +59,8 @@ Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#social-history "Social History"
   * text = "Social History"
-* code = $CS_THCC_SocialObsType#fstatus "สถานะในครอบครัว"
+* code
+  * coding[0] = $CS_THCC_SocialObsType#fstatus "สถานะในครอบครัว"
   * text = "สถานะในครอบครัว"
 * subject = Reference(Patient/Patient1)
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
@@ -71,7 +75,8 @@ Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#social-history "Social History"
   * text = "Social History"
-* code = $CS_THCC_SocialObsType#vstatus "สถานะในชุมชน"
+* code
+  * coding[0] = $CS_THCC_SocialObsType#vstatus "สถานะในชุมชน"
   * text = "สถานะในชุมชน"
 * subject = Reference(Patient/Patient1)
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
@@ -87,7 +92,8 @@ Usage: #example
   * url = $EX_INT_IsCurrentJob
   * valueBoolean = true
 * status = #final
-* code = $LNC#11341-5 "History of Occupation"
+* code
+  * coding[0] = $LNC#11341-5 "History of Occupation"
 * subject = Reference(Patient/Patient1)
 * effectivePeriod.start = "2015-04-24"
 * valueCodeableConcept

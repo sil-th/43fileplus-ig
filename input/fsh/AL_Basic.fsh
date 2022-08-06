@@ -49,6 +49,9 @@ Alias: $CS_THCC_DisabilityType = https://terms.sil-th.org/Codesystem/cs-thcc-dis
 Alias: $CS_THCC_DisabilityReason = https://terms.sil-th.org/Codesystem/cs-thcc-disability-reason
 Alias: $CS_THCC_QualificationIssuer = https://terms.sil-th.org/Codesystem/cs-thcc-qualification-issuer
 Alias: $CS_THCC_IndProviderType = https://terms.sil-th.org/Codesystem/cs-thcc-provider-type
+Alias: $CS_THCC_Contraceptive = https://terms.sil-th.org/Codesystem/cs-thcc-contraceptive
+Alias: $CS_THCC_NoContraceptive = https://terms.sil-th.org/Codesystem/cs-thcc-no-contraceptive
+
 
 // Identifier URL
 // From terminology.hl7.org
