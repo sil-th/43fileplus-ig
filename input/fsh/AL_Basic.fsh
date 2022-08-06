@@ -47,7 +47,8 @@ Alias: $CS_THCC_InMunicipality = https://terms.sil-th.org/Codesystem/cs-thcc-in-
 Alias: $CS_THCC_VillageArea = https://terms.sil-th.org/Codesystem/cs-thcc-village-area
 Alias: $CS_THCC_DisabilityType = https://terms.sil-th.org/Codesystem/cs-thcc-disability-type
 Alias: $CS_THCC_DisabilityReason = https://terms.sil-th.org/Codesystem/cs-thcc-disability-reason
-
+Alias: $CS_THCC_QualificationIssuer = https://terms.sil-th.org/Codesystem/cs-thcc-qualification-issuer
+Alias: $CS_THCC_IndProviderType = https://terms.sil-th.org/Codesystem/cs-thcc-provider-type
 
 // Identifier URL
 // From terminology.hl7.org
@@ -118,6 +119,8 @@ Alias: $EX_TH_VillageArea = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-
 Alias: $EX_TH_VillageMainHospital = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-main-hospital
 Alias: $EX_TH_VillageUnlistDate = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-unlist-date
 Alias: $EX_TH_DisabilityType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-disability-type
+Alias: $EX_TH_QualificationIssuer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-qualification-issuer
+Alias: $EX_TH_ProviderMove = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-move
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home
