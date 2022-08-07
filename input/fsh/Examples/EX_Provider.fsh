@@ -10,6 +10,30 @@ Title: "สถานพยาบาลรองที่บันทึกข้
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 2"
 
+Instance: OrganizationThird
+InstanceOf: Organization
+Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Description: "Under construction"
+* name = "โรงพยาบาลตัวอย่าง แห่งที่ 3 โรงพยาบาลตติยภูมิ"
+
+Instance: OrganizationFourth
+InstanceOf: Organization
+Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Description: "Under construction"
+* name = "โรงพยาบาลตัวอย่าง แห่งที่ 4 สถานพยาบาลปฐมภูมิ"
+
+
+Instance: OpdGPClinic1
+InstanceOf: Location
+Title: "OPD GP Clinic 1"
+Description: "ข้อมูลคลินิก OPD - GP 1"
+Usage: #example
+* status = #active
+* name = "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
+* description = "คำบรรยายเพิ่มเติม (ถ้ามี)"
+* partOf = Reference(Organization/OrganizationMain)
+  * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
+
 
 Instance: PractitionerDoctor1
 InstanceOf: Practitioner
@@ -59,6 +83,39 @@ Usage: #example
       * valueCodeableConcept
         * coding[0] = $CS_THCC_QualificationIssuer#01 "แพทยสภา"
         * text = "แพทยสภา"
+
+
+Instance: PractitionerDoctor2
+InstanceOf: Practitioner
+Title: "แพทย์ รายที่ 2"
+Description: "ข้อมูลแพทย์รายที่ 2"
+Usage: #example
+* identifier[0]
+  * use = #official
+  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * system = $ID_ThaiCid
+  * value = "2650515222440"
+  * period
+    * start = "2018-04-25"
+    * end = "2022-04-25"
+* active = true
+* name[0]
+  * text = "พญ. สมศรี จริงใจ"
+  * family = "จริงใจ"
+  * given = "สมศรี"
+  * prefix = "พญ."
+* gender = #female
+* birthDate = "1970-04-25"
+* qualification
+  * identifier
+    * use = #secondary
+    * type = $CS_HL7_IdentifierType#MD "Medical License number"
+    * system = $ID_ThaiDoctor
+    * value = "34222"
+  * code
+    * coding[0] = $SCT#309343006 "Physician"
+  * period
+    * start = "1996-04-25"
 
 
 Instance: PractitionerVolunteer1
@@ -149,6 +206,39 @@ Description: "สำนักงานหลักประกันสุขภ
   * district = "หลักสี่"
   * state = "กรุงเทพมหานคร"
   * postalCode = "10210"
+  * country = "TH"
+
+
+Instance: OrganizationSSO
+InstanceOf: Organization
+Title: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+Description: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+Usage: #example
+* active = true
+* type = $CS_HL7_OrgType#pay "Payer"
+* name = "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+* telecom[0]
+  * system = #phone
+  * value = "1506"
+* telecom[+]
+  * system = #phone
+  * value = "029562345"
+* telecom[+]
+  * system = #fax
+  * value = "025260658"
+* telecom[+]
+  * system = #url
+  * value = "https://www.sso.go.th"
+* telecom[+]
+  * system = #email
+  * value = "info@sso1506.com"
+* address
+  * text = "เลขที่ 88/28 หมู่ 4 ถนนติวานนท์ ตำบลตลาดขวัญ อำเภอเมือง จังหวัดนนทบุรี รหัสไปรษณีย์ 11000"
+  * line = "เลขที่ 88/28 หมู่ 4 ถนนติวานนท์"
+  * city = "ตลาดขวัญ"
+  * district = "เมืองนนทบุรี"
+  * state = "นนทบุรี"
+  * postalCode = "11000"
   * country = "TH"
 
 

@@ -21,6 +21,10 @@ Alias: $CS_HL7_OrgType = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $CS_HL7_RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $CS_HL7_AlleryActive = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $CS_HL7_AllergyVerify = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $CS_HL7_Priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
+Alias: $CS_HL7_ObsInterpret = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $CS_HL7_ParticipantType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $CS_HL7_AdmitSource = http://terminology.hl7.org/CodeSystem/admit-source
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
@@ -65,7 +69,18 @@ Alias: $CS_THCC_AllergySeverity = http://terms.sil-th.org/CodeSystem/cs-thcc-all
 Alias: $CS_THCC_AllergyAssertType = http://terms.sil-th.org/CodeSystem/cs-thcc-allergy-assert-type
 Alias: $CS_THCC_FunctionalTest = http://terms.sil-th.org/CodeSystem/cs-thcc-functional-test
 Alias: $CS_THCC_FunctionalConclusion = http://terms.sil-th.org/CodeSystem/cs-thcc-functional-conclusion
-
+Alias: $CS_THCC_ServicePriority = http://terms.sil-th.org/CodeSystem/cs-thcc-service-priority
+Alias: $CS_THCC_ParticipantType = http://terms.sil-th.org/CodeSystem/cs-thcc-participant-type
+Alias: $CS_THCC_AdmitSource = http://terms.sil-th.org/CodeSystem/cs-thcc-admit-source
+Alias: $CS_THCC_ServiceLocation = http://terms.sil-th.org/CodeSystem/cs-thcc-service-location
+Alias: $CS_THCC_PatientLocationType = http://terms.sil-th.org/CodeSystem/cs-thcc-patient-location-type
+Alias: $CS_THCC_ServiceHour = http://terms.sil-th.org/CodeSystem/cs-thcc-service-hour
+Alias: $CS_THCC_ServiceLocationType = http://terms.sil-th.org/CodeSystem/cs-thcc-service-location-type
+Alias: $CS_THCC_ProviderType = http://terms.sil-th.org/CodeSystem/cs-thcc-provider-type
+Alias: $CS_THCC_ServiceTypeTH = http://terms.sil-th.org/CodeSystem/cs-thcc-service-type-th
+Alias: $CS_THCC_DischargeStatus = http://terms.sil-th.org/CodeSystem/cs-thcc-discharge-status
+Alias: $CS_THCC_ReferReason = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-in-reason
+Alias: $CS_THCC_ReferOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-outcome
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -147,6 +162,15 @@ Alias: $EX_TH_AllergySeverity = https://fhir-ig.sil-th.org/43filesplus/Extension
 Alias: $EX_TH_AllergyAssertType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-type
 Alias: $EX_TH_AllergyAssertOrg = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-org
 Alias: $EX_TH_ICFCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-icf-category
+Alias: $EX_TH_PatientLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-patient-location-type
+Alias: $EX_TH_ServiceHour = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-hour
+Alias: $EX_TH_ServiceLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-location-type
+Alias: $EX_TH_ProviderType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-provider-type
+Alias: $EX_TH_ServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-type-th
+Alias: $EX_TH_DischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
+Alias: $EX_TH_DischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
+Alias: $EX_TH_ReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-outcome
+Alias: $EX_TH_ClaimApproveNo = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-account-claim-approve-no
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home
