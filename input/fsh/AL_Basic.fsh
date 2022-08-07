@@ -7,6 +7,7 @@ Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ISO3166 = urn:iso:std:iso:3166
 Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
+Alias: $ICF = http://hl7.org/fhir/sid/icf-nl	
 
 // From terminology.hl7.org
 Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/3.1.0/CodeSystem-v2-0203.html
@@ -64,6 +65,10 @@ Alias: $CS_THCC_AllergySeverity = http://terms.sil-th.org/CodeSystem/cs-thcc-all
 Alias: $CS_THCC_AllergyAssertType = http://terms.sil-th.org/CodeSystem/cs-thcc-allergy-assert-type
 Alias: $CS_THCC_FunctionalTest = http://terms.sil-th.org/CodeSystem/cs-thcc-functional-test
 Alias: $CS_THCC_FunctionalConclusion = http://terms.sil-th.org/CodeSystem/cs-thcc-functional-conclusion
+
+
+// Value Set
+Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
 
 
 // Identifier URL
@@ -141,7 +146,7 @@ Alias: $EX_TH_AllergyCertainy = https://fhir-ig.sil-th.org/43filesplus/Extension
 Alias: $EX_TH_AllergySeverity = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-severity
 Alias: $EX_TH_AllergyAssertType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-type
 Alias: $EX_TH_AllergyAssertOrg = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-org
-
+Alias: $EX_TH_ICFCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-icf-category
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home

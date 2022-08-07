@@ -14,6 +14,8 @@ Usage: #example
   * start = "2022-01-25T12:30:02+07:00"
 * subject = Reference(Patient/Patient3)
   * insert GeneralReference($ID_ThaiCid, "2650591524440", "นาง สมปอง ใจดี")
+* diagnosis
+  * condition = Reference(Condition/DisabilityCondition1)
 * serviceProvider = Reference(OrganizationMain)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 
