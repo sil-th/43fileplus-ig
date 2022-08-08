@@ -116,9 +116,6 @@ Usage: #example
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
 * coverage[0]
-  * extension[0]
-    * url = $EX_TH_ClaimApproveNo
-    * valueString = "XXXXXXX"
   * coverage = Reference(Coverage/OrganizationNHSO) "หลักประกันสุขภาพถ้วนหน้า"
   * priority = 1
 * coverage[+]

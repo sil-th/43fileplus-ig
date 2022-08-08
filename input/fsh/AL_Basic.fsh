@@ -8,6 +8,7 @@ Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ISO3166 = urn:iso:std:iso:3166
 Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
 Alias: $ICF = http://hl7.org/fhir/sid/icf-nl	
+Alias: $ISO4217 = urn:iso:std:iso:4217
 
 // From terminology.hl7.org
 Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/3.1.0/CodeSystem-v2-0203.html
@@ -25,6 +26,8 @@ Alias: $CS_HL7_Priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: $CS_HL7_ObsInterpret = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $CS_HL7_ParticipantType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $CS_HL7_AdmitSource = http://terminology.hl7.org/CodeSystem/admit-source
+Alias: $CS_HL7_ClaimType = http://terminology.hl7.org/CodeSystem/claim-type
+Alias: $CS_HL7_ProcessPriority = http://terminology.hl7.org/CodeSystem/processpriority
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
@@ -118,8 +121,8 @@ Alias: $ID_LO_PID = https://terms.sil-th.org/hcode/5/XXXXX/PID
 Alias: $ID_LO_House = https://terms.sil-th.org/hcode/5/XXXXX/House
 Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
 Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
-
-
+Alias: $ID_LO_INV = https://terms.sil-th.org/hcode/5/XXXXX/Inv
+Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
 
 // Extension URL
 // From FHIR core
@@ -170,7 +173,12 @@ Alias: $EX_TH_ServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/T
 Alias: $EX_TH_DischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
 Alias: $EX_TH_DischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
 Alias: $EX_TH_ReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-outcome
-Alias: $EX_TH_ClaimApproveNo = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-account-claim-approve-no
+Alias: $EX_TH_TotalCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-cost
+Alias: $EX_TH_TotalSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-self-pay
+Alias: $EX_TH_TotalActualSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
+Alias: $EX_TH_TotalUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-unpaid
+Alias: $EX_TH_FeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-fee-note
+
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home

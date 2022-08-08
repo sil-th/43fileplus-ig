@@ -85,6 +85,9 @@ Usage: #example
 * entry[+]
   * fullUrl = "http://example.org/Coverage/CoverageUC"
   * resource = CoverageUC
+* entry[+]
+  * fullUrl = "http://example.org/Claim/ClaimOpdEncounter1"
+  * resource = ClaimOpdEncounter1
 
 
 Instance: File14Composition
@@ -133,3 +136,4 @@ Usage: #example
   * title = "ข้อมูลทางการเงิน"
   * entry[0] = Reference(Account/AccountOpdEncounter1)
   * entry[+] = Reference(Coverage/CoverageUC)
+  * entry[+] = Reference(Claim/ClaimOpdEncounter1)
