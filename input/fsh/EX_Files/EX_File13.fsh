@@ -43,5 +43,5 @@ Usage: #example
   * entry[0] = Reference(Patient/Patient3)
 * section[+]
   * title = "การตรวจประเมินความบกพร่องทางสุขภาพ"
-  * entry[+] = Reference(Encounter/FunctionalEncounter)
+  * entry[0] = Reference(Encounter/FunctionalEncounter)
   * entry[+] = Reference(Condition/DisabilityCondition1)

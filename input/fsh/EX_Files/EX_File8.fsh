@@ -40,4 +40,4 @@ Usage: #example
   * entry[0] = Reference(Patient/Patient3)
 * section[+]
   * title = "ประวัติความพิการ"
-  * entry[+] = Reference(Condition/DisabilityCondition1)
+  * entry[0] = Reference(Condition/DisabilityCondition1)

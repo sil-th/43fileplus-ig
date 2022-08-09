@@ -324,9 +324,31 @@ Usage: #example
 * gender = #female
 * birthDate = "1990-04-25"
 * address[0]
+  * extension[0]
+    * url = $EX_TH_AddressCode
+    * valueCoding = $CS_DOPA_Location#342001 "จังหวัดอุบลราชธานี อำเภอตาลสุม ตำบลตาลสุม"
+  * extension[+]
+    * url = $EX_HL7_Geolocation
+    * extension[0]
+      * url = "latitude"
+      * valueString = "78.31809"
+    * extension[+]
+      * url = "longitude"
+      * valueString = "-133.03485"
+  * extension[+]
+    * url = $EX_TH_StructureLine
+    * extension[0]
+      * url = "number"
+      * valueString = "123"
+    * extension[+]
+      * url = "village-no"
+      * valueString = "หมู่ที่ 20"
+    * extension[+]
+      * url = "road"
+      * valueString = "ถนนสมเด็จ"
   * use = #home
-  * text = "123 ถนนสมเด็จ ตำบลตาลสุม อำเภอตาลสุม จังหวัดอุบลราชธานี 34330"
-  * line = "123 ถนนสมเด็จ"
+  * text = "123 หมู่ที่ 20 ถนนสมเด็จ ตำบลตาลสุม อำเภอตาลสุม จังหวัดอุบลราชธานี 34330"
+  * line = "123 หมู่ที่ 20 ถนนสมเด็จ"
   * city = "ตาลสุม"
   * district = "ตาลสุม"
   * state = "อุบลราชธานี"

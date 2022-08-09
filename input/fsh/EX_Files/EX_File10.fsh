@@ -54,7 +54,7 @@ Usage: #example
   * entry[0] = Reference(Patient/Patient4)
 * section[+]
   * title = "ประวัติการตั้งครรภ์"
-  * entry[+] = Reference(Observation/Contraceptive)
+  * entry[0] = Reference(Observation/Contraceptive)
   * entry[+] = Reference(Observation/NoContraceptiveReason)
   * entry[+] = Reference(Observation/NumParity)
   * entry[+] = Reference(Observation/NumLivingBirth)

@@ -39,4 +39,4 @@ Usage: #example
   * entry[0] = Reference(Practitioner/PractitionerDoctor1)
 * section[+]
   * title = "ข้อมูลบทบาทผู้ให้บริการ"
-  * entry[+] = Reference(PractitionerRole/PractitionerRoleDoctor1)
+  * entry[0] = Reference(PractitionerRole/PractitionerRoleDoctor1)

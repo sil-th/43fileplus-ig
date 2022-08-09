@@ -17,7 +17,10 @@ Alias: $CS_HL7_Religion = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffi
 Alias: $CS_HL7_ObservationCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $CS_HL7_RelationshipType = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $CS_HL7_EncounterClass = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $CS_HL7_ConditionStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $CS_HL7_ConditionVerification = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $CS_HL7_ConditionCategory = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $CS_HL7_DiagRole = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $CS_HL7_OrgType = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $CS_HL7_RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $CS_HL7_AlleryActive = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
@@ -84,6 +87,9 @@ Alias: $CS_THCC_ServiceTypeTH = http://terms.sil-th.org/CodeSystem/cs-thcc-servi
 Alias: $CS_THCC_DischargeStatus = http://terms.sil-th.org/CodeSystem/cs-thcc-discharge-status
 Alias: $CS_THCC_ReferReason = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-in-reason
 Alias: $CS_THCC_ReferOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-outcome
+Alias: $CS_THCC_SurvGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-surveillance-group
+Alias: $CS_THCC_CausativeAgent = http://terms.sil-th.org/CodeSystem/cs-thcc-causative-agent
+Alias: $CS_THCC_DiseaseCause = http://terms.sil-th.org/CodeSystem/cs-thcc-disease-cause
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -116,7 +122,7 @@ Alias: $ID_documentId = https://terms.sil-th.org/documenId
 // Local identifier system
 Alias: $ID_LO_HN = https://terms.sil-th.org/hcode/5/XXXXX/HN
 Alias: $ID_LO_VN = https://terms.sil-th.org/hcode/5/XXXXX/VN
-// Alias: $ID_LO_AN = 
+Alias: $ID_LO_AN = https://terms.sil-th.org/hcode/5/XXXXX/AN
 Alias: $ID_LO_PID = https://terms.sil-th.org/hcode/5/XXXXX/PID
 Alias: $ID_LO_House = https://terms.sil-th.org/hcode/5/XXXXX/House
 Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
@@ -130,6 +136,8 @@ Alias: $EX_HL7_Language = http://hl7.org/fhir/StructureDefinition/language
 Alias: $EX_HL7_Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $EX_HL7_Religion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias: $EX_HL7_ConditionDueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
+Alias: $EX_HL7_ConditinAssertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
+Alias: $EX_HL7_Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 
 
 // From Inter IG
