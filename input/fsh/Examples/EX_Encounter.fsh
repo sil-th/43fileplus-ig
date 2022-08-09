@@ -108,15 +108,13 @@ Title: "ข้อมูลทางการเงินของผู้ป่
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * status = #active
-* type = http://terminology.hl7.org/CodeSystem/v3-ActCode#PBILLACCT "patient billing account"
-* type.text = "patient"
 * name = "บัญชี นางสมควร ใจดี VN 65-XXXXX"
 * subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
 * servicePeriod
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
 * coverage[0]
-  * coverage = Reference(Coverage/OrganizationNHSO) "หลักประกันสุขภาพถ้วนหน้า"
+  * coverage = Reference(Coverage/CoverageUC) "หลักประกันสุขภาพถ้วนหน้า"
   * priority = 1
 * coverage[+]
   * coverage = Reference(Coverage/CoverageSSO) "กองทุนประกันสังคม"

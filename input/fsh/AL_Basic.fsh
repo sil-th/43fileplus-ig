@@ -31,6 +31,8 @@ Alias: $CS_HL7_ParticipantType = http://terminology.hl7.org/CodeSystem/v3-Partic
 Alias: $CS_HL7_AdmitSource = http://terminology.hl7.org/CodeSystem/admit-source
 Alias: $CS_HL7_ClaimType = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $CS_HL7_ProcessPriority = http://terminology.hl7.org/CodeSystem/processpriority
+Alias: $CS_HL7_YesNo = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $CS_HL7_ClaimInfoCat = http://terminology.hl7.org/CodeSystem/claiminformationcategory
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
@@ -90,6 +92,19 @@ Alias: $CS_THCC_ReferOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-
 Alias: $CS_THCC_SurvGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-surveillance-group
 Alias: $CS_THCC_CausativeAgent = http://terms.sil-th.org/CodeSystem/cs-thcc-causative-agent
 Alias: $CS_THCC_DiseaseCause = http://terms.sil-th.org/CodeSystem/cs-thcc-disease-cause
+Alias: $CS_THCC_AccidentObs = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-obs
+Alias: $CS_THCC_AccidentLocation = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-location
+Alias: $CS_THCC_AccidentAdmitSource = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-admit-source
+Alias: $CS_THCC_AccidentPatientType = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-patient-type
+Alias: $CS_THCC_AccidentVehicle = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-vehicle
+Alias: $CS_THCC_AccidentBreathing = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-breathing
+Alias: $CS_THCC_AccidentBleeding = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-bleeding
+Alias: $CS_THCC_AccidentSplint = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-splint
+Alias: $CS_THCC_AccidentIVFluid = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-iv-fluid
+Alias: $CS_THCC_AccidentPriority = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-priority
+Alias: $CS_THCC_AccidentCauseGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-cause-group
+Alias: $CS_THCC_AccidentCoverage = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-coverage
+
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -129,6 +144,7 @@ Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
 Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
 Alias: $ID_LO_INV = https://terms.sil-th.org/hcode/5/XXXXX/Inv
 Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
+Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
 
 // Extension URL
 // From FHIR core
@@ -181,6 +197,7 @@ Alias: $EX_TH_ServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/T
 Alias: $EX_TH_DischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
 Alias: $EX_TH_DischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
 Alias: $EX_TH_ReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-outcome
+Alias: $EX_TH_ReferOutID = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-out-id
 Alias: $EX_TH_TotalCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-cost
 Alias: $EX_TH_TotalSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-self-pay
 Alias: $EX_TH_TotalActualSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
