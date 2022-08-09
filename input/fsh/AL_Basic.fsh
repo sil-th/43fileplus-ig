@@ -33,6 +33,7 @@ Alias: $CS_HL7_ClaimType = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $CS_HL7_ProcessPriority = http://terminology.hl7.org/CodeSystem/processpriority
 Alias: $CS_HL7_YesNo = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $CS_HL7_ClaimInfoCat = http://terminology.hl7.org/CodeSystem/claiminformationcategory
+Alias: $CS_HL7_DiagServiceCat = http://terminology.hl7.org/CodeSystem/v2-0074
 
 // From Thai national codes
 Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
@@ -41,6 +42,7 @@ Alias: $CS_DOPA_Location = http://terms.sil-th.org/Codesystem/cs-dopa-location
 Alias: $CS_TMT = http://terms.sil-th.org/Codesystem/th-tmt
 Alias: $CS_TMLT = http://terms.sil-th.org/Codesystem/th-tmlt
 Alias: $CS_24Drug = http://terms.sil-th.org/Codesystem/th-24drug
+Alias: $CS_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/th-icd10tm-lab
 
 // From Thai MOPH codes
 Alias: $CS_THCC_43fileType = https://terms.sil-th.org/CodeSystem/cs-thcc-43file-type
@@ -67,7 +69,7 @@ Alias: $CS_THCC_VillageArea = https://terms.sil-th.org/CodeSystem/cs-thcc-villag
 Alias: $CS_THCC_DisabilityType = https://terms.sil-th.org/CodeSystem/cs-thcc-disability-type
 Alias: $CS_THCC_DisabilityReason = https://terms.sil-th.org/CodeSystem/cs-thcc-disability-reason
 Alias: $CS_THCC_QualificationIssuer = https://terms.sil-th.org/CodeSystem/cs-thcc-qualification-issuer
-Alias: $CS_THCC_IndProviderType = https://terms.sil-th.org/CodeSystem/cs-thcc-provider-type
+Alias: $CS_THCC_IndividualProviderType = https://terms.sil-th.org/CodeSystem/cs-thcc-individual-provider-type
 Alias: $CS_THCC_Contraceptive = https://terms.sil-th.org/CodeSystem/cs-thcc-contraceptive
 Alias: $CS_THCC_NoContraceptive = https://terms.sil-th.org/CodeSystem/cs-thcc-no-contraceptive
 Alias: $CS_THCC_AllergyVerify = http://terms.sil-th.org/CodeSystem/cs-thcc-allergy-verify 
@@ -104,7 +106,7 @@ Alias: $CS_THCC_AccidentIVFluid = http://terms.sil-th.org/CodeSystem/cs-thcc-acc
 Alias: $CS_THCC_AccidentPriority = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-priority
 Alias: $CS_THCC_AccidentCauseGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-cause-group
 Alias: $CS_THCC_AccidentCoverage = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-coverage
-
+Alias: $CS_THCC_2DigitLab = http://terms.sil-th.org/CodeSystem/cs-thcc-2digit-lab
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -145,6 +147,11 @@ Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
 Alias: $ID_LO_INV = https://terms.sil-th.org/hcode/5/XXXXX/Inv
 Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
 Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
+Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
+Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
+
+
+
 
 // Extension URL
 // From FHIR core

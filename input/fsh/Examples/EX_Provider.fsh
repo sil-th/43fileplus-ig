@@ -169,7 +169,7 @@ Usage: #example
   * end = "2028-03-31"
 * practitioner = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
 * organization = Reference(Organization/OrganizationMain) "โรงพยาบาลตัวอย่าง"
-* code = $CS_THCC_IndProviderType#01 "แพทย์"
+* code = $CS_THCC_IndividualProviderType#01 "แพทย์"
 * telecom[0]
   * system = #phone
   * value = "088-8888888"
