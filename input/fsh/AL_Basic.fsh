@@ -107,6 +107,9 @@ Alias: $CS_THCC_AccidentPriority = http://terms.sil-th.org/CodeSystem/cs-thcc-ac
 Alias: $CS_THCC_AccidentCauseGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-cause-group
 Alias: $CS_THCC_AccidentCoverage = http://terms.sil-th.org/CodeSystem/cs-thcc-accident-coverage
 Alias: $CS_THCC_2DigitLab = http://terms.sil-th.org/CodeSystem/cs-thcc-2digit-lab
+Alias: $CS_THCC_IpdJourney = http://terms.sil-th.org/CodeSystem/cs-thcc-ipd-journey
+Alias: $CS_THCC_IpdDischargeStatus = http://terms.sil-th.org/CodeSystem/cs-thcc-ipd-discharge-status
+Alias: $CS_THCC_IpdDischargeType = http://terms.sil-th.org/CodeSystem/cs-thcc-ipd-discharge-type
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -149,7 +152,7 @@ Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
 Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
 Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
-
+Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
 
 
 
@@ -210,7 +213,10 @@ Alias: $EX_TH_TotalSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH
 Alias: $EX_TH_TotalActualSelfPay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
 Alias: $EX_TH_TotalUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-unpaid
 Alias: $EX_TH_FeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-fee-note
-
+Alias: $EX_TH_IpdJourney = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-journey
+Alias: $EX_TH_IpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-status
+Alias: $EX_TH_IpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
+Alias: $EX_TH_IpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-drg
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home
