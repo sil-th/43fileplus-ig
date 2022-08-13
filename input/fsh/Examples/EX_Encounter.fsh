@@ -1,3 +1,24 @@
+// TOC
+// Instance: OpdEncounter1
+// InstanceOf: Encounter
+// Instance: ReferInOpdEncounter1
+// InstanceOf: ServiceRequest
+// Instance: ReferOutOpdEncounter1
+// InstanceOf: ServiceRequest
+// Instance: AccountOpdEncounter1
+// InstanceOf: Account
+// Instance: SurvEncounter1
+// InstanceOf: Encounter
+// Instance: LabEncounter1
+// InstanceOf: Encounter
+// Instance: IpdEncounter1
+// InstanceOf: Encounter
+// Instance: DentalEncounter1
+// InstanceOf: Encounter
+// Instance: RehabEncounter1
+// InstanceOf: Encounter
+
+
 Instance: OpdEncounter1
 InstanceOf: Encounter
 Title: "การรับบริการ OPD"
@@ -331,5 +352,31 @@ Usage: #example
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD ทันตกรรม Clinic 1 โรงพยาบาลตัวอย่าง"
   * physicalType = $CS_THCC_ServiceLocation#1 "ในสถานบริการ"
+* serviceProvider = Reference(Organization/OrganizationMain)
+  * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
+
+
+
+Instance: RehabEncounter1
+InstanceOf: Encounter
+Title: "การรับบริการฟื้นฟูสมรรถภาพ"
+Description: "การรับบริการฟื้นฟูสมรรถภาพ"
+Usage: #example
+* identifier[0]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * system = $ID_LO_VN
+  * value = "65-XXXXX"
+* status = #finished
+* class = $CS_HL7_EncounterClass#AMB "ambulatory"
+* serviceType = $CS_THCC_RehabServiceType#9005602 "Microwave diathermy"
+* priority
+  * coding[0] = $CS_HL7_Priority#R "routine"
+  * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
+  * text = "ปกติ"
+* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* period
+  * start = "2022-03-10T12:30:02+07:00"
+  * end = "2022-03-10T17:30:02+07:00"
 * serviceProvider = Reference(Organization/OrganizationMain)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

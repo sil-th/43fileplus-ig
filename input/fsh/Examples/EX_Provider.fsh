@@ -146,7 +146,7 @@ Usage: #example
 * qualification
   * identifier
     * use = #secondary
-    * type = $CS_HL7_IdentifierType#DDS "Dentist license number	"
+    * type = $CS_HL7_IdentifierType#DDS "Dentist license number"
     * system = $ID_ThaiDentist
     * value = "34222"
   * code
