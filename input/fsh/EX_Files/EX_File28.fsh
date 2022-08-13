@@ -1,7 +1,7 @@
 Instance: File28Document
 InstanceOf: Bundle
 Title: "ตัวอย่าง แฟ้มที่ 28: APPOINTMENT"
-Description: "ข้อมูลการนัดมารับบริการครั้งต่อไปของผู้ที่มารับบริการ ประกอบด้วย Patient,  และ Appointment resource"
+Description: "ข้อมูลการนัดมารับบริการครั้งต่อไปของผู้ที่มารับบริการ ประกอบด้วย Patient, Encounter และ Appointment resource"
 Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"
