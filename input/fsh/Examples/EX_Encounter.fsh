@@ -246,7 +246,7 @@ Usage: #example
 // * account = Reference(Account/AccountIpdEncounter1)
 * hospitalization
   * extension[0]
-    * url = $EX_TH_IpdDischargeStatus 
+    * url = $EX_TH_IpdDischargeStatus
     * valueCodeableConcept = $CS_THCC_IpdDischargeStatus#1 "Complete Recovery"
   * extension[+]
     * url = $EX_TH_IpdDischargeType 
