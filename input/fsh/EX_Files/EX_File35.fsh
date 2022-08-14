@@ -42,7 +42,7 @@ Usage: #example
   * resource = ObsLaborStillborn
 * entry[+]
   * fullUrl = "http://example.org/Appointment/LaborAppointment"
-  * resource = ANCAppointment
+  * resource = LaborAppointment
 * entry[+]
   * fullUrl = "http://example.org/Organization/OrganizationMain"
   * resource = OrganizationMain

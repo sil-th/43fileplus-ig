@@ -207,6 +207,7 @@ Usage: #example
   * extension[0]
     * url = $EX_TH_LaborLocation
     * valueCodeableConcept = $CS_THCC_LaborLocation#1 "โรงพยาบาล"
+  * display = "ห้องคลอด โรงพยาบาลตัวอย่าง"
 * outcome
   * coding[0] = $CS_THCC_PregnancyOutcome#O800 "Spontaneous vertex delivery"
 
