@@ -1,7 +1,7 @@
 Instance: File34Document
 InstanceOf: Bundle
 Title: "ตัวอย่าง แฟ้มที่ 34: ANC"
-Description: "ข้อมูลการให้บริการฝากครรภ์กับหญิงตั้งครรภ์ที่มารับบริการ และประวัติการฝากครรภ์ของหญิงตั้งครรภ์ในเขตรับผิดชอบ ประกอบด้วย Patient, Encounter และ Observation resource"
+Description: "ข้อมูลการให้บริการฝากครรภ์กับหญิงตั้งครรภ์ที่มารับบริการ และประวัติการฝากครรภ์ของหญิงตั้งครรภ์ในเขตรับผิดชอบ ประกอบด้วย Patient, Encounter, Observation และ Appointment resource"
 Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"
@@ -14,8 +14,8 @@ Usage: #example
   * fullUrl = "http://example.org/Patient/Patient6"
   * resource = Patient6
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/PrenatalEncounter1"
-  * resource = PrenatalEncounter1
+  * fullUrl = "http://example.org/Encounter/ANCEncounter1"
+  * resource = ANCEncounter1
 * entry[+]
   * fullUrl = "http://example.org/Observation/ObsAncGravida"
   * resource = ObsAncGravida
@@ -95,6 +95,9 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/ObsAncBMI"
   * resource = ObsAncBMI
 * entry[+]
+  * fullUrl = "http://example.org/Appointment/ANCAppointment"
+  * resource = ANCAppointment
+* entry[+]
   * fullUrl = "http://example.org/Organization/OrganizationMain"
   * resource = OrganizationMain
 
@@ -118,7 +121,7 @@ Usage: #example
   * entry[0] = Reference(Patient/Patient6)
 * section[+]
   * title = "ข้อมูลการตรวจ"
-  * entry[0] = Reference(Encounter/PrenatalEncounter1)
+  * entry[0] = Reference(Encounter/ANCEncounter1)
   * entry[+] = Reference(Observation/ObsAncGravida)
   * entry[+] = Reference(Observation/ObsAncPeriod)
   * entry[+] = Reference(Observation/ObsAncGA)
@@ -145,3 +148,6 @@ Usage: #example
   * entry[+] = Reference(Observation/ObsAncFetalHeartSound)
   * entry[+] = Reference(Observation/ObsAncFetalHeartRate)
   * entry[+] = Reference(Observation/ObsAncBMI)
+* section[+]
+  * title = "ข้อมูลการนัด"
+  * entry[0] = Reference(Appointment/ANCAppointment)

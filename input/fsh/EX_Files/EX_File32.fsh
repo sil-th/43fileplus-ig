@@ -23,6 +23,9 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/PregnancyTest01"
   * resource = ContraceptiveObs
 * entry[+]
+  * fullUrl = "http://example.org/Appointment/FPAppointment"
+  * resource = ANCAppointment
+* entry[+]
   * fullUrl = "http://example.org/Organization/OrganizationMain"
   * resource = OrganizationMain
 
@@ -49,3 +52,6 @@ Usage: #example
   * entry[0] = Reference(Encounter/FPEncounter1)
   * entry[+] = Reference(Observation/ContraceptiveObs)
   * entry[+] = Reference(Observation/PregnancyTest01)
+* section[+]
+  * title = "ข้อมูลการนัด"
+  * entry[0] = Reference(Appointment/FPAppointment)
