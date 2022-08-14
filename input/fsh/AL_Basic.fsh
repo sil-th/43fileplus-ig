@@ -120,6 +120,13 @@ Alias: $CS_THCC_NcdAlcohol = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-alch
 Alias: $CS_THCC_NcdFbsMethod = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-fbs-method
 Alias: $CS_THCC_NcdFootExam = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-foot-exam
 Alias: $CS_THCC_NcdRetinaExam = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-retina-exam
+Alias: $CS_THCC_FpCaseType = http://terms.sil-th.org/CodeSystem/cs-thcc-fp-case-type
+Alias: $CS_THCC_MeternalAppointmentType = http://terms.sil-th.org/CodeSystem/cs-thcc-materal-appointment-type
+Alias: $CS_THCC_LaborPerformerRole = http://terms.sil-th.org/CodeSystem/cs-thcc-labor-performer-role
+Alias: $CS_THCC_LaborProcedure = http://terms.sil-th.org/CodeSystem/cs-thcc-labor-procedure
+Alias: $CS_THCC_LaborLocation = http://terms.sil-th.org/CodeSystem/cs-thcc-labor-location
+Alias: $CS_THCC_PregnancyOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-pregnancy-outcome
+Alias: $CS_THCC_ContraceptiveMethod = http://terms.sil-th.org/CodeSystem/cs-thcc-contraceptive-method
 
 // Value Set
 Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
@@ -163,7 +170,7 @@ Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
 Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
-
+Alias: $ID_LO_Device = https://terms.sil-th.org/hcode/5/XXXXX/Device
 
 
 // Extension URL
@@ -227,6 +234,9 @@ Alias: $EX_TH_IpdJourney = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-i
 Alias: $EX_TH_IpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-status
 Alias: $EX_TH_IpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
 Alias: $EX_TH_IpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-drg
+Alias: $EX_TH_FpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
+Alias: $EX_TH_LaborLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-labor-location
+Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-preg-test-amount
 
 // Questionnaire URL
 Alias: $QN_TH_Home = https://fhir-ig.sil-th.org/43filesplus/Questionnaire/TH-home
