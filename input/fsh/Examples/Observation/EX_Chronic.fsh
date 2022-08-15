@@ -1,4 +1,4 @@
-Instance: RiskBehavior1
+Instance: observation-risk-behavior1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: พฤติกรรมเสี่ยง"
 Description: "ผลการบันทึกพฤติกรรมเสี่ยง"
@@ -8,7 +8,7 @@ Usage: #example
   * text = "Social History"
 * code = $CS_THCC_SocialObsType#risk-behavior "พฤติกรรมเสี่ยง"
   * text = "พฤติกรรมเสี่ยง"
-* subject = Reference(Patient/Patient4)
+* subject = Reference(Patient/patient-patient4)
 * effectiveDateTime = "2022-01-01T12:30:02+07:00"
 * valueCodeableConcept
   * text = "ชอบทานอาหารหวาน"

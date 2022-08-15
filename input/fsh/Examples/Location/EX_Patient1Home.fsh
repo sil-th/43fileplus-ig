@@ -1,4 +1,4 @@
-Instance: Patient1Home
+Instance: location-patient1-home1
 InstanceOf: Location
 Title: "ตัวอย่าง Location: บ้านของผู้ป่วยรายที่ 1"
 Description: "แสดงข้อมูลรายละเอียดบ้านของผู้ป่วยรายที่ 1"
@@ -8,10 +8,10 @@ Usage: #example
   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
 * extension[+]
   * url = $EX_TH_HouseOwner
-  * valueReference = Reference(Patient/Patient1)
+  * valueReference = Reference(Patient/patient-patient1)
 * extension[+]
   * url = $EX_TH_ManagingPractitioner
-  * valueReference = Reference(Practitioner/PractitionerVolunteer1) "นาง ใจดี ชอบช่วย"
+  * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
 * extension[+]
   * url = $EX_TH_HouseholdNum
   * valueInteger = 1

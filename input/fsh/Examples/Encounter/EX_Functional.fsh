@@ -1,4 +1,4 @@
-Instance: FunctionalEncounter
+Instance: encounter-functional1
 InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การตรวจประเมินความบกพร่องทางสุขภาพ"
 Description: "การตรวจประเมินความบกพร่องทางสุขภาพ"
@@ -12,9 +12,9 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * period
   * start = "2022-01-25T12:30:02+07:00"
-* subject = Reference(Patient/Patient3)
+* subject = Reference(Patient/patient-patient3)
   * insert GeneralReference($ID_ThaiCid, "2650591524440", "นาง สมปอง ใจดี")
 * diagnosis
-  * condition = Reference(Condition/DisabilityCondition1)
-* serviceProvider = Reference(OrganizationMain)
+  * condition = Reference(Condition/condition-disability1)
+* serviceProvider = Reference(organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

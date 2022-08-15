@@ -1,4 +1,4 @@
-Instance: PractitionerVolunteer1
+Instance: practitioner-volunteer1
 InstanceOf: Practitioner
 Title: "ตัวอย่าง Practitioner: อสม. รายที่ 1"
 Description: "ข้อมูลอสม. รายที่ 1"

@@ -1,4 +1,4 @@
-Instance: ChronicCondition1
+Instance: condition-chronic1
 InstanceOf: Condition
 Title: "ตัวอย่าง Condition: โรคเบาหวานของผู้ป่วยรายที่ 4"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 4"
@@ -8,6 +8,6 @@ Usage: #example
   * coding[0] = $SCT#73211009 "Diabetes mellitus"
   * coding[+] = $ICD10#E14.9 "Unspecified diabetes mellitus : Without complications"
   * text = "Diabetes mellitus"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

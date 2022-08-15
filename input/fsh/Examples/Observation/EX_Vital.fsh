@@ -1,4 +1,4 @@
-Instance: ObsVitalSignsPanel
+Instance: observation-vital-panel1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: Vital Signs Panel"
 Description: "รวมการตรวจสัญญาณชีพทั้งหมด"
@@ -9,23 +9,23 @@ Usage: #example
 * code
   * coding[0] = $LNC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
   * text = "การตรวจสัญญาณชีพ"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * interpretation
   * coding[0] = $CS_HL7_ObsInterpret#N "Normal"
   * text = "Normal"
-* hasMember[0] = Reference(Observation/ObsWt01)
-* hasMember[+] = Reference(Observation/ObsHt01)
-* hasMember[+] = Reference(Observation/ObsBT01)
-* hasMember[+] = Reference(Observation/ObsBp01)
-* hasMember[+] = Reference(Observation/ObsHR01)
-* hasMember[+] = Reference(Observation/ObsRR01)
-* hasMember[+] = Reference(Observation/ObsWC01)
-* hasMember[+] = Reference(Observation/ObsHC01)
+* hasMember[0] = Reference(Observation/observation-vital-wt1)
+* hasMember[+] = Reference(Observation/observation-vital-ht1)
+* hasMember[+] = Reference(Observation/observation-vital-bt1)
+* hasMember[+] = Reference(Observation/observation-vital-bp1)
+* hasMember[+] = Reference(Observation/observation-vital-hr1)
+* hasMember[+] = Reference(Observation/observation-vital-rr1)
+* hasMember[+] = Reference(Observation/observation-vital-wc1)
+* hasMember[+] = Reference(Observation/observation-vital-hc1)
 
 
 
-Instance: ObsWt01
+Instance: observation-vital-wt1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: น้ำหนักผู้ป่วยแรกรับ"
 Description: "Body weight"
@@ -36,12 +36,12 @@ Usage: #example
 * code
   * coding[0] = $LNC#29463-7 "Body weight"
   * text = "Body weight"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 80 'kg' "kg"
 
 
-Instance: ObsHt01
+Instance: observation-vital-ht1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: ส่วนสูงผู้ป่วยแรกรับ"
 Description: "Body height"
@@ -52,13 +52,13 @@ Usage: #example
 * code
   * coding[0] = $LNC#8302-2 "Body height"
   * text = "Body height"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 170 'cm' "cm"
 
 
 
-Instance: ObsBT01
+Instance: observation-vital-bt1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: อุณหภูมิร่างกายแรกรับ"
 Description: "Body temperature"
@@ -69,13 +69,13 @@ Usage: #example
 * code
   * coding[0] = $LNC#8310-5 "Body temperature"
   * text = "Body temperature"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 37 'Cel' "Celsius"
 
 
 
-Instance: ObsBp01
+Instance: observation-vital-bp1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: ความดันโลหิต ซิสโตลิก แรกรับ"
 Description: "Blood pressure panel with all children optional"
@@ -86,7 +86,7 @@ Usage: #example
 * code
   * coding[0] = $LNC#85354-9 "Blood pressure panel with all children optional"
   * text = "Blood pressure panel with all children optional"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * component[0]
   * code
@@ -101,7 +101,7 @@ Usage: #example
 
 
 
-Instance: ObsHR01
+Instance: observation-vital-hr1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: อัตราการเต้นของชีพจร"
 Description: "Heart rate"
@@ -112,13 +112,13 @@ Usage: #example
 * code
   * coding[0] = $LNC#8867-4 "Heart rate"
   * text = "Heart rate"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 80 '/min' "/min"
 
 
 
-Instance: ObsRR01
+Instance: observation-vital-rr1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: อัตราการหายใจ"
 Description: "Respiratory rate"
@@ -129,13 +129,13 @@ Usage: #example
 * code
   * coding[0] = $LNC#9279-1 "Respiratory rate"
   * text = "Respiratory rate"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 16 '/min' "/min"
 
 
 
-Instance: ObsWC01
+Instance: observation-vital-wc1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: รอบเอว"
 Description: "Waist Circumference at umbilicus by Tape measure"
@@ -146,14 +146,14 @@ Usage: #example
 * code
   * coding[0] = $LNC#8280-0 "Waist Circumference at umbilicus by Tape measure"
   * text = "Waist Circumference at umbilicus by Tape measure"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 80 'cm' "cm"
 
 
 
 
-Instance: ObsHC01
+Instance: observation-vital-hc1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: รอบสะโพก"
 Description: "Hip circumference"
@@ -164,14 +164,14 @@ Usage: #example
 * code
   * coding[0] = $LNC#62409-8 "PhenX - hip circumference protocol"
   * text = "Hip circumference"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueQuantity = 120 'cm' "cm"
 
 
 
 
-Instance: ObsPE01
+Instance: observation-vital-pe1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจร่างกาย"
 Description: "Physical findings"
@@ -182,18 +182,18 @@ Usage: #example
 * code
   * coding[0] = $LNC#55286-9 "Physical exam by body areas"
   * text = "Physical exam by body areas"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
-* hasMember[0] = Reference(Observation/ObsGA01)
-* hasMember[+] = Reference(Observation/ObsHeent01)
-* hasMember[+] = Reference(Observation/ObsHeart01)
-* hasMember[+] = Reference(Observation/ObsChest01)
-* hasMember[+] = Reference(Observation/ObsAbd01)
-* hasMember[+] = Reference(Observation/ObsExt01)
-* hasMember[+] = Reference(Observation/ObsNeu01)
-* hasMember[+] = Reference(Observation/ObsMisc01)
+* hasMember[0] = Reference(Observation/observation-vital-ga1)
+* hasMember[+] = Reference(Observation/observation-vital-heent1)
+* hasMember[+] = Reference(Observation/observation-vital-heart1)
+* hasMember[+] = Reference(Observation/observation-vital-chest1)
+* hasMember[+] = Reference(Observation/observation-vital-abd1)
+* hasMember[+] = Reference(Observation/observation-vital-ext1)
+* hasMember[+] = Reference(Observation/observation-vital-neu1)
+* hasMember[+] = Reference(Observation/observation-vital-misc1)
 
-Instance: ObsGA01
+Instance: observation-vital-ga1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ General Appearance"
 Description: "General appearance"
@@ -204,13 +204,13 @@ Usage: #example
 * code
   * coding[0] = $LNC#32434-3 "General appearance"
   * text = "General appearance"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
 
 
-Instance: ObsHeent01
+Instance: observation-vital-heent1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ HEENT"
 Description: "Physical findings of Head"
@@ -221,11 +221,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8701-5 "Physical findings of Head"
   * text = "Physical findings of Head"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsHeart01
+Instance: observation-vital-heart1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ Heart"
 Description: "Physical findings of Heart"
@@ -236,11 +236,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8702-3 "Physical findings of Heart"
   * text = "Physical findings of Heart"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsChest01
+Instance: observation-vital-chest1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ Chest & Lung"
 Description: "Physical findings of Thorax and Lungs"
@@ -251,11 +251,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8710-6 "Physical findings of Thorax and Lungs"
   * text = "Physical findings of Thorax and Lungs"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsAbd01
+Instance: observation-vital-abd1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ Abdomen"
 Description: "Physical findings of Abdomen"
@@ -266,11 +266,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8694-2 "Physical findings of Abdomen"
   * text = "Physical findings of Abdomen"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsExt01
+Instance: observation-vital-ext1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ Extremities"
 Description: "Physical findings of Extremities"
@@ -281,11 +281,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8703-1 "Physical findings of Extremities"
   * text = "Physical findings of Extremities"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsNeu01
+Instance: observation-vital-neu1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจ Neuro"
 Description: "Physical findings of Nervous system"
@@ -296,11 +296,11 @@ Usage: #example
 * code
   * coding[0] = $LNC#8705-6 "Physical findings of Nervous system"
   * text = "Physical findings of Nervous system"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"
 
-Instance: ObsMisc01
+Instance: observation-vital-misc1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: การตรวจอื่น ๆ"
 Description: "Miscellaneous Physical findings"
@@ -311,6 +311,6 @@ Usage: #example
 * code
   * coding[0] = $LNC#29544-4 "Physical findings"
   * text = "Physical findings"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
 * valueString = "WNL"

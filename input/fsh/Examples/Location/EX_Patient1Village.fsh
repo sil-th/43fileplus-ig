@@ -1,4 +1,4 @@
-Instance: Village1
+Instance: location-village1
 InstanceOf: Location
 Title: "ตัวอย่าง Location: หมู่บ้านที่ 1"
 Description: "แสดงข้อมูลหมู่บ้านที่ 1"
@@ -8,7 +8,7 @@ Usage: #example
   * valueCodeableConcept = $CS_THCC_VillageArea#1 "เทศบาล"
 * extension[+]
   * url = $EX_TH_VillageMainHospital
-  * valueReference = Reference(Organization/OrganizationMain)
+  * valueReference = Reference(Organization/organization-main)
 * extension[+]
   * url = $EX_TH_VillageUnlistDate
   * valueDate = "2022-07-01"

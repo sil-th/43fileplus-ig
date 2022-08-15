@@ -1,4 +1,4 @@
-Instance: SurvCondition1
+Instance: condition-surveillance1
 InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
@@ -13,13 +13,13 @@ Usage: #example
   * coding[0] = $SCT#20927009 "Dengue hemorrhagic fever"
   * coding[+] = $ICD10#A97.2 "Severe Dengue"
   * text = "Dengue hemorrhagic fever"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 
-Instance: SurvCondition2
+Instance: condition-surveillance2
 InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
@@ -40,7 +40,7 @@ Usage: #example
   * coding[0] = $SCT#20927009 "Dengue hemorrhagic fever"
   * coding[+] = $ICD10#A97.2 "Severe Dengue"
   * text = "Dengue hemorrhagic fever"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2021-12-30T14:30:02+07:00"
 * recordedDate = "2022-01-01T14:30:02+07:00"
-* recorder = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

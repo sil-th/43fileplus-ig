@@ -1,4 +1,4 @@
-Instance: ClaimOpdEncounter1
+Instance: claim-opd-encounter1
 InstanceOf: Claim
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ OPD"
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD"
@@ -36,19 +36,19 @@ Usage: #example
 * status = #active
 * type = $CS_HL7_ClaimType#institutional "Institutional"
 * use = #claim
-* patient = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* patient = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * created = "2022-01-01T14:30:02+07:00"
-* provider = Reference(Organization/OrganizationMain)
+* provider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * priority = $CS_HL7_ProcessPriority#normal "Normal"
 * supportingInfo[0]
   * sequence = 1
   * category = $CS_HL7_ClaimInfoCat#info "Information"
-  * valueReference = Reference(Encounter/OpdEncounter1)
+  * valueReference = Reference(Encounter/encounter-opd1)
 * insurance
   * sequence = 1
   * focal = true
-  * coverage = Reference(Coverage/CoverageUC)
+  * coverage = Reference(Coverage/coverage-uc)
   * preAuthRef = "PP1007991295"
 * total
   * value = 2000

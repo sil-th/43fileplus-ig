@@ -1,6 +1,6 @@
-Instance: File10Document
+Instance: bundle-file10-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 10: WOMEN"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 10: WOMEN"
 Description: "ข้อมูลหญิงวัยเจริญพันธุ์ที่อยู่กินกับสามี ทุกคนที่อาศัยอยู่ในเขตรับผิดชอบ ประกอบด้วย Patient และ Observation resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,34 +8,34 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File10Composition"
-  * resource = File10Composition
+  * fullUrl = "http://example.org/Composition/composition-file-10"
+  * resource = composition-file-10
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient4"
-  * resource = Patient4
+  * fullUrl = "http://example.org/Patient/patient-patient4"
+  * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Observation/Contraceptive"
-  * resource = Contraceptive
+  * fullUrl = "http://example.org/Observationobservation-woman-contraceptive1"
+  * resource = observation-woman-contraceptive1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/NoContraceptiveReason"
-  * resource = NoContraceptiveReason
+  * fullUrl = "http://example.org/Observation/observation-woman-no-contraceptive-reason1"
+  * resource = observation-woman-no-contraceptive-reason1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/NumParity"
-  * resource = NumParity
+  * fullUrl = "http://example.org/Observation/observation-woman-num-parity1"
+  * resource = observation-woman-num-parity1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/NumLivingBirth"
-  * resource = NumLivingBirth
+  * fullUrl = "http://example.org/Observation/observation-woman-num-living-birth1"
+  * resource = observation-woman-num-living-birth1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/NumAbortion"
-  * resource = NumAbortion
+  * fullUrl = "http://example.org/Observation/observation-woman-num-abortion1"
+  * resource = observation-woman-num-abortion1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/NumStillbirth"
-  * resource = NumStillbirth
+  * fullUrl = "http://example.org/Observation/observation-woman-num-stillbirth1"
+  * resource = observation-woman-num-stillbirth1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
-Instance: File10Composition
+Instance: composition-file-10
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 10: WOMEN"
 Description: "Composition ของแฟ้มที่ 10"
@@ -44,19 +44,19 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#10 "WOMEN"
-* subject = Reference(Patient/Patient4)
+* subject = Reference(Patient/patient-patient4)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 10 WOMEN: ข้อมูลหญิงวัยเจริญพันธุ์ที่อยู่กินกับสามี ทุกคนที่อาศัยอยู่ในเขตรับผิดชอบ"
 * section[0]
   * title = "ข้อมูลหญิงวัยเจริญพันธุ์"
-  * entry[0] = Reference(Patient/Patient4)
+  * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ประวัติการตั้งครรภ์"
-  * entry[0] = Reference(Observation/Contraceptive)
-  * entry[+] = Reference(Observation/NoContraceptiveReason)
-  * entry[+] = Reference(Observation/NumParity)
-  * entry[+] = Reference(Observation/NumLivingBirth)
-  * entry[+] = Reference(Observation/NumAbortion)
-  * entry[+] = Reference(Observation/NumStillbirth)
+  * entry[0] = Reference(Observationobservation-woman-contraceptive1)
+  * entry[+] = Reference(Observation/observation-woman-no-contraceptive-reason1)
+  * entry[+] = Reference(Observation/observation-woman-num-parity1)
+  * entry[+] = Reference(Observation/observation-woman-num-living-birth1)
+  * entry[+] = Reference(Observation/observation-woman-num-abortion1)
+  * entry[+] = Reference(Observation/observation-woman-num-stillbirth1)

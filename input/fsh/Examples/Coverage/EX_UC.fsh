@@ -1,4 +1,4 @@
-Instance: CoverageUC
+Instance: coverage-uc
 InstanceOf: Coverage
 Title: "ตัวอย่าง Coverage: หลักประกันสุขภาพถ้วนหน้า"
 Description: "แสดงการบันทึกสิทธิหลักประกันสุขภาพถ้วนหน้า"
@@ -12,7 +12,7 @@ Usage: #example
       * text = "สถานพยาบาลหลัก"
   * extension[+]
     * url = "provider"
-    * valueReference = Reference(OrganizationMain)
+    * valueReference = Reference(organization-main)
       * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
   * extension[+]
     * url = "period"
@@ -27,7 +27,7 @@ Usage: #example
       * text = "สถานบริการรอง"
   * extension[+]
     * url = "provider"
-    * valueReference = Reference(OrganizationSecond)
+    * valueReference = Reference(organization-second)
       * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง 2")
 * extension[+]
   * url = $EX_TH_ProviderTypeCoverage
@@ -38,7 +38,7 @@ Usage: #example
       * text = "สถานบริการปฐมภูมิ"
   * extension[+]
     * url = "provider"
-    * valueReference = Reference(OrganizationFourth)
+    * valueReference = Reference(organization-fourth)
       * insert GeneralReference($ID_Hcode, "XXXXX", "สถานพยาบาลปฐมภูมิ")
 * identifier
   * system = $ID_ThaiCid
@@ -50,10 +50,10 @@ Usage: #example
 * type
   * coding[0] = $CS_THCC_CoverageType#0100 "หลักประกันสุขภาพ"
   * text = "หลักประกันสุขภาพ"
-* policyHolder = Reference(Organization/OrganizationNHSO) "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
-* subscriber = Reference(Patient/Patient4) "นาง สมควร ใจดี"
-* beneficiary = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* policyHolder = Reference(Organization/organization-nhso) "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+* subscriber = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
+* beneficiary = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * period
   * start = "2022-01-01"
   * end = "2025-01-01"
-* payor = Reference(Organization/OrganizationNHSO) "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+* payor = Reference(Organization/organization-nhso) "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"

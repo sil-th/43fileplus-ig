@@ -1,4 +1,4 @@
-Instance: DeathEncounter
+Instance: encounter-death1
 InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: สถานบริการที่เสียชีวิต"
 Description: "สถานบริการที่เสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
@@ -20,7 +20,7 @@ Usage: #example
   * value = "65-XXXXXXX"
 * status = #finished
 * class = $CS_HL7_EncounterClass#EMER "emergency"
-* subject = Reference(Patient/Patient3)
+* subject = Reference(Patient/patient-patient3)
   * insert GeneralReference($ID_ThaiCid, "2650591524440", "นาง สมปอง ใจดี")
-* serviceProvider = Reference(OrganizationMain)
+* serviceProvider = Reference(organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

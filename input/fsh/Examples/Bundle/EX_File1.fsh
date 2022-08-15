@@ -1,6 +1,6 @@
-Instance: File1Document
+Instance: bundle-file01-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 1: PERSON"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 1: PERSON"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ ประกอบด้วย Patient, RelatedPerson และ Observation resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,35 +8,35 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File1Composition"
-  * resource = File1Composition
+  * fullUrl = "http://example.org/Composition/composition-file-01"
+  * resource = composition-file-01
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient1"
-  * resource = Patient1
+  * fullUrl = "http://example.org/Patient/patient-patient1"
+  * resource = patient-patient1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/BloodGroup"
-  * resource = BloodGroup
+  * fullUrl = "http://example.org/Observation/observation-blood-group1"
+  * resource = observation-blood-group1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/BloodGroupABO"
-  * resource = BloodGroupABO
+  * fullUrl = "http://example.org/Observation/observation-blood-group-abo1"
+  * resource = observation-blood-group-abo1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/BloodGroupRh"
-  * resource = BloodGroupRh
+  * fullUrl = "http://example.org/Observation/observation-blood-group-rh1"
+  * resource = observation-blood-group-rh1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/RoleInHouse"
-  * resource = RoleInHouse
+  * fullUrl = "http://example.org/Observation/observation-role-in-house1"
+  * resource = observation-role-in-house1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/RoleInVillage"
-  * resource = RoleInVillage
+  * fullUrl = "http://example.org/Observation/observation-role-in-village1"
+  * resource = observation-role-in-village1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/Occupation"
-  * resource = Occupation
+  * fullUrl = "http://example.org/Observation/observation-occupation1"
+  * resource = observation-occupation1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
 
-Instance: File1Composition
+Instance: composition-file-01
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 1: PERSON"
 Description: "Composition ของแฟ้มที่ 1"
@@ -45,23 +45,23 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[1] = $CS_THCC_43fileType#1 "PERSON"
-* subject = Reference(Patient/Patient1)
+* subject = Reference(Patient/patient-patient1)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 1 PERSON: ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * section[0]
   * title = "ข้อมูลทั่วไป"
-  * entry[0] = Reference(Patient/Patient1)
+  * entry[0] = Reference(Patient/patient-patient1)
 * section[+]
   * title = "หมู่เลือด"
-  * entry[0] = Reference(Observation/BloodGroup)
-  * entry[+] = Reference(Observation/BloodGroupABO)
-  * entry[+] = Reference(Observation/BloodGroupRh)
+  * entry[0] = Reference(Observation/observation-blood-group1)
+  * entry[+] = Reference(Observation/observation-blood-group-abo1)
+  * entry[+] = Reference(Observation/observation-blood-group-rh1)
 * section[+]
   * title = "ประวัติทางสังคม"
-  * entry[0] = Reference(Observation/RoleInHouse)
-  * entry[+] = Reference(Observation/RoleInVillage)
-  * entry[+] = Reference(Observation/Occupation)
+  * entry[0] = Reference(Observation/observation-role-in-house1)
+  * entry[+] = Reference(Observation/observation-role-in-village1)
+  * entry[+] = Reference(Observation/observation-occupation1)
 
 

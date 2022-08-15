@@ -1,14 +1,14 @@
-Instance: QnDentalAnswer
+Instance: questionnaireresponse-dental1
 InstanceOf: QuestionnaireResponse
 Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจการตรวจสภาวะทันตสุขภาพของฟันทุกซี่"
 Description: "ใช้ประกอบการรายงานแฟ้ม DENTAL"
 Usage: #example
 * questionnaire = $QN_TH_Dental
 * status = #completed
-* subject = Reference(Patient/Patient5)
+* subject = Reference(Patient/patient-patient5)
 * subject.type = "Patient"
 * authored = "2022-02-19T14:15:00+07:00"
-* author = Reference(Practitioner/PractitionerDentist1)
+* author = Reference(Practitioner/practitioner-dentist1)
 * author.type = "Practitioner"
 * item[0]
   * linkId = "1"

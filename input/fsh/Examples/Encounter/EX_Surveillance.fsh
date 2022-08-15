@@ -1,4 +1,4 @@
-Instance: SurvEncounter1
+Instance: encounter-surveillance1
 InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การรับบริการ Surveillance"
 Description: "แสดงการรับบริการของผู้ป่วยด้วยโรคที่ต้องเฝ้าระวัง"
@@ -19,7 +19,7 @@ Usage: #example
   * coding[0] = $CS_HL7_Priority#R "routine"
   * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
     * url = $EX_TH_PatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
@@ -27,7 +27,7 @@ Usage: #example
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
     * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
-  * individual = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+  * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
     * url = $EX_TH_ServiceHour 
@@ -37,10 +37,10 @@ Usage: #example
 * reasonCode[0]
   * coding[0] = $CS_THCC_SurvGroup#0005 "ไข้ มีผื่น ปวดกล้ามเนื้อ ปวดกระดูกหรือข้อ ปวดศรีษะ ปวดกระบอกตา เลือกออกตามผิวหนัง"
 * diagnosis[0]
-  * condition = Reference(Condition/SurvCondition1)
+  * condition = Reference(Condition/condition-surveillance1)
   * use = $CS_HL7_DiagRole#AD "Admission diagnosis"
 * diagnosis[+]
-  * condition = Reference(Condition/SurvCondition2)
+  * condition = Reference(Condition/condition-surveillance2)
   * use = $CS_HL7_DiagRole#DD "Discharge diagnosis"
-* serviceProvider = Reference(Organization/OrganizationMain)
+* serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

@@ -1,4 +1,4 @@
-Instance: CoverageSSO
+Instance: coverage-sso
 InstanceOf: Coverage
 Title: "ตัวอย่าง Coverage: สิทธิประกันสังคม"
 Description: "แสดงการบันทึกสิทธิประกันสังคม"
@@ -13,10 +13,10 @@ Usage: #example
 * type
   * coding[0] = $CS_THCC_CoverageType#4200 "กองทุนประกันสังคม"
   * text = "กองทุนประกันสังคม"
-* policyHolder = Reference(Organization/OrganizationSSO) "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
-* subscriber = Reference(Patient/Patient4) "นาง สมควร ใจดี"
-* beneficiary = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* policyHolder = Reference(Organization/organization-sso) "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+* subscriber = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
+* beneficiary = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * period
   * start = "2022-01-01"
   * end = "2025-01-01"
-* payor = Reference(Organization/OrganizationSSO) "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+* payor = Reference(Organization/organization-sso) "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"

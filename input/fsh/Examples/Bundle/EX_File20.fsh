@@ -1,6 +1,6 @@
-Instance: File20Document
+Instance: bundle-file20-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 20: ACCIDENT"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 20: ACCIDENT"
 Description: "ข้อมูลผู้ป่วยอุบัติเหตุ ที่มารับบริการที่แผนกฉุกเฉิน (ER) ของโรงพยาบาล และแผนกทั่วไปของ รพ.สต. ประกอบด้วย Patient, Encounter, Observation, Condition, ServiceRequest, Account, Coverage และ Claim resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,71 +8,71 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File20Composition"
-  * resource = File20Composition
+  * fullUrl = "http://example.org/Composition/composition-file-20"
+  * resource = composition-file-20
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient4"
-  * resource = Patient4
+  * fullUrl = "http://example.org/Patient/patient-patient4"
+  * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/AccidentEncounter1"
-  * resource = AccidentEncounter1
+  * fullUrl = "http://example.org/Encounterencounter-accident1"
+  * resource = encounter-accident1
 * entry[+]
-  * fullUrl = "http://example.org/ServiceRequest/ReferOutAccidentEncounter1"
-  * resource = ReferOutAccidentEncounter1
+  * fullUrl = "http://example.org/ServiceRequest/servicerequest-refer-out-accident1"
+  * resource = servicerequest-refer-out-accident1
 * entry[+]
-  * fullUrl = "http://example.org/Condition/AccidentCondition1"
-  * resource = AccidentCondition1
+  * fullUrl = "http://example.org/Condition/condition-accident1"
+  * resource = condition-accident1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentInjuryLocation"
-  * resource = AccidentInjuryLocation
+  * fullUrl = "http://example.org/Observation/observation-accident-injury-location"
+  * resource = observation-accident-injury-location
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentInjuryType"
-  * resource = AccidentInjuryType
+  * fullUrl = "http://example.org/Observation/observation-accident-injury-type"
+  * resource = observation-accident-injury-type
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentVehicleType"
-  * resource = AccidentVehicleType
+  * fullUrl = "http://example.org/Observation/observation-accident-vehicle-type"
+  * resource = observation-accident-vehicle-type
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentAlcoholUse"
-  * resource = AccidentAlcoholUse
+  * fullUrl = "http://example.org/Observation/observation-accident-alcohol-use"
+  * resource = observation-accident-alcohol-use
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentDrugUse"
-  * resource = AccidentDrugUse
+  * fullUrl = "http://example.org/Observation/observation-accident-drug-use"
+  * resource = observation-accident-drug-use
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentSeatbelt"
-  * resource = AccidentSeatbelt
+  * fullUrl = "http://example.org/Observation/observation-accident-seatbelt"
+  * resource = observation-accident-seatbelt
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentHelmet"
-  * resource = AccidentHelmet
+  * fullUrl = "http://example.org/Observation/observation-accident-helmet"
+  * resource = observation-accident-helmet
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentBreathing"
-  * resource = AccidentBreathing
+  * fullUrl = "http://example.org/Observation/observation-accident-breathing"
+  * resource = observation-accident-breathing
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentBleeding"
-  * resource = AccidentBleeding
+  * fullUrl = "http://example.org/Observation/observation-accident-bleeding"
+  * resource = observation-accident-bleeding
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentSprint"
-  * resource = AccidentSprint
+  * fullUrl = "http://example.org/Observation/observation-accident-sprint"
+  * resource = observation-accident-sprint
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentIVFluid"
-  * resource = AccidentIVFluid
+  * fullUrl = "http://example.org/Observation/observation-accident-iv-fluid"
+  * resource = observation-accident-iv-fluid
 * entry[+]
-  * fullUrl = "http://example.org/Observation/AccidentGCS"
-  * resource = AccidentGCS
+  * fullUrl = "http://example.org/Observation/observation-accident-gcs"
+  * resource = observation-accident-gcs
 * entry[+]
-  * fullUrl = "http://example.org/Account/AccountAccidentEncounter1"
-  * resource = AccountAccidentEncounter1
+  * fullUrl = "http://example.org/Account/account-accident-encounter1"
+  * resource = account-accident-encounter1
 * entry[+]
-  * fullUrl = "http://example.org/Coverage/CoverageUC"
-  * resource = CoverageUC
+  * fullUrl = "http://example.org/Coverage/coverage-uc"
+  * resource = coverage-uc
 * entry[+]
-  * fullUrl = "http://example.org/Claim/ClaimAccidentEncounter1"
-  * resource = ClaimAccidentEncounter1
+  * fullUrl = "http://example.org/Claim/claim-accident-encounter1"
+  * resource = claim-accident-encounter1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
 
-Instance: File20Composition
+Instance: composition-file-20
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 20: ACCIDENT"
 Description: "Composition ของแฟ้มที่ 20"
@@ -81,35 +81,35 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#20 "ACCIDENT"
-* subject = Reference(Patient/Patient4)
+* subject = Reference(Patient/patient-patient4)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 20 ACCIDENT: ข้อมูลผู้ป่วยอุบัติเหตุ ที่มารับบริการที่แผนกฉุกเฉิน (ER) ของโรงพยาบาล และแผนกทั่วไปของ รพ.สต."
 * section[0]
   * title = "ข้อมูลผู้ป่วย"
-  * entry[0] = Reference(Patient/Patient4)
+  * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ข้อมูลการบริการ"
-  * entry[0] = Reference(Encounter/AccidentEncounter1)
-  * entry[+] = Reference(ServiceRequest/ReferOutAccidentEncounter1)
-  * entry[+] = Reference(Condition/AccidentCondition1)
+  * entry[0] = Reference(Encounterencounter-accident1)
+  * entry[+] = Reference(ServiceRequest/servicerequest-refer-out-accident1)
+  * entry[+] = Reference(Condition/condition-accident1)
 * section[+]
   * title = "ข้อมูลการตรวจ"
-  * entry[0] = Reference(Observation/AccidentInjuryLocation)
-  * entry[+] = Reference(Observation/AccidentInjuryType)
-  * entry[+] = Reference(Observation/AccidentVehicleType)
-  * entry[+] = Reference(Observation/AccidentAlcoholUse)
-  * entry[+] = Reference(Observation/AccidentDrugUse)
-  * entry[+] = Reference(Observation/AccidentSeatbelt)
-  * entry[+] = Reference(Observation/AccidentHelmet)
-  * entry[+] = Reference(Observation/AccidentBreathing)
-  * entry[+] = Reference(Observation/AccidentBleeding)
-  * entry[+] = Reference(Observation/AccidentSprint)
-  * entry[+] = Reference(Observation/AccidentIVFluid)
-  * entry[+] = Reference(Observation/AccidentGCS)
+  * entry[0] = Reference(Observation/observation-accident-injury-location)
+  * entry[+] = Reference(Observation/observation-accident-injury-type)
+  * entry[+] = Reference(Observation/observation-accident-vehicle-type)
+  * entry[+] = Reference(Observation/observation-accident-alcohol-use)
+  * entry[+] = Reference(Observation/observation-accident-drug-use)
+  * entry[+] = Reference(Observation/observation-accident-seatbelt)
+  * entry[+] = Reference(Observation/observation-accident-helmet)
+  * entry[+] = Reference(Observation/observation-accident-breathing)
+  * entry[+] = Reference(Observation/observation-accident-bleeding)
+  * entry[+] = Reference(Observation/observation-accident-sprint)
+  * entry[+] = Reference(Observation/observation-accident-iv-fluid)
+  * entry[+] = Reference(Observation/observation-accident-gcs)
 * section[+]
   * title = "ข้อมูลทางการเงิน"
-  * entry[0] = Reference(Account/AccountAccidentEncounter1)
-  * entry[+] = Reference(Coverage/CoverageUC)
-  * entry[+] = Reference(Claim/ClaimAccidentEncounter1)
+  * entry[0] = Reference(Account/account-accident-encounter1)
+  * entry[+] = Reference(Coverage/coverage-uc)
+  * entry[+] = Reference(Claim/claim-accident-encounter1)

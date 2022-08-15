@@ -38,3 +38,13 @@
   --dragon-background-color: #fffbf7; /* 29. Dragon background color */
   --dragon-text-color: #101020; /* 30. Dragon font color */
 }
+
+th,
+td {
+  padding: 4px;
+  border: 1px solid #aaa;
+}
+
+table.grid colgroup col {
+  width: 30% !important;
+}

@@ -1,4 +1,4 @@
-Instance: Patient1Mother
+Instance: relatedperson-patient1-mother
 InstanceOf: RelatedPerson
 Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 1"
 Description: "มารดาของผู้ป่วยรายที่ 1"
@@ -11,7 +11,7 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
-* patient = Reference(Patient/Patient1)
+* patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#MTH "mother"
 * name[0]
   * text = "นาง มารดา ใจดี"
@@ -22,7 +22,7 @@ Usage: #example
   * system = #phone
   * value = "088-8888888"
 
-Instance: Patient1Father
+Instance: relatedperson-patient1-father
 InstanceOf: RelatedPerson
 Title: "ตัวอย่าง RelatedPerson: บิดาของผู้ป่วยรายที่ 1"
 Description: "บิดาของผู้ป่วยรายที่ 1"
@@ -35,7 +35,7 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
-* patient = Reference(Patient/Patient1)
+* patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#FTH "father"
 * name[0]
   * text = "นาย บิดา ใจดี"
@@ -46,7 +46,7 @@ Usage: #example
   * system = #phone
   * value = "088-8888888"
 
-Instance: Patient1Spouse
+Instance: relatedperson-patient1-spouse
 InstanceOf: RelatedPerson
 Title: "ตัวอย่าง RelatedPerson: คู่สมรสของผู้ป่วยรายที่ 1"
 Description: "คู่สมรสของผู้ป่วยรายที่ 1"
@@ -59,7 +59,7 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
-* patient = Reference(Patient/Patient1)
+* patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#SPS "spouse"
 * name[0]
   * text = "นาง คู่สมรส ใจดี"

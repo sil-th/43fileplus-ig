@@ -1,5 +1,5 @@
 // Account
-Instance: AccountAccidentEncounter1
+Instance: account-accident-encounter1
 InstanceOf: Account
 Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
@@ -9,15 +9,15 @@ Usage: #example
   * valueCodeableConcept = $CS_THCC_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
 * status = #active
 * name = "บัญชี นางสมควร ใจดี VN 65-XXXXX"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * servicePeriod
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
 * coverage[0]
-  * coverage = Reference(Coverage/CoverageUC) "หลักประกันสุขภาพถ้วนหน้า"
+  * coverage = Reference(Coverage/coverage-uc) "หลักประกันสุขภาพถ้วนหน้า"
   * priority = 1
 * coverage[+]
-  * coverage = Reference(Coverage/CoverageSSO) "กองทุนประกันสังคม"
+  * coverage = Reference(Coverage/coverage-sso) "กองทุนประกันสังคม"
   * priority = 2
-* owner = Reference(Organization/OrganizationMain)
+* owner = Reference(Organization/organization-main)
 

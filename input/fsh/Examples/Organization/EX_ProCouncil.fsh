@@ -1,4 +1,4 @@
-Instance: OrganizationMedicalCouncil
+Instance: organization-medical-council
 InstanceOf: Organization
 Title: "ตัวอย่าง Organization: แพทยสภา"
 Description: "แพทยสภา"

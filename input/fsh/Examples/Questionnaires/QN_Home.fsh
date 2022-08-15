@@ -1,6 +1,6 @@
-Instance: TH-home
+Instance: questionnaire-home
 InstanceOf: Questionnaire
-Title: "แบบสำรวจด้านสุขาภิบาลของครัวเรือน"
+Title: "ตัวอย่าง Questionnaire: แบบสำรวจด้านสุขาภิบาลของครัวเรือน"
 Description: "ใช้ประกอบการรายงานแฟ้ม HOME"
 Usage: #example
 * url = $QN_TH_Home

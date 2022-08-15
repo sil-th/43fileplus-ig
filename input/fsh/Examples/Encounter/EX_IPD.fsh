@@ -1,4 +1,4 @@
-Instance: IpdEncounter1
+Instance: encounter-ipd1
 InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การรับบริการ IPD"
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
@@ -22,22 +22,22 @@ Usage: #example
   * coding[0] = $CS_HL7_Priority#R "routine"
   * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
     * url = $EX_TH_PatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
-* basedOn = Reference(ServiceRequest/ReferInOpdEncounter1)
+* basedOn = Reference(ServiceRequest/servicerequest-refer-in-opd1)
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
     * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
-  * individual = Reference(Practitioner/PractitionerDoctor1) 
+  * individual = Reference(Practitioner/practitioner-doctor1) 
     * insert GeneralReference($ID_LO_Provider, "XXXXXXXX", "พญ. สมหญิง จริงใจ")
 * period
   * start = "2022-05-01T12:30:02+07:00"
   * end = "2022-05-10T14:30:02+07:00"
 * length = 5 'd' "days"
-// * account = Reference(Account/AccountIpdEncounter1)
+// * account = Reference(Account/Accountencounter-ipd1)
 * hospitalization
   * extension[0]
     * url = $EX_TH_IpdDischargeStatus
@@ -49,13 +49,13 @@ Usage: #example
   //   * url = $EX_TH_DischargeInstruction
   //   * valueAnnotation
   //     * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
-  // * origin = Reference(Organization/OrganizationSecond)
+  // * origin = Reference(Organization/organization-second)
   //   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลเครือข่าย")
   // * admitSource
   //   * coding[0] = $CS_HL7_AdmitSource#gp "General Practitioner referral"
   //   * coding[+] = $CS_THCC_AdmitSource#3 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
   //   * text = "มารับบริการเอง"
-  * destination = Reference(Organization/OrganizationThird)
+  * destination = Reference(Organization/organization-third)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location[0]
   * extension[0]
@@ -84,7 +84,7 @@ Usage: #example
       * system = $ID_LO_DepCode
       * value = "Md-ward"
     * display = "แผนกอายุรกรรม"
-* serviceProvider = Reference(Organization/OrganizationMain)
+* serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
   // * extension
   //   * url = $EX_TH_ProviderType 

@@ -1,4 +1,4 @@
-Instance: PractitionerDoctor1
+Instance: practitioner-doctor1
 InstanceOf: Practitioner
 Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 1"
 Description: "ข้อมูลแพทย์รายที่ 1"
@@ -40,7 +40,7 @@ Usage: #example
     * coding[0] = $SCT#309343006 "Physician"
   * period
     * start = "1986-04-25"
-  * issuer = Reference(Organization/OrganizationMedicalCouncil)
+  * issuer = Reference(Organization/organization-medical-council)
     * extension[0]
       * url = $EX_TH_QualificationIssuer
       * valueCodeableConcept

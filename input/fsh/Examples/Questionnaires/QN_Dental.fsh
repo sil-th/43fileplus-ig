@@ -1,6 +1,6 @@
-Instance: TH-dental
+Instance: questionnaire-dental
 InstanceOf: Questionnaire
-Title: "แบบสำรวจการตรวจสภาวะทันตสุขภาพของฟัน"
+Title: "ตัวอย่าง Questionnaire: แบบสำรวจการตรวจสภาวะทันตสุขภาพของฟัน"
 Description: "ใช้ประกอบการรายงานแฟ้ม DENTAL"
 Usage: #example
 * url = $QN_TH_Dental

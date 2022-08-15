@@ -1,4 +1,4 @@
-Instance: Patient2
+Instance: patient-patient2
 InstanceOf: Patient
 Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 2 ชายต่างชาติ"
 Description: "ตัวอย่างการบันทึกข้อมูลกรณีชาวต่างชาติ เฉพาะส่วนที่เกี่ยวข้องกับชาวต่างชาติ"

@@ -1,4 +1,4 @@
-Instance: AllergyIntolerance1
+Instance: allergyintolerance-patient4
 InstanceOf: AllergyIntolerance
 Title: "ตัวอย่าง AllergyIntolerance: ประวัติการแพ้ยาและสิ่งอื่น ๆ"
 Description: "ประวัติการแพ้ยา อาหาร เวชภัณฑ์ สิ่งแวดล้อม สารเคมี ฯลฯ"
@@ -17,7 +17,7 @@ Usage: #example
     * coding[0] = $CS_THCC_AllergyAssertType#3 "สถานพยาบาลอื่นเป็นผู้ให้ข้อมูล"
 * extension[+]
   * url = $EX_TH_AllergyAssertOrg
-  * valueReference = Reference(Organization/OrganizationMain)
+  * valueReference = Reference(Organization/organization-main)
 * clinicalStatus = $CS_HL7_AlleryActive#active "Active"
 * verificationStatus
   * coding[0] = $CS_HL7_AllergyVerify#confirmed "Confirmed"
@@ -28,9 +28,9 @@ Usage: #example
   * coding[+] = $CS_24Drug#100176000004493120381620 "AMOXICILLIN 500 MG TABLET, ORAL"
   * coding[+] = $ID_LO_Drug#1233 "Local code amoxycillin 500 mg"
   * text = "Amoxycillin 500 mg"
-* patient = Reference(Patient/Patient4)
+* patient = Reference(Patient/patient-patient4)
 * recordedDate = "2022-05-29"
-* recorder = Reference(Practitioner/PractitionerDoctor1)
+* recorder = Reference(Practitioner/practitioner-doctor1)
 * reaction
   * manifestation
     * coding[0] = $SCT#28926001 "Eruption caused by drug"

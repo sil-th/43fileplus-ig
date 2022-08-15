@@ -1,6 +1,6 @@
-Instance: File31Document
+Instance: bundle-file31-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 31: NCDSCREEN"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 31: NCDSCREEN"
 Description: "ข้อมูลการให้บริการคัดกรองโรคเบาหวานและความดันโลหิตสูงสำหรับผู้ที่มารับบริการ ประกอบด้วย Patient, Encounter, Condition, และ Observation resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,74 +8,74 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File31Composition"
-  * resource = File31Composition
+  * fullUrl = "http://example.org/Composition/composition-file-31"
+  * resource = composition-file-31
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient4"
-  * resource = Patient4
+  * fullUrl = "http://example.org/Patient/patient-patient4"
+  * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/NcdEncounter1"
-  * resource = NcdEncounter1
+  * fullUrl = "http://example.org/Encounter/encounter-ncd1"
+  * resource = encounter-ncd1
 * entry[+]
-  * fullUrl = "http://example.org/Condition/NcdConditionSum"
-  * resource = NcdConditionSum
+  * fullUrl = "http://example.org/Condition/condition-ncd-summary"
+  * resource = condition-ncd-summary
 * entry[+]
-  * fullUrl = "http://example.org/Condition/NcdCondition1"
-  * resource = NcdCondition1
+  * fullUrl = "http://example.org/Condition/condition-ncd1"
+  * resource = condition-ncd1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdVitalSignsPanel"
-  * resource = ObsNcdVitalSignsPanel
+  * fullUrl = "http://example.org/Observation/observation-ncd-vitalpanel1"
+  * resource = observation-ncd-vitalpanel1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdWt01"
-  * resource = ObsNcdWt01
+  * fullUrl = "http://example.org/Observation/observation-ncd-wt1"
+  * resource = observation-ncd-wt1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdHt01"
-  * resource = ObsNcdHt01
+  * fullUrl = "http://example.org/Observation/observation-ncd-ht1"
+  * resource = observation-ncd-ht1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdBp01"
-  * resource = ObsNcdBp01
+  * fullUrl = "http://example.org/Observation/observation-ncd-bp1"
+  * resource = observation-ncd-bp1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdBp02"
-  * resource = ObsNcdBp02
+  * fullUrl = "http://example.org/Observation/observation-ncd-bp2"
+  * resource = observation-ncd-bp2
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdWC01"
-  * resource = ObsNcdWC01
+  * fullUrl = "http://example.org/Observation/observation-ncd-wc1"
+  * resource = observation-ncd-wc1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdSmoking"
-  * resource = ObsNcdSmoking
+  * fullUrl = "http://example.org/Observation/observation-ncd-smoking1"
+  * resource = observation-ncd-smoking1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdAlcohol"
-  * resource = ObsNcdAlcohol
+  * fullUrl = "http://example.org/Observation/observation-ncd-alcohol1"
+  * resource = observation-ncd-alcohol1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdDMFamily"
-  * resource = ObsNcdDMFamily
+  * fullUrl = "http://example.org/Observation/observation-ncd-dm-fam1"
+  * resource = observation-ncd-dm-fam1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdHTFamily"
-  * resource = ObsNcdHTFamily
+  * fullUrl = "http://example.org/Observation/observation-ncd-ht-fam1"
+  * resource = observation-ncd-ht-fam1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdFbs"
-  * resource = ObsNcdFbs
+  * fullUrl = "http://example.org/Observation/observation-ncd-fbs"
+  * resource = observation-ncd-fbs
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsHighGlucoseHx"
-  * resource = ObsHighGlucoseHx
+  * fullUrl = "http://example.org/Observation/observation-ncd-hi-glucose1"
+  * resource = observation-ncd-hi-glucose1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdDyslipedima"
-  * resource = ObsNcdDyslipedima
+  * fullUrl = "http://example.org/Observation/observation-ncd-dyslipid1"
+  * resource = observation-ncd-dyslipid1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdGestDM"
-  * resource = ObsNcdGestDM
+  * fullUrl = "http://example.org/Observation/observation-ncd-gest-dm1"
+  * resource = observation-ncd-gest-dm1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdFootExam"
-  * resource = ObsNcdFootExam
+  * fullUrl = "http://example.org/Observation/observation-ncd-foot1"
+  * resource = observation-ncd-foot1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsNcdRetinaExam"
-  * resource = ObsNcdRetinaExam
+  * fullUrl = "http://example.org/Observation/observation-ncd-retina1"
+  * resource = observation-ncd-retina1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
 
-Instance: File31Composition
+Instance: composition-file-31
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 31: NCDSCREEN"
 Description: "Composition ของแฟ้มที่ 31"
@@ -84,32 +84,32 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#31 "NCDSCREEN"
-* subject = Reference(Patient/Patient4)
+* subject = Reference(Patient/patient-patient4)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 31 NCDSCREEN: ข้อมูลการให้บริการคัดกรองโรคเบาหวานและความดันโลหิตสูงสำหรับผู้ที่มารับบริการ"
 * section[0]
   * title = "ข้อมูลผู้ป่วย"
-  * entry[0] = Reference(Patient/Patient4)
+  * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ข้อมูลการรับบริการคัดกรอง"
-  * entry[0] = Reference(Encounter/NcdEncounter1)
-  * entry[+] = Reference(Condition/NcdConditionSum)
-  * entry[+] = Reference(Condition/NcdCondition1)
-  * entry[+] = Reference(Observation/ObsNcdVitalSignsPanel)
-  * entry[+] = Reference(Observation/ObsNcdWt01)
-  * entry[+] = Reference(Observation/ObsNcdHt01)
-  * entry[+] = Reference(Observation/ObsNcdBp01)
-  * entry[+] = Reference(Observation/ObsNcdBp02)
-  * entry[+] = Reference(Observation/ObsNcdWC01)
-  * entry[+] = Reference(Observation/ObsNcdSmoking)
-  * entry[+] = Reference(Observation/ObsNcdAlcohol)
-  * entry[+] = Reference(Observation/ObsNcdDMFamily)
-  * entry[+] = Reference(Observation/ObsNcdHTFamily)
-  * entry[+] = Reference(Observation/ObsNcdFbs)
-  * entry[+] = Reference(Observation/ObsHighGlucoseHx)
-  * entry[+] = Reference(Observation/ObsNcdDyslipedima)
-  * entry[+] = Reference(Observation/ObsNcdGestDM)
-  * entry[+] = Reference(Observation/ObsNcdFootExam)
-  * entry[+] = Reference(Observation/ObsNcdRetinaExam)
+  * entry[0] = Reference(Encounter/encounter-ncd1)
+  * entry[+] = Reference(Condition/condition-ncd-summary)
+  * entry[+] = Reference(Condition/condition-ncd1)
+  * entry[+] = Reference(Observation/observation-ncd-vitalpanel1)
+  * entry[+] = Reference(Observation/observation-ncd-wt1)
+  * entry[+] = Reference(Observation/observation-ncd-ht1)
+  * entry[+] = Reference(Observation/observation-ncd-bp1)
+  * entry[+] = Reference(Observation/observation-ncd-bp2)
+  * entry[+] = Reference(Observation/observation-ncd-wc1)
+  * entry[+] = Reference(Observation/observation-ncd-smoking1)
+  * entry[+] = Reference(Observation/observation-ncd-alcohol1)
+  * entry[+] = Reference(Observation/observation-ncd-dm-fam1)
+  * entry[+] = Reference(Observation/observation-ncd-ht-fam1)
+  * entry[+] = Reference(Observation/observation-ncd-fbs)
+  * entry[+] = Reference(Observation/observation-ncd-hi-glucose1)
+  * entry[+] = Reference(Observation/observation-ncd-dyslipid1)
+  * entry[+] = Reference(Observation/observation-ncd-gest-dm1)
+  * entry[+] = Reference(Observation/observation-ncd-foot1)
+  * entry[+] = Reference(Observation/observation-ncd-retina1)

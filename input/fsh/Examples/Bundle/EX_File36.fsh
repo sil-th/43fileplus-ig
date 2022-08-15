@@ -1,6 +1,6 @@
-Instance: File36Document
+Instance: bundle-file36-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 36: POSTNATAL"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 36: POSTNATAL"
 Description: "ข้อมูลประวัติการดูแลมารดาหลังคลอด ของหญิงคลอดในเขตรับผิดชอบ และหญิงคลอดผู้มารับบริการ ประกอบด้วย Patient, Encounter, Observation, และ Appointment resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,56 +8,56 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File36Composition"
-  * resource = File36Composition
+  * fullUrl = "http://example.org/Composition/composition-file-36"
+  * resource = composition-file-36
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient6"
-  * resource = Patient6
+  * fullUrl = "http://example.org/Patient/patient-patient6"
+  * resource = patient-patient6
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/PostnatalEncounter1"
-  * resource = PostnatalEncounter1
+  * fullUrl = "http://example.org/Encounter/encounter-postnatal1"
+  * resource = encounter-postnatal1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalGravida"
-  * resource = ObsPostnatalGravida
+  * fullUrl = "http://example.org/Observation/observation-postnatal-gravida1"
+  * resource = observation-postnatal-gravida1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalBirthDate"
-  * resource = ObsPostnatalBirthDate
+  * fullUrl = "http://example.org/Observation/observation-postnatal-birth-date1"
+  * resource = observation-postnatal-birth-date1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalFundalHeight"
-  * resource = ObsPostnatalFundalHeight
+  * fullUrl = "http://example.org/Observation/observation-postnatal-fundal-height1"
+  * resource = observation-postnatal-fundal-height1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalLochia"
-  * resource = ObsPostnatalLochia
+  * fullUrl = "http://example.org/Observation/observation-postnatal-lochia1"
+  * resource = observation-postnatal-lochia1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalnipple"
-  * resource = ObsPostnatalnipple
+  * fullUrl = "http://example.org/Observation/observation-postnatal-nipple1"
+  * resource = observation-postnatal-nipple1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalBreastfeeding"
-  * resource = ObsPostnatalBreastfeeding
+  * fullUrl = "http://example.org/Observation/observation-postnatal-breastfeeding1"
+  * resource = observation-postnatal-breastfeeding1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalMens"
-  * resource = ObsPostnatalMens
+  * fullUrl = "http://example.org/Observation/observation-postnatal-mens1"
+  * resource = observation-postnatal-mens1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalUrineProtein"
-  * resource = ObsPostnatalUrineProtein
+  * fullUrl = "http://example.org/Observation/observation-postnatal-urine-protein1"
+  * resource = observation-postnatal-urine-protein1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalUrineSugar"
-  * resource = ObsPostnatalUrineSugar
+  * fullUrl = "http://example.org/Observation/observation-postnatal-urine-sugar1"
+  * resource = observation-postnatal-urine-sugar1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalPerineum"
-  * resource = ObsPostnatalPerineum
+  * fullUrl = "http://example.org/Observation/observation-postnatal-perineum1"
+  * resource = observation-postnatal-perineum1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsPostnatalStatus"
-  * resource = ObsPostnatalStatus
+  * fullUrl = "http://example.org/Observation/observation-postnatal-status1"
+  * resource = observation-postnatal-status1
 * entry[+]
-  * fullUrl = "http://example.org/Appointment/PostLaborAppointment"
-  * resource = PostLaborAppointment
+  * fullUrl = "http://example.org/Appointment/appointment-postnatal"
+  * resource = appointment-postnatal
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
 
-Instance: File36Composition
+Instance: composition-file-36
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 36: POSTNATAL"
 Description: "Composition ของแฟ้มที่ 36"
@@ -66,28 +66,28 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#36 "POSTNATAL"
-* subject = Reference(Patient/Patient6)
+* subject = Reference(Patient/patient-patient6)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 36 POSTNATAL: ข้อมูลประวัติการดูแลมารดาหลังคลอด ของหญิงคลอดในเขตรับผิดชอบ และหญิงคลอดผู้มารับบริการ"
 * section[0]
   * title = "ข้อมูลผู้ป่วย"
-  * entry[0] = Reference(Patient/Patient6)
+  * entry[0] = Reference(Patient/patient-patient6)
 * section[+]
   * title = "ข้อมูลการตรวจ"
-  * entry[0] = Reference(Encounter/PostnatalEncounter1)
-  * entry[+] = Reference(Observation/ObsPostnatalGravida)
-  * entry[+] = Reference(Observation/ObsPostnatalBirthDate)
-  * entry[+] = Reference(Observation/ObsPostnatalFundalHeight)
-  * entry[+] = Reference(Observation/ObsPostnatalLochia)
-  * entry[+] = Reference(Observation/ObsPostnatalnipple)
-  * entry[+] = Reference(Observation/ObsPostnatalBreastfeeding)
-  * entry[+] = Reference(Observation/ObsPostnatalMens)
-  * entry[+] = Reference(Observation/ObsPostnatalUrineProtein)
-  * entry[+] = Reference(Observation/ObsPostnatalUrineSugar)
-  * entry[+] = Reference(Observation/ObsPostnatalPerineum)
-  * entry[+] = Reference(Observation/ObsPostnatalStatus)
+  * entry[0] = Reference(Encounter/encounter-postnatal1)
+  * entry[+] = Reference(Observation/observation-postnatal-gravida1)
+  * entry[+] = Reference(Observation/observation-postnatal-birth-date1)
+  * entry[+] = Reference(Observation/observation-postnatal-fundal-height1)
+  * entry[+] = Reference(Observation/observation-postnatal-lochia1)
+  * entry[+] = Reference(Observation/observation-postnatal-nipple1)
+  * entry[+] = Reference(Observation/observation-postnatal-breastfeeding1)
+  * entry[+] = Reference(Observation/observation-postnatal-mens1)
+  * entry[+] = Reference(Observation/observation-postnatal-urine-protein1)
+  * entry[+] = Reference(Observation/observation-postnatal-urine-sugar1)
+  * entry[+] = Reference(Observation/observation-postnatal-perineum1)
+  * entry[+] = Reference(Observation/observation-postnatal-status1)
 * section[+]
   * title = "ข้อมูลการนัด"
-  * entry[0] = Reference(Appointment/PostLaborAppointment)
+  * entry[0] = Reference(Appointment/Postappointment-labor)

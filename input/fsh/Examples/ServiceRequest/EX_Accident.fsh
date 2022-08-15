@@ -1,5 +1,5 @@
 // Refer Out
-Instance: ReferOutAccidentEncounter1
+Instance: servicerequest-refer-out-accident1
 InstanceOf: ServiceRequest
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Description: "การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
@@ -11,7 +11,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * code = $CS_THCC_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
-* encounter = Reference(Encounter/AccidentEncounter1)
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
+* encounter = Reference(Encounterencounter-accident1)
 * authoredOn = "2022-03-01"
-* requester = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+* requester = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

@@ -1,14 +1,14 @@
-Instance: QnVillageAnswer
+Instance: questionnaireresponse-village1
 InstanceOf: QuestionnaireResponse
 Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน"
 Description: "ใช้ประกอบการรายงานแฟ้ม VILLAGE"
 Usage: #example
 * questionnaire = $QN_TH_Village
 * status = #completed
-* subject = Reference(Location/Village1)
+* subject = Reference(Location/location-village1)
 * subject.type = "Location"
 * authored = "2022-02-19T14:15:00+07:00"
-* author = Reference(Practitioner/PractitionerVolunteer1)
+* author = Reference(Practitioner/practitioner-volunteer1)
 * author.type = "Practitioner"
 * item[0]
   * linkId = "1"

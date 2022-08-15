@@ -1,4 +1,4 @@
-Instance: PractitionerDentist1
+Instance: practitioner-dentist1
 InstanceOf: Practitioner
 Title: "ตัวอย่าง Practitioner: ทันตแพทย์ รายที่ 1"
 Description: "ข้อมูลทันตแพทย์รายที่ 1"

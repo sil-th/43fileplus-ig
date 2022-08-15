@@ -1,4 +1,4 @@
-Instance: LaborProcedure01
+Instance: procedure-labor1
 InstanceOf: Procedure
 Title: "ตัวอย่าง Procedure: วิธีการคลอด"
 Description: "วิธีการคลอด"
@@ -8,12 +8,12 @@ Usage: #example
   * coding[0] = $SCT#177184002 "Normal delivery procedure"
   * coding[+] = $CS_THCC_LaborProcedure#1 "NORMAL"
   * text = "Normal delivery procedure"
-* subject = Reference(Patient/Patient6) "นาง สมฤทัย ใจดี"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * performedDateTime = "2022-01-21T13:30:02+07:00"
 * performer[0]
   * function = $CS_THCC_LaborPerformerRole#1 "แพทย์"
-  * actor = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
-  * onBehalfOf = Reference(Organization/OrganizationMain)
+  * actor = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+  * onBehalfOf = Reference(Organization/organization-main)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * location
   * extension[0]

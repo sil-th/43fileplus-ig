@@ -1,4 +1,4 @@
-Instance: OrganizationNHSO
+Instance: organization-nhso
 InstanceOf: Organization
 Title: "ตัวอย่าง Organization: สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
 Description: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
@@ -27,7 +27,7 @@ Description: "สำนักงานหลักประกันสุขภ
   * country = "TH"
 
 
-Instance: OrganizationSSO
+Instance: organization-sso
 InstanceOf: Organization
 Title: "ตัวอย่าง Organization: สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
 Description: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"

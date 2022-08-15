@@ -1,4 +1,4 @@
-Instance: AccidentCondition1
+Instance: condition-accident1
 InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
@@ -11,8 +11,8 @@ Usage: #example
   * coding[0] = $SCT#53627009 "Closed fracture of radius AND ulna"
   * coding[+] = $ICD10#S52.7 "Multiple fractures of forearm"
   * text = "Closed fracture of radius AND ulna"
-* subject = Reference(Patient/Patient4) "นาง สมควร ใจดี"
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2022-03-01T14:30:02+07:00"
-* recorder = Reference(Practitioner/PractitionerDoctor1) "พญ. สมหญิง จริงใจ"
+* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * note
   * text = "ข้อความอธิบายรายละเอียดอุบัติเหตุ"

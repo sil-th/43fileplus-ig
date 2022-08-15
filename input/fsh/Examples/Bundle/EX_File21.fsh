@@ -1,6 +1,6 @@
-Instance: File21Document
+Instance: bundle-file21-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 21: LABFU"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 21: LABFU"
 Description: "ข้อมูลการตรวจทางห้องปฏิบัติการของผู้ป่วยทุกราย ประกอบด้วย Patient, Encounter, DiagnosticReport, Observation และ Claim resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,41 +8,41 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File21Composition"
-  * resource = File21Composition
+  * fullUrl = "http://example.org/Composition/composition-file-21"
+  * resource = composition-file-21
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient4"
-  * resource = Patient4
+  * fullUrl = "http://example.org/Patient/patient-patient4"
+  * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/LabEncounter1"
-  * resource = LabEncounter1
+  * fullUrl = "http://example.org/Encounter/encounter-lab1"
+  * resource = encounter-lab1
 * entry[+]
-  * fullUrl = "http://example.org/DiagnosticReport/LipidDiagnosticReport"
-  * resource = LipidDiagnosticReport
+  * fullUrl = "http://example.org/DiagnosticReport/diagnostic-report-lipid1"
+  * resource = diagnostic-report-lipid1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsChol"
-  * resource = ObsChol
+  * fullUrl = "http://example.org/Observation/observation-lab-chol"
+  * resource = observation-lab-chol
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsTG"
-  * resource = ObsTG
+  * fullUrl = "http://example.org/Observation/observation-lab-tg"
+  * resource = observation-lab-tg
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsLDL"
-  * resource = ObsLDL
+  * fullUrl = "http://example.org/Observation/observation-lab-ldl"
+  * resource = observation-lab-ldl
 * entry[+]
-  * fullUrl = "http://example.org/Observation/ObsHDL"
-  * resource = ObsHDL
+  * fullUrl = "http://example.org/Observation/observation-lab-hdl"
+  * resource = observation-lab-hdl
 * entry[+]
-  * fullUrl = "http://example.org/Specimen/SpecimenLipid"
-  * resource = SpecimenLipid
+  * fullUrl = "http://example.org/Specimen/specimen-lab-lipid"
+  * resource = specimen-lab-lipid
 * entry[+]
-  * fullUrl = "http://example.org/Claim/ClaimLabEncounter1"
-  * resource = ClaimLabEncounter1
+  * fullUrl = "http://example.org/Claim/claim-lab-encounter1"
+  * resource = claim-lab-encounter1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 
 
-Instance: File21Composition
+Instance: composition-file-21
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 21: LABFU"
 Description: "Composition ของแฟ้มที่ 21"
@@ -51,23 +51,23 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#21 "LABFU"
-* subject = Reference(Patient/Patient4)
+* subject = Reference(Patient/patient-patient4)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 21 LABFU: ข้อมูลการตรวจทางห้องปฏิบัติการของผู้ป่วยทุกราย"
 * section[0]
   * title = "ข้อมูลผู้ป่วย"
-  * entry[0] = Reference(Patient/Patient4)
+  * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ผลการตรวจทางห้องปฏิบัติการ"
-  * entry[0] = Reference(Encounter/LabEncounter1)
-  * entry[+] = Reference(DiagnosticReport/LipidDiagnosticReport)
-  * entry[+] = Reference(Observation/ObsChol)
-  * entry[+] = Reference(Observation/ObsTG)
-  * entry[+] = Reference(Observation/ObsLDL)
-  * entry[+] = Reference(Observation/ObsHDL)
-  * entry[+] = Reference(Specimen/SpecimenLipid)
+  * entry[0] = Reference(Encounter/encounter-lab1)
+  * entry[+] = Reference(DiagnosticReport/diagnostic-report-lipid1)
+  * entry[+] = Reference(Observation/observation-lab-chol)
+  * entry[+] = Reference(Observation/observation-lab-tg)
+  * entry[+] = Reference(Observation/observation-lab-ldl)
+  * entry[+] = Reference(Observation/observation-lab-hdl)
+  * entry[+] = Reference(Specimen/specimen-lab-lipid)
 * section[+]
   * title = "ข้อมูลทางการเงิน"
-  * entry[0] = Reference(Claim/ClaimLabEncounter1)
+  * entry[0] = Reference(Claim/claim-lab-encounter1)

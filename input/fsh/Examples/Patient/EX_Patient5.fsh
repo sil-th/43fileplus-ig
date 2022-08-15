@@ -1,4 +1,4 @@
-Instance: Patient5
+Instance: patient-patient5
 InstanceOf: Patient
 Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 5 เด็กหญิงไทย"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"

@@ -1,14 +1,14 @@
-Instance: QnHomeAnswer
+Instance: questionnaireresponse-home1
 InstanceOf: QuestionnaireResponse
 Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจด้านสุขาภิบาลของครัวเรือน"
 Description: "ใช้ประกอบการรายงานแฟ้ม HOME"
 Usage: #example
 * questionnaire = $QN_TH_Home
 * status = #completed
-* subject = Reference(Location/Patient1Home)
+* subject = Reference(Location/location-patient1-home1)
 * subject.type = "Location"
 * authored = "2022-02-19T14:15:00+07:00"
-* author = Reference(Practitioner/PractitionerVolunteer1)
+* author = Reference(Practitioner/practitioner-volunteer1)
 * author.type = "Practitioner"
 * item[0]
   * linkId = "1"

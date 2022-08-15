@@ -1,6 +1,6 @@
-Instance: File3Document
+Instance: bundle-file03-document
 InstanceOf: Bundle
-Title: "ตัวอย่าง แฟ้มที่ 3: DEATH"
+Title: "ตัวอย่าง Bundle - แฟ้มที่ 3: DEATH"
 Description: "ข้อมูลประวัติการเสียชีวิตของประชาชนทุกคนที่อาศัยในเขตรับผิดชอบ และผู้ป่วยที่มารับบริการ ประกอบด้วย Patient, Encounter และ Observation resource"
 Usage: #example
 * identifier.system = $ID_documentId
@@ -8,29 +8,29 @@ Usage: #example
 * type = #document
 * timestamp = "2022-07-29T12:30:02+07:00"
 * entry[0]
-  * fullUrl = "http://example.org/Composition/File3Composition"
-  * resource = File3Composition
+  * fullUrl = "http://example.org/Composition/composition-file-03"
+  * resource = composition-file-03
 * entry[+]
-  * fullUrl = "http://example.org/Patient/Patient3"
-  * resource = Patient3
+  * fullUrl = "http://example.org/Patient/patient-patient3"
+  * resource = patient-patient3
 * entry[+]
-  * fullUrl = "http://example.org/Observation/CauseOfDeath1"
-  * resource = CauseOfDeath1
+  * fullUrl = "http://example.org/Observation/observation-cause-of-death1"
+  * resource = observation-cause-of-death1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/CauseOfDeath2"
-  * resource = CauseOfDeath2
+  * fullUrl = "http://example.org/Observation/observation-cause-of-death2"
+  * resource = observation-cause-of-death2
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/DeathEncounter"
-  * resource = DeathEncounter
+  * fullUrl = "http://example.org/Encounter/encounter-death1"
+  * resource = encounter-death1
 * entry[+]
-  * fullUrl = "http://example.org/Organization/OrganizationMain"
-  * resource = OrganizationMain
+  * fullUrl = "http://example.org/Organization/organization-main"
+  * resource = organization-main
 * entry[+]
-  * fullUrl = "http://example.org/Practitioner/PractitionerDoctor1"
-  * resource = PractitionerDoctor1
+  * fullUrl = "http://example.org/Practitioner/practitioner-doctor1"
+  * resource = practitioner-doctor1
 
 
-Instance: File3Composition
+Instance: composition-file-03
 InstanceOf: Composition
 Title: "ตัวอย่าง Composition แฟ้มที่ 3: DEATH"
 Description: "Composition ของแฟ้มที่ 3"
@@ -39,21 +39,21 @@ Usage: #example
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
   * coding[+] = $CS_THCC_43fileType#3 "DEATH"
-* subject = Reference(Patient/Patient3)
+* subject = Reference(Patient/patient-patient3)
 * date = "2022-07-29T12:30:02+07:00"
-* author[0] = Reference(Organization/OrganizationMain)
+* author[0] = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
-* author[+] = Reference(Practitioner/PractitionerDoctor1)
+* author[+] = Reference(Practitioner/practitioner-doctor1)
   * insert GeneralReference($ID_LO_Provider, "XXXXX", "พญ. สมหญิง จริงใจ")
 * title = "แฟ้มที่ 3 DEATH: ข้อมูลประวัติการเสียชีวิตของประชาชนทุกคนที่อาศัยในเขตรับผิดชอบ และผู้ป่วยที่มารับบริการ"
 * section[0]
   * title = "ข้อมูลผู้เสียชีวิต"
-  * entry[0] = Reference(Patient/Patient3)
+  * entry[0] = Reference(Patient/patient-patient3)
 * section[+]
   * title = "สาเหตุการเสียชีิวิต"
-  * entry[0] = Reference(Observation/CauseOfDeath1)
-  * entry[+] = Reference(Observation/CauseOfDeath2)
+  * entry[0] = Reference(Observation/observation-cause-of-death1)
+  * entry[+] = Reference(Observation/observation-cause-of-death2)
 * section[+]
   * title = "รายละเอียดเพ่ิมเติม"
-  * entry[0] = Reference(Encounter/DeathEncounter)
+  * entry[0] = Reference(Encounter/encounter-death1)
 

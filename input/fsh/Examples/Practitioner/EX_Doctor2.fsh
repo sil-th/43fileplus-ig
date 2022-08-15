@@ -1,4 +1,4 @@
-Instance: PractitionerDoctor2
+Instance: practitioner-doctor2
 InstanceOf: Practitioner
 Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 2"
 Description: "ข้อมูลแพทย์รายที่ 2"

@@ -1,4 +1,4 @@
-Instance: Patient1
+Instance: patient-patient1
 InstanceOf: Patient
 Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 1 ชายไทย"
 Description: "มีข้อมูลครบถ้วนสมบูรณ์ ซึ่งจะมีรายละเอียดค่อนข้างมาก ในการใช้งานจริงอาจลดทอนรายละเอียดลง หรือเพิ่มเติมข้อมูลเข้าไปได้เช่นกัน"
@@ -132,7 +132,7 @@ Usage: #example
       * valueString = "ซอยนครอินทร์ 20"
   * extension[+]
     * url = $EX_TH_HomeReference
-    * valueReference = Reference(Patient1Home)
+    * valueReference = Reference(location-patient1-home1)
       * insert GeneralReference($ID_DopaHouseNo, "XXXXXXXXXXX", "123 คอนโดพัฒนานนท์")
   * extension[+]
     * url = $EX_TH_HouseType
@@ -146,6 +146,6 @@ Usage: #example
   * postalCode = "11000"
 * maritalStatus = $CS_HL7_MaritalStatus#M "Married"
   * coding[1] = $CS_THCC_Marital#2 "คู่"
-* generalPractitioner = Reference(PractitionerDoctor1)
+* generalPractitioner = Reference(practitioner-doctor1)
   * insert GeneralReference($ID_ThaiDoctor, "XXXXX" , "พญ. สมหญิง จริงใจ")
 

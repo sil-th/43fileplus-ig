@@ -1,6 +1,6 @@
-Instance: TH-village
+Instance: questionnaire-village
 InstanceOf: Questionnaire
-Title: "แบบสำรวจข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน"
+Title: "ตัวอย่าง Questionnaire: แบบสำรวจข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน"
 Description: "ใช้ประกอบการรายงานแฟ้ม VILLAGE"
 Usage: #example
 * url = $QN_TH_Village

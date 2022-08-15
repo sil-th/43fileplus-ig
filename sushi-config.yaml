@@ -23,7 +23,7 @@ parameters:
   apply-publisher: true
   apply-contact: true
   show-inherited-invariants: false
-copyrightYear: 2020+
+copyrightYear: 2022+
 releaseLabel: ci-build
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
