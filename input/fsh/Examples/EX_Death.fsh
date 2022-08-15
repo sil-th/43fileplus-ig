@@ -3,7 +3,7 @@
 
 Instance: CauseOfDeath1
 InstanceOf: Observation
-Title: "สาเหตุการเสียชีวิตของผู้ป่วยรายที่ 3"
+Title: "ตัวอย่าง Observation: สาเหตุการเสียชีวิตของผู้ป่วยรายที่ 3"
 Description: "แสดงการเสียชีวิตจาก cardiac arrest"
 Usage: #example
 * status = #final
@@ -20,7 +20,7 @@ Usage: #example
 
 Instance: CauseOfDeath2
 InstanceOf: Observation
-Title: "รหัสโรคหรือภาวะอื่นที่เป็นเหตุหนุน"
+Title: "ตัวอย่าง Observation: รหัสโรคหรือภาวะอื่นที่เป็นเหตุหนุน"
 Description: "แสดงการมีภาวะความดันโลหิตสูงวิกฤติหนุ่น"
 Usage: #example
 * status = #final
@@ -33,7 +33,7 @@ Usage: #example
 
 Instance: DeathEncounter
 InstanceOf: Encounter
-Title: "สถานบริการที่เสียชีวิต"
+Title: "ตัวอย่าง Encounter: สถานบริการที่เสียชีวิต"
 Description: "สถานบริการที่เสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
 Usage: #example
 * extension[0]

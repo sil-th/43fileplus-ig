@@ -26,7 +26,7 @@ Usage: #example
 
 Instance: File13Composition
 InstanceOf: Composition
-Title: "Composition แฟ้มที่ 13: ICF"
+Title: "ตัวอย่าง Composition แฟ้มที่ 13: ICF"
 Description: "Composition ของแฟ้มที่ 13"
 Usage: #example
 * status = #final

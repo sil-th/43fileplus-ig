@@ -1,6 +1,6 @@
 Instance: CoverageUC
 InstanceOf: Coverage
-Title: "หลักประกันสุขภาพถ้วนหน้า"
+Title: "ตัวอย่าง Coverage: หลักประกันสุขภาพถ้วนหน้า"
 Description: "แสดงการบันทึกสิทธิหลักประกันสุขภาพถ้วนหน้า"
 Usage: #example
 * extension[0]
@@ -62,7 +62,7 @@ Usage: #example
 
 Instance: CoverageSSO
 InstanceOf: Coverage
-Title: "สิทธิประกันสังคม"
+Title: "ตัวอย่าง Coverage: สิทธิประกันสังคม"
 Description: "แสดงการบันทึกสิทธิประกันสังคม"
 Usage: #example
 * identifier

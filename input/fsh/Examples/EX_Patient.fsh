@@ -1,6 +1,6 @@
 Instance: Patient1
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 1 ชายไทย"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 1 ชายไทย"
 Description: "มีข้อมูลครบถ้วนสมบูรณ์ ซึ่งจะมีรายละเอียดค่อนข้างมาก ในการใช้งานจริงอาจลดทอนรายละเอียดลง หรือเพิ่มเติมข้อมูลเข้าไปได้เช่นกัน"
 Usage: #example
 * extension[0]
@@ -152,7 +152,7 @@ Usage: #example
 
 Instance: Patient2
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 2 ชายต่างชาติ"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 2 ชายต่างชาติ"
 Description: "ตัวอย่างการบันทึกข้อมูลกรณีชาวต่างชาติ เฉพาะส่วนที่เกี่ยวข้องกับชาวต่างชาติ"
 Usage: #example
 * extension[0]
@@ -224,7 +224,7 @@ Usage: #example
 
 Instance: Patient3
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 3 หญิงไทย พิการ ย้ายออก และเสียชีวิตแล้ว"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 3 หญิงไทย พิการ ย้ายออก และเสียชีวิตแล้ว"
 Description: "ตัวอย่างการบันทึกข้อมูล กรณีผู้ป่วยพิการ ย้ายออก และเสียชีวิตแล้ว (ข้อมูลโดยย่อ เฉพาะประเด็นสำคัญ)"
 Usage: #example
 * extension[+]
@@ -282,7 +282,7 @@ Usage: #example
 
 Instance: Patient4
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 4 หญิงไทย โรคเรื้อรัง"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 4 หญิงไทย โรคเรื้อรัง"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
 Usage: #example
 * identifier[0]
@@ -360,7 +360,7 @@ Usage: #example
 
 Instance: Patient5
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 5 เด็กหญิงไทย"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 5 เด็กหญิงไทย"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
 Usage: #example
 * identifier[0]
@@ -408,7 +408,7 @@ Usage: #example
 
 Instance: Patient6
 InstanceOf: Patient
-Title: "ผู้ป่วยรายที่ 6 หญิงไทย ตั้งครรภ์และคลอด"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 6 หญิงไทย ตั้งครรภ์และคลอด"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
 Usage: #example
 * identifier[0]

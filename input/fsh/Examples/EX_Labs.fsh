@@ -1,6 +1,6 @@
 Instance: LipidDiagnosticReport
 InstanceOf: DiagnosticReport
-Title: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
+Title: "ตัวอย่าง DiagnosticReport: ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 Description: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 Usage: #example
 * identifier
@@ -27,7 +27,7 @@ Usage: #example
 
 Instance: ObsChol
 InstanceOf: Observation
-Title: "ผลการตรวจ Cholesterol"
+Title: "ตัวอย่าง Observation: ผลการตรวจ Cholesterol"
 Description: "ผลการตรวจ Cholesterol"
 Usage: #example
 * status = #final
@@ -46,7 +46,7 @@ Usage: #example
 
 Instance: ObsTG
 InstanceOf: Observation
-Title: "ผลการตรวจ Triglyceride"
+Title: "ตัวอย่าง Observation: ผลการตรวจ Triglyceride"
 Description: "ผลการตรวจ Triglyceride"
 Usage: #example
 * status = #final
@@ -65,7 +65,7 @@ Usage: #example
 
 Instance: ObsLDL
 InstanceOf: Observation
-Title: "ผลการตรวจ LDL"
+Title: "ตัวอย่าง Observation: ผลการตรวจ LDL"
 Description: "ผลการตรวจ LDL"
 Usage: #example
 * status = #final
@@ -84,7 +84,7 @@ Usage: #example
 
 Instance: ObsHDL
 InstanceOf: Observation
-Title: "ผลการตรวจ HDL"
+Title: "ตัวอย่าง Observation: ผลการตรวจ HDL"
 Description: "ผลการตรวจ HDL"
 Usage: #example
 * status = #final
@@ -104,7 +104,7 @@ Usage: #example
 
 Instance: SpecimenLipid
 InstanceOf: Specimen
-Title: "สิ่งส่งตรวจ Lipid Profile"
+Title: "ตัวอย่าง Specimen: สิ่งส่งตรวจ Lipid Profile"
 Description: "สิ่งส่งตรวจ Lipid Profile"
 Usage: #example
 * type = $SCT#119364003 "Serum specimen"

@@ -1,6 +1,6 @@
 Instance: Contraceptive
 InstanceOf: Observation
-Title: "รหัสวิธีการคุมกำเนิดปัจจุบัน"
+Title: "ตัวอย่าง Observation: รหัสวิธีการคุมกำเนิดปัจจุบัน"
 Description: "รหัสวิธีการคุมกำเนิดปัจจุบัน"
 Usage: #example
 * status = #final
@@ -17,7 +17,7 @@ Usage: #example
 
 Instance: NoContraceptiveReason
 InstanceOf: Observation
-Title: "สาเหตุที่ไม่คุมกำเนิด"
+Title: "ตัวอย่าง Observation: สาเหตุที่ไม่คุมกำเนิด"
 Description: "สาเหตุที่ไม่คุมกำเนิด"
 Usage: #example
 * status = #final
@@ -34,7 +34,7 @@ Usage: #example
 
 Instance: NumParity
 InstanceOf: Observation
-Title: "จำนวนบุตรทั้งหมดที่เคยมี"
+Title: "ตัวอย่าง Observation: จำนวนบุตรทั้งหมดที่เคยมี"
 Description: "จำนวนบุตรทั้งหมดที่เคยมี"
 Usage: #example
 * status = #final
@@ -50,7 +50,7 @@ Usage: #example
 
 Instance: NumLivingBirth
 InstanceOf: Observation
-Title: "จำนวนบุตรที่มีชีวิต"
+Title: "ตัวอย่าง Observation: จำนวนบุตรที่มีชีวิต"
 Description: "จำนวนบุตรที่มีชีวิต"
 Usage: #example
 * status = #final
@@ -65,7 +65,7 @@ Usage: #example
 
 Instance: NumAbortion
 InstanceOf: Observation
-Title: "จำนวนการแท้งบุตร"
+Title: "ตัวอย่าง Observation: จำนวนการแท้งบุตร"
 Description: "จำนวนการแท้งบุตร"
 Usage: #example
 * status = #final
@@ -80,7 +80,7 @@ Usage: #example
 
 Instance: NumStillbirth
 InstanceOf: Observation
-Title: "จำนวนทารกตายในครรภ์ หรือตายคลอด"
+Title: "ตัวอย่าง Observation: จำนวนทารกตายในครรภ์ หรือตายคลอด"
 Description: "จำนวนทารกตายในครรภ์ หรือตายคลอด"
 Usage: #example
 * status = #final

@@ -2,7 +2,7 @@
 
 Instance: FPEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ OPD Family Planning"
+Title: "ตัวอย่าง Encounter: การรับบริการ OPD Family Planning"
 Description: "แสดงการรับบริการ OPD Family Planning"
 Usage: #example
 * extension[0]
@@ -37,7 +37,7 @@ Usage: #example
 
 Instance: PrenatalEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ OPD Prenatal care"
+Title: "ตัวอย่าง Encounter: การรับบริการ OPD Prenatal care"
 Description: "แสดงการรับบริการ OPD Prenatal care"
 Usage: #example
 * identifier[0]
@@ -69,7 +69,7 @@ Usage: #example
 
 Instance: ANCEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ OPD ANC"
+Title: "ตัวอย่าง Encounter: การรับบริการ OPD ANC"
 Description: "แสดงการรับบริการ OPD ANC"
 Usage: #example
 * identifier[0]
@@ -101,7 +101,7 @@ Usage: #example
 
 Instance: LaborEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการทำคลอด"
+Title: "ตัวอย่าง Encounter: การรับบริการทำคลอด"
 Description: "แสดงการรับบริการทำคลอด"
 Usage: #example
 * identifier[0]
@@ -133,7 +133,7 @@ Usage: #example
 
 Instance: PostnatalEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการหลังคลอด"
+Title: "ตัวอย่าง Encounter: การรับบริการหลังคลอด"
 Description: "แสดงการรับบริการหลังคลอด"
 Usage: #example
 * identifier[0]
@@ -167,7 +167,7 @@ Usage: #example
 
 Instance: LaborCondition1
 InstanceOf: Condition
-Title: "ผลสิ้นสุดการตั้งครรภ์"
+Title: "ตัวอย่าง Condition: ผลสิ้นสุดการตั้งครรภ์"
 Description: "ผลสิ้นสุดการตั้งครรภ์"
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
@@ -188,7 +188,7 @@ Usage: #example
 
 Instance: LaborProcedure01
 InstanceOf: Procedure
-Title: "วิธีการคลอด"
+Title: "ตัวอย่าง Procedure: วิธีการคลอด"
 Description: "วิธีการคลอด"
 Usage: #example
 * status = #completed

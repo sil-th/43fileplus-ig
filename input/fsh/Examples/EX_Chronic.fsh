@@ -1,6 +1,6 @@
 Instance: ChronicEpisode1
 InstanceOf: EpisodeOfCare
-Title: "การรับบริการเป็นประจำของผู้ป่วยรายที่ 4"
+Title: "ตัวอย่าง EpisodeOfCare: การรับบริการเป็นประจำของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานเป็นประจำ"
 Usage: #example
 * extension[+]
@@ -19,7 +19,7 @@ Usage: #example
 
 Instance: ChronicCondition1
 InstanceOf: Condition
-Title: "โรคเบาหวานของผู้ป่วยรายที่ 4"
+Title: "ตัวอย่าง Condition: โรคเบาหวานของผู้ป่วยรายที่ 4"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 4"
 Usage: #example
 * category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
@@ -33,7 +33,7 @@ Usage: #example
 
 Instance: ChronicEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการครั้งที่ 1 ของผู้ป่วยรายที่ 4"
+Title: "ตัวอย่าง Encounter: การรับบริการครั้งที่ 1 ของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 1"
 Usage: #example
 * status = #finished
@@ -47,7 +47,7 @@ Usage: #example
 
 Instance: ChronicEncounter2
 InstanceOf: Encounter
-Title: "การรับบริการครั้งที่ 2 ของผู้ป่วยรายที่ 4"
+Title: "ตัวอย่าง Encounter: การรับบริการครั้งที่ 2 ของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 2"
 Usage: #example
 * status = #finished
@@ -62,7 +62,7 @@ Usage: #example
 
 // Instance: ChronicEncounter1
 // InstanceOf: Encounter
-// Title: "การรับบริการครั้งที่ 3 ของผู้ป่วยรายที่ 4"
+// Title: "ตัวอย่าง : การรับบริการครั้งที่ 3 ของผู้ป่วยรายที่ 4"
 // Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 3"
 // Usage: #example
 
@@ -70,7 +70,7 @@ Usage: #example
 
 // Instance: ChronicEncounter1
 // InstanceOf: Encounter
-// Title: "การรับบริการครั้งที่ 4 ของผู้ป่วยรายที่ 4"
+// Title: "ตัวอย่าง : การรับบริการครั้งที่ 4 ของผู้ป่วยรายที่ 4"
 // Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 4"
 // Usage: #example
 
@@ -78,7 +78,7 @@ Usage: #example
 
 Instance: RiskBehavior1
 InstanceOf: Observation
-Title: "พฤติกรรมเสี่ยง"
+Title: "ตัวอย่าง Observation: พฤติกรรมเสี่ยง"
 Description: "ผลการบันทึกพฤติกรรมเสี่ยง"
 Usage: #example
 * status = #final

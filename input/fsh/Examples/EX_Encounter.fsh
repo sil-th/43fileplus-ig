@@ -23,7 +23,7 @@
 
 Instance: OpdEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ OPD"
+Title: "ตัวอย่าง Encounter: การรับบริการ OPD"
 Description: "แสดงการรับบริการ OPD โดยทั่วไป"
 Usage: #example
 * extension[0]
@@ -93,7 +93,7 @@ Usage: #example
 // Refer In
 Instance: ReferInOpdEncounter1
 InstanceOf: ServiceRequest
-Title: "การส่งต่อผู้ป่วยมารับบริการ OPD"
+Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยมารับบริการ OPD"
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * status = #active
@@ -108,7 +108,7 @@ Usage: #example
 // Refer Out
 Instance: ReferOutOpdEncounter1
 InstanceOf: ServiceRequest
-Title: "การส่งต่อผู้ป่วยมารับบริการ OPD"
+Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยมารับบริการ OPD"
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * extension[0]
@@ -127,7 +127,7 @@ Usage: #example
 // Account
 Instance: AccountOpdEncounter1
 InstanceOf: Account
-Title: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
+Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * status = #active
@@ -149,7 +149,7 @@ Usage: #example
 
 Instance: SurvEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ Surveillance"
+Title: "ตัวอย่าง Encounter: การรับบริการ Surveillance"
 Description: "แสดงการรับบริการของผู้ป่วยด้วยโรคที่ต้องเฝ้าระวัง"
 Usage: #example
 * identifier[0]
@@ -199,7 +199,7 @@ Usage: #example
 
 Instance: LabEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการตรวจทางห้องปฏิบัติการ"
+Title: "ตัวอย่าง Encounter: การรับบริการตรวจทางห้องปฏิบัติการ"
 Description: "การรับบริการตรวจทางห้องปฏิบัติการ"
 Usage: #example
 * identifier[0]
@@ -229,7 +229,7 @@ Usage: #example
 
 Instance: IpdEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ IPD"
+Title: "ตัวอย่าง Encounter: การรับบริการ IPD"
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
 // * extension[0]
@@ -323,7 +323,7 @@ Usage: #example
 
 Instance: DentalEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการทันตกรรม"
+Title: "ตัวอย่าง Encounter: การรับบริการทันตกรรม"
 Description: "แสดงการรับบริการทันตกรรม โดยทั่วไป"
 Usage: #example
 * identifier[0]
@@ -361,7 +361,7 @@ Usage: #example
 
 Instance: RehabEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการฟื้นฟูสมรรถภาพ"
+Title: "ตัวอย่าง Encounter: การรับบริการฟื้นฟูสมรรถภาพ"
 Description: "การรับบริการฟื้นฟูสมรรถภาพ"
 Usage: #example
 * identifier[0]
@@ -387,7 +387,7 @@ Usage: #example
 
 Instance: NcdEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการ NCD OPD"
+Title: "ตัวอย่าง Encounter: การรับบริการ NCD OPD"
 Description: "แสดงการรับบริการ NCD OPD"
 Usage: #example
 * identifier[0]

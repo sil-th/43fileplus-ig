@@ -1,31 +1,31 @@
 Instance: OrganizationMain
 InstanceOf: Organization
-Title: "สถานพยาบาลหลักที่บันทึกข้อมูล"
+Title: "ตัวอย่าง Organization: สถานพยาบาลหลักที่บันทึกข้อมูล"
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 1"
 
 Instance: OrganizationSecond
 InstanceOf: Organization
-Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Title: "ตัวอย่าง Organization: สถานพยาบาลรองที่บันทึกข้อมูล"
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 2"
 
 Instance: OrganizationThird
 InstanceOf: Organization
-Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Title: "ตัวอย่าง Organization: สถานพยาบาลรองที่บันทึกข้อมูล"
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 3 โรงพยาบาลตติยภูมิ"
 
 Instance: OrganizationFourth
 InstanceOf: Organization
-Title: "สถานพยาบาลรองที่บันทึกข้อมูล"
+Title: "ตัวอย่าง Organization: สถานพยาบาลรองที่บันทึกข้อมูล"
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 4 สถานพยาบาลปฐมภูมิ"
 
 
 Instance: OpdGPClinic1
 InstanceOf: Location
-Title: "OPD GP Clinic 1"
+Title: "ตัวอย่าง Location: OPD GP Clinic 1"
 Description: "ข้อมูลคลินิก OPD - GP 1"
 Usage: #example
 * identifier[0]
@@ -40,7 +40,7 @@ Usage: #example
 
 Instance: PractitionerDoctor1
 InstanceOf: Practitioner
-Title: "แพทย์ รายที่ 1"
+Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 1"
 Description: "ข้อมูลแพทย์รายที่ 1"
 Usage: #example
 * identifier[0]
@@ -90,7 +90,7 @@ Usage: #example
 
 Instance: PractitionerDoctor2
 InstanceOf: Practitioner
-Title: "แพทย์ รายที่ 2"
+Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 2"
 Description: "ข้อมูลแพทย์รายที่ 2"
 Usage: #example
 * identifier[0]
@@ -124,7 +124,7 @@ Usage: #example
 
 Instance: PractitionerDentist1
 InstanceOf: Practitioner
-Title: "ทันตแพทย์ รายที่ 1"
+Title: "ตัวอย่าง Practitioner: ทันตแพทย์ รายที่ 1"
 Description: "ข้อมูลทันตแพทย์รายที่ 1"
 Usage: #example
 * identifier[0]
@@ -157,7 +157,7 @@ Usage: #example
 
 Instance: PractitionerVolunteer1
 InstanceOf: Practitioner
-Title: "อสม. รายที่ 1"
+Title: "ตัวอย่าง Practitioner: อสม. รายที่ 1"
 Description: "ข้อมูลอสม. รายที่ 1"
 Usage: #example
 * identifier[0]
@@ -177,7 +177,7 @@ Usage: #example
 
 Instance: PractitionerRoleDoctor1
 InstanceOf: PractitionerRole
-Title: "บทบาทแพทย์ รายที่ 1"
+Title: "ตัวอย่าง Practitioner: บทบาทแพทย์ รายที่ 1"
 Description: "บทบาทแพทย์ รายที่ 1 ในสถานพยาบาลหลัก"
 Usage: #example
 * extension[0]
@@ -219,7 +219,7 @@ Usage: #example
 
 Instance: OrganizationNHSO
 InstanceOf: Organization
-Title: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
+Title: "ตัวอย่าง Organization: สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
 Description: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
 * active = true
 * type = $CS_HL7_OrgType#pay "Payer"
@@ -248,7 +248,7 @@ Description: "สำนักงานหลักประกันสุขภ
 
 Instance: OrganizationSSO
 InstanceOf: Organization
-Title: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
+Title: "ตัวอย่าง Organization: สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
 Description: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
 Usage: #example
 * active = true
@@ -281,7 +281,7 @@ Usage: #example
 
 Instance: OrganizationMedicalCouncil
 InstanceOf: Organization
-Title: "แพทยสภา"
+Title: "ตัวอย่าง Organization: แพทยสภา"
 Description: "แพทยสภา"
 * active = true
 * type = $CS_HL7_IdentifierType#XX "Organization identifier"

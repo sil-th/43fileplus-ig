@@ -1,6 +1,6 @@
 Instance: FunctionalEncounter
 InstanceOf: Encounter
-Title: "การตรวจประเมินความบกพร่องทางสุขภาพ"
+Title: "ตัวอย่าง Encounter: การตรวจประเมินความบกพร่องทางสุขภาพ"
 Description: "การตรวจประเมินความบกพร่องทางสุขภาพ"
 Usage: #example
 * identifier[0]
@@ -22,7 +22,7 @@ Usage: #example
 
 Instance: FunctionalTest
 InstanceOf: Observation
-Title: "การประเมินความบกพร่อง"
+Title: "ตัวอย่าง Observation: การประเมินความบกพร่อง"
 Description: "การประเมินความบกพร่อง"
 Usage: #example
 * status = #final
@@ -39,7 +39,7 @@ Usage: #example
 
 Instance: FunctionalConclusion
 InstanceOf: Observation
-Title: "ภาวะพึ่งพิงของผู้สูงอายุ"
+Title: "ตัวอย่าง Observation: ภาวะพึ่งพิงของผู้สูงอายุ"
 Description: "ภาวะพึ่งพิงของผู้สูงอายุ"
 Usage: #example
 * status = #final

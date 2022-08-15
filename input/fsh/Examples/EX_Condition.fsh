@@ -1,6 +1,6 @@
 Instance: SurvCondition1
 InstanceOf: Condition
-Title: "การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
+Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 Usage: #example
 * extension[0]
@@ -21,7 +21,7 @@ Usage: #example
 
 Instance: SurvCondition2
 InstanceOf: Condition
-Title: "การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
+Title: "ตัวอย่าง Condition: การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
 Usage: #example
 * extension[0]
@@ -48,7 +48,7 @@ Usage: #example
 
 Instance: AccidentCondition1
 InstanceOf: Condition
-Title: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
+Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example
 * extension[0]

@@ -1,6 +1,6 @@
 Instance: AccidentEncounter1
 InstanceOf: Encounter
-Title: "การรับบริการแผนกฉุกเฉิน"
+Title: "ตัวอย่าง Encounter: การรับบริการแผนกฉุกเฉิน"
 Description: "แสดงการรับบริการแผนกฉุกเฉินโดยทั่วไป"
 Usage: #example
 * identifier[0]
@@ -49,7 +49,7 @@ Usage: #example
 // Refer Out
 Instance: ReferOutAccidentEncounter1
 InstanceOf: ServiceRequest
-Title: "การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
+Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Description: "การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Usage: #example
 * identifier[0]
@@ -70,7 +70,7 @@ Usage: #example
 // Account
 Instance: AccountAccidentEncounter1
 InstanceOf: Account
-Title: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
+Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
 Usage: #example
 * extension[0]

@@ -2,7 +2,7 @@
 
 Instance: BloodGroup
 InstanceOf: Observation
-Title: "หมู่เลือด"
+Title: "ตัวอย่าง Observation: หมู่เลือด"
 Description: "ผลการตรวจหมู่เลือด"
 Usage: #example
 * status = #final
@@ -20,7 +20,7 @@ Usage: #example
 
 Instance: BloodGroupABO
 InstanceOf: Observation
-Title: "หมู่เลือด ABO"
+Title: "ตัวอย่าง Observation: หมู่เลือด ABO"
 Description: "ผลการตรวจหมู่เลือด ABO"
 Usage: #example
 * status = #final
@@ -36,7 +36,7 @@ Usage: #example
 
 Instance: BloodGroupRh
 InstanceOf: Observation
-Title: "หมู่เลือด Rh"
+Title: "ตัวอย่าง Observation: หมู่เลือด Rh"
 Description: "ผลการตรวจหมู่เลือด Rh"
 Usage: #example
 * status = #final
@@ -53,7 +53,7 @@ Usage: #example
 
 Instance: RoleInHouse
 InstanceOf: Observation
-Title: "สถานะในครอบครัว"
+Title: "ตัวอย่าง Observation: สถานะในครอบครัว"
 Description: "สถานะในครอบครัว"
 Usage: #example
 * status = #final
@@ -69,7 +69,7 @@ Usage: #example
 
 Instance: RoleInVillage
 InstanceOf: Observation
-Title: "สถานะในชุมชน"
+Title: "ตัวอย่าง Observation: สถานะในชุมชน"
 Description: "สถานะในชุมชน"
 Usage: #example
 * status = #final
@@ -85,7 +85,7 @@ Usage: #example
 
 Instance: Occupation
 InstanceOf: Observation
-Title: "อาชีพปัจจุบันของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง Observation: อาชีพปัจจุบันของผู้ป่วยรายที่ 1"
 Description: "อาชีพปัจจุบันของผู้ป่วยรายที่ 1 พร้อมหน่วยงานที่สังกัด และรายได้เฉลี่ย"
 Usage: #example
 * extension

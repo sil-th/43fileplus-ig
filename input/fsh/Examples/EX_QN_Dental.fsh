@@ -1,6 +1,6 @@
 Instance: QnDentalAnswer
 InstanceOf: QuestionnaireResponse
-Title: "การตอบแบบสำรวจการตรวจสภาวะทันตสุขภาพของฟันทุกซี่"
+Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจการตรวจสภาวะทันตสุขภาพของฟันทุกซี่"
 Description: "ใช้ประกอบการรายงานแฟ้ม DENTAL"
 Usage: #example
 * questionnaire = $QN_TH_Dental

@@ -1,6 +1,6 @@
 Instance: ObsVitalSignsPanel
 InstanceOf: Observation
-Title: "Vital Signs Panel"
+Title: "ตัวอย่าง Observation: Vital Signs Panel"
 Description: "รวมการตรวจสัญญาณชีพทั้งหมด"
 Usage: #example
 * status = #final
@@ -27,7 +27,7 @@ Usage: #example
 
 Instance: ObsWt01
 InstanceOf: Observation
-Title: "น้ำหนักผู้ป่วยแรกรับ"
+Title: "ตัวอย่าง Observation: น้ำหนักผู้ป่วยแรกรับ"
 Description: "Body weight"
 Usage: #example
 * status = #final
@@ -47,7 +47,7 @@ Usage: #example
 
 Instance: ObsHt01
 InstanceOf: Observation
-Title: "ส่วนสูงผู้ป่วยแรกรับ"
+Title: "ตัวอย่าง Observation: ส่วนสูงผู้ป่วยแรกรับ"
 Description: "Body height"
 Usage: #example
 * status = #final
@@ -67,7 +67,7 @@ Usage: #example
 
 Instance: ObsBT01
 InstanceOf: Observation
-Title: "อุณหภูมิร่างกายแรกรับ"
+Title: "ตัวอย่าง Observation: อุณหภูมิร่างกายแรกรับ"
 Description: "Body temperature"
 Usage: #example
 * status = #final
@@ -88,7 +88,7 @@ Usage: #example
 
 Instance: ObsBp01
 InstanceOf: Observation
-Title: "ความดันโลหิต ซิสโตลิก แรกรับ"
+Title: "ตัวอย่าง Observation: ความดันโลหิต ซิสโตลิก แรกรับ"
 Description: "Blood pressure panel with all children optional"
 Usage: #example
 * status = #final
@@ -121,7 +121,7 @@ Usage: #example
 
 Instance: ObsHR01
 InstanceOf: Observation
-Title: "อัตราการเต้นของชีพจร"
+Title: "ตัวอย่าง Observation: อัตราการเต้นของชีพจร"
 Description: "Heart rate"
 Usage: #example
 * status = #final
@@ -142,7 +142,7 @@ Usage: #example
 
 Instance: ObsRR01
 InstanceOf: Observation
-Title: "อัตราการหายใจ"
+Title: "ตัวอย่าง Observation: อัตราการหายใจ"
 Description: "Respiratory rate"
 Usage: #example
 * status = #final
@@ -162,7 +162,7 @@ Usage: #example
 
 Instance: ObsWC01
 InstanceOf: Observation
-Title: "รอบเอว"
+Title: "ตัวอย่าง Observation: รอบเอว"
 Description: "Waist Circumference at umbilicus by Tape measure"
 Usage: #example
 * status = #final
@@ -183,7 +183,7 @@ Usage: #example
 
 Instance: ObsHC01
 InstanceOf: Observation
-Title: "รอบสะโพก"
+Title: "ตัวอย่าง Observation: รอบสะโพก"
 Description: "Hip circumference"
 Usage: #example
 * status = #final
@@ -205,7 +205,7 @@ Usage: #example
 
 Instance: ObsPE01
 InstanceOf: Observation
-Title: "การตรวจร่างกาย"
+Title: "ตัวอย่าง Observation: การตรวจร่างกาย"
 Description: "Physical findings"
 Usage: #example
 * status = #final
@@ -227,7 +227,7 @@ Usage: #example
 
 Instance: ObsGA01
 InstanceOf: Observation
-Title: "การตรวจ General Appearance"
+Title: "ตัวอย่าง Observation: การตรวจ General Appearance"
 Description: "General appearance"
 Usage: #example
 * status = #final
@@ -244,7 +244,7 @@ Usage: #example
 
 Instance: ObsHeent01
 InstanceOf: Observation
-Title: "การตรวจ HEENT"
+Title: "ตัวอย่าง Observation: การตรวจ HEENT"
 Description: "Physical findings of Head"
 Usage: #example
 * status = #final
@@ -259,7 +259,7 @@ Usage: #example
 
 Instance: ObsHeart01
 InstanceOf: Observation
-Title: "การตรวจ Heart"
+Title: "ตัวอย่าง Observation: การตรวจ Heart"
 Description: "Physical findings of Heart"
 Usage: #example
 * status = #final
@@ -274,7 +274,7 @@ Usage: #example
 
 Instance: ObsChest01
 InstanceOf: Observation
-Title: "การตรวจ Chest & Lung"
+Title: "ตัวอย่าง Observation: การตรวจ Chest & Lung"
 Description: "Physical findings of Thorax and Lungs"
 Usage: #example
 * status = #final
@@ -289,7 +289,7 @@ Usage: #example
 
 Instance: ObsAbd01
 InstanceOf: Observation
-Title: "การตรวจ Abdomen"
+Title: "ตัวอย่าง Observation: การตรวจ Abdomen"
 Description: "Physical findings of Abdomen"
 Usage: #example
 * status = #final
@@ -304,7 +304,7 @@ Usage: #example
 
 Instance: ObsExt01
 InstanceOf: Observation
-Title: "การตรวจ Extremities"
+Title: "ตัวอย่าง Observation: การตรวจ Extremities"
 Description: "Physical findings of Extremities"
 Usage: #example
 * status = #final
@@ -319,7 +319,7 @@ Usage: #example
 
 Instance: ObsNeu01
 InstanceOf: Observation
-Title: "การตรวจ Neuro"
+Title: "ตัวอย่าง Observation: การตรวจ Neuro"
 Description: "Physical findings of Nervous system"
 Usage: #example
 * status = #final
@@ -334,7 +334,7 @@ Usage: #example
 
 Instance: ObsMisc01
 InstanceOf: Observation
-Title: "การตรวจอื่น ๆ"
+Title: "ตัวอย่าง Observation: การตรวจอื่น ๆ"
 Description: "Miscellaneous Physical findings"
 Usage: #example
 * status = #final

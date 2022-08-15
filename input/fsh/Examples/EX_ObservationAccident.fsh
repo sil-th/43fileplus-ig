@@ -1,6 +1,6 @@
 Instance: AccidentInjuryLocation
 InstanceOf: Observation
-Title: "สถานที่เกิดอุบัติเหตุ"
+Title: "ตัวอย่าง Observation: สถานที่เกิดอุบัติเหตุ"
 Description: "สถานที่เกิดอุบัติเหตุ"
 Usage: #example
 * status = #final
@@ -18,7 +18,7 @@ Usage: #example
 
 Instance: AccidentInjuryType
 InstanceOf: Observation
-Title: "ประเภทผู้บาดเจ็บ"
+Title: "ตัวอย่าง Observation: ประเภทผู้บาดเจ็บ"
 Description: "ประเภทผู้บาดเจ็บ"
 Usage: #example
 * status = #final
@@ -37,7 +37,7 @@ Usage: #example
 
 Instance: AccidentVehicleType
 InstanceOf: Observation
-Title: "ประเภทยานพาหนะที่เกิดเหตุ"
+Title: "ตัวอย่าง Observation: ประเภทยานพาหนะที่เกิดเหตุ"
 Description: "ประเภทยานพาหนะที่เกิดเหตุ"
 Usage: #example
 * status = #final
@@ -54,7 +54,7 @@ Usage: #example
 
 Instance: AccidentAlcoholUse
 InstanceOf: Observation
-Title: "การดื่มแอลกอฮอลล์"
+Title: "ตัวอย่าง Observation: การดื่มแอลกอฮอลล์"
 Description: "การดื่มแอลกอฮอลล์"
 Usage: #example
 * status = #final
@@ -73,7 +73,7 @@ Usage: #example
 
 Instance: AccidentDrugUse
 InstanceOf: Observation
-Title: "การใช้ยาสารเสพติดขณะเกิดอุบัติเหตุ"
+Title: "ตัวอย่าง Observation: การใช้ยาสารเสพติดขณะเกิดอุบัติเหตุ"
 Description: "การใช้ยาสารเสพติดขณะเกิดอุบัติเหตุ"
 Usage: #example
 * status = #final
@@ -91,7 +91,7 @@ Usage: #example
 
 Instance: AccidentSeatbelt
 InstanceOf: Observation
-Title: "การคาดเข็มขัดนิรภัย"
+Title: "ตัวอย่าง Observation: การคาดเข็มขัดนิรภัย"
 Description: "การคาดเข็มขัดนิรภัย"
 Usage: #example
 * status = #final
@@ -110,7 +110,7 @@ Usage: #example
 
 Instance: AccidentHelmet
 InstanceOf: Observation
-Title: "การสวมหมวกนิรภัย"
+Title: "ตัวอย่าง Observation: การสวมหมวกนิรภัย"
 Description: "การสวมหมวกนิรภัย"
 Usage: #example
 * status = #final
@@ -127,7 +127,7 @@ Usage: #example
 
 Instance: AccidentBreathing
 InstanceOf: Observation
-Title: "การดูแลการหายใจ"
+Title: "ตัวอย่าง Observation: การดูแลการหายใจ"
 Description: "การดูแลการหายใจ"
 Usage: #example
 * status = #final
@@ -145,7 +145,7 @@ Usage: #example
 
 Instance: AccidentBleeding
 InstanceOf: Observation
-Title: "การห้ามเลือด"
+Title: "ตัวอย่าง Observation: การห้ามเลือด"
 Description: "การห้ามเลือด"
 Usage: #example
 * status = #final
@@ -163,7 +163,7 @@ Usage: #example
 
 Instance: AccidentSprint
 InstanceOf: Observation
-Title: "การใส่ splint/ slab"
+Title: "ตัวอย่าง Observation: การใส่ splint/ slab"
 Description: "การใส่ splint/ slab"
 Usage: #example
 * status = #final
@@ -181,7 +181,7 @@ Usage: #example
 
 Instance: AccidentIVFluid
 InstanceOf: Observation
-Title: "การให้น้ำเกลือ"
+Title: "ตัวอย่าง Observation: การให้น้ำเกลือ"
 Description: "การให้น้ำเกลือ"
 Usage: #example
 * status = #final
@@ -198,7 +198,7 @@ Usage: #example
 
 Instance: AccidentGCS
 InstanceOf: Observation
-Title: "Glasgow coma score"
+Title: "ตัวอย่าง Observation: Glasgow coma score"
 Description: "Glasgow coma score"
 Usage: #example
 * status = #final

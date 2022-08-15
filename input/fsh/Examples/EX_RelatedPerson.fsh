@@ -1,6 +1,6 @@
 Instance: Patient1Mother
 InstanceOf: RelatedPerson
-Title: "มารดาของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 1"
 Description: "มารดาของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]
@@ -24,7 +24,7 @@ Usage: #example
 
 Instance: Patient1Father
 InstanceOf: RelatedPerson
-Title: "บิดาของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง RelatedPerson: บิดาของผู้ป่วยรายที่ 1"
 Description: "บิดาของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]
@@ -48,7 +48,7 @@ Usage: #example
 
 Instance: Patient1Spouse
 InstanceOf: RelatedPerson
-Title: "คู่สมรสของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง RelatedPerson: คู่สมรสของผู้ป่วยรายที่ 1"
 Description: "คู่สมรสของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]

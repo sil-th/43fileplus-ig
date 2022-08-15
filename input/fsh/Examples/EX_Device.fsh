@@ -2,6 +2,8 @@
 
 Instance: RehabDevice1
 InstanceOf: DeviceRequest
+Title: "ตัวอย่าง DeviceRequest: สั่งจ่ายอุปกรณ์พยุงตัว"
+Description: "แสดงการสั่งจ่ายอุปกรณ์พยุงตัวให้ผู้ป่วย"
 Usage: #example
 * status = #completed
 * intent = #order

@@ -1,6 +1,6 @@
 Instance: QnVillageAnswer
 InstanceOf: QuestionnaireResponse
-Title: "การตอบแบบสำรวจข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน"
+Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน"
 Description: "ใช้ประกอบการรายงานแฟ้ม VILLAGE"
 Usage: #example
 * questionnaire = $QN_TH_Village

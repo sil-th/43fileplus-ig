@@ -1,6 +1,6 @@
 Instance: OpdAppointment
 InstanceOf: Appointment
-Title: "การนัดติดตามผลหลังรับบริการ OPD"
+Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD"
 Usage: #example
 * status = #booked
@@ -34,7 +34,7 @@ Usage: #example
 
 Instance: FPAppointment
 InstanceOf: Appointment
-Title: "การนัดติดตามผลหลังรับบริการ OPD Family Planning"
+Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD Family Planning"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD Family Planning"
 Usage: #example
 * status = #booked
@@ -62,7 +62,7 @@ Usage: #example
 
 Instance: ANCAppointment
 InstanceOf: Appointment
-Title: "การนัดติดตามผลหลังรับบริการ OPD ANC"
+Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD ANC"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD ANC"
 Usage: #example
 * status = #booked
@@ -90,7 +90,7 @@ Usage: #example
 
 Instance: LaborAppointment
 InstanceOf: Appointment
-Title: "การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
+Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
 Usage: #example
 * status = #booked
@@ -122,7 +122,7 @@ Usage: #example
 
 Instance: PostLaborAppointment
 InstanceOf: Appointment
-Title: "การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
+Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
 Usage: #example
 * status = #booked

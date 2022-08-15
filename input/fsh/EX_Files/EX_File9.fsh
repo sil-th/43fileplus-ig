@@ -22,7 +22,7 @@ Usage: #example
 
 Instance: File9Composition
 InstanceOf: Composition
-Title: "Composition แฟ้มที่ 9: PROVIDER"
+Title: "ตัวอย่าง Composition แฟ้มที่ 9: PROVIDER"
 Description: "Composition ของแฟ้มที่ 9"
 Usage: #example
 * status = #final

@@ -32,7 +32,7 @@ Usage: #example
 
 Instance: File32Composition
 InstanceOf: Composition
-Title: "Composition แฟ้มที่ 32: FP"
+Title: "ตัวอย่าง Composition แฟ้มที่ 32: FP"
 Description: "Composition ของแฟ้มที่ 32"
 Usage: #example
 * status = #final

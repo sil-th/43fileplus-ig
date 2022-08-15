@@ -1,6 +1,6 @@
 Instance: ClaimOpdEncounter1
 InstanceOf: Claim
-Title: "ค่าใช้จ่ายการรับบริการ OPD"
+Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ OPD"
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD"
 Usage: #example
 * extension[0]
@@ -58,7 +58,7 @@ Usage: #example
 
 Instance: ClaimAccidentEncounter1
 InstanceOf: Claim
-Title: "ค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
+Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
 Description: "แสดงค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
 Usage: #example
 * status = #draft
@@ -85,7 +85,7 @@ Usage: #example
 
 Instance: ClaimLabEncounter1
 InstanceOf: Claim
-Title: "ค่าใช้จ่ายการรับบริการตรวจทางห้องปฏิบัติการ"
+Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการตรวจทางห้องปฏิบัติการ"
 Description: "ค่าใช้จ่ายการรับบริการตรวจทางห้องปฏิบัติการ"
 Usage: #example
 * identifier[0]
@@ -122,7 +122,7 @@ Usage: #example
 
 Instance: ClaimIpdEncounter1
 InstanceOf: Claim
-Title: "ค่าใช้จ่ายการรับบริการ IPD"
+Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ IPD"
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD"
 Usage: #example
 * extension[0]

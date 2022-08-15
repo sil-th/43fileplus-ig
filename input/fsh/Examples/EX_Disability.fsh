@@ -1,6 +1,6 @@
 Instance: DisabilityCondition1
 InstanceOf: Condition
-Title: "ความพิการของผู้ป่วยรายที่ 3"
+Title: "ตัวอย่าง Condition: ความพิการของผู้ป่วยรายที่ 3"
 Description: "แสดงการประวัติความพิการของผู้ป่วยรายที่ 3"
 Usage: #example
 * extension[0]

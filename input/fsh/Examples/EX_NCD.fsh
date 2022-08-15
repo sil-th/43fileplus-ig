@@ -1,6 +1,6 @@
 Instance: NcdCondition1
 InstanceOf: Condition
-Title: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
+Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
 Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
@@ -17,7 +17,7 @@ Usage: #example
 
 Instance: NcdConditionSum
 InstanceOf: Condition
-Title: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
+Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
 Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
@@ -34,7 +34,7 @@ Usage: #example
 
 Instance: ObsNcdVitalSignsPanel
 InstanceOf: Observation
-Title: "Vital Signs Panel - NCD"
+Title: "ตัวอย่าง Observation: Vital Signs Panel - NCD"
 Description: "รวมการตรวจสัญญาณชีพทั้งหมด - NCD"
 Usage: #example
 * status = #final
@@ -55,7 +55,7 @@ Usage: #example
 
 Instance: ObsNcdWt01
 InstanceOf: Observation
-Title: "น้ำหนักผู้ป่วยแรกรับ - NCD"
+Title: "ตัวอย่าง Observation: น้ำหนักผู้ป่วยแรกรับ - NCD"
 Description: "Body weight - NCD"
 Usage: #example
 * status = #final
@@ -75,7 +75,7 @@ Usage: #example
 
 Instance: ObsNcdHt01
 InstanceOf: Observation
-Title: "ส่วนสูงผู้ป่วยแรกรับ - NCD"
+Title: "ตัวอย่าง Observation: ส่วนสูงผู้ป่วยแรกรับ - NCD"
 Description: "Body height - NCD"
 Usage: #example
 * status = #final
@@ -95,7 +95,7 @@ Usage: #example
 
 Instance: ObsNcdBp01
 InstanceOf: Observation
-Title: "ความดันโลหิต ซิสโตลิก แรกรับครั้งที่ 1 - NCD"
+Title: "ตัวอย่าง Observation: ความดันโลหิต ซิสโตลิก แรกรับครั้งที่ 1 - NCD"
 Description: "Blood pressure panel with all children optional - NCD"
 Usage: #example
 * status = #final
@@ -132,7 +132,7 @@ Usage: #example
 
 Instance: ObsNcdBp02
 InstanceOf: Observation
-Title: "ความดันโลหิต ซิสโตลิก แรกรับครั้งที่ 2 - NCD"
+Title: "ตัวอย่าง Observation: ความดันโลหิต ซิสโตลิก แรกรับครั้งที่ 2 - NCD"
 Description: "Blood pressure panel with all children optional - NCD"
 Usage: #example
 * status = #final
@@ -165,7 +165,7 @@ Usage: #example
 
 Instance: ObsNcdWC01
 InstanceOf: Observation
-Title: "รอบเอว - NCD"
+Title: "ตัวอย่าง Observation: รอบเอว - NCD"
 Description: "Waist Circumference at umbilicus by Tape measure - NCD"
 Usage: #example
 * status = #final
@@ -190,7 +190,7 @@ Usage: #example
 
 Instance: ObsNcdSmoking
 InstanceOf: Observation
-Title: "ประวัติสูบบุหรี่"
+Title: "ตัวอย่าง Observation: ประวัติสูบบุหรี่"
 Description: "ประวัติสูบบุหรี่"
 Usage: #example
 * status = #final
@@ -207,7 +207,7 @@ Usage: #example
 
 Instance: ObsNcdAlcohol
 InstanceOf: Observation
-Title: "ประวัติดื่มเครื่องดื่มแอลกอฮอลล์"
+Title: "ตัวอย่าง Observation: ประวัติดื่มเครื่องดื่มแอลกอฮอลล์"
 Description: "ประวัติดื่มเครื่องดื่มแอลกอฮอลล์"
 Usage: #example
 * status = #final
@@ -223,7 +223,7 @@ Usage: #example
 
 Instance: ObsNcdDMFamily
 InstanceOf: Observation
-Title: "ประวัติเบาหวานในญาติสายตรง"
+Title: "ตัวอย่าง Observation: ประวัติเบาหวานในญาติสายตรง"
 Description: "ประวัติเบาหวานในญาติสายตรง"
 Usage: #example
 * status = #final
@@ -239,7 +239,7 @@ Usage: #example
 
 Instance: ObsNcdHTFamily
 InstanceOf: Observation
-Title: "ประวัติความดันสูงในญาติสายตรง"
+Title: "ตัวอย่าง Observation: ประวัติความดันสูงในญาติสายตรง"
 Description: "ประวัติความดันสูงในญาติสายตรง"
 Usage: #example
 * status = #final
@@ -259,7 +259,7 @@ Usage: #example
 
 Instance: ObsNcdFbs
 InstanceOf: Observation
-Title: "การตรวจระดับน้ำตาลในเลือด"
+Title: "ตัวอย่าง Observation: การตรวจระดับน้ำตาลในเลือด"
 Description: "การตรวจระดับน้ำตาลในเลือด"
 Usage: #example
 * status = #final
@@ -281,7 +281,7 @@ Usage: #example
 
 Instance: ObsHighGlucoseHx
 InstanceOf: Observation
-Title: "มีประวัติน้ำตาลในเลือดสูง"
+Title: "ตัวอย่าง Observation: มีประวัติน้ำตาลในเลือดสูง"
 Description: "มีประวัติน้ำตาลในเลือดสูง"
 Usage: #example
 * status = #final
@@ -297,7 +297,7 @@ Usage: #example
 
 Instance: ObsNcdDyslipedima
 InstanceOf: Observation
-Title: "มีประวัติไขมันในเลือดสูง"
+Title: "ตัวอย่าง Observation: มีประวัติไขมันในเลือดสูง"
 Description: "มีประวัติไขมันในเลือดสูง"
 Usage: #example
 * status = #final
@@ -314,7 +314,7 @@ Usage: #example
 
 Instance: ObsNcdGestDM
 InstanceOf: Observation
-Title: "มีประวัติเป็นเบาหวานขณะตั้งครรภ์"
+Title: "ตัวอย่าง Observation: มีประวัติเป็นเบาหวานขณะตั้งครรภ์"
 Description: "มีประวัติเป็นเบาหวานขณะตั้งครรภ์"
 Usage: #example
 * status = #final
@@ -331,7 +331,7 @@ Usage: #example
 
 Instance: ObsNcdFootExam
 InstanceOf: Observation
-Title: "การตรวจเท้า"
+Title: "ตัวอย่าง Observation: การตรวจเท้า"
 Description: "การตรวจเท้า"
 Usage: #example
 * status = #final
@@ -347,7 +347,7 @@ Usage: #example
 
 Instance: ObsNcdRetinaExam
 InstanceOf: Observation
-Title: "การตรวจจอประสาทตา"
+Title: "ตัวอย่าง Observation: การตรวจจอประสาทตา"
 Description: "การตรวจจอประสาทตา"
 Usage: #example
 * status = #final

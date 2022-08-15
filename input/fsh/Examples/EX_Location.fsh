@@ -1,6 +1,6 @@
 Instance: Patient1Home
 InstanceOf: Location
-Title: "บ้านของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง Location: บ้านของผู้ป่วยรายที่ 1"
 Description: "แสดงข้อมูลรายละเอียดบ้านของผู้ป่วยรายที่ 1"
 Usage: #example
 * extension[+]
@@ -73,7 +73,7 @@ Usage: #example
 
 Instance: Village1
 InstanceOf: Location
-Title: "หมู่บ้านที่ 1"
+Title: "ตัวอย่าง Location: หมู่บ้านที่ 1"
 Description: "แสดงข้อมูลหมู่บ้านที่ 1"
 Usage: #example
 * extension[0]

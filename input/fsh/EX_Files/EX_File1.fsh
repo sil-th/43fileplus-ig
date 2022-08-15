@@ -38,7 +38,7 @@ Usage: #example
 
 Instance: File1Composition
 InstanceOf: Composition
-Title: "Composition แฟ้มที่ 1: PERSON"
+Title: "ตัวอย่าง Composition แฟ้มที่ 1: PERSON"
 Description: "Composition ของแฟ้มที่ 1"
 Usage: #example
 * status = #final

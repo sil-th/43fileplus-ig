@@ -20,7 +20,7 @@ Usage: #example
 
 Instance: File2Composition
 InstanceOf: Composition
-Title: "Composition แฟ้มที่ 2: ADDRESS"
+Title: "ตัวอย่าง Composition แฟ้มที่ 2: ADDRESS"
 Description: "Composition ของแฟ้มที่ 2"
 Usage: #example
 * status = #final

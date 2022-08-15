@@ -1,6 +1,6 @@
 Instance: QnHomeAnswer
 InstanceOf: QuestionnaireResponse
-Title: "การตอบแบบสำรวจด้านสุขาภิบาลของครัวเรือน"
+Title: "ตัวอย่าง QuestionnaireResponse: การตอบแบบสำรวจด้านสุขาภิบาลของครัวเรือน"
 Description: "ใช้ประกอบการรายงานแฟ้ม HOME"
 Usage: #example
 * questionnaire = $QN_TH_Home
