@@ -9,5 +9,5 @@ Usage: #example
 * status = #active
 * name = "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * description = "คำบรรยายเพิ่มเติม (ถ้ามี)"
-* partOf = Reference(Organization/organization-main)
+* managingOrganization = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

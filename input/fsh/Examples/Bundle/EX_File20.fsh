@@ -14,7 +14,7 @@ Usage: #example
   * fullUrl = "http://example.org/Patient/patient-patient4"
   * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Encounterencounter-accident1"
+  * fullUrl = "http://example.org/Encounter/encounter-accident1"
   * resource = encounter-accident1
 * entry[+]
   * fullUrl = "http://example.org/ServiceRequest/servicerequest-refer-out-accident1"
@@ -91,7 +91,7 @@ Usage: #example
   * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ข้อมูลการบริการ"
-  * entry[0] = Reference(Encounterencounter-accident1)
+  * entry[0] = Reference(Encounter/encounter-accident1)
   * entry[+] = Reference(ServiceRequest/servicerequest-refer-out-accident1)
   * entry[+] = Reference(Condition/condition-accident1)
 * section[+]

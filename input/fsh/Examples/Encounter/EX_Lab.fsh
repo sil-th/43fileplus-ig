@@ -10,7 +10,7 @@ Usage: #example
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#AN "Admission number"
+  * type = $CS_HL7_IdentifierType#VN "Visit number"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished

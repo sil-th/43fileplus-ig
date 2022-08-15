@@ -12,6 +12,6 @@ Usage: #example
 * intent = #order
 * code = $CS_THCC_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
-* encounter = Reference(Encounterencounter-accident1)
+* encounter = Reference(Encounter/encounter-accident1)
 * authoredOn = "2022-03-01"
 * requester = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

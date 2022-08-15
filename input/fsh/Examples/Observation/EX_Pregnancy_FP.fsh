@@ -25,7 +25,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
 * code
-  * coding[0] = $LNC#86649-1 "Choriogonadotropin (pregnancy test) [Presence] in Urine"
+  * coding[0] = $LNC#2106-3 "Choriogonadotropin (pregnancy test) [Presence] in Urine"
   * text = "Choriogonadotropin (pregnancy test) [Presence] in Urine"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-01-21T12:30:02+07:00"

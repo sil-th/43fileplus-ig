@@ -14,7 +14,7 @@ Usage: #example
 * supportingInfo[0]
   * sequence = 1
   * category = $CS_HL7_ClaimInfoCat#info "Information"
-  * valueReference = Reference(Encounterencounter-accident1)
+  * valueReference = Reference(Encounter/encounter-accident1)
 * insurance
   * sequence = 1
   * focal = true

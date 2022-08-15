@@ -90,4 +90,4 @@ Usage: #example
   * entry[+] = Reference(Observation/observation-postnatal-status1)
 * section[+]
   * title = "ข้อมูลการนัด"
-  * entry[0] = Reference(Appointment/Postappointment-labor)
+  * entry[0] = Reference(Appointment/appointment-postnatal)

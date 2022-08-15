@@ -14,7 +14,7 @@ Usage: #example
   * fullUrl = "http://example.org/Patient/patient-patient4"
   * resource = patient-patient4
 * entry[+]
-  * fullUrl = "http://example.org/Observationobservation-woman-contraceptive1"
+  * fullUrl = "http://example.org/Observation/observation-woman-contraceptive1"
   * resource = observation-woman-contraceptive1
 * entry[+]
   * fullUrl = "http://example.org/Observation/observation-woman-no-contraceptive-reason1"
@@ -54,7 +54,7 @@ Usage: #example
   * entry[0] = Reference(Patient/patient-patient4)
 * section[+]
   * title = "ประวัติการตั้งครรภ์"
-  * entry[0] = Reference(Observationobservation-woman-contraceptive1)
+  * entry[0] = Reference(Observation/observation-woman-contraceptive1)
   * entry[+] = Reference(Observation/observation-woman-no-contraceptive-reason1)
   * entry[+] = Reference(Observation/observation-woman-num-parity1)
   * entry[+] = Reference(Observation/observation-woman-num-living-birth1)

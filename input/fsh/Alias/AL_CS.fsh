@@ -9,7 +9,7 @@ Alias: $ICF = http://hl7.org/fhir/sid/icf-nl
 Alias: $ISO4217 = urn:iso:std:iso:4217
 
 // From terminology.hl7.org
-Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/3.1.0/CodeSystem-v2-0203.html
+Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $CS_HL7_MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $CS_HL7_Religion = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
 Alias: $CS_HL7_ObservationCat = http://terminology.hl7.org/CodeSystem/observation-category
