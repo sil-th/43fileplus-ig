@@ -1,0 +1,13 @@
+Instance: OpdGPClinic1
+InstanceOf: Location
+Title: "ตัวอย่าง Location: OPD GP Clinic 1"
+Description: "ข้อมูลคลินิก OPD - GP 1"
+Usage: #example
+* identifier[0]
+  * system = $ID_LO_DepCode
+  * value = "OPDGP1"
+* status = #active
+* name = "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
+* description = "คำบรรยายเพิ่มเติม (ถ้ามี)"
+* partOf = Reference(Organization/OrganizationMain)
+  * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

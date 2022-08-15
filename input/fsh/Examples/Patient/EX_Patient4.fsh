@@ -1,0 +1,75 @@
+Instance: Patient4
+InstanceOf: Patient
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 4 หญิงไทย โรคเรื้อรัง"
+Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
+Usage: #example
+* identifier[0]
+  * use = #official
+  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * system = $ID_ThaiCid
+  * value = "2650591524440"
+  * period
+    * start = "2018-04-25"
+    * end = "2022-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * system = $ID_LO_PID
+  * value = "65-XXXXX"
+  * period
+    * start = "2018-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#MRN "Medical record number"
+  * system = $ID_LO_HN
+  * value = "65-XXXXX"
+* active = true
+* name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
+  * text = "นาง สมควร ใจดี"
+  * family = "ใจดี"
+  * given = "สมควร"
+  * prefix = "นาง"
+* telecom[0]
+  * system = #phone
+  * value = "088-8888888"
+  * use = #mobile
+* telecom[+]
+  * system = #email
+  * value = "somkuanjaidee@jaidee.com"
+* gender = #female
+* birthDate = "1990-04-25"
+* address[0]
+  * extension[0]
+    * url = $EX_TH_AddressCode
+    * valueCoding = $CS_DOPA_Location#342001 "จังหวัดอุบลราชธานี อำเภอตาลสุม ตำบลตาลสุม"
+  * extension[+]
+    * url = $EX_HL7_Geolocation
+    * extension[0]
+      * url = "latitude"
+      * valueString = "78.31809"
+    * extension[+]
+      * url = "longitude"
+      * valueString = "-133.03485"
+  * extension[+]
+    * url = $EX_TH_StructureLine
+    * extension[0]
+      * url = "number"
+      * valueString = "123"
+    * extension[+]
+      * url = "village-no"
+      * valueString = "หมู่ที่ 20"
+    * extension[+]
+      * url = "road"
+      * valueString = "ถนนสมเด็จ"
+  * use = #home
+  * text = "123 หมู่ที่ 20 ถนนสมเด็จ ตำบลตาลสุม อำเภอตาลสุม จังหวัดอุบลราชธานี 34330"
+  * line = "123 หมู่ที่ 20 ถนนสมเด็จ"
+  * city = "ตาลสุม"
+  * district = "ตาลสุม"
+  * state = "อุบลราชธานี"
+  * postalCode = "34330"
+* maritalStatus = $CS_HL7_MaritalStatus#M "Married"
+  * coding[1] = $CS_THCC_Marital#2 "คู่"
