@@ -114,12 +114,12 @@ Usage: #example
   * linkId = "21"
   * text = "ระบบกำจัดน้ำเสียในชุมชน"
   * answer[0]
-    * valueCoding = $CS_QN_Village#1 "มี"
+    * valueCoding = $CS_QN_Village#Q21-1 "มี"
 * item[+]
   * linkId = "22"
   * text = "สถานที่จัดการมูลฝอยในชุมชน"
   * answer[0]
-    * valueCoding = $CS_QN_Village#4 "มีสถานที่รวบรวม คัดแยก และนำมูลฝอยไปใช้ประโยชน์"
+    * valueCoding = $CS_QN_Village#Q22-4 "มีสถานที่รวบรวม คัดแยก และนำมูลฝอยไปใช้ประโยชน์"
 * item[+]
   * linkId = "23"
   * text = "จำนวนโรงงานอุตสาหกรรม"

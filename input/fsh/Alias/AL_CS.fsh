@@ -34,13 +34,13 @@ Alias: $CS_HL7_ClaimInfoCat = http://terminology.hl7.org/CodeSystem/claiminforma
 Alias: $CS_HL7_DiagServiceCat = http://terminology.hl7.org/CodeSystem/v2-0074
 
 // From Thai national codes
-Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/Codesystem/isced-97
-Alias: $CS_DOPA_NamePrefix = http://terms.sil-th.org/Codesystem/cs-dopa-nameprefix
-Alias: $CS_DOPA_Location = http://terms.sil-th.org/Codesystem/cs-dopa-location
-Alias: $CS_TMT = http://terms.sil-th.org/Codesystem/th-tmt
-Alias: $CS_TMLT = http://terms.sil-th.org/Codesystem/th-tmlt
-Alias: $CS_24Drug = http://terms.sil-th.org/Codesystem/th-24drug
-Alias: $CS_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/th-icd10tm-lab
+Alias: $CS_TH_ISCED1997 = http://terms.sil-th.org/CodeSystem/isced-97
+Alias: $CS_DOPA_NamePrefix = http://terms.sil-th.org/CodeSystem/cs-dopa-nameprefix
+Alias: $CS_DOPA_Location = http://terms.sil-th.org/CodeSystem/cs-dopa-location
+Alias: $CS_TMT = http://terms.sil-th.org/CodeSystem/th-tmt
+Alias: $CS_TMLT = http://terms.sil-th.org/CodeSystem/th-tmlt
+Alias: $CS_24Drug = http://terms.sil-th.org/CodeSystem/th-24drug
+Alias: $CS_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm-lab
 
 // From Thai MOPH codes
 Alias: $CS_THCC_43fileType = https://terms.sil-th.org/CodeSystem/cs-thcc-43file-type

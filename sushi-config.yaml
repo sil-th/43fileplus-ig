@@ -29,9 +29,11 @@ parameters:
 copyrightYear: 2022+
 releaseLabel: ci-build
 
-# pages:
-#   index.md:
-#     title: Home
+pages:
+  index.md:
+    title: 43 แฟ้ม-plus Implementation Guide
+  files-listing.md:
+    title: ตัวอย่าง FHIR Document ตาม 43 แฟ้ม-plus
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
