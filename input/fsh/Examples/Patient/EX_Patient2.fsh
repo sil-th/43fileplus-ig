@@ -49,7 +49,7 @@ Usage: #example
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#MRN "Medical record number"
+  * type = $CS_HL7_IdentifierType#MR "Medical record number"
   * system = $ID_LO_HN
   * value = "65-XXXXX"
 * active = true

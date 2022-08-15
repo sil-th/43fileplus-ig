@@ -19,6 +19,9 @@ jurisdiction: "urn:iso:std:iso:3166#TH"
 description: An implementation guide for adopting FHIR for health information exchange in 43files-plus format
 license: CC0-1.0
 fhirVersion: 4.3.0
+dependencies:
+  hl7.fhir.us.odh: dev
+  sil-th-terminology: dev
 parameters:
   apply-publisher: true
   apply-contact: true
@@ -26,13 +29,17 @@ parameters:
 copyrightYear: 2022+
 releaseLabel: ci-build
 
+# pages:
+#   index.md:
+#     title: Home
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  IG Home: index.html
-  Table of Contents: toc.html
-  43plus Files: files-listing.html
+  หน้าแรก: index.html
+  สารบัญ: toc.html
+  43 แฟ้ม plus: files-listing.html
   Artifacts Summary: artifacts.html
   # Other Resources:
   #   "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html

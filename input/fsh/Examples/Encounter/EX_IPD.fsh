@@ -78,7 +78,7 @@ Usage: #example
 * location[+]
   * extension[0]
     * url = $EX_TH_IpdJourney 
-    * valueCodeableConcept = #discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
+    * valueCodeableConcept = $CS_THCC_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
       * system = $ID_LO_DepCode

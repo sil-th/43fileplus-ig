@@ -94,42 +94,31 @@ Usage: #example
   * text = "ระบบกำจัดน้ำเสียในชุมชน"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #0
-    * valueCoding.display = "ไม่มี"
+    * valueCoding = $CS_QN_Village#Q21-0 "ไม่มี"
   * answerOption[+]
-    * valueCoding.code = #1
-    * valueCoding.display = "มี"
+    * valueCoding = $CS_QN_Village#Q21-1 "มี"
   * answerOption[+]
-    * valueCoding.code = #9
-    * valueCoding.display = "ไม่ทราบ"
+    * valueCoding = $CS_QN_Village#Q21-9 "ไม่ทราบ"
 * item[+]
   * linkId = "22"
   * text = "สถานที่จัดการมูลฝอยในชุมชน"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #0
-    * valueCoding.display = "ไม่ทราบ"
+    * valueCoding = $CS_QN_Village#Q22-0 "ไม่ทราบ"
   * answerOption[+]
-    * valueCoding.code = #1
-    * valueCoding.display = "ไม่มี"
+    * valueCoding = $CS_QN_Village#Q22-1 "ไม่มี"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "มีสถานที่ฝังกลบ"
+    * valueCoding = $CS_QN_Village#Q22-2 "มีสถานที่ฝังกลบ"
   * answerOption[+]
-    * valueCoding.code = #3
-    * valueCoding.display = "มีสถานที่เผา"
+    * valueCoding = $CS_QN_Village#Q22-3 "มีสถานที่เผา"
   * answerOption[+]
-    * valueCoding.code = #4
-    * valueCoding.display = "มีสถานที่รวบรวม คัดแยก และนำมูลฝอยไปใช้ประโยชน์"
+    * valueCoding = $CS_QN_Village#Q22-4 "มีสถานที่รวบรวม คัดแยก และนำมูลฝอยไปใช้ประโยชน์"
   * answerOption[+]
-    * valueCoding.code = #5
-    * valueCoding.display = "มีสถานที่รวบรวมมูลฝอยเพื่อนำไปกำจัดที่อื่น"
+    * valueCoding = $CS_QN_Village#Q22-5 "มีสถานที่รวบรวมมูลฝอยเพื่อนำไปกำจัดที่อื่น"
   * answerOption[+]
-    * valueCoding.code = #6
-    * valueCoding.display = "มีสถานที่หมักทำปุ๋ย"
+    * valueCoding = $CS_QN_Village#Q22-6 "มีสถานที่หมักทำปุ๋ย"
   * answerOption[+]
-    * valueCoding.code = #9
-    * valueCoding.display = "กำจัดขยะด้วยวิธีอื่น"
+    * valueCoding = $CS_QN_Village#Q22-9 "กำจัดขยะด้วยวิธีอื่น"
 * item[+]
   * linkId = "23"
   * text = "จำนวนโรงงานอุตสาหกรรม"

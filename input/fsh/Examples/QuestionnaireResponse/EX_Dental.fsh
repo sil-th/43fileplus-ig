@@ -14,8 +14,7 @@ Usage: #example
   * linkId = "1"
   * text = "ประเภทผู้ได้รับบริการตรวจสภาวะทันตสุขภาพ"
   * answer[0]
-    * valueCoding.code = #3
-    * valueCoding.display = "กลุ่มเด็กวัยเรียน (อายุ 6-12 ปี)"
+    * valueCoding = $CS_QN_Dental#Q01-3 "กลุ่มเด็กวัยเรียน (อายุ 6-12 ปี)"
 * item[+]
   * linkId = "2"
   * text = "จำนวนฟันแท้ที่มีอยู่ (ซี่)"
@@ -60,14 +59,12 @@ Usage: #example
   * linkId = "10"
   * text = "จำเป็นต้องทา/เคลือบฟลูออไรด์"
   * answer[0]
-    * valueCoding.code = #2
-    * valueCoding.display = "ไม่ต้องทา/เคลือบฟูลออไรด์"
+    * valueCoding = $CS_QN_Dental#Q10-2 "ไม่ต้องทา/เคลือบฟูลออไรด์"
 * item[+]
   * linkId = "11"
   * text = "จำเป็นต้องขูดหินน้ำลาย"
   * answer[0]
-    * valueCoding.code = #2
-    * valueCoding.display = "ไม่ต้องขูดหินน้ำลาย"
+    * valueCoding = $CS_QN_Dental#Q11-2 "ไม่ต้องขูดหินน้ำลาย"
 * item[+]
   * linkId = "12"
   * text = "จำนวนฟันที่ต้องเคลือบหลุมร่องฟัน"
@@ -97,8 +94,7 @@ Usage: #example
   * linkId = "17"
   * text = "จำเป็นต้องใส่ฟันเทียม"
   * answer[0]
-    * valueCoding.code = #4
-    * valueCoding.display = "ไม่ต้องใส่ฟันเทียม"
+    * valueCoding = $CS_QN_Dental#Q17-4 "ไม่ต้องใส่ฟันเทียม"
 * item[+]
   * linkId = "18"
   * text = "จำนวนคู่สบฟันแท้กับฟันแท้"
@@ -118,14 +114,12 @@ Usage: #example
   * linkId = "21"
   * text = "สภาวะปริทันต์ในภาพรวม"
   * answer[0]
-    * valueCoding.code = #0
-    * valueCoding.display = "ปกติ"
+    * valueCoding = $CS_QN_Dental#Q21-0 "ปกติ"
 * item[+]
   * linkId = "22"
   * text = "สถานศึกษา"
   * answer[0]
-    * valueCoding.code = #6
-    * valueCoding.display = "มัธยมศึกษารัฐบาล"
+    * valueCoding = $CS_QN_Dental#Q22-6 "มัธยมศึกษารัฐบาล"
 * item[+]
   * linkId = "23"
   * text = "ระดับการศึกษา"

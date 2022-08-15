@@ -14,20 +14,15 @@ Usage: #example
   * text = "ประเภทผู้ได้รับบริการตรวจสภาวะทันตสุขภาพ"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #1
-    * valueCoding.display = "กลุ่มหญิงตั้งครรภ์"
+    * valueCoding = $CS_QN_Dental#Q01-1 "กลุ่มหญิงตั้งครรภ์"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "กลุ่มเด็กก่อนวัยเรียน (อายุ 0-5 ปี)"
+    * valueCoding = $CS_QN_Dental#Q01-2 "กลุ่มเด็กก่อนวัยเรียน (อายุ 0-5 ปี)"
   * answerOption[+]
-    * valueCoding.code = #3
-    * valueCoding.display = "กลุ่มเด็กวัยเรียน (อายุ 6-12 ปี)"
+    * valueCoding = $CS_QN_Dental#Q01-3 "กลุ่มเด็กวัยเรียน (อายุ 6-12 ปี)"
   * answerOption[+]
-    * valueCoding.code = #4
-    * valueCoding.display = "กลุ่มผู้สูงอายุ (อายุ 60 ปีขึ้น ไป)"
+    * valueCoding = $CS_QN_Dental#Q01-4 "กลุ่มผู้สูงอายุ (อายุ 60 ปีขึ้น ไป)"
   * answerOption[+]
-    * valueCoding.code = #5
-    * valueCoding.display = "กลุ่มอื่น ๆ (นอกเหนือจาก 4 กลุ่มแรก)"
+    * valueCoding = $CS_QN_Dental#Q01-5 "กลุ่มอื่น ๆ (นอกเหนือจาก 4 กลุ่มแรก)"
 * item[+]
   * linkId = "2"
   * text = "จำนวนฟันแท้ที่มีอยู่ (ซี่)"
@@ -65,21 +60,17 @@ Usage: #example
   * text = "จำเป็นต้องทา/เคลือบฟลูออไรด์"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #1
-    * valueCoding.display = "ต้องทา/เคลือบฟูลออไรด์"
+    * valueCoding = $CS_QN_Dental#Q10-1 "ต้องทา/เคลือบฟูลออไรด์"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "ไม่ต้องทา/เคลือบฟูลออไรด์"
+    * valueCoding = $CS_QN_Dental#Q10-2 "ไม่ต้องทา/เคลือบฟูลออไรด์"
 * item[+]
   * linkId = "11"
   * text = "จำเป็นต้องขูดหินน้ำลาย"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #1
-    * valueCoding.display = "ต้องขูดหินน้ำลาย"
+    * valueCoding = $CS_QN_Dental#Q11-1 "ต้องขูดหินน้ำลาย"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "ไม่ต้องขูดหินน้ำลาย"
+    * valueCoding = $CS_QN_Dental#Q11-2 "ไม่ต้องขูดหินน้ำลาย"
 * item[+]
   * linkId = "12"
   * text = "จำนวนฟันที่ต้องเคลือบหลุมร่องฟัน"
@@ -105,17 +96,13 @@ Usage: #example
   * text = "จำเป็นต้องใส่ฟันเทียม"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #1
-    * valueCoding.display = "ต้องใส่ฟันเทียมบนและล่าง"
+    * valueCoding = $CS_QN_Dental#Q17-1 "ต้องใส่ฟันเทียมบนและล่าง"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "ต้องใส่ฟันเทียมบน"
+    * valueCoding = $CS_QN_Dental#Q17-2 "ต้องใส่ฟันเทียมบน"
   * answerOption[+]
-    * valueCoding.code = #3
-    * valueCoding.display = "ต้องใส่ฟันเทียมล่าง"
+    * valueCoding = $CS_QN_Dental#Q17-3 "ต้องใส่ฟันเทียมล่าง"
   * answerOption[+]
-    * valueCoding.code = #4
-    * valueCoding.display = "ไม่ต้องใส่ฟันเทียม"
+    * valueCoding = $CS_QN_Dental#Q17-4 "ไม่ต้องใส่ฟันเทียม"
 * item[+]
   * linkId = "18"
   * text = "จำนวนคู่สบฟันแท้กับฟันแท้"
@@ -133,51 +120,37 @@ Usage: #example
   * text = "สภาวะปริทันต์ในภาพรวม"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #0
-    * valueCoding.display = "ปกติ"
+    * valueCoding = $CS_QN_Dental#Q21-0 "ปกติ"
   * answerOption[+]
-    * valueCoding.code = #1
-    * valueCoding.display = "เหงือกอักเสบ"
+    * valueCoding = $CS_QN_Dental#Q21-1 "เหงือกอักเสบ"
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "มีหินน้ำลายชัดเจน"
+    * valueCoding = $CS_QN_Dental#Q21-2 "มีหินน้ำลายชัดเจน"
   * answerOption[+]
-    * valueCoding.code = #3
-    * valueCoding.display = "ปริทันต์อักเสบหรือมีฟันโยก"
+    * valueCoding = $CS_QN_Dental#Q21-3 "ปริทันต์อักเสบหรือมีฟันโยก"
   * answerOption[+]
-    * valueCoding.code = #9
-    * valueCoding.display = "ไม่มีฟันหรือตรวจไม่ได้"
+    * valueCoding = $CS_QN_Dental#Q21-9 "ไม่มีฟันหรือตรวจไม่ได้"
 * item[+]
   * linkId = "22"
   * text = "สถานศึกษา"
   * type = #choice
   * answerOption[0]
-    * valueCoding.code = #1
-    * valueCoding.display = "ศพด."
+    * valueCoding = $CS_QN_Dental#Q22-1 "ศพด."
   * answerOption[+]
-    * valueCoding.code = #2
-    * valueCoding.display = "ประถมศึกษารัฐบาล"
+    * valueCoding = $CS_QN_Dental#Q22-2 "ประถมศึกษารัฐบาล"
   * answerOption[+]
-    * valueCoding.code = #3
-    * valueCoding.display = "ประถมศึกษาเทศบาล"
+    * valueCoding = $CS_QN_Dental#Q22-3 "ประถมศึกษาเทศบาล"
   * answerOption[+]
-    * valueCoding.code = #4
-    * valueCoding.display = "ประถมศึกษาท้องถิ่น"
+    * valueCoding = $CS_QN_Dental#Q22-4 "ประถมศึกษาท้องถิ่น"
   * answerOption[+]
-    * valueCoding.code = #5
-    * valueCoding.display = "ประถมศึกษาเอกชน"
+    * valueCoding = $CS_QN_Dental#Q22-5 "ประถมศึกษาเอกชน"
   * answerOption[+]
-    * valueCoding.code = #6
-    * valueCoding.display = "มัธยมศึกษารัฐบาล"
+    * valueCoding = $CS_QN_Dental#Q22-6 "มัธยมศึกษารัฐบาล"
   * answerOption[+]
-    * valueCoding.code = #7
-    * valueCoding.display = "มัธยมศึกษาเทศบาล"
+    * valueCoding = $CS_QN_Dental#Q22-7 "มัธยมศึกษาเทศบาล"
   * answerOption[+]
-    * valueCoding.code = #8
-    * valueCoding.display = "มัธยมศึกษาท้องถิ่น"
+    * valueCoding = $CS_QN_Dental#Q22-8 "มัธยมศึกษาท้องถิ่น"
   * answerOption[+]
-    * valueCoding.code = #9
-    * valueCoding.display = "มัธยมศึกษาเอกชน"
+    * valueCoding = $CS_QN_Dental#Q22-9 "มัธยมศึกษาเอกชน"
 * item[+]
   * linkId = "23"
   * text = "ระดับการศึกษา"

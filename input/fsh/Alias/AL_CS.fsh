@@ -131,3 +131,7 @@ Alias: $CS_THCC_PostnatalBreastfeeding = http://terms.sil-th.org/CodeSystem/cs-t
 Alias: $CS_THCC_PostnatalMens = http://terms.sil-th.org/CodeSystem/cs-thcc-postnatal-mens
 Alias: $CS_THCC_PostnatalPerineum = http://terms.sil-th.org/CodeSystem/cs-thcc-postnatal-perineum
 
+// Questionnaire Answer
+Alias: $CS_QN_Dental = http://terms.sil-th.org/CodeSystem/cs-qn-dental
+Alias: $CS_QN_Home = http://terms.sil-th.org/CodeSystem/cs-qn-home
+Alias: $CS_QN_Village = http://terms.sil-th.org/CodeSystem/cs-qn-village
