@@ -39,8 +39,8 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#18185-9 "Gestational age"
-  * text = "Gestational age"
+  * coding[0] = $LNC#57714-8 "Obstetric estimation of gestational age"
+  * text = "Obstetric estimation of gestational age"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-04-21T12:30:02+07:00"
 * valueQuantity = 12 'wk' "Week"

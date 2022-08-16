@@ -27,7 +27,7 @@ Usage: #example
   * text = "Birth date"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueDateTime = "2021-12-01T12:30:02+07:00"
+* valueDateTime = "2022-01-21T14:30:02+07:00"
 
 
 Instance: observation-postnatal-fundal-height1

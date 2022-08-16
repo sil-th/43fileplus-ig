@@ -33,8 +33,8 @@ Usage: #example
 
 Instance: observation-labor-edc1
 InstanceOf: Observation
-Title: "ตัวอย่าง Observation: TEMP"
-Description: "TEMP"
+Title: "ตัวอย่าง Observation: วันที่กำหนดคลอด"
+Description: "วันที่กำหนดคลอด"
 Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#exam "Exam"
@@ -45,6 +45,22 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
 * valueDateTime = "2021-12-01"
+
+
+Instance: observation-labor-ga1
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: อายุครรภ์"
+Description: "อายุครรภ์"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $LNC#85719-3 "Gestational age in weeks--at cessation of pregnancy"
+  * text = "Gestational age in weeks--at cessation of pregnancy"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2022-01-21T12:30:02+07:00"
+* valueQuantity = 40 'wk' "wk"
 
 
 Instance: observation-labor-date-time1
@@ -60,7 +76,7 @@ Usage: #example
   * text = "Birth date"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueDateTime = "2021-12-01T12:30:02+07:00"
+* valueDateTime = "2022-01-21T14:30:02+07:00"
 
 
 Instance: observation-labor-live-birth1
@@ -93,3 +109,19 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
 * valueInteger = 0
+
+
+Instance: observation-labor-delivery-presentation
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ท่าเด็กตอนคลอด"
+Description: "ท่าเด็กตอนคลอด"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $LNC#57075-4 "Newborn delivery information"
+  * text = "Newborn delivery information"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2022-01-21T12:30:02+07:00"
+* valueCodeableConcept = $CS_THCC_LaborPresentation#1 "ปกติ"

@@ -1,7 +1,7 @@
-Instance: patient-patient6
-InstanceOf: Patient
-Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 6 หญิงไทย ตั้งครรภ์และคลอด"
-Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
+Instance: relatedperson-patient7-mother
+InstanceOf: RelatedPerson
+Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 1"
+Description: "มารดาของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]
   * use = #official
@@ -23,7 +23,8 @@ Usage: #example
   * type = $CS_HL7_IdentifierType#MR "Medical record number"
   * system = $ID_LO_HN
   * value = "65-XXXXX"
-* active = true
+* patient = Reference(Patient/patient-patient7)
+* relationship = $CS_HL7_RelationshipType#MTH "mother"
 * name[0]
   * extension
     * url = $EX_HL7_Language
@@ -63,9 +64,3 @@ Usage: #example
   * district = "ตาลสุม"
   * state = "อุบลราชธานี"
   * postalCode = "34330"
-* maritalStatus
-  * coding[0] = $CS_HL7_MaritalStatus#M "Married"
-  * coding[+] = $CS_THCC_Marital#2 "คู่"
-* link
-  * other = Reference(RelatedPerson/relatedperson-patient7-mother)
-  * type = #seealso

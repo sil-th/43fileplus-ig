@@ -1,5 +1,6 @@
 // From FHIR core
 Alias: $EX_HL7_Language = http://hl7.org/fhir/StructureDefinition/language
+Alias: $EX_HL7_BirthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $EX_HL7_Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $EX_HL7_Religion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias: $EX_HL7_ConditionDueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo

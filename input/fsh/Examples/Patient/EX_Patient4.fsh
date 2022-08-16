@@ -71,5 +71,6 @@ Usage: #example
   * district = "ตาลสุม"
   * state = "อุบลราชธานี"
   * postalCode = "34330"
-* maritalStatus = $CS_HL7_MaritalStatus#M "Married"
-  * coding[1] = $CS_THCC_Marital#2 "คู่"
+* maritalStatus
+  * coding[0] = $CS_HL7_MaritalStatus#M "Married"
+  * coding[+] = $CS_THCC_Marital#2 "คู่"

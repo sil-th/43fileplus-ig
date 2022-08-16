@@ -144,8 +144,9 @@ Usage: #example
   * district = "เมืองนนทบุรี"
   * state = "นนทบุรี"
   * postalCode = "11000"
-* maritalStatus = $CS_HL7_MaritalStatus#M "Married"
-  * coding[1] = $CS_THCC_Marital#2 "คู่"
+* maritalStatus
+  * coding[0] = $CS_HL7_MaritalStatus#M "Married"
+  * coding[+] = $CS_THCC_Marital#2 "คู่"
 * generalPractitioner = Reference(practitioner-doctor1)
   * insert GeneralReference($ID_ThaiDoctor, "XXXXX" , "พญ. สมหญิง จริงใจ")
 

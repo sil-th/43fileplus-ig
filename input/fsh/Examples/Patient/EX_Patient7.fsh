@@ -1,6 +1,6 @@
-Instance: patient-patient6
+Instance: patient-patient7
 InstanceOf: Patient
-Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 6 หญิงไทย ตั้งครรภ์และคลอด"
+Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 7 ทารกไทย"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
 Usage: #example
 * identifier[0]
@@ -9,15 +9,15 @@ Usage: #example
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period
-    * start = "2018-04-25"
-    * end = "2022-04-25"
+    * start = "2022-01-21"
+    * end = "2027-01-21"
 * identifier[+]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#PN "Person number"
   * system = $ID_LO_PID
   * value = "65-XXXXX"
   * period
-    * start = "2018-04-25"
+    * start = "2022-01-21"
 * identifier[+]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#MR "Medical record number"
@@ -28,19 +28,16 @@ Usage: #example
   * extension
     * url = $EX_HL7_Language
     * valueCode = #th
-  * text = "นาง สมฤทัย ใจดี"
+  * text = "ด.ช. สมมิตร ใจดี"
   * family = "ใจดี"
-  * given = "สมฤทัย"
-  * prefix = "นาง"
-* telecom[0]
-  * system = #phone
-  * value = "088-8888888"
-  * use = #mobile
-* telecom[+]
-  * system = #email
-  * value = "somruetaijaidee@jaidee.com"
+  * given = "สมมิตร"
+  * prefix = "ด.ช."
 * gender = #female
-* birthDate = "1996-04-25"
+* birthDate = "2022-01-21"
+  * extension
+    * url = $EX_HL7_BirthTime
+    * valueDateTime = "2022-01-21T14:30:02+07:00"
+* multipleBirthInteger = 0
 * address[0]
   * extension[0]
     * url = $EX_TH_AddressCode
@@ -63,9 +60,21 @@ Usage: #example
   * district = "ตาลสุม"
   * state = "อุบลราชธานี"
   * postalCode = "34330"
-* maritalStatus
-  * coding[0] = $CS_HL7_MaritalStatus#M "Married"
-  * coding[+] = $CS_THCC_Marital#2 "คู่"
-* link
-  * other = Reference(RelatedPerson/relatedperson-patient7-mother)
-  * type = #seealso
+* maritalStatus 
+  * coding[0] = $CS_HL7_MaritalStatus#S "Never Married"
+  * coding[+] = $CS_THCC_Marital#1 "โสด"
+* contact
+  * relationship
+    * coding[0] = $CS_HL7_ContactRole#N "Next-of-Kin"
+    * coding[+] = $CS_HL7_RelationshipType#MTH "mother"
+  * name
+    * family = "ใจดี"
+    * given = "สมฤทัย"
+    * prefix = "นาง"
+  * telecom[0]
+    * system = #phone
+    * value = "088-8888888"
+    * use = #mobile
+  * telecom[+]
+    * system = #email
+    * value = "somruetaijaidee@jaidee.com"
