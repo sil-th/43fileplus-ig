@@ -10,7 +10,7 @@ Usage: #example
   * coding[0] = $LNC#$LNC#29463-7 "Body weight"
   * text = "Body weight"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 3500 'g' "g"
 
 
@@ -26,7 +26,7 @@ Usage: #example
   * coding[0] = $SCT#413654009 "Birth asphyxia"
   * text = "Birth asphyxia"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueCodeableConcept = $CS_HL7_YesNo#N "No"
 
 
@@ -43,7 +43,7 @@ Usage: #example
   * coding[0] = $SCT#414955000 "Oral vitamin K prophylaxis given in hospital (situation)"
   * text = "Oral vitamin K prophylaxis given in hospital (situation)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueCodeableConcept = $CS_HL7_YesNo#Y "Yes"
 
 
@@ -61,7 +61,7 @@ Usage: #example
   * coding[0] = $LNC#29575-8 "Thyrotropin [Units/volume] in DBS"
   * text = "Thyrotropin [Units/volume] in DBS"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 10 'm[IU]/L' "m[IU]/L"
 
 
@@ -78,7 +78,7 @@ Usage: #example
   * coding[0] = $LNC#8302-2 "Body height"
   * text = "Body height"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 50 'cm' "cm"
 
 
@@ -95,7 +95,7 @@ Usage: #example
   * coding[0] = $LNC#8290-9 "Head Occipital-frontal circumference --at birth- by Tape measure"
   * text = "Head Occipital-frontal circumference --at birth- by Tape measure"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 35 'cm' "cm"
 
 
@@ -112,7 +112,7 @@ Usage: #example
   * coding[0] = $LNC#8279-2 "Chest Circumference at nipple line"
   * text = "Chest Circumference at nipple line"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 30 'cm' "cm"
 
 
@@ -130,7 +130,7 @@ Usage: #example
   * coding[0] = $LNC#9272-6 "1 minute Apgar Score"
   * text = "1 minute Apgar Score"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * component[0]
   * code = $LNC#32406-1 "1 minute Apgar Color"
   * valueInteger = 2
@@ -160,7 +160,7 @@ Usage: #example
   * coding[0] = $LNC#9274-2 "5 minute Apgar Score"
   * text = "5 minute Apgar Score"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * component[0]
   * code = $LNC#32411-1 "5 minute Apgar Color"
   * valueInteger = 2
@@ -190,5 +190,128 @@ Usage: #example
   * coding[0] = $LNC#76447-2 "General health"
   * text = "General health"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
-* effectiveDateTime = "2022-05-21T12:30:02+07:00"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueString = "สุขภาพแข็งแรงดี"
+
+
+// Newborn care
+Instance: observation-newborncare-umbilical-hygiene
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ความสะอาดของสะดือ"
+Description: "ความสะอาดของสะดือ"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#364594006 "Umbilical stump observable"
+  * text = "Umbilical stump observable"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueString = "สะอาดดี (รอรหัส)"
+
+
+Instance: observation-newborncare-skin-hygiene
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ความสะอาดของผิวหนัง"
+Description: "ความสะอาดของผิวหนัง"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#364534008 "Skin hygiene"
+  * text = "Skin hygiene"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueString = "สะอาดดี (รอรหัส)"
+
+
+
+Instance: observation-newborncare-urination
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ระบบขับถ่ายปัสสาวะ"
+Description: "ระบบขับถ่ายปัสสาวะ"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#364196001 "Micturition feature"
+  * text =  "Micturition feature"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueString = "ปกติดี (รอรหัส)"
+
+
+
+Instance: observation-newborncare-defecation
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ระบบขับถ่ายอุจจาระ"
+Description: "ระบบขับถ่ายอุจจาระ"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#364171004 "Defecation observable"
+  * text = "Defecation observable"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueString = "ปกติดี (รอรหัส)"
+
+
+Instance: observation-newborncare-general-health
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: สุขภาพเด็ก"
+Description: "สุขภาพเด็ก"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $LNC#76447-2 "General health"
+  * text = "General health"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueString = "สุขภาพแข็งแรงดี (รอรหัส)"
+
+
+
+Instance: observation-newborncare-overall-condition
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: ผลการตรวจทารกหลังคลอด"
+Description: "ผลการตรวจทารกหลังคลอด"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#249222005 "Neonatal condition"
+  * text = "Neonatal condition"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueCodeableConcept = $CS_HL7_ObsInterpret#N "Normal"
+
+
+
+Instance: observation-newborncare-food
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: อาหารที่รับประทาน"
+Description: "อาหารที่รับประทาน"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#226379006 "Food intake"
+  * text = "Food intake"
+* subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+* effectiveDateTime = "2022-02-21T15:00:02+07:00"
+* valueCodeableConcept = $CS_THCC_NewbornFood#1 "นมแม่อย่างเดียว"
+
+
+
+
+
+

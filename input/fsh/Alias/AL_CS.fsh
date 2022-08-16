@@ -22,6 +22,7 @@ Alias: $CS_HL7_ConditionCategory = http://terminology.hl7.org/CodeSystem/conditi
 Alias: $CS_HL7_DiagRole = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $CS_HL7_OrgType = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $CS_HL7_RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $CS_HL7_ProviderRole = http://terminology.hl7.org/CodeSystem/v2-0443
 Alias: $CS_HL7_AlleryActive = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $CS_HL7_AllergyVerify = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $CS_HL7_Priority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
@@ -90,7 +91,6 @@ Alias: $CS_THCC_FunctionalConclusion = http://terms.sil-th.org/CodeSystem/cs-thc
 // Encounter
 Alias: $CS_THCC_ServicePriority = http://terms.sil-th.org/CodeSystem/cs-thcc-service-priority
 Alias: $CS_THCC_AdmitSource = http://terms.sil-th.org/CodeSystem/cs-thcc-admit-source
-Alias: $CS_THCC_ServiceLocation = http://terms.sil-th.org/CodeSystem/cs-thcc-service-location
 Alias: $CS_THCC_PatientLocationType = http://terms.sil-th.org/CodeSystem/cs-thcc-patient-location-type
 Alias: $CS_THCC_ServiceHour = http://terms.sil-th.org/CodeSystem/cs-thcc-service-hour
 Alias: $CS_THCC_ServiceLocationType = http://terms.sil-th.org/CodeSystem/cs-thcc-service-location-type
@@ -158,6 +158,9 @@ Alias: $CS_THCC_PostnatalBreastfeeding = http://terms.sil-th.org/CodeSystem/cs-t
 Alias: $CS_THCC_PostnatalMens = http://terms.sil-th.org/CodeSystem/cs-thcc-postnatal-mens
 Alias: $CS_THCC_PostnatalPerineum = http://terms.sil-th.org/CodeSystem/cs-thcc-postnatal-perineum
 
+// Pediatrics
+Alias: $CS_THCC_NewbornFood = http://terms.sil-th.org/CodeSystem/cs-thcc-newborn-food
+
 
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
@@ -168,7 +171,7 @@ Alias: $CS_THCC_CausativeAgent = http://terms.sil-th.org/CodeSystem/cs-thcc-caus
 Alias: $CS_THCC_RehabDevice = http://terms.sil-th.org/CodeSystem/cs-thcc-rehab-device
 Alias: $CS_THCC_RehabServiceType = http://terms.sil-th.org/CodeSystem/cs-thcc-rehab-service-type
 Alias: $CS_THCC_PregnancyOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-pregnancy-outcome
-
+Alias: $CS_THCC_VaccineCode = http://terms.sil-th.org/CodeSystem/cs-thcc-vaccine-code
 
 // Questionnaire Related
 Alias: $CS_THCC_QnType = https://terms.sil-th.org/CodeSystem/cs-thcc-qn-type

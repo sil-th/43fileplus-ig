@@ -30,6 +30,5 @@ Usage: #example
     * url = $EX_TH_ServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD ทันตกรรม Clinic 1 โรงพยาบาลตัวอย่าง"
-  * physicalType = $CS_THCC_ServiceLocation#1 "ในสถานบริการ"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

@@ -1,7 +1,7 @@
 Instance: bundle-file37-document
 InstanceOf: Bundle
 Title: "ตัวอย่าง Bundle - แฟ้มที่ 37: NEWBORN"
-Description: "ข้อมูลประวัติการคลอดของทารก ของหญิงในเขตรับผิดชอบ หรือทารกที่มาคลอดที่หน่วยบริการ ประกอบด้วย Patient, Encounter, Observation, และ Appointment resource"
+Description: "ข้อมูลประวัติการคลอดของทารก ของหญิงในเขตรับผิดชอบ หรือทารกที่มาคลอดที่หน่วยบริการ ประกอบด้วย Patient, RelatedPerson, Procedure, และ Observation resource"
 Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"
