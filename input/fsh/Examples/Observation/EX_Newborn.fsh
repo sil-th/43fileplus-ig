@@ -4,8 +4,8 @@ Title: "ตัวอย่าง Observation: น้ำหนักแรกค�
 Description: "น้ำหนักแรกคลอด"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
+  * text = "Vital Signs"
 * code
   * coding[0] = $LNC#$LNC#29463-7 "Body weight"
   * text = "Body weight"
@@ -72,8 +72,8 @@ Title: "ตัวอย่าง Observation: ความยาว"
 Description: "ความยาว"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
+  * text = "Vital Signs"
 * code
   * coding[0] = $LNC#8302-2 "Body height"
   * text = "Body height"

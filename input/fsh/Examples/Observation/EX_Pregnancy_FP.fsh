@@ -32,7 +32,7 @@ Usage: #example
 * device
   * extension[0]
     * url = $EX_TH_PregTestAmount
-    * valueQuantity = 1 '{count}' "Count"
+    * valueQuantity = 1 '{#}' "Number"
   * identifier
     * system = $ID_LO_Device
     * value =  "XXXXX"

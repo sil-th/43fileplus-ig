@@ -26,13 +26,13 @@ Usage: #example
 
 Instance: composition-file-39
 InstanceOf: Composition
-Title: "ตัวอย่าง Composition แฟ้มที่ 39: EPI"
+Title: "ตัวอย่าง Composition แฟ้มที่ 39: NEWBORNCARE"
 Description: "Composition ของแฟ้มที่ 39"
 Usage: #example
 * status = #final
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
-  * coding[+] = $CS_THCC_43fileType#39 "EPI"
+  * coding[+] = $CS_THCC_43fileType#39 "NEWBORNCARE"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * date = "2022-07-29T12:30:02+07:00"
 * author[0] = Reference(Organization/organization-main)
@@ -43,9 +43,9 @@ Usage: #example
   * entry[0] = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * section[+]
   * title = "ข้อมูลการตรวจ"
-  * entry[+] = Reference(Encounter/encounter-vaccine1)
+  * entry[0] = Reference(Encounter/encounter-vaccine1)
 * section[+]
   * title = "ข้อมูลการฉีดวัคซีน"
-  * entry[+] = Reference(Immunization/immunization-baby1)
+  * entry[0] = Reference(Immunization/immunization-baby1)
 
 
