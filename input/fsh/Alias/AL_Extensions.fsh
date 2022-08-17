@@ -61,3 +61,4 @@ Alias: $EX_TH_IpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-d
 Alias: $EX_TH_FpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
 Alias: $EX_TH_LaborLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-labor-location
 Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-preg-test-amount
+Alias: $EX_TH_MedicationSource = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-medication-source

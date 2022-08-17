@@ -34,6 +34,7 @@ Alias: $CS_HL7_ProcessPriority = http://terminology.hl7.org/CodeSystem/processpr
 Alias: $CS_HL7_YesNo = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $CS_HL7_ClaimInfoCat = http://terminology.hl7.org/CodeSystem/claiminformationcategory
 Alias: $CS_HL7_DiagServiceCat = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $CS_HL7_DoseForm = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 
 // From Thai MOPH codes
 
@@ -166,6 +167,9 @@ Alias: $CS_THCC_ChildFood = http://terms.sil-th.org/CodeSystem/cs-thcc-child-foo
 // Referral
 Alias: $CS_THCC_ReferCareProcedure = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-care-procedure
 
+
+// Medication
+Alias: $CS_THCC_MedicationSource = http://terms.sil-th.org/CodeSystem/cs-thcc-medication-source
 
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation

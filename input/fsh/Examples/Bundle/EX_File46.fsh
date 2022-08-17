@@ -13,17 +13,12 @@ Usage: #example
 * entry[+]
   * fullUrl = "http://example.org/Patient/patient-patient4"
   * resource = patient-patient4
-
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/encounter-homevisit1"
-  * resource = encounter-homevisit1
+  * fullUrl = "http://example.org/ServiceRequest/servicerequest-refer-main"
+  * resource = servicerequest-refer-main
 * entry[+]
-  * fullUrl = "http://example.org/QuestionnaireResponse/questionnaireresponse-village1"
-  * resource = questionnaireresponse-village1
-* entry[+]
-  * fullUrl = "http://example.org/Appointment/appointment-homevisit1"
-  * resource = appointment-homevisit1
-
+  * fullUrl = "http://example.org/MedicationStatement/medicationstatement-refer-example1"
+  * resource = medicationstatement-refer-example1
 * entry[+]
   * fullUrl = "http://example.org/Organization/organization-main"
   * resource = organization-main
@@ -47,10 +42,6 @@ Usage: #example
   * title = "ข้อมูลผู้รับบริการ"
   * entry[0] = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * section[+]
-  * title = "ข้อมูลบริการ"
-  * entry[0] = Reference(Encounter/encounter-homevisit1)
-  * entry[+] = Reference(QuestionnaireResponse/questionnaireresponse-village1)
-* section[+]
-  * title = "ข้อมูลการนัด"
-  * entry[0] = Reference(Appointment/appointment-homevisit1)
-
+  * title = "ข้อมูลการส่งต่อ"
+  * entry[0] = Reference(ServiceRequest/servicerequest-refer-main)
+  * entry[+] = Reference(MedicationStatement/medicationstatement-refer-example1)
