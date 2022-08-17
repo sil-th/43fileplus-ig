@@ -33,3 +33,4 @@
 - [แฟ้มที่ 40: NUTRITION - ข้อมูลการตรวจวัดระดับโภชนาการและพัฒนาการ เด็กอายุ 0-5 ปี](Bundle-bundle-file40-document.html)
 - [แฟ้มที่ 41: SPECIALPP - ข้อมูลการให้บริการส่งเสริมสุขภาพป้องกันโรคเฉพาะสำหรับผู้ที่มารับบริการ](Bundle-bundle-file41-document.html)
 - [แฟ้มที่ 42: COMMUNITY_ACTIVITY - ข้อมูลกิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ](Bundle-bundle-file42-document.html)
+- [แฟ้มที่ 43: COMMUNITY_SERVICE - ข้อมูลการให้บริการในชุมชนสำหรับกลุ่มเป้าหมายในเขตรับผิดชอบ และผู้ป่วยนอกเขตรับผิดชอบ](Bundle-bundle-file42-document.html)

@@ -175,6 +175,7 @@ Alias: $CS_THCC_PregnancyOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-pr
 Alias: $CS_THCC_VaccineCode = http://terms.sil-th.org/CodeSystem/cs-thcc-vaccine-code
 Alias: $CS_THCC_SpecialPPService = http://terms.sil-th.org/CodeSystem/cs-thcc-special-pp-service
 Alias: $CS_THCC_CommunityActivity = http://terms.sil-th.org/CodeSystem/cs-thcc-community-activity
+Alias: $CS_THCC_CommunityService = http://terms.sil-th.org/CodeSystem/cs-thcc-community-service
 
 // Questionnaire Related
 Alias: $CS_THCC_QnType = https://terms.sil-th.org/CodeSystem/cs-thcc-qn-type
