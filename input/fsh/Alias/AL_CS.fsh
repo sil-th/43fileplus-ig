@@ -173,6 +173,7 @@ Alias: $CS_THCC_RehabDevice = http://terms.sil-th.org/CodeSystem/cs-thcc-rehab-d
 Alias: $CS_THCC_RehabServiceType = http://terms.sil-th.org/CodeSystem/cs-thcc-rehab-service-type
 Alias: $CS_THCC_PregnancyOutcome = http://terms.sil-th.org/CodeSystem/cs-thcc-pregnancy-outcome
 Alias: $CS_THCC_VaccineCode = http://terms.sil-th.org/CodeSystem/cs-thcc-vaccine-code
+Alias: $CS_THCC_SpecialPPService = http://terms.sil-th.org/CodeSystem/cs-thcc-special-pp-service
 
 // Questionnaire Related
 Alias: $CS_THCC_QnType = https://terms.sil-th.org/CodeSystem/cs-thcc-qn-type

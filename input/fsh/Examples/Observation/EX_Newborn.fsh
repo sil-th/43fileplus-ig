@@ -55,8 +55,8 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ TSH"
 Description: "ผลการตรวจ TSH"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+  * text = "Laboratory"
 * code
   * coding[0] = $LNC#29575-8 "Thyrotropin [Units/volume] in DBS"
   * text = "Thyrotropin [Units/volume] in DBS"
@@ -89,8 +89,8 @@ Title: "ตัวอย่าง Observation: เส้นรอบศีรษ�
 Description: "เส้นรอบศีรษะ"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
+  * text = "Vital Signs"
 * code
   * coding[0] = $LNC#8290-9 "Head Occipital-frontal circumference --at birth- by Tape measure"
   * text = "Head Occipital-frontal circumference --at birth- by Tape measure"
@@ -106,8 +106,8 @@ Title: "ตัวอย่าง Observation: เส้นรอบอก"
 Description: "เส้นรอบอก"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
+  * text = "Vital Signs"
 * code
   * coding[0] = $LNC#8279-2 "Chest Circumference at nipple line"
   * text = "Chest Circumference at nipple line"
