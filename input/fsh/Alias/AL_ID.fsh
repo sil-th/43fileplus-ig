@@ -28,6 +28,7 @@ Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
 Alias: $ID_LO_INV = https://terms.sil-th.org/hcode/5/XXXXX/Inv
 Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
 Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
+Alias: $ID_LO_Procedure = https://terms.sil-th.org/hcode/5/XXXXX/Procedure
 Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode

@@ -1,6 +1,7 @@
 // From external terminology
 Alias: $SCT = http://snomed.info/sct
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
+Alias: $ICD9CM = http://terminology.hl7.org/CodeSystem/icd9cm
 Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ISO3166 = urn:iso:std:iso:3166
@@ -199,6 +200,7 @@ Alias: $CS_TMT = http://terms.sil-th.org/CodeSystem/th-tmt
 Alias: $CS_TMLT = http://terms.sil-th.org/CodeSystem/th-tmlt
 Alias: $CS_24Drug = http://terms.sil-th.org/CodeSystem/th-24drug
 Alias: $CS_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm-lab
+Alias: $CS_ICD10TM = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm
 
 
 // From terminology.hl7.org
