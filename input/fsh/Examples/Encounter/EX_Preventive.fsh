@@ -37,3 +37,20 @@ Usage: #example
   * location = Reference(Location/location-opd-gp-clinic1) "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
+
+
+Instance: encounter-community-activity1
+InstanceOf: Encounter
+Title: "ตัวอย่าง Encounter: กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
+Description: "แสดงกิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
+Usage: #example
+* status = #finished
+* class = $CS_HL7_EncounterClass#FLD "field"
+* subject = Reference(Group/group-patient-village1) "ประชากรในหมู่บ้านสุขใจ แสนสุข"
+* period
+  * start = "2022-04-10T12:30:02+07:00"
+  * end = "2022-04-10T14:30:02+07:00"
+* serviceProvider = Reference(Organization/organization-main)
+  * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
+
+
