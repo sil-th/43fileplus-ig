@@ -40,7 +40,9 @@ Usage: #example
   * use = $CS_HL7_DiagRole#AD "Admission diagnosis"
 * diagnosis[+]
   * condition = Reference(Condition/condition-refer2)
-  * use = $CS_HL7_DiagRole#DD "Discharge diagnosis"
+  * use
+    * coding[0] = $CS_HL7_DiagRole#DD "Discharge diagnosis"
+    * coding[+] = $CS_THCC_EncounterDiagnosisRole#1 "PRINCIPLE DX (การวินิจฉัยโรคหลัก)"
 * account = Reference(Account/account-refer-encounter1)
 * hospitalization
   * extension[0]

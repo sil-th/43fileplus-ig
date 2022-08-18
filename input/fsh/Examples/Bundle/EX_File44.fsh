@@ -42,7 +42,7 @@ Usage: #example
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * title = "แฟ้มที่ 44 CARE_REFER: ข้อมูลการให้บริการในชุมชนสำหรับกลุ่มเป้าหมายในเขตรับผิดชอบ และผู้ป่วยนอกเขตรับผิดชอบ"
 * section[0]
-  * title = "ข้อมูลผู้รับบริการ"
+  * title = "ข้อมูลผู้ป่วย"
   * entry[0] = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * section[+]
   * title = "ข้อมูลการส่งต่อ"
