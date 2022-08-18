@@ -60,7 +60,7 @@ Usage: #example
   * title = "ข้อมูลผู้ป่วย"
   * entry[0] = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * section[+]
-  * title = "ข้อมูลบริการ"
+  * title = "ข้อมูลจากสถานพยาบาลต้นทาง"
   * entry[0] = Reference(Encounter/encounter-refer1)
   * entry[+] = Reference(Condition/condition-refer1)
   * entry[+] = Reference(Condition/condition-refer2)

@@ -26,6 +26,9 @@ Usage: #example
   * fullUrl = "http://example.org/Condition/condition-refer2"
   * resource = condition-refer2
 * entry[+]
+  * fullUrl = "http://example.org/Condition/condition-refer3"
+  * resource = condition-refer3
+* entry[+]
   * fullUrl = "http://example.org/ServiceRequest/servicerequest-refer-main-full"
   * resource = servicerequest-refer-main-full
 * entry[+]
@@ -72,6 +75,7 @@ Usage: #example
 * section[+]
   * title = "ข้อมูลจากสถานพยาบาลที่รับการส่งต่อ"
   * entry[0] = Reference(Encounter/encounter-refer1-accept)
+  * entry[+] = Reference(Condition/condition-refer3)
 * section[+]
   * title = "ข้อมูลการเงิน"
   * entry[0] = Reference(Account/account-refer-encounter1)

@@ -13,17 +13,24 @@ Usage: #example
 * entry[+]
   * fullUrl = "http://example.org/Patient/patient-patient4"
   * resource = patient-patient4
-
 * entry[+]
-  * fullUrl = "http://example.org/Encounter/encounter-homevisit1"
-  * resource = encounter-homevisit1
+  * fullUrl = "http://example.org/Encounter/encounter-refer1"
+  * resource = encounter-refer1
 * entry[+]
-  * fullUrl = "http://example.org/QuestionnaireResponse/questionnaireresponse-village1"
-  * resource = questionnaireresponse-village1
+  * fullUrl = "http://example.org/Encounter/encounter-refer1-accept"
+  * resource = encounter-refer1-accept
 * entry[+]
-  * fullUrl = "http://example.org/Appointment/appointment-homevisit1"
-  * resource = appointment-homevisit1
-
+  * fullUrl = "http://example.org/Condition/condition-refer1"
+  * resource = condition-refer1
+* entry[+]
+  * fullUrl = "http://example.org/Condition/condition-refer2"
+  * resource = condition-refer2
+* entry[+]
+  * fullUrl = "http://example.org/Condition/condition-refer3"
+  * resource = condition-refer3
+* entry[+]
+  * fullUrl = "http://example.org/ServiceRequest/servicerequest-refer-main-full"
+  * resource = servicerequest-refer-main-full
 * entry[+]
   * fullUrl = "http://example.org/Organization/organization-main"
   * resource = organization-main
@@ -47,10 +54,13 @@ Usage: #example
   * title = "ข้อมูลผู้รับบริการ"
   * entry[0] = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * section[+]
-  * title = "ข้อมูลบริการ"
-  * entry[0] = Reference(Encounter/encounter-homevisit1)
-  * entry[+] = Reference(QuestionnaireResponse/questionnaireresponse-village1)
+  * title = "ข้อมูลจากสถานพยาบาลต้นทาง"
+  * entry[0] = Reference(Encounter/encounter-refer1)
+  * entry[+] = Reference(Condition/condition-refer1)
+  * entry[+] = Reference(Condition/condition-refer2)
+  * entry[+] = Reference(ServiceRequest/servicerequest-refer-main-full)
 * section[+]
-  * title = "ข้อมูลการนัด"
-  * entry[0] = Reference(Appointment/appointment-homevisit1)
+  * title = "ข้อมูลจากสถานพยาบาลที่รับการส่งต่อ"
+  * entry[0] = Reference(Encounter/encounter-refer1-accept)
+  * entry[+] = Reference(Condition/condition-refer3)
 

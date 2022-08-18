@@ -72,4 +72,5 @@ Alias: $EX_TH_ReferPriorityCode = https://fhir-ig.sil-th.org/43filesplus/Extensi
 Alias: $EX_TH_ReferTypeEclaim = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-type-eclaim
 Alias: $EX_TH_ReferSpecialDisease = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-special-disease
 Alias: $EX_TH_ReferEncounterClass = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
-
+Alias: $EX_TH_ReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
+Alias: $EX_TH_ReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason

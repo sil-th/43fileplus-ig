@@ -6,6 +6,12 @@ Usage: #example
 * extension[0]
   * url = $EX_TH_ReferEncounterClass
   * valueCodeableConcept = $CS_THCC_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
+* extension[+]
+  * url = $EX_TH_ReferResult
+  * valueCodeableConcept = $CS_THCC_ReferResult#1 "ตอบรับการส่งต่อ"
+* extension[+]
+  * url = $EX_TH_ReferResultReason
+  * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 * identifier[0]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"
@@ -29,7 +35,6 @@ Usage: #example
 * reasonCode
   * coding = $SCT#418107008 "Unconscious"
   * text = "หมดสติ 30 นาทีก่อนมารพ."
-
 * diagnosis[0]
   * condition = Reference(Condition/condition-refer1)
   * use = $CS_HL7_DiagRole#AD "Admission diagnosis"
@@ -37,7 +42,6 @@ Usage: #example
   * condition = Reference(Condition/condition-refer2)
   * use = $CS_HL7_DiagRole#DD "Discharge diagnosis"
 * account = Reference(Account/account-refer-encounter1)
-
 * hospitalization
   * extension[0]
     * url = $EX_TH_DischargeStatus 
@@ -66,6 +70,11 @@ Usage: #example
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"
   * system = $ID_LO_VN
+  * value = "65-XXXXX"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished
 * class = $CS_HL7_EncounterClass#EMER "emergency"
