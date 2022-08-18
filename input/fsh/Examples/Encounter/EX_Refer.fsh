@@ -54,3 +54,46 @@ Usage: #example
         * insert GeneralReference($ID_LO_Refer, "XXXXX", "ใบส่งตัวเลขที่ XXXXX")
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
+
+
+
+Instance: encounter-refer1-accept
+InstanceOf: Encounter
+Title: "ตัวอย่าง Encounter: การรับการส่งต่อ เข้ารับบริการแผนกฉุกเฉิน"
+Description: "แสดงการรับการส่งต่อ เข้ารับบริการแผนกฉุกเฉิน"
+Usage: #example
+* identifier[0]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * system = $ID_LO_VN
+  * value = "65-XXXXX"
+* status = #finished
+* class = $CS_HL7_EncounterClass#EMER "emergency"
+* priority
+  * coding[0] = $CS_HL7_Priority#EM "emergency"
+  * coding[+] = $CS_THCC_AccidentPriority#2 "emergency"
+  * text = "emergency"
+* basedOn = Reference(ServiceRequest/servicerequest-refer-main-full)
+* subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
+* participant[0]
+  * type
+    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+  * individual = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"
+* period
+  * start = "2021-03-31T14:30:02+07:00"
+  * end = "2021-03-31T16:30:02+07:00"
+* reasonCode
+  * coding = $SCT#418107008 "Unconscious"
+  * text = "หมดสติ 30 นาทีก่อนมารพ."
+* diagnosis[0]
+  * condition = Reference(Condition/condition-refer3)
+  * use = $CS_HL7_DiagRole#AD "Admission diagnosis"
+* account = Reference(Account/account-refer-encounter1)
+* hospitalization
+  * admitSource
+    * coding[0] = $CS_HL7_AdmitSource#hosp-trans "Transferred from other hospital"
+    * coding[+] = $CS_THCC_AccidentAdmitSource#6 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
+    * text = "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
+* serviceProvider = Reference(Organization/organization-main)
+  * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
