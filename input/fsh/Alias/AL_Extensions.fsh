@@ -6,6 +6,7 @@ Alias: $EX_HL7_Religion = http://hl7.org/fhir/StructureDefinition/patient-religi
 Alias: $EX_HL7_ConditionDueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
 Alias: $EX_HL7_ConditinAssertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 Alias: $EX_HL7_Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
+Alias: $EX_HL7_PreCondition = http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
 
 // From Inter IG
 Alias: $EX_INT_IsCurrentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension
@@ -62,3 +63,13 @@ Alias: $EX_TH_FpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-f
 Alias: $EX_TH_LaborLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-labor-location
 Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-preg-test-amount
 Alias: $EX_TH_MedicationSource = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-medication-source
+Alias: $EX_TH_ReferRequesterDetail = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-requester-detail
+Alias: $EX_TH_ReferStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-status
+Alias: $EX_TH_ReferRequestedPeriod = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-requested-period
+Alias: $EX_TH_ReferAnswerType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-answer-type
+Alias: $EX_TH_ReferThaiPriority = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-thai-priority
+Alias: $EX_TH_ReferPriorityCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-priority-code
+Alias: $EX_TH_ReferTypeEclaim = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-type-eclaim
+Alias: $EX_TH_ReferSpecialDisease = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-special-disease
+Alias: $EX_TH_ReferEncounterClass = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
+
