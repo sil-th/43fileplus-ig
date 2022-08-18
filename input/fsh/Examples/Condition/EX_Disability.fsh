@@ -14,7 +14,7 @@ Usage: #example
   * valueCodeableConcept
     * coding[0] = $CS_THCC_DisabilityType#3 "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
     * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
-* category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
+* category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * severity = $SCT#6736007 "Moderate"
 * code
   * coding[+] = $ICF#d460.3 "การเคลื่อนที่ไปในที่ต่างๆมีความยากลำบากรุนแรง: สามารถเดินไปมาภายในบ้านโดยมีผู้ช่วยเหลือหรืออุปกรณ์ช่วย  (SEVERE:  50-95 %)"

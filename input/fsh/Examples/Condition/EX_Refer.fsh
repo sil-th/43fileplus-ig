@@ -3,7 +3,7 @@ InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example
-* category.coding = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
+* category = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
 * code
   * coding[0] = $SCT#266257000 "Transient ischemic attack"
   * coding[+] = $ICD10#G45.9 "Transient cerebral ischaemic attack, unspecified"
@@ -19,7 +19,7 @@ InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยสุดท้าย สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยสุดท้าย สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example
-* category.coding = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
+* category = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
 * code
   * coding[0] = $SCT#266257000 "Transient ischemic attack"
   * coding[+] = $ICD10#G45.9 "Transient cerebral ischaemic attack, unspecified"
@@ -35,7 +35,7 @@ InstanceOf: Condition
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ ณ โรงพยาบาลตติยภูมิที่รับการส่งต่อ"
 Description: "การวินิจฉัยแรกรับ ณ โรงพยาบาลตติยภูมิที่รับการส่งต่อ"
 Usage: #example
-* category.coding = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
+* category = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
 * code
   * coding[0] = $SCT#266257000 "Transient ischemic attack"
   * coding[+] = $ICD10#G45.9 "Transient cerebral ischaemic attack, unspecified"

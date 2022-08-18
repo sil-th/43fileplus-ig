@@ -74,3 +74,4 @@ Alias: $EX_TH_ReferSpecialDisease = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_ReferEncounterClass = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
 Alias: $EX_TH_ReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
 Alias: $EX_TH_ReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
+Alias: $EX_TH_IsChronic = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-chronic

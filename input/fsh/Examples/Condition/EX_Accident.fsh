@@ -6,7 +6,7 @@ Usage: #example
 * extension[0]
   * url = $EX_HL7_ConditionDueTo
   * valueCodeableConcept[+] = $CS_THCC_AccidentCauseGroup#01 "Transport accidents"
-* category.coding = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
+* category = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
 * code
   * coding[0] = $SCT#53627009 "Closed fracture of radius AND ulna"
   * coding[+] = $ICD10#S52.7 "Multiple fractures of forearm"

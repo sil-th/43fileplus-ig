@@ -3,7 +3,7 @@ InstanceOf: Condition
 Title: "ตัวอย่าง Condition: โรคเบาหวานของผู้ป่วยรายที่ 4"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 4"
 Usage: #example
-* category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
+* category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * code
   * coding[0] = $SCT#73211009 "Diabetes mellitus"
   * coding[+] = $ICD10#E14.9 "Unspecified diabetes mellitus : Without complications"

@@ -5,7 +5,7 @@ Description: "การวินิจฉัยสำหรับการบร
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed
-* category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
+* category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * code
   * coding[0] = $SCT#44054006 "Diabetes mellitus type 2"
   * coding[+] = $ICD10#E11.9 "Type 2 diabetes mellitus : Without complications"
@@ -22,7 +22,7 @@ Description: "การวินิจฉัยสำหรับการบร
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed
-* category.coding = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
+* category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * code
   * coding[0] = $CS_THCC_NcdStatus#1 "เป็น"
   * text = "เป็นโรคในกลุ่ม NCD"
