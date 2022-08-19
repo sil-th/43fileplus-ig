@@ -21,3 +21,12 @@ InstanceOf: Organization
 Title: "ตัวอย่าง Organization: สถานพยาบาลรองที่บันทึกข้อมูล"
 Description: "Under construction"
 * name = "โรงพยาบาลตัวอย่าง แห่งที่ 4 สถานพยาบาลปฐมภูมิ"
+
+
+
+Instance: organization-ward1
+InstanceOf: Organization
+Title: "ตัวอย่าง Organization: หอผู้ป่วยใน ของโรงพยาบาลตัวอย่าง"
+Description: "Under construction"
+* name = "หอผู้ป่วยใน ของโรงพยาบาลตัวอย่าง"
+* partOf = Reference(Organization/organization-main)

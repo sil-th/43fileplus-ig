@@ -171,5 +171,5 @@ Usage: #example
       * system = $ID_LO_DepCode
       * value = "Md-ward"
     * display = "แผนกอายุรกรรม"
-* serviceProvider = Reference(Organization/organization-main)
+* serviceProvider = Reference(Organization/organization-ward1)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

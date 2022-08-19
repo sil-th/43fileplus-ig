@@ -84,3 +84,4 @@ Alias: $EX_TH_MedApprovedNo = https://fhir-ig.sil-th.org/43filesplus/Extension/T
 Alias: $EX_TH_MedDelivery = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-delivery
 Alias: $EX_TH_MedImage = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-image
 Alias: $EX_TH_ProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-procedure-type
+Alias: $EX_TH_ProductUseLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-product-use-location

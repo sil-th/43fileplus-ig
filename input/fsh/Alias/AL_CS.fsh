@@ -37,6 +37,7 @@ Alias: $CS_HL7_ClaimInfoCat = http://terminology.hl7.org/CodeSystem/claiminforma
 Alias: $CS_HL7_DiagServiceCat = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $CS_HL7_DoseForm = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $CS_HL7_SecurityLebel = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
+Alias: $CS_HL7_DataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 
 // From Thai MOPH codes
 
@@ -190,7 +191,8 @@ Alias: $CS_THCC_MedDelivery = http://terms.sil-th.org/CodeSystem/cs-thcc-medicat
 Alias: $CS_THCC_ProcedureType = http://terms.sil-th.org/CodeSystem/cs-thcc-procedure-type
 
 // Finance
-Alias: $CS_THCC_FeeCategory = http://terms.sil-th.org/CodeSystem/cs-thcc-fee-category
+Alias: $CS_eClaim_AdpType = http://terms.sil-th.org/CodeSystem/cs-eclaim-adp-type
+Alias: $CS_eClaim_CancerType = http://terms.sil-th.org/CodeSystem/cs-eclaim-cancer-type
 
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
