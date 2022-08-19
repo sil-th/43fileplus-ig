@@ -186,6 +186,10 @@ Alias: $CS_THCC_MedOutNLEM = http://terms.sil-th.org/CodeSystem/cs-thcc-medicati
 Alias: $CS_THCC_MedDelivery = http://terms.sil-th.org/CodeSystem/cs-thcc-medication-delivery
 
 
+// Procedure
+Alias: $CS_THCC_ProcedureType = http://terms.sil-th.org/CodeSystem/cs-thcc-procedure-type
+
+
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
 Alias: $CS_THCC_Nationality = https://terms.sil-th.org/CodeSystem/cs-thcc-nationality

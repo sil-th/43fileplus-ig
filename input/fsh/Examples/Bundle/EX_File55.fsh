@@ -1,7 +1,7 @@
 Instance: bundle-file55-document
 InstanceOf: Bundle
 Title: "ตัวอย่าง Bundle - แฟ้มที่ 55: DRUG"
-Description: "ข้อมูลการจ่ายยา ** รวมรายการทั้งหมดทั้งในส่วนของผู้ป่วยนอก และผู้ป่วยใน ประกอบด้วย Patient, Encounte, Medication, MedicationRequest, MedicationDispense, MedicationAdministration และ Claim resource"
+Description: "ข้อมูลการจ่ายยา ** รวมรายการทั้งหมดทั้งในส่วนของผู้ป่วยนอก และผู้ป่วยใน ประกอบด้วย Patient, Encounter, Medication, MedicationRequest, MedicationDispense, MedicationAdministration และ Claim resource"
 Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"

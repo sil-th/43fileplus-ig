@@ -108,12 +108,15 @@ Usage: #example
   * sequence = 2
   * category = $CS_HL7_ClaimInfoCat#info "Information"
   * valueReference = Reference(MedicationRequest/medicationrequest-opd-amoxicillin)
+* procedure[0]
+  * sequence = 1
+  * procedureReference = Reference(Procedure/procedure-opd1)
 * insurance
   * sequence = 1
   * focal = true
   * coverage = Reference(Coverage/coverage-uc)
   * preAuthRef = "PP1007991295"
-* item
+* item[0]
   * sequence = 1
   * productOrService
     * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"
@@ -125,6 +128,23 @@ Usage: #example
     * unit = "Capsule"
     * system = $SCT
     * code = #732937005
+  * unitPrice
+    * value = 10.0
+    * currency = $ISO4217#THB
+  * net
+    * value = 210.0
+    * currency = $ISO4217#THB
+* item[+]
+  * sequence = 2
+  * procedureSequence = 1
+  * productOrService
+    * coding[0] = $SCT#225358003 "Wound care"
+    * coding[+] = $ICD9CM#93.57 "Application of other wound dressing"
+    * coding[+] = $CS_ICD10TM#XXX "ICD-10-TM CODE"
+    * coding[+] = $ID_LO_Procedure#XXX "Local code"
+    * text = "Wound care"
+  * quantity
+    * value = 1
   * unitPrice
     * value = 10.0
     * currency = $ISO4217#THB
