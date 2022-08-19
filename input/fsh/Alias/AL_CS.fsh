@@ -189,6 +189,8 @@ Alias: $CS_THCC_MedDelivery = http://terms.sil-th.org/CodeSystem/cs-thcc-medicat
 // Procedure
 Alias: $CS_THCC_ProcedureType = http://terms.sil-th.org/CodeSystem/cs-thcc-procedure-type
 
+// Finance
+Alias: $CS_THCC_FeeCategory = http://terms.sil-th.org/CodeSystem/cs-thcc-fee-category
 
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
@@ -219,6 +221,7 @@ Alias: $CS_TMLT = http://terms.sil-th.org/CodeSystem/th-tmlt
 Alias: $CS_24Drug = http://terms.sil-th.org/CodeSystem/th-24drug
 Alias: $CS_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm-lab
 Alias: $CS_ICD10TM = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm
+Alias: $CS_TH_FeeCategory = http://terms.sil-th.org/CodeSystem/cs-th-fee-category
 
 
 // From terminology.hl7.org

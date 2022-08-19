@@ -9,12 +9,12 @@ Usage: #example
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalSelfPay
+  * url = $EX_TH_TotalCopay
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalActualSelfPay
+  * url = $EX_TH_TotalPaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
@@ -68,12 +68,12 @@ Usage: #example
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalSelfPay
+  * url = $EX_TH_TotalCopay
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalActualSelfPay
+  * url = $EX_TH_TotalPaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
