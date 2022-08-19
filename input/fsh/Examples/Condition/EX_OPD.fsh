@@ -5,12 +5,14 @@ Description: "การวินิจฉัยโรคหลัก ในบ�
 Usage: #example
 * extension[0]
   * url = $EX_HL7_ConditionDueTo
-  * valueCodeableConcept.text = "สาเหตุการป่วย (ถ้าสามารถระบุได้)"
+  * valueCodeableConcept
+    * coding = $SCT#58800005 "Genus Streptococcus"
+    * text = "สาเหตุการป่วย (ถ้าสามารถระบุได้)"
 * category = $CS_HL7_ConditionCategory#encounter-diagnosis "Encounter Diagnosis"
 * code
-  * coding[0] = $SCT#195662009 "Acute viral pharyngitis"
-  * coding[+] = $ICD10#J02.8 "Acute pharyngitis due to other specified organisms"
-  * text = "Acute viral pharyngitis"
+  * coding[0] = $SCT#43878008 "Streptococcal pharyngitis"
+  * coding[+] = $ICD10#J02.0 "Streptococcal pharyngitis"
+  * text = "Streptococcal pharyngitis"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2022-01-01T12:30:02+07:00"
 * recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

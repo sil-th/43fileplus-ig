@@ -75,3 +75,7 @@ Alias: $EX_TH_ReferEncounterClass = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_ReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
 Alias: $EX_TH_ReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
 Alias: $EX_TH_IsChronic = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-chronic
+Alias: $EX_TH_MedOutNLEM = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-med-out-nlem
+Alias: $EX_TH_MedApprovedNo = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-med-approved-no
+Alias: $EX_TH_MedDelivery = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-med-delivery
+Alias: $EX_TH_MedImage = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-is-med-image

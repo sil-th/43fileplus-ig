@@ -45,7 +45,7 @@ Usage: #example
   * title = "ข้อมูลผู้ป่วย"
   * entry[0] = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * section[+]
-  * title = "ข้อมูลจากสถานพยาบาลต้นทาง"
+  * title = "ข้อมูลการรับบริการ"
   * entry[0] = Reference(Encounter/encounter-opd2)
   * entry[+] = Reference(Condition/condition-opd2-main)
   * entry[+] = Reference(Condition/condition-opd2-comorbid)
