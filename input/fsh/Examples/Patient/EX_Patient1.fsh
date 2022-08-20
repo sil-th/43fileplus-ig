@@ -31,7 +31,7 @@ Usage: #example
   * url = $EX_TH_EducationLevel
   * valueCodeableConcept
     * coding[0] = $CS_TH_ISCED1997#61 "ปริญญาตรี"
-    * coding[+] = $EX_TH_EducationLevel#05 "ปริญญาตรี"
+    * coding[+] = $CS_THCC_EducationLevel#05 "ปริญญาตรี"
     * text = "ปริญญาตรี"
 * extension[+]
   * url = $EX_TH_PersonStatus
@@ -40,7 +40,7 @@ Usage: #example
     * text = "มีชื่ออยู่ตามทะเบียนบ้านในเขตรับผิดชอบและอยู่จริง"
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period

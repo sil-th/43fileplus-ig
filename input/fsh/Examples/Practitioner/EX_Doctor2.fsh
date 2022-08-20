@@ -5,7 +5,7 @@ Description: "ข้อมูลแพทย์รายที่ 2"
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
   * system = $ID_ThaiCid
   * value = "2650515222440"
   * period

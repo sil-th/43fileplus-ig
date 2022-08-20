@@ -10,7 +10,7 @@ Usage: #example
     * text = "ตาย"
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NNTHA "National Person Identifier"
+  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
   * system = $ID_ThaiCid
   * value = "2650591524440"
 * identifier[+]
