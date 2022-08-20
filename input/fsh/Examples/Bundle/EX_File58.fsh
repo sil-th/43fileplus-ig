@@ -17,8 +17,8 @@ Usage: #example
   * fullUrl = "http://example.org/Encounter/encounter-ipd2"
   * resource = encounter-ipd2
 * entry[+]
-  * fullUrl = "http://example.org/Condition/condition-ipd1-main"
-  * resource = condition-ipd1-main
+  * fullUrl = "http://example.org/Condition/condition-ipd2-main"
+  * resource = condition-ipd2-main
 
 * entry[+]
   * fullUrl = "http://example.org/DeviceRequest/devicerequest-ipd-device1"
@@ -73,7 +73,7 @@ Usage: #example
 * section[+]
   * title = "ข้อมูลการรับบริการ"
   * entry[0] = Reference(Encounter/encounter-ipd2)
-  * entry[+] = Reference(Condition/condition-ipd1-main)
+  * entry[+] = Reference(Condition/condition-ipd2-main)
   * entry[+] = Reference(DeviceRequest/devicerequest-ipd-device1)
   * entry[+] = Reference(Device/device-ipd-device1)
   * entry[+] = Reference(Observation/observation-ipd-covid)

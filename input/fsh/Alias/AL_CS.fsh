@@ -8,6 +8,7 @@ Alias: $ISO3166 = urn:iso:std:iso:3166
 Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
 Alias: $ICF = http://hl7.org/fhir/sid/icf-nl	
 Alias: $ISO4217 = urn:iso:std:iso:4217
+Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 
 // From terminology.hl7.org
 Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -194,6 +195,13 @@ Alias: $CS_THCC_ProcedureType = http://terms.sil-th.org/CodeSystem/cs-thcc-proce
 Alias: $CS_eClaim_AdpType = http://terms.sil-th.org/CodeSystem/cs-eclaim-adp-type
 Alias: $CS_eClaim_CancerType = http://terms.sil-th.org/CodeSystem/cs-eclaim-cancer-type
 
+
+// Cancer
+Alias: $CS_43Plus_CancerDxSource = http://terms.sil-th.org/CodeSystem/cs-43plus-cancer-dx-source
+Alias: $CS_43Plus_CancerGrade = http://terms.sil-th.org/CodeSystem/cs-43plus-cancer-grade
+Alias: $CS_43Plus_CancerStaging = http://terms.sil-th.org/CodeSystem/cs-43plus-cancer-staging
+
+
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
 Alias: $CS_THCC_Nationality = https://terms.sil-th.org/CodeSystem/cs-thcc-nationality
@@ -207,6 +215,8 @@ Alias: $CS_THCC_VaccineCode = http://terms.sil-th.org/CodeSystem/cs-thcc-vaccine
 Alias: $CS_THCC_SpecialPPService = http://terms.sil-th.org/CodeSystem/cs-thcc-special-pp-service
 Alias: $CS_THCC_CommunityActivity = http://terms.sil-th.org/CodeSystem/cs-thcc-community-activity
 Alias: $CS_THCC_CommunityService = http://terms.sil-th.org/CodeSystem/cs-thcc-community-service
+
+
 
 // Questionnaire Related
 Alias: $CS_THCC_QnType = https://terms.sil-th.org/CodeSystem/cs-thcc-qn-type

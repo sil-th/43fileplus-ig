@@ -3,7 +3,7 @@ InstanceOf: EpisodeOfCare
 Title: "ตัวอย่าง EpisodeOfCare: การรับบริการเป็นประจำของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานเป็นประจำ"
 Usage: #example
-* extension[+]
+* extension[0]
   * url = $EX_TH_ChronicDischargeReason
   * valueCodeableConcept
     * coding[0] = $CS_THCC_ChronicDischargeReason#08 "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
