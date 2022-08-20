@@ -25,6 +25,7 @@ Alias: $ID_LO_PID = https://terms.sil-th.org/hcode/5/XXXXX/PID
 Alias: $ID_LO_House = https://terms.sil-th.org/hcode/5/XXXXX/House
 Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
 Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
+Alias: $ID_LO_SelfDrug = https://terms.sil-th.org/hcode/5/XXXXX/SelfDrug
 Alias: $ID_LO_INV = https://terms.sil-th.org/hcode/5/XXXXX/Inv
 Alias: $ID_LO_INV_LT = https://terms.sil-th.org/hcode/5/XXXXX/InvLt
 Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
@@ -33,7 +34,6 @@ Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
 Alias: $ID_LO_Device = https://terms.sil-th.org/hcode/5/XXXXX/Device
-
 Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer
 Alias: $ID_LO_ReferDocument =  https://terms.sil-th.org/hcode/5/XXXXX/ReferDoc
 
