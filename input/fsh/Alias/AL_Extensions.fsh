@@ -85,3 +85,4 @@ Alias: $EX_TH_MedDelivery = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-
 Alias: $EX_TH_MedImage = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-image
 Alias: $EX_TH_ProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-procedure-type
 Alias: $EX_TH_ProductUseLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-product-use-location
+Alias: $EX_TH_LeaveDay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-leave-day

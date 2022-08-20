@@ -1,7 +1,7 @@
 Instance: bundle-file58-document
 InstanceOf: Bundle
 Title: "ตัวอย่าง Bundle - แฟ้มที่ 58: CHARGE_ADP"
-Description: "ข้อมูลค่าใช้จ่ายเพิ่ม และบริการที่ยังไม่ได้จัดหมวด (ADP) ตามมาตรฐาน e-Claim ประกอบด้วย Patient, Encounter, Procedure และ Claim resource"
+Description: "ข้อมูลค่าใช้จ่ายเพิ่ม และบริการที่ยังไม่ได้จัดหมวด (ADP) ตามมาตรฐาน e-Claim ประกอบด้วย Patient, Encounter, Condition, Device, DeviceRequest, Observation และ Claim resource"
 Usage: #example
 * identifier.system = $ID_documentId
 * identifier.value = "642b21b0-7cc8-46b7-9310-376135d551b3"

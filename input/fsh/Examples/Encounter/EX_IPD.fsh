@@ -98,6 +98,20 @@ InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การรับบริการ IPD แสดงการลากลับบ้าน"
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
+* extension[0]
+  * url = $EX_TH_LeaveDay
+  * extension[0]
+    * url = "id"
+    * valueString = "XXXX"
+  * extension[+]
+    * url = "leave-date"
+    * valueDateTime = "2022-05-02"
+  * extension[+]
+    * url = "come-back"
+    * valueDateTime = "2022-05-03"
+  * extension[+]
+    * url = "duration"
+    * valueDuration = 1 'd' "day"
 * identifier[0]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"
