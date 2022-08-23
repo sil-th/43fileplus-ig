@@ -44,14 +44,14 @@ Usage: #example
 * address[0]
   * extension[0]
     * url = $EX_TH_AddressCode
-    * valueCoding = $CS_DOPA_Location#342001 "จังหวัดอุบลราชธานี อำเภอตาลสุม ตำบลตาลสุม"
+    * valueCodeableConcept = $CS_DOPA_Location#342001 "จังหวัดอุบลราชธานี อำเภอตาลสุม ตำบลตาลสุม"
   * extension[+]
     * url = $EX_TH_StructureLine
     * extension[0]
       * url = "number"
       * valueString = "123"
     * extension[+]
-      * url = "village-no"
+      * url = "villageNo"
       * valueString = "หมู่ที่ 20"
     * extension[+]
       * url = "road"

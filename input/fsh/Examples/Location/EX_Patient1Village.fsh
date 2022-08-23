@@ -24,7 +24,7 @@ Usage: #example
   * extension[+]
     * url = $EX_TH_StructureLine
     * extension[0]
-      * url = "village-no"
+      * url = "villageNo"
       * valueString = "หมู่ที่ 20"
   * postalCode = "11000"
 * position

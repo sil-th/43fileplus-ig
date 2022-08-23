@@ -47,10 +47,10 @@ Usage: #example
       * url = "number"
       * valueString = "123"
     * extension[+]
-      * url = "building-village"
+      * url = "buildingVillage"
       * valueString = "คอนโดพัฒนานนท์"
     * extension[+]
-      * url = "village-no"
+      * url = "villageNo"
       * valueString = "หมู่ที่ 20"
     * extension[+]
       * url = "road"

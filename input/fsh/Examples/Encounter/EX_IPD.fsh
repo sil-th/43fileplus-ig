@@ -104,10 +104,10 @@ Usage: #example
     * url = "id"
     * valueString = "XXXX"
   * extension[+]
-    * url = "leave-date"
+    * url = "leaveDate"
     * valueDateTime = "2022-05-02"
   * extension[+]
-    * url = "come-back"
+    * url = "comeBack"
     * valueDateTime = "2022-05-03"
   * extension[+]
     * url = "duration"
