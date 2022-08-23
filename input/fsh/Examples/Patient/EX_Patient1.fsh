@@ -112,17 +112,17 @@ Usage: #example
 * address[0]
   * extension[0]
     * url = $EX_TH_AddressCode
-    * valueCoding = $CS_DOPA_Location#120102 "จังหวัดนนทบุรี อำเภอเมืองนนทบุรี ตำบลตลาดขวัญ"
+    * valueCodeableConcept = $CS_DOPA_Location#120102 "จังหวัดนนทบุรี อำเภอเมืองนนทบุรี ตำบลตลาดขวัญ"
   * extension[+]
     * url = $EX_TH_StructureLine
     * extension[0]
       * url = "number"
       * valueString = "123"
     * extension[+]
-      * url = "building-village"
+      * url = "buildingVillage"
       * valueString = "คอนโดพัฒนานนท์"
     * extension[+]
-      * url = "village-no"
+      * url = "villageNo"
       * valueString = "หมู่ที่ 20"
     * extension[+]
       * url = "road"

@@ -12,16 +12,23 @@ Alias: $EX_HL7_PreCondition = http://hl7.org/fhir/StructureDefinition/servicereq
 Alias: $EX_INT_IsCurrentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension
 
 // From local extension
+
+// Patient
 Alias: $EX_TH_Race = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-race
 Alias: $EX_TH_EducationLevel = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-education-level
+Alias: $EX_TH_PersonStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-person-status
+
+// HumanName
 Alias: $EX_TH_NamePrefix = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-name-prefix
-Alias: $EX_TH_ForeignerType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-foreigner-type
+
+// Address
 Alias: $EX_TH_AddressCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-address-code
 Alias: $EX_TH_StructureLine = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-structure-line
 Alias: $EX_TH_HomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
 Alias: $EX_TH_HouseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-type
+
+Alias: $EX_TH_ForeignerType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-foreigner-type
 Alias: $EX_TH_PidRemoveReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-pid-remove-reason
-Alias: $EX_TH_PersonStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-person-status
 Alias: $EX_TH_DeathLocType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-location-type
 Alias: $EX_TH_DeathPregnancy = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-pregnancy
 Alias: $EX_TH_ChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-chronic-discharge-reason
