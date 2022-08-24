@@ -25,7 +25,6 @@ Description: "เชื้อชาติของบุคคล"
 * value[x] from $VS_THCC_Nationality (extensible)
 
 
-
 // Alias: $EX_TH_EducationLevel = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-education-level
 // * extension[+]
 //   * url = $EX_TH_EducationLevel

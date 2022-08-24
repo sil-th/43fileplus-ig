@@ -12,8 +12,6 @@ Alias: $EX_HL7_PreCondition = http://hl7.org/fhir/StructureDefinition/servicereq
 Alias: $EX_INT_IsCurrentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension
 
 
-
-
 // From local extension
 
 // HumanName
