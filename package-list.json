@@ -9,7 +9,8 @@
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "https://fhir-ig.sil-th.org/43filesplus/",
       "status": "ci-build",
-      "current": true
+      "current": true,
+      "fhirversion": "4.3.0"
     }
   ]
 }

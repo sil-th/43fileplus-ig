@@ -21,7 +21,7 @@ license: CC0-1.0
 fhirVersion: 4.3.0
 dependencies:
   hl7.fhir.us.odh: dev
-  sil-th-terminology: dev
+  sil-th.terms.core: dev
 parameters:
   apply-publisher: true
   apply-contact: true

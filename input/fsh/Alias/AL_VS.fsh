@@ -5,7 +5,7 @@ Alias: $VS_THCC_ICF = http://terms.sil-th.org/ValueSet/vs-thcc-icf
 // From Thai MOPH codes
 
 // Main File List
-Alias: $VS_THCC_43fileType = https://terms.sil-th.org/ValueSet/vs-thcc-43file-type
+Alias: $VS_THCC_43fileType = https://terms.sil-th.org/ValueSet/vs-thcc-43filetype
 
 // Demographic
 Alias: $VS_THCC_Marital = https://terms.sil-th.org/ValueSet/vs-thcc-marital
@@ -15,7 +15,7 @@ Alias: $VS_THCC_ForeignerType = https://terms.sil-th.org/ValueSet/vs-thcc-foreig
 Alias: $VS_THCC_PersonStatus = https://terms.sil-th.org/ValueSet/vs-thcc-person-status
 
 // Social History
-Alias: $VS_THCC_SocialObsType = https://terms.sil-th.org/ValueSet/vs-thcc-soical-obs-type
+Alias: $VS_THCC_SocialObsType = https://terms.sil-th.org/ValueSet/vs-thcc-social-obs-type
 Alias: $VS_THCC_StatusInFamily = https://terms.sil-th.org/ValueSet/vs-thcc-status-in-family
 Alias: $VS_THCC_StatusInVillage = https://terms.sil-th.org/ValueSet/vs-thcc-status-in-village
 
