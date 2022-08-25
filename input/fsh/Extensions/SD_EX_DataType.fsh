@@ -7,7 +7,7 @@
 //       * coding[0] = $CS_DOPA_NamePrefix#003 "นาย"
 //       * text = "นาย"
 Extension: EX_TH_NamePrefix
-Id: extension-humanname-name-prefix
+Id: ex-humanname-name-prefix
 Title: "รหัสคำนำหน้าชื่อ"
 Description: "รหัสคำนำหน้าชื่อ"
 * ^url = $EX_TH_NamePrefix
@@ -37,7 +37,7 @@ Description: "รหัสคำนำหน้าชื่อ"
 // Alias: $EX_TH_AddressCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-address-code
 
 Extension: EX_TH_AddressCode
-Id: extension-address-address-code
+Id: ex-address-address-code
 Title: "รหัสที่อยู่ ตามกรมการปกครอง"
 Description: "รหัสที่อยู่ ตามกรมการปกครอง"
 * ^url = $EX_TH_AddressCode
@@ -79,7 +79,7 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 // Alias: $EX_TH_StructureLine = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-structure-line
 
 Extension: EX_TH_StructureLine
-Id: extension-address-structure-line
+Id: ex-address-structure-line
 Title: "ที่อยู่ แบบแยกข้อมูลย่อย"
 Description: "ที่อยู่ แบบแยกข้อมูลย่อย"
 * ^url = $EX_TH_StructureLine
@@ -143,7 +143,7 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
   //     * insert GeneralReference($ID_DopaHouseNo, "XXXXXXXXXXX", "123 คอนโดพัฒนานนท์")
 // Alias: $EX_TH_HomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
 Extension: EX_TH_HomeReference
-Id: extension-address-home-reference
+Id: ex-address-home-reference
 Title: "การอ้างอิง Location resource"
 Description: "การอ้างอิง Location resource"
 * ^url = $EX_TH_HomeReference
@@ -169,7 +169,7 @@ Description: "การอ้างอิง Location resource"
 // Alias: $EX_TH_HouseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-type
 
 Extension: EX_TH_HouseType
-Id: extension-address-house-type
+Id: ex-address-house-type
 Title: "ลักษณะของที่อยู่"
 Description: "ลักษณะของที่อยู่"
 * ^url = $EX_TH_HouseType
@@ -178,8 +178,10 @@ Description: "ลักษณะของที่อยู่"
 * ^experimental = false
 * ^date = "2022-08-23T07:06:13+11:00"
 * ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "Address"
+* ^context[0].type = #element
+* ^context[=].expression = "Address"
+* ^context[+].type = #element
+* ^context[=].expression = "Location"
 * . 0..*
 * . ^short = "ลักษณะของที่อยู่"
 * . ^definition = "ลักษณะของที่อยู่"

@@ -77,3 +77,23 @@
 // * . ^definition = "The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively."
 // * value[x] 1..
 // * value[x] only dateTime
+
+// Template
+// Extension: EX_TH_DeathLocType
+// Id: ex-
+// Title: "TEMP"
+// Description: "TEMP"
+// * ^url = $EX_TH_DeathLocType
+// * ^version = "4.3.0"
+// * ^status = #draft
+// * ^experimental = false
+// * ^date = "2022-08-23T07:06:13+11:00"
+// * ^publisher = "SIL-TH"
+// * ^context.type = #element
+// * ^context.expression = "Encounter"
+// * . 0..*
+// * . ^short = "TEMP"
+// * . ^definition = "TEMP"
+// * value[x] 1..
+// * value[x] only CodeableConcept
+// * value[x] from $VS (extensible)

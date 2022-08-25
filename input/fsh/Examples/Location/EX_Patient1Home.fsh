@@ -3,14 +3,14 @@ InstanceOf: Location
 Title: "ตัวอย่าง Location: บ้านของผู้ป่วยรายที่ 1"
 Description: "แสดงข้อมูลรายละเอียดบ้านของผู้ป่วยรายที่ 1"
 Usage: #example
-* extension[+]
+* extension[0]
   * url = $EX_TH_HouseType
   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
 * extension[+]
   * url = $EX_TH_HouseOwner
   * valueReference = Reference(Patient/patient-patient1)
 * extension[+]
-  * url = $EX_TH_ManagingPractitioner
+  * url = $EX_TH_ManagingVolunteer
   * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
 * extension[+]
   * url = $EX_TH_HouseholdNum

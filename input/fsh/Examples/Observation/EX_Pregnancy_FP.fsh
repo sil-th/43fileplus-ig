@@ -31,7 +31,7 @@ Usage: #example
 * effectiveDateTime = "2021-01-21T12:30:02+07:00"
 * device
   * extension[0]
-    * url = $EX_TH_PregTestAmount
+    * url = $EX_TH_DeviceAmount
     * valueQuantity = 1 '{#}' "Number"
   * identifier
     * system = $ID_LO_Device

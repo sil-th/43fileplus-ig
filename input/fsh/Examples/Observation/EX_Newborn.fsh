@@ -7,7 +7,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code
-  * coding[0] = $LNC#$29463-7 "Body weight"
+  * coding[0] = $LNC#29463-7 "Body weight"
   * text = "Body weight"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
