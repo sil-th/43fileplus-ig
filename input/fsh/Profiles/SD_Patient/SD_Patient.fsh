@@ -1,7 +1,7 @@
-Profile: Moph43FilesPlusPatient
+Profile: Moph43pPatient
 Parent: Patient
-Id: moph43filesplus-patient
-Title: "Patient Profile"
+Id: moph43p-patient
+Title: "Patient (MoPH43p)"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * ^url = $SD_Patient
 * ^status = #draft
@@ -13,10 +13,10 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension ^min = 0
 * extension contains
     $EX_HL7_Nationality named nationality 0..* MS and
-    $EX_TH_Race named race 0..* MS and
+    EX_TH_Race named race 0..* MS and
     $EX_HL7_Religion named religion 0..1 MS and
-    $EX_TH_EducationLevel named educationLevel 0..* MS and
-    $EX_TH_PersonStatus named personStatus 0..* MS
+    EX_TH_EducationLevel named educationLevel 0..* MS and
+    EX_TH_PersonStatus named personStatus 0..* MS
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
@@ -198,43 +198,3 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * managingOrganization MS
 * managingOrganization ^short = "สถานพยาบาลปฐมภูมิของบุคคล"
 
-//Constraint
-Invariant: PID-uri
-Description: "PID identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/PID, where [XXXXX] is a 5-digit HCODE defined by THCC."
-Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/PID)$')"
-
-Invariant: PID-length
-Description: "PID number shall be 1 to 15 digit number"
-Severity: #error
-Expression: "value.matches('^([0-9]{1,15})$')"
-
-Invariant: CID-length
-Description: "CID number shall be 13-digit number"
-Severity: #error
-Expression: "value.matches('^([0-9]{13})$')"
-
-Invariant: PWD-length
-Description: "PWD number shall be 13-digit number"
-Severity: #error
-Expression: "value.matches('^([0-9]{13})$')"
-
-Invariant: HN-uri
-Description: "HN identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/HN, where [XXXXX] is a 5-digit HCODE defined by THCC."
-Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/HN)$')"
-
-Invariant: HN-length
-Description: "PID number shall be 1 to 15 digit number"
-Severity: #error
-Expression: "value.matches('^([0-9]{1,15})$')"
-
-Invariant: Passport-uri
-Description: "Passport identifier shall be http://hl7.org/fhir/sid/passport-[XXX], where [XXX] is a 3-letter country code defined by ISO 3166."
-Severity: #error
-Expression: "value.matches('^(http://hl7.org/fhir/sid/passport-[A-Z]{3})$')"
-
-Invariant: WP-length
-Description: "Work Permit number shall be 13-digit number"
-Severity: #error
-Expression: "value.matches('^([0-9]{13})$')"

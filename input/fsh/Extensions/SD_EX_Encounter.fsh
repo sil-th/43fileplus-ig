@@ -294,8 +294,8 @@ Description: "รหัสผลการส่งต่อไปรับบร
 // Alias: $EX_TH_IpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
 Extension: EX_TH_IpdDischargeType
 Id: ex-encounter-ipd-discharge-type
-Title: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-Description: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+Title: "รหัสชนิดการจำหน่ายผู้ป่วย"
+Description: "รหัสชนิดการจำหน่ายผู้ป่วย"
 * ^url = $EX_TH_IpdDischargeType
 * ^version = "4.3.0"
 * ^status = #draft
@@ -305,8 +305,8 @@ Description: "รหัสผลการส่งต่อไปรับบร
 * ^context.type = #element
 * ^context.expression = "Encounter.hospitalization"
 * . 0..*
-* . ^short = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-* . ^definition = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+* . ^short = "รหัสชนิดการจำหน่ายผู้ป่วย"
+* . ^definition = "รหัสชนิดการจำหน่ายผู้ป่วย"
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_IpdDischargeType (extensible)
