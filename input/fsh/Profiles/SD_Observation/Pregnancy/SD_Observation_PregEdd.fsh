@@ -1,9 +1,9 @@
-Profile: Moph43pObservationGestationalAge
+Profile: Moph43pObservationPregEdd
 Parent: Observation
-Id: moph43p-observation-anc-gestational-age
-Title: "MoPH43p Observation: GA"
-Description: "อายุครรภ์ (สัปดาห์)"
-* ^url = $SD_Observation_AncGA
+Id: moph43p-observation-preg-estimated-delivery
+Title: "MoPH43p Observation: Pregnancy-EDD"
+Description: "วันที่กำหนดคลอด"
+* ^url = $SD_Observation_PregEdd
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,21 +30,14 @@ Description: "อายุครรภ์ (สัปดาห์)"
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #85719-3 (exactly)
+* code.coding[loinc].code = #11778-8 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[snomed].code = #1156738004 (exactly)
+* code.coding[snomed].code = #161714006 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
-* value[x] only Quantity
+* value[x] only dateTime
 * value[x] MS
 * value[x] ^short = "ผลการตรวจร่างกาย"
-* valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity.value 1..
-* valueQuantity.unit 1..
-* valueQuantity.system 1..
-* valueQuantity.system = $UCUM (exactly)
-* valueQuantity.code 1..
-* valueQuantity.code = #wk (exactly)

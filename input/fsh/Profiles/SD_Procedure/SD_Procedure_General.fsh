@@ -3,7 +3,7 @@ Parent: Procedure
 Id: moph43p-procedure
 Title: "MoPH43p Procedure"
 Description: "การทำหัตถการหรือการรักษา"
-* ^url = $SD_Procedure_Refer
+* ^url = $SD_Procedure
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

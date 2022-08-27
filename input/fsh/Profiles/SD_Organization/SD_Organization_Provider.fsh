@@ -14,11 +14,10 @@ Description: "ข้อมูลสถานพยาบาล"
 * identifier contains hcode 0..1
 * identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก"
 * identifier[hcode].system 1..
-* identifier[hcode].system = "https://terms.sil-th.org/hcode/5" (exactly)
+* identifier[hcode].system = $ID_Hcode (exactly)
 * identifier[hcode].value 1..
 * identifier[hcode].value obeys hcode-length
 * name MS
 * name ^short = "ชื่อสถานพยาบาล"
 * partOf only Reference($SD_Organization_Provider)
 * partOf MS
-

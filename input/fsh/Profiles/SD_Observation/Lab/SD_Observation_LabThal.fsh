@@ -1,4 +1,4 @@
-Profile: Moph43pObservationThalassaemiaProfile
+Profile: Moph43pObservationLabThal
 Parent: $SD_Observation_Lab
 Id: moph43p-observation-lab-thalassaemia
 Title: "MoPH43p Observation: Thal"

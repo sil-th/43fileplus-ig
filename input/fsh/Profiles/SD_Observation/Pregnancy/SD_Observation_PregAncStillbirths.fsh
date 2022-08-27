@@ -1,9 +1,9 @@
-Profile: Moph43pObservationLiveDeliveries
+Profile: Moph43pObservationPregStillbirths
 Parent: Observation
-Id: moph43p-observation-anc-live-deliveries
-Title: "MoPH43p Observation: Live delivery"
-Description: "จำนวนเกิดมีชีพ"
-* ^url = $SD_Observation_AncLiveDeliveries
+Id: moph43p-observation-preg-stillbirths
+Title: "MoPH43p Observation: Pregnancy-Stillbirth"
+Description: "จำนวนตายคลอด"
+* ^url = $SD_Observation_PregStillbirths
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,11 +30,11 @@ Description: "จำนวนเกิดมีชีพ"
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #11636-8 (exactly)
+* code.coding[loinc].code = #57062-2 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[snomed].code = #248991006 (exactly)
+* code.coding[snomed].code = #252112002 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS

@@ -1,9 +1,9 @@
-Profile: Moph43pObservationObstetricDelivery
+Profile: Moph43pObservationPregAbortions
 Parent: Observation
-Id: moph43p-observation-anc-obstetric-delivery
-Title: "MoPH43p Observation: Delivery"
-Description: "วันคลอด / วันสิ้นสุดการตั้งครรภ์"
-* ^url = $SD_Observation_AncDelivery
+Id: moph43p-observation-preg-abortions
+Title: "MoPH43p Observation: Pregnancy-Abortions"
+Description: "จำนวนการแท้งบุตร"
+* ^url = $SD_Observation_PregAbortions
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,14 +30,14 @@ Description: "วันคลอด / วันสิ้นสุดการต
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #93857-1 (exactly)
+* code.coding[loinc].code = #11612-9 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[snomed].code = #169836001 (exactly)
+* code.coding[snomed].code = #252113007 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
-* value[x] only dateTime
+* value[x] only integer
 * value[x] MS
 * value[x] ^short = "ผลการตรวจร่างกาย"

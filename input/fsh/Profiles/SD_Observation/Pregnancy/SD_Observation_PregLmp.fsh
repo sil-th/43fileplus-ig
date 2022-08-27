@@ -1,9 +1,9 @@
-Profile: Moph43pObservationEstimatedDelivery
+Profile: Moph43pObservationPregLMP
 Parent: Observation
-Id: moph43p-observation-anc-estimated-delivery
-Title: "MoPH43p Observation: EDD"
-Description: "วันที่กำหนดคลอด"
-* ^url = $SD_Observation_AncEdd
+Id: moph43p-observation-preg-last-menstrual-period
+Title: "MoPH43p Observation: Pregnancy-LMP"
+Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย"
+* ^url = $SD_Observation_PregLmp
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,11 +30,11 @@ Description: "วันที่กำหนดคลอด"
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #11778-8 (exactly)
+* code.coding[loinc].code = #8665-2 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[snomed].code = #161714006 (exactly)
+* code.coding[snomed].code = #21840007 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS

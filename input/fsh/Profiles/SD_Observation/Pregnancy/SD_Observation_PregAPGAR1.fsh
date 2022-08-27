@@ -1,9 +1,9 @@
-Profile: Moph43pObservationAPGAR5
+Profile: Moph43pObservationPregAPGAR1
 Parent: Observation
-Id: moph43p-observation-apgar-5
-Title: "MoPH43p Observation: APGAR-5"
-Description: "การประเมินสภาพทารกแรกเกิดใน 5 นาทีแรก (APGAR 5 นาที)"
-* ^url = $SD_Observation_APGAR5
+Id: moph43p-observation-preg-apgar-1
+Title: "MoPH43p Observation: Pregnancy-APGAR-1"
+Description: "การประเมินสภาพทารกแรกเกิดใน 1 นาทีแรก (APGAR 1 นาที)"
+* ^url = $SD_Observation_PregAPGAR1
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,7 +30,7 @@ Description: "การประเมินสภาพทารกแรกเ
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #9274-2 (exactly)
+* code.coding[loinc].code = #32406-1 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
@@ -50,30 +50,30 @@ Description: "การประเมินสภาพทารกแรกเ
 * component[color].code.coding.system 1..
 * component[color].code.coding.system = $LNC (exactly)
 * component[color].code.coding.code 1..
-* component[color].code.coding.code = #32411-1 (exactly)
+* component[color].code.coding.code = #32407-9 (exactly)
 * component[color].value[x] 1..
 * component[color].value[x] only integer
 * component[heartRate].code.coding.system 1..
 * component[heartRate].code.coding.system = $LNC (exactly)
 * component[heartRate].code.coding.code 1..
-* component[heartRate].code.coding.code = #32412-9 (exactly)
+* component[heartRate].code.coding.code = #32407-9 (exactly)
 * component[heartRate].value[x] 1..
 * component[heartRate].value[x] only integer
 * component[reflexIrritability].code.coding.system 1..
 * component[reflexIrritability].code.coding.system = $LNC (exactly)
 * component[reflexIrritability].code.coding.code 1..
-* component[reflexIrritability].code.coding.code = #32414-5 (exactly)
+* component[reflexIrritability].code.coding.code = #32409-5 (exactly)
 * component[reflexIrritability].value[x] 1..
 * component[reflexIrritability].value[x] only integer
 * component[muscleTone].code.coding.system 1..
 * component[muscleTone].code.coding.system = $LNC (exactly)
 * component[muscleTone].code.coding.code 1..
-* component[muscleTone].code.coding.code = #32413-7 (exactly)
+* component[muscleTone].code.coding.code = #32408-7 (exactly)
 * component[muscleTone].value[x] 1..
 * component[muscleTone].value[x] only integer
 * component[respiratoryEffort].code.coding.system 1..
 * component[respiratoryEffort].code.coding.system = $LNC (exactly)
 * component[respiratoryEffort].code.coding.code 1..
-* component[respiratoryEffort].code.coding.code = #32415-2 (exactly)
+* component[respiratoryEffort].code.coding.code = #32410-3 (exactly)
 * component[respiratoryEffort].value[x] 1..
 * component[respiratoryEffort].value[x] only integer

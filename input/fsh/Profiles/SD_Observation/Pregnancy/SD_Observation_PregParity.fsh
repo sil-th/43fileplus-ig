@@ -1,9 +1,9 @@
-Profile: Moph43pObservationLMP
+Profile: Moph43pObservationPregParity
 Parent: Observation
-Id: moph43p-observation-anc-last-menstrual-period
-Title: "MoPH43p Observation: LMP"
-Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย"
-* ^url = $SD_Observation_AncLmp
+Id: moph43p-observation-preg-parity
+Title: "MoPH43p Observation: Pregnancy-Parity"
+Description: "จำนวนบุตรทั้งหมดที่เคยมี"
+* ^url = $SD_Observation_PregParity
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,14 +30,14 @@ Description: "วันแรกของการมีประจำเดื
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #8665-2 (exactly)
+* code.coding[loinc].code = #11977-6 (exactly)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[snomed].code = #21840007 (exactly)
+* code.coding[snomed].code = #364325004 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
-* value[x] only dateTime
+* value[x] only integer
 * value[x] MS
 * value[x] ^short = "ผลการตรวจร่างกาย"
