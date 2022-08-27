@@ -1,7 +1,7 @@
 Profile: Moph43pPatient
 Parent: Patient
 Id: moph43p-patient
-Title: "Patient (MoPH43p)"
+Title: "MoPH43p Patient"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * ^url = $SD_Patient
 * ^status = #draft

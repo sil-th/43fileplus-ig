@@ -1,7 +1,7 @@
 Profile: Moph43pOrganizationFundProfile
 Parent: Organization
 Id: moph43p-organization-fund
-Title: "Organization - Fund (MoPH43p)"
+Title: "MoPH43p Organization: Fund"
 Description: "ข้อมูลสำนักงานประกันสุขภาพ"
 * ^url = $SD_Organization_Fund
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pObservationLab
 Parent: Observation
 Id: moph43p-observation-lab
-Title: "Observation - Lab (MoPH43p)"
+Title: "MoPH43p Observation: Lab"
 Description: "ข้อมูลการตรวจทางห้องปฏิบัติการ"
 * ^url = $SD_Observation_Lab
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pObservationBloodGroup
 Parent: $SD_Observation_Lab
 Id: moph43p-observation-lab-bloodgroup
-Title: "Observation - Blood group (MoPH43p)"
+Title: "MoPH43p Observation: Blood group"
 Description: "ผลการตรวจหมู่เลือด"
 * ^url = $SD_Observation_LabBloodgroup
 * ^status = #draft

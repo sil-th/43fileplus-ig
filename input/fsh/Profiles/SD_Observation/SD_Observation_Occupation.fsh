@@ -1,7 +1,7 @@
 Profile: Moph43pObservationOccupation
 Parent: Observation
 Id: moph43p-observation-occupation
-Title: "Observation - Occupation (MoPH43p)"
+Title: "MoPH43p Observation: Occupation"
 Description: "ข้อมูลอาชีพของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * ^url = $SD_Observation_Occupation
 * ^status = #draft

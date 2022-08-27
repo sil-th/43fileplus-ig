@@ -1,7 +1,7 @@
 Profile: Moph43pObservationObstetricDelivery
 Parent: Observation
 Id: moph43p-observation-anc-obstetric-delivery
-Title: "Observation - Delivery (MoPH43p)"
+Title: "MoPH43p Observation: Delivery"
 Description: "วันคลอด / วันสิ้นสุดการตั้งครรภ์"
 * ^url = $SD_Observation_AncDelivery
 * ^status = #draft

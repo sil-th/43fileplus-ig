@@ -1,7 +1,7 @@
 Profile: Moph43pProcedure
 Parent: Procedure
 Id: moph43p-procedure
-Title: "Procedure (MoPH43p)"
+Title: "MoPH43p Procedure"
 Description: "การทำหัตถการหรือการรักษา"
 * ^url = $SD_Procedure_Refer
 * ^status = #draft

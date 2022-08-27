@@ -1,7 +1,7 @@
 Profile: Moph43pClaimIPD
 Parent: Claim
 Id: moph43p-claim-ipd
-Title: "Claim - IPD (MoPH43p)"
+Title: "MoPH43p Claim: IPD"
 Description: "ค่าใช้จ่ายการรับบริการ IPD"
 * ^url = $SD_Claim_Ipd 
 * ^status = #draft

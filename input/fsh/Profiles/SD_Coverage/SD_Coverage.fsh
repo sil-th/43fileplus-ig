@@ -1,7 +1,7 @@
 Profile: Moph43pCoverage
 Parent: Coverage
 Id: moph43p-coverage
-Title: "Coverage (MoPH43p)"
+Title: "MoPH43p Coverage"
 Description: "ข้อมูลสิทธิ"
 * ^url = $SD_Coverage
 * ^status = #draft

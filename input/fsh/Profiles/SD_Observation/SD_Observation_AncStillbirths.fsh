@@ -1,7 +1,7 @@
 Profile: Moph43pObservationStillbirths
 Parent: Observation
 Id: moph43p-observation-anc-stillbirths
-Title: "Observation - Stillbirth (MoPH43p)"
+Title: "MoPH43p Observation: Stillbirth"
 Description: "จำนวนตายคลอด"
 * ^url = $SD_Observation_AncStillbirths
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pMedicationStatement
 Parent: MedicationStatement
 Id: moph43p-medicationstatement
-Title: "MedicationStatement (MoPH43p)"
+Title: "MoPH43p MedicationStatement"
 Description: "ข้อมูลประวัติยาผู้ป่วย"
 * ^url = $SD_MedicationStatement
 * ^status = #draft

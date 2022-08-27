@@ -1,7 +1,7 @@
 Profile: Moph43pClaimAccident
 Parent: Claim
 Id: moph43p-claim-accident
-Title: "Claim - Accident (MoPH43p)"
+Title: "MoPH43p Claim: Accident"
 Description: "ค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
 * ^url = $SD_Claim_Accident
 * ^status = #draft

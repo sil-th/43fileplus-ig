@@ -1,7 +1,7 @@
-Profile: Moph43pObservationWaistCircumference
+Profile: Moph43pObservationVitalWc
 Parent: $SD_Observation_Vital
 Id: moph43p-observation-vital-waist-circumference
-Title: "Observation - Vital-WC (MoPH43p)"
+Title: "MoPH43p Observation: Vital-WC"
 Description: "รอบเอว (Waist circumference)"
 * ^url = $SD_Observation_VitalWc
 * ^status = #draft

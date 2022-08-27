@@ -1,7 +1,7 @@
 Profile: Moph43pAccount
 Parent: Account
 Id: moph43p-account
-Title: "Account (MoPH43p)"
+Title: "MoPH43p Account"
 Description: "ข้อมูลทางการเงิน"
 * ^url = $SD_Account
 * ^status = #draft

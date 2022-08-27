@@ -1,7 +1,7 @@
 Profile: Moph43pObservationEstimatedDelivery
 Parent: Observation
 Id: moph43p-observation-anc-estimated-delivery
-Title: "Observation - EDD (MoPH43p)"
+Title: "MoPH43p Observation: EDD"
 Description: "วันที่กำหนดคลอด"
 * ^url = $SD_Observation_AncEdd
 * ^status = #draft

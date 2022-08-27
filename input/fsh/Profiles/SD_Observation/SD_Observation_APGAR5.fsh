@@ -1,7 +1,7 @@
 Profile: Moph43pObservationAPGAR5
 Parent: Observation
 Id: moph43p-observation-apgar-5
-Title: "Observation - APGAR-5 (MoPH43p)"
+Title: "MoPH43p Observation: APGAR-5"
 Description: "การประเมินสภาพทารกแรกเกิดใน 5 นาทีแรก (APGAR 5 นาที)"
 * ^url = $SD_Observation_APGAR5
 * ^status = #draft

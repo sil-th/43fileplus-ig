@@ -1,7 +1,7 @@
-Profile: Moph43ObservationAbortions
+Profile: Moph43pObservationAbortions
 Parent: Observation
 Id: moph43p-observation-anc-abortions
-Title: "Observation - Abortions (MoPH43p)"
+Title: "MoPH43p Observation: Abortions"
 Description: "จำนวนการแท้งบุตร"
 * ^url = $SD_Observation_AncAbortions
 * ^status = #draft

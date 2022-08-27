@@ -1,7 +1,7 @@
 Profile: Moph43pPractitionerRole
 Parent: PractitionerRole
 Id: moph43p-practitionerrole
-Title: "PractitionerRole (MoPH43p)"
+Title: "MoPH43p PractitionerRole"
 Description: "ข้อมูลการปฏิบัติงานผู้ให้บริการของสถานพยาบาล"
 * ^url = $SD_PractitionerRole
 * ^status = #draft

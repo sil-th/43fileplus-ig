@@ -1,7 +1,7 @@
 Profile: Moph43pObservationLMP
 Parent: Observation
 Id: moph43p-observation-anc-last-menstrual-period
-Title: "Observation - LMP (MoPH43p)"
+Title: "MoPH43p Observation: LMP"
 Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย"
 * ^url = $SD_Observation_AncLmp
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pObservationLiveDeliveries
 Parent: Observation
 Id: moph43p-observation-anc-live-deliveries
-Title: "Observation - Live delivery (MoPH43p)"
+Title: "MoPH43p Observation: Live delivery"
 Description: "จำนวนเกิดมีชีพ"
 * ^url = $SD_Observation_AncLiveDeliveries
 * ^status = #draft

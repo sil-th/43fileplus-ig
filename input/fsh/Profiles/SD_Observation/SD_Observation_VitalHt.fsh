@@ -1,7 +1,7 @@
-Profile: Moph43pObservationHeight
+Profile: Moph43pObservationVitalHt
 Parent: $SD_Observation_Vital
 Id: moph43p-observation-vital-bodyheight
-Title: "Observation - Vital-Ht (MoPH43p)"
+Title: "MoPH43p Observation: Vital-Ht"
 Description: "ส่วนสูง (Body height)"
 * ^url = $SD_Observation_VitalHt
 * ^status = #draft

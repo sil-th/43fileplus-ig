@@ -1,7 +1,7 @@
 Profile: Moph43pCondition
 Parent: Condition
 Id: moph43p-condition
-Title: "Condition (MoPH43p)"
+Title: "MoPH43p Condition"
 Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * ^url = $SD_Condition
 * ^status = #draft

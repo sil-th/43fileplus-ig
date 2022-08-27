@@ -1,7 +1,7 @@
 Profile: Moph43pObservationHematocritProfile
 Parent: $SD_Observation_Lab
 Id: moph43p-observation-lab-hct
-Title: "Observation - Hct (MoPH43p)"
+Title: "MoPH43p Observation: Hct"
 Description: "ผลการตรวจ Hematocrit"
 * ^url = $SD_Observation_LabHct
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pMedicationRequest
 Parent: MedicationRequest
 Id: moph43p-medicationrequest
-Title: "MedicationRequest (MoPH43p)"
+Title: "MoPH43p MedicationRequest"
 Description: "การสั่งยา"
 * ^url = $SD_MedicationRequest
 * ^status = #draft

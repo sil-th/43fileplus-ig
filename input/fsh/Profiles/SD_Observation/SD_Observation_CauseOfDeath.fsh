@@ -1,7 +1,7 @@
 Profile: Moph43pObservationCauseOfDeath
 Parent: Observation
 Id: moph43p-observation-cause-of-death
-Title: "Observation - COD (MoPH43p)"
+Title: "MoPH43p Observation: Cause of Death"
 Description: "ข้อมูลการเสียชีวิต"
 * ^url = $SD_Observation_CauseOfDeath
 * ^status = #draft

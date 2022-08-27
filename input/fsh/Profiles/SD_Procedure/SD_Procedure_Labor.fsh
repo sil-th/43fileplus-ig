@@ -1,7 +1,7 @@
 Profile: Moph43pProcedureLabor
 Parent: Procedure
 Id: moph43p-procedure-labor
-Title: "Procedure - Labor (MoPH43p)"
+Title: "MoPH43p Procedure: Labor"
 Description: "วิธีการคลอด"
 * ^url = $SD_Procedure_Labor
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: Moph43pObservationGestationalAge
 Parent: Observation
 Id: moph43p-observation-anc-gestational-age
-Title: "Observation - GA (MoPH43p)"
+Title: "MoPH43p Observation: GA"
 Description: "อายุครรภ์ (สัปดาห์)"
 * ^url = $SD_Observation_AncGA
 * ^status = #draft

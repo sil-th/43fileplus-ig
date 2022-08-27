@@ -1,7 +1,7 @@
 Profile: Moph43pEncounter
 Parent: Encounter
 Id: moph43p-encounter
-Title: "Encounter (MoPH43p)"
+Title: "MoPH43p Encounter"
 Description: "การรับบริการ"
 * ^url = $SD_Encounter
 * ^status = #draft

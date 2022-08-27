@@ -1,7 +1,7 @@
 Profile: Moph43pConditionSurveillance
 Parent: $SD_Condition
 Id: moph43p-condition-surveillance
-Title: "Condition - Surveillance (MoPH43p)"
+Title: "MoPH43p Condition: Surveillance"
 Description: "ข้อมูลการวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 * ^url = $SD_Condition_Surveillance
 * ^status = #draft

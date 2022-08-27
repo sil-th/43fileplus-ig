@@ -1,7 +1,7 @@
 Profile: Moph43pOrganizationProvider
 Parent: Organization
 Id: moph43p-organization-provider
-Title: "Organization - Provider (MoPH43p)"
+Title: "MoPH43p Organization: Provider"
 Description: "ข้อมูลสถานพยาบาล"
 * ^url = $SD_Organization_Provider
 * ^status = #draft

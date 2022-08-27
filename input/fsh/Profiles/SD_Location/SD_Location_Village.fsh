@@ -1,7 +1,7 @@
 Profile: Moph43pLocationVillage
 Parent: Location
 Id: moph43p-location-village
-Title: "Location - Village (MoPH43p)"
+Title: "MoPH43p Location: Village"
 Description: "ข้อมูลหมู่บ้าน"
 * ^url = $SD_Location_Village
 * ^status = #draft

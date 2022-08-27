@@ -2,7 +2,7 @@
 Profile: Moph43pAllergyIntolerance
 Parent: AllergyIntolerance
 Id: moph43p-allergyintolerance
-Title: "AllergyIntolerance (MoPH43p)"
+Title: "MoPH43p AllergyIntolerance"
 Description: "ข้อมูลประวัติการแพ้ของผู้ป่วยที่มารับบริการ"
 * ^url = $SD_AllergyIntolerance
 * ^status = #draft

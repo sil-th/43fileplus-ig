@@ -1,7 +1,7 @@
 Profile: Moph43pDevice
 Parent: Device
 Id: moph43p-device
-Title: "Device (MoPH43p)"
+Title: "MoPH43p Device"
 Description: "อุปกรณ์/เวชภัณฑ์"
 * ^url = $SD_Device
 * ^status = #draft

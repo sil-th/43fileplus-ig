@@ -1,7 +1,7 @@
 Profile: Moph43pObservationParity
 Parent: Observation
 Id: moph43p-observation-anc-parity
-Title: "Observation - Parity (MoPH43p)"
+Title: "MoPH43p Observation: Parity"
 Description: "จำนวนบุตรทั้งหมดที่เคยมี"
 * ^url = $SD_Observation_AncParity
 * ^status = #draft

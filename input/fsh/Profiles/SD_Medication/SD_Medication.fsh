@@ -1,7 +1,7 @@
 Profile: Moph43pMedication
 Parent: Medication
 Id: moph43p-medication
-Title: "Medication (MoPH43p)"
+Title: "MoPH43p Medication"
 Description: "ยา"
 * ^url = $SD_Medication
 * ^status = #draft

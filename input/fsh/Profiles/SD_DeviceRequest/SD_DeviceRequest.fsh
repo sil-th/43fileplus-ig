@@ -1,7 +1,7 @@
 Profile: Moph43pDeviceRequest
 Parent: DeviceRequest
 Id: moph43p-devicerequest
-Title: "DeviceRequest (MoPH43p)"
+Title: "MoPH43p DeviceRequest"
 Description: "การสั่งอุปกรณ์/เวชภัณฑ์"
 * ^url = $SD_DeviceRequest
 * ^status = #draft

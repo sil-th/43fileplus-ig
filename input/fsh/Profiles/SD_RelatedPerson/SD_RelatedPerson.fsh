@@ -1,7 +1,7 @@
 Profile: Moph43pRelatedPerson
 Parent: RelatedPerson
 Id: moph43p-relatedperson
-Title: "RelatedPerson (MoPH43p)"
+Title: "MoPH43p RelatedPerson"
 Description: "ข้อมูลผู้ญาติของผู้ที่มาใช้บริการ"
 * ^url = $SD_RelatedPerson
 * ^status = #draft

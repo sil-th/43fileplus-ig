@@ -3,7 +3,7 @@ Alias: $SD_Appointment = https://fhir-ig.sil-th.org/43filesplus/StructureDefinit
 Profile: Moph43pAppointment
 Parent: Appointment
 Id: moph43p-appointment
-Title: "Appointment (MoPH43p)"
+Title: "MoPH43p Appointment"
 Description: "ข้อมูลการนัดมารับบริการครั้งต่อไปของผู้ที่มารับบริการ"
 * ^url = $SD_Appointment
 * ^status = #draft

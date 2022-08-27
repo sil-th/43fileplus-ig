@@ -1,7 +1,7 @@
-Profile: ImmunizationProfile
+Profile: Moph43pImmunization
 Parent: Immunization
 Id: moph43p-immunization
-Title: "Immunization (MoPH43p)"
+Title: "MoPH43p Immunization"
 Description: "การมารับบริการฉีดวัคซีน"
 * ^url = $SD_Immunization
 * ^status = #draft

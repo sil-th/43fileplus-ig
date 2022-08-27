@@ -1,7 +1,7 @@
 Profile: Moph43pObservationTG
 Parent: $SD_Observation_Lab
 Id: moph43p-observation-lab-triglyceride
-Title: "Observation - Lab TG (MoPH43p)"
+Title: "MoPH43p Observation: Lab TG"
 Description: "ผลการตรวจ Triglyceride"
 * ^url = $SD_Observation_LabTg
 * ^status = #draft

@@ -1,7 +1,7 @@
-Profile: Moph43pObservationOccipitoFrontalCircumference
+Profile: Moph43pObservationVitalOcC
 Parent: $SD_Observation_Vital
 Id: moph43p-observation-vital-occipitofrontal-circumference
-Title: "Observation - Vital-OcC (MoPH43p)"
+Title: "MoPH43p Observation: Vital-OcC"
 Description: "เส้นรอบศีรษะจากหน้าผากเหนือคิ้วไปยังท้ายทอย (Occipito frontal head circumference)"
 * ^url = $SD_Observation_VitalOcC
 * ^status = #draft

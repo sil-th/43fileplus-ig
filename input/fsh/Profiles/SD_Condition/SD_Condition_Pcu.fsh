@@ -1,7 +1,7 @@
 Profile: Moph43pConditionPcu
 Parent: $SD_Condition
 Id: moph43p-condition-pcu
-Title: "Condition - PCU (MoPH43p)"
+Title: "MoPH43p Condition: PCU"
 Description: "ข้อมูลการวินิจฉัยโรคหลักในบริการ OPD ปฐมภูมิ"
 * ^url = $SD_Condition_Pcu
 * ^status = #draft

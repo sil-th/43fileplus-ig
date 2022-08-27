@@ -1,7 +1,7 @@
 Profile: Moph43pObservationComStatus
 Parent: Observation
 Id: moph43p-observation-community-status
-Title: "Observation - ComStatus (MoPH43p)"
+Title: "MoPH43p Observation: Status in Community"
 Description: "ข้อมูลสถานะในชุมชน"
 * ^url = $SD_Observation_CommunityStatus
 * ^status = #draft

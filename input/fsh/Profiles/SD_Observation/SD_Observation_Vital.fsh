@@ -1,7 +1,7 @@
 Profile: Moph43pObservationVital
 Parent: Observation
 Id: moph43p-observation-vital
-Title: "Observation - Vital (MoPH43p)"
+Title: "MoPH43p Observation: Vital"
 Description: "ข้อมูลการตรวจสัญญาณชีพ"
 * ^url = $SD_Observation_Vital
 * ^status = #draft

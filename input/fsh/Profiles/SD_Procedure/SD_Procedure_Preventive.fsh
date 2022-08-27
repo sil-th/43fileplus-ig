@@ -1,7 +1,7 @@
 Profile: Moph43pProcedurePreventive
 Parent: Procedure
 Id: moph43p-procedure-preventive
-Title: "Procedure - Preventive (MoPH43p)"
+Title: "MoPH43p Procedure: Preventive"
 Description: "กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 * ^url = $SD_Procedure_Preventive
 * ^status = #draft

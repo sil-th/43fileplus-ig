@@ -1,7 +1,7 @@
-Profile: Moph43pObservationCC
+Profile: Moph43pObservationVitalCC
 Parent: $SD_Observation_Vital
 Id: moph43p-observation-vital-chest-circumference
-Title: "Observation - Vital-CC (MoPH43p)"
+Title: "MoPH43p Observation: Vital-CC"
 Description: "เส้นรอบอก (Chest circumference)"
 * ^url = $SD_Observation_VitalCC
 * ^status = #draft

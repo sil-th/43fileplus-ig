@@ -1,7 +1,7 @@
 Profile: Moph43pObservationLDL
 Parent: $SD_Observation_Lab
 Id: moph43p-observation-lab-ldl
-Title: "Observation - Lab LDL (MoPH43p)"
+Title: "MoPH43p Observation: Lab LDL"
 Description: "ผลการตรวจ LDL"
 * ^url = $SD_Observation_LabLdl
 * ^status = #draft

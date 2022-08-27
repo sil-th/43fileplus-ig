@@ -1,7 +1,7 @@
 Profile: Moph43pSpecimen
 Parent: Specimen
 Id: moph43p-specimen
-Title: "Specimen (MoPH43p)"
+Title: "MoPH43p Specimen"
 Description: "ข้อมูลสิ่งส่งตรวจ"
 * ^url = $SD_Specimen
 * ^status = #draft

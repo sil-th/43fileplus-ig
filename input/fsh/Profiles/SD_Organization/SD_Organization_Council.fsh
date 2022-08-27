@@ -1,7 +1,7 @@
-Profile: Moph43pMoph43pOrganizationCouncil
+Profile: Moph43pOrganizationCouncil
 Parent: Organization
 Id: moph43p-organization-council
-Title: "Organization - Council (MoPH43p)"
+Title: "MoPH43p Organization: Council"
 Description: "ข้อมูลสภาวิชาชีพ"
 * ^url = $SD_Organization_Council
 * ^status = #draft

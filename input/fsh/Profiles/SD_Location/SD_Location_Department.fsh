@@ -1,9 +1,7 @@
-Alias: $SD_Location_Department = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-location-department
-
 Profile: Moph43pLocationDepartment
 Parent: Location
 Id: moph43p-location-department
-Title: "Location - Department (MoPH43p)"
+Title: "MoPH43p Location: Department"
 Description: "ข้อมูลคลินิก/หน่วยงาน ในสถานพยาบาล"
 * ^url = $SD_Location_Department
 * ^status = #draft

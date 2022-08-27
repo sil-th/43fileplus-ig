@@ -1,7 +1,7 @@
 Profile: Moph43pObservationGravida
 Parent: Observation
 Id: moph43p-observation-anc-gravida
-Title: "Observation - Gravida (MoPH43p)"
+Title: "MoPH43p Observation: Gravida"
 Description: "ครรภ์ที่"
 * ^url = $SD_Observation_AncGravida
 * ^status = #draft

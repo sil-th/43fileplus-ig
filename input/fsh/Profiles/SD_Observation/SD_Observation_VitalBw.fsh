@@ -1,7 +1,7 @@
-Profile: Moph43pObservationBodyWeight
+Profile: Moph43pObservationVitalBW
 Parent: $SD_Observation_Vital
 Id: moph43p-observation-vital-bodyweight
-Title: "Observation - Vital-BW (MoPH43p)"
+Title: "MoPH43p Observation: Vital-BW"
 Description: "น้ำหนัก (Body weight)"
 * ^url = $SD_Observation_VitalBw
 * ^status = #draft
