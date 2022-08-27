@@ -4,7 +4,7 @@ Alias: $EX_HL7_BirthTime = http://hl7.org/fhir/StructureDefinition/patient-birth
 Alias: $EX_HL7_Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $EX_HL7_Religion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias: $EX_HL7_ConditionDueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
-Alias: $EX_HL7_ConditinAssertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
+Alias: $EX_HL7_ConditionAssertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 Alias: $EX_HL7_Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $EX_HL7_PreCondition = http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
 

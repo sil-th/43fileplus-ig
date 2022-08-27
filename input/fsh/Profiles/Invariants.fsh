@@ -42,3 +42,50 @@ Invariant: hcode-length
 Description: "HCODE shall be 5-digit number"
 Severity: #error
 Expression: "value.matches('^([0-9]{5})$')"
+
+Invariant: Local-drug-uri
+Description: "Local Drug Code namespace shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Drug, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Drug)$')"
+
+
+Invariant: Inv-uri
+Description: "INV identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Inv, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Inv)$')"
+
+Invariant: InvLt-uri
+Description: "InvLt identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/InvLt, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/InvLt)$')"
+
+
+Invariant: local-device-uri
+Description: "local device identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Device, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Device)$')"
+
+
+Invariant: VN-uri
+Description: "HN identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/VN, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/VN)$')"
+
+
+Invariant: LocalRefer-uri
+Description: "LocalRefer identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Refer, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+
+// location home
+Invariant: HID-uri
+Description: "HID identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/House, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/House)$')"
+
+// Medication
+Invariant: Drug-uri
+Description: "Local drug code shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Drug, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Drug)$')"
+

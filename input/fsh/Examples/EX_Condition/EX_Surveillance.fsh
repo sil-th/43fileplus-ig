@@ -30,7 +30,7 @@ Usage: #example
     * coding[0] = $CS_THCC_DiseaseCause#225 "อื่น ๆ"
     * coding[+] = $CS_THCC_CausativeAgent#0309 "Unknown"
 * extension[+]
-  * url = $EX_HL7_ConditinAssertedDate
+  * url = $EX_HL7_ConditionAssertedDate
   * valueDateTime = "2021-12-31T14:30:02+07:00"
 * clinicalStatus = $CS_HL7_ConditionStatus#active
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed
