@@ -25,7 +25,7 @@ Usage: #example
 * qualification
   * identifier
     * use = #secondary
-    * type = $CS_HL7_IdentifierType#RN "Registered Nurse Number	"
+    * type = $CS_HL7_IdentifierType#RN "Registered Nurse Number"
     * system = $ID_ThaiNurse
     * value = "23222"
   * code

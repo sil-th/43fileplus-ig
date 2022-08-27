@@ -13,10 +13,10 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension ^min = 0
 * extension contains
     $EX_HL7_Nationality named nationality 0..* MS and
-    EX_TH_Race named race 0..* MS and
+    $EX_TH_Race named race 0..* MS and
     $EX_HL7_Religion named religion 0..1 MS and
-    EX_TH_EducationLevel named educationLevel 0..* MS and
-    EX_TH_PersonStatus named personStatus 0..* MS
+    $EX_TH_EducationLevel named educationLevel 0..* MS and
+    $EX_TH_PersonStatus named personStatus 0..* MS
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"

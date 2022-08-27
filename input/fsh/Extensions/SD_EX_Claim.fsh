@@ -21,9 +21,9 @@ Description: "ราคาทุนของรายการนั้น"
 * ^context[0].type = #element
 * ^context[=].expression = "Claim.item"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail"
+* ^context[=].expression = "Claim.item.detail"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail.subDetail"
+* ^context[=].expression = "Claim.item.detail.subDetail"
 * . 0..*
 * . ^short = "ราคาทุนของรายการนั้น"
 * . ^definition = "ราคาทุนของรายการนั้น"
@@ -58,9 +58,9 @@ Description: "ค่าบริการที่ต้องจ่าย ข�
 * ^context[0].type = #element
 * ^context[=].expression = "Claim.item"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail"
+* ^context[=].expression = "Claim.item.detail"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail.subDetail"
+* ^context[=].expression = "Claim.item.detail.subDetail"
 * . 0..*
 * . ^short = "ค่าบริการที่ต้องจ่าย ของรายการนั้น"
 * . ^definition = "ค่าบริการที่ต้องจ่าย ของรายการนั้น"
@@ -87,9 +87,9 @@ Description: "ค่าบริการที่ได้จ่ายไปแ
 * ^context[0].type = #element
 * ^context[=].expression = "Claim.item"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail"
+* ^context[=].expression = "Claim.item.detail"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail.subDetail"
+* ^context[=].expression = "Claim.item.detail.subDetail"
 * . 0..*
 * . ^short = "ค่าบริการที่ได้จ่ายไปแล้ว ของรายการนั้น"
 * . ^definition = "ค่าบริการที่ได้จ่ายไปแล้ว ของรายการนั้น"
@@ -117,9 +117,9 @@ Description: "ค่าบริการที่ยังไม่ได้จ
 * ^context[0].type = #element
 * ^context[=].expression = "Claim.item"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail"
+* ^context[=].expression = "Claim.item.detail"
 * ^context[+].type = #element
-* ^context[=].expression = "Claim.iten.detail.subDetail"
+* ^context[=].expression = "Claim.item.detail.subDetail"
 * . 0..*
 * . ^short = "ค่าบริการที่ยังไม่ได้จ่าย ของรายการนั้น"
 * . ^definition = "ค่าบริการที่ยังไม่ได้จ่าย ของรายการนั้น"

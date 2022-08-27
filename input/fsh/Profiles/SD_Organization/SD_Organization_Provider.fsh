@@ -1,9 +1,9 @@
-Profile: Moph43pOrganizationHospital
+Profile: Moph43pOrganizationProvider
 Parent: Organization
-Id: moph43p-organization-hospital
-Title: "Organization - Hospital (MoPH43p)"
+Id: moph43p-organization-provider
+Title: "Organization - Provider (MoPH43p)"
 Description: "ข้อมูลสถานพยาบาล"
-* ^url = $SD_Organization_Hospital
+* ^url = $SD_Organization_Provider
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -19,6 +19,6 @@ Description: "ข้อมูลสถานพยาบาล"
 * identifier[hcode].value obeys hcode-length
 * name MS
 * name ^short = "ชื่อสถานพยาบาล"
-* partOf only Reference($SD_Organization_Hospital)
+* partOf only Reference($SD_Organization_Provider)
 * partOf MS
 

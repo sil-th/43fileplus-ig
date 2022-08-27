@@ -83,6 +83,7 @@ Usage: #example
   * entry[+] = Reference(Observation/observation-postnatal-gravida1)
   * entry[+] = Reference(Observation/observation-labor-ga1)
   * entry[+] = Reference(Procedure/procedure-labor1)
+  * entry[+] = Reference(Observation/observation-labor-delivery-presentation)
 * section[+]
   * title = "ข้อมูลสุขภาพของลูก"
   * entry[0] = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"

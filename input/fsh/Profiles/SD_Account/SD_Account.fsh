@@ -16,5 +16,5 @@ Description: "ข้อมูลทางการเงิน"
 * coverage.coverage only Reference($SD_Coverage)
 * coverage.coverage MS
 * coverage.priority MS
-* owner only Reference($SD_Organization_Hospital)
+* owner only Reference($SD_Organization_Provider)
 * owner MS
