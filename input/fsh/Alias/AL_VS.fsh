@@ -182,6 +182,11 @@ Alias: $VS_THCC_CommunityService = http://terms.sil-th.org/ValueSet/vs-thcc-comm
 Alias: $VS_IPS_MedicineSoseform = http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform
 Alias: $VS_SNOMEDCT_FormCodes = http://hl7.org/fhir/ValueSet/medication-form-codes
 
+// Internal defined
+Alias: $VS_SNOMED_Rh = http://terms.sil-th.org/ValueSet/vs-snomed-rh-group
+Alias: $VS_SNOMED_ABO = http://terms.sil-th.org/ValueSet/vs-snomed-abo-group
+Alias: $VS_SNOMED_BloodGroup = http://terms.sil-th.org/ValueSet/vs-snomed-blood-group
+
 // From terminology.hl7.org
 Alias: $VS_HL7_IdentifierType = http://hl7.org/fhir/ValueSet/identifier-type
 Alias: $VS_HL7_MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status

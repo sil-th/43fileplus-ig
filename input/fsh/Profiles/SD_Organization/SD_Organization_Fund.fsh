@@ -1,4 +1,4 @@
-Profile: OrganizationFundProfile
+Profile: Moph43pOrganizationFundProfile
 Parent: Organization
 Id: moph43p-organization-fund
 Title: "Organization - Fund (MoPH43p)"

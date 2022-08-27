@@ -1,4 +1,4 @@
-Profile: Moph43pOrganizationCouncil
+Profile: Moph43pMoph43pOrganizationCouncil
 Parent: Organization
 Id: moph43p-organization-council
 Title: "Organization - Council (MoPH43p)"
