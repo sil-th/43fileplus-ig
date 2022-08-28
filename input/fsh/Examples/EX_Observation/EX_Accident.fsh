@@ -23,7 +23,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#injury "ประเภทผู้บาดเจ็บ (อุบัติเหตุจราจร)"
+  * coding[0] = $CS_Meta_AccidentObs#injury "ประเภทผู้บาดเจ็บ (อุบัติเหตุจราจร)"
   * text = "ประเภทผู้บาดเจ็บ (อุบัติเหตุจราจร)"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -40,7 +40,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#vehicle "ประเภทยานพาหนะที่เกิดเหตุ"
+  * coding[0] = $CS_Meta_AccidentObs#vehicle "ประเภทยานพาหนะที่เกิดเหตุ"
   * text = "ประเภทยานพาหนะที่เกิดเหตุ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -94,7 +94,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#seatbelt "การคาดเข็มขัดนิรภัย"
+  * coding[0] = $CS_Meta_AccidentObs#seatbelt "การคาดเข็มขัดนิรภัย"
   * text = "การคาดเข็มขัดนิรภัย"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -113,7 +113,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#helmet "การสวมหมวกนิรภัย"
+  * coding[0] = $CS_Meta_AccidentObs#helmet "การสวมหมวกนิรภัย"
   * text = "การสวมหมวกนิรภัย"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -130,7 +130,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#breathing "การดูแลการหายใจ"
+  * coding[0] = $CS_Meta_AccidentObs#breathing "การดูแลการหายใจ"
   * text = "การดูแลการหายใจ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -148,7 +148,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#stop-bleed "การห้ามเลือด"
+  * coding[0] = $CS_Meta_AccidentObs#stop-bleed "การห้ามเลือด"
   * text = "การห้ามเลือด"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -166,7 +166,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#splint "การใส่ splint/ slab"
+  * coding[0] = $CS_Meta_AccidentObs#splint "การใส่ splint/ slab"
   * text =  "การใส่ splint/ slab"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"
@@ -184,7 +184,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_AccidentObs#iv-fluid "การให้น้ำเกลือ"
+  * coding[0] = $CS_Meta_AccidentObs#iv-fluid "การให้น้ำเกลือ"
   * text = "การให้น้ำเกลือ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"

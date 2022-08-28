@@ -30,7 +30,7 @@ Usage: #example
 * extension[+]
   * url = $EX_TH_PatientEducationLevel
   * valueCodeableConcept
-    * coding[0] = $CS_TH_ISCED1997#61 "ปริญญาตรี"
+    * coding[0] = $CS_INT_ISCED1997#61 "ปริญญาตรี"
     * coding[+] = $CS_THCC_EducationLevel#05 "ปริญญาตรี"
     * text = "ปริญญาตรี"
 * extension[+]

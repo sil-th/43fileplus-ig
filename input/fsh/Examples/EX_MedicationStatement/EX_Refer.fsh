@@ -5,7 +5,7 @@ Description: "แสดงประวัติการได้รับยา
 Usage: #example
 * extension
   * url = $EX_TH_MedicationRequestSource
-  * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
+  * valueCodeableConcept = $CS_Std15_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 * status = #completed
 * medicationCodeableConcept
   * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"

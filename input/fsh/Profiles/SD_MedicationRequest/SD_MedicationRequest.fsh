@@ -15,10 +15,10 @@ Description: "การสั่งยา"
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
     $EX_TH_MedicationRequestOutNLEM named npc 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
-// * extension[medicationSource] from $VS_THCC_MedicationSource (extensible)
+// * extension[medicationSource] from $VS_Std15_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
 * extension[medicationSource] ^min = 0
-// * extension[npc] from $VS_THCC_MedOutNLEM (extensible)
+// * extension[npc] from $VS_eClaim_MedOutNLEM (extensible)
 * extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
 * extension[npc] ^min = 0
 * extension[approvedNo] ^short = "หมายเลขอนุมัติ"
@@ -32,7 +32,7 @@ Description: "การสั่งยา"
 * category ^slicing.discriminator[=].path = "coding.system"
 * category ^slicing.rules = #open
 * category contains thcc 1..1 MS
-* category[thcc] from $VS_THCC_MedicationCategory (extensible)
+* category[thcc] from $VS_eClaim_MedicationCategory (extensible)
 * category[thcc].coding.system 1..
 * category[thcc].coding.code 1..
 * medication[x] 1.. MS

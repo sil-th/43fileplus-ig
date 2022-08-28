@@ -5,7 +5,7 @@ Description: "แสดงการจ่ายยา Amoxicillin หลัง�
 Usage: #example
 * extension[0]
   * url = $EX_TH_MedicationDispenseDeliveryMode
-  * valueCodeableConcept = $CS_THCC_MedDelivery#1 "รับที่ counter ยา"
+  * valueCodeableConcept = $CS_43Plus_MedDelivery#1 "รับที่ counter ยา"
 * status = #completed
 * medicationReference = Reference(Medication/medication-opd-amoxicillin) "Amoxicillin 500 mg"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"

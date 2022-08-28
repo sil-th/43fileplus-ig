@@ -6,7 +6,7 @@ Usage: #example
 * extension[+]
   * url = $EX_TH_PatientPidRemoveReason
   * valueCodeableConcept
-    * coding[0] = $CS_THCC_PidRemoveReason#1 "ตาย"
+    * coding[0] = $CS_43File_PidRemoveReason#1 "ตาย"
     * text = "ตาย"
 * identifier[0]
   * use = #official

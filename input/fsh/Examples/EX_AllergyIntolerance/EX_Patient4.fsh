@@ -6,7 +6,7 @@ Usage: #example
 * extension[0]
   * url = $EX_TH_AllergyIntoleranceCertainy
   * valueCodeableConcept
-    * coding[0] = $CS_THCC_AllergyCertainy#1 "certain"
+    * coding[0] = $CS_THCC_AllergyCertainty#1 "certain"
 * extension[+]
   * url = $EX_TH_AllergyIntoleranceSeverity
   * valueCodeableConcept
@@ -21,7 +21,7 @@ Usage: #example
 * clinicalStatus = $CS_HL7_AlleryActive#active "Active"
 * verificationStatus
   * coding[0] = $CS_HL7_AllergyVerify#confirmed "Confirmed"
-  * coding[+] = $CS_THCC_AllergyVerify#1 "แพ้"
+  * coding[+] = $CS_Std15_AllergyVerify#1 "แพ้"
 * category = #medication
 * code
   * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"

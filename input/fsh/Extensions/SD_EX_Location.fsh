@@ -102,7 +102,7 @@ Description: "ที่ตั้ง อยู่ในหรือนอกเ�
 // Alias: $EX_TH_LocationVillageArea = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-area
 // * extension[0]
 //   * url = $EX_TH_LocationVillageArea
-//   * valueCodeableConcept = $CS_THCC_VillageArea#1 "เทศบาล"
+//   * valueCodeableConcept = $CS_PCU_VillageArea#1 "เทศบาล"
 Extension: EX_TH_LocationVillageArea
 Id: ex-location-village-area
 Title: "Ext Location: Village Area"
@@ -120,7 +120,7 @@ Description: "เขตที่ตั้ง อยู่ในหรือน�
 * . ^definition = "เขตที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_VillageArea (extensible)
+* value[x] from $VS_PCU_VillageArea (extensible)
 
 
 

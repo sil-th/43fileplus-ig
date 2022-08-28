@@ -18,7 +18,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-03-01T12:30:02+07:00"

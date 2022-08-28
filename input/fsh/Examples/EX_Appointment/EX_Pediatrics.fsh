@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังคลอด"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_MeternalAppointmentType#newborn "นัดตรวจหลังคลอด ครั้งต่อไป"
+* serviceType[0] = $CS_Meta_MeternalAppointmentType#newborn "นัดตรวจหลังคลอด ครั้งต่อไป"
 * description = "นัดมาติดตามผล 1 เดือน หลังคลอด"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2022-03-21T15:00:02+07:00"
@@ -33,7 +33,7 @@ Title: "ตัวอย่าง Appointment: การนัดตรวจว�
 Description: "แสดงการนัดตรวจวัดระดับโภชนาการและพัฒนาการ"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_MeternalAppointmentType#nutrition "นัดตรวจโภชนาการและพัฒนาการ"
+* serviceType[0] = $CS_Meta_MeternalAppointmentType#nutrition "นัดตรวจโภชนาการและพัฒนาการ"
 * description = "นัดมาติดตามผล 1 เดือน"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2022-05-21T15:00:02+07:00"

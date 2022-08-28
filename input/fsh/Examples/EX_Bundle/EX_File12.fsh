@@ -34,7 +34,7 @@ Usage: #example
 * status = #final
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
-  * coding[+] = $CS_THCC_43fileType#12 "FUNCTIONAL"
+  * coding[+] = $CS_TH_FileList#12 "FUNCTIONAL"
 * subject = Reference(Patient/patient-patient3)
 * date = "2022-07-29T12:30:02+07:00"
 * author[0] = Reference(Organization/organization-main)

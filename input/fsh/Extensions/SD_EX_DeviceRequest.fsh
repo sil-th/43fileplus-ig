@@ -1,7 +1,7 @@
 // Alias: $EX_TH_DeviceRequestUseLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-product-use-location
 // * extension
 //   * url = $EX_TH_DeviceRequestUseLocation
-//   * valueCodeableConcept = $CS_THCC_MedicationCategory#2 "ใช้ที่บ้าน"
+//   * valueCodeableConcept = $CS_eClaim_MedicationCategory#2 "ใช้ที่บ้าน"
 Extension: EX_TH_DeviceRequestUseLocation
 Id: ex-devicerequest-use-location
 Title: "Ext DeviceRequest: Product Use Location"
@@ -19,4 +19,4 @@ Description: "รหัสหมวดสถานที่ใช้ยา/เ�
 * . ^definition = "รหัสหมวดสถานที่ใช้ยา/เวชภัณฑ์"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_MedicationCategory (extensible)
+* value[x] from $VS_eClaim_MedicationCategory (extensible)

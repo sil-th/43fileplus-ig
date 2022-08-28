@@ -47,7 +47,7 @@ Description: "ยา"
 * form.coding[snomed].system 1..
 * form.coding[snomed].system = $SCT (exactly)
 * form.coding[snomed].code 1..
-* form.coding[edqm] from $VS_IPS_MedicineSoseform (extensible)
+* form.coding[edqm] from $VS_IPS_MedicineDoseform (extensible)
 * form.coding[edqm].system 1..
 * form.coding[edqm].system = $EDQM (exactly)
 * form.coding[edqm].code 1..

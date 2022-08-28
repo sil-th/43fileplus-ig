@@ -15,7 +15,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-02-21T15:00:02+07:00"
@@ -23,7 +23,7 @@ Usage: #example
 * location
   * extension
     * url = $EX_TH_EncounterServiceLocationType 
-    * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
+    * valueCodeableConcept = $CS_PCU_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
@@ -47,7 +47,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-03-21T15:00:02+07:00"
@@ -55,7 +55,7 @@ Usage: #example
 * location
   * extension
     * url = $EX_TH_EncounterServiceLocationType 
-    * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
+    * valueCodeableConcept = $CS_PCU_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
@@ -79,7 +79,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-04-21T15:00:02+07:00"
@@ -87,7 +87,7 @@ Usage: #example
 * location
   * extension
     * url = $EX_TH_EncounterServiceLocationType 
-    * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
+    * valueCodeableConcept = $CS_PCU_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

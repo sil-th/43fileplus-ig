@@ -8,7 +8,7 @@ Usage: #example
 * experimental = true
 * subjectType = #Patient
 * date = "2022-01-01"
-* code = $CS_THCC_QnType#HOMEVIST "แบบบันทึกสุขภาพ การให้บริการในชุมชน ในแฟ้ม COMMUNITY_SERVICE"
+* code = $CS_Meta_QnType#HOMEVIST "แบบบันทึกสุขภาพ การให้บริการในชุมชน ในแฟ้ม COMMUNITY_SERVICE"
 * item[0]
   * linkId = "1"
   * text = "สภาพ/อาการ ของผู้ป่วยที่ไปเยี่ยม"

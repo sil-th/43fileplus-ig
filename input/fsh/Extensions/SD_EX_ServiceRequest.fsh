@@ -1,7 +1,7 @@
 // Alias: $EX_TH_ServiceRequestReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-outcome
 // * extension[0]
 //   * url = $EX_TH_ServiceRequestReferOutcome 
-//   * valueCodeableConcept = $CS_THCC_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
+//   * valueCodeableConcept = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
 Extension: EX_TH_ServiceRequestReferOutcome
 Id: ex-servicerequest-refer-outcome
 Title: "Ext ServiceRequest: Refer Outcome"
@@ -19,7 +19,7 @@ Description: "รหัสผลการส่งต่อไปรับบร
 * . ^definition = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferOutcome (extensible)
+* value[x] from $VS_PCU_ReferOutcome (extensible)
 
 
 
@@ -74,7 +74,7 @@ Description: "สถานพยาบาล และแผนกที่ส�
 // Alias: $EX_TH_ServiceRequestReferStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-status
 // * extension[+]
 //   * url = $EX_TH_ServiceRequestReferStatus
-//   * valueCodeableConcept = $CS_THCC_ReferStatus#A "Accepted"
+//   * valueCodeableConcept = $CS_Std15_ReferStatus#A "Accepted"
 Extension: EX_TH_ServiceRequestReferStatus
 Id: ex-servicerequest-refer-status
 Title: "Ext ServiceRequest: Refer Status"
@@ -92,7 +92,7 @@ Description: "รหัสสถานะของการอ้างอิง
 * . ^definition = "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferStatus (extensible)
+* value[x] from $VS_eClaim_ReferReason (extensible)
 
 
 
@@ -126,7 +126,7 @@ Description: "วันที่กำหนดสิ้นสุดการต
 // Alias: $EX_TH_ServiceRequestReferAnswerType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-answer-type
 // * extension[+]
 //   * url = $EX_TH_ServiceRequestReferAnswerType
-//   * valueCodeableConcept = $CS_THCC_ReferAnswerType#1 "Accepted"
+//   * valueCodeableConcept = $CS_Std15_ReferAnswerType#1 "Accepted"
 Extension: EX_TH_ServiceRequestReferAnswerType
 Id: ex-servicerequest-refer-answer-type
 Title: "Ext ServiceRequest: Refer Answer Type"
@@ -144,7 +144,7 @@ Description: "รหัสประเภทการตอบรับหรื
 * . ^definition = "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferAnswerType (extensible)
+* value[x] from $VS_Std15_ReferAnswerType (extensible)
 
 
 
@@ -155,8 +155,8 @@ Description: "รหัสประเภทการตอบรับหรื
 //   * extension[+]
 //     * url = $EX_TH_ServiceRequestThaiReferPriority
 //     * valueCodeableConcept
-//       * coding[0] = $CS_THCC_ReferThaiPriorityStd43#2 "emergency"
-//       * coding[+] = $CS_THCC_ReferThaiPriorityStd15#E "Emergency"
+//       * coding[0] = $CS_THCC_ReferThaiPriority#2 "emergency"
+//       * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
 Extension: EX_TH_ServiceRequestThaiReferPriority
 Id: ex-servicerequest-thai-refer-priority
 Title: "Ext ServiceRequest: Thai Refer Priority"
@@ -174,7 +174,7 @@ Description: "รหัสระดับความเร่งด่วน"
 * . ^definition = "รหัสระดับความเร่งด่วน"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferThaiPriority (extensible)
+* value[x] from $VS_eClaim_ReferThaiPriority (extensible)
 
 
 
@@ -186,7 +186,7 @@ Description: "รหัสระดับความเร่งด่วน"
 // Alias: $EX_TH_ServiceRequestReferPriorityCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-priority-code
 // * extension[+]
 //   * url = $EX_TH_ServiceRequestReferPriorityCode
-//   * valueCodeableConcept = $CS_THCC_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
+//   * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 Extension: EX_TH_ServiceRequestReferPriorityCode
 Id: ex-servicerequest-refer-priority-code
 Title: "Ext ServiceRequest: Refer Priority Code"
@@ -204,7 +204,7 @@ Description: "รหัสข้อบ่งชี้ของกรณีฉุ
 * . ^definition = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferPriorityCode (extensible)
+* value[x] from $VS_eClaim_ReferPriorityCode (extensible)
 
 
 
@@ -212,7 +212,7 @@ Description: "รหัสข้อบ่งชี้ของกรณีฉุ
 // Alias: $EX_TH_ServiceRequestEclaimReferType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-type-eclaim
 // * extension[+]
 //   * url = $EX_TH_ServiceRequestEclaimReferType
-//   * valueCodeableConcept = $CS_THCC_ReferTypeEclaim#E "ฉุกเฉิน"
+//   * valueCodeableConcept = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 Extension: EX_TH_ServiceRequestEclaimReferType
 Id: ex-servicerequest-refer-type-eclaim
 Title: "Ext ServiceRequest: E-claim Refer Type"
@@ -230,7 +230,7 @@ Description: "รหัสสาเหตุการส่งต่อผู้
 * . ^definition = "รหัสสาเหตุการส่งต่อผู้ป่วย"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferTypeEclaim (extensible)
+* value[x] from $VS_eClaim_ReferTypeEclaim (extensible)
 
 
 
@@ -239,7 +239,7 @@ Description: "รหัสสาเหตุการส่งต่อผู้
 // Alias: $EX_TH_ServiceRequestSpecialDiseaseRefer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-special-disease
 // * extension[+]
 //   * url = $EX_TH_ServiceRequestSpecialDiseaseRefer
-//   * valueCodeableConcept = $CS_THCC_ReferSpecialDisease#99 "อื่นๆ"
+//   * valueCodeableConcept = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
 Extension: EX_TH_ServiceRequestSpecialDiseaseRefer
 Id: ex-servicerequest-refer-special-disease
 Title: "Ext ServiceRequest: Special Disease Refer"
@@ -257,6 +257,6 @@ Description: "รหัสกลุ่มโรคเฉพาะเพื่อ
 * . ^definition = "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ReferSpecialDisease (extensible)
+* value[x] from $VS_43File_ReferSpecialDisease (extensible)
 
 

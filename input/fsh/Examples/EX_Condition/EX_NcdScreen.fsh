@@ -24,7 +24,7 @@ Usage: #example
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed
 * category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * code
-  * coding[0] = $CS_THCC_NcdStatus#1 "เป็น"
+  * coding[0] = $CS_43Plus_NcdStatus#1 "เป็น"
   * text = "เป็นโรคในกลุ่ม NCD"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-21T12:30:02+07:00"

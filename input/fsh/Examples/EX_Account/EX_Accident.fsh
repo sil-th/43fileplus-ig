@@ -6,7 +6,7 @@ Description: "ข้อมูลทางการเงินของผู้
 Usage: #example
 * extension[0]
   * url = $EX_TH_AccountAccidentCoverage
-  * valueCodeableConcept = $CS_THCC_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
+  * valueCodeableConcept = $CS_eClaim_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
 * status = #active
 * name = "บัญชี นางสมควร ใจดี VN 65-XXXXX"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"

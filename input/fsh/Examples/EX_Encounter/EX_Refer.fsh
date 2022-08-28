@@ -5,10 +5,10 @@ Description: "แสดงการรับบริการแผนกฉุ
 Usage: #example
 * extension[0]
   * url = $EX_TH_EncounterReferCategory
-  * valueCodeableConcept = $CS_THCC_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
+  * valueCodeableConcept = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
 * extension[+]
   * url = $EX_TH_EncounterReferResult
-  * valueCodeableConcept = $CS_THCC_ReferResult#1 "ตอบรับการส่งต่อ"
+  * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
 * extension[+]
   * url = $EX_TH_EncounterReferResultReason
   * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
@@ -27,7 +27,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2021-03-31T10:30:02+07:00"
@@ -42,7 +42,7 @@ Usage: #example
   * condition = Reference(Condition/condition-refer2)
   * use
     * coding[0] = $CS_HL7_DiagRole#DD "Discharge diagnosis"
-    * coding[+] = $CS_THCC_EncounterDiagnosisRole#1 "PRINCIPLE DX (การวินิจฉัยโรคหลัก)"
+    * coding[+] = $CS_43Plus_EncounterDiagnosisRole#1 "PRINCIPLE DX (การวินิจฉัยโรคหลัก)"
 * account = Reference(Account/account-refer-encounter1)
 * hospitalization
   * extension[0]
@@ -89,7 +89,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"
 * period
   * start = "2021-03-31T14:30:02+07:00"

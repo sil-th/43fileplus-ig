@@ -14,7 +14,7 @@ Description: "การรับบริการ"
 * extension contains
     $EX_TH_EncounterServiceTypeTH named serviceType 0..1 MS
 * extension[serviceType] ^short = "ประเภทบริการ"
-// * extension[serviceType] from $VS_THCC_ServiceTypeTH (extensible)
+// * extension[serviceType] from $VS_eClaim_ServiceTypeTH (extensible)
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "$this"
@@ -41,9 +41,9 @@ Description: "การรับบริการ"
 * priority.coding[hl7].system 1..
 * priority.coding[hl7].system = $CS_HL7_Priority (exactly)
 * priority.coding[hl7].code 1..
-* priority.coding[thcc] from $VS_THCC_ServicePriority (extensible)
+* priority.coding[thcc] from $VS_43Plus_ServicePriority (extensible)
 * priority.coding[thcc].system 1..
-* priority.coding[thcc].system = $CS_THCC_ServicePriority (exactly)
+* priority.coding[thcc].system = $CS_43Plus_ServicePriority (exactly)
 * priority.coding[thcc].code 1..
 * subject MS
 * subject only Reference($SD_Patient)
@@ -68,9 +68,9 @@ Description: "การรับบริการ"
 * participant.type.coding[hl7].system 1..
 * participant.type.coding[hl7].system = $CS_HL7_ParticipantType (exactly)
 * participant.type.coding[hl7].code 1..
-* participant.type.coding[thcc] from $VS_THCC_ParticipantType (extensible)
+* participant.type.coding[thcc] from $VS_Meta_ParticipantType (extensible)
 * participant.type.coding[thcc].system 1..
-* participant.type.coding[thcc].system = $CS_THCC_ParticipantType (exactly)
+* participant.type.coding[thcc].system = $CS_Meta_ParticipantType (exactly)
 * participant.type.coding[thcc].code 1..
 * participant.individual only Reference($SD_Practitioner)
 * period MS
@@ -133,7 +133,7 @@ Description: "การรับบริการ"
 * location.extension contains
     $EX_TH_EncounterServiceLocationType named locationType 0..1 MS
 * location.extension[locationType] ^short = "ประเภทสถานที่ที่ให้บริการ"
-// * hospitalization.extension[locationType] from $VS_THCC_ServiceLocationType (extensible)
+// * hospitalization.extension[locationType] from $VS_PCU_ServiceLocationType (extensible)
 * serviceProvider MS
 * serviceProvider only Reference($SD_Organization_Provider)
 * serviceProvider.extension ^slicing.discriminator[0].type = #value
@@ -143,4 +143,4 @@ Description: "การรับบริการ"
 * serviceProvider.extension contains
     $EX_TH_EncounterProviderType named providerType 0..1 MS
 * serviceProvider.extension[providerType] ^short = "ประเภทสถานพยาบาลที่รักษา"
-// * hospitalization.extension[locationType] from $VS_THCC_ProviderType (extensible)
+// * hospitalization.extension[locationType] from $VS_eClaim_ProviderType (extensible)

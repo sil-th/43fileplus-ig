@@ -5,7 +5,7 @@ Description: "แสดงการรับบริการ IPD โดยท�
 Usage: #example
 // * extension[0]
 //   * url = $EX_TH_EncounterServiceTypeTH 
-//   * valueCodeableConcept = $CS_THCC_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
+//   * valueCodeableConcept = $CS_eClaim_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
 * identifier[0]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"
@@ -20,7 +20,7 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#IMP "inpatient encounter"
 * priority
   * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
+  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
@@ -30,7 +30,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) 
     * insert GeneralReference($ID_LO_Provider, "XXXXXXXX", "พญ. สมหญิง จริงใจ")
 * period
@@ -60,7 +60,7 @@ Usage: #example
 * location[0]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
       * system = $ID_LO_DepCode
@@ -69,7 +69,7 @@ Usage: #example
 * location[+]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
       * system = $ID_LO_DepCode
@@ -78,7 +78,7 @@ Usage: #example
 * location[+]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
       * system = $ID_LO_DepCode
@@ -88,7 +88,7 @@ Usage: #example
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
   // * extension
   //   * url = $EX_TH_EncounterProviderType 
-  //   * valueCodeableConcept = $CS_THCC_ProviderType#1 "Main Contractor"
+  //   * valueCodeableConcept = $CS_eClaim_ProviderType#1 "Main Contractor"
 
 
 
@@ -126,13 +126,13 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#IMP "inpatient encounter"
 * priority
   * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
+  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) 
     * insert GeneralReference($ID_LO_Provider, "XXXXXXXX", "พญ. สมหญิง จริงใจ")
 * period
@@ -161,7 +161,7 @@ Usage: #example
 * location[0]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
       * system = $ID_LO_DepCode
@@ -170,7 +170,7 @@ Usage: #example
 * location[+]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
       * system = $ID_LO_DepCode
@@ -179,7 +179,7 @@ Usage: #example
 * location[+]
   * extension[0]
     * url = $EX_TH_EncounterIpdJourney 
-    * valueCodeableConcept = $CS_THCC_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
+    * valueCodeableConcept = $CS_Meta_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
       * system = $ID_LO_DepCode

@@ -124,4 +124,4 @@ Usage: #example
   * text = "Newborn delivery information"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueCodeableConcept = $CS_THCC_LaborPresentation#1 "ปกติ"
+* valueCodeableConcept = $CS_PCU_LaborPresentation#1 "ปกติ"

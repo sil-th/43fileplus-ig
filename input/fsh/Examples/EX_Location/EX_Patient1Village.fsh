@@ -5,7 +5,7 @@ Description: "แสดงข้อมูลหมู่บ้านที่ 1"
 Usage: #example
 * extension[0]
   * url = $EX_TH_LocationVillageArea
-  * valueCodeableConcept = $CS_THCC_VillageArea#1 "เทศบาล"
+  * valueCodeableConcept = $CS_PCU_VillageArea#1 "เทศบาล"
 * extension[+]
   * url = $EX_TH_LocationVillageMainHospital
   * valueReference = Reference(Organization/organization-main)

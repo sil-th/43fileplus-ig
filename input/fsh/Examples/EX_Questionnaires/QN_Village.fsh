@@ -8,7 +8,7 @@ Usage: #example
 * experimental = true
 * subjectType = #Location
 * date = "2022-01-01"
-* code = $CS_THCC_QnType#VILLAGE "ข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน ในแฟ้ม VILLAGE"
+* code = $CS_Meta_QnType#VILLAGE "ข้อมูลทั่วไปและข้อมูลที่เกี่ยวข้องกับสุขภาพของชุมชน ในแฟ้ม VILLAGE"
 * item[0]
   * linkId = "1"
   * text = "จำนวนแพทย์แผนไทย แพทย์พื้นบ้าน แพทย์ทางเลือก"

@@ -8,7 +8,7 @@ Usage: #example
 * experimental = true
 * subjectType = #Patient
 * date = "2022-01-01"
-* code = $CS_THCC_QnType#DENTAL "แบบสำรวจการตรวจสภาวะทันตสุขภาพของฟัน ในแฟ้ม DENTAL"
+* code = $CS_Meta_QnType#DENTAL "แบบสำรวจการตรวจสภาวะทันตสุขภาพของฟัน ในแฟ้ม DENTAL"
 * item[0]
   * linkId = "1"
   * text = "ประเภทผู้ได้รับบริการตรวจสภาวะทันตสุขภาพ"

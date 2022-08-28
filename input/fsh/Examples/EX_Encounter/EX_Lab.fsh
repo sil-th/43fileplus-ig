@@ -17,7 +17,7 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * priority
   * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_THCC_ServicePriority#1 "ปกติ"
+  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * period

@@ -2,7 +2,7 @@
 // * extension[0]
 //   * url = $EX_TH_AllergyIntoleranceCertainy
 //   * valueCodeableConcept
-//     * coding[0] = $CS_THCC_AllergyCertainy#1 "certain"
+//     * coding[0] = $CS_THCC_AllergyCertainty#1 "certain"
 Extension: EX_TH_AllergyIntoleranceCertainy
 Id: ex-allergyintolerance-allergy-certainy
 Title: "Ext AllergyIntolerance: Certainty"

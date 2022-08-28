@@ -66,9 +66,9 @@ Description: "ข้อมูลอาชีพของประชาชนใ
 * component[annualIncome].code.coding[loinc].system = $LNC (exactly)
 * component[annualIncome].code.coding[loinc].code 1..
 * component[annualIncome].code.coding[loinc].code = #87707-6 (exactly)
-* component[annualIncome].code.coding[thcc] from $VS_THCC_SocialObsType (extensible)
+* component[annualIncome].code.coding[thcc] from $VS_Meta_SocialObsType (extensible)
 * component[annualIncome].code.coding[thcc].system 1..
-* component[annualIncome].code.coding[thcc].system = $CS_THCC_SocialObsType (exactly)
+* component[annualIncome].code.coding[thcc].system = $CS_Meta_SocialObsType (exactly)
 * component[annualIncome].code.coding[thcc].code 1..
 * component[annualIncome].code.coding[thcc].code = #annual-income (exactly)
 * component[annualIncome].value[x] 1..

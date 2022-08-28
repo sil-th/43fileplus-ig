@@ -31,7 +31,7 @@ Description: "รหัสสถานที่คลอด"
 // Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-procedure-type
 // * extension[0]
 //   * url = $EX_TH_ProcedureProcedureType
-//   * valueCodeableConcept = $CS_THCC_ProcedureType#1 "Principal procedure"
+//   * valueCodeableConcept = $CS_eClaim_ProcedureType#1 "Principal procedure"
 Extension: EX_TH_ProcedureProcedureType
 Id: ex-procedure-procedure-type
 Title: "Ext Procedure: Procedure Type"
@@ -49,6 +49,6 @@ Description: "รหัสชนิดของหัตถการ"
 * . ^definition = "รหัสชนิดของหัตถการ"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_ProcedureType (extensible)
+* value[x] from $VS_eClaim_ProcedureType (extensible)
 
 

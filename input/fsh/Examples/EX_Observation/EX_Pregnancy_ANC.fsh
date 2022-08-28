@@ -23,7 +23,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_THCC_MiscPregnancyObs#ancperiod 
+  * coding[0] = $CS_Meta_MiscPregnancyObs#ancperiod 
   * text = "ช่วงของการ ANC ตามโครงสร้างข้อมูล 43 แฟ้ม แฟ้ม ANC"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-04-21T12:30:02+07:00"
@@ -108,7 +108,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-04-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[0] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 

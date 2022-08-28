@@ -15,10 +15,10 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
     $EX_TH_MedicationRequestOutNLEM named npc 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
-// * extension[medicationSource] from $VS_THCC_MedicationSource (extensible)
+// * extension[medicationSource] from $VS_Std15_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
 * extension[medicationSource] ^min = 0
-// * extension[npc] from $VS_THCC_MedOutNLEM (extensible)
+// * extension[npc] from $VS_eClaim_MedOutNLEM (extensible)
 * extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
 * extension[npc] ^min = 0
 * extension[approvedNo] ^short = "หมายเลขอนุมัติ"
@@ -30,7 +30,7 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * category.coding ^slicing.rules = #open
 * category.coding contains
     thcc 1..1 MS
-* category.coding[thcc] from $VS_THCC_MedicationCategory (extensible)
+* category.coding[thcc] from $VS_eClaim_MedicationCategory (extensible)
 * category.coding[thcc].system 1..
 * category.coding[thcc].code 1..
 * medication[x] 1.. MS

@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD"
 Usage: #example
 * status = #booked
-* serviceCategory[0] = $CS_THCC_AppointServiceCategory#0001 "ตรวจรักษา"
+* serviceCategory[0] = $CS_Std15_AppointServiceCategory#0001 "ตรวจรักษา"
 * serviceType[0] = $CS_THCC_AppointServiceType#181 "ฟังผลการรักษา"
 * reasonCode[0]
   * coding[0] = $SCT#386661006 "Fever"

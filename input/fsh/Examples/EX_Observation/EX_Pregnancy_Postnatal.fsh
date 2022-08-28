@@ -91,7 +91,7 @@ Usage: #example
   * text = "Breastfeeding status"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueCodeableConcept = $CS_THCC_PostnatalBreastfeeding#1 "ไหล"
+* valueCodeableConcept = $CS_PCU_PostnatalBreastfeeding#1 "ไหล"
 
 
 Instance: observation-postnatal-mens1
@@ -107,7 +107,7 @@ Usage: #example
   * text = "TEMP"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueCodeableConcept = $CS_THCC_PostnatalMens#1 "ปกติ"
+* valueCodeableConcept = $CS_PCU_PostnatalMens#1 "ปกติ"
 
 
 Instance: observation-postnatal-urine-protein1
@@ -155,7 +155,7 @@ Usage: #example
   * text = "Female perineum observable"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
-* valueCodeableConcept = $CS_THCC_PostnatalPerineum#1 "ปกติ"
+* valueCodeableConcept = $CS_PCU_PostnatalPerineum#1 "ปกติ"
 
 
 Instance: observation-postnatal-status1

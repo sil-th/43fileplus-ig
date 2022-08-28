@@ -8,7 +8,7 @@ Usage: #example
   * extension[0]
     * url = "type"
     * valueCodeableConcept
-      * coding[0] = $CS_THCC_ProviderTypeCoverage#primary "สถานบริการหลัก"
+      * coding[0] = $CS_Meta_ProviderTypeCoverage#primary "สถานบริการหลัก"
       * text = "สถานพยาบาลหลัก"
   * extension[+]
     * url = "provider"
@@ -23,7 +23,7 @@ Usage: #example
   * extension[0]
     * url = "type"
     * valueCodeableConcept
-      * coding[0] = $CS_THCC_ProviderTypeCoverage#secondary "สถานบริการรอง"
+      * coding[0] = $CS_Meta_ProviderTypeCoverage#secondary "สถานบริการรอง"
       * text = "สถานบริการรอง"
   * extension[+]
     * url = "provider"
@@ -34,7 +34,7 @@ Usage: #example
   * extension[0]
     * url = "type"
     * valueCodeableConcept
-      * coding[0] = $CS_THCC_ProviderTypeCoverage#primary-care "สถานบริการปฐมภูมิ"
+      * coding[0] = $CS_Meta_ProviderTypeCoverage#primary-care "สถานบริการปฐมภูมิ"
       * text = "สถานบริการปฐมภูมิ"
   * extension[+]
     * url = "provider"

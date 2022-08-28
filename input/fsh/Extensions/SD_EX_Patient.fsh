@@ -29,7 +29,7 @@ Description: "เชื้อชาติของบุคคล"
 // * extension[+]
 //   * url = $EX_TH_PatientEducationLevel
 //   * valueCodeableConcept
-//     * coding[0] = $CS_TH_ISCED1997#61 "ปริญญาตรี"
+//     * coding[0] = $CS_INT_ISCED1997#61 "ปริญญาตรี"
 //     * coding[+] = $CS_THCC_EducationLevel#05 "ปริญญาตรี"
 //     * text = "ปริญญาตรี"
 Extension: EX_TH_PatientEducationLevel
@@ -108,7 +108,7 @@ Description: "รหัสความเป็นคนต่างด้าว
 // * extension[+]
 //   * url = $EX_TH_PatientPidRemoveReason
 //   * valueCodeableConcept
-//     * coding[0] = $CS_THCC_PidRemoveReason#1 "ตาย"
+//     * coding[0] = $CS_43File_PidRemoveReason#1 "ตาย"
 //     * text = "ตาย"
 Extension: EX_TH_PatientPidRemoveReason
 Id: ex-patient-pid-remove-reason
@@ -127,6 +127,6 @@ Description: "สถานะ/สาเหตุการจำหน่าย"
 * . ^definition = "สถานะ/สาเหตุการจำหน่าย"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_PidRemoveReason (extensible)
+* value[x] from $VS_43File_PidRemoveReason (extensible)
 
 

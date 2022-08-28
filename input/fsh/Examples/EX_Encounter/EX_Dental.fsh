@@ -14,7 +14,7 @@ Usage: #example
 * participant[0]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_THCC_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-dentist1) "ทพญ. สมทรวง จริงใจ"
 * period
   * extension
@@ -28,7 +28,7 @@ Usage: #example
 * location
   * extension
     * url = $EX_TH_EncounterServiceLocationType 
-    * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
+    * valueCodeableConcept = $CS_PCU_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD ทันตกรรม Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

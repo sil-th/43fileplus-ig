@@ -62,7 +62,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-03-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[0] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 
@@ -80,7 +80,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-03-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[0] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 Instance: observation-prenatal-hiv1
@@ -97,7 +97,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-03-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[0] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 Instance: observation-prenatal-hct1
@@ -130,7 +130,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-03-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[0] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 Instance: observation-prenatal-height1

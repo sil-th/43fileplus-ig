@@ -1,7 +1,7 @@
 // Alias: $EX_TH_AccountAccidentCoverage = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-account-accident-coverage
 // * extension[0]
-//   * url = $CS_THCC_AccidentCoverage
-//   * valueCodeableConcept = $CS_THCC_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
+//   * url = $CS_eClaim_AccidentCoverage
+//   * valueCodeableConcept = $CS_eClaim_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
 Extension: EX_TH_AccountAccidentCoverage
 Id: ex-account-accident-coverage
 Title: "Ext Account: Accident Coverage"
@@ -19,4 +19,4 @@ Description: "รหัสสิทธิการรักษาอื่นก
 * . ^definition = "รหัสสิทธิการรักษาอื่นกรณีอุบัติเหตุ"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_AccidentCoverage (extensible)
+* value[x] from $VS_eClaim_AccidentCoverage (extensible)

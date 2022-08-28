@@ -80,7 +80,7 @@ Usage: #example
 * effectiveDateTime = "2022-01-01T12:30:02+07:00"
 * valueCodeableConcept
   * coding[0] = $CS_HL7_ObsInterpret#NEG "Negative"
-  * coding[+] = $CS_THCC_ScreeningResult#1 "ปกติ"
+  * coding[+] = $CS_Meta_ScreeningResult#1 "ปกติ"
   * text = "ปกติ"
 
 

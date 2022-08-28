@@ -32,7 +32,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
     2digit 0..1
 * code.coding[icd10] ^short = "รหัสมาตรฐาน ICD10-TM (การตรวจทางห้องปฏิบัติการ)"
 * code.coding[icd10].system 1..
-* code.coding[icd10].system = $CS_ICD10TM_Lab (exactly)
+* code.coding[icd10].system = $CS_TH_ICD10TM_Lab (exactly)
 * code.coding[icd10].code 1..
 * code.coding[loinc] ^short = "รหัสมาตรฐาน LOINC"
 * code.coding[loinc].system 1..

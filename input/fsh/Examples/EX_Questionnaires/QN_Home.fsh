@@ -8,7 +8,7 @@ Usage: #example
 * experimental = true
 * subjectType = #Location
 * date = "2022-01-01"
-* code = $CS_THCC_QnType#HOME "ข้อมูลสุขาภิบาลของหลังคาเรือน ในแฟ้ม HOME"
+* code = $CS_Meta_QnType#HOME "ข้อมูลสุขาภิบาลของหลังคาเรือน ในแฟ้ม HOME"
 * item[0]
   * linkId = "1"
   * text = "การมีส้วมและประเภทของส้วม"

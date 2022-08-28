@@ -18,7 +18,7 @@ Usage: #example
 * partOf = Reference(Procedure/procedure-refer-main)
 * status = #completed
 * code
-  * coding[0] = $CS_THCC_ReferCareProcedure#2 "Breathing"
+  * coding[0] = $CS_43File_ReferCareProcedure#2 "Breathing"
   * text = "Breathing"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 

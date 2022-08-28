@@ -25,9 +25,9 @@ Description: "การคาดเข็มขัดนิรภัย"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     thcc 1..1 MS
-* code.coding[thcc] from $VS_THCC_AccidentObs (extensible)
+* code.coding[thcc] from $VS_Meta_AccidentObs (extensible)
 * code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_THCC_AccidentObs (exactly)
+* code.coding[thcc].system = $CS_Meta_AccidentObs (exactly)
 * code.coding[thcc].code 1..
 * code.coding[thcc].code = #seatbelt (exactly)
 * subject 1.. MS

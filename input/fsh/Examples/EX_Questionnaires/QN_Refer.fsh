@@ -8,7 +8,7 @@ Usage: #example
 * experimental = true
 * subjectType = #Patient
 * date = "2022-01-01"
-* code = $CS_THCC_QnType#REFER_HISTORY "ข้อมูลประวัติการส่งต่อผู้ป่วย (ทั้งกรณีส่งออก และรับเข้า)"
+* code = $CS_Meta_QnType#REFER_HISTORY "ข้อมูลประวัติการส่งต่อผู้ป่วย (ทั้งกรณีส่งออก และรับเข้า)"
 * item[0]
   * linkId = "1"
   * text = "ประวัติการป่วยในปัจจุบัน (ข้อความสรุป)"

@@ -26,9 +26,9 @@ Description: "ข้อมูลสถานะในชุมชน"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     thcc 0..1 MS
-* code.coding[thcc] from $VS_THCC_SocialObsType (extensible)
+* code.coding[thcc] from $VS_Meta_SocialObsType (extensible)
 * code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_THCC_SocialObsType (exactly)
+* code.coding[thcc].system = $CS_Meta_SocialObsType (exactly)
 * code.coding[thcc].code 1..
 * code.coding[thcc].code = #vstatus (exactly)
 * subject 1.. MS

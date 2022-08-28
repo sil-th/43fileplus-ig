@@ -5,10 +5,10 @@ Description: "แสดงการสั่งยา Amoxicillin หลัง�
 Usage: #example
 * extension[0]
   * url = $EX_TH_MedicationRequestSource
-  * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
+  * valueCodeableConcept = $CS_Std15_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 * extension[+]
   * url = $EX_TH_MedicationRequestOutNLEM
-  * valueCodeableConcept = $CS_THCC_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
+  * valueCodeableConcept = $CS_eClaim_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
 * extension[+]
   * url = $EX_TH_MedicationRequestApprovedNo
   * valueString = "ApprovedNumber"
@@ -18,7 +18,7 @@ Usage: #example
   * value = "XXXX"
 * status = #completed
 * intent = #order
-* category = $CS_THCC_MedicationCategory#2 "ใช้ที่บ้าน"
+* category = $CS_eClaim_MedicationCategory#2 "ใช้ที่บ้าน"
 * medicationReference = Reference(Medication/medication-opd-amoxicillin) "Amoxicillin 500 mg"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * encounter = Reference(Encounter/encounter-opd2)

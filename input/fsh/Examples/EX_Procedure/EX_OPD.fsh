@@ -5,7 +5,7 @@ Description: "หัตถการ ณ OPD"
 Usage: #example
 * extension[0]
   * url = $EX_TH_ProcedureProcedureType
-  * valueCodeableConcept = $CS_THCC_ProcedureType#1 "Principal procedure"
+  * valueCodeableConcept = $CS_eClaim_ProcedureType#1 "Principal procedure"
 * status = #completed
 * code
   * coding[0] = $SCT#225358003 "Wound care"

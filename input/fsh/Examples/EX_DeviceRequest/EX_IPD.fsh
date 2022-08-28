@@ -7,7 +7,7 @@ Description: "แสดงการสั่งจ่ายอุปกรณ์
 Usage: #example
 * extension
   * url = $EX_TH_DeviceRequestUseLocation
-  * valueCodeableConcept = $CS_THCC_MedicationCategory#2 "ใช้ที่บ้าน"
+  * valueCodeableConcept = $CS_eClaim_MedicationCategory#2 "ใช้ที่บ้าน"
 * status = #completed
 * intent = #order
 * priority = #routine

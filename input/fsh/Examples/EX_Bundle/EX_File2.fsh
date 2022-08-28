@@ -26,7 +26,7 @@ Usage: #example
 * status = #final
 * type
   * coding[0] = $LNC#75619-7 "National Health Care Surveys report"
-  * coding[1] = $CS_THCC_43fileType#2 "ADDRESS"
+  * coding[1] = $CS_TH_FileList#2 "ADDRESS"
 * subject = Reference(Patient/patient-patient1)
 * date = "2022-07-29T12:30:02+07:00"
 * author[0] = Reference(Organization/organization-main)

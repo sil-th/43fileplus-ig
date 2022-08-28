@@ -20,10 +20,10 @@ Description: "การทำหัตถการหรือการรัก
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* code.coding[thcc] from $VS_THCC_ReferCareProcedure (extensible)
+* code.coding[thcc] from $VS_43File_ReferCareProcedure (extensible)
 * code.coding[thcc] ^short = "รหัสมาตรฐาน THCC"
 * code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_THCC_ReferCareProcedure (exactly)
+* code.coding[thcc].system = $CS_43File_ReferCareProcedure (exactly)
 * code.coding[thcc].code 1..
 * subject 1.. MS
 * subject only Reference($SD_Patient)

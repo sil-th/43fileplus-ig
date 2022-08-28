@@ -20,7 +20,7 @@ Description: "แสดงการส่งต่อผู้ป่วยมา
 Usage: #example
 * extension[0]
   * url = $EX_TH_ServiceRequestReferOutcome 
-  * valueCodeableConcept = $CS_THCC_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
+  * valueCodeableConcept = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
 * status = #active
 * intent = #order
 * category = $SCT#703978000 "Referral to primary care service"

@@ -58,7 +58,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#social-history "Social History"
   * text = "Social History"
 * code
-  * coding[0] = $CS_THCC_SocialObsType#fstatus "สถานะในครอบครัว"
+  * coding[0] = $CS_Meta_SocialObsType#fstatus "สถานะในครอบครัว"
   * text = "สถานะในครอบครัว"
 * subject = Reference(Patient/patient-patient1)
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
@@ -74,7 +74,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#social-history "Social History"
   * text = "Social History"
 * code
-  * coding[0] = $CS_THCC_SocialObsType#vstatus "สถานะในชุมชน"
+  * coding[0] = $CS_Meta_SocialObsType#vstatus "สถานะในชุมชน"
   * text = "สถานะในชุมชน"
 * subject = Reference(Patient/patient-patient1)
 * effectiveDateTime = "2018-03-11T12:30:02+07:00"
@@ -103,6 +103,6 @@ Usage: #example
 * component[+]
   * code
     * coding[0] = $LNC#87707-6 "Job supervisory level or pay grade"
-    * coding[+] = $CS_THCC_SocialObsType#annual-income "รายได้เฉลี่ยต่อปี"
+    * coding[+] = $CS_Meta_SocialObsType#annual-income "รายได้เฉลี่ยต่อปี"
   * valueCodeableConcept
     * text = "ต้นฉบับมิได้ระบุรหัส"

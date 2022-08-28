@@ -1,7 +1,7 @@
 // Alias: $EX_TH_MedicationRequestSource = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-medication-source
 // * extension[0]
 //   * url = $EX_TH_MedicationRequestSource
-//   * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
+//   * valueCodeableConcept = $CS_Std15_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 Extension: EX_TH_MedicationRequestSource
 Id: ex-medicationrequest-medication-source
 Title: "Ext MedicationRequest: Medication Source"
@@ -21,14 +21,14 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 * . ^definition = "รหัสประเภทยาที่ใช้ปัจจุบัน"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_MedicationSource (extensible)
+* value[x] from $VS_Std15_MedicationSource (extensible)
 
 
 
 // Alias: $EX_TH_MedicationRequestOutNLEM = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-out-nlem
 // * extension[+]
 //   * url = $EX_TH_MedicationRequestOutNLEM
-//   * valueCodeableConcept = $CS_THCC_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
+//   * valueCodeableConcept = $CS_eClaim_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
 Extension: EX_TH_MedicationRequestOutNLEM
 Id: ex-medicationrequest-out-nlem
 Title: "Ext MedicationRequest: Out of NLEM Reason"
@@ -46,7 +46,7 @@ Description: "เหตุผลการใช้ยานอกบัญชี
 * . ^definition = "เหตุผลการใช้ยานอกบัญชียาหลัก"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_MedOutNLEM (extensible)
+* value[x] from $VS_eClaim_MedOutNLEM (extensible)
 
 
 

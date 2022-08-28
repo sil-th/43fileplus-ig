@@ -4,7 +4,7 @@
 //   * extension[0]
 //     * url = "type"
 //     * valueCodeableConcept
-//       * coding[0] = $CS_THCC_ProviderTypeCoverage#secondary "สถานบริการรอง"
+//       * coding[0] = $CS_Meta_ProviderTypeCoverage#secondary "สถานบริการรอง"
 //       * text = "สถานบริการรอง"
 //   * extension[+]
 //     * url = "provider"
@@ -36,7 +36,7 @@ Description: "สถานพยาบาลคู่สัญญา"
   * url only uri
   * value[x] 1..
   * value[x] only CodeableConcept
-  * value[x] from $VS_THCC_ProviderTypeCoverage (extensible)  
+  * value[x] from $VS_Meta_ProviderTypeCoverage (extensible)  
 * extension[provider] only Extension
 * extension[provider] ^short = "รหัสหรืออ้างอิงสถานพยาบาล"
 * extension[provider] ^definition = "รหัสหรืออ้างอิงสถานพยาบาล"

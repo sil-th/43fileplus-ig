@@ -33,25 +33,25 @@ Usage: #example
     * valueReference.display = "แผนกเวชศาสตร์ฉุกเฉิน"
 * extension[+]
   * url = $EX_TH_ServiceRequestReferStatus
-  * valueCodeableConcept = $CS_THCC_ReferStatus#A "Accepted"
+  * valueCodeableConcept = $CS_Std15_ReferStatus#A "Accepted"
 * extension[+]
   * url = $EX_TH_ServiceRequestReferRequestedPeriod
   * valuePeriod.end = "2021-04-30T12:30:02+07:00"
 * extension[+]
   * url = $EX_TH_ServiceRequestReferAnswerType
-  * valueCodeableConcept = $CS_THCC_ReferAnswerType#1 "Accepted"
+  * valueCodeableConcept = $CS_Std15_ReferAnswerType#1 "Accepted"
 * extension[+]
   * url = $EX_HL7_PreCondition
   * valueCodeableConcept.text = "สภาพผู้ป่วยก่อนส่งต่อ" 
 * extension[+]
   * url = $EX_TH_ServiceRequestReferPriorityCode
-  * valueCodeableConcept = $CS_THCC_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
+  * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 * extension[+]
   * url = $EX_TH_ServiceRequestEclaimReferType
-  * valueCodeableConcept = $CS_THCC_ReferTypeEclaim#E "ฉุกเฉิน"
+  * valueCodeableConcept = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 * extension[+]
   * url = $EX_TH_ServiceRequestSpecialDiseaseRefer
-  * valueCodeableConcept = $CS_THCC_ReferSpecialDisease#99 "อื่นๆ"
+  * valueCodeableConcept = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
 * identifier[0]
   * use = #official
   * system = $ID_LO_Refer
@@ -70,16 +70,16 @@ Usage: #example
     * value = "XXXXXXX"
 * status = #active
 * intent = #order
-* category = $CS_THCC_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
+* category = $CS_Std15_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
 * priority = #stat
   * extension[+]
     * url = $EX_TH_ServiceRequestThaiReferPriority
     * valueCodeableConcept
-      * coding[0] = $CS_THCC_ReferThaiPriorityStd43#2 "emergency"
-      * coding[+] = $CS_THCC_ReferThaiPriorityStd15#E "Emergency"
+      * coding[0] = $CS_THCC_ReferThaiPriority#2 "emergency"
+      * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
 * code
-  * coding[0] = $CS_THCC_ReferReasonStd15#1 "เพื่อการวินิจฉัยและรักษา"
-  * coding[+] = $CS_THCC_ReferReasonEclaim#1100 "วินิจฉัย และรักษา"
+  * coding[0] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
+  * coding[+] = $CS_eClaim_ReferReason#1100 "วินิจฉัย และรักษา"
   * text = "สิ่งที่ต้องการให้สถานพยาบาลปลายทางดำเนินการ (ข้อความ)"
 * quantityQuantity = 1 '{count}' "Count"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"

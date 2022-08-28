@@ -1,7 +1,7 @@
 // Alias: $EX_TH_MedicationDispenseDeliveryMode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-delivery
 // * extension[0]
 //   * url = $EX_TH_MedicationDispenseDeliveryMode
-//   * valueCodeableConcept = $CS_THCC_MedDelivery#1 "รับที่ counter ยา"
+//   * valueCodeableConcept = $CS_43Plus_MedDelivery#1 "รับที่ counter ยา"
 Extension: EX_TH_MedicationDispenseDeliveryMode
 Id: ex-medicationdispense-med-delivery-mode
 Title: "Ext MedicationDispense: Delivery Mode"
@@ -19,4 +19,4 @@ Description: "การส่งมอบยา (กรณีจ่ายไป�
 * . ^definition = "การส่งมอบยา (กรณีจ่ายไปใช้ที่บ้าน)"
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_MedDelivery (extensible)
+* value[x] from $VS_43Plus_MedDelivery (extensible)
