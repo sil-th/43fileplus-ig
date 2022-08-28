@@ -12,7 +12,7 @@ Description: "ข้อมูลการวินิจฉัยโรคมะ
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ChronicDischargeReason named dischargeReason 0..1 MS
+    $EX_TH_ConditionChronicDischargeReason named dischargeReason 0..1 MS
 * extension[dischargeReason] ^short = "สาเหตุจำหน่ายผู้ป่วย"
 * extension[dischargeReason] ^min = 0
 * code.coding contains

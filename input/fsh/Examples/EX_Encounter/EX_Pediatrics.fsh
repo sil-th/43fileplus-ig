@@ -22,7 +22,7 @@ Usage: #example
   * end = "2022-02-21T15:00:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -54,7 +54,7 @@ Usage: #example
   * end = "2022-03-21T15:00:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -86,7 +86,7 @@ Usage: #example
   * end = "2022-04-21T15:00:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)

@@ -11,7 +11,7 @@ Description: "การจ่ายยา"
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains $EX_TH_MedDelivery named delivery 0..*
+* extension contains $EX_TH_MedicationDispenseDeliveryMode named delivery 0..*
 // * extension[delivery] from $VS_THCC_MedicationDelivery (extensible)
 * extension[delivery] ^short = "delivery"
 * extension[delivery] ^min = 0

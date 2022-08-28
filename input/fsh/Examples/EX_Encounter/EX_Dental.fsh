@@ -18,7 +18,7 @@ Usage: #example
   * individual = Reference(Practitioner/practitioner-dentist1) "ทพญ. สมทรวง จริงใจ"
 * period
   * extension
-    * url = $EX_TH_ServiceHour 
+    * url = $EX_TH_EncounterServiceHour 
     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
@@ -27,7 +27,7 @@ Usage: #example
   * text = "ตรวจฟัน"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD ทันตกรรม Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)

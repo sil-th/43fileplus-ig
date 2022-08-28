@@ -4,31 +4,31 @@ Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการ�
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_TotalCost
+  * url = $EX_TH_ClaimTotalCost
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalCopay
+  * url = $EX_TH_ClaimTotalCopay
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalPaid
+  * url = $EX_TH_ClaimTotalPaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalUnpaid
+  * url = $EX_TH_ClaimTotalUnpaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_FeeNote
+  * url = $EX_TH_ClaimFeeNote
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * extension[+]
-  * url = $EX_TH_IpdDRG
+  * url = $EX_TH_ClaimIpdDRG
   * extension[0]
     * url = "drg"
     * valueString = "XXXXX"
@@ -82,27 +82,27 @@ Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการ�
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_TotalCost
+  * url = $EX_TH_ClaimTotalCost
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalCopay
+  * url = $EX_TH_ClaimTotalCopay
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalPaid
+  * url = $EX_TH_ClaimTotalPaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalUnpaid
+  * url = $EX_TH_ClaimTotalUnpaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_FeeNote
+  * url = $EX_TH_ClaimFeeNote
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]
@@ -133,12 +133,12 @@ Usage: #example
   * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
   * detail
     * extension[0]
-      * url = $EX_TH_ItemCost
+      * url = $EX_TH_ClaimItemCost
       * valueMoney
         * value = 50.0
         * currency = $ISO4217#THB
     * extension[+]
-      * url = $EX_TH_ItemCopay
+      * url = $EX_TH_ClaimItemCopay
       * valueMoney
         * value = 0.0
         * currency = $ISO4217#THB
@@ -172,27 +172,27 @@ Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการ�
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_TotalCost
+  * url = $EX_TH_ClaimTotalCost
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalCopay
+  * url = $EX_TH_ClaimTotalCopay
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalPaid
+  * url = $EX_TH_ClaimTotalPaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalUnpaid
+  * url = $EX_TH_ClaimTotalUnpaid
   * valueMoney
     * value = 10000.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_FeeNote
+  * url = $EX_TH_ClaimFeeNote
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]
@@ -223,12 +223,12 @@ Usage: #example
   * productOrService = $CS_eClaim_AdpType#3 "ค่าบริการอื่นๆ ที่ยังไม่ได้จัดหมวด"
   * detail
     * extension[0]
-      * url = $EX_TH_ItemCost
+      * url = $EX_TH_ClaimItemCost
       * valueMoney
         * value = 50.0
         * currency = $ISO4217#THB
     * extension[+]
-      * url = $EX_TH_ItemCopay
+      * url = $EX_TH_ClaimItemCopay
       * valueMoney
         * value = 0.0
         * currency = $ISO4217#THB

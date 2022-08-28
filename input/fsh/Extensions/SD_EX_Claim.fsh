@@ -1,18 +1,18 @@
-// Alias: $EX_TH_ItemCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-cost
+// Alias: $EX_TH_ClaimItemCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-cost
 // * item
 //   * sequence = 1
 //   * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
 //   * detail
 //     * extension[0]
-//       * url = $EX_TH_ItemCost
+//       * url = $EX_TH_ClaimItemCost
 //       * valueMoney
 //         * value = 50.0
 //         * currency = $ISO4217#THB
-Extension: EX_TH_ItemCost
+Extension: EX_TH_ClaimItemCost
 Id: ex-claim-item-cost
-Title: "ราคาทุนของรายการนั้น"
+Title: "Ext Claim: Item Cost"
 Description: "ราคาทุนของรายการนั้น"
-* ^url = $EX_TH_ItemCost
+* ^url = $EX_TH_ClaimItemCost
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -33,23 +33,21 @@ Description: "ราคาทุนของรายการนั้น"
 
 
 
-
-
-// Alias: $EX_TH_ItemCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-self-pay
+// Alias: $EX_TH_ClaimItemCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-self-pay
 // * item
 //   * sequence = 1
 //   * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
 //   * detail
 //     * extension[+]
-//       * url = $EX_TH_ItemCopay
+//       * url = $EX_TH_ClaimItemCopay
 //       * valueMoney
 //         * value = 0.0
 //         * currency = $ISO4217#THB
-Extension: EX_TH_ItemCopay
+Extension: EX_TH_ClaimItemCopay
 Id: ex-claim-item-copay
-Title: "ค่าบริการที่ต้องจ่าย ของรายการนั้น"
+Title: "Ext Claim: Item Co-pay"
 Description: "ค่าบริการที่ต้องจ่าย ของรายการนั้น"
-* ^url = $EX_TH_ItemCopay
+* ^url = $EX_TH_ClaimItemCopay
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -70,15 +68,12 @@ Description: "ค่าบริการที่ต้องจ่าย ข�
 
 
 
-
-
-
-// Alias: $EX_TH_ItemPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-actual-self-pay
-Extension: EX_TH_ItemPaid
+// Alias: $EX_TH_ClaimItemPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-actual-self-pay
+Extension: EX_TH_ClaimItemPaid
 Id: ex-claim-item-paid
-Title: "ค่าบริการที่ได้จ่ายไปแล้ว ของรายการนั้น"
+Title: "Ext Claim: Item Paid"
 Description: "ค่าบริการที่ได้จ่ายไปแล้ว ของรายการนั้น"
-* ^url = $EX_TH_ItemPaid
+* ^url = $EX_TH_ClaimItemPaid
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -99,16 +94,12 @@ Description: "ค่าบริการที่ได้จ่ายไปแ
 
 
 
-
-
-
-
-// Alias: $EX_TH_ItemUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-unpaid
-Extension: EX_TH_ItemUnpaid
+// Alias: $EX_TH_ClaimItemUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-unpaid
+Extension: EX_TH_ClaimItemUnpaid
 Id: ex-claim-item-unpaid
-Title: "ค่าบริการที่ยังไม่ได้จ่าย ของรายการนั้น"
+Title: "Ext Claim: Item Unpaid"
 Description: "ค่าบริการที่ยังไม่ได้จ่าย ของรายการนั้น"
-* ^url = $EX_TH_ItemUnpaid
+* ^url = $EX_TH_ClaimItemUnpaid
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -130,20 +121,17 @@ Description: "ค่าบริการที่ยังไม่ได้จ
 
 
 
-
-
-
-// Alias: $EX_TH_TotalCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-cost
+// Alias: $EX_TH_ClaimTotalCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-cost
 // * extension[0]
-//   * url = $EX_TH_TotalCost
+//   * url = $EX_TH_ClaimTotalCost
 //   * valueMoney
 //     * value = 10000.0
 //     * currency = $ISO4217#THB
-Extension: EX_TH_TotalCost
+Extension: EX_TH_ClaimTotalCost
 Id: ex-claim-total-cost
-Title: "ราคาทุน ทั้งหมด"
+Title: "Ext Claim: Total Cost"
 Description: "ราคาทุน ทั้งหมด"
-* ^url = $EX_TH_TotalCost
+* ^url = $EX_TH_ClaimTotalCost
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -163,17 +151,17 @@ Description: "ราคาทุน ทั้งหมด"
 
 
 
-// Alias: $EX_TH_TotalCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-self-pay
+// Alias: $EX_TH_ClaimTotalCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-self-pay
 // * extension[+]
-//   * url = $EX_TH_TotalCopay
+//   * url = $EX_TH_ClaimTotalCopay
 //   * valueMoney
 //     * value = 10000.0
 //     * currency = $ISO4217#THB
-Extension: EX_TH_TotalCopay
+Extension: EX_TH_ClaimTotalCopay
 Id: ex-claim-total-copay
-Title: "ราคาร่วมจ่าย ทั้งหมด"
+Title: "Ext Claim: Total Co-pay"
 Description: "ราคาร่วมจ่าย ทั้งหมด"
-* ^url = $EX_TH_TotalCopay
+* ^url = $EX_TH_ClaimTotalCopay
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -193,17 +181,17 @@ Description: "ราคาร่วมจ่าย ทั้งหมด"
 
 
 
-// Alias: $EX_TH_TotalPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
+// Alias: $EX_TH_ClaimTotalPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
 // * extension[+]
-//   * url = $EX_TH_TotalPaid
+//   * url = $EX_TH_ClaimTotalPaid
 //   * valueMoney
 //     * value = 10000.0
 //     * currency = $ISO4217#THB
-Extension: EX_TH_TotalPaid
+Extension: EX_TH_ClaimTotalPaid
 Id: ex-claim-total-paid
-Title: "จำนวนเงินที่ได้จ่ายไปแล้ว"
+Title: "Ext Claim: Total Paid"
 Description: "จำนวนเงินที่ได้จ่ายไปแล้ว"
-* ^url = $EX_TH_TotalPaid
+* ^url = $EX_TH_ClaimTotalPaid
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -223,17 +211,17 @@ Description: "จำนวนเงินที่ได้จ่ายไปแ
 
 
 
-// Alias: $EX_TH_TotalUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-unpaid
+// Alias: $EX_TH_ClaimTotalUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-unpaid
 // * extension[+]
-//   * url = $EX_TH_TotalUnpaid
+//   * url = $EX_TH_ClaimTotalUnpaid
 //   * valueMoney
 //     * value = 10000.0
 //     * currency = $ISO4217#THB
-Extension: EX_TH_TotalUnpaid
+Extension: EX_TH_ClaimTotalUnpaid
 Id: ex-claim-total-unpaid
-Title: "จำนวนเงินที่ยังไม่จ่าย"
+Title: "Ext Claim: Total Unpaid"
 Description: "จำนวนเงินที่ยังไม่จ่าย"
-* ^url = $EX_TH_TotalUnpaid
+* ^url = $EX_TH_ClaimTotalUnpaid
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -253,16 +241,16 @@ Description: "จำนวนเงินที่ยังไม่จ่าย
 
 
 
-// Alias: $EX_TH_FeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-fee-note
+// Alias: $EX_TH_ClaimFeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-fee-note
 // * extension[+]
-//   * url = $EX_TH_FeeNote
+//   * url = $EX_TH_ClaimFeeNote
 //   * valueAnnotation
 //     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
-Extension: EX_TH_FeeNote
+Extension: EX_TH_ClaimFeeNote
 Id: ex-claim-fee-note
-Title: "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
+Title: "Ext Claim: Fee Note"
 Description: "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
-* ^url = $EX_TH_FeeNote
+* ^url = $EX_TH_ClaimFeeNote
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -282,9 +270,9 @@ Description: "รายละเอียดค่าบริการและ
 
 
 
-// Alias: $EX_TH_IpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-drg
+// Alias: $EX_TH_ClaimIpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-drg
 // * extension[+]
-//   * url = $EX_TH_IpdDRG
+//   * url = $EX_TH_ClaimIpdDRG
 //   * extension[0]
 //     * url = "drg"
 //     * valueString = "XXXXX"
@@ -303,11 +291,11 @@ Description: "รายละเอียดค่าบริการและ
 //   * extension[+]
 //     * url = "version"
 //     * valueString = "XXXX"
-Extension: EX_TH_IpdDRG
+Extension: EX_TH_ClaimIpdDRG
 Id: ex-claim-ipd-drg
-Title: "ข้อมูลเกี่ยวกับ DRG"
+Title: "Ext Claim: IPD DRG"
 Description: "ข้อมูลเกี่ยวกับ DRG"
-* ^url = $EX_TH_IpdDRG
+* ^url = $EX_TH_ClaimIpdDRG
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

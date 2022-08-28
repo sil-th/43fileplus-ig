@@ -2,15 +2,15 @@
 
 // * prefix = "นาย"
 //   * extension
-//     * url = $EX_TH_NamePrefix
+//     * url = $EX_TH_HumanNamePrefixCode
 //     * valueCodeableConcept
 //       * coding[0] = $CS_DOPA_NamePrefix#003 "นาย"
 //       * text = "นาย"
-Extension: EX_TH_NamePrefix
+Extension: EX_TH_HumanNamePrefixCode
 Id: ex-humanname-name-prefix
-Title: "รหัสคำนำหน้าชื่อ"
+Title: "Ext HumanName: Name Prefix Code"
 Description: "รหัสคำนำหน้าชื่อ"
-* ^url = $EX_TH_NamePrefix
+* ^url = $EX_TH_HumanNamePrefixCode
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -32,15 +32,15 @@ Description: "รหัสคำนำหน้าชื่อ"
 // Address
 
 // * extension[0]
-//   * url = $EX_TH_AddressCode
+//   * url = $EX_TH_AddressDopaCode
 //   * valueCodeableConcept = $CS_DOPA_Location#120102 "จังหวัดนนทบุรี อำเภอเมืองนนทบุรี ตำบลตลาดขวัญ"
-// Alias: $EX_TH_AddressCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-address-code
+// Alias: $EX_TH_AddressDopaCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-address-code
 
-Extension: EX_TH_AddressCode
+Extension: EX_TH_AddressDopaCode
 Id: ex-address-address-code
-Title: "รหัสที่อยู่ ตามกรมการปกครอง"
+Title: "Ext Address: DOPA address code"
 Description: "รหัสที่อยู่ ตามกรมการปกครอง"
-* ^url = $EX_TH_AddressCode
+* ^url = $EX_TH_AddressDopaCode
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -60,7 +60,7 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 
 
 // * extension[+]
-//   * url = $EX_TH_StructureLine
+//   * url = $EX_TH_AddressStructuredLine
 //   * extension[0]
 //     * url = "number"
 //     * valueString = "123"
@@ -76,13 +76,13 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 //   * extension[+]
 //     * url = "lane"
 //     * valueString = "ซอยนครอินทร์ 20"
-// Alias: $EX_TH_StructureLine = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-structure-line
+// Alias: $EX_TH_AddressStructuredLine = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-structure-line
 
-Extension: EX_TH_StructureLine
-Id: ex-address-structure-line
-Title: "ที่อยู่ แบบแยกข้อมูลย่อย"
+Extension: EX_TH_AddressStructuredLine
+Id: ex-address-structured-line
+Title: "Ext Address: Structured Address Line"
 Description: "ที่อยู่ แบบแยกข้อมูลย่อย"
-* ^url = $EX_TH_StructureLine
+* ^url = $EX_TH_AddressStructuredLine
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -138,15 +138,15 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
 
 
   // * extension[+]
-  //   * url = $EX_TH_HomeReference
+  //   * url = $EX_TH_AddressHomeReference
   //   * valueReference = Reference(location-Address1-home1)
   //     * insert GeneralReference($ID_DopaHouseNo, "XXXXXXXXXXX", "123 คอนโดพัฒนานนท์")
-// Alias: $EX_TH_HomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
-Extension: EX_TH_HomeReference
+// Alias: $EX_TH_AddressHomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
+Extension: EX_TH_AddressHomeReference
 Id: ex-address-home-reference
-Title: "การอ้างอิง Location resource"
+Title: "Ext Address: Reference to Home"
 Description: "การอ้างอิง Location resource"
-* ^url = $EX_TH_HomeReference
+* ^url = $EX_TH_AddressHomeReference
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -164,15 +164,15 @@ Description: "การอ้างอิง Location resource"
 
 
   // * extension[+]
-  //   * url = $EX_TH_HouseType
+  //   * url = $EX_TH_AddressHouseType
   //   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
-// Alias: $EX_TH_HouseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-type
+// Alias: $EX_TH_AddressHouseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-type
 
-Extension: EX_TH_HouseType
+Extension: EX_TH_AddressHouseType
 Id: ex-address-house-type
-Title: "ลักษณะของที่อยู่"
+Title: "Ext Address: House Type"
 Description: "ลักษณะของที่อยู่"
-* ^url = $EX_TH_HouseType
+* ^url = $EX_TH_AddressHouseType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

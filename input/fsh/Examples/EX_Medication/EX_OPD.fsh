@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Medication: ยา Amoxicillin หลังก�
 Description: "แสดงยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_MedImage
+  * url = $EX_TH_MedicationImageUrl
   * valueUri = "http://example.com/image1.jpg"
 * code
   * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"

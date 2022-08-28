@@ -12,7 +12,7 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ProductUseLocation named productUseLocation 0..* MS
+    $EX_TH_DeviceRequestUseLocation named productUseLocation 0..* MS
 * extension[productUseLocation] ^short = "ประเภทการใช้"
 * extension[productUseLocation] ^min = 0
 * status MS

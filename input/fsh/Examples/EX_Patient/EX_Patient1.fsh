@@ -16,7 +16,7 @@ Usage: #example
     * valuePeriod
       * start = "1960-04-25"
 * extension[+]
-  * url = $EX_TH_Race
+  * url = $EX_TH_PatientRace
   * valueCodeableConcept
     * coding[0] = $ISO3166#THA
     * coding[+] = $CS_THCC_Nationality#099
@@ -28,13 +28,13 @@ Usage: #example
     * coding[+] = $CS_THCC_Religion#01 "ศาสนาพุทธ"
     * text = "ศาสนาพุทธ"
 * extension[+]
-  * url = $EX_TH_EducationLevel
+  * url = $EX_TH_PatientEducationLevel
   * valueCodeableConcept
     * coding[0] = $CS_TH_ISCED1997#61 "ปริญญาตรี"
     * coding[+] = $CS_THCC_EducationLevel#05 "ปริญญาตรี"
     * text = "ปริญญาตรี"
 * extension[+]
-  * url = $EX_TH_PersonStatus
+  * url = $EX_TH_PatientPersonStatus
   * valueCodeableConcept
     * coding[0] = $CS_THCC_PersonStatus#1 "มีชื่ออยู่ตามทะเบียนบ้านในเขตรับผิดชอบและอยู่จริง"
     * text = "มีชื่ออยู่ตามทะเบียนบ้านในเขตรับผิดชอบและอยู่จริง"
@@ -84,7 +84,7 @@ Usage: #example
   * given = "สมชาย"
   * prefix = "นาย"
     * extension
-      * url = $EX_TH_NamePrefix
+      * url = $EX_TH_HumanNamePrefixCode
       * valueCodeableConcept
         * coding[0] = $CS_DOPA_NamePrefix#003 "นาย"
         * text = "นาย"
@@ -111,10 +111,10 @@ Usage: #example
 * birthDate = "1960-04-25"
 * address[0]
   * extension[0]
-    * url = $EX_TH_AddressCode
+    * url = $EX_TH_AddressDopaCode
     * valueCodeableConcept = $CS_DOPA_Location#120102 "จังหวัดนนทบุรี อำเภอเมืองนนทบุรี ตำบลตลาดขวัญ"
   * extension[+]
-    * url = $EX_TH_StructureLine
+    * url = $EX_TH_AddressStructuredLine
     * extension[0]
       * url = "number"
       * valueString = "123"
@@ -131,11 +131,11 @@ Usage: #example
       * url = "lane"
       * valueString = "ซอยนครอินทร์ 20"
   * extension[+]
-    * url = $EX_TH_HomeReference
+    * url = $EX_TH_AddressHomeReference
     * valueReference = Reference(location-patient1-home1)
       * insert GeneralReference($ID_DopaHouseNo, "XXXXXXXXXXX", "123 คอนโดพัฒนานนท์")
   * extension[+]
-    * url = $EX_TH_HouseType
+    * url = $EX_TH_AddressHouseType
     * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
   * use = #home
   * text = "123 คอนโดพัฒนานนท์ หมู่ที่ 20 ถนนนครอินทร์ ซอยนครอินทร์ 20 ตำบลตลาดขวัญ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000"

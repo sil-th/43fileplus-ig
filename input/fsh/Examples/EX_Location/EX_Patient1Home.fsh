@@ -4,19 +4,19 @@ Title: "ตัวอย่าง Location: บ้านของผู้ป่�
 Description: "แสดงข้อมูลรายละเอียดบ้านของผู้ป่วยรายที่ 1"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_HouseType
+  * url = $EX_TH_AddressHouseType
   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
 * extension[+]
-  * url = $EX_TH_HouseOwner
+  * url = $EX_TH_LocationHouseOwner
   * valueReference = Reference(Patient/patient-patient1)
 * extension[+]
-  * url = $EX_TH_ManagingVolunteer
+  * url = $EX_TH_LocationResponsibleVolunteer
   * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
 * extension[+]
-  * url = $EX_TH_HouseholdNum
+  * url = $EX_TH_LocationHouseholdCount
   * valueInteger = 1
 * extension[+]
-  * url = $EX_TH_InMunicipality
+  * url = $EX_TH_LocationInMunicipality
   * valueCodeableConcept = $CS_THCC_InMunicipality#1 "ในเขตเทศบาล"
 * identifier[0]
   * use = #official
@@ -42,7 +42,7 @@ Usage: #example
 * type = $CS_HL7_RoleCode#PTRES "Patient's Residence"
 * address
   * extension[+]
-    * url = $EX_TH_StructureLine
+    * url = $EX_TH_AddressStructuredLine
     * extension[0]
       * url = "number"
       * valueString = "123"

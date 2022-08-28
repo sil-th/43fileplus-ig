@@ -12,6 +12,6 @@ Description: "ข้อมูลการวินิจฉัยโรคหล
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_IsChronic named isChronic 0..1 MS
+    $EX_TH_ConditionIsChronic named isChronic 0..1 MS
 * extension[isChronic] ^short = "โรคเรื้อรังหรือไม่"
 * extension[isChronic] ^min = 0

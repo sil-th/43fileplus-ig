@@ -12,9 +12,9 @@ Description: "ข้อมูลหมู่บ้าน"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_VillageArea named area 0..1 MS and
-    $EX_TH_VillageMainHospital named mainHospital 0..1 MS and
-    $EX_TH_VillageUnlistDate named unlistDate 0..1 MS
+    $EX_TH_LocationVillageArea named area 0..1 MS and
+    $EX_TH_LocationVillageMainHospital named mainHospital 0..1 MS and
+    $EX_TH_LocationVillageUnlistDate named unlistDate 0..1 MS
 * extension[area] ^short = "เขตที่ตั้ง"
 * extension[mainHospital] ^short = "โรงพยาบาลหลัก"
 * extension[unlistDate] ^short = "วันที่แยกชุมชนออกนอกเขต"
@@ -37,7 +37,7 @@ Description: "ข้อมูลหมู่บ้าน"
 * address.extension ^slicing.rules = #open
 * address.extension ^min = 0
 * address.extension contains
-    $EX_TH_StructureLine named lineStructure 0..1 MS
+    $EX_TH_AddressStructuredLine named lineStructure 0..1 MS
 * address.postalCode MS
 * position MS
 * position.longitude MS

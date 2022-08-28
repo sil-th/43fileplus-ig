@@ -1,12 +1,12 @@
-// Alias: $EX_TH_MedicationSource = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-medication-source
+// Alias: $EX_TH_MedicationRequestSource = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-medication-source
 // * extension[0]
-//   * url = $EX_TH_MedicationSource
+//   * url = $EX_TH_MedicationRequestSource
 //   * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
-Extension: EX_TH_MedicationSource
+Extension: EX_TH_MedicationRequestSource
 Id: ex-medicationrequest-medication-source
-Title: "รหัสประเภทยาที่ใช้ปัจจุบัน"
+Title: "Ext MedicationRequest: Medication Source"
 Description: "รหัสประเภทยาที่ใช้ปัจจุบัน"
-* ^url = $EX_TH_MedicationSource
+* ^url = $EX_TH_MedicationRequestSource
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -25,15 +25,15 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 
 
 
-// Alias: $EX_TH_MedOutNLEM = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-out-nlem
+// Alias: $EX_TH_MedicationRequestOutNLEM = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-out-nlem
 // * extension[+]
-//   * url = $EX_TH_MedOutNLEM
+//   * url = $EX_TH_MedicationRequestOutNLEM
 //   * valueCodeableConcept = $CS_THCC_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
-Extension: EX_TH_MedOutNLEM
-Id: ex-medicationrequest-med-out-nlem
-Title: "เหตุผลการใช้ยานอกบัญชียาหลัก"
+Extension: EX_TH_MedicationRequestOutNLEM
+Id: ex-medicationrequest-out-nlem
+Title: "Ext MedicationRequest: Out of NLEM Reason"
 Description: "เหตุผลการใช้ยานอกบัญชียาหลัก"
-* ^url = $EX_TH_MedOutNLEM
+* ^url = $EX_TH_MedicationRequestOutNLEM
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -52,15 +52,15 @@ Description: "เหตุผลการใช้ยานอกบัญชี
 
 
 
-// Alias: $EX_TH_MedApprovedNo = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-approved-no
+// Alias: $EX_TH_MedicationRequestApprovedNo = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-approved-no
 // * extension[+]
-//   * url = $EX_TH_MedApprovedNo
+//   * url = $EX_TH_MedicationRequestApprovedNo
 //   * valueString = "ApprovedNumber"
-Extension: EX_TH_MedApprovedNo
+Extension: EX_TH_MedicationRequestApprovedNo
 Id: ex-medicationrequest-med-approved-no
-Title: "เลขที่ได้รับการอนุมัติ จากระบบขออนุมัติใช้ยาควบคุมเฉพาะ"
+Title: "Ext MedicationRequest: Med Approve Number"
 Description: "เลขที่ได้รับการอนุมัติ จากระบบขออนุมัติใช้ยาควบคุมเฉพาะ"
-* ^url = $EX_TH_MedApprovedNo
+* ^url = $EX_TH_MedicationRequestApprovedNo
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

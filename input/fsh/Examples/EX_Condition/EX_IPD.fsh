@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Condition: การวินิจฉัยโ
 Description: "การวินิจฉัยโรคมะเร็ง ในบริการ IPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ChronicDischargeReason
+  * url = $EX_TH_ConditionChronicDischargeReason
   * valueCodeableConcept
     * coding[0] = $CS_THCC_ChronicDischargeReason#08 "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
     * text = "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"

@@ -10,7 +10,7 @@ Usage: #example
     * coding[+] = $ICD10#I63.9 "Cerebral infarction, unspecified"
     * text = "ความพิการจากโรค"
 * extension[+]
-  * url = $EX_TH_DisabilityType
+  * url = $EX_TH_ConditionDisabilityType
   * valueCodeableConcept
     * coding[0] = $CS_THCC_DisabilityType#3 "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
     * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"

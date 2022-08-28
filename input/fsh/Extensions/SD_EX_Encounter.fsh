@@ -1,14 +1,14 @@
 // * extension[0]
-//   * url = $EX_TH_DeathLocType
+//   * url = $EX_TH_EncounterDeathLocType
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_DeathLocType#1 "ในสถานพยาบาล"
 //     * text = "ในสถานพยาบาล"
-// Alias: $EX_TH_DeathLocType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-location-type
-Extension: EX_TH_DeathLocType
+// Alias: $EX_TH_EncounterDeathLocType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-location-type
+Extension: EX_TH_EncounterDeathLocType
 Id: ex-encounter-death-location-type
-Title: "รหัสสถานที่ตาย"
+Title: "Ext Encounter: Death Location Type"
 Description: "รหัสสถานที่ตาย"
-* ^url = $EX_TH_DeathLocType
+* ^url = $EX_TH_EncounterDeathLocType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -29,16 +29,16 @@ Description: "รหัสสถานที่ตาย"
 
 
 // * extension[+]
-//   * url = $EX_TH_DeathPregnancy
+//   * url = $EX_TH_EncounterDeathPregnancy
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_DeathPregnancy#3 "ไม่ตั้งครรภ์"
 //     * text = "ไม่ตั้งครรภ์"
-// Alias: $EX_TH_DeathPregnancy = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-pregnancy
-Extension: EX_TH_DeathPregnancy
+// Alias: $EX_TH_EncounterDeathPregnancy = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-death-pregnancy
+Extension: EX_TH_EncounterDeathPregnancy
 Id: ex-encounter-death-pregnancy
-Title: "การเสียชีวิตที่เกี่ยวข้องกับตั้งครรภ์และการคลอด"
+Title: "Ext Encounter: Pregnancy-related Death"
 Description: "การเสียชีวิตที่เกี่ยวข้องกับตั้งครรภ์และการคลอด"
-* ^url = $EX_TH_DeathPregnancy
+* ^url = $EX_TH_EncounterDeathPregnancy
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -59,14 +59,14 @@ Description: "การเสียชีวิตที่เกี่ยวข
 
 // * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 //   * extension
-//     * url = $EX_TH_PatientLocationType 
+//     * url = $EX_TH_EncounterPatientLocationType 
 //     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
-// Alias: $EX_TH_PatientLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-patient-location-type
-Extension: EX_TH_PatientLocationType
+// Alias: $EX_TH_EncounterPatientLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-patient-location-type
+Extension: EX_TH_EncounterPatientLocationType
 Id: ex-encounter-patient-location-type
-Title: "รหัสที่ตั้งของที่อยู่ผู้รับบริการ"
+Title: "Ext Encounter: Patient Location Type"
 Description: "รหัสที่ตั้งของที่อยู่ผู้รับบริการ"
-* ^url = $EX_TH_PatientLocationType
+* ^url = $EX_TH_EncounterPatientLocationType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -88,14 +88,14 @@ Description: "รหัสที่ตั้งของที่อยู่ผ
 
 // * period
 //   * extension
-//     * url = $EX_TH_ServiceHour 
+//     * url = $EX_TH_EncounterServiceHour 
 //     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
-// Alias: $EX_TH_ServiceHour = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-hour
-Extension: EX_TH_ServiceHour
+// Alias: $EX_TH_EncounterServiceHour = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-hour
+Extension: EX_TH_EncounterServiceHour
 Id: ex-encounter-service-hour
-Title: "รหัสเวลามารับบริการ"
+Title: "Ext Encounter: Service Hour"
 Description: "รหัสเวลามารับบริการ"
-* ^url = $EX_TH_ServiceHour
+* ^url = $EX_TH_EncounterServiceHour
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -117,14 +117,14 @@ Description: "รหัสเวลามารับบริการ"
 
 // * location
 //   * extension
-//     * url = $EX_TH_ServiceLocationType 
+//     * url = $EX_TH_EncounterServiceLocationType 
 //     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
-// Alias: $EX_TH_ServiceLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-location-type
-Extension: EX_TH_ServiceLocationType
+// Alias: $EX_TH_EncounterServiceLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-location-type
+Extension: EX_TH_EncounterServiceLocationType
 Id: ex-encounter-service-location-type
-Title: "รหัสสถานที่ที่ให้บริการ"
+Title: "Ext Encounter: Service Location Type"
 Description: "รหัสสถานที่ที่ให้บริการ"
-* ^url = $EX_TH_ServiceLocationType
+* ^url = $EX_TH_EncounterServiceLocationType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -145,14 +145,14 @@ Description: "รหัสสถานที่ที่ให้บริกา
 
 
 // * extension[0]
-//   * url = $EX_TH_ServiceTypeTH 
+//   * url = $EX_TH_EncounterServiceTypeTH 
 //   * valueCodeableConcept = $CS_THCC_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
-// Alias: $EX_TH_ServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-type-th
-Extension: EX_TH_ServiceTypeTH
+// Alias: $EX_TH_EncounterServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-type-th
+Extension: EX_TH_EncounterServiceTypeTH
 Id: ex-encounter-service-type-th
-Title: "รหัสประเภทการให้บริการ"
+Title: "Ext Encounter: Thai Service Type"
 Description: "รหัสประเภทการให้บริการ"
-* ^url = $EX_TH_ServiceTypeTH
+* ^url = $EX_TH_EncounterServiceTypeTH
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -174,14 +174,14 @@ Description: "รหัสประเภทการให้บริการ
 
 // * hospitalization
 //   * extension[0]
-//     * url = $EX_TH_DischargeStatus 
+//     * url = $EX_TH_EncounterDischargeStatus 
 //     * valueCodeableConcept = $CS_THCC_DischargeStatus#3 "ส่งต่อไปยังสถานพยาบาลอื่น"
-// Alias: $EX_TH_DischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
-Extension: EX_TH_DischargeStatus
+// Alias: $EX_TH_EncounterDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
+Extension: EX_TH_EncounterDischargeStatus
 Id: ex-encounter-discharge-status
-Title: "รหัสสถานะผู้มารับบริการเมื่อเสร็จสิ้นบริการ OPD"
+Title: "Ext Encounter: Discharge Status"
 Description: "รหัสสถานะผู้มารับบริการเมื่อเสร็จสิ้นบริการ OPD"
-* ^url = $EX_TH_DischargeStatus
+* ^url = $EX_TH_EncounterDischargeStatus
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -202,15 +202,15 @@ Description: "รหัสสถานะผู้มารับบริกา
 
 // * hospitalization
 //   * extension[+]
-//     * url = $EX_TH_DischargeInstruction
+//     * url = $EX_TH_EncounterDischargeInstruction
 //     * valueAnnotation
 //       * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
-// Alias: $EX_TH_DischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
-Extension: EX_TH_DischargeInstruction
+// Alias: $EX_TH_EncounterDischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
+Extension: EX_TH_EncounterDischargeInstruction
 Id: ex-encounter-discharge-instruction
-Title: "คำแนะนำหลังการเข้ารับบริการ"
+Title: "Ext Encounter: Discharge Instruction"
 Description: "คำแนะนำหลังการเข้ารับบริการ"
-* ^url = $EX_TH_DischargeInstruction
+* ^url = $EX_TH_EncounterDischargeInstruction
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -231,14 +231,14 @@ Description: "คำแนะนำหลังการเข้ารับบ
 
 // * location[0]
 //   * extension[0]
-//     * url = $EX_TH_IpdJourney 
+//     * url = $EX_TH_EncounterIpdJourney 
 //     * valueCodeableConcept = $CS_THCC_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
-// Alias: $EX_TH_IpdJourney = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-journey
-Extension: EX_TH_IpdJourney
+// Alias: $EX_TH_EncounterIpdJourney = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-journey
+Extension: EX_TH_EncounterIpdJourney
 Id: ex-encounter-ipd-journey
-Title: "รหัสชนิดของแผนกที่ผู้ป่วยในรับบริการ"
+Title: "Ext Encounter: IPD Journey"
 Description: "รหัสชนิดของแผนกที่ผู้ป่วยในรับบริการ"
-* ^url = $EX_TH_IpdJourney
+* ^url = $EX_TH_EncounterIpdJourney
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -260,14 +260,14 @@ Description: "รหัสชนิดของแผนกที่ผู้ป
 
 // * hospitalization
 //   * extension[0]
-//     * url = $EX_TH_IpdDischargeStatus
+//     * url = $EX_TH_EncounterIpdDischargeStatus
 //     * valueCodeableConcept = $CS_THCC_IpdDischargeStatus#1 "Complete Recovery"
-// Alias: $EX_TH_IpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-status
-Extension: EX_TH_IpdDischargeStatus
+// Alias: $EX_TH_EncounterIpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-status
+Extension: EX_TH_EncounterIpdDischargeStatus
 Id: ex-encounter-ipd-discharge-status
-Title: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+Title: "Ext Encounter: IPD Discharge Status"
 Description: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-* ^url = $EX_TH_IpdDischargeStatus
+* ^url = $EX_TH_EncounterIpdDischargeStatus
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -289,14 +289,14 @@ Description: "รหัสผลการส่งต่อไปรับบร
 
 // * hospitalization
 //   * extension[+]
-//     * url = $EX_TH_IpdDischargeType 
+//     * url = $EX_TH_EncounterIpdDischargeType 
 //     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
-// Alias: $EX_TH_IpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
-Extension: EX_TH_IpdDischargeType
+// Alias: $EX_TH_EncounterIpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
+Extension: EX_TH_EncounterIpdDischargeType
 Id: ex-encounter-ipd-discharge-type
-Title: "รหัสชนิดการจำหน่ายผู้ป่วย"
+Title: "Ext Encounter: IPD Discharge Type"
 Description: "รหัสชนิดการจำหน่ายผู้ป่วย"
-* ^url = $EX_TH_IpdDischargeType
+* ^url = $EX_TH_EncounterIpdDischargeType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -317,14 +317,14 @@ Description: "รหัสชนิดการจำหน่ายผู้ป
 
 
 // * extension[0]
-//   * url = $EX_TH_FpCaseType
+//   * url = $EX_TH_EncounterFpCaseType
 //   * valueCodeableConcept = $CS_THCC_FpCaseType#1 "รายใหม่" 
-// Alias: $EX_TH_FpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
-Extension: EX_TH_FpCaseType
+// Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
+Extension: EX_TH_EncounterFpCaseType
 Id: ex-encounter-fp-case-type
-Title: "รหัสประเภทการวางแผนครอบครัว"
+Title: "Ext Encounter: Family Planning Case Type"
 Description: "รหัสประเภทการวางแผนครอบครัว"
-* ^url = $EX_TH_FpCaseType
+* ^url = $EX_TH_EncounterFpCaseType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -345,14 +345,14 @@ Description: "รหัสประเภทการวางแผนครอ
 
 
 // * extension[0]
-//   * url = $EX_TH_ReferEncounterClass
+//   * url = $EX_TH_EncounterReferCategory
 //   * valueCodeableConcept = $CS_THCC_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
-// Alias: $EX_TH_ReferEncounterClass = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
-Extension: EX_TH_ReferEncounterClass
-Id: ex-encounter-refer-encounter-class
-Title: "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
+// Alias: $EX_TH_EncounterReferCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
+Extension: EX_TH_EncounterReferCategory
+Id: ex-encounter-refer-category
+Title: "Ext Encounter: Refer Patient Category"
 Description: "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
-* ^url = $EX_TH_ReferEncounterClass
+* ^url = $EX_TH_EncounterReferCategory
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -373,14 +373,14 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 
 
 // * extension[+]
-//   * url = $EX_TH_ReferResult
+//   * url = $EX_TH_EncounterReferResult
 //   * valueCodeableConcept = $CS_THCC_ReferResult#1 "ตอบรับการส่งต่อ"
-// Alias: $EX_TH_ReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
-Extension: EX_TH_ReferResult
+// Alias: $EX_TH_EncounterReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
+Extension: EX_TH_EncounterReferResult
 Id: ex-encounter-refer-result
-Title: "รหัสผลการส่งต่อ"
+Title: "Ext Encounter: Refer Result"
 Description: "รหัสผลการส่งต่อ"
-* ^url = $EX_TH_ReferResult
+* ^url = $EX_TH_EncounterReferResult
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -398,14 +398,14 @@ Description: "รหัสผลการส่งต่อ"
 
 
 // * extension[+]
-//   * url = $EX_TH_ReferResultReason
+//   * url = $EX_TH_EncounterReferResultReason
 //   * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-// Alias: $EX_TH_ReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
-Extension: EX_TH_ReferResultReason
+// Alias: $EX_TH_EncounterReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
+Extension: EX_TH_EncounterReferResultReason
 Id: ex-encounter-refer-result-reason
-Title: "เหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+Title: "Ext Encounter: Refer Result Reason"
 Description: "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-* ^url = $EX_TH_ReferResultReason
+* ^url = $EX_TH_EncounterReferResultReason
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -422,7 +422,7 @@ Description: "ใช้ในกรณีต้องการอธิบาย
 
 
 // * extension[0]
-//   * url = $EX_TH_LeaveDay
+//   * url = $EX_TH_EncounterLeaveDay
 //   * extension[0]
 //     * url = "id"
 //     * valueString = "XXXX"
@@ -435,12 +435,12 @@ Description: "ใช้ในกรณีต้องการอธิบาย
 //   * extension[+]
 //     * url = "duration"
 //     * valueDuration = 1 'd' "day"
-// Alias: $EX_TH_LeaveDay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-leave-day
-Extension: EX_TH_LeaveDay
+// Alias: $EX_TH_EncounterLeaveDay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-leave-day
+Extension: EX_TH_EncounterLeaveDay
 Id: ex-encounter-leave-day
-Title: "ข้อมูลกรณีที่ผู้ป่วยมีการลากลับบ้าน"
+Title: "Ext Encounter: Leave Day"
 Description: "ข้อมูลกรณีที่ผู้ป่วยมีการลากลับบ้าน"
-* ^url = $EX_TH_LeaveDay
+* ^url = $EX_TH_EncounterLeaveDay
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -483,18 +483,18 @@ Description: "ข้อมูลกรณีที่ผู้ป่วยมี
 
 
 
-// Alias: $EX_TH_ProviderType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-provider-type
+// Alias: $EX_TH_EncounterProviderType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-provider-type
 // Encounter
 // * serviceProvider = Reference(Organization/organization-main)
 //   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 //   * extension
-//     * url = $EX_TH_ProviderType 
+//     * url = $EX_TH_EncounterProviderType 
 //     * valueCodeableConcept = $CS_THCC_ProviderType#1 "Main Contractor"
-Extension: EX_TH_ProviderType
+Extension: EX_TH_EncounterProviderType
 Id: ex-encounter-provider-type
-Title: "รหัสประเภทสถานพยาบาลที่รักษา"
+Title: "Ext Encounter: Provider Type"
 Description: "รหัสประเภทสถานพยาบาลที่รักษา"
-* ^url = $EX_TH_ProviderType
+* ^url = $EX_TH_EncounterProviderType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -512,19 +512,19 @@ Description: "รหัสประเภทสถานพยาบาลที
 
 
 // Encounter
-// Alias: $EX_TH_ReferOutID = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-out-id
+// Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-out-id
 // * hospitalization
 //   * destination = Reference(Organization/organization-third)
 //     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 //     * extension[0]
-//       * url = $EX_TH_ReferOutID
+//       * url = $EX_TH_EncounterReferOutID
 //       * valueReference = Reference(ServiceRequest/servicerequest-refer-out-accident1)
 //         * insert GeneralReference($ID_LO_Refer, "XXXXX", "ใบส่งตัวเลขที่ XXXXX")
-Extension: EX_TH_ReferOutID
+Extension: EX_TH_EncounterReferOutID
 Id: ex-encounter-refer-out-id
-Title: "เลขที่ใบส่งตัว"
+Title: "Ext Encounter: Refer Out ID"
 Description: "เลขที่ใบส่งตัว"
-* ^url = $EX_TH_ReferOutID
+* ^url = $EX_TH_EncounterReferOutID
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

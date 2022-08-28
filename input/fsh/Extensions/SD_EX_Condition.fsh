@@ -1,13 +1,13 @@
 // * extension[+]
-//   * url = $EX_TH_DisabilityType
+//   * url = $EX_TH_ConditionDisabilityType
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_DisabilityType#3 "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
 //     * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
-Extension: EX_TH_DisabilityType
+Extension: EX_TH_ConditionDisabilityType
 Id: ex-condition-disability-type
-Title: "ประเภทความพิการ"
+Title: "Ext Condition: Disability Type"
 Description: "ประเภทความพิการ"
-* ^url = $EX_TH_DisabilityType
+* ^url = $EX_TH_ConditionDisabilityType
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -24,13 +24,13 @@ Description: "ประเภทความพิการ"
 
 
 // * extension[0]
-//   * url = $EX_TH_IsChronic
+//   * url = $EX_TH_ConditionIsChronic
 //   * valueBoolean = true
-Extension: EX_TH_IsChronic
+Extension: EX_TH_ConditionIsChronic
 Id: ex-condition-is-chronic
-Title: "สภาวะการป่วยต่อเนื่อง"
+Title: "Ext Condition: Is Chronic"
 Description: "สภาวะการป่วยต่อเนื่อง"
-* ^url = $EX_TH_IsChronic
+* ^url = $EX_TH_ConditionIsChronic
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

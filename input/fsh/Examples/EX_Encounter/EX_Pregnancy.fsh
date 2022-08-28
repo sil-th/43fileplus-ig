@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Encounter: การรับบริการ
 Description: "แสดงการรับบริการ OPD Family Planning"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_FpCaseType
+  * url = $EX_TH_EncounterFpCaseType
   * valueCodeableConcept = $CS_THCC_FpCaseType#1 "รายใหม่" 
 * identifier[0]
   * use = #secondary
@@ -24,7 +24,7 @@ Usage: #example
   * end = "2021-01-21T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD OB-GYN Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -55,7 +55,7 @@ Usage: #example
   * end = "2021-03-21T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD OB-GYN Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -86,7 +86,7 @@ Usage: #example
   * end = "2021-04-21T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD OB-GYN Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -117,7 +117,7 @@ Usage: #example
   * end = "2022-01-21T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "ห้องคลอด โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
@@ -148,7 +148,7 @@ Usage: #example
   * end = "2022-01-21T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location.display = "OPD OB-GYN Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)

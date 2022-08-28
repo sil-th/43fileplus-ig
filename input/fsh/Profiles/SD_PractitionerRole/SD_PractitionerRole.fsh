@@ -12,7 +12,7 @@ Description: "ข้อมูลการปฏิบัติงานผู้
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-  $EX_TH_ProviderMove named move 0..*
+  $EX_TH_PractitionerRoleProviderMovement named move 0..*
 * extension[move] ^short = "รหัสสถานพยาบาลที่ย้าย"
 * extension[move] ^min = 0
 * identifier MS

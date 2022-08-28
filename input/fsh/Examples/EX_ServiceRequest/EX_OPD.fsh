@@ -19,7 +19,7 @@ Title: "ตัวอย่าง ServiceRequest: การส่งต่อผ�
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ReferOutcome 
+  * url = $EX_TH_ServiceRequestReferOutcome 
   * valueCodeableConcept = $CS_THCC_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
 * status = #active
 * intent = #order

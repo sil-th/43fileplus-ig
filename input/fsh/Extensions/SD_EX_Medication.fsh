@@ -1,12 +1,12 @@
-// Alias: $EX_TH_MedImage = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-image
+// Alias: $EX_TH_MedicationImageUrl = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-image
 // * extension[0]
-//   * url = $EX_TH_MedImage
+//   * url = $EX_TH_MedicationImageUrl
 //   * valueUri = "http://example.com/image1.jpg"
-Extension: EX_TH_MedImage
-Id: ex-medication-med-image
-Title: "URL ของรูปถ่ายยา"
+Extension: EX_TH_MedicationImageUrl
+Id: ex-medication-image-url
+Title: "Ext Medication: Image URL"
 Description: "URL ของรูปถ่ายยา"
-* ^url = $EX_TH_MedImage
+* ^url = $EX_TH_MedicationImageUrl
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

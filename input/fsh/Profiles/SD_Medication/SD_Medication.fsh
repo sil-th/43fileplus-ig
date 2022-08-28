@@ -12,7 +12,7 @@ Description: "ยา"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_MedImage named image 0..*
+    $EX_TH_MedicationImageUrl named image 0..*
 * extension[image] ^min = 0
 * code 1.. MS
 * code.coding ^slicing.discriminator.type = #value

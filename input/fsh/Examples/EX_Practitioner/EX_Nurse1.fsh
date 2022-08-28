@@ -34,7 +34,7 @@ Usage: #example
     * start = "1986-04-25"
   * issuer
     * extension[0]
-      * url = $EX_TH_QualificationIssuer
+      * url = $EX_TH_PractitionerQualificationIssuer
       * valueCodeableConcept
         * coding[0] = $CS_THCC_QualificationIssuer#02 "สภาการพยาบาล"
     * display = "สภาการพยาบาล"

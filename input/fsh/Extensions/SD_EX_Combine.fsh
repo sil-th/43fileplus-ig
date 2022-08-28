@@ -1,21 +1,21 @@
-// Alias: $EX_TH_ChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-chronic-discharge-reason
+// Alias: $EX_TH_ConditionChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-chronic-discharge-reason
 // Condition
 // * extension[0]
-//   * url = $EX_TH_ChronicDischargeReason
+//   * url = $EX_TH_ConditionChronicDischargeReason
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_ChronicDischargeReason#08 "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
 //     * text = "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
 // EpisodeOfCare
 // * extension[0]
-//   * url = $EX_TH_ChronicDischargeReason
+//   * url = $EX_TH_ConditionChronicDischargeReason
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_ChronicDischargeReason#08 "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
 //     * text = "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
-Extension: EX_TH_ChronicDischargeReason
+Extension: EX_TH_ConditionChronicDischargeReason
 Id: ex-condition-chronic-discharge-reason
-Title: "ประเภทการจำหน่าย chronic case"
+Title: "Ext Condition: Chronic Case Discharge Reason"
 Description: "ประเภทการจำหน่าย chronic case"
-* ^url = $EX_TH_ChronicDischargeReason
+* ^url = $EX_TH_ConditionChronicDischargeReason
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

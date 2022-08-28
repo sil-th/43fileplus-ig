@@ -6,7 +6,7 @@ Title: "ตัวอย่าง DeviceRequest: สั่งจ่ายอุ�
 Description: "แสดงการสั่งจ่ายอุปกรณ์กลับบ้าน"
 Usage: #example
 * extension
-  * url = $EX_TH_ProductUseLocation
+  * url = $EX_TH_DeviceRequestUseLocation
   * valueCodeableConcept = $CS_THCC_MedicationCategory#2 "ใช้ที่บ้าน"
 * status = #completed
 * intent = #order

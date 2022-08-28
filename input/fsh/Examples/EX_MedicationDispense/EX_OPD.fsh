@@ -4,7 +4,7 @@ Title: "ตัวอย่าง MedicationDispense: การจ่ายยา
 Description: "แสดงการจ่ายยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_MedDelivery
+  * url = $EX_TH_MedicationDispenseDeliveryMode
   * valueCodeableConcept = $CS_THCC_MedDelivery#1 "รับที่ counter ยา"
 * status = #completed
 * medicationReference = Reference(Medication/medication-opd-amoxicillin) "Amoxicillin 500 mg"

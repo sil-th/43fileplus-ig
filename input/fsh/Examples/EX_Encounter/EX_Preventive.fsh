@@ -12,7 +12,7 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
-    * url = $EX_TH_PatientLocationType 
+    * url = $EX_TH_EncounterPatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * participant[0]
   * type
@@ -21,13 +21,13 @@ Usage: #example
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
-    * url = $EX_TH_ServiceHour 
+    * url = $EX_TH_EncounterServiceHour 
     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
   * start = "2022-04-10T12:30:02+07:00"
   * end = "2022-04-10T14:30:02+07:00"
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location = Reference(Location/location-opd-gp-clinic1) "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)

@@ -27,7 +27,7 @@ Usage: #example
   * condition = Reference(Condition/condition-ncd1)
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location = Reference(Location/location-opd-gp-clinic1) "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)

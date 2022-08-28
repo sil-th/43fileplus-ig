@@ -6,7 +6,7 @@ Usage: #example
 * meta
   * security = $CS_HL7_SecurityLebel#R "restricted"
 * extension[0]
-  * url = $EX_TH_ServiceTypeTH 
+  * url = $EX_TH_EncounterServiceTypeTH 
   * valueCodeableConcept = $CS_THCC_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
 * identifier[0]
   * use = #secondary
@@ -21,7 +21,7 @@ Usage: #example
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
-    * url = $EX_TH_PatientLocationType 
+    * url = $EX_TH_EncounterPatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * basedOn = Reference(ServiceRequest/servicerequest-refer-in-opd1)
 * participant[0]
@@ -31,7 +31,7 @@ Usage: #example
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
-    * url = $EX_TH_ServiceHour 
+    * url = $EX_TH_EncounterServiceHour 
     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"
@@ -41,10 +41,10 @@ Usage: #example
 * account = Reference(Account/account-opd-encounter1)
 * hospitalization
   * extension[0]
-    * url = $EX_TH_DischargeStatus 
+    * url = $EX_TH_EncounterDischargeStatus 
     * valueCodeableConcept = $CS_THCC_DischargeStatus#3 "ส่งต่อไปยังสถานพยาบาลอื่น"
   * extension[+]
-    * url = $EX_TH_DischargeInstruction
+    * url = $EX_TH_EncounterDischargeInstruction
     * valueAnnotation
       * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
   * origin = Reference(Organization/organization-second)
@@ -57,13 +57,13 @@ Usage: #example
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location = Reference(Location/location-opd-gp-clinic1) "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
   * extension
-    * url = $EX_TH_ProviderType 
+    * url = $EX_TH_EncounterProviderType 
     * valueCodeableConcept = $CS_THCC_ProviderType#1 "Main Contractor"
 
 
@@ -86,7 +86,7 @@ Usage: #example
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
-    * url = $EX_TH_PatientLocationType 
+    * url = $EX_TH_EncounterPatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * participant[0]
   * type
@@ -112,7 +112,7 @@ Usage: #example
 // * account = Reference(Account/account-opd-encounter2)
 * location
   * extension
-    * url = $EX_TH_ServiceLocationType 
+    * url = $EX_TH_EncounterServiceLocationType 
     * valueCodeableConcept = $CS_THCC_ServiceLocationType#1 "ในสถานบริการ"
   * location = Reference(Location/location-opd-gp-clinic1)
     * insert GeneralReference($ID_LO_DepCode, "XXXXX", "OPD GP Clinic 1")

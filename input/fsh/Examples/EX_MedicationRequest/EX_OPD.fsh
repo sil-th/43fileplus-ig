@@ -4,13 +4,13 @@ Title: "ตัวอย่าง MedicationRequest: การสั่งยา 
 Description: "แสดงการสั่งยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_MedicationSource
+  * url = $EX_TH_MedicationRequestSource
   * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 * extension[+]
-  * url = $EX_TH_MedOutNLEM
+  * url = $EX_TH_MedicationRequestOutNLEM
   * valueCodeableConcept = $CS_THCC_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
 * extension[+]
-  * url = $EX_TH_MedApprovedNo
+  * url = $EX_TH_MedicationRequestApprovedNo
   * valueString = "ApprovedNumber"
 * identifier
   * use = #usual

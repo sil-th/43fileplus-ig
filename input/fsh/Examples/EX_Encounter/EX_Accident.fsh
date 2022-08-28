@@ -29,7 +29,7 @@ Usage: #example
 * account = Reference(Account/account-accident-encounter1)
 * hospitalization
   * extension[0]
-    * url = $EX_TH_DischargeStatus 
+    * url = $EX_TH_EncounterDischargeStatus 
     * valueCodeableConcept = $CS_THCC_DischargeStatus#3 "ส่งต่อไปยังสถานพยาบาลอื่น"
   * admitSource
     * coding[0] = $CS_HL7_AdmitSource#other "Other"
@@ -38,7 +38,7 @@ Usage: #example
   * destination = Reference(Organization/organization-third)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
     * extension[0]
-      * url = $EX_TH_ReferOutID
+      * url = $EX_TH_EncounterReferOutID
       * valueReference = Reference(ServiceRequest/servicerequest-refer-out-accident1)
         * insert GeneralReference($ID_LO_Refer, "XXXXX", "ใบส่งตัวเลขที่ XXXXX")
 * serviceProvider = Reference(Organization/organization-main)

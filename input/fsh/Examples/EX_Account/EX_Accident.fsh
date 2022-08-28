@@ -5,7 +5,7 @@ Title: "ตัวอย่าง Account: ข้อมูลทางการ�
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_AccidentCoverage
+  * url = $EX_TH_AccountAccidentCoverage
   * valueCodeableConcept = $CS_THCC_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
 * status = #active
 * name = "บัญชี นางสมควร ใจดี VN 65-XXXXX"

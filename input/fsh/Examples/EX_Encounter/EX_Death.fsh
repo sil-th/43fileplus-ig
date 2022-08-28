@@ -4,12 +4,12 @@ Title: "ตัวอย่าง Encounter: สถานบริการที
 Description: "สถานบริการที่เสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_DeathLocType
+  * url = $EX_TH_EncounterDeathLocType
   * valueCodeableConcept
     * coding[0] = $CS_THCC_DeathLocType#1 "ในสถานพยาบาล"
     * text = "ในสถานพยาบาล"
 * extension[+]
-  * url = $EX_TH_DeathPregnancy
+  * url = $EX_TH_EncounterDeathPregnancy
   * valueCodeableConcept
     * coding[0] = $CS_THCC_DeathPregnancy#3 "ไม่ตั้งครรภ์"
     * text = "ไม่ตั้งครรภ์"

@@ -12,9 +12,9 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_MedicationSource named medicationSource 0..* and
-    $EX_TH_MedOutNLEM named npc 0..* and
-    $EX_TH_MedApprovedNo named approvedNo 0..*
+    $EX_TH_MedicationRequestSource named medicationSource 0..* and
+    $EX_TH_MedicationRequestOutNLEM named npc 0..* and
+    $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
 // * extension[medicationSource] from $VS_THCC_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
 * extension[medicationSource] ^min = 0

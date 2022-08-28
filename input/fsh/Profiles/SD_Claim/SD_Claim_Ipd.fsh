@@ -12,12 +12,12 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_TotalCost named totalCost 0..1 MS and
-    $EX_TH_TotalCopay named totalCopay 0..1 MS and
-    $EX_TH_TotalPaid named totalPaid 0..1 MS and
-    $EX_TH_TotalUnpaid named totalUnpaid 0..1 MS and
-    $EX_TH_FeeNote named fee 0..1 MS and
-    $EX_TH_IpdDRG named drg 0..1 MS
+    $EX_TH_ClaimTotalCost named totalCost 0..1 MS and
+    $EX_TH_ClaimTotalCopay named totalCopay 0..1 MS and
+    $EX_TH_ClaimTotalPaid named totalPaid 0..1 MS and
+    $EX_TH_ClaimTotalUnpaid named totalUnpaid 0..1 MS and
+    $EX_TH_ClaimFeeNote named fee 0..1 MS and
+    $EX_TH_ClaimIpdDRG named drg 0..1 MS
 * extension[totalCost] ^short = "TotalCost"
 * extension[totalCopay] ^short = "TotalCopay"
 * extension[totalPaid] ^short = "TotalPaid"

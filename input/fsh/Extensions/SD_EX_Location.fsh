@@ -1,12 +1,12 @@
-// Alias: $EX_TH_HouseOwner = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-owner
+// Alias: $EX_TH_LocationHouseOwner = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-owner
 // * extension[+]
-//   * url = $EX_TH_HouseOwner
+//   * url = $EX_TH_LocationHouseOwner
 //   * valueReference = Reference(Patient/patient-patient1)
-Extension: EX_TH_HouseOwner
+Extension: EX_TH_LocationHouseOwner
 Id: ex-location-house-owner
-Title: "รหัส เจ้าบ้าน"
+Title: "Ext Location: House Owner"
 Description: "รหัส เจ้าบ้าน"
-* ^url = $EX_TH_HouseOwner
+* ^url = $EX_TH_LocationHouseOwner
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -27,11 +27,11 @@ Description: "รหัส เจ้าบ้าน"
 // * extension[+]
 //   * url = $EX_TH_ManagingPractitioner
 //   * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
-Extension: EX_TH_ManagingVolunteer
-Id: ex-location-managing-volunteer
-Title: "รหัส อสม."
+Extension: EX_TH_LocationResponsibleVolunteer
+Id: ex-location-responsible-volunteer
+Title: "Ext Location: Responsible Volunteer"
 Description: "รหัส อสม."
-* ^url = $EX_TH_ManagingVolunteer
+* ^url = $EX_TH_LocationResponsibleVolunteer
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -48,15 +48,15 @@ Description: "รหัส อสม."
 
 
 
-// Alias: $EX_TH_HouseholdNum = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-householde-num
+// Alias: $EX_TH_LocationHouseholdCount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-householde-num
 // * extension[+]
-//   * url = $EX_TH_HouseholdNum
+//   * url = $EX_TH_LocationHouseholdCount
 //   * valueInteger = 1
-Extension: EX_TH_HouseholdNum
-Id: ex-location-household-num
-Title: "จำนวนครอบครัว"
+Extension: EX_TH_LocationHouseholdCount
+Id: ex-location-household-count
+Title: "Ext Location: Household Count"
 Description: "จำนวนครอบครัว"
-* ^url = $EX_TH_HouseholdNum
+* ^url = $EX_TH_LocationHouseholdCount
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -73,15 +73,15 @@ Description: "จำนวนครอบครัว"
 
 
 
-// Alias: $EX_TH_InMunicipality = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-in-municipality
+// Alias: $EX_TH_LocationInMunicipality = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-in-municipality
 // * extension[+]
-//   * url = $EX_TH_InMunicipality
+//   * url = $EX_TH_LocationInMunicipality
 //   * valueCodeableConcept = $CS_THCC_InMunicipality#1 "ในเขตเทศบาล"
-Extension: EX_TH_InMunicipality
+Extension: EX_TH_LocationInMunicipality
 Id: ex-location-in-municipality
-Title: "ที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
+Title: "Ext Location: In Municipality"
 Description: "ที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
-* ^url = $EX_TH_InMunicipality
+* ^url = $EX_TH_LocationInMunicipality
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -99,15 +99,15 @@ Description: "ที่ตั้ง อยู่ในหรือนอกเ�
 
 
 
-// Alias: $EX_TH_VillageArea = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-area
+// Alias: $EX_TH_LocationVillageArea = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-area
 // * extension[0]
-//   * url = $EX_TH_VillageArea
+//   * url = $EX_TH_LocationVillageArea
 //   * valueCodeableConcept = $CS_THCC_VillageArea#1 "เทศบาล"
-Extension: EX_TH_VillageArea
+Extension: EX_TH_LocationVillageArea
 Id: ex-location-village-area
-Title: "เขตที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
+Title: "Ext Location: Village Area"
 Description: "เขตที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
-* ^url = $EX_TH_VillageArea
+* ^url = $EX_TH_LocationVillageArea
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -125,15 +125,15 @@ Description: "เขตที่ตั้ง อยู่ในหรือน�
 
 
 
-// Alias: $EX_TH_VillageMainHospital = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-main-hospital
+// Alias: $EX_TH_LocationVillageMainHospital = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-main-hospital
 // * extension[+]
-//   * url = $EX_TH_VillageMainHospital
+//   * url = $EX_TH_LocationVillageMainHospital
 //   * valueReference = Reference(Organization/organization-main)
-Extension: EX_TH_VillageMainHospital
+Extension: EX_TH_LocationVillageMainHospital
 Id: ex-location-village-main-hospital
-Title: "โรงพยาบาลหลัก"
+Title: "Ext Location: Village Main Hospital"
 Description: "โรงพยาบาลหลัก"
-* ^url = $EX_TH_VillageMainHospital
+* ^url = $EX_TH_LocationVillageMainHospital
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -150,15 +150,15 @@ Description: "โรงพยาบาลหลัก"
 
 
 
-// Alias: $EX_TH_VillageUnlistDate = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-unlist-date
+// Alias: $EX_TH_LocationVillageUnlistDate = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-unlist-date
 // * extension[+]
-//   * url = $EX_TH_VillageUnlistDate
+//   * url = $EX_TH_LocationVillageUnlistDate
 //   * valueDate = "2022-07-01"
-Extension: EX_TH_VillageUnlistDate
+Extension: EX_TH_LocationVillageUnlistDate
 Id: ex-location-village-unlist-date
-Title: "วันที่แยกชุมชนออกนอกเขต"
+Title: "Ext Location: Village Unlist Date"
 Description: "วันที่แยกชุมชนออกนอกเขต"
-* ^url = $EX_TH_VillageUnlistDate
+* ^url = $EX_TH_LocationVillageUnlistDate
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

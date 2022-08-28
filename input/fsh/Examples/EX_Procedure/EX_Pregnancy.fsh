@@ -17,7 +17,7 @@ Usage: #example
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * location
   * extension[0]
-    * url = $EX_TH_LaborLocation
+    * url = $EX_TH_ProcedureLaborLocation
     * valueCodeableConcept = $CS_THCC_LaborLocation#1 "โรงพยาบาล"
   * display = "ห้องคลอด โรงพยาบาลตัวอย่าง"
 * outcome

@@ -4,7 +4,7 @@ Title: "ตัวอย่าง MedicationStatement: ประวัติก�
 Description: "แสดงประวัติการได้รับยา ของผู้ป่วยที่ได้รับการส่งต่อ"
 Usage: #example
 * extension
-  * url = $EX_TH_MedicationSource
+  * url = $EX_TH_MedicationRequestSource
   * valueCodeableConcept = $CS_THCC_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 * status = #completed
 * medicationCodeableConcept

@@ -13,9 +13,9 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_AllergyCertainy named certainy 0..1 MS and
-    $EX_TH_AllergySeverity named severity 0..1 MS and
-    $EX_TH_AllergyAssertType named assertType 0..1 MS
+    $EX_TH_AllergyIntoleranceCertainy named certainy 0..1 MS and
+    $EX_TH_AllergyIntoleranceSeverity named severity 0..1 MS and
+    $EX_TH_AllergyIntoleranceAssertType named assertType 0..1 MS
 * extension[certainy] ^short = "ประเภทการวินิจฉัยการแพ้ยา"
 * extension[certainy] ^definition = "ประเภทการวินิจฉัยการแพ้ยา 5 ประเภท"
 * extension[severity] ^short = "ระดับความรุนแรงของการแพ้ยา"

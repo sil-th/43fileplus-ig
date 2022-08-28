@@ -49,7 +49,7 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * address.extension ^slicing.rules = #open
 * address.extension ^min = 0
 * address.extension contains
-    $EX_TH_StructureLine named lineStructure 0..1 MS
+    $EX_TH_AddressStructuredLine named lineStructure 0..1 MS
 * physicalType MS
 * physicalType ^short = "ประเภทที่อยู่"
 * physicalType.coding ^slicing.discriminator.type = #value

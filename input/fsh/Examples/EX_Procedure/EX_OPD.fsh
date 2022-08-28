@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Procedure: หัตถการ ณ OPD"
 Description: "หัตถการ ณ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ProcedureType
+  * url = $EX_TH_ProcedureProcedureType
   * valueCodeableConcept = $CS_THCC_ProcedureType#1 "Principal procedure"
 * status = #completed
 * code
@@ -24,7 +24,7 @@ Usage: #example
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 * location
   * extension[0]
-    * url = $EX_TH_LaborLocation
+    * url = $EX_TH_ProcedureLaborLocation
     * valueCodeableConcept = $CS_THCC_LaborLocation#1 "โรงพยาบาล"
   * display = "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 * outcome

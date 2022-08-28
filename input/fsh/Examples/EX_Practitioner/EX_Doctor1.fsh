@@ -42,7 +42,7 @@ Usage: #example
     * start = "1986-04-25"
   * issuer = Reference(Organization/organization-medical-council)
     * extension[0]
-      * url = $EX_TH_QualificationIssuer
+      * url = $EX_TH_PractitionerQualificationIssuer
       * valueCodeableConcept
         * coding[0] = $CS_THCC_QualificationIssuer#01 "แพทยสภา"
         * text = "แพทยสภา"

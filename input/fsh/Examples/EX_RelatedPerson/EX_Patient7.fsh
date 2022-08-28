@@ -44,10 +44,10 @@ Usage: #example
 * birthDate = "1996-04-25"
 * address[0]
   * extension[0]
-    * url = $EX_TH_AddressCode
+    * url = $EX_TH_AddressDopaCode
     * valueCodeableConcept = $CS_DOPA_Location#342001 "จังหวัดอุบลราชธานี อำเภอตาลสุม ตำบลตาลสุม"
   * extension[+]
-    * url = $EX_TH_StructureLine
+    * url = $EX_TH_AddressStructuredLine
     * extension[0]
       * url = "number"
       * valueString = "123"

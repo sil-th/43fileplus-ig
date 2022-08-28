@@ -87,7 +87,7 @@ Description: "ข้อมูลผู้ให้บริการของส
 * qualification.issuer.extension ^slicing.discriminator.path = "url"
 * qualification.issuer.extension ^slicing.rules = #open
 // * qualification.issuer.extension ^min = 0
-* qualification.issuer.extension contains $EX_TH_QualificationIssuer named qualificationIssuer 0..1 MS
+* qualification.issuer.extension contains $EX_TH_PractitionerQualificationIssuer named qualificationIssuer 0..1 MS
 * qualification.issuer.extension[qualificationIssuer] ^sliceName = "qualificationIssuer"
 * qualification.issuer.extension[qualificationIssuer] ^short = "รหัสสภาวิชาชีพ"
 

@@ -13,7 +13,7 @@ Description: "ข้อมูลผู้พิการ ทุกคนที�
 * extension ^min = 0
 * extension contains
     $EX_HL7_ConditionDueTo named conditionDueTo 0..* MS and
-    $EX_TH_DisabilityType named disabilityType 0..* MS
+    $EX_TH_ConditionDisabilityType named disabilityType 0..* MS
 * extension[conditionDueTo] ^short = "สาเหตุความพิการ"
 * extension[conditionDueTo] ^min = 0
 * extension[disabilityType] ^short = "ประเภทความพิการ"

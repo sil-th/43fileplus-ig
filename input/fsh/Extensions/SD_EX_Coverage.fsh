@@ -1,6 +1,6 @@
-// Alias: $EX_TH_ProviderTypeCoverage = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-type-coverage
+// Alias: $EX_TH_CoverageContractedProvider = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-type-coverage
 // * extension[+]
-//   * url = $EX_TH_ProviderTypeCoverage
+//   * url = $EX_TH_CoverageContractedProvider
 //   * extension[0]
 //     * url = "type"
 //     * valueCodeableConcept
@@ -11,11 +11,11 @@
 //     * valueReference = Reference(organization-second)
 //       * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง 2")
 
-Extension: EX_TH_ProviderTypeCoverage
-Id: ex-coverage-provider-type-coverage
-Title: "สถานพยาบาลคู่สัญญา"
+Extension: EX_TH_CoverageContractedProvider
+Id: ex-coverage-contracted-provider
+Title: "Ext Coverage: Contracted Provider"
 Description: "สถานพยาบาลคู่สัญญา"
-* ^url = $EX_TH_ProviderTypeCoverage
+* ^url = $EX_TH_CoverageContractedProvider
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

@@ -4,19 +4,19 @@ Title: "ตัวอย่าง AllergyIntolerance: ประวัติกา
 Description: "ประวัติการแพ้ยา อาหาร เวชภัณฑ์ สิ่งแวดล้อม สารเคมี ฯลฯ"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_AllergyCertainy
+  * url = $EX_TH_AllergyIntoleranceCertainy
   * valueCodeableConcept
     * coding[0] = $CS_THCC_AllergyCertainy#1 "certain"
 * extension[+]
-  * url = $EX_TH_AllergySeverity
+  * url = $EX_TH_AllergyIntoleranceSeverity
   * valueCodeableConcept
     * coding[0] = $CS_THCC_AllergySeverity#1 "ไม่ร้ายแรง (Non-serious)"
 * extension[+]
-  * url = $EX_TH_AllergyAssertType
+  * url = $EX_TH_AllergyIntoleranceAssertType
   * valueCodeableConcept
     * coding[0] = $CS_THCC_AllergyAssertType#3 "สถานพยาบาลอื่นเป็นผู้ให้ข้อมูล"
 * extension[+]
-  * url = $EX_TH_AllergyAssertOrg
+  * url = $EX_TH_AllergyIntoleranceAssertOrg
   * valueReference = Reference(Organization/organization-main)
 * clinicalStatus = $CS_HL7_AlleryActive#active "Active"
 * verificationStatus

@@ -21,7 +21,7 @@ Usage: #example
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
-    * url = $EX_TH_PatientLocationType 
+    * url = $EX_TH_EncounterPatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * participant[0]
   * type
@@ -30,7 +30,7 @@ Usage: #example
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
-    * url = $EX_TH_ServiceHour 
+    * url = $EX_TH_EncounterServiceHour 
     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
   * start = "2022-01-01T12:30:02+07:00"
   * end = "2022-01-01T14:30:02+07:00"

@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Encounter: การรับบริการ
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
 // * extension[0]
-//   * url = $EX_TH_ServiceTypeTH 
+//   * url = $EX_TH_EncounterServiceTypeTH 
 //   * valueCodeableConcept = $CS_THCC_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
 * identifier[0]
   * use = #secondary
@@ -24,7 +24,7 @@ Usage: #example
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
-    * url = $EX_TH_PatientLocationType 
+    * url = $EX_TH_EncounterPatientLocationType 
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * basedOn = Reference(ServiceRequest/servicerequest-refer-in-opd1)
 * participant[0]
@@ -40,13 +40,13 @@ Usage: #example
 // * account = Reference(Account/Accountencounter-ipd1)
 * hospitalization
   * extension[0]
-    * url = $EX_TH_IpdDischargeStatus
+    * url = $EX_TH_EncounterIpdDischargeStatus
     * valueCodeableConcept = $CS_THCC_IpdDischargeStatus#1 "Complete Recovery"
   * extension[+]
-    * url = $EX_TH_IpdDischargeType 
+    * url = $EX_TH_EncounterIpdDischargeType 
     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
   // * extension[+]
-  //   * url = $EX_TH_DischargeInstruction
+  //   * url = $EX_TH_EncounterDischargeInstruction
   //   * valueAnnotation
   //     * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
   // * origin = Reference(Organization/organization-second)
@@ -59,7 +59,7 @@ Usage: #example
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location[0]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
@@ -68,7 +68,7 @@ Usage: #example
     * display = "แผนกฉุกเฉิน"
 * location[+]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
@@ -77,7 +77,7 @@ Usage: #example
     * display = "แผนกศัลยกรรม"
 * location[+]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
@@ -87,7 +87,7 @@ Usage: #example
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
   // * extension
-  //   * url = $EX_TH_ProviderType 
+  //   * url = $EX_TH_EncounterProviderType 
   //   * valueCodeableConcept = $CS_THCC_ProviderType#1 "Main Contractor"
 
 
@@ -99,7 +99,7 @@ Title: "ตัวอย่าง Encounter: การรับบริการ
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_LeaveDay
+  * url = $EX_TH_EncounterLeaveDay
   * extension[0]
     * url = "id"
     * valueString = "XXXX"
@@ -141,13 +141,13 @@ Usage: #example
 * length = 5 'd' "days"
 * hospitalization
   * extension[0]
-    * url = $EX_TH_IpdDischargeStatus
+    * url = $EX_TH_EncounterIpdDischargeStatus
     * valueCodeableConcept = $CS_THCC_IpdDischargeStatus#1 "Complete Recovery"
   * extension[+]
-    * url = $EX_TH_IpdDischargeType 
+    * url = $EX_TH_EncounterIpdDischargeType 
     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
   // * extension[+]
-  //   * url = $EX_TH_DischargeInstruction
+  //   * url = $EX_TH_EncounterDischargeInstruction
   //   * valueAnnotation
   //     * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
   // * origin = Reference(Organization/organization-second)
@@ -160,7 +160,7 @@ Usage: #example
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location[0]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
@@ -169,7 +169,7 @@ Usage: #example
     * display = "แผนกฉุกเฉิน"
 * location[+]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
@@ -178,7 +178,7 @@ Usage: #example
     * display = "แผนกศัลยกรรม"
 * location[+]
   * extension[0]
-    * url = $EX_TH_IpdJourney 
+    * url = $EX_TH_EncounterIpdJourney 
     * valueCodeableConcept = $CS_THCC_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier

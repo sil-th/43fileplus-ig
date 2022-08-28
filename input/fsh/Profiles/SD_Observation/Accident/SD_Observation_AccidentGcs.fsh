@@ -1,7 +1,7 @@
 Profile: Moph43pObservationAccGcs
 Parent: Observation
 Id: moph43p-observation-accident-gcs
-Title: "MoPH43p Observation: Accident-Gcs"
+Title: "MoPH43p Observation: Accident-GCS"
 Description: "Glasgow coma score"
 * ^url = $SD_Observation_AccidentGcs
 * ^status = #draft

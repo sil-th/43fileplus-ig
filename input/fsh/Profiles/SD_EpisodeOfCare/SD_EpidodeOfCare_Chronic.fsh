@@ -12,7 +12,7 @@ Description: "การรับบริการเป็นประจำ"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ChronicDischargeReason named chronicDischargeReason 0..1 MS
+    $EX_TH_ConditionChronicDischargeReason named chronicDischargeReason 0..1 MS
 * extension[chronicDischargeReason] ^short = "ประเภทการจำหน่าย chronic case"
 * status = #finished (exactly)
 * status MS

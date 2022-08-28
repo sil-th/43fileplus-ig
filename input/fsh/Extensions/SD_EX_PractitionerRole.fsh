@@ -1,6 +1,6 @@
-// Alias: $EX_TH_ProviderMove = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-move
+// Alias: $EX_TH_PractitionerRoleProviderMovement = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-move
 // * extension[0]
-//   * url = $EX_TH_ProviderMove
+//   * url = $EX_TH_PractitionerRoleProviderMovement
 //   * extension[0]
 //     * url = "movefrom"
 //     * valueReference = Reference(Organization/organization-second) "โรงพยาบาลสำรอง"
@@ -12,11 +12,11 @@
 //   * extension[+]
 //     * url = "moveto"
 //     * valueReference = Reference(Organization/organization-main) "โรงพยาบาลตัวอย่าง"
-Extension: EX_TH_ProviderMove
+Extension: EX_TH_PractitionerRoleProviderMovement
 Id: ex-practitionerrole-provider-move
-Title: "ข้อมูลการย้ายสถานพยาบาล"
+Title: "Ext PractitionerRole: Provider Movement"
 Description: "ข้อมูลการย้ายสถานพยาบาล"
-* ^url = $EX_TH_ProviderMove
+* ^url = $EX_TH_PractitionerRoleProviderMovement
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

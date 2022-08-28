@@ -12,7 +12,7 @@ Description: "การรับบริการ"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ServiceTypeTH named serviceType 0..1 MS
+    $EX_TH_EncounterServiceTypeTH named serviceType 0..1 MS
 * extension[serviceType] ^short = "ประเภทบริการ"
 // * extension[serviceType] from $VS_THCC_ServiceTypeTH (extensible)
 * identifier MS
@@ -52,7 +52,7 @@ Description: "การรับบริการ"
 * subject.extension ^slicing.rules = #open
 * subject.extension ^min = 0
 * subject.extension contains
-    $EX_TH_PatientLocationType named locationType 0..1 MS
+    $EX_TH_EncounterPatientLocationType named locationType 0..1 MS
 * subject.extension[locationType] ^short = "ประภทเขตรับผิดชอบ"
 // * subject.extension[locationType] from $VS_THCC_PatientLocationType (extensible)
 * basedOn MS
@@ -79,7 +79,7 @@ Description: "การรับบริการ"
 * period.extension ^slicing.rules = #open
 * period.extension ^min = 0
 * period.extension contains
-    $EX_TH_ServiceHour named serviceHour 0..1 MS
+    $EX_TH_EncounterServiceHour named serviceHour 0..1 MS
 * period.extension[serviceHour] ^short = "ช่วงเวลาการใช้บริการ"
 // * period.extension[serviceHour] from $VS_THCC_ServiceHour (extensible)
 * reasonCode MS
@@ -102,8 +102,8 @@ Description: "การรับบริการ"
 * hospitalization.extension ^slicing.rules = #open
 * hospitalization.extension ^min = 0
 * hospitalization.extension contains
-    $EX_TH_DischargeStatus named dischargeStatus 0..1 MS and
-    $EX_TH_DischargeInstruction named dischargeInstruction  0..1 MS
+    $EX_TH_EncounterDischargeStatus named dischargeStatus 0..1 MS and
+    $EX_TH_EncounterDischargeInstruction named dischargeInstruction  0..1 MS
 * hospitalization.extension[dischargeStatus] ^short = "สถานะการจำหน่ายผู้ป่วย"
 // * hospitalization.extension[dischargeStatus] from $VS_THCC_DischargeStatus (extensible)
 * hospitalization.extension[dischargeInstruction] ^short = "คำแนะนำหลังการเข้ารับบริการ"
@@ -131,7 +131,7 @@ Description: "การรับบริการ"
 * location.extension ^slicing.rules = #open
 * location.extension ^min = 0
 * location.extension contains
-    $EX_TH_ServiceLocationType named locationType 0..1 MS
+    $EX_TH_EncounterServiceLocationType named locationType 0..1 MS
 * location.extension[locationType] ^short = "ประเภทสถานที่ที่ให้บริการ"
 // * hospitalization.extension[locationType] from $VS_THCC_ServiceLocationType (extensible)
 * serviceProvider MS
@@ -141,6 +141,6 @@ Description: "การรับบริการ"
 * serviceProvider.extension ^slicing.rules = #open
 * serviceProvider.extension ^min = 0
 * serviceProvider.extension contains
-    $EX_TH_ProviderType named providerType 0..1 MS
+    $EX_TH_EncounterProviderType named providerType 0..1 MS
 * serviceProvider.extension[providerType] ^short = "ประเภทสถานพยาบาลที่รักษา"
 // * hospitalization.extension[locationType] from $VS_THCC_ProviderType (extensible)

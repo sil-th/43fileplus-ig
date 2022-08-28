@@ -16,13 +16,13 @@ Usage: #example
     * valuePeriod
       * start = "1960-04-25"
 * extension[+]
-  * url = $EX_TH_Race
+  * url = $EX_TH_PatientRace
   * valueCodeableConcept
     * coding[0] = $ISO3166#USA
     * coding[+] = $CS_THCC_Nationality#029
     * text = "อเมริกัน"
 * extension[+]
-  * url = $EX_TH_ForeignerType
+  * url = $EX_TH_PatientForeignerType
   * valueCodeableConcept
     * coding[+] = $CS_THCC_ForeignerType#30 "ประชากรต่างด้าวที่เป็นนักท่องเที่ยวเข้าเมืองโดยถูกต้องตามกฎหมาย"
     * text = "ประชากรต่างด้าวที่เป็นนักท่องเที่ยวเข้าเมืองโดยถูกต้องตามกฎหมาย"

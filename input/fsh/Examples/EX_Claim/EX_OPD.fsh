@@ -4,27 +4,27 @@ Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการ�
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_TotalCost
+  * url = $EX_TH_ClaimTotalCost
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalCopay
+  * url = $EX_TH_ClaimTotalCopay
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalPaid
+  * url = $EX_TH_ClaimTotalPaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalUnpaid
+  * url = $EX_TH_ClaimTotalUnpaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_FeeNote
+  * url = $EX_TH_ClaimFeeNote
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]
@@ -63,27 +63,27 @@ Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการ�
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD บริการปฐมภูมิ"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_TotalCost
+  * url = $EX_TH_ClaimTotalCost
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalCopay
+  * url = $EX_TH_ClaimTotalCopay
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalPaid
+  * url = $EX_TH_ClaimTotalPaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_TotalUnpaid
+  * url = $EX_TH_ClaimTotalUnpaid
   * valueMoney
     * value = 100.0
     * currency = $ISO4217#THB
 * extension[+]
-  * url = $EX_TH_FeeNote
+  * url = $EX_TH_ClaimFeeNote
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]

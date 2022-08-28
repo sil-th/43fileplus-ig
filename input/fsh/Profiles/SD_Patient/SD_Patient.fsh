@@ -13,10 +13,10 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension ^min = 0
 * extension contains
     $EX_HL7_Nationality named nationality 0..* MS and
-    $EX_TH_Race named race 0..* MS and
+    $EX_TH_PatientRace named race 0..* MS and
     $EX_HL7_Religion named religion 0..1 MS and
-    $EX_TH_EducationLevel named educationLevel 0..* MS and
-    $EX_TH_PersonStatus named personStatus 0..* MS
+    $EX_TH_PatientEducationLevel named educationLevel 0..* MS and
+    $EX_TH_PatientPersonStatus named personStatus 0..* MS
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
@@ -175,10 +175,10 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * extension ^slicing.discriminator[=].path = "url"
   * extension ^slicing.rules = #open
   * extension contains
-    $EX_TH_AddressCode named addressCode 0..1 MS and
-    $EX_TH_StructureLine named structureLine 0..1 MS and
-    $EX_TH_HomeReference named locationRef 0..1 MS and
-    $EX_TH_HouseType named houseType 0..1 MS
+    $EX_TH_AddressDopaCode named addressCode 0..1 MS and
+    $EX_TH_AddressStructuredLine named structureLine 0..1 MS and
+    $EX_TH_AddressHomeReference named locationRef 0..1 MS and
+    $EX_TH_AddressHouseType named houseType 0..1 MS
   * extension[addressCode] ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
   * extension[structureLine] ^short = "รายละเอียดที่อยู่"
   * extension[locationRef] ^short = "อ้่างอิงไปยัง Location resource ที่เก็บข้อมูลบ้าน"

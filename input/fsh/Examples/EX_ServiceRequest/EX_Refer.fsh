@@ -23,7 +23,7 @@ Title: "ตัวอย่าง ServiceRequest: การส่งต่อผ�
 Description: "แสดงการส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ReferRequesterDetail
+  * url = $EX_TH_ServiceRequestReferRequesterDetail
   * extension[0]
     * url = "organization"
     * valueReference = Reference(Organization/organization-main)
@@ -32,25 +32,25 @@ Usage: #example
     * url = "department"
     * valueReference.display = "แผนกเวชศาสตร์ฉุกเฉิน"
 * extension[+]
-  * url = $EX_TH_ReferStatus
+  * url = $EX_TH_ServiceRequestReferStatus
   * valueCodeableConcept = $CS_THCC_ReferStatus#A "Accepted"
 * extension[+]
-  * url = $EX_TH_ReferRequestedPeriod
+  * url = $EX_TH_ServiceRequestReferRequestedPeriod
   * valuePeriod.end = "2021-04-30T12:30:02+07:00"
 * extension[+]
-  * url = $EX_TH_ReferAnswerType
+  * url = $EX_TH_ServiceRequestReferAnswerType
   * valueCodeableConcept = $CS_THCC_ReferAnswerType#1 "Accepted"
 * extension[+]
   * url = $EX_HL7_PreCondition
   * valueCodeableConcept.text = "สภาพผู้ป่วยก่อนส่งต่อ" 
 * extension[+]
-  * url = $EX_TH_ReferPriorityCode
+  * url = $EX_TH_ServiceRequestReferPriorityCode
   * valueCodeableConcept = $CS_THCC_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 * extension[+]
-  * url = $EX_TH_ReferTypeEclaim
+  * url = $EX_TH_ServiceRequestEclaimReferType
   * valueCodeableConcept = $CS_THCC_ReferTypeEclaim#E "ฉุกเฉิน"
 * extension[+]
-  * url = $EX_TH_ReferSpecialDisease
+  * url = $EX_TH_ServiceRequestSpecialDiseaseRefer
   * valueCodeableConcept = $CS_THCC_ReferSpecialDisease#99 "อื่นๆ"
 * identifier[0]
   * use = #official
@@ -73,7 +73,7 @@ Usage: #example
 * category = $CS_THCC_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
 * priority = #stat
   * extension[+]
-    * url = $EX_TH_ReferThaiPriority
+    * url = $EX_TH_ServiceRequestThaiReferPriority
     * valueCodeableConcept
       * coding[0] = $CS_THCC_ReferThaiPriorityStd43#2 "emergency"
       * coding[+] = $CS_THCC_ReferThaiPriorityStd15#E "Emergency"

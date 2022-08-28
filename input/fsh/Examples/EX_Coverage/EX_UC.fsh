@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Coverage: หลักประกันสุ�
 Description: "แสดงการบันทึกสิทธิหลักประกันสุขภาพถ้วนหน้า"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ProviderTypeCoverage
+  * url = $EX_TH_CoverageContractedProvider
   * extension[0]
     * url = "type"
     * valueCodeableConcept
@@ -19,7 +19,7 @@ Usage: #example
     * valuePeriod
       * start = "2022-01-01"
 * extension[+]
-  * url = $EX_TH_ProviderTypeCoverage
+  * url = $EX_TH_CoverageContractedProvider
   * extension[0]
     * url = "type"
     * valueCodeableConcept
@@ -30,7 +30,7 @@ Usage: #example
     * valueReference = Reference(organization-second)
       * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง 2")
 * extension[+]
-  * url = $EX_TH_ProviderTypeCoverage
+  * url = $EX_TH_CoverageContractedProvider
   * extension[0]
     * url = "type"
     * valueCodeableConcept

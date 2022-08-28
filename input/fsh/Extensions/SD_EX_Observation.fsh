@@ -1,13 +1,13 @@
 // Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-preg-test-amount
 // * device
 //   * extension[0]
-//     * url = $EX_TH_DeviceAmount
+//     * url = $EX_TH_ObservationDeviceAmount
 //     * valueQuantity = 1 '{#}' "Number"
-Extension: EX_TH_DeviceAmount
+Extension: EX_TH_ObservationDeviceAmount
 Id: ex-observation-device-amount
-Title: "จำนวนชิ้นของอุปกรณ์ที่ใช้ในการตรวจ"
+Title: "Ext Observation: Device Amount"
 Description: "จำนวนชิ้นของอุปกรณ์ที่ใช้ในการตรวจ"
-* ^url = $EX_TH_DeviceAmount
+* ^url = $EX_TH_ObservationDeviceAmount
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false

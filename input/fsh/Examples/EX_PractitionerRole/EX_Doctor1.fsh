@@ -4,7 +4,7 @@ Title: "ตัวอย่าง PractitionerRole: บทบาทแพทย�
 Description: "บทบาทแพทย์ รายที่ 1 ในสถานพยาบาลหลัก"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ProviderMove
+  * url = $EX_TH_PractitionerRoleProviderMovement
   * extension[0]
     * url = "movefrom"
     * valueReference = Reference(Organization/organization-second) "โรงพยาบาลสำรอง"

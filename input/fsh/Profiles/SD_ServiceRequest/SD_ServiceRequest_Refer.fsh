@@ -12,13 +12,13 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ReferRequesterDetail named detail 0..1 MS and
-    $EX_TH_ReferStatus named referStatus 0..1 MS and
-    $EX_TH_ReferRequestedPeriod named referPeriod 0..1 MS and
-    $EX_TH_ReferAnswerType named answerType 0..1 MS and
+    $EX_TH_ServiceRequestReferRequesterDetail named detail 0..1 MS and
+    $EX_TH_ServiceRequestReferStatus named referStatus 0..1 MS and
+    $EX_TH_ServiceRequestReferRequestedPeriod named referPeriod 0..1 MS and
+    $EX_TH_ServiceRequestReferAnswerType named answerType 0..1 MS and
     $EX_HL7_PreCondition named preCondition 0..1 MS and
-    $EX_TH_ReferTypeEclaim named referType 0..1 MS and
-    $EX_TH_ReferSpecialDisease named specialDisease 0..1 MS
+    $EX_TH_ServiceRequestEclaimReferType named referType 0..1 MS and
+    $EX_TH_ServiceRequestSpecialDiseaseRefer named specialDisease 0..1 MS
 * extension[detail] ^short = "รายละเอียดการส่งต่อผู้ป่วย"
 * extension[referStatus] ^short = "สถานะการส่งต่อผู้ป่วย"
 * extension[referPeriod] ^short = "ช่วงเวลาที่ขอส่งต่อผู้ป่วย"

@@ -1,16 +1,16 @@
-// Alias: $EX_TH_QualificationIssuer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-qualification-issuer
+// Alias: $EX_TH_PractitionerQualificationIssuer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-qualification-issuer
 // * qualification
 //   * issuer = Reference(Organization/organization-medical-council)
 //     * extension[0]
-//       * url = $EX_TH_QualificationIssuer
+//       * url = $EX_TH_PractitionerQualificationIssuer
 //       * valueCodeableConcept
 //         * coding[0] = $CS_THCC_QualificationIssuer#01 "แพทยสภา"
 //         * text = "แพทยสภา"
-Extension: EX_TH_QualificationIssuer
+Extension: EX_TH_PractitionerQualificationIssuer
 Id: ex-practitioner-qualification-issuer
-Title: "รหัสสภาวิชาชีพ"
+Title: "Ext Practitioner: Qualification Issuer"
 Description: "รหัสสภาวิชาชีพ"
-* ^url = $EX_TH_QualificationIssuer
+* ^url = $EX_TH_PractitionerQualificationIssuer
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
