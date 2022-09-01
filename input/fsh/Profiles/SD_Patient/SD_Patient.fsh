@@ -7,16 +7,12 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
-    $EX_HL7_Nationality named nationality 0..* MS and
-    $EX_TH_PatientRace named race 0..* MS and
-    $EX_HL7_Religion named religion 0..1 MS and
-    $EX_TH_PatientEducationLevel named educationLevel 0..* MS and
-    $EX_TH_PatientPersonStatus named personStatus 0..* MS
+    $EX_HL7_Nationality named nationality 0..* and
+    $EX_TH_PatientRace named race 0..* and
+    $EX_HL7_Religion named religion 0..1 and
+    $EX_TH_PatientEducationLevel named educationLevel 0..* and
+    $EX_TH_PatientPersonStatus named personStatus 0..*
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
@@ -32,15 +28,16 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * identifier ^slicing.discriminator[=].path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains
-    pid 0..1 and
-    cid 0..1 and
-    pwd 0..1 and
-    hn 0..1 and
+    pid 0..1 MS and
+    cid 0..1 MS and
+    disabilityID 0..1 and
+    hn 0..1 MS and
     passportNo 0..* and
-    workPermit 0..*
+    workPermit 0..* 
 * identifier[pid] ^short = "ทะเบียนบุคคล"
 * identifier[pid] ^comment = "ทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
-* identifier[pid] ^patternIdentifier.type = $CS_HL7_IdentifierType#PN
+* identifier[pid]
+  * type = $CS_HL7_IdentifierType#PN
   * system 1..
   * system obeys PID-uri
   * system ^example.label = "PID namespace"
@@ -54,16 +51,16 @@ Description: "ข้อมูลทั่วไปของประชาชน
     * end ^short = "วันที่จำหน่าย"
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
-* identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
+* identifier[cid]
+  * type = $CS_HL7_IdentifierType#NI
   * system 1..
   * system = $ID_ThaiCid (exactly)
   * value 1..
   * value obeys CID-length
   * value ^example.label = "เลขประจำตัวประชาชน"
   * value ^example.valueString = "1234567890123"
-* identifier[pwd] ^short = "เลขประจำตัวคนพิการ"
-* identifier[pwd] ^comment = "เลขประจำตัวคนพิการ"
-* identifier[pwd] ^patternIdentifier.system = $ID_ThaiDisability
+* identifier[disabilityID] ^short = "เลขประจำตัวคนพิการ"
+* identifier[disabilityID] ^comment = "เลขประจำตัวคนพิการ"
   * system 1..
   * system = $ID_ThaiDisability (exactly)
   * value 1..
@@ -73,20 +70,20 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * period
     * start ^short = "วันขึ้นทะเบียนบัตรผู้พิการ"
     * end ^short = "วันหมดอายุบัตรผู้พิการ"
-* identifier[hn] ^short = "เลขที่ผู้ป่วยนอก (HN)"
-* identifier[hn] ^comment = "เลขทะเบียนการมารับบริการ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
-* identifier[hn] ^patternIdentifier.type = $CS_HL7_IdentifierType#MR
+* identifier[hn] ^short = "เลขประจำตัวผู้ป่วย (HN)"
+* identifier[hn]
+  * type = $CS_HL7_IdentifierType#MR
   * system 1..
   * system obeys HN-uri
   * system ^example.label = "HN namespace"
   * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/HN"
   * value 1..
   * value obeys HN-length
-  * value ^example.label = "เลขที่ผู้ป่วยนอก (HN)"
+  * value ^example.label = "เลขประจำตัวผู้ป่วย (HN)"
   * value ^example.valueString = "123456"
-* identifier[passportNo] ^short = "เลขที่ passport"
-* identifier[passportNo] ^comment = "กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
-* identifier[passportNo] ^patternIdentifier.type = $CS_HL7_IdentifierType#PPN
+* identifier[passportNo] ^short = "เลขที่ passport กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
+* identifier[passportNo]
+  * type = $CS_HL7_IdentifierType#PPN
   * system 1..
   * system obeys Passport-uri
   * system ^comment = "กำหนดระบบข้อมูลตามรูปแบบ http://hl7.org/fhir/sid/passport-[XXX] โดย [XXX] คือ รหัสประเทศสามตัวอักษร (alpha-3) ตามมาตรฐาน ISO 3166"
@@ -97,15 +94,20 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * value ^example.valueString = "AA123456"
 * identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน"
 * identifier[workPermit] ^comment = "กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
-* identifier[workPermit] ^patternIdentifier.type = $CS_HL7_IdentifierType#WP
+* identifier[workPermit]
+  * type = $CS_HL7_IdentifierType#WP
   * system 1..
   * system = $ID_ThaiWorkPermit (exactly)
   * value 1..
   * value obeys WP-length
   * value ^example.label = "เลขที่ใบอนุญาตทำงาน"
   * value ^example.valueString = "1234567890123"
+
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
+* name.prefix
+  * extension contains $EX_TH_HumanNamePrefixCode named prefixCode 0..1
+  * extension[prefixCode] ^short = "รหัสคำนำหน้าชื่อ"
 * name ^slicing.discriminator[0].type = #value
 * name ^slicing.discriminator[=].path = "extension.value[x]"
 * name ^slicing.rules = #open
@@ -113,35 +115,21 @@ Description: "ข้อมูลทั่วไปของประชาชน
     thai 0..* MS and
     english 0..*
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-  * extension ^slicing.discriminator[0].type = #value
-  * extension ^slicing.discriminator[=].path = "url"
-  * extension ^slicing.rules = #open
-  * extension ^min = 0
   * extension contains $EX_HL7_Language named language 1..1 MS
-  * extension[language] ^short = "ภาษา"  
-  * extension[language] ^min = 1
-  * extension[language] ^max = "1"
   * extension[language].valueCode = #th (exactly)
   * family MS
-  * family ^short = "ชื่อ ภาษาไทย"
+  * family ^short = "นามสกุล ภาษาไทย"
   * given MS
-  * given ^short = "นามสกุล ภาษาไทย"
+  * given ^short = "ชื่อ ภาษาไทย"
   * prefix MS
   * prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-  * extension ^slicing.discriminator[0].type = #value
-  * extension ^slicing.discriminator[=].path = "url"
-  * extension ^slicing.rules = #open
-  * extension ^min = 0
-  * extension contains $EX_HL7_Language named language 1..1 MS
-  * extension[language] ^short = "ภาษา"  
-  * extension[language] ^min = 1
-  * extension[language] ^max = "1"
+  * extension contains $EX_HL7_Language named language 1..1
   * extension[language].valueCode = #en (exactly)
   * family MS
-  * family ^short = "ชื่อ ภาษาอังกฤษ"
+  * family ^short = "นามสกุล ภาษาอังกฤษ"
   * given MS
-  * given ^short = "นามสกุล ภาษาอังกฤษ"
+  * given ^short = "ชื่อ ภาษาอังกฤษ"
   * prefix MS
   * prefix ^short = "คำนำหน้า ภาษาอังกฤษ"
 * telecom MS
@@ -171,30 +159,27 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * address ^slicing.discriminator[0].type = #value
 * address ^slicing.discriminator[=].path = "type"
 * address ^slicing.rules = #open
-  * extension ^slicing.discriminator[0].type = #value
-  * extension ^slicing.discriminator[=].path = "url"
-  * extension ^slicing.rules = #open
   * extension contains
     $EX_TH_AddressDopaCode named addressCode 0..1 MS and
-    $EX_TH_AddressStructuredLine named structureLine 0..1 MS and
+    $EX_TH_AddressStructuredLine named structuredLine 0..1 MS and
     $EX_TH_AddressHomeReference named locationRef 0..1 MS and
     $EX_TH_AddressHouseType named houseType 0..1 MS
   * extension[addressCode] ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
-  * extension[structureLine] ^short = "รายละเอียดที่อยู่"
+  * extension[structuredLine] ^short = "รายละเอียดที่อยู่"
   * extension[locationRef] ^short = "อ้่างอิงไปยัง Location resource ที่เก็บข้อมูลบ้าน"
   * extension[houseType] ^short = "ลักษณะของที่อยู่"
   * type MS
-// * address contains
-//     postal 0..* MS and
-//     physical 0..* MS
-// * address[postal] ^short = "ที่อยู่ตามทะเบียนบ้าน"
-// * address[postal].type = #postal (exactly)
-// * address[physical] ^short = "ที่อยู่ที่ติดต่อได้"
-// * address[physical].type = #physical (exactly)
+  * type ^short = "ที่อยู่ตามทะเบียนบ้านใช้รหัส \"postal\" ที่อยู่ติดต่อได้ ใช้รหัส \"physical\""
 * maritalStatus MS
 * maritalStatus ^short = "สถานะสมรส"
-* generalPractitioner.display MS
-* generalPractitioner.display ^short = "ชื่อ แพทย์, เจ้าหน้าที่ ที่รักษาประจำหรือบ่อยๆ"
-* managingOrganization MS
+* maritalStatus.coding ^slicing.discriminator[0].type = #pattern
+* maritalStatus.coding ^slicing.discriminator[=].path = "system"
+* maritalStatus.coding ^slicing.rules = #open
+* maritalStatus.coding contains
+    thcc 0..1 and
+    hl7 0..1
+* maritalStatus.coding[thcc] from $VS_THCC_Marital (extensible)
+* maritalStatus.coding[hl7] from $VS_HL7_MaritalStatus (extensible)
+* generalPractitioner ^short = "แพทย์ประจำตัว"
 * managingOrganization ^short = "สถานพยาบาลปฐมภูมิของบุคคล"
 
