@@ -4,7 +4,7 @@
 //   * valueCodeableConcept = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
 Extension: EX_TH_ServiceRequestReferOutcome
 Id: ex-servicerequest-refer-outcome
-Title: "Ext ServiceRequest: Refer Outcome"
+Title: "ServiceRequest: Refer Outcome"
 Description: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
 * ^url = $EX_TH_ServiceRequestReferOutcome
 * ^version = "4.3.0"
@@ -39,7 +39,7 @@ Description: "รหัสผลการส่งต่อไปรับบร
 //     * valueReference.display = "แผนกเวชศาสตร์ฉุกเฉิน"
 Extension: EX_TH_ServiceRequestReferRequesterDetail
 Id: ex-servicerequest-refer-requester-detail
-Title: "Ext ServiceRequest: Refer Requester Detail"
+Title: "ServiceRequest: Refer Requester Detail"
 Description: "สถานพยาบาล และแผนกที่ส่งต่อผู้ป่วย (ต้นทาง)"
 * ^url = $EX_TH_ServiceRequestReferRequesterDetail
 * ^version = "4.3.0"
@@ -77,7 +77,7 @@ Description: "สถานพยาบาล และแผนกที่ส�
 //   * valueCodeableConcept = $CS_Std15_ReferStatus#A "Accepted"
 Extension: EX_TH_ServiceRequestReferStatus
 Id: ex-servicerequest-refer-status
-Title: "Ext ServiceRequest: Refer Status"
+Title: "ServiceRequest: Refer Status"
 Description: "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
 * ^url = $EX_TH_ServiceRequestReferStatus
 * ^version = "4.3.0"
@@ -103,7 +103,7 @@ Description: "รหัสสถานะของการอ้างอิง
 //   * valuePeriod.end = "2021-04-30T12:30:02+07:00"
 Extension: EX_TH_ServiceRequestReferRequestedPeriod
 Id: ex-servicerequest-refer-requested-period
-Title: "Ext ServiceRequest: Refer Requested Period"
+Title: "ServiceRequest: Refer Requested Period"
 Description: "วันที่กำหนดสิ้นสุดการตอบรับ หรือปฎิเสธ"
 * ^url = $EX_TH_ServiceRequestReferRequestedPeriod
 * ^version = "4.3.0"
@@ -129,7 +129,7 @@ Description: "วันที่กำหนดสิ้นสุดการต
 //   * valueCodeableConcept = $CS_Std15_ReferAnswerType#1 "Accepted"
 Extension: EX_TH_ServiceRequestReferAnswerType
 Id: ex-servicerequest-refer-answer-type
-Title: "Ext ServiceRequest: Refer Answer Type"
+Title: "ServiceRequest: Refer Answer Type"
 Description: "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
 * ^url = $EX_TH_ServiceRequestReferAnswerType
 * ^version = "4.3.0"
@@ -159,7 +159,7 @@ Description: "รหัสประเภทการตอบรับหรื
 //       * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
 Extension: EX_TH_ServiceRequestThaiReferPriority
 Id: ex-servicerequest-thai-refer-priority
-Title: "Ext ServiceRequest: Thai Refer Priority"
+Title: "ServiceRequest: Thai Refer Priority"
 Description: "รหัสระดับความเร่งด่วน"
 * ^url = $EX_TH_ServiceRequestThaiReferPriority
 * ^version = "4.3.0"
@@ -189,7 +189,7 @@ Description: "รหัสระดับความเร่งด่วน"
 //   * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 Extension: EX_TH_ServiceRequestReferPriorityCode
 Id: ex-servicerequest-refer-priority-code
-Title: "Ext ServiceRequest: Refer Priority Code"
+Title: "ServiceRequest: Refer Priority Code"
 Description: "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
 * ^url = $EX_TH_ServiceRequestReferPriorityCode
 * ^version = "4.3.0"
@@ -215,7 +215,7 @@ Description: "รหัสข้อบ่งชี้ของกรณีฉุ
 //   * valueCodeableConcept = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 Extension: EX_TH_ServiceRequestEclaimReferType
 Id: ex-servicerequest-refer-type-eclaim
-Title: "Ext ServiceRequest: E-claim Refer Type"
+Title: "ServiceRequest: E-claim Refer Type"
 Description: "รหัสสาเหตุการส่งต่อผู้ป่วย"
 * ^url = $EX_TH_ServiceRequestEclaimReferType
 * ^version = "4.3.0"
@@ -242,7 +242,7 @@ Description: "รหัสสาเหตุการส่งต่อผู้
 //   * valueCodeableConcept = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
 Extension: EX_TH_ServiceRequestSpecialDiseaseRefer
 Id: ex-servicerequest-refer-special-disease
-Title: "Ext ServiceRequest: Special Disease Refer"
+Title: "ServiceRequest: Special Disease Refer"
 Description: "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
 * ^url = $EX_TH_ServiceRequestSpecialDiseaseRefer
 * ^version = "4.3.0"

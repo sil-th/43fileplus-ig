@@ -4,7 +4,7 @@
 //   * valueReference = Reference(Patient/patient-patient1)
 Extension: EX_TH_LocationHouseOwner
 Id: ex-location-house-owner
-Title: "Ext Location: House Owner"
+Title: "Location: House Owner"
 Description: "รหัส เจ้าบ้าน"
 * ^url = $EX_TH_LocationHouseOwner
 * ^version = "4.3.0"
@@ -29,7 +29,7 @@ Description: "รหัส เจ้าบ้าน"
 //   * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
 Extension: EX_TH_LocationResponsibleVolunteer
 Id: ex-location-responsible-volunteer
-Title: "Ext Location: Responsible Volunteer"
+Title: "Location: Responsible Volunteer"
 Description: "รหัส อสม."
 * ^url = $EX_TH_LocationResponsibleVolunteer
 * ^version = "4.3.0"
@@ -54,7 +54,7 @@ Description: "รหัส อสม."
 //   * valueInteger = 1
 Extension: EX_TH_LocationHouseholdCount
 Id: ex-location-household-count
-Title: "Ext Location: Household Count"
+Title: "Location: Household Count"
 Description: "จำนวนครอบครัว"
 * ^url = $EX_TH_LocationHouseholdCount
 * ^version = "4.3.0"
@@ -79,7 +79,7 @@ Description: "จำนวนครอบครัว"
 //   * valueCodeableConcept = $CS_THCC_InMunicipality#1 "ในเขตเทศบาล"
 Extension: EX_TH_LocationInMunicipality
 Id: ex-location-in-municipality
-Title: "Ext Location: In Municipality"
+Title: "Location: In Municipality"
 Description: "ที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
 * ^url = $EX_TH_LocationInMunicipality
 * ^version = "4.3.0"
@@ -105,7 +105,7 @@ Description: "ที่ตั้ง อยู่ในหรือนอกเ�
 //   * valueCodeableConcept = $CS_PCU_VillageArea#1 "เทศบาล"
 Extension: EX_TH_LocationVillageArea
 Id: ex-location-village-area
-Title: "Ext Location: Village Area"
+Title: "Location: Village Area"
 Description: "เขตที่ตั้ง อยู่ในหรือนอกเขตเทศบาล"
 * ^url = $EX_TH_LocationVillageArea
 * ^version = "4.3.0"
@@ -131,7 +131,7 @@ Description: "เขตที่ตั้ง อยู่ในหรือน�
 //   * valueReference = Reference(Organization/organization-main)
 Extension: EX_TH_LocationVillageMainHospital
 Id: ex-location-village-main-hospital
-Title: "Ext Location: Village Main Hospital"
+Title: "Location: Village Main Hospital"
 Description: "โรงพยาบาลหลัก"
 * ^url = $EX_TH_LocationVillageMainHospital
 * ^version = "4.3.0"
@@ -156,7 +156,7 @@ Description: "โรงพยาบาลหลัก"
 //   * valueDate = "2022-07-01"
 Extension: EX_TH_LocationVillageUnlistDate
 Id: ex-location-village-unlist-date
-Title: "Ext Location: Village Unlist Date"
+Title: "Location: Village Unlist Date"
 Description: "วันที่แยกชุมชนออกนอกเขต"
 * ^url = $EX_TH_LocationVillageUnlistDate
 * ^version = "4.3.0"

@@ -4,7 +4,7 @@
 //   * valueCodeableConcept = $CS_43Plus_MedDelivery#1 "รับที่ counter ยา"
 Extension: EX_TH_MedicationDispenseDeliveryMode
 Id: ex-medicationdispense-med-delivery-mode
-Title: "Ext MedicationDispense: Delivery Mode"
+Title: "MedicationDispense: Delivery Mode"
 Description: "การส่งมอบยา (กรณีจ่ายไปใช้ที่บ้าน)"
 * ^url = $EX_TH_MedicationDispenseDeliveryMode
 * ^version = "4.3.0"

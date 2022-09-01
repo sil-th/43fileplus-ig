@@ -4,7 +4,7 @@
 //   * valueUri = "http://example.com/image1.jpg"
 Extension: EX_TH_MedicationImageUrl
 Id: ex-medication-image-url
-Title: "Ext Medication: Image URL"
+Title: "Medication: Image URL"
 Description: "URL ของรูปถ่ายยา"
 * ^url = $EX_TH_MedicationImageUrl
 * ^version = "4.3.0"

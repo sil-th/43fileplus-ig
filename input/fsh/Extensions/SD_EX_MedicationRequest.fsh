@@ -4,7 +4,7 @@
 //   * valueCodeableConcept = $CS_Std15_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 Extension: EX_TH_MedicationRequestSource
 Id: ex-medicationrequest-medication-source
-Title: "Ext MedicationRequest: Medication Source"
+Title: "MedicationRequest: Medication Source"
 Description: "รหัสประเภทยาที่ใช้ปัจจุบัน"
 * ^url = $EX_TH_MedicationRequestSource
 * ^version = "4.3.0"
@@ -31,7 +31,7 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 //   * valueCodeableConcept = $CS_eClaim_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
 Extension: EX_TH_MedicationRequestOutNLEM
 Id: ex-medicationrequest-out-nlem
-Title: "Ext MedicationRequest: Out of NLEM Reason"
+Title: "MedicationRequest: Out of NLEM Reason"
 Description: "เหตุผลการใช้ยานอกบัญชียาหลัก"
 * ^url = $EX_TH_MedicationRequestOutNLEM
 * ^version = "4.3.0"
@@ -58,7 +58,7 @@ Description: "เหตุผลการใช้ยานอกบัญชี
 //   * valueString = "ApprovedNumber"
 Extension: EX_TH_MedicationRequestApprovedNo
 Id: ex-medicationrequest-med-approved-no
-Title: "Ext MedicationRequest: Med Approve Number"
+Title: "MedicationRequest: Med Approve Number"
 Description: "เลขที่ได้รับการอนุมัติ จากระบบขออนุมัติใช้ยาควบคุมเฉพาะ"
 * ^url = $EX_TH_MedicationRequestApprovedNo
 * ^version = "4.3.0"

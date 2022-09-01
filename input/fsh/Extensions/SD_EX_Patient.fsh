@@ -7,7 +7,7 @@
 
 Extension: EX_TH_PatientRace
 Id: ex-patient-race
-Title: "Ext Patient: Race"
+Title: "Patient: Race"
 Description: "เชื้อชาติของบุคคล"
 * ^url = $EX_TH_PatientRace
 * ^version = "4.3.0"
@@ -34,7 +34,7 @@ Description: "เชื้อชาติของบุคคล"
 //     * text = "ปริญญาตรี"
 Extension: EX_TH_PatientEducationLevel
 Id: ex-patient-education-level
-Title: "Ext Patient: Education Level"
+Title: "Patient: Education Level"
 Description: "ระดับการศึกษา"
 * ^url = $EX_TH_PatientEducationLevel
 * ^version = "4.3.0"
@@ -60,7 +60,7 @@ Description: "ระดับการศึกษา"
   //   * text = "มีชื่ออยู่ตามทะเบียนบ้านในเขตรับผิดชอบและอยู่จริง"
 Extension: EX_TH_PatientPersonStatus
 Id: ex-patient-person-status
-Title: "Ext Patient: Person Status"
+Title: "Patient: Person Status"
 Description: "สถานะบุคคล"
 * ^url = $EX_TH_PatientPersonStatus
 * ^version = "4.3.0"
@@ -85,7 +85,7 @@ Description: "สถานะบุคคล"
 //     * text = "ประชากรต่างด้าวที่เป็นนักท่องเที่ยวเข้าเมืองโดยถูกต้องตามกฎหมาย"
 Extension: EX_TH_PatientForeignerType
 Id: ex-patient-foreigner-type
-Title: "Ext Patient: Foreigner Type"
+Title: "Patient: Foreigner Type"
 Description: "รหัสความเป็นคนต่างด้าว"
 * ^url = $EX_TH_PatientForeignerType
 * ^version = "4.3.0"
@@ -112,7 +112,7 @@ Description: "รหัสความเป็นคนต่างด้าว
 //     * text = "ตาย"
 Extension: EX_TH_PatientPidRemoveReason
 Id: ex-patient-pid-remove-reason
-Title: "Ext Patient: PID Remove Reason"
+Title: "Patient: PID Remove Reason"
 Description: "สถานะ/สาเหตุการจำหน่าย"
 * ^url = $EX_TH_PatientPidRemoveReason
 * ^version = "4.3.0"

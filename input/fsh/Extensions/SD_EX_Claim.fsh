@@ -10,7 +10,7 @@
 //         * currency = $ISO4217#THB
 Extension: EX_TH_ClaimItemCost
 Id: ex-claim-item-cost
-Title: "Ext Claim: Item Cost"
+Title: "Claim: Item Cost"
 Description: "ราคาทุนของรายการนั้น"
 * ^url = $EX_TH_ClaimItemCost
 * ^version = "4.3.0"
@@ -45,7 +45,7 @@ Description: "ราคาทุนของรายการนั้น"
 //         * currency = $ISO4217#THB
 Extension: EX_TH_ClaimItemCopay
 Id: ex-claim-item-copay
-Title: "Ext Claim: Item Co-pay"
+Title: "Claim: Item Co-pay"
 Description: "ค่าบริการที่ต้องจ่าย ของรายการนั้น"
 * ^url = $EX_TH_ClaimItemCopay
 * ^version = "4.3.0"
@@ -71,7 +71,7 @@ Description: "ค่าบริการที่ต้องจ่าย ข�
 // Alias: $EX_TH_ClaimItemPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-actual-self-pay
 Extension: EX_TH_ClaimItemPaid
 Id: ex-claim-item-paid
-Title: "Ext Claim: Item Paid"
+Title: "Claim: Item Paid"
 Description: "ค่าบริการที่ได้จ่ายไปแล้ว ของรายการนั้น"
 * ^url = $EX_TH_ClaimItemPaid
 * ^version = "4.3.0"
@@ -97,7 +97,7 @@ Description: "ค่าบริการที่ได้จ่ายไปแ
 // Alias: $EX_TH_ClaimItemUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-unpaid
 Extension: EX_TH_ClaimItemUnpaid
 Id: ex-claim-item-unpaid
-Title: "Ext Claim: Item Unpaid"
+Title: "Claim: Item Unpaid"
 Description: "ค่าบริการที่ยังไม่ได้จ่าย ของรายการนั้น"
 * ^url = $EX_TH_ClaimItemUnpaid
 * ^version = "4.3.0"
@@ -129,7 +129,7 @@ Description: "ค่าบริการที่ยังไม่ได้จ
 //     * currency = $ISO4217#THB
 Extension: EX_TH_ClaimTotalCost
 Id: ex-claim-total-cost
-Title: "Ext Claim: Total Cost"
+Title: "Claim: Total Cost"
 Description: "ราคาทุน ทั้งหมด"
 * ^url = $EX_TH_ClaimTotalCost
 * ^version = "4.3.0"
@@ -159,7 +159,7 @@ Description: "ราคาทุน ทั้งหมด"
 //     * currency = $ISO4217#THB
 Extension: EX_TH_ClaimTotalCopay
 Id: ex-claim-total-copay
-Title: "Ext Claim: Total Co-pay"
+Title: "Claim: Total Co-pay"
 Description: "ราคาร่วมจ่าย ทั้งหมด"
 * ^url = $EX_TH_ClaimTotalCopay
 * ^version = "4.3.0"
@@ -189,7 +189,7 @@ Description: "ราคาร่วมจ่าย ทั้งหมด"
 //     * currency = $ISO4217#THB
 Extension: EX_TH_ClaimTotalPaid
 Id: ex-claim-total-paid
-Title: "Ext Claim: Total Paid"
+Title: "Claim: Total Paid"
 Description: "จำนวนเงินที่ได้จ่ายไปแล้ว"
 * ^url = $EX_TH_ClaimTotalPaid
 * ^version = "4.3.0"
@@ -219,7 +219,7 @@ Description: "จำนวนเงินที่ได้จ่ายไปแ
 //     * currency = $ISO4217#THB
 Extension: EX_TH_ClaimTotalUnpaid
 Id: ex-claim-total-unpaid
-Title: "Ext Claim: Total Unpaid"
+Title: "Claim: Total Unpaid"
 Description: "จำนวนเงินที่ยังไม่จ่าย"
 * ^url = $EX_TH_ClaimTotalUnpaid
 * ^version = "4.3.0"
@@ -248,7 +248,7 @@ Description: "จำนวนเงินที่ยังไม่จ่าย
 //     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 Extension: EX_TH_ClaimFeeNote
 Id: ex-claim-fee-note
-Title: "Ext Claim: Fee Note"
+Title: "Claim: Fee Note"
 Description: "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * ^url = $EX_TH_ClaimFeeNote
 * ^version = "4.3.0"
@@ -293,7 +293,7 @@ Description: "รายละเอียดค่าบริการและ
 //     * valueString = "XXXX"
 Extension: EX_TH_ClaimIpdDRG
 Id: ex-claim-ipd-drg
-Title: "Ext Claim: IPD DRG"
+Title: "Claim: IPD DRG"
 Description: "ข้อมูลเกี่ยวกับ DRG"
 * ^url = $EX_TH_ClaimIpdDRG
 * ^version = "4.3.0"

@@ -8,7 +8,7 @@
 //       * text = "นาย"
 Extension: EX_TH_HumanNamePrefixCode
 Id: ex-humanname-name-prefix
-Title: "Ext HumanName: Name Prefix Code"
+Title: "HumanName: Name Prefix Code"
 Description: "รหัสคำนำหน้าชื่อ"
 * ^url = $EX_TH_HumanNamePrefixCode
 * ^version = "4.3.0"
@@ -38,7 +38,7 @@ Description: "รหัสคำนำหน้าชื่อ"
 
 Extension: EX_TH_AddressDopaCode
 Id: ex-address-address-code
-Title: "Ext Address: DOPA address code"
+Title: "Address: DOPA address code"
 Description: "รหัสที่อยู่ ตามกรมการปกครอง"
 * ^url = $EX_TH_AddressDopaCode
 * ^version = "4.3.0"
@@ -80,7 +80,7 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 
 Extension: EX_TH_AddressStructuredLine
 Id: ex-address-structured-line
-Title: "Ext Address: Structured Address Line"
+Title: "Address: Structured Address Line"
 Description: "ที่อยู่ แบบแยกข้อมูลย่อย"
 * ^url = $EX_TH_AddressStructuredLine
 * ^version = "4.3.0"
@@ -144,7 +144,7 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
 // Alias: $EX_TH_AddressHomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
 Extension: EX_TH_AddressHomeReference
 Id: ex-address-home-reference
-Title: "Ext Address: Reference to Home"
+Title: "Address: Reference to Home"
 Description: "การอ้างอิง Location resource"
 * ^url = $EX_TH_AddressHomeReference
 * ^version = "4.3.0"
@@ -170,7 +170,7 @@ Description: "การอ้างอิง Location resource"
 
 Extension: EX_TH_AddressHouseType
 Id: ex-address-house-type
-Title: "Ext Address: House Type"
+Title: "Address: House Type"
 Description: "ลักษณะของที่อยู่"
 * ^url = $EX_TH_AddressHouseType
 * ^version = "4.3.0"

@@ -8,7 +8,7 @@
 //         * text = "แพทยสภา"
 Extension: EX_TH_PractitionerQualificationIssuer
 Id: ex-practitioner-qualification-issuer
-Title: "Ext Practitioner: Qualification Issuer"
+Title: "Practitioner: Qualification Issuer"
 Description: "รหัสสภาวิชาชีพ"
 * ^url = $EX_TH_PractitionerQualificationIssuer
 * ^version = "4.3.0"

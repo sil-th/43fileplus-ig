@@ -5,7 +5,7 @@
 //     * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
 Extension: EX_TH_ConditionDisabilityType
 Id: ex-condition-disability-type
-Title: "Ext Condition: Disability Type"
+Title: "Condition: Disability Type"
 Description: "ประเภทความพิการ"
 * ^url = $EX_TH_ConditionDisabilityType
 * ^version = "4.3.0"
@@ -28,7 +28,7 @@ Description: "ประเภทความพิการ"
 //   * valueBoolean = true
 Extension: EX_TH_ConditionIsChronic
 Id: ex-condition-is-chronic
-Title: "Ext Condition: Is Chronic"
+Title: "Condition: Is Chronic"
 Description: "สภาวะการป่วยต่อเนื่อง"
 * ^url = $EX_TH_ConditionIsChronic
 * ^version = "4.3.0"

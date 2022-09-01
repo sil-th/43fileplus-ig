@@ -5,7 +5,7 @@
 //     * valueQuantity = 1 '{#}' "Number"
 Extension: EX_TH_ObservationDeviceAmount
 Id: ex-observation-device-amount
-Title: "Ext Observation: Device Amount"
+Title: "Observation: Device Amount"
 Description: "จำนวนชิ้นของอุปกรณ์ที่ใช้ในการตรวจ"
 * ^url = $EX_TH_ObservationDeviceAmount
 * ^version = "4.3.0"

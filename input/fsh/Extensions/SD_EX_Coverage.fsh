@@ -13,7 +13,7 @@
 
 Extension: EX_TH_CoverageContractedProvider
 Id: ex-coverage-contracted-provider
-Title: "Ext Coverage: Contracted Provider"
+Title: "Coverage: Contracted Provider"
 Description: "สถานพยาบาลคู่สัญญา"
 * ^url = $EX_TH_CoverageContractedProvider
 * ^version = "4.3.0"

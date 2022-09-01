@@ -4,7 +4,7 @@
 //   * valueCodeableConcept = $CS_eClaim_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"
 Extension: EX_TH_AccountAccidentCoverage
 Id: ex-account-accident-coverage
-Title: "Ext Account: Accident Coverage"
+Title: "Account: Accident Coverage"
 Description: "รหัสสิทธิการรักษาอื่นกรณีอุบัติเหตุ"
 * ^url = $EX_TH_AccountAccidentCoverage
 * ^version = "4.3.0"

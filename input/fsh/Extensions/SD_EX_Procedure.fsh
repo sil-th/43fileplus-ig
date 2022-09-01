@@ -6,7 +6,7 @@
 //   * display = "OPD GP Clinic 1 โรงพยาบาลตัวอย่าง"
 Extension: EX_TH_ProcedureLaborLocation
 Id: ex-procedure-labor-location
-Title: "Ext Procedure: Labor Location"
+Title: "Procedure: Labor Location"
 Description: "รหัสสถานที่คลอด"
 * ^url = $EX_TH_ProcedureLaborLocation
 * ^version = "4.3.0"
@@ -34,7 +34,7 @@ Description: "รหัสสถานที่คลอด"
 //   * valueCodeableConcept = $CS_eClaim_ProcedureType#1 "Principal procedure"
 Extension: EX_TH_ProcedureProcedureType
 Id: ex-procedure-procedure-type
-Title: "Ext Procedure: Procedure Type"
+Title: "Procedure: Procedure Type"
 Description: "รหัสชนิดของหัตถการ"
 * ^url = $EX_TH_ProcedureProcedureType
 * ^version = "4.3.0"

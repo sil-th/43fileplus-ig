@@ -5,7 +5,7 @@
 //     * coding[0] = $CS_THCC_AllergyCertainty#1 "certain"
 Extension: EX_TH_AllergyIntoleranceCertainy
 Id: ex-allergyintolerance-allergy-certainy
-Title: "Ext AllergyIntolerance: Certainty"
+Title: "AllergyIntolerance: Certainty"
 Description: "รหัสประเภทการวินิจฉัยการแพ้ยา"
 * ^url = $EX_TH_AllergyIntoleranceCertainy
 * ^version = "4.3.0"
@@ -34,7 +34,7 @@ Description: "รหัสประเภทการวินิจฉัยก
 //     * coding[0] = $CS_THCC_AllergySeverity#1 "ไม่ร้ายแรง (Non-serious)"
 Extension: EX_TH_AllergyIntoleranceSeverity
 Id: ex-allergyintolerance-allergy-severity
-Title: "Ext AllergyIntolerance: Severity"
+Title: "AllergyIntolerance: Severity"
 Description: "รหัสระดับความรุนแรงของการแพ้ยา"
 * ^url = $EX_TH_AllergyIntoleranceSeverity
 * ^version = "4.3.0"
@@ -63,7 +63,7 @@ Description: "รหัสระดับความรุนแรงของ
 //     * coding[0] = $CS_THCC_AllergyAssertType#3 "สถานพยาบาลอื่นเป็นผู้ให้ข้อมูล"
 Extension: EX_TH_AllergyIntoleranceAssertType
 Id: ex-allergyintolerance-allergy-assert-type
-Title: "Ext AllergyIntolerance: Asserter Type"
+Title: "AllergyIntolerance: Asserter Type"
 Description: "รหัสผู้ให้ประวัติการแพ้ยา"
 * ^url = $EX_TH_AllergyIntoleranceAssertType
 * ^version = "4.3.0"
@@ -91,7 +91,7 @@ Description: "รหัสผู้ให้ประวัติการแพ
 //   * valueReference = Reference(Organization/organization-main)
 Extension: EX_TH_AllergyIntoleranceAssertOrg
 Id: ex-allergyintolerance-allergy-assert-org
-Title: "Ext AllergyIntolerance: Asserter Organization"
+Title: "AllergyIntolerance: Asserter Organization"
 Description: "รหัสสถานพยาบาลผู้ให้ประวัติการแพ้ยา"
 * ^url = $EX_TH_AllergyIntoleranceAssertOrg
 * ^version = "4.3.0"

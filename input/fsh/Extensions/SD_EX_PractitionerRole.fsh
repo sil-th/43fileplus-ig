@@ -14,7 +14,7 @@
 //     * valueReference = Reference(Organization/organization-main) "โรงพยาบาลตัวอย่าง"
 Extension: EX_TH_PractitionerRoleProviderMovement
 Id: ex-practitionerrole-provider-move
-Title: "Ext PractitionerRole: Provider Movement"
+Title: "PractitionerRole: Provider Movement"
 Description: "ข้อมูลการย้ายสถานพยาบาล"
 * ^url = $EX_TH_PractitionerRoleProviderMovement
 * ^version = "4.3.0"

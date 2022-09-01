@@ -4,7 +4,7 @@
 //   * valueCodeableConcept = $CS_eClaim_MedicationCategory#2 "ใช้ที่บ้าน"
 Extension: EX_TH_DeviceRequestUseLocation
 Id: ex-devicerequest-use-location
-Title: "Ext DeviceRequest: Product Use Location"
+Title: "DeviceRequest: Product Use Location"
 Description: "รหัสหมวดสถานที่ใช้ยา/เวชภัณฑ์"
 * ^url = $EX_TH_DeviceRequestUseLocation
 * ^version = "4.3.0"

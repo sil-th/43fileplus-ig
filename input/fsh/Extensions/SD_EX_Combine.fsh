@@ -13,7 +13,7 @@
 //     * text = "โรคอยู่ในภาวะสงบ(inactive)ไม่มีความจำเป็นต้องรักษา"
 Extension: EX_TH_ConditionChronicDischargeReason
 Id: ex-condition-chronic-discharge-reason
-Title: "Ext Condition: Chronic Case Discharge Reason"
+Title: "Condition: Chronic Case Discharge Reason"
 Description: "ประเภทการจำหน่าย chronic case"
 * ^url = $EX_TH_ConditionChronicDischargeReason
 * ^version = "4.3.0"
