@@ -1,9 +1,9 @@
-Profile: Moph43pObservationAccSeatbelt
+Profile: Moph43pObservationNcdGlucose
 Parent: Observation
-Id: moph43p-observation-accident-seatbelt
-Title: "MoPH43p Observation: Accident-Seatbelt"
-Description: "การคาดเข็มขัดนิรภัย"
-* ^url = $SD_Observation_AccidentSeatbelt
+Id: moph43p-observation-ncd-glucose
+Title: "MoPH43p Observation: NCD Glucose"
+Description: "ประวัติน้ำตาลในเลือดสูง"
+* ^url = $SD_Observation_NcdGlucose
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -24,18 +24,33 @@ Description: "การคาดเข็มขัดนิรภัย"
 * code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    thcc 1..1 MS
-* code.coding[thcc] from $VS_Meta_AccidentObs (extensible)
-* code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_Meta_AccidentObs (exactly)
-* code.coding[thcc].code 1..
-* code.coding[thcc].code = #seatbelt (exactly)
+    snomed 1..1 MS
+* code.coding[snomed] ^short = "รหัสมาตรฐาน SNOMED"
+* code.coding[snomed].system 1..
+* code.coding[snomed].system = $SCT (exactly)
+* code.coding[snomed].code 1..
+* code.coding[snomed].code = #444780001 (exactly) //High glucose level in blood
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
+* effective[x] only dateTime
+* effective[x] ^slicing.discriminator[0].type = #type
+* effective[x] ^slicing.discriminator[=].path = "$this"
+* effective[x] ^slicing.rules = #open
+* effective[x] contains
+    effectiveDateTime 1..1 MS
+* effective[effectiveDateTime] 
+* effectiveDateTime only dateTime
+* effectiveDateTime ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
+* effectiveDateTime MS
 * value[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* value[x] ^slicing.discriminator[0].type = #type
+* value[x] ^slicing.discriminator[=].path = "$this"
+* value[x] ^slicing.rules = #open
+* value[x] contains
+    valueCodeableConcept 1..1 MS
+* valueCodeableConcept only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open

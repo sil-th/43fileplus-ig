@@ -45,6 +45,12 @@ Alias: $VS_SNOMEDCT_FormCodes = http://hl7.org/fhir/ValueSet/medication-form-cod
 // Main File List
 Alias: $VS_TH_FileList = https://terms.sil-th.org/ValueSet/vs-th-file-list
 
+// Observation List
+Alias: $VS_Meta_NCD = http://terms.sil-th.org/ValueSet/vs-meta-ncd
+Alias: $VS_Meta_Pregnancy = http://terms.sil-th.org/ValueSet/vs-meta-pregnancy
+Alias: $VS_Meta_Neonate = http://terms.sil-th.org/ValueSet/vs-meta-neonate
+Alias: $VS_Meta_ChildDevelopment = http://terms.sil-th.org/ValueSet/vs-meta-child-development
+
 // Demographic
 Alias: $VS_THCC_Marital = https://terms.sil-th.org/ValueSet/vs-thcc-marital
 Alias: $VS_THCC_Religion = https://terms.sil-th.org/ValueSet/vs-thcc-religion

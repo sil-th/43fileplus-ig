@@ -39,7 +39,7 @@ Alias: $SD_Observation_AccidentType = https://fhir-ig.sil-th.org/43filesplus/Str
 Alias: $SD_Observation_AccidentVehicle = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-accident-vehicle
 Alias: $SD_Observation_CauseOfDeath = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-cause-of-death
 Alias: $SD_Observation_CommunityStatus = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-community-status
-Alias: $SD_Observation_Lab = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab
+Alias: $SD_Observation_Lab = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-base
 Alias: $SD_Observation_LabBloodAbo = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-blood-abo
 Alias: $SD_Observation_LabBloodgroup = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-bloodgroup
 Alias: $SD_Observation_LabBloodRh = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-blood-rh
@@ -65,7 +65,9 @@ Alias: $SD_Observation_PregLiveDeliveries = https://fhir-ig.sil-th.org/43filespl
 Alias: $SD_Observation_PregLmp = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-last-menstrual-period
 Alias: $SD_Observation_PregParity = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-parity
 Alias: $SD_Observation_PregStillbirths = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-stillbirths
-Alias: $SD_Observation_Vital = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital
+Alias: $SD_Observation_PregPostnatal = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-post-natal
+
+Alias: $SD_Observation_Vital = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-base
 Alias: $SD_Observation_VitalBp = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-bp
 Alias: $SD_Observation_VitalBt = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-bodytemp
 Alias: $SD_Observation_VitalBw = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-bodyweight
@@ -78,6 +80,36 @@ Alias: $SD_Observation_VitalOcC = https://fhir-ig.sil-th.org/43filesplus/Structu
 Alias: $SD_Observation_VitalPanel = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-panel
 Alias: $SD_Observation_VitalRr = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-resprate
 Alias: $SD_Observation_VitalWc = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-waist-circumference
+Alias: $SD_Observation_Ncd = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-base
+Alias: $SD_Observation_NcdAlcohol = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-alcohol
+Alias: $SD_Observation_NcdDyslipid = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-dyslipid
+Alias: $SD_Observation_NcdFamDM = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-family-dm
+Alias: $SD_Observation_NcdFamHT = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-familh-ht
+Alias: $SD_Observation_NcdFoot = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-foot
+Alias: $SD_Observation_NcdGestDM = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-gest-dm
+Alias: $SD_Observation_NcdGlucose = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-glucose
+Alias: $SD_Observation_NcdRetina = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-retina
+Alias: $SD_Observation_NcdSmoking = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-smoking
+Alias: $SD_Observation_NeonateAsphyxia = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-asphyxia
+Alias: $SD_Observation_NeonateBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-base
+Alias: $SD_Observation_NeonateDefecation = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-defecation
+Alias: $SD_Observation_NeonateFood = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-food
+Alias: $SD_Observation_NeonateGeneral = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-general
+Alias: $SD_Observation_NeonateOverall = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-overall
+Alias: $SD_Observation_NeonateSkinHygiene = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-skin-hygiene
+Alias: $SD_Observation_NeonateUmbilicalHygiene = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-umbilical-hygiene
+Alias: $SD_Observation_NeonateUrination = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-urination
+Alias: $SD_Observation_NeonateVitaminK = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-vitamink
+
+Alias: $SD_Observation_SpecialPP = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-special-pp
+Alias: $SD_Observation_ChildDevelopment = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-child-development
+Alias: $SD_Observation_Functional = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-functional
+Alias: $SD_Observation_PregnancyBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-pregnancy-base
+
+
+
+
+
 Alias: $SD_Organization_Council = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-council
 Alias: $SD_Organization_Fund = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-fund
 Alias: $SD_Organization_Provider = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-provider

@@ -1,9 +1,9 @@
-Profile: Moph43pObservationAccLocation
+Profile: Moph43pObservationNcdSmoking
 Parent: Observation
-Id: moph43p-observation-accident-location
-Title: "MoPH43p Observation: Accident-Location"
-Description: "สถานที่เกิดอุบัติเหตุ"
-* ^url = $SD_Observation_AccidentLocation
+Id: moph43p-observation-ncd-smoking
+Title: "MoPH43p Observation: NCD Smoking"
+Description: "ประวัติสูบบุหรี่"
+* ^url = $SD_Observation_NcdSmoking
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -29,19 +29,34 @@ Description: "สถานที่เกิดอุบัติเหตุ"
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #11376-1 (exactly)
+* code.coding[loinc].code = #72166-2 (exactly) //Tobacco smoking status 
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
+* effective[x] only dateTime
+* effective[x] ^slicing.discriminator[0].type = #type
+* effective[x] ^slicing.discriminator[=].path = "$this"
+* effective[x] ^slicing.rules = #open
+* effective[x] contains
+    effectiveDateTime 1..1 MS
+* effective[effectiveDateTime] 
+* effectiveDateTime only dateTime
+* effectiveDateTime ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
+* effectiveDateTime MS
 * value[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* value[x] ^slicing.discriminator[0].type = #type
+* value[x] ^slicing.discriminator[=].path = "$this"
+* value[x] ^slicing.rules = #open
+* value[x] contains
+    valueCodeableConcept 1..1 MS
+* valueCodeableConcept only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains
     thcc 0..1 MS
-* valueCodeableConcept.coding[thcc] from $VS_THCC_AccidentLocation (extensible)
+* valueCodeableConcept.coding[thcc] from $VS_THCC_NcdSmoking (extensible)
 * valueCodeableConcept.coding[thcc].system 1..
-* valueCodeableConcept.coding[thcc].system = $CS_THCC_AccidentLocation (exactly)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_NcdSmoking (exactly)
 * valueCodeableConcept.coding[thcc].code 1..

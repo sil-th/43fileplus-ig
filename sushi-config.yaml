@@ -26,6 +26,8 @@ parameters:
   apply-publisher: true
   apply-contact: true
   show-inherited-invariants: false
+  excludettl: true
+  excludemap: true
 copyrightYear: 2022+
 releaseLabel: ci-build
 

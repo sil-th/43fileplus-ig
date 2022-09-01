@@ -14,11 +14,11 @@ Description: "การห้ามเลือด"
 * category ^slicing.discriminator[+].type = #value
 * category ^slicing.discriminator[=].path = "coding.system"
 * category ^slicing.rules = #open
-* category contains Laboratory 1..1
-* category[Laboratory].coding.system 1..
-* category[Laboratory].coding.system = $CS_HL7_ObservationCat (exactly)
-* category[Laboratory].coding.code 1..
-* category[Laboratory].coding.code = #exam (exactly)
+* category contains Exam 1..1
+* category[Exam].coding.system 1..
+* category[Exam].coding.system = $CS_HL7_ObservationCat (exactly)
+* category[Exam].coding.code 1..
+* category[Exam].coding.code = #exam (exactly)
 * code MS
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"

@@ -24,12 +24,24 @@ Description: "ข้อมูลสิ่งส่งตรวจ"
 * collection MS
 * collection.collected[x] MS
 * collection.collected[x] only dateTime
-* collection.collectedDateTime ^sliceName = "collectedDateTime"
+* collection.collected[x] ^slicing.discriminator[0].type = #type
+* collection.collected[x] ^slicing.discriminator[=].path = "$this"
+* collection.collected[x] ^slicing.rules = #open
+* collection.collected[x] contains
+    collectedDateTime 1..1 MS
+* collection.collected[collectedDateTime]
+* collection.collectedDateTime only dateTime
 * collection.collectedDateTime ^short = "วัน-เวลาที่ตรวจ, วัดค่า, เก็บตัวอย่าง"
 * collection.collectedDateTime MS
 * processing MS
 * processing.time[x] MS
 * processing.time[x] only dateTime
-* processing.timeDateTime ^sliceName = "timeDateTime"
+* processing.time[x] ^slicing.discriminator[0].type = #type
+* processing.time[x] ^slicing.discriminator[=].path = "$this"
+* processing.time[x] ^slicing.rules = #open
+* processing.time[x] contains
+    timeDateTime 1..1 MS
+* processing.time[timeDateTime] 
+* processing.timeDateTime only dateTime
 * processing.timeDateTime ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * processing.timeDateTime MS
