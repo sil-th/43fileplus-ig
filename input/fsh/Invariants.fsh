@@ -89,3 +89,8 @@ Description: "Local drug code shall be https://terms.sil-th.org/hcode/5/[XXXXX]/
 Severity: #error
 Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Drug)$')"
 
+//Department
+Invariant: DEP-uri
+Description: "DEP identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/DepCode, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/DepCode)$')"

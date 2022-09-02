@@ -7,14 +7,8 @@ Description: "ข้อมูลการปฏิบัติงานผู้
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
   $EX_TH_PractitionerRoleProviderMovement named move 0..*
-* extension[move] ^short = "รหัสสถานพยาบาลที่ย้าย"
-* extension[move] ^min = 0
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"

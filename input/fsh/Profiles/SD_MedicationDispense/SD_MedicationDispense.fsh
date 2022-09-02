@@ -7,22 +7,15 @@ Description: "การจ่ายยา"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains $EX_TH_MedicationDispenseDeliveryMode named delivery 0..*
-// * extension[delivery] from $VS_THCC_MedicationDelivery (extensible)
-* extension[delivery] ^short = "delivery"
-* extension[delivery] ^min = 0
 * medication[x] 1.. MS
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
-* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains
     24-digit 0..1 MS and

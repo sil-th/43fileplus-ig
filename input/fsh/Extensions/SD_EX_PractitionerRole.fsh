@@ -38,12 +38,6 @@ Description: "ข้อมูลการย้ายสถานพยาบา
   * url = "movefrom" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)
-* extension[period] only Extension
-* extension[period] ^short = "วันที่เริ่มและ/หรือสิ้นสุดการปฏิบัติงาน"
-* extension[period] ^definition = "วันที่เริ่มและ/หรือสิ้นสุดการปฏิบัติงาน"
-  * url = "period" (exactly)
-  * value[x] 1..
-  * value[x] only Period
 * extension[moveto] only Extension
 * extension[moveto] ^short = "รหัสสถานพยาบาลที่ย้ายไป"
 * extension[moveto] ^definition = "รหัสสถานพยาบาลที่ย้ายไป"

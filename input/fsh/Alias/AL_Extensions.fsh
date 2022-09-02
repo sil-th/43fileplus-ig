@@ -3,6 +3,7 @@ Alias: $EX_HL7_Language = http://hl7.org/fhir/StructureDefinition/language
 Alias: $EX_HL7_BirthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $EX_HL7_Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $EX_HL7_Religion = http://hl7.org/fhir/StructureDefinition/patient-religion
+Alias: $EX_HL7_Disability = http://hl7.org/fhir/StructureDefinition/patient-disability
 Alias: $EX_HL7_ConditionDueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
 Alias: $EX_HL7_ConditionAssertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 Alias: $EX_HL7_Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
@@ -53,7 +54,7 @@ Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_ConditionChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-chronic-discharge-reason
 
 // Condition
-Alias: $EX_TH_ConditionDisabilityType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-disability-type
+// Alias: $EX_TH_ConditionDisabilityType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-disability-type
 Alias: $EX_TH_ConditionIsChronic = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-is-chronic
 
 // Coverage
@@ -115,7 +116,7 @@ Alias: $EX_TH_ProcedureLaborLocation = https://fhir-ig.sil-th.org/43filesplus/Ex
 Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-procedure-procedure-type
 
 // Observation
-Alias: $EX_TH_IsCurrentJob = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-is-current-job
+// Alias: $EX_TH_IsCurrentJob = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-is-current-job
 Alias: $EX_TH_ObservationDeviceAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-device-amount
 
 // MedicationRequest

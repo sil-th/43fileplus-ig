@@ -7,23 +7,13 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_ClaimTotalCost named totalCost 0..1 MS and
     $EX_TH_ClaimTotalCopay named totalCopay 0..1 MS and
     $EX_TH_ClaimTotalPaid named totalPaid 0..1 MS and
     $EX_TH_ClaimTotalUnpaid named totalUnpaid 0..1 MS and
-    $EX_TH_ClaimFeeNote named fee 0..1 MS and
+    $EX_TH_ClaimFeeNote named feeNote 0..1 MS and
     $EX_TH_ClaimIpdDRG named drg 0..1 MS
-* extension[totalCost] ^short = "TotalCost"
-* extension[totalCopay] ^short = "TotalCopay"
-* extension[totalPaid] ^short = "TotalPaid"
-* extension[totalUnpaid] ^short = "TotalUnpaid"
-* extension[fee] ^short = "FeeNote"
-* extension[drg] ^short = "DRG"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[=].path = "system"
@@ -57,3 +47,21 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * insurance MS
 * insurance.coverage only Reference($SD_Coverage)
 * insurance.coverage MS
+* item MS
+* item.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 MS and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 MS and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 MS and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1 MS
+* item.detail
+* item.detail.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
+* item.detail.subDetail 
+* item.detail.subDetail.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1

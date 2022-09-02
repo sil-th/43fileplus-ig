@@ -9,11 +9,6 @@ Usage: #example
     * coding[0] = $CS_THCC_DisabilityReason#3 "ความพิการจากโรค"
     * coding[+] = $ICD10#I63.9 "Cerebral infarction, unspecified"
     * text = "ความพิการจากโรค"
-* extension[+]
-  * url = $EX_TH_ConditionDisabilityType
-  * valueCodeableConcept
-    * coding[0] = $CS_THCC_DisabilityType#3 "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
-    * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
 * category = $CS_HL7_ConditionCategory#problem-list-item "Problem List Item"
 * severity = $SCT#6736007 "Moderate"
 * code

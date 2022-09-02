@@ -7,6 +7,17 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+  $EX_TH_AddressHouseType named houseType 0..1 MS and
+  $EX_TH_LocationHouseOwner named houseOwner 0..1 and
+  $EX_TH_LocationResponsibleVolunteer named responsibleVolunteer 0..1 and
+  $EX_TH_LocationHouseholdCount named householdCount 0..1 and
+  $EX_TH_LocationInMunicipality named inMunicipality 0..1
+* extension[houseType] ^short = "ประเภทที่อยู่"
+* extension[houseOwner] ^short = "รหัสเจ้าบ้าน"
+* extension[responsibleVolunteer] ^short = "รหัสอสม."
+* extension[householdCount] ^short = "จำนวนครอบครัว"
+* extension[inMunicipality] ^short = "ที่ตั้งอยู่ในเขตเทศบาลหรือไม่"
 * identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -44,12 +55,8 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * telecom[phone].system = #phone (exactly)
 * telecom[phone].value 1..
 * address MS
-* address.extension ^slicing.discriminator.type = #value
-* address.extension ^slicing.discriminator.path = "url"
-* address.extension ^slicing.rules = #open
-* address.extension ^min = 0
 * address.extension contains
-    $EX_TH_AddressStructuredLine named lineStructure 0..1 MS
+    $EX_TH_AddressStructuredLine named structuredLine 0..1 MS
 * physicalType MS
 * physicalType ^short = "ประเภทที่อยู่"
 * physicalType.coding ^slicing.discriminator.type = #value

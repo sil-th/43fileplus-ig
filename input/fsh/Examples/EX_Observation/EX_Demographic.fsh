@@ -86,9 +86,6 @@ InstanceOf: Observation
 Title: "ตัวอย่าง Observation: อาชีพปัจจุบันของผู้ป่วยรายที่ 1"
 Description: "อาชีพปัจจุบันของผู้ป่วยรายที่ 1 พร้อมหน่วยงานที่สังกัด และรายได้เฉลี่ย"
 Usage: #example
-* extension
-  * url = $EX_TH_IsCurrentJob
-  * valueBoolean = true
 * status = #final
 * code
   * coding[0] = $LNC#11341-5 "History of Occupation"
@@ -101,8 +98,10 @@ Usage: #example
   * code = $LNC#80427-8 "Employer name"
   * valueString = "บริษัท จ้างงาน จำกัด"
 * component[+]
+  * code = $LNC#67875-5 "Employment status - current"
+  * valueBoolean = true
+* component[+]
   * code
     * coding[0] = $LNC#87707-6 "Job supervisory level or pay grade"
-    * coding[+] = $CS_Meta_SocialObsType#annual-income "รายได้เฉลี่ยต่อปี"
   * valueCodeableConcept
     * text = "ต้นฉบับมิได้ระบุรหัส"

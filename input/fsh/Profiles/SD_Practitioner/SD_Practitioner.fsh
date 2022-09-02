@@ -30,37 +30,25 @@ Description: "ข้อมูลผู้ให้บริการของส
   thai 0..* MS and
   english 0..*
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-* name[thai].extension ^slicing.discriminator[0].type = #value
-* name[thai].extension ^slicing.discriminator[=].path = "url"
-* name[thai].extension ^slicing.rules = #open
-// * name[thai].extension ^min = 0
 * name[thai].extension contains
   $EX_HL7_Language named language 1..1 MS
 * name[thai].extension[language] ^short = "ภาษา"  
-// * name[thai].extension[language] ^min = 1
-// * name[thai].extension[language] ^max = "1"
 * name[thai].extension[language].valueCode = #th (exactly)
 * name[thai].family MS
-* name[thai].family ^short = "ชื่อ ภาษาไทย"
+* name[thai].family ^short = "นามสกุล ภาษาไทย"
 * name[thai].given MS
-* name[thai].given ^short = "นามสกุล ภาษาไทย"
+* name[thai].given ^short = "ชื่อ ภาษาไทย"
 * name[thai].prefix MS
 * name[thai].prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-* name[english].extension ^slicing.discriminator[0].type = #value
-* name[english].extension ^slicing.discriminator[=].path = "url"
-* name[english].extension ^slicing.rules = #open
-* name[english].extension ^min = 0
 * name[english].extension contains
   $EX_HL7_Language named language 1..1 MS
 * name[english].extension[language] ^short = "ภาษา"  
-// * name[english].extension[language] ^min = 1
-// * name[english].extension[language] ^max = "1"
 * name[english].extension[language].valueCode = #en (exactly)
 * name[english].family MS
-* name[english].family ^short = "ชื่อ ภาษาอังกฤษ"
+* name[english].family ^short = "นามสกุล ภาษาอังกฤษ"
 * name[english].given MS
-* name[english].given ^short = "นามสกุล ภาษาอังกฤษ"
+* name[english].given ^short = "ชื่อ ภาษาอังกฤษ"
 * name[english].prefix MS
 * name[english].prefix ^short = "คำนำหน้า ภาษาอังกฤษ"
 * telecom MS
@@ -83,11 +71,5 @@ Description: "ข้อมูลผู้ให้บริการของส
 * qualification MS
 * qualification.identifier MS
 * qualification.identifier ^short = "หมายเลขทะเบียนวิชาชีพ"
-* qualification.issuer.extension ^slicing.discriminator.type = #value
-* qualification.issuer.extension ^slicing.discriminator.path = "url"
-* qualification.issuer.extension ^slicing.rules = #open
-// * qualification.issuer.extension ^min = 0
 * qualification.issuer.extension contains $EX_TH_PractitionerQualificationIssuer named qualificationIssuer 0..1 MS
-* qualification.issuer.extension[qualificationIssuer] ^sliceName = "qualificationIssuer"
-* qualification.issuer.extension[qualificationIssuer] ^short = "รหัสสภาวิชาชีพ"
 

@@ -7,33 +7,21 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_DeviceRequestUseLocation named productUseLocation 0..* MS
 * extension[productUseLocation] ^short = "ประเภทการใช้"
-* extension[productUseLocation] ^min = 0
 * status MS
 * intent MS
 * priority MS
-* code[x] only Reference
 * code[x] MS
-* code[x] ^slicing.discriminator.type = #type
-* code[x] ^slicing.discriminator.path = "$this"
-* code[x] ^slicing.rules = #open
-* codeReference only Reference($SD_Device)
-* codeReference MS
-* codeReference ^sliceName = "codeReference"
 * parameter MS
-* parameter.value[x] only Quantity
-* parameter.value[x] MS
-* parameter.value[x] ^slicing.discriminator.type = #type
-* parameter.value[x] ^slicing.discriminator.path = "$this"
-* parameter.value[x] ^slicing.rules = #open
-* parameter.valueQuantity only Quantity
-* parameter.valueQuantity ^sliceName = "valueQuantity"
+* parameter ^slicing.discriminator.type = #pattern
+* parameter ^slicing.discriminator.path = "$this"
+* parameter ^slicing.rules = #open
+* parameter contains
+    quanity 0..1 MS
+* parameter[quanity].value[x] only Quantity
+* parameter[quanity].value[x] MS
 * subject only Reference($SD_Patient)
 * subject MS
 * encounter MS

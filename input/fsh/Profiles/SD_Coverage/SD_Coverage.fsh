@@ -7,13 +7,14 @@ Description: "ข้อมูลสิทธิ"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+    $EX_TH_CoverageContractedProvider named contractedProvider 0..* MS
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains cid 0..1
-* identifier[cid] ^short = "เลขที่บัตรประชาชน"
-* identifier[cid] ^comment = "เลขประจำตัวประชาชน"
+* identifier[cid] ^short = "เลขประจำตัวประชาชน"
 * identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
 * identifier[cid].system 1..
 * identifier[cid].system = $ID_ThaiCid (exactly)

@@ -16,12 +16,7 @@ Description: "ค่าใช้จ่ายการรับบริการ
     $EX_TH_ClaimTotalCopay named totalCopay 0..1 MS and
     $EX_TH_ClaimTotalPaid named totalPaid 0..1 MS and
     $EX_TH_ClaimTotalUnpaid named totalUnpaid 0..1 MS and
-    $EX_TH_ClaimFeeNote named fee 0..1 MS
-* extension[totalCost] ^short = "TotalCost"
-* extension[totalCopay] ^short = "TotalCopay"
-* extension[totalPaid] ^short = "TotalPaid"
-* extension[totalUnpaid] ^short = "TotalUnpaid"
-* extension[fee] ^short = "FeeNote"
+    $EX_TH_ClaimFeeNote named feeNote 0..1 MS
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[=].path = "system"

@@ -24,8 +24,3 @@ Description: "ข้อมูลคลินิก/หน่วยงาน ใ�
 * managingOrganization only Reference($SD_Organization_Provider)
 * managingOrganization MS
 
-//Constraint
-Invariant: DEP-uri
-Description: "DEP identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/DepCode, where [XXXXX] is a 5-digit HCODE defined by THCC."
-Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/DepCode)$')"

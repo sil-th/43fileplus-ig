@@ -32,6 +32,9 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/observation-occupation1"
   * resource = observation-occupation1
 * entry[+]
+  * fullUrl = "http://example.org/Condition/condition-chronic2"
+  * resource = condition-chronic2
+* entry[+]
   * fullUrl = "http://example.org/Organization/organization-main"
   * resource = organization-main
 
@@ -63,5 +66,7 @@ Usage: #example
   * entry[0] = Reference(Observation/observation-role-in-house1)
   * entry[+] = Reference(Observation/observation-role-in-village1)
   * entry[+] = Reference(Observation/observation-occupation1)
-
+* section[+]
+  * title = "โรคประจำตัว"
+  * entry[0] = Reference(Condition/condition-chronic2)
 

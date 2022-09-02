@@ -14,8 +14,8 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medication[x] ^slicing.rules = #open
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
-* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains
     24-digit 0..1 MS and

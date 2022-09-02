@@ -7,6 +7,8 @@ Description: "การทำหัตถการหรือการรัก
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+  $EX_TH_ProcedureProcedureType named procedureType 0..*
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"
@@ -28,12 +30,8 @@ Description: "การทำหัตถการหรือการรัก
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * performed[x] MS
-* performed[x] ^slicing.discriminator[0].type = #type
-* performed[x] ^slicing.discriminator[=].path = "$this"
-* performed[x] ^slicing.rules = #closed
-* performedPeriod ^sliceName = "performedPeriod"
-* performedDateTime ^sliceName = "performedDateTime"
 * performer MS
+* performedDateTime MS
 * performer.function MS
 * performer.function from $VS_THCC_LaborPerformerRole (extensible)
 * performer.actor only Reference($SD_Practitioner)

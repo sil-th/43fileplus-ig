@@ -7,11 +7,13 @@ Description: "วิธีการคลอด"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+  $EX_TH_ProcedureProcedureType named procedureType 0..*
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"
-* code.coding ^slicing.discriminator[0].type = #value
-* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.discriminator[0].type = #pattern
+* code.coding ^slicing.discriminator[=].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     snomed 0..1 and
@@ -27,12 +29,11 @@ Description: "วิธีการคลอด"
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * performed[x] MS
-* performed[x] only dateTime
 * performedDateTime MS
-* performedDateTime ^sliceName = "performedDateTime"
 * performer MS
 * performer.function MS
 * performer.function from $VS_THCC_LaborPerformerRole (extensible)
 * performer.actor only Reference($SD_Practitioner)
+* location.extension contains EX_TH_ProcedureLaborLocation named laborLocation 0..1 MS
 * outcome MS
 * note MS

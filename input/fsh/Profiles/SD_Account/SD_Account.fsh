@@ -7,6 +7,8 @@ Description: "ข้อมูลทางการเงิน"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+  $EX_TH_AccountAccidentCoverage named accidentCoverage 0..*
 * status MS
 * name MS
 * subject only Reference($SD_Patient)

@@ -14,11 +14,11 @@ Usage: #example
   * fullUrl = "http://example.org/Patient/patient-patient3"
   * resource = patient-patient3
 * entry[+]
-  * fullUrl = "http://example.org/Observation/observation-cause-of-death1"
-  * resource = observation-cause-of-death1
+  * fullUrl = "http://example.org/Condition/condition-cause-of-death1"
+  * resource = condition-cause-of-death1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/observation-cause-of-death2"
-  * resource = observation-cause-of-death2
+  * fullUrl = "http://example.org/Condition/condition-cause-of-death2"
+  * resource = condition-cause-of-death2
 * entry[+]
   * fullUrl = "http://example.org/Encounter/encounter-death1"
   * resource = encounter-death1
@@ -51,8 +51,8 @@ Usage: #example
   * entry[0] = Reference(Patient/patient-patient3)
 * section[+]
   * title = "สาเหตุการเสียชีิวิต"
-  * entry[0] = Reference(Observation/observation-cause-of-death1)
-  * entry[+] = Reference(Observation/observation-cause-of-death2)
+  * entry[0] = Reference(Condition/condition-cause-of-death1)
+  * entry[+] = Reference(Condition/condition-cause-of-death2)
 * section[+]
   * title = "รายละเอียดเพ่ิมเติม"
   * entry[0] = Reference(Encounter/encounter-death1)

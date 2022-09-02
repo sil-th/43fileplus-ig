@@ -8,21 +8,39 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_HL7_Nationality named nationality 0..* and
-    $EX_TH_PatientRace named race 0..* and
-    $EX_HL7_Religion named religion 0..1 and
-    $EX_TH_PatientEducationLevel named educationLevel 0..* and
-    $EX_TH_PatientPersonStatus named personStatus 0..*
+  $EX_HL7_Nationality named nationality 0..* and
+  $EX_TH_PatientRace named race 0..* and
+  $EX_HL7_Religion named religion 0..1 and
+  $EX_HL7_Disability named disability 0..* and
+  $EX_TH_PatientEducationLevel named educationLevel 0..* and
+  $EX_TH_PatientPersonStatus named personStatus 0..* and
+  $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..* and
+  $EX_TH_PatientForeignerType named foreignerType 0..*
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
 * extension[race] ^definition = "เชื้อชาติของผู้ป่วย"
 * extension[religion] ^short = "ความเชื่อทางศาสนาของผู้ป่วย"
 * extension[religion] ^definition = "ความเชื่อทางศาสนาของผู้ป่วย"
+* extension[disability] ^short = "ประเภทความพิการ"
+* extension[disability] ^definition = "ประเภทความพิการ"
+* extension[disability].valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* extension[disability].valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* extension[disability].valueCodeableConcept.coding ^slicing.rules = #open
+* extension[disability].valueCodeableConcept.coding contains
+    thcc 1..1 MS
+* extension[disability].valueCodeableConcept.coding[thcc] from $VS_THCC_DisabilityType (extensible)
+* extension[disability].valueCodeableConcept.coding[thcc].system 1..
+* extension[disability].valueCodeableConcept.coding[thcc].system = $CS_THCC_DisabilityType (exactly)
+* extension[disability].valueCodeableConcept.coding[thcc].code 1..
 * extension[educationLevel] ^short = "ระดับการศึกษาสูงสุดของผู้ป่วย"
 * extension[educationLevel] ^definition = "ระดับการศึกษาสูงสุดของผู้ป่วย"
 * extension[personStatus] ^short = "สถานะบุคคลของผู้ป่วย"
 * extension[personStatus] ^definition = "สถานะบุคคลของผู้ป่วย"
+* extension[pidRemoveReason] ^short = "สถานะ/สาเหตุการจำหน่ายจากเขตรับผิดชอบ (ถ้ามี)"
+* extension[pidRemoveReason] ^definition = "สถานะ/สาเหตุการจำหน่ายจากเขตรับผิดชอบ (ถ้ามี)"
+* extension[foreignerType] ^short = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
+* extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "$this"

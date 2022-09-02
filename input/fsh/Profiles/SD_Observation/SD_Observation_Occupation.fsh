@@ -9,25 +9,17 @@ Description: "ข้อมูลอาชีพของประชาชนใ
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * status MS
 * category MS
-* category ^slicing.discriminator[0].type = #value
-* category ^slicing.discriminator[=].path = "coding.code"
-* category ^slicing.discriminator[+].type = #value
-* category ^slicing.discriminator[=].path = "coding.system"
+* category ^slicing.discriminator[0].type = #pattern
+* category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
-* category contains SocialHistory 1..1
-* category[SocialHistory].coding.system 1..
-* category[SocialHistory].coding.system = $CS_HL7_ObservationCat (exactly)
-* category[SocialHistory].coding.code 1..
-* category[SocialHistory].coding.code = #social-history (exactly)
+* category contains SocialHistory 0..1
+* category[SocialHistory] = $CS_HL7_ObservationCat#social-history (exactly)
 * code MS
-* code.coding ^slicing.discriminator[0].type = #value
-* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.discriminator[0].type = #pattern
+* code.coding ^slicing.discriminator[=].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc 0..1
-* code.coding[loinc].system 1..
-* code.coding[loinc].system = $LNC (exactly)
-* code.coding[loinc].code 1..
-* code.coding[loinc].code = #11341-5 (exactly)
+* code.coding[loinc] = $LNC#11341-5  (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS
@@ -42,34 +34,19 @@ Description: "ข้อมูลอาชีพของประชาชนใ
 * value[x].coding[thcc].system = $CS_THCC_Occupation (exactly)
 * value[x].coding[thcc].code 1..
 * component MS
-* component ^slicing.discriminator[0].type = #value
-* component ^slicing.discriminator[=].path = "code.coding.system"
-* component ^slicing.discriminator[+].type = #value
-* component ^slicing.discriminator[=].path = "code.coding.code"
+* component ^slicing.discriminator[0].type = #pattern
+* component ^slicing.discriminator[=].path = "code"
 * component ^slicing.rules = #open
 * component contains
     employer 0..1 and
-    annualIncome 0..1 MS
-* component[employer].code.coding.system 1..
-* component[employer].code.coding.system = $LNC (exactly)
-* component[employer].code.coding.code 1..
-* component[employer].code.coding.code = #80427-8 (exactly)
+    isCurrentJob 0..1 and
+    annualIncome 0..1
+* component[employer].code.coding = $LNC#80427-8 (exactly)
 * component[employer].value[x] 1..
 * component[employer].value[x] only string
-* component[annualIncome].code.coding ^slicing.discriminator[0].type = #value
-* component[annualIncome].code.coding ^slicing.discriminator[=].path = "system"
-* component[annualIncome].code.coding ^slicing.rules = #open
-* component[annualIncome].code.coding contains
-    loinc 0..1 and
-    thcc 0..1
-* component[annualIncome].code.coding[loinc].system 1..
-* component[annualIncome].code.coding[loinc].system = $LNC (exactly)
-* component[annualIncome].code.coding[loinc].code 1..
-* component[annualIncome].code.coding[loinc].code = #87707-6 (exactly)
-* component[annualIncome].code.coding[thcc] from $VS_Meta_SocialObsType (extensible)
-* component[annualIncome].code.coding[thcc].system 1..
-* component[annualIncome].code.coding[thcc].system = $CS_Meta_SocialObsType (exactly)
-* component[annualIncome].code.coding[thcc].code 1..
-* component[annualIncome].code.coding[thcc].code = #annual-income (exactly)
+* component[isCurrentJob].code.coding = $LNC#80427-8 (exactly)
+* component[isCurrentJob].value[x] 1..
+* component[isCurrentJob].value[x] only boolean
+* component[annualIncome].code.coding = $LNC#87707-6 (exactly)
 * component[annualIncome].value[x] 1..
 * component[annualIncome].value[x] only CodeableConcept

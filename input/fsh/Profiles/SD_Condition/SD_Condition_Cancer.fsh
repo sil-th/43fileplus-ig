@@ -7,10 +7,6 @@ Description: "ข้อมูลการวินิจฉัยโรคมะ
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_ConditionChronicDischargeReason named dischargeReason 0..1 MS
 * extension[dischargeReason] ^short = "สาเหตุจำหน่ายผู้ป่วย"

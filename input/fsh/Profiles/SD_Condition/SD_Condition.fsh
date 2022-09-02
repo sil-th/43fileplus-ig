@@ -10,8 +10,8 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * category MS
 * code MS
 * code ^short = "รหัสวินิฉัยโรค/ภาวะโรค"
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     icd10 0..1 MS and

@@ -7,16 +7,12 @@ Description: "ยา"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_MedicationImageUrl named image 0..*
 * extension[image] ^min = 0
 * code 1.. MS
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     24-digit 0..1 MS and

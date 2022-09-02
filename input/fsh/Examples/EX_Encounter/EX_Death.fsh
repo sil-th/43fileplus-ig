@@ -1,7 +1,7 @@
 Instance: encounter-death1
 InstanceOf: Encounter
-Title: "ตัวอย่าง Encounter: สถานบริการที่เสียชีวิต"
-Description: "สถานบริการที่เสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
+Title: "ตัวอย่าง Encounter: การเสียชีวิต"
+Description: "การเสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
 Usage: #example
 * extension[0]
   * url = $EX_TH_EncounterDeathLocType
@@ -22,5 +22,15 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#EMER "emergency"
 * subject = Reference(Patient/patient-patient3)
   * insert GeneralReference($ID_ThaiCid, "2650591524440", "นาง สมปอง ใจดี")
-* serviceProvider = Reference(organization-main)
+* period
+  * start = "2022-04-25T12:30:02+07:00"
+* diagnosis[0]
+  * condition = Reference(Condition/condition-cause-of-death1)
+  * use = $CS_Meta_ExtendedHL7DiagnosisRole#death "Cause of death"
+  * rank = 1
+* diagnosis[+]
+  * condition = Reference(Condition/condition-cause-of-death1)
+  * use = $CS_Meta_ExtendedHL7DiagnosisRole#CM "Comorbidity diagnosis"
+  * rank = 2
+* serviceProvider = Reference(Organizaion/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
