@@ -21,6 +21,7 @@ Description: "รหัสสภาวิชาชีพ"
 * . 0..*
 * . ^short = "รหัสสภาวิชาชีพ"
 * . ^definition = "รหัสสภาวิชาชีพ"
+* url = $EX_TH_PractitionerQualificationIssuer (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_QualificationIssuer (extensible)

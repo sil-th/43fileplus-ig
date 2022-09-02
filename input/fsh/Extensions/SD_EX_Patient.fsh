@@ -20,6 +20,7 @@ Description: "เชื้อชาติของบุคคล"
 * . 0..*
 * . ^short = "เชื้อชาติของบุคคล"
 * . ^definition = "เชื้อชาติของบุคคล"
+* url = $EX_TH_PatientRace (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_Nationality (extensible)
@@ -47,6 +48,7 @@ Description: "ระดับการศึกษา"
 * . 0..*
 * . ^short = "ระดับการศึกษา"
 * . ^definition = "ระดับการศึกษา"
+* url = $EX_TH_PatientEducationLevel (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_EducationLevel (extensible)
@@ -73,6 +75,7 @@ Description: "สถานะบุคคล"
 * . 0..*
 * . ^short = "สถานะบุคคล"
 * . ^definition = "สถานะบุคคล"
+* url = $EX_TH_PatientPersonStatus (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_PersonStatus (extensible)
@@ -98,6 +101,7 @@ Description: "รหัสความเป็นคนต่างด้าว
 * . 0..*
 * . ^short = "รหัสความเป็นคนต่างด้าว"
 * . ^definition = "รหัสความเป็นคนต่างด้าว"
+* url = $EX_TH_PatientForeignerType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_ForeignerType (extensible)
@@ -125,6 +129,7 @@ Description: "สถานะ/สาเหตุการจำหน่าย"
 * . 0..*
 * . ^short = "สถานะ/สาเหตุการจำหน่าย"
 * . ^definition = "สถานะ/สาเหตุการจำหน่าย"
+* url = $EX_TH_PatientPidRemoveReason (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_PidRemoveReason (extensible)

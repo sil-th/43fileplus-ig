@@ -17,6 +17,7 @@ Description: "รหัสผลการส่งต่อไปรับบร
 * . 0..*
 * . ^short = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
 * . ^definition = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+* url = $EX_TH_ServiceRequestReferOutcome (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_PCU_ReferOutcome (extensible)
@@ -52,19 +53,20 @@ Description: "สถานพยาบาล และแผนกที่ส�
 * . 0..*
 * . ^short = "สถานพยาบาล และแผนกที่ส่งต่อผู้ป่วย (ต้นทาง)"
 * . ^definition = "สถานพยาบาล และแผนกที่ส่งต่อผู้ป่วย (ต้นทาง)"
+* url = $EX_TH_ServiceRequestReferRequesterDetail (exactly)
 * extension contains
     organization 0..1 and
     department 0..1
 * extension[organization] only Extension
 * extension[organization] ^short = "สถานพยาบาลที่ส่งต่อผู้ป่วย (ต้นทาง)"
 * extension[organization] ^definition = "สถานพยาบาลที่ส่งต่อผู้ป่วย (ต้นทาง)"
-  * url only uri
+  * url = "organization" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)
 * extension[department] only Extension
 * extension[department] ^short = "แผนกที่ส่งต่อผู้ป่วย (ต้นทาง)"
 * extension[department] ^definition = "แผนกที่ส่งต่อผู้ป่วย (ต้นทาง)"
-  * url only uri
+  * url = "department" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)
 
@@ -90,6 +92,7 @@ Description: "รหัสสถานะของการอ้างอิง
 * . 0..*
 * . ^short = "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
 * . ^definition = "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
+* url = $EX_TH_ServiceRequestReferStatus (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ReferReason (extensible)
@@ -116,6 +119,7 @@ Description: "วันที่กำหนดสิ้นสุดการต
 * . 0..*
 * . ^short = "วันที่กำหนดสิ้นสุดการตอบรับ หรือปฎิเสธ"
 * . ^definition = "วันที่กำหนดสิ้นสุดการตอบรับ หรือปฎิเสธ"
+* url = $EX_TH_ServiceRequestReferRequestedPeriod (exactly)
 * value[x] 1..
 * value[x] only Period
 
@@ -142,6 +146,7 @@ Description: "รหัสประเภทการตอบรับหรื
 * . 0..*
 * . ^short = "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
 * . ^definition = "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
+* url = $EX_TH_ServiceRequestReferAnswerType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_Std15_ReferAnswerType (extensible)
@@ -172,6 +177,7 @@ Description: "รหัสระดับความเร่งด่วน"
 * . 0..*
 * . ^short = "รหัสระดับความเร่งด่วน"
 * . ^definition = "รหัสระดับความเร่งด่วน"
+* url = $EX_TH_ServiceRequestThaiReferPriority (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ReferThaiPriority (extensible)
@@ -202,6 +208,7 @@ Description: "รหัสข้อบ่งชี้ของกรณีฉุ
 * . 0..*
 * . ^short = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
 * . ^definition = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
+* url = $EX_TH_ServiceRequestReferPriorityCode (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ReferPriorityCode (extensible)
@@ -228,6 +235,7 @@ Description: "รหัสสาเหตุการส่งต่อผู้
 * . 0..*
 * . ^short = "รหัสสาเหตุการส่งต่อผู้ป่วย"
 * . ^definition = "รหัสสาเหตุการส่งต่อผู้ป่วย"
+* url = $EX_TH_ServiceRequestEclaimReferType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ReferTypeEclaim (extensible)
@@ -255,6 +263,7 @@ Description: "รหัสกลุ่มโรคเฉพาะเพื่อ
 * . 0..*
 * . ^short = "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
 * . ^definition = "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
+* url = $EX_TH_ServiceRequestSpecialDiseaseRefer (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_ReferSpecialDisease (extensible)

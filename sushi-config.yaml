@@ -20,7 +20,6 @@ description: An implementation guide for adopting FHIR for health information ex
 license: CC0-1.0
 fhirVersion: 4.3.0
 dependencies:
-  hl7.fhir.us.odh: dev
   sil-th.terms.core: dev
 parameters:
   apply-publisher: true

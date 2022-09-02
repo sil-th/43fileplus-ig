@@ -19,6 +19,7 @@ Description: "รหัสสถานที่ตาย"
 * . 0..*
 * . ^short = "รหัสสถานที่ตาย"
 * . ^definition = "รหัสสถานที่ตาย"
+* url = $EX_TH_EncounterDeathLocType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_DeathLocType (extensible)
@@ -29,7 +30,7 @@ Description: "รหัสสถานที่ตาย"
 
 
 // * extension[+]
-//   * url = $EX_TH_EncounterDeathPregnancy
+//   * url = $EX_TH_EncounterDeathPregnancy (exactly)
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_DeathPregnancy#3 "ไม่ตั้งครรภ์"
 //     * text = "ไม่ตั้งครรภ์"
@@ -49,6 +50,7 @@ Description: "การเสียชีวิตที่เกี่ยวข
 * . 0..*
 * . ^short = "การเสียชีวิตที่เกี่ยวข้องกับตั้งครรภ์และการคลอด"
 * . ^definition = "การเสียชีวิตที่เกี่ยวข้องกับตั้งครรภ์และการคลอด"
+* url = $EX_TH_EncounterDeathPregnancy (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_DeathPregnancy (extensible)
@@ -59,7 +61,7 @@ Description: "การเสียชีวิตที่เกี่ยวข
 
 // * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 //   * extension
-//     * url = $EX_TH_EncounterPatientLocationType 
+//     * url = $EX_TH_EncounterPatientLocationType  (exactly)
 //     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 // Alias: $EX_TH_EncounterPatientLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-patient-location-type
 Extension: EX_TH_EncounterPatientLocationType
@@ -77,6 +79,7 @@ Description: "รหัสที่ตั้งของที่อยู่ผ
 * . 0..*
 * . ^short = "รหัสที่ตั้งของที่อยู่ผู้รับบริการ"
 * . ^definition = "รหัสที่ตั้งของที่อยู่ผู้รับบริการ"
+* url = $EX_TH_EncounterPatientLocationType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_PatientLocationType (extensible)
@@ -88,7 +91,7 @@ Description: "รหัสที่ตั้งของที่อยู่ผ
 
 // * period
 //   * extension
-//     * url = $EX_TH_EncounterServiceHour 
+//     * url = $EX_TH_EncounterServiceHour  (exactly)
 //     * valueCodeableConcept = $CS_THCC_ServiceHour#1 "ในเวลาราชการ"
 // Alias: $EX_TH_EncounterServiceHour = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-hour
 Extension: EX_TH_EncounterServiceHour
@@ -106,6 +109,7 @@ Description: "รหัสเวลามารับบริการ"
 * . 0..*
 * . ^short = "รหัสเวลามารับบริการ"
 * . ^definition = "รหัสเวลามารับบริการ"
+* url = $EX_TH_EncounterServiceHour (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_ServiceHour (extensible)
@@ -117,7 +121,7 @@ Description: "รหัสเวลามารับบริการ"
 
 // * location
 //   * extension
-//     * url = $EX_TH_EncounterServiceLocationType 
+//     * url = $EX_TH_EncounterServiceLocationType  (exactly)
 //     * valueCodeableConcept = $CS_PCU_ServiceLocationType#1 "ในสถานบริการ"
 // Alias: $EX_TH_EncounterServiceLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-location-type
 Extension: EX_TH_EncounterServiceLocationType
@@ -135,6 +139,7 @@ Description: "รหัสสถานที่ที่ให้บริกา
 * . 0..*
 * . ^short = "รหัสสถานที่ที่ให้บริการ"
 * . ^definition = "รหัสสถานที่ที่ให้บริการ"
+* url = $EX_TH_EncounterServiceLocationType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_PCU_ServiceLocationType (extensible)
@@ -145,7 +150,7 @@ Description: "รหัสสถานที่ที่ให้บริกา
 
 
 // * extension[0]
-//   * url = $EX_TH_EncounterServiceTypeTH 
+//   * url = $EX_TH_EncounterServiceTypeTH  (exactly)
 //   * valueCodeableConcept = $CS_eClaim_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
 // Alias: $EX_TH_EncounterServiceTypeTH = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-service-type-th
 Extension: EX_TH_EncounterServiceTypeTH
@@ -163,6 +168,7 @@ Description: "รหัสประเภทการให้บริการ
 * . 0..*
 * . ^short = "รหัสประเภทการให้บริการ"
 * . ^definition = "รหัสประเภทการให้บริการ"
+* url = $EX_TH_EncounterServiceTypeTH (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ServiceTypeTH (extensible)
@@ -174,7 +180,7 @@ Description: "รหัสประเภทการให้บริการ
 
 // * hospitalization
 //   * extension[0]
-//     * url = $EX_TH_EncounterDischargeStatus 
+//     * url = $EX_TH_EncounterDischargeStatus  (exactly)
 //     * valueCodeableConcept = $CS_THCC_DischargeStatus#3 "ส่งต่อไปยังสถานพยาบาลอื่น"
 // Alias: $EX_TH_EncounterDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-status
 Extension: EX_TH_EncounterDischargeStatus
@@ -192,6 +198,7 @@ Description: "รหัสสถานะผู้มารับบริกา
 * . 0..*
 * . ^short = "รหัสสถานะผู้มารับบริการเมื่อเสร็จสิ้นบริการ OPD"
 * . ^definition = "รหัสสถานะผู้มารับบริการเมื่อเสร็จสิ้นบริการ OPD"
+* url = $EX_TH_EncounterDischargeStatus (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_DischargeStatus (extensible)
@@ -202,7 +209,7 @@ Description: "รหัสสถานะผู้มารับบริกา
 
 // * hospitalization
 //   * extension[+]
-//     * url = $EX_TH_EncounterDischargeInstruction
+//     * url = $EX_TH_EncounterDischargeInstruction (exactly)
 //     * valueAnnotation
 //       * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
 // Alias: $EX_TH_EncounterDischargeInstruction = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-discharge-instruction
@@ -221,6 +228,7 @@ Description: "คำแนะนำหลังการเข้ารับบ
 * . 0..*
 * . ^short = "คำแนะนำหลังการเข้ารับบริการ"
 * . ^definition = "คำแนะนำหลังการเข้ารับบริการ"
+* url = $EX_TH_EncounterDischargeInstruction (exactly)
 * value[x] 1..
 * value[x] only Annotation
 
@@ -231,7 +239,7 @@ Description: "คำแนะนำหลังการเข้ารับบ
 
 // * location[0]
 //   * extension[0]
-//     * url = $EX_TH_EncounterIpdJourney 
+//     * url = $EX_TH_EncounterIpdJourney  (exactly)
 //     * valueCodeableConcept = $CS_Meta_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
 // Alias: $EX_TH_EncounterIpdJourney = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-journey
 Extension: EX_TH_EncounterIpdJourney
@@ -249,6 +257,7 @@ Description: "รหัสชนิดของแผนกที่ผู้ป
 * . 0..*
 * . ^short = "รหัสชนิดของแผนกที่ผู้ป่วยในรับบริการ"
 * . ^definition = "รหัสชนิดของแผนกที่ผู้ป่วยในรับบริการ"
+* url = $EX_TH_EncounterIpdJourney (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_Meta_IpdJourney (extensible)
@@ -260,7 +269,7 @@ Description: "รหัสชนิดของแผนกที่ผู้ป
 
 // * hospitalization
 //   * extension[0]
-//     * url = $EX_TH_EncounterIpdDischargeStatus
+//     * url = $EX_TH_EncounterIpdDischargeStatus (exactly)
 //     * valueCodeableConcept = $CS_THCC_IpdDischargeStatus#1 "Complete Recovery"
 // Alias: $EX_TH_EncounterIpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-status
 Extension: EX_TH_EncounterIpdDischargeStatus
@@ -278,6 +287,7 @@ Description: "รหัสผลการส่งต่อไปรับบร
 * . 0..*
 * . ^short = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
 * . ^definition = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+* url = $EX_TH_EncounterIpdDischargeStatus (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_IpdDischargeStatus (extensible)
@@ -289,7 +299,7 @@ Description: "รหัสผลการส่งต่อไปรับบร
 
 // * hospitalization
 //   * extension[+]
-//     * url = $EX_TH_EncounterIpdDischargeType 
+//     * url = $EX_TH_EncounterIpdDischargeType  (exactly)
 //     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
 // Alias: $EX_TH_EncounterIpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-discharge-type
 Extension: EX_TH_EncounterIpdDischargeType
@@ -307,6 +317,7 @@ Description: "รหัสชนิดการจำหน่ายผู้ป
 * . 0..*
 * . ^short = "รหัสชนิดการจำหน่ายผู้ป่วย"
 * . ^definition = "รหัสชนิดการจำหน่ายผู้ป่วย"
+* url = $EX_TH_EncounterIpdDischargeType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_IpdDischargeType (extensible)
@@ -317,7 +328,7 @@ Description: "รหัสชนิดการจำหน่ายผู้ป
 
 
 // * extension[0]
-//   * url = $EX_TH_EncounterFpCaseType
+//   * url = $EX_TH_EncounterFpCaseType (exactly)
 //   * valueCodeableConcept = $CS_PCU_FpCaseType#1 "รายใหม่" 
 // Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
 Extension: EX_TH_EncounterFpCaseType
@@ -335,6 +346,7 @@ Description: "รหัสประเภทการวางแผนครอ
 * . 0..*
 * . ^short = "รหัสประเภทการวางแผนครอบครัว"
 * . ^definition = "รหัสประเภทการวางแผนครอบครัว"
+* url = $EX_TH_EncounterFpCaseType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_PCU_FpCaseType (extensible)
@@ -345,7 +357,7 @@ Description: "รหัสประเภทการวางแผนครอ
 
 
 // * extension[0]
-//   * url = $EX_TH_EncounterReferCategory
+//   * url = $EX_TH_EncounterReferCategory (exactly)
 //   * valueCodeableConcept = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
 // Alias: $EX_TH_EncounterReferCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
 Extension: EX_TH_EncounterReferCategory
@@ -363,6 +375,7 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 * . 0..*
 * . ^short = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
 * . ^definition = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
+* url = $EX_TH_EncounterReferCategory (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_ReferEncounterClass (extensible)
@@ -373,7 +386,7 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 
 
 // * extension[+]
-//   * url = $EX_TH_EncounterReferResult
+//   * url = $EX_TH_EncounterReferResult (exactly)
 //   * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
 // Alias: $EX_TH_EncounterReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
 Extension: EX_TH_EncounterReferResult
@@ -391,6 +404,7 @@ Description: "รหัสผลการส่งต่อ"
 * . 0..*
 * . ^short = "รหัสผลการส่งต่อ"
 * . ^definition = "รหัสผลการส่งต่อ"
+* url = $EX_TH_EncounterReferResult (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_ReferResult (extensible)
@@ -398,7 +412,7 @@ Description: "รหัสผลการส่งต่อ"
 
 
 // * extension[+]
-//   * url = $EX_TH_EncounterReferResultReason
+//   * url = $EX_TH_EncounterReferResultReason (exactly)
 //   * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 // Alias: $EX_TH_EncounterReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
 Extension: EX_TH_EncounterReferResultReason
@@ -416,6 +430,7 @@ Description: "ใช้ในกรณีต้องการอธิบาย
 * . 0..*
 * . ^short = "เหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 * . ^definition = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+* url = $EX_TH_EncounterReferResultReason (exactly)
 * value[x] 1..
 * value[x] only string
 
@@ -451,6 +466,7 @@ Description: "ข้อมูลกรณีที่ผู้ป่วยมี
 * . 0..*
 * . ^short = "ข้อมูลกรณีที่ผู้ป่วยมีการลากลับบ้าน"
 * . ^definition = "ข้อมูลกรณีที่ผู้ป่วยมีการลากลับบ้าน"
+* url = $EX_TH_EncounterLeaveDay (exactly)
 * extension contains
     id 0..1 and
     leaveDate 0..1 and
@@ -459,25 +475,25 @@ Description: "ข้อมูลกรณีที่ผู้ป่วยมี
 * extension[id] only Extension
 * extension[id] ^short = "ลำดับของการลากลับบ้าน"
 * extension[id] ^definition = "ลำดับของการลากลับบ้าน"
-  * url only uri
+  * url = "id" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[leaveDate] only Extension
 * extension[leaveDate] ^short = "วัน-เวลาที่ลากลับบ้าน"
 * extension[leaveDate] ^definition = "วัน-เวลาที่ลากลับบ้าน"
-  * url only uri
+  * url = "leaveDate" (exactly)
   * value[x] 1..
   * value[x] only dateTime
 * extension[comeBack] only Extension
 * extension[comeBack] ^short = "วัน-เวลาที่กลับเข้ารับบริการ"
 * extension[comeBack] ^definition = "วัน-เวลาที่กลับเข้ารับบริการ"
-  * url only uri
+  * url = "comeBack" (exactly)
   * value[x] 1..
   * value[x] only dateTime
 * extension[duration] only Extension
 * extension[duration] ^short = "จำนวนวันในการลา"
 * extension[duration] ^definition = "จำนวนวันในการลา"
-  * url only uri
+  * url = "duration" (exactly)
   * value[x] 1..
   * value[x] only Duration
 
@@ -505,6 +521,7 @@ Description: "รหัสประเภทสถานพยาบาลที
 * . 0..*
 * . ^short = "รหัสประเภทสถานพยาบาลที่รักษา"
 * . ^definition = "รหัสประเภทสถานพยาบาลที่รักษา"
+* url = $EX_TH_EncounterProviderType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ProviderType (extensible)
@@ -535,6 +552,7 @@ Description: "เลขที่ใบส่งตัว"
 * . 0..*
 * . ^short = "เลขที่ใบส่งตัว"
 * . ^definition = "เลขที่ใบส่งตัว"
+* url = $EX_TH_EncounterReferOutID (exactly)
 * value[x] 1..
 * value[x] only Reference(ServiceRequest)
 

@@ -18,6 +18,7 @@ Description: "รหัสประเภทการวินิจฉัยก
 * . 0..*
 * . ^short = "รหัสประเภทการวินิจฉัยการแพ้ยา"
 * . ^definition = "รหัสประเภทการวินิจฉัยการแพ้ยา"
+* url = $EX_TH_AllergyIntoleranceCertainy (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_AllergyCertainy (extensible)
@@ -47,6 +48,7 @@ Description: "รหัสระดับความรุนแรงของ
 * . 0..*
 * . ^short = "รหัสระดับความรุนแรงของการแพ้ยา"
 * . ^definition = "รหัสระดับความรุนแรงของการแพ้ยา"
+* url = $EX_TH_AllergyIntoleranceSeverity (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_AllergySeverity (extensible)
@@ -76,6 +78,7 @@ Description: "รหัสผู้ให้ประวัติการแพ
 * . 0..*
 * . ^short = "รหัสผู้ให้ประวัติการแพ้ยา"
 * . ^definition = "รหัสผู้ให้ประวัติการแพ้ยา"
+* url = $EX_TH_AllergyIntoleranceAssertType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_AllergyAssertType (extensible)
@@ -104,5 +107,6 @@ Description: "รหัสสถานพยาบาลผู้ให้ปร
 * . 0..*
 * . ^short = "รหัสสถานพยาบาลผู้ให้ประวัติการแพ้ยา"
 * . ^definition = "รหัสสถานพยาบาลผู้ให้ประวัติการแพ้ยา"
+* url = $EX_TH_AllergyIntoleranceAssertOrg (exactly)
 * value[x] 1..
 * value[x] only Reference(Organization)

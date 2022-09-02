@@ -17,5 +17,6 @@ Description: "URL ของรูปถ่ายยา"
 * . 0..*
 * . ^short = "URL ของรูปถ่ายยา"
 * . ^definition = "URL ของรูปถ่ายยา"
+* url = $EX_TH_MedicationImageUrl (exactly)
 * value[x] 1..
 * value[x] only uri

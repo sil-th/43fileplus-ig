@@ -27,6 +27,7 @@ Description: "ข้อมูลการย้ายสถานพยาบา
 * . 0..*
 * . ^short = "ข้อมูลการย้ายสถานพยาบาล"
 * . ^definition = "ข้อมูลการย้ายสถานพยาบาล"
+* url = $EX_TH_PractitionerRoleProviderMovement (exactly)
 * extension contains
     movefrom 0..1 and
     period 0..1 and
@@ -34,18 +35,18 @@ Description: "ข้อมูลการย้ายสถานพยาบา
 * extension[movefrom] only Extension
 * extension[movefrom] ^short = "รหัสสถานพยาบาลที่ย้ายมา"
 * extension[movefrom] ^definition = "รหัสสถานพยาบาลที่ย้ายมา"
-  * url only uri
+  * url = "movefrom" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)
 * extension[period] only Extension
 * extension[period] ^short = "วันที่เริ่มและ/หรือสิ้นสุดการปฏิบัติงาน"
 * extension[period] ^definition = "วันที่เริ่มและ/หรือสิ้นสุดการปฏิบัติงาน"
-  * url only uri
+  * url = "period" (exactly)
   * value[x] 1..
   * value[x] only Period
 * extension[moveto] only Extension
 * extension[moveto] ^short = "รหัสสถานพยาบาลที่ย้ายไป"
 * extension[moveto] ^definition = "รหัสสถานพยาบาลที่ย้ายไป"
-  * url only uri
+  * url = "moveto" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)

@@ -28,6 +28,7 @@ Description: "ประเภทการจำหน่าย chronic case"
 * . 0..*
 * . ^short = "ประเภทการจำหน่าย chronic case"
 * . ^definition = "ประเภทการจำหน่าย chronic case"
+* url = $EX_TH_ConditionChronicDischargeReason (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_ChronicDischargeReason (extensible)

@@ -18,6 +18,7 @@ Description: "ประเภทความพิการ"
 * . 0..*
 * . ^short = "ประเภทความพิการ"
 * . ^definition = "ประเภทความพิการ"
+* url = $EX_TH_ConditionDisabilityType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_DisabilityType (extensible)
@@ -41,5 +42,6 @@ Description: "สภาวะการป่วยต่อเนื่อง"
 * . 0..*
 * . ^short = "สภาวะการป่วยต่อเนื่อง"
 * . ^definition = "สภาวะการป่วยต่อเนื่อง"
+* url = $EX_TH_ConditionIsChronic (exactly)
 * value[x] 1..
 * value[x] only boolean

@@ -17,6 +17,7 @@ Description: "รหัสสิทธิการรักษาอื่นก
 * . 0..*
 * . ^short = "รหัสสิทธิการรักษาอื่นกรณีอุบัติเหตุ"
 * . ^definition = "รหัสสิทธิการรักษาอื่นกรณีอุบัติเหตุ"
+* url = $EX_TH_AccountAccidentCoverage (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_AccidentCoverage (extensible)

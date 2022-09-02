@@ -17,6 +17,7 @@ Description: "รหัสหมวดสถานที่ใช้ยา/เ�
 * . 0..*
 * . ^short = "รหัสหมวดสถานที่ใช้ยา/เวชภัณฑ์"
 * . ^definition = "รหัสหมวดสถานที่ใช้ยา/เวชภัณฑ์"
+* url = $EX_TH_DeviceRequestUseLocation (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_MedicationCategory (extensible)

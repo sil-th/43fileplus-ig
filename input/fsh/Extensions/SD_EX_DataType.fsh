@@ -21,6 +21,7 @@ Description: "รหัสคำนำหน้าชื่อ"
 * . 0..*
 * . ^short = "รหัสคำนำหน้าชื่อ"
 * . ^definition = "รหัสคำนำหน้าชื่อ"
+* url = $EX_TH_HumanNamePrefixCode (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_DOPA_NamePrefix (extensible)
@@ -51,6 +52,7 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 * . 0..*
 * . ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
 * . ^definition = "รหัสที่อยู่ ตามกรมการปกครอง"
+* url = $EX_TH_AddressDopaCode (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_DOPA_Location (extensible)
@@ -93,6 +95,7 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
 * . 0..*
 * . ^short = "ที่อยู่ แบบแยกข้อมูลย่อย"
 * . ^definition = "ที่อยู่ แบบแยกข้อมูลย่อย"
+* url = $EX_TH_AddressStructuredLine (exactly)
 * extension contains
     number 0..1 and
     buildingVillage 0..1 and
@@ -102,31 +105,31 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
 * extension[number] only Extension
 * extension[number] ^short = "บ้านเลขที่"
 * extension[number] ^definition = "บ้านเลขที่"
-  * url only uri
+  * url = "number" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[buildingVillage] only Extension
 * extension[buildingVillage] ^short = "อาคาร/หมู่บ้าน"
 * extension[buildingVillage] ^definition = "อาคาร/หมู่บ้าน"
-  * url only uri
+  * url = "buildingVillage" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[villageNo] only Extension
 * extension[villageNo] ^short = "หมู่ที่"
 * extension[villageNo] ^definition = "หมู่ที่"
-  * url only uri
+  * url = "villageNo" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[road] only Extension
 * extension[road] ^short = "ถนน"
 * extension[road] ^definition = "ถนน"
-  * url only uri
+  * url = "road" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[lane] only Extension
 * extension[lane] ^short = "ซอย"
 * extension[lane] ^definition = "ซอย"
-  * url only uri
+  * url = "lane" (exactly)
   * value[x] 1..
   * value[x] only string
 
@@ -157,6 +160,7 @@ Description: "การอ้างอิง Location resource"
 * . 0..*
 * . ^short = "ระดับการศึกษา"
 * . ^definition = "ระดับการศึกษา"
+* url = $EX_TH_AddressHomeReference (exactly)
 * value[x] 1..
 * value[x] only Reference(Location)
 

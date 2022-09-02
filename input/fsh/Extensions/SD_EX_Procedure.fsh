@@ -19,6 +19,7 @@ Description: "รหัสสถานที่คลอด"
 * . 0..*
 * . ^short = "รหัสสถานที่คลอด"
 * . ^definition = "รหัสสถานที่คลอด"
+* url = $EX_TH_ProcedureLaborLocation (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_THCC_LaborLocation (extensible)
@@ -47,6 +48,7 @@ Description: "รหัสชนิดของหัตถการ"
 * . 0..*
 * . ^short = "รหัสชนิดของหัตถการ"
 * . ^definition = "รหัสชนิดของหัตถการ"
+* url = $EX_TH_ProcedureProcedureType (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_ProcedureType (extensible)

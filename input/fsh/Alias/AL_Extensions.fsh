@@ -8,8 +8,6 @@ Alias: $EX_HL7_ConditionAssertedDate = http://hl7.org/fhir/StructureDefinition/c
 Alias: $EX_HL7_Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $EX_HL7_PreCondition = http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
 
-// From Inter IG
-Alias: $EX_INT_IsCurrentJob = http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension
 
 
 // From local extension
@@ -117,6 +115,7 @@ Alias: $EX_TH_ProcedureLaborLocation = https://fhir-ig.sil-th.org/43filesplus/Ex
 Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-procedure-procedure-type
 
 // Observation
+Alias: $EX_TH_IsCurrentJob = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-is-current-job
 Alias: $EX_TH_ObservationDeviceAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-device-amount
 
 // MedicationRequest

@@ -19,6 +19,7 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 * . 0..*
 * . ^short = "รหัสประเภทยาที่ใช้ปัจจุบัน"
 * . ^definition = "รหัสประเภทยาที่ใช้ปัจจุบัน"
+* url = $EX_TH_MedicationRequestSource (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_Std15_MedicationSource (extensible)
@@ -44,6 +45,7 @@ Description: "เหตุผลการใช้ยานอกบัญชี
 * . 0..*
 * . ^short = "เหตุผลการใช้ยานอกบัญชียาหลัก"
 * . ^definition = "เหตุผลการใช้ยานอกบัญชียาหลัก"
+* url = $EX_TH_MedicationRequestOutNLEM (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_eClaim_MedOutNLEM (extensible)
@@ -71,6 +73,7 @@ Description: "เลขที่ได้รับการอนุมัติ
 * . 0..*
 * . ^short = "เลขที่ได้รับการอนุมัติ จากระบบขออนุมัติใช้ยาควบคุมเฉพาะ"
 * . ^definition = "เลขที่ได้รับการอนุมัติ จากระบบขออนุมัติใช้ยาควบคุมเฉพาะ"
+* url = $EX_TH_MedicationRequestApprovedNo (exactly)
 * value[x] 1..
 * value[x] only string
 

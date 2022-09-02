@@ -17,6 +17,7 @@ Description: "การส่งมอบยา (กรณีจ่ายไป�
 * . 0..*
 * . ^short = "การส่งมอบยา (กรณีจ่ายไปใช้ที่บ้าน)"
 * . ^definition = "การส่งมอบยา (กรณีจ่ายไปใช้ที่บ้าน)"
+* url = $EX_TH_MedicationDispenseDeliveryMode (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43Plus_MedDelivery (extensible)

@@ -26,6 +26,7 @@ Description: "สถานพยาบาลคู่สัญญา"
 * . 0..*
 * . ^short = "สถานพยาบาลคู่สัญญา"
 * . ^definition = "สถานพยาบาลคู่สัญญา"
+* url = $EX_TH_CoverageContractedProvider (exactly)
 * extension contains
     type 0..1 and
     provider 0..1 and
@@ -33,19 +34,19 @@ Description: "สถานพยาบาลคู่สัญญา"
 * extension[type] only Extension
 * extension[type] ^short = "ชนิดของสถานพยาบาลคู่สัญญา"
 * extension[type] ^definition = "ชนิดของสถานพยาบาลคู่สัญญา"
-  * url only uri
+  * url = "type" (exactly)
   * value[x] 1..
   * value[x] only CodeableConcept
   * value[x] from $VS_Meta_ProviderTypeCoverage (extensible)  
 * extension[provider] only Extension
 * extension[provider] ^short = "รหัสหรืออ้างอิงสถานพยาบาล"
 * extension[provider] ^definition = "รหัสหรืออ้างอิงสถานพยาบาล"
-  * url only uri
+  * url = "provider" (exactly)
   * value[x] 1..
   * value[x] only Reference(Organization)
 * extension[period] only Extension
 * extension[period] ^short = "วันที่ลงทะเบียนสถานบริการหลัก"
 * extension[period] ^definition = "วันที่ลงทะเบียนสถานบริการหลัก"
-  * url only uri
+  * url = "period" (exactly)
   * value[x] 1..
   * value[x] only Period
