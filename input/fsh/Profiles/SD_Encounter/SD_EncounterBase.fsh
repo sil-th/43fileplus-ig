@@ -1,9 +1,9 @@
-Profile: Moph43pEncounter
+Profile: Moph43pEncounterBase
 Parent: Encounter
-Id: moph43p-encounter
+Id: moph43p-encounter-base
 Title: "MoPH43p Encounter"
 Description: "การรับบริการ"
-* ^url = $SD_Encounter
+* ^url = $SD_Encounter_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -23,7 +23,8 @@ Description: "การรับบริการ"
 * identifier ^slicing.discriminator[=].path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains
-    vn 0..1 MS
+    vn 0..1 MS and
+    an 0..1
 * identifier[vn] ^short = "เลขที่การรับบริการ (VN)"
 * identifier[vn]
   * type = $CS_HL7_IdentifierType#VN
@@ -31,6 +32,14 @@ Description: "การรับบริการ"
   * system obeys VN-uri
   * system ^example.label = "VN namespace"
   * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/VN"
+  * value 1..
+* identifier[an] ^short = "เลขที่ผู้่ปวยใน (AN)"
+* identifier[an]
+  * type = $CS_HL7_IdentifierType#VN
+  * system 1..
+  * system obeys AN-uri
+  * system ^example.label = "AN namespace"
+  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/AN"
   * value 1..
 * status MS
 * class MS

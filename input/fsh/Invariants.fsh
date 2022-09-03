@@ -80,9 +80,16 @@ Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Device)$
 
 
 Invariant: VN-uri
-Description: "HN identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/VN, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Description: "VN identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/VN, where [XXXXX] is a 5-digit HCODE defined by THCC."
 Severity: #error
 Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/VN)$')"
+
+Invariant: AN-uri
+Description: "AN identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/AN, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/VN)$')"
+
+
 
 
 Invariant: LocalRefer-uri

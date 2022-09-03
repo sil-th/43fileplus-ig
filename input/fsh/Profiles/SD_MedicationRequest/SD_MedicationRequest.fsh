@@ -50,7 +50,7 @@ Description: "การสั่งยา"
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient)
 * subject MS
-* encounter only Reference($SD_Encounter)
+* encounter only Reference($SD_Encounter_Base)
 * encounter MS
 * authoredOn MS
 * requester only Reference($SD_Practitioner)

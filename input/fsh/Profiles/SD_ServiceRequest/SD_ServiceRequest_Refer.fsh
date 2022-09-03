@@ -59,7 +59,7 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * subject MS
 * subject only Reference($SD_Patient)
 * encounter MS
-* encounter only Reference($SD_Encounter)
+* encounter only Reference($SD_Encounter_Base)
 * authoredOn MS
 * requester MS
 * requester only Reference($SD_Practitioner)

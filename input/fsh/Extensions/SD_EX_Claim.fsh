@@ -322,6 +322,7 @@ Description: "ข้อมูลเกี่ยวกับ DRG"
     adjrw 0..1 and
     error 0..1 and
     warning 0..1 and
+    los 0..1 and
     version 0..1
 * extension[drg] only Extension
 * extension[drg] ^short = "กลุ่ม DRG"
@@ -331,31 +332,37 @@ Description: "ข้อมูลเกี่ยวกับ DRG"
   * value[x] only string
 * extension[rw] only Extension
 * extension[rw] ^short = "ค่าน้ำหนักสัมพัทธ์"
-* extension[rw] ^definition = "ค่าน้ำหนักสัมพัทธ์"
+* extension[rw] ^definition = "ค่าน้ำหนักสัมพัทธ์ของผู้ป่วยใน ที่ได้จากการคำนวณโดยโปรแกรม Grouper Version ที่ประกาศใช้ในราชกิจจานุเบกษา เป็นตัวเลขทศนิยม 4 หลัก  ระบุเป็นตัวเลขไม่เกิน 6 หลัก และทศนิยม 4 ตำแหน่ง เช่น  1788.0000  ถ้าไม่มีให้ใส่ 0.0000"
   * url = "rw" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[adjrw] only Extension
 * extension[adjrw] ^short = "ค่าน้ำหนักสัมพัทธ์ที่ปรับค่าแล้ว"
-* extension[adjrw] ^definition = "ค่าน้ำหนักสัมพัทธ์ที่ปรับค่าแล้ว"
+* extension[adjrw] ^definition = "ค่าน้ำหนักสัมพัทธ์ที่ปรับค่าแล้วของผู้ป่วยใน ที่ได้จากการคำนวณโดยโปรแกรม Grouper Version ที่ประกาศใช้ในราชกิจจานุเบกษา"
   * url = "adjrw" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[error] only Extension
 * extension[error] ^short = "รหัสความผิดพลาดเกี่ยวกับข้อมูลผู้ป่วยใน"
-* extension[error] ^definition = "รหัสความผิดพลาดเกี่ยวกับข้อมูลผู้ป่วยใน"
+* extension[error] ^definition = "รหัสความผิดพลาดเกี่ยวกับข้อมูลผู้ป่วยใน ที่ได้จากการคำนวณโดยโปรแกรม Grouper Version ที่ประกาศใช้ในราชกิจจานุเบกษา"
   * url = "error" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[warning] only Extension
 * extension[warning] ^short = "รหัสคำเตือนเกี่ยวกับข้อมูลผู้ป่วยใน"
-* extension[warning] ^definition = "รหัสคำเตือนเกี่ยวกับข้อมูลผู้ป่วยใน"
+* extension[warning] ^definition = "รหัสคำเตือนเกี่ยวกับข้อมูลผู้ป่วยใน ที่ได้จากการคำนวณโดยโปรแกรม Grouper Version ที่ประกาศใช้ในราชกิจจานุเบกษา"
   * url = "warning" (exactly)
+  * value[x] 1..
+  * value[x] only string
+* extension[los] only Extension
+* extension[los] ^short = "วันนอนจริง"
+* extension[los] ^definition = "ค่าวันนอนจริงของผู้ป่วยใน ที่ได้จากการคำนวณโดยโปรแกรม Grouper Version ที่ประกาศใช้ในราชกิจจานุเบกษา"
+  * url = "los" (exactly)
   * value[x] 1..
   * value[x] only string
 * extension[version] only Extension
 * extension[version] ^short = "รุ่นของโปรแกรม Grouper ที่ใช้ในการคำนวณ"
-* extension[version] ^definition = "รุ่นของโปรแกรม Grouper ที่ใช้ในการคำนวณ"
+* extension[version] ^definition = "เลข Version ของโปรแกรม Grouper ใช้ในการคำนวณข้อมูลผู้ป่วยในตามที่ประกาศใช้ในราชกิจจานุเบกษา"
   * url = "version" (exactly)
   * value[x] 1..
   * value[x] only string

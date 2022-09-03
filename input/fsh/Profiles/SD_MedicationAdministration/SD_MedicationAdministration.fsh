@@ -39,7 +39,7 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient)
 * subject MS
-* context only Reference($SD_Encounter)
+* context only Reference($SD_Encounter_Base)
 * context MS
 * effectivePeriod MS
 

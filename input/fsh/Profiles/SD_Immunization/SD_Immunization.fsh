@@ -37,7 +37,7 @@ Description: "การมารับบริการฉีดวัคซี
 * vaccineCode.coding[local].code 1..
 * patient only Reference($SD_Patient)
 * patient MS
-* encounter only Reference($SD_Encounter)
+* encounter only Reference($SD_Encounter_Base)
 * encounter MS
 * occurrence[x] MS
 * occurrence[x] only dateTime
