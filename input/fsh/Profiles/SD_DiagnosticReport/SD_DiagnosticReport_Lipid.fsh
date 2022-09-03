@@ -1,5 +1,5 @@
 Profile: Moph43pDiagnosticReportLipid
-Parent: DiagnosticReport
+Parent: $SD_DiagnosticReport_Base
 Id: moph43p-diagnosticreport-lipid
 Title: "MoPH43p DiagnosticReport: Lipid"
 Description: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
@@ -14,19 +14,8 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
-* code.coding contains
-    loinc 0..1 and
-    tmlt 0..1 MS
-* code.coding[loinc] ^sliceName = "loinc"
-* code.coding[loinc].system 1..
-* code.coding[loinc].system = $LNC (exactly)
-* code.coding[loinc].code 1..
-* code.coding[loinc].code = #57698-3 (exactly)
-* code.coding[tmlt] ^sliceName = "tmlt"
-* code.coding[tmlt].system 1..
-* code.coding[tmlt].system = $CS_TMLT (exactly)
-* code.coding[tmlt].code 1..
-* code.coding[tmlt].code = #320259 (exactly)
+* code.coding[loinc] = $LNC#57698-3 (exactly)
+* code.coding[tmlt] = $CS_TMLT#320259 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * issued MS

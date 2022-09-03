@@ -17,3 +17,4 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * insurance MS
 * insurance.coverage only Reference($SD_Coverage)
 * insurance.coverage MS
+* insurance.preAuthRef MS

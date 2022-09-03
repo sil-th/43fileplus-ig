@@ -1,9 +1,9 @@
-Profile: Moph43pCondition
+Profile: Moph43pConditionBase
 Parent: Condition
-Id: moph43p-condition
+Id: moph43p-condition-base
 Title: "MoPH43p Condition"
 Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
-* ^url = $SD_Condition
+* ^url = $SD_Condition_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

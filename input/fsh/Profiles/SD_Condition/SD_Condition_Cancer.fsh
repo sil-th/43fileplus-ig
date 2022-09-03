@@ -1,5 +1,5 @@
 Profile: Moph43pConditionCancer
-Parent: $SD_Condition
+Parent: $SD_Condition_Base
 Id: moph43p-condition-cancer
 Title: "MoPH43p Condition: Cancer"
 Description: "ข้อมูลการวินิจฉัยโรคมะเร็ง"

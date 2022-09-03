@@ -1,8 +1,8 @@
 Profile: Moph43pConditionSurveillance
-Parent: $SD_Condition
+Parent: $SD_Condition_Base
 Id: moph43p-condition-surveillance
 Title: "MoPH43p Condition: Surveillance"
-Description: "ข้อมูลการวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
+Description: "ข้อมูลการวินิจฉัย สำหรับการรับบริการ Surveillance"
 * ^url = $SD_Condition_Surveillance
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

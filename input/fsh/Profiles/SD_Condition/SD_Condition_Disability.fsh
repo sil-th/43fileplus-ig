@@ -1,5 +1,5 @@
 Profile: Moph43pConditionDisability
-Parent: $SD_Condition
+Parent: $SD_Condition_Base
 Id: moph43p-condition-disability
 Title: "MoPH43p Condition: Disability"
 Description: "ข้อมูลผู้พิการ ทุกคนที่อาศัยอยู่ในเขตรับผิดชอบ"

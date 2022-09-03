@@ -57,6 +57,8 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * value[x] ^short = "ผลของการตรวจทางห้องปฏิบัติการ"
 * interpretation MS
 * interpretation ^short = "การตีความจากผลการตรวจ"
+* note MS
+* note ^short = "หมายเหตุเพิ่มเติม"
 * specimen only Reference($SD_Specimen)
 * specimen MS
 * specimen ^short = "สิ่งส่งตรวจ"

@@ -11,7 +11,7 @@ Description: "การรับบริการเป็นประจำ"
     $EX_TH_ConditionChronicDischargeReason named chronicDischargeReason 0..1 MS
 * status = #finished (exactly)
 * status MS
-* diagnosis.condition only Reference($SD_Condition)
+* diagnosis.condition only Reference($SD_Condition_Base)
 * patient only Reference($SD_Patient)
 * managingOrganization only Reference($SD_Organization_Provider)
 * period MS

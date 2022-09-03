@@ -2,7 +2,7 @@ Profile: Moph43pObservationAccType
 Parent: Observation
 Id: moph43p-observation-accident-type
 Title: "MoPH43p Observation: Accident-Type"
-Description: "สถานที่เกิดอุบัติเหตุ"
+Description: "รหัสประเภทผู้บาดเจ็บ"
 * ^url = $SD_Observation_AccidentType
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

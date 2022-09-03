@@ -26,7 +26,12 @@ Usage: #example
   * focal = true
   * coverage = Reference(Coverage/coverage-uc)
   * preAuthRef = "PP1007991295"
-* item
+* item[0]
+  * extension[0]
+    * url = $EX_TH_ClaimItemCost
+    * valueMoney
+      * value = 50.0
+      * currency = $ISO4217#THB
   * sequence = 1
   * productOrService = $SCT#9336009 "Chemical test, qualitative and quantitative"
   * unitPrice

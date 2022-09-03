@@ -1,5 +1,5 @@
 Profile: Moph43pConditionPcu
-Parent: $SD_Condition
+Parent: $SD_Condition_Base
 Id: moph43p-condition-pcu
 Title: "MoPH43p Condition: PCU"
 Description: "ข้อมูลการวินิจฉัยโรคหลักในบริการ OPD ปฐมภูมิ"
