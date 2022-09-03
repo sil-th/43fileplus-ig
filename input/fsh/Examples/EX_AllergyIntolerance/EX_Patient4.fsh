@@ -18,10 +18,11 @@ Usage: #example
 * extension[+]
   * url = $EX_TH_AllergyIntoleranceAssertOrg
   * valueReference = Reference(Organization/organization-main)
-* clinicalStatus = $CS_HL7_AlleryActive#active "Active"
+* clinicalStatus
+  * coding[0] = $CS_HL7_AlleryActive#active "Active"
+  * coding[+] = $CS_Std15_AllergyVerify#1 "แพ้"
 * verificationStatus
   * coding[0] = $CS_HL7_AllergyVerify#confirmed "Confirmed"
-  * coding[+] = $CS_Std15_AllergyVerify#1 "แพ้"
 * category = #medication
 * code
   * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"
