@@ -108,6 +108,7 @@ Alias: $EX_TH_ClaimFeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/ex
 Alias: $EX_TH_ClaimIpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-claim-ipd-drg
 
 // Account
+Alias: $EX_TH_AccountCoverageUse = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-account-coverage-use
 Alias: $EX_TH_AccountAccidentCoverage = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-account-accident-coverage
 
 

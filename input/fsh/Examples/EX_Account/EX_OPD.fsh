@@ -4,6 +4,9 @@ InstanceOf: Account
 Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Usage: #example
+* extension
+  * url = $EX_TH_AccountCoverageUse
+  * valueCodeableConcept = $CS_43Plus_CoverageUse#1 "ใช้สิทธิ"
 * status = #active
 * name = "บัญชี นางสมควร ใจดี VN 65-XXXXX"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"

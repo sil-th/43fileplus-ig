@@ -10,9 +10,9 @@ Description: "การรับบริการ"
 * extension contains
     $EX_TH_EncounterDeathLocType named deathLocationType 0..1 and
     $EX_TH_EncounterDeathPregnancy named deathPregnancy 0..1 and
+    $EX_TH_EncounterPatientLocationType named patientLocationType 0..1 and
     $EX_TH_EncounterServiceHour named serviceHour 0..1 and
-    $EX_TH_EncounterServiceLocationType named serviceLocationType 0..1 and
-    $EX_TH_EncounterServiceTypeTH named serviceType 0..1 MS and
+    $EX_TH_EncounterServiceTypeTH named serviceTypeTH 0..1 MS and
     $EX_TH_EncounterFpCaseType named familyPlanningType 0..1 and
     $EX_TH_EncounterReferCategory named referCategory 0..1 and
     $EX_TH_EncounterReferResult named referResult 0..1 and
@@ -51,9 +51,6 @@ Description: "การรับบริการ"
 * priority.coding[thcc].code 1..
 * subject MS
 * subject only Reference($SD_Patient)
-  * extension contains
-    $EX_TH_EncounterPatientLocationType named patientLocationType 0..1 MS
-  * extension[patientLocationType] ^short = "รหัสที่ตั้งของที่อยู่ผู้รับบริการ"
 * basedOn MS
 * basedOn only Reference($SD_ServiceRequest_Refer)
 * participant MS
@@ -117,7 +114,7 @@ Description: "การรับบริการ"
     $EX_TH_EncounterReferOutID named referOutId 0..1 MS
 * location MS
 * location.extension contains
-    $EX_TH_EncounterServiceLocationType named locationType 0..1 MS and
+    $EX_TH_EncounterServiceLocationType named serviceLocationType 0..1 MS and
     $EX_TH_EncounterIpdJourney named ipdJourney 0..* MS
 * serviceProvider MS
 * serviceProvider only Reference($SD_Organization_Provider)

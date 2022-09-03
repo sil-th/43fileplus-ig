@@ -12,19 +12,21 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    $EX_TH_ServiceRequestReferRequesterDetail named detail 0..1 MS and
+    $EX_TH_ServiceRequestReferRequesterDetail named requesterDetail 0..1 MS and
     $EX_TH_ServiceRequestReferStatus named referStatus 0..1 MS and
-    $EX_TH_ServiceRequestReferRequestedPeriod named referPeriod 0..1 MS and
-    $EX_TH_ServiceRequestReferAnswerType named answerType 0..1 MS and
+    $EX_TH_ServiceRequestReferOutcome named referOutcome 0..1 MS and
+    $EX_TH_ServiceRequestReferRequestedPeriod named requestedPeriod 0..1 MS and
+    $EX_TH_ServiceRequestReferAnswerType named referAnswerType 0..1 MS and
     $EX_HL7_PreCondition named preCondition 0..1 MS and
-    $EX_TH_ServiceRequestEclaimReferType named referType 0..1 MS and
+    $EX_TH_ServiceRequestEclaimReferType named eclaimReferType 0..1 MS and
     $EX_TH_ServiceRequestSpecialDiseaseRefer named specialDisease 0..1 MS
-* extension[detail] ^short = "รายละเอียดการส่งต่อผู้ป่วย"
+* extension[requesterDetail] ^short = "รายละเอียดการส่งต่อผู้ป่วย"
 * extension[referStatus] ^short = "สถานะการส่งต่อผู้ป่วย"
-* extension[referPeriod] ^short = "ช่วงเวลาที่ขอส่งต่อผู้ป่วย"
-* extension[answerType] ^short = "การตอบรับการส่งต่อผู้ป่วย"
+* extension[referOutcome] ^short = "ผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+* extension[requestedPeriod] ^short = "ช่วงเวลาที่ขอส่งต่อผู้ป่วย"
+* extension[referAnswerType] ^short = "การตอบรับการส่งต่อผู้ป่วย"
 * extension[preCondition] ^short = "สถานะของผู้ป่วยก่อนหรือระหว่างการส่งต่อ"
-* extension[referType] ^short = "ประเภทการส่งต่อผู้ป่วย"
+* extension[eclaimReferType] ^short = "ประเภทการส่งต่อผู้ป่วย"
 * extension[specialDisease] ^short = "การส่งต่อผู้ป่วยโรคเฉพาะทาง"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #value

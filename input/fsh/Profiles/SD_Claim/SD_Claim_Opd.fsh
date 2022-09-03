@@ -22,18 +22,20 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * identifier ^slicing.discriminator[=].path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-    Inv 0..1 and
-    InvLt 0..1
-* identifier[Inv].system 1..
-* identifier[Inv].system obeys Inv-uri
-* identifier[Inv].system ^example.label = "INV namespace"
-* identifier[Inv].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Inv"
-* identifier[Inv].value 1..
-* identifier[InvLt].system 1..
-* identifier[InvLt].system obeys InvLt-uri
-* identifier[InvLt].system ^example.label = "INV namespace"
-* identifier[InvLt].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/InvLt"
-* identifier[InvLt].value 1..
+    inv 0..1 and
+    invLt 0..1
+* identifier[inv] ^short = "เลขที่อ้างอิงใบแจ้งหนี้ของหน่วยบริการ"
+* identifier[inv].system 1..
+* identifier[inv].system obeys Inv-uri
+* identifier[inv].system ^example.label = "INV namespace"
+* identifier[inv].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Inv"
+* identifier[inv].value 1..
+* identifier[invLt] ^short = "เลขที่อ้างอิงชุดข้อมูลใบแจ้งหนี้ ของหน่วยบริการ ถ้าไม่มี ใช้ค่าเดียวกับ identifier.inv"
+* identifier[invLt].system 1..
+* identifier[invLt].system obeys InvLt-uri
+* identifier[invLt].system ^example.label = "INV namespace"
+* identifier[invLt].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/InvLt"
+* identifier[invLt].value 1..
 * status MS
 * type MS
 * type.coding.system = $CS_HL7_ClaimType (exactly)
@@ -51,6 +53,24 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * insurance.coverage only Reference($SD_Coverage)
 * insurance.coverage MS
 * insurance.preAuthRef MS
+* item MS
+* item.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 MS and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 MS and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 MS and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1 MS
+* item.detail
+* item.detail.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
+* item.detail.subDetail 
+* item.detail.subDetail.extension contains
+    $EX_TH_ClaimItemCost named itemCost 0..1 and
+    $EX_TH_ClaimItemCopay named itemCopay 0..1 and
+    $EX_TH_ClaimItemPaid named itemPaid 0..1 and
+    $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
 * total MS
 * total.value MS
 * total.currency = #THB (exactly)

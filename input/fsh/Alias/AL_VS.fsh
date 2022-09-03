@@ -200,14 +200,15 @@ Alias: $VS_43Plus_MedDelivery = http://terms.sil-th.org/ValueSet/vs-43plus-medic
 Alias: $VS_eClaim_ProcedureType = http://terms.sil-th.org/ValueSet/vs-eclaim-procedure-type
 
 // Finance
+Alias: $VS_43Plus_CoverageUse = http://terms.sil-th.org/ValueSet/vs-43plus-coverage-use
 Alias: $VS_eClaim_AdpType = http://terms.sil-th.org/ValueSet/vs-eclaim-adp-type
-Alias: $VS_eClaim_CancerType = http://terms.sil-th.org/ValueSet/vs-eclaim-cancer-type
 
 
 // Cancer
 Alias: $VS_43Plus_CancerDxSource = http://terms.sil-th.org/ValueSet/vs-43plus-cancer-dx-source
 Alias: $VS_43Plus_CancerGrade = http://terms.sil-th.org/ValueSet/vs-43plus-cancer-grade
 Alias: $VS_43Plus_CancerStaging = http://terms.sil-th.org/ValueSet/vs-43plus-cancer-staging
+Alias: $VS_eClaim_CancerType = http://terms.sil-th.org/ValueSet/vs-eclaim-cancer-type
 
 
 // Large CodeSystems
