@@ -1,9 +1,9 @@
-Profile: Moph43pObservationNcdGestDM
+Profile: Moph43pObservationNcdGestDMHx
 Parent: Observation
-Id: moph43p-observation-ncd-gest-dm
-Title: "MoPH43p Observation: NCD Gestational DM"
+Id: moph43p-observation-ncd-gest-dm-hx
+Title: "MoPH43p Observation: NCD Gestational DM Hx"
 Description: "ประวัติเป็นเบาหวานขณะตั้งครรภ์"
-* ^url = $SD_Observation_NcdGestDM
+* ^url = $SD_Observation_NcdGestDMHx
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

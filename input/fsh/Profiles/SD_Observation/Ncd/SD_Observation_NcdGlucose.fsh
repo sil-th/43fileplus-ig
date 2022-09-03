@@ -1,9 +1,9 @@
-Profile: Moph43pObservationNcdGlucose
+Profile: Moph43pObservationNcdGlucoseHx
 Parent: Observation
-Id: moph43p-observation-ncd-glucose
-Title: "MoPH43p Observation: NCD Glucose"
+Id: moph43p-observation-ncd-glucose-hx
+Title: "MoPH43p Observation: NCD High Glucose Hx"
 Description: "ประวัติน้ำตาลในเลือดสูง"
-* ^url = $SD_Observation_NcdGlucose
+* ^url = $SD_Observation_NcdGlucoseHx
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

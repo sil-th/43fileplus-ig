@@ -1,9 +1,9 @@
-Profile: Moph43pConditionPcu
+Profile: Moph43pConditionNcd
 Parent: $SD_Condition_Base
-Id: moph43p-condition-pcu
-Title: "MoPH43p Condition: PCU"
+Id: moph43p-condition-ncd
+Title: "MoPH43p Condition: NCD"
 Description: "ข้อมูลการวินิจฉัยโรคหลักในบริการ OPD ปฐมภูมิ"
-* ^url = $SD_Condition_Pcu
+* ^url = $SD_Condition_Ncd
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

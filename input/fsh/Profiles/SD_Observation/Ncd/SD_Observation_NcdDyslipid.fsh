@@ -1,9 +1,9 @@
-Profile: Moph43pObservationNcdDyslipid
+Profile: Moph43pObservationNcdDyslipidHx
 Parent: Observation
-Id: moph43p-observation-ncd-dyslipid
-Title: "MoPH43p Observation: NCD Dyslipidemia"
+Id: moph43p-observation-ncd-dyslipid-hx
+Title: "MoPH43p Observation: NCD Dyslipidemia Hx"
 Description: "ประวัติไขมันในเลือดสูง"
-* ^url = $SD_Observation_NcdDyslipid
+* ^url = $SD_Observation_NcdDyslipidHx
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
