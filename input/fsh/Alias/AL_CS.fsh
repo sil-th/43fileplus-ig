@@ -120,6 +120,7 @@ Alias: $CS_THCC_ChronicDischargeReason = https://terms.sil-th.org/CodeSystem/cs-
 // Surveillance
 Alias: $CS_THCC_SurvGroup = http://terms.sil-th.org/CodeSystem/cs-thcc-surveillance-group
 Alias: $CS_THCC_DiseaseCause = http://terms.sil-th.org/CodeSystem/cs-thcc-disease-cause
+Alias: $CS_PCU_ClnicalStatus = http://terms.sil-th.org/CodeSystem/cs-pcu-clnical-status
 
 
 // Accident

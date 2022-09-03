@@ -54,7 +54,7 @@ Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_ConditionChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-chronic-discharge-reason
 
 // Condition
-// Alias: $EX_TH_ConditionDisabilityType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-disability-type
+// Alias: $EX_TH_ConditionClinicalStatusTH = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-clinical-status-th
 Alias: $EX_TH_ConditionIsChronic = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-is-chronic
 
 // Coverage

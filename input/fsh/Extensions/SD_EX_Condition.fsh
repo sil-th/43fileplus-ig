@@ -1,27 +1,22 @@
-// * extension[+]
-//   * url = $EX_TH_ConditionDisabilityType
-//   * valueCodeableConcept
-//     * coding[0] = $CS_THCC_DisabilityType#3 "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
-//     * text = "ความพิการการเคลื่อนไหวหรือทางร่างกาย"
-// Extension: EX_TH_ConditionDisabilityType
-// Id: ex-condition-disability-type
-// Title: "Condition: Disability Type"
-// Description: "ประเภทความพิการ"
-// * ^url = $EX_TH_ConditionDisabilityType
+// Extension: EX_TH_ConditionClinicalStatusTH
+// Id: ex-condition-clinical-status-th
+// Title: "Condition: Clinical Status TH"
+// Description: "สภาพผู้ป่วย"
+// * ^url = $EX_TH_ConditionClinicalStatusTH
 // * ^version = "4.3.0"
 // * ^status = #draft
 // * ^experimental = false
 // * ^date = "2022-08-23T07:06:13+11:00"
 // * ^publisher = "SIL-TH"
 // * ^context.type = #element
-// * ^context.expression = "Condition"
+// * ^context.expression = "Condition.clinicalStatus"
 // * . 0..*
-// * . ^short = "ประเภทความพิการ"
-// * . ^definition = "ประเภทความพิการ"
-// * url = $EX_TH_ConditionDisabilityType (exactly)
+// * . ^short = "สภาพผู้ป่วย"
+// * . ^definition = "สภาพผู้ป่วย"
+// * url = $EX_TH_ConditionClinicalStatusTH (exactly)
 // * value[x] 1..
 // * value[x] only CodeableConcept
-// * value[x] from $VS_THCC_DisabilityType (extensible)
+// * value[x] from $VS_PCU_ClnicalStatus (extensible)
 
 
 // * extension[0]

@@ -121,6 +121,7 @@ Alias: $VS_THCC_ChronicDischargeReason = https://terms.sil-th.org/ValueSet/vs-th
 // Surveillance
 Alias: $VS_THCC_SurvGroup = http://terms.sil-th.org/ValueSet/vs-thcc-surveillance-group
 Alias: $VS_THCC_DiseaseCause = http://terms.sil-th.org/ValueSet/vs-thcc-disease-cause
+Alias: $VS_PCU_ClnicalStatus = http://terms.sil-th.org/ValueSet/vs-pcu-clnical-status
 
 
 // Accident

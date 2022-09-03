@@ -8,8 +8,7 @@ Description: "ข้อมูลผู้พิการ ทุกคนที�
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_HL7_ConditionDueTo named conditionDueTo 0..* MS
-* extension[conditionDueTo] ^short = "สาเหตุความพิการ"
-* extension[conditionDueTo] ^min = 0
+    $EX_HL7_ConditionDueTo named dueTo 0..* MS
+* extension[dueTo] ^short = "สาเหตุความพิการ"
 * severity ^short = "ระดับความรุนแรง"
 * severity MS
