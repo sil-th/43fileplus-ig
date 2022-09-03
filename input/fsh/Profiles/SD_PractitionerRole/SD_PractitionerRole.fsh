@@ -13,17 +13,18 @@ Description: "ข้อมูลการปฏิบัติงานผู้
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier contains pid 0..1 MS
-* identifier[pid] ^short = "ทะเบียนบุคคล"
-* identifier[pid] ^patternIdentifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PN
-* identifier[pid].system 1..
-* identifier[pid].system obeys PID-uri
-* identifier[pid].system ^example.label = "PID namespace"
-* identifier[pid].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/PID"
-* identifier[pid].value 1..
-* identifier[pid].value obeys PID-length
-* identifier[pid].value ^example.label = "เลขทะเบียนบุคคล"
-* identifier[pid].value ^example.valueString = "123456789012345"
+* identifier contains proId 0..1 MS
+* identifier[proId] ^short = "เลขที่ผู้ให้บริการ"
+* identifier[proId] ^comment = "เลขที่ผู้ให้บริการ ออกโดยโปรแกรม ไม่ซ้ำกันในสถานพยาบาลเดียวกัน"
+  * type = $CS_HL7_IdentifierType#PN
+  * system 1..
+  * system obeys ProID-uri
+  * system ^example.label = "Provider ID namespace"
+  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/ProID"
+  * value 1..
+  * value obeys ProID-length
+  * value ^example.label = "เลขที่ผู้ให้บริการ"
+  * value ^example.valueString = "123456789012345"
 * period MS
 * period.start MS
 * period.start ^short = "วันที่เริ่มปฏิบัติงาน"

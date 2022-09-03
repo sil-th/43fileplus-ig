@@ -18,8 +18,22 @@ Description: "รหัส เจ้าบ้าน"
 * . ^short = "รหัส เจ้าบ้าน"
 * . ^definition = "รหัส เจ้าบ้าน"
 * url = $EX_TH_LocationHouseOwner (exactly)
-* value[x] 1..
-* value[x] only Reference(Patient or RelatedPerson or Person)
+* extension contains
+    pid 0..1 and
+    hcode 0..1
+* extension[pid] only Extension
+* extension[pid] ^short = "รหัส PID ของเจ้าบ้าน"
+* extension[pid] ^definition = "รหัส PID ของเจ้าบ้าน"
+  * url = "pid" (exactly)
+  * value[x] 1..
+  * value[x] only string
+* extension[hcode] only Extension
+* extension[hcode] ^short = "รหัส HCODE ของเจ้าบ้าน"
+* extension[hcode] ^definition = "รหัส HCODE ของเจ้าบ้าน"
+  * url = "hcode" (exactly)
+  * value[x] 1..
+  * value[x] only string
+
 
 
 
@@ -44,8 +58,22 @@ Description: "รหัส อสม."
 * . ^short = "รหัส อสม."
 * . ^definition = "รหัส อสม."
 * url = $EX_TH_LocationResponsibleVolunteer (exactly)
-* value[x] 1..
-* value[x] only Reference(Practitioner)
+* extension contains
+    pid 0..1 and
+    hcode 0..1
+* extension[pid] only Extension
+* extension[pid] ^short = "รหัส PID ของเจ้าบ้าน"
+* extension[pid] ^definition = "รหัส PID ของเจ้าบ้าน"
+  * url = "pid" (exactly)
+  * value[x] 1..
+  * value[x] only string
+* extension[hcode] only Extension
+* extension[hcode] ^short = "รหัส HCODE ของเจ้าบ้าน"
+* extension[hcode] ^definition = "รหัส HCODE ของเจ้าบ้าน"
+  * url = "hcode" (exactly)
+  * value[x] 1..
+  * value[x] only string
+
 
 
 

@@ -8,10 +8,20 @@ Usage: #example
   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
 * extension[+]
   * url = $EX_TH_LocationHouseOwner
-  * valueReference = Reference(Patient/patient-patient1)
+  * extension[0]
+    * url = "pid"
+    * valueString = "12345689"
+  * extension[+]
+    * url = "hcode"
+    * valueString = "XXXXX"
 * extension[+]
   * url = $EX_TH_LocationResponsibleVolunteer
-  * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
+  * extension[0]
+    * url = "pid"
+    * valueString = "987654321"
+  * extension[+]
+    * url = "hcode"
+    * valueString = "XXXXX"
 * extension[+]
   * url = $EX_TH_LocationHouseholdCount
   * valueInteger = 1

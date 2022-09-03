@@ -8,6 +8,19 @@ Description: "PID number shall be 1 to 15 digit number"
 Severity: #error
 Expression: "value.matches('^([0-9]{1,15})$')"
 
+
+Invariant: ProID-uri
+Description: "Provider ID identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/PID, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/PID)$')"
+
+Invariant: ProID-length
+Description: "Provider ID number shall be 1 to 15 digit number"
+Severity: #error
+Expression: "value.matches('^([0-9]{1,15})$')"
+
+
+
 Invariant: CID-length
 Description: "CID number shall be 13-digit number"
 Severity: #error

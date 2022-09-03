@@ -11,16 +11,17 @@ Description: "ข้อมูลผู้ให้บริการของส
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier contains cid 0..1
+* identifier contains
+    cid 0..1 MS
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
 * identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
-* identifier[cid].system 1..
-* identifier[cid].system = $ID_ThaiCid (exactly)
-* identifier[cid].value 1..
-* identifier[cid].value obeys CID-length
-* identifier[cid].value ^example.label = "เลขประจำตัวประชาชน"
-* identifier[cid].value ^example.valueString = "1234567890123"
+  * .system 1..
+  * .system = $ID_ThaiCid (exactly)
+  * .value 1..
+  * .value obeys CID-length
+  * .value ^example.label = "เลขประจำตัวประชาชน"
+  * .value ^example.valueString = "1234567890123"
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
 * name ^slicing.discriminator[0].type = #value

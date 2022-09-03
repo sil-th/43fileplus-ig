@@ -52,8 +52,8 @@ Description: "ข้อมูลทั่วไปของประชาชน
     hn 0..1 MS and
     passportNo 0..* and
     workPermit 0..* 
-* identifier[pid] ^short = "ทะเบียนบุคคล"
-* identifier[pid] ^comment = "ทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
+* identifier[pid] ^short = "เลขทะเบียนบุคคล"
+* identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
 * identifier[pid]
   * type = $CS_HL7_IdentifierType#PN
   * system 1..
