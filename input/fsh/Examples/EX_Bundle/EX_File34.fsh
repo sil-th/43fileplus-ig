@@ -35,6 +35,18 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/observation-anc-height"
   * resource = observation-anc-height
 * entry[+]
+  * fullUrl = "http://example.org/Observation/observation-anc-dental-caries"
+  * resource = observation-anc-dental-caries
+* entry[+]
+  * fullUrl = "http://example.org/Observation/observation-anc-gingivitis"
+  * resource = observation-anc-gingivitis
+* entry[+]
+  * fullUrl = "http://example.org/Observation/observation-anc-dental-plaque"
+  * resource = observation-anc-dental-plaque
+* entry[+]
+  * fullUrl = "http://example.org/Observation/observation-anc-oral-exam"
+  * resource = observation-anc-oral-exam
+* entry[+]
   * fullUrl = "http://example.org/Observation/observation-anc-thal"
   * resource = observation-anc-thal
 * entry[+]
@@ -128,6 +140,10 @@ Usage: #example
   * entry[+] = Reference(Observation/observation-anc-result)
   * entry[+] = Reference(Observation/observation-anc-weight)
   * entry[+] = Reference(Observation/observation-anc-height)
+  * entry[+] = Reference(Observation/observation-anc-dental-caries)
+  * entry[+] = Reference(Observation/observation-anc-gingivitis)
+  * entry[+] = Reference(Observation/observation-anc-dental-plaque)
+  * entry[+] = Reference(Observation/observation-anc-oral-exam)
   * entry[+] = Reference(Observation/observation-anc-thal)
   * entry[+] = Reference(Observation/observation-anc-urine-sugar)
   * entry[+] = Reference(Observation/observation-anc-urine-protein)

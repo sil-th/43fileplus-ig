@@ -112,7 +112,7 @@ Usage: #example
   * text = "จำนวนฟันขึ้นใหม่ (ซี่)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
-* valueQuantity = 2 '{#}' "Number"
+* valueInteger = 2
 
 
 

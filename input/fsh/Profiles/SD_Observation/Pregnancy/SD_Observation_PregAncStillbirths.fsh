@@ -10,4 +10,3 @@ Description: "จำนวนตายคลอด"
 * category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
 * code.coding[code43Plus] = $LNC#57062-2 (exactly)
 * value[x] only integer
-* valueInteger MS

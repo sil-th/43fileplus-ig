@@ -13,7 +13,7 @@ Description: "ข้อมูลการตรวจร่างกาย"
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7].coding = $CS_HL7_ObservationCat#social-history (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
 * code MS
 * code ^short = "รหัสการตรวจร่างกาย"
 * code.coding ^slicing.discriminator[0].type = #value

@@ -35,7 +35,10 @@ pages:
     title: 43 แฟ้ม-plus on FHIR
   files-listing.md:
     title: ตัวอย่าง FHIR Document ตาม 43 แฟ้ม-plus
-
+  profiles.md:
+    title: รายการ Profiles
+  extensions.md:
+    title: รายการ Extensions
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -43,6 +46,8 @@ menu:
   หน้าแรก: index.html
   สารบัญ: toc.html
   43 แฟ้ม plus: files-listing.html
-  Artifacts Summary: artifacts.html
+  # Artifacts Summary: artifacts.html
+  Profiles: profiles.html
+  Extensions: extensions.html
   # Other Resources:
   #   "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html

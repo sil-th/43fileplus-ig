@@ -38,5 +38,5 @@ Usage: #example
     * value =  "XXXXX"
   * display = "รหัสเวชภัณฑ์ที่ใช้ทดสอบ"
 * valueCodeableConcept
-  * coding[0] = $SCT#10828004 "Positive"
+  * coding[0] = $CS_HL7_ObsInterpret#POS "Positive"
   * text = "Positive"
