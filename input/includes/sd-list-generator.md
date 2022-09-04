@@ -36,9 +36,9 @@
 
           {%- unless parent or child -%}
             {%- if new -%}
-              <li><a href="{{sd1.path}}"><span class="bg-success" markdown="1">{{sd1.title}}</span><!-- new-content --></a> {{sd3.description}}</li>
+              <li><a href="{{sd1.path}}"><span class="bg-success" markdown="1">{{sd1.title}}</span><!-- new-content --></a> {{sd1.description}}</li>
             {% else %}
-              <li><a href="{{sd1.path}}">{{sd1.title}}</a> {{sd3.description}}</li>
+              <li><a href="{{sd1.path}}">{{sd1.title}}</a> {{sd1.description}}</li>
             {% endif %}
           {%- endunless -%}
 
