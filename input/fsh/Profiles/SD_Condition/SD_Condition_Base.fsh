@@ -7,6 +7,11 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* extension contains
+    $EX_HL7_ConditionDueTo named dueTo 0..* and
+    $EX_TH_ConditionIsChronic named isChronic 0..1
+* extension[dueTo] ^short = "สาเหตุการป่วย (ถ้าสามารถระบุได้)"
+* extension[isChronic] ^short = "โรคเรื้อรัง/รักษาต่อเนื่องหรือไม่"
 * category MS
 * code MS
 * code ^short = "รหัสวินิฉัยโรค/ภาวะโรค"

@@ -8,7 +8,6 @@ Description: "ข้อมูลการวินิจฉัย สำหร�
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_HL7_ConditionDueTo named dueTo 0..* MS and
     $EX_HL7_ConditionAssertedDate named assertedDate 0..1 MS
 * extension[dueTo] ^short = "ชนิดของเชื้อโรค"
 * extension[dueTo].value[x] only CodeableConcept

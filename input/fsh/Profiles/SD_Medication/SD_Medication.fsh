@@ -8,8 +8,8 @@ Description: "ยา"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_TH_MedicationImageUrl named image 0..*
-* extension[image] ^min = 0
+    $EX_TH_MedicationImageUrl named imageUrl 0..*
+* extension[imageUrl] ^min = 0
 * code 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

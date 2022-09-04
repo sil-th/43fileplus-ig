@@ -2,7 +2,7 @@ Profile: Moph43pObservationPregGeneralSymptom
 Parent: $SD_Observation_PregnancyBase
 Id: moph43p-observation-preg-general-symptom
 Title: "MoPH43p Observation: Pregnancy-General Symptom"
-Description: "อาการผิดปกติจากการมาตรวจครั้งแรก"
+Description: "อาการผิดปกติจากการมาตรวจครั้งก่อนหน้า"
 * ^url = $SD_Observation_PregGeneralSymptom
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

@@ -2,7 +2,7 @@ Profile: Moph43pObservationNeonateGeneral
 Parent: $SD_Observation_NeonateBase
 Id: moph43p-observation-neonatal-general
 Title: "MoPH43p Observation: Neonate General"
-Description: "ผลการตรวจทารกหลังคลอด"
+Description: "สุขภาพเด็กโดยรวม"
 * ^url = $SD_Observation_NeonateGeneral
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

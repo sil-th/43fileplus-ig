@@ -7,7 +7,7 @@ Description: "การจ่ายยา"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension contains $EX_TH_MedicationDispenseDeliveryMode named delivery 0..*
+* extension contains $EX_TH_MedicationDispenseDeliveryMode named deliveryMode 0..*
 * medication[x] 1.. MS
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"

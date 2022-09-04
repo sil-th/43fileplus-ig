@@ -1,9 +1,9 @@
-Profile: Moph43pObservationLabProteintStrip
+Profile: Moph43pObservationLabProteinStrip
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-proteint-strip
-Title: "MoPH43p Observation: Lab-ProteintStrip"
+Id: moph43p-observation-lab-protein-strip
+Title: "MoPH43p Observation: Lab-Protein Strip"
 Description: "ระดับโปรตีนในปัสสาวะ"
-* ^url = $SD_Observation_LabProteintStrip
+* ^url = $SD_Observation_LabProteinStrip
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
