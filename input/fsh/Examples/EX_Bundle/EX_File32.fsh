@@ -23,6 +23,9 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/observation-fp-preg-test1"
   * resource = observation-fp-preg-test1
 * entry[+]
+  * fullUrl = "http://example.org/MedicationDispense/medicationdispense-contraception1"
+  * resource = medicationdispense-contraception1
+* entry[+]
   * fullUrl = "http://example.org/Appointment/appointment-fp"
   * resource = appointment-fp
 * entry[+]
@@ -52,6 +55,7 @@ Usage: #example
   * entry[0] = Reference(Encounter/encounter-fp)
   * entry[+] = Reference(Observation/observation-fp-contraception1)
   * entry[+] = Reference(Observation/observation-fp-preg-test1)
+  * entry[+] = Reference(MedicationDispense/medicationdispense-contraception1)
 * section[+]
   * title = "ข้อมูลการนัด"
   * entry[0] = Reference(Appointment/appointment-fp)

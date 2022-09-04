@@ -23,8 +23,8 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/observation-prenatal-lmp1"
   * resource = observation-prenatal-lmp1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/observation-prenatal-edc1"
-  * resource = observation-prenatal-edc1
+  * fullUrl = "http://example.org/Observation/observation-prenatal-edd1"
+  * resource = observation-prenatal-edd1
 * entry[+]
   * fullUrl = "http://example.org/Observation/observation-prenatal-vdrl1"
   * resource = observation-prenatal-vdrl1
@@ -76,7 +76,7 @@ Usage: #example
   * entry[0] = Reference(Encounter/encounter-prenatal1)
   * entry[+] = Reference(Observation/observation-prenatal-gravida1)
   * entry[+] = Reference(Observation/observation-prenatal-lmp1)
-  * entry[+] = Reference(Observation/observation-prenatal-edc1)
+  * entry[+] = Reference(Observation/observation-prenatal-edd1)
   * entry[+] = Reference(Observation/observation-prenatal-vdrl1)
   * entry[+] = Reference(Observation/observation-prenatal-hbsag1)
   * entry[+] = Reference(Observation/observation-prenatal-hiv1)

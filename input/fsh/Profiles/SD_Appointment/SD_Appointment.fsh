@@ -11,10 +11,10 @@ Description: "ข้อมูลการนัดมารับบริกา
 * status ^short = "สถานะการนัด (มองจากฝั่งต้นทางการนัด)"
 * serviceCategory MS
 * serviceCategory ^short = "บริการที่นัดรับ"
-* serviceCategory from $CS_Std15_AppointServiceCategory (extensible)
+* serviceCategory from $VS_Std15_AppointServiceCategory (extensible)
 * serviceType MS
 * serviceType ^short = "ประเภทกิจกรรมที่นัด"
-* serviceType from $CS_THCC_AppointServiceType (extensible)
+* serviceType from $VS_THCC_AppointServiceType (extensible)
 * reasonCode MS
 * reasonCode ^short = "รหัสโรคที่นัดมาตรวจ"
 * reasonCode.coding ^slicing.discriminator.type = #value

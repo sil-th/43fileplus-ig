@@ -4,6 +4,8 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ Choles
 Description: "ผลการตรวจ Cholesterol"
 Usage: #example
 * status = #final
+* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+  * text = "Laboratory"
 * code
   * coding[0] = $LNC#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
   * coding[+] = $CS_TMLT#320070 "Cholesterol [mg/dL] in Serum or Plasma"
@@ -23,6 +25,8 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ Trigly
 Description: "ผลการตรวจ Triglyceride"
 Usage: #example
 * status = #final
+* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+  * text = "Laboratory"
 * code
   * coding[0] = $LNC#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
   * coding[+] = $CS_TMLT#320072 "Triglyceride [mg/dL] in Serum or Plasma"
@@ -42,6 +46,8 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ LDL"
 Description: "ผลการตรวจ LDL"
 Usage: #example
 * status = #final
+* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+  * text = "Laboratory"
 * code
   * coding[0] = $LNC#13457-7 "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
   * coding[+] = $CS_TMLT#320293 "Cholesterol in LDL [mg/dL] in Serum or Plasma by calculation"
@@ -61,6 +67,8 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ HDL"
 Description: "ผลการตรวจ HDL"
 Usage: #example
 * status = #final
+* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+  * text = "Laboratory"
 * code
   * coding[0] = $LNC#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
   * coding[+] = $CS_TMLT#320071 "Cholesterol in HDL [mg/dL] in Serum or Plasma"

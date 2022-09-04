@@ -92,8 +92,8 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code
-  * coding[0] = $LNC#8290-9 "Head Occipital-frontal circumference --at birth- by Tape measure"
-  * text = "Head Occipital-frontal circumference --at birth- by Tape measure"
+  * coding[0] = $LNC#9843-4 "Head Occipital-frontal circumference"
+  * text = "Head Occipital-frontal circumference"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
 * valueQuantity = 35 'cm' "cm"

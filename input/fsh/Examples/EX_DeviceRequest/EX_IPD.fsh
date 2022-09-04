@@ -13,6 +13,7 @@ Usage: #example
 * priority = #routine
 * codeReference = Reference(Device/device-ipd-device1)
 * parameter
+  * code = $SCT#246205007 "Quantity"
   * valueQuantity = 1 '{#}' "Number"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * encounter = Reference(Encounter/encounter-rehab1)

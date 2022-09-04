@@ -21,7 +21,7 @@ Usage: #example
 * hasMember[+] = Reference(Observation/observation-vital-hr1)
 * hasMember[+] = Reference(Observation/observation-vital-rr1)
 * hasMember[+] = Reference(Observation/observation-vital-wc1)
-* hasMember[+] = Reference(Observation/observation-vital-hc1)
+* hasMember[+] = Reference(Observation/observation-vital-hipc1)
 
 
 
@@ -153,7 +153,7 @@ Usage: #example
 
 
 
-Instance: observation-vital-hc1
+Instance: observation-vital-hipc1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: รอบสะโพก"
 Description: "Hip circumference"

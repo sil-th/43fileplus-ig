@@ -1,7 +1,7 @@
 Instance: condition-ncd1
 InstanceOf: Condition
-Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
-Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
+Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
+Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed
@@ -17,8 +17,8 @@ Usage: #example
 
 Instance: condition-ncd-summary
 InstanceOf: Condition
-Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
-Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD - NCD"
+Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
+Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Usage: #example
 * clinicalStatus = $CS_HL7_ConditionStatus#active
 * verificationStatus = $CS_HL7_ConditionVerification#confirmed

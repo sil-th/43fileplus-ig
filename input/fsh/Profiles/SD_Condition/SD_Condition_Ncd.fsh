@@ -2,7 +2,7 @@ Profile: Moph43pConditionNcd
 Parent: $SD_Condition_Base
 Id: moph43p-condition-ncd
 Title: "MoPH43p Condition: NCD"
-Description: "ข้อมูลการวินิจฉัยโรคหลักในบริการ OPD ปฐมภูมิ"
+Description: "ข้อมูลการวินิจฉัยโรค NCD"
 * ^url = $SD_Condition_Ncd
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

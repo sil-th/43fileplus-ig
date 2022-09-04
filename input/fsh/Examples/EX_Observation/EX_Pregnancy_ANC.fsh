@@ -94,6 +94,72 @@ Usage: #example
 * valueQuantity = 160 'cm' "cm"
 
 
+
+Instance: observation-anc-dental-caries
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: จำนวนฟันผุ"
+Description: "จำนวนฟันผุ"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#80967001 "Dental caries"
+  * text = "จำนวนฟันผุ (ซี่)"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2021-04-21T12:30:02+07:00"
+* valueInteger = 1
+
+
+
+Instance: observation-anc-gingivitis
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: การมีภาวะเหงือกอักเสบ ANC"
+Description: "การมีภาวะเหงือกอักเสบ ANC"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#66383009 "Gingivitis"
+  * text = "สภาพเหงือก"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2021-04-21T12:30:02+07:00"
+* valueCodeableConcept = $CS_HL7_YesNo#N "No"
+
+
+Instance: observation-anc-dental-plaque
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: การพบหินปูน ANC"
+Description: "การพบหินปูน ANC"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $LNC#34016-6 "Dental plaque {Probe site}"
+  * text = "Dental plaque {Probe site}"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2021-04-21T12:30:02+07:00"
+* valueCodeableConcept = $CS_HL7_YesNo#N "No"
+
+
+Instance: observation-anc-oral-exam
+InstanceOf: Observation
+Title: "ตัวอย่าง Observation: สถานะการตรวจสุขภาพปาก/ฟัน ANC"
+Description: "สถานะการตรวจสุขภาพปาก/ฟัน ANC"
+Usage: #example
+* status = #final
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
+* code
+  * coding[0] = $SCT#122856003 "Oral examination"
+  * text = "Oral examination"
+* subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
+* effectiveDateTime = "2021-04-21T12:30:02+07:00"
+* valueCodeableConcept = $CS_HL7_YesNo#Y "Yes"
+
+
 Instance: observation-anc-thal
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: ตรวจธาลาสซีเมียในครรภ์หรือไม่"

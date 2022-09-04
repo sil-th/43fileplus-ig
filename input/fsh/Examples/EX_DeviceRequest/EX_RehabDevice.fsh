@@ -10,6 +10,7 @@ Usage: #example
 * priority = #routine
 * codeCodeableConcept = $CS_THCC_RehabDevice#8305 "อุปกรณ์พยุงลำตัว"
 * parameter
+  * code = $SCT#246205007 "Quantity"
   * valueQuantity = 1 '{#}' "Number"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * encounter = Reference(Encounter/encounter-rehab1)

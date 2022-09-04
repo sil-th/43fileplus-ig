@@ -40,8 +40,8 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#93857-1 "Date and time of obstetric delivery"
-  * text = "Date and time of obstetric delivery"
+  * coding[0] = $LNC#11778-8 "Delivery date Estimated"
+  * text = "Delivery date Estimated"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
 * valueDateTime = "2021-12-01"
@@ -72,8 +72,8 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#21112-8 "Birth date"
-  * text = "Birth date"
+  * coding[0] = $LNC#93857-1 "Date and time of obstetric delivery"
+  * text = "Date and time of obstetric delivery"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
 * valueDateTime = "2022-01-21T14:30:02+07:00"

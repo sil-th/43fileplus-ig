@@ -87,6 +87,8 @@ Title: "ตัวอย่าง Observation: อาชีพปัจจุบ�
 Description: "อาชีพปัจจุบันของผู้ป่วยรายที่ 1 พร้อมหน่วยงานที่สังกัด และรายได้เฉลี่ย"
 Usage: #example
 * status = #final
+* category = $CS_HL7_ObservationCat#social-history "Social History"
+  * text = "Social History"
 * code
   * coding[0] = $LNC#11341-5 "History of Occupation"
 * subject = Reference(Patient/patient-patient1)

@@ -7,6 +7,6 @@ Description: "ผลการตรวจทารกหลังคลอด"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[newborn].system = $LNC (exactly)
-* code.coding[newborn].code = #76447-2 (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
+* code.coding[code43Plus] = $LNC#76447-2 (exactly)
 * value[x] only string

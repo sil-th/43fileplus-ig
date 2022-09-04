@@ -254,6 +254,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
+  * coding[0] = $CS_Meta_MiscObsType#001 "การมีประวัติน้ำตาลในเลือดสูง"
   * text = "มีประวัติน้ำตาลในเลือดสูง"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"

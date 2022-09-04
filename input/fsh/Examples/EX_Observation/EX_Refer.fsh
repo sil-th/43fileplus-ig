@@ -1,7 +1,7 @@
 Instance: observation-refer-demo1
 InstanceOf: Observation
-Title: "ตัวอย่าง Observation: การตรวจประเมินทางคลินิก"
-Description: "การตรวจประเมินทางคลินิก"
+Title: "ตัวอย่าง Observation: ตัวอย่างการตรวจประเมินทางคลินิก ในแฟ้ม CLINICAL_REFER"
+Description: " ตัวอย่างการตรวจประเมินทางคลินิก ในแฟ้ม CLINICAL_REFER"
 Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#exam "Exam"
@@ -10,15 +10,15 @@ Usage: #example
   * text = "รหัสและชื่อการตรวจประเมินทางคลินิก"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2021-03-21T12:30:02+07:00"
-* valueString = "ผลการตรวจประเมินทางคลินิกที่มีค่าเป็นตัวเลข"
+* valueQuantity = 80 'mg' "mg"
 * interpretation = $CS_HL7_ObsInterpret#N "Normal"
 * note
   * text = "คำอธิบายผลการตรวจประเมินทางคลินิก"
 
 Instance: observation-refer-lab1
 InstanceOf: Observation
-Title: "ตัวอย่าง Observation: ข้อมูลการตรวจทางห้องปฏิบัติการ"
-Description: "ข้อมูลการตรวจทางห้องปฏิบัติการ"
+Title: "ตัวอย่าง Observation: ตัวอย่างข้อมูลการตรวจทางห้องปฏิบัติการ ในแฟ้ม INVESTIGATION_REFER"
+Description: "ตัวอย่างข้อมูลการตรวจทางห้องปฏิบัติการ ในแฟ้ม INVESTIGATION_REFER"
 Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"

@@ -7,6 +7,6 @@ Description: "ระบบขับถ่ายปัสสาวะ"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[newborn].system = $SCT (exactly)
-* code.coding[newborn].code = #364196001 (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
+* code.coding[code43Plus] = $SCT#364196001 (exactly)
 * value[x] only string

@@ -10,7 +10,7 @@ Usage: #example
 * code
   * coding[0] = $SCT#225358003 "Wound care"
   * coding[+] = $ICD9CM#93.57 "Application of other wound dressing"
-  * coding[+] = $CS_ICD10TM#XXX "ICD-10-TM CODE"
+  * coding[+] = $CS_TH_ICD10TM#XXX "ICD-10-TM CODE"
   * coding[+] = $ID_LO_Procedure#XXX "Local code"
   * text = "Wound care"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"

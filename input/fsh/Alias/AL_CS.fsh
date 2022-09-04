@@ -155,7 +155,6 @@ Alias: $CS_THCC_NoContraceptive = https://terms.sil-th.org/CodeSystem/cs-thcc-no
 
 // Pregnancy
 Alias: $CS_PCU_FpCaseType = http://terms.sil-th.org/CodeSystem/cs-pcu-fp-case-type
-Alias: $CS_Meta_MeternalAppointmentType = http://terms.sil-th.org/CodeSystem/cs-meta-materal-appointment-type
 Alias: $CS_THCC_ContraceptiveMethod = http://terms.sil-th.org/CodeSystem/cs-thcc-contraceptive-method
 Alias: $CS_Meta_MiscPregnancyObs = http://terms.sil-th.org/CodeSystem/cs-meta-misc-pregnancy-obs
 Alias: $CS_Meta_ScreeningResult = http://terms.sil-th.org/CodeSystem/cs-meta-screening-result
@@ -210,6 +209,8 @@ Alias: $CS_43Plus_CancerGrade = http://terms.sil-th.org/CodeSystem/cs-43plus-can
 Alias: $CS_43Plus_CancerStaging = http://terms.sil-th.org/CodeSystem/cs-43plus-cancer-staging
 Alias: $CS_eClaim_CancerType = http://terms.sil-th.org/CodeSystem/cs-eclaim-cancer-type
 
+// Misc Observation
+Alias: $CS_Meta_MiscObsType = http://terms.sil-th.org/CodeSystem/cs-meta-misc-obs-type
 
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
@@ -240,6 +241,6 @@ Alias: $CS_DOPA_Location = http://terms.sil-th.org/CodeSystem/cs-dopa-location
 Alias: $CS_TMT = http://terms.sil-th.org/CodeSystem/th-tmt
 Alias: $CS_TMLT = http://terms.sil-th.org/CodeSystem/th-tmlt
 Alias: $CS_24Drug = http://terms.sil-th.org/CodeSystem/th-24drug
+Alias: $CS_TH_ICD10TM = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm
 Alias: $CS_TH_ICD10TM_Lab = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm-lab
-Alias: $CS_ICD10TM = http://terms.sil-th.org/CodeSystem/cs-th-icd10tm
 Alias: $CS_TH_FeeCategory = http://terms.sil-th.org/CodeSystem/cs-th-fee-category

@@ -12,8 +12,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-01-21T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_ContraceptiveMethod#9 "ไม่คุมกำเนิด"
-  * text = "ไม่คุมกำเนิด"
+  * coding[0] = $CS_THCC_ContraceptiveMethod#1 "ยาเม็ดคุมกำเนิด"
+  * text = "ยาเม็ดคุมกำเนิด"
 
 
 Instance: observation-fp-preg-test1

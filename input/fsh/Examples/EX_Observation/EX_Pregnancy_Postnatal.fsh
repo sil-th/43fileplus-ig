@@ -23,8 +23,8 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#21112-8 "Birth date"
-  * text = "Birth date"
+  * coding[0] = $LNC#93857-1 "Date and time of obstetric delivery"
+  * text = "Date and time of obstetric delivery"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
 * valueDateTime = "2022-01-21T14:30:02+07:00"
@@ -144,8 +144,8 @@ Usage: #example
 
 Instance: observation-postnatal-perineum1
 InstanceOf: Observation
-Title: "ตัวอย่าง Observation: TEMP"
-Description: "TEMP"
+Title: "ตัวอย่าง Observation: การตรวจฝีเย็บ Postnatal"
+Description: "การตรวจฝีเย็บ Postnatal"
 Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#exam "Exam"

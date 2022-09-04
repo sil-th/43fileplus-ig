@@ -8,4 +8,4 @@ Description: "การรับบริการเวชศาสตร์ฟ
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * serviceType MS
-* serviceType from $CS_THCC_RehabServiceType (extensible)
+* serviceType from $VS_THCC_RehabServiceType (extensible)

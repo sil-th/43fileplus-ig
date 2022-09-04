@@ -47,10 +47,18 @@ Alias: $VS_SNOMEDCT_FormCodes = http://hl7.org/fhir/ValueSet/medication-form-cod
 Alias: $VS_TH_FileList = https://terms.sil-th.org/ValueSet/vs-th-file-list
 
 // Observation List
-Alias: $VS_Meta_NCD = http://terms.sil-th.org/ValueSet/vs-meta-ncd
-Alias: $VS_Meta_Pregnancy = http://terms.sil-th.org/ValueSet/vs-meta-pregnancy
-Alias: $VS_Meta_Neonate = http://terms.sil-th.org/ValueSet/vs-meta-neonate
-Alias: $VS_Meta_ChildDevelopment = http://terms.sil-th.org/ValueSet/vs-meta-child-development
+Alias: $VS_Meta_Accident_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-accident-observations
+Alias: $VS_Meta_Cancer_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-cancer-observations
+Alias: $VS_Meta_ChildDevelopment_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-child-development-observations
+Alias: $VS_Meta_Functional_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-functional-observations
+Alias: $VS_Meta_Lab_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-lab-observations
+Alias: $VS_Meta_NCD_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-ncd-observations
+Alias: $VS_Meta_Neonate_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-neonate-observations
+Alias: $VS_Meta_PhysicalExam_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-physical-observations
+Alias: $VS_Meta_Pregnancy_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-pregnancy-observations
+// Alias: $VS_Meta_Prevention = http://terms.sil-th.org/ValueSet/vs-meta-prevention-observations
+Alias: $VS_Meta_Social_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-social-observations
+Alias: $VS_Meta_Vital_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-vital-observations
 
 // Demographic
 Alias: $VS_THCC_Marital = https://terms.sil-th.org/ValueSet/vs-thcc-marital
@@ -156,7 +164,6 @@ Alias: $VS_THCC_NoContraceptive = https://terms.sil-th.org/ValueSet/vs-thcc-no-c
 
 // Pregnancy
 Alias: $VS_PCU_FpCaseType = http://terms.sil-th.org/ValueSet/vs-pcu-fp-case-type
-Alias: $VS_Meta_MeternalAppointmentType = http://terms.sil-th.org/ValueSet/vs-meta-materal-appointment-type
 Alias: $VS_THCC_ContraceptiveMethod = http://terms.sil-th.org/ValueSet/vs-thcc-contraceptive-method
 Alias: $VS_Meta_MiscPregnancyObs = http://terms.sil-th.org/ValueSet/vs-meta-misc-pregnancy-obs
 Alias: $VS_Meta_ScreeningResult = http://terms.sil-th.org/ValueSet/vs-meta-screening-result
@@ -212,6 +219,10 @@ Alias: $VS_43Plus_CancerStaging = http://terms.sil-th.org/ValueSet/vs-43plus-can
 Alias: $VS_eClaim_CancerType = http://terms.sil-th.org/ValueSet/vs-eclaim-cancer-type
 
 
+// Misc Observation
+Alias: $VS_Meta_MiscObsType = http://terms.sil-th.org/ValueSet/vs-meta-misc-obs-type
+
+
 // Large CodeSystems
 Alias: $VS_THCC_Occupation = https://terms.sil-th.org/ValueSet/vs-thcc-occupation
 Alias: $VS_THCC_Nationality = https://terms.sil-th.org/ValueSet/vs-thcc-nationality
@@ -228,12 +239,12 @@ Alias: $VS_THCC_CommunityService = http://terms.sil-th.org/ValueSet/vs-thcc-comm
 
 
 // From Thai national codes
-Alias: $VS_INT_ISCED1997 = http://terms.sil-th.org/ValueSet/isced-97
-Alias: $VS_DOPA_NamePrefix = http://terms.sil-th.org/ValueSet/cs-dopa-nameprefix
-Alias: $VS_DOPA_Location = http://terms.sil-th.org/ValueSet/cs-dopa-location
+Alias: $VS_INT_ISCED1997 = http://terms.sil-th.org/ValueSet/vs-int-isced-97
+Alias: $VS_DOPA_NamePrefix = http://terms.sil-th.org/ValueSet/vs-dopa-nameprefix
+Alias: $VS_DOPA_Location = http://terms.sil-th.org/ValueSet/vs-dopa-location
 Alias: $VS_TMT = http://terms.sil-th.org/ValueSet/th-tmt
 Alias: $VS_TMLT = http://terms.sil-th.org/ValueSet/th-tmlt
 Alias: $VS_24Drug = http://terms.sil-th.org/ValueSet/th-24drug
-Alias: $VS_ICD10TM_Lab = http://terms.sil-th.org/ValueSet/cs-th-icd10tm-lab
-Alias: $VS_ICD10TM = http://terms.sil-th.org/ValueSet/cs-th-icd10tm
-Alias: $VS_TH_FeeCategory = http://terms.sil-th.org/ValueSet/cs-th-fee-category
+Alias: $VS_TH_ICD10TM = http://terms.sil-th.org/ValueSet/vs-th-icd10tm
+Alias: $VS_TH_ICD10TM_Lab = http://terms.sil-th.org/ValueSet/vs-th-icd10tm-lab
+Alias: $VS_TH_FeeCategory = http://terms.sil-th.org/ValueSet/vs-th-fee-category

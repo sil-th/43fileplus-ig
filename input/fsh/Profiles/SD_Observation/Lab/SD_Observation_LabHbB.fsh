@@ -1,5 +1,5 @@
 Profile: Moph43pObservationLabHbB
-Parent: $SD_Observation_Lab
+Parent: $SD_Observation_LabBase
 Id: moph43p-observation-lab-hepatitis-b
 Title: "MoPH43p Observation: Lab-Hepatitis B"
 Description: "ผลการตรวจ Hepatitis B"
@@ -7,13 +7,9 @@ Description: "ผลการตรวจ Hepatitis B"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc] ^sliceName = "loinc"
-* code.coding[loinc] ^mustSupport = true
-* code.coding[loinc].code = #16935-9 (exactly)
-* code.coding[tmlt] ^sliceName = "tmlt"
-* code.coding[tmlt].code = #350494 (exactly)
+* code.coding[loinc] = $LNC#16935-9 (exactly)
+* code.coding[tmlt] = $CS_TMLT#350494 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open

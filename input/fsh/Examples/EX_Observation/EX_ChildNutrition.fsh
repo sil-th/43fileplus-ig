@@ -108,6 +108,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
+  * coding[0] = $CS_Meta_MiscObsType#002 "จำนวนฟันขึ้นใหม่ (ซี่)"
   * text = "จำนวนฟันขึ้นใหม่ (ซี่)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -124,10 +125,11 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
+  * coding[0] = $SCT#80967001 "Dental caries"
   * text = "จำนวนฟันผุ (ซี่)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
-* valueQuantity = 0 '{#}' "Number"
+* valueInteger = 0
 
 
 

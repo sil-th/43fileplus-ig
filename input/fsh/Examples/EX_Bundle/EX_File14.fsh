@@ -50,8 +50,8 @@ Usage: #example
   * fullUrl = "http://example.org/Observation/observation-vital-wc1"
   * resource = observation-vital-wc1
 * entry[+]
-  * fullUrl = "http://example.org/Observation/observation-vital-hc1"
-  * resource = observation-vital-hc1
+  * fullUrl = "http://example.org/Observation/observation-vital-hipc1"
+  * resource = observation-vital-hipc1
 * entry[+]
   * fullUrl = "http://example.org/Observation/observation-vital-pe1"
   * resource = observation-vital-pe1
@@ -122,7 +122,7 @@ Usage: #example
   * entry[+] = Reference(Observation/observation-vital-hr1)
   * entry[+] = Reference(Observation/observation-vital-rr1)
   * entry[+] = Reference(Observation/observation-vital-wc1)
-  * entry[+] = Reference(Observation/observation-vital-hc1)
+  * entry[+] = Reference(Observation/observation-vital-hipc1)
   * entry[+] = Reference(Observation/observation-vital-pe1)
   * entry[+] = Reference(Observation/observation-vital-ga1)
   * entry[+] = Reference(Observation/observation-vital-heent1)
