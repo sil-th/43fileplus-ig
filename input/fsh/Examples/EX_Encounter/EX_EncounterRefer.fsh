@@ -7,7 +7,7 @@ Usage: #example
   * url = $EX_TH_EncounterReferCategory
   * valueCodeableConcept = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
 * extension[+]
-  * url = $EX_TH_EncounterReferResult
+  * url = $EX_TH_EncounterReferResultCode
   * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
 * extension[+]
   * url = $EX_TH_EncounterReferResultReason

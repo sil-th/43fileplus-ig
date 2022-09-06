@@ -388,12 +388,12 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 // * extension[+]
 //   * url = $EX_TH_EncounterReferResult (exactly)
 //   * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
-// Alias: $EX_TH_EncounterReferResult = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
-Extension: EX_TH_EncounterReferResult
+// Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
+Extension: EX_TH_EncounterReferResultCode
 Id: ex-encounter-refer-result
 Title: "Encounter: Refer Result"
 Description: "รหัสผลการส่งต่อ"
-* ^url = $EX_TH_EncounterReferResult
+* ^url = $EX_TH_EncounterReferResultCode
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -404,7 +404,7 @@ Description: "รหัสผลการส่งต่อ"
 * . 0..*
 * . ^short = "รหัสผลการส่งต่อ"
 * . ^definition = "รหัสผลการส่งต่อ"
-* url = $EX_TH_EncounterReferResult (exactly)
+* url = $EX_TH_EncounterReferResultCode (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_ReferResult (extensible)

@@ -64,13 +64,9 @@ Usage: #example
   * use = #official
   * system = $ID_LO_ReferDocument
   * value = "XXXXXXX"
-* basedOn
-  * identifier
-    * system = $ID_LO_Refer
-    * value = "XXXXXXX"
 * status = #active
 * intent = #order
-* category = $CS_Std15_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
+// * category = $CS_Std15_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
 * priority = #stat
   * extension[+]
     * url = $EX_TH_ServiceRequestThaiReferPriority
@@ -78,7 +74,8 @@ Usage: #example
       * coding[0] = $CS_THCC_ReferThaiPriority#2 "emergency"
       * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
 * code
-  * coding[0] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
+  * coding[0] = $CS_43Plus_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
+  * coding[+] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
   * coding[+] = $CS_eClaim_ReferReason#1100 "วินิจฉัย และรักษา"
   * text = "สิ่งที่ต้องการให้สถานพยาบาลปลายทางดำเนินการ (ข้อความ)"
 * quantityQuantity = 1 '{count}' "Count"

@@ -34,7 +34,7 @@ Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
 Alias: $ID_LO_Device = https://terms.sil-th.org/hcode/5/XXXXX/Device
-Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer
+Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer/XXXXX
 Alias: $ID_LO_ReferDocument =  https://terms.sil-th.org/hcode/5/XXXXX/ReferDoc
 
 // This project identifier system

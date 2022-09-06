@@ -15,7 +15,7 @@ Description: "การรับบริการ"
     $EX_TH_EncounterServiceTypeTH named serviceTypeTH 0..1 MS and
     $EX_TH_EncounterFpCaseType named familyPlanningType 0..1 and
     $EX_TH_EncounterReferCategory named referCategory 0..1 and
-    $EX_TH_EncounterReferResult named referResult 0..1 and
+    $EX_TH_EncounterReferResultCode named referResult 0..1 and
     $EX_TH_EncounterReferResultReason named referResultReason 0..1 and
     $EX_TH_EncounterLeaveDay named encounterLeaveDay 0..1
 * identifier MS

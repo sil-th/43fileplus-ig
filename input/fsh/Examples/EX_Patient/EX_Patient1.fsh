@@ -1,5 +1,5 @@
 Instance: patient-patient1
-InstanceOf: Patient
+InstanceOf: $SD_Patient
 Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 1 ชายไทย"
 Description: "มีข้อมูลครบถ้วนสมบูรณ์ ซึ่งจะมีรายละเอียดค่อนข้างมาก ในการใช้งานจริงอาจลดทอนรายละเอียดลง หรือเพิ่มเติมข้อมูลเข้าไปได้เช่นกัน"
 Usage: #example

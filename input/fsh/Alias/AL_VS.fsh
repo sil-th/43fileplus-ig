@@ -185,6 +185,7 @@ Alias: $VS_THCC_ReferReason = http://terms.sil-th.org/ValueSet/vs-thcc-refer-in-
 Alias: $VS_PCU_ReferOutcome = http://terms.sil-th.org/ValueSet/vs-pcu-refer-outcome
 Alias: $VS_43File_ReferCareProcedure = http://terms.sil-th.org/ValueSet/vs-43file-refer-care-procedure
 Alias: $VS_Std15_ReferCategory = http://terms.sil-th.org/ValueSet/vs-std15-refer-category
+Alias: $VS_43Plus_ReferReason = http://terms.sil-th.org/CodeSystem/vs-43plus-refer-reason
 Alias: $VS_Std15_ReferReason = http://terms.sil-th.org/ValueSet/vs-std15-refer-reason
 Alias: $VS_eClaim_ReferReason = http://terms.sil-th.org/ValueSet/vs-eclaim-refer-reason
 Alias: $VS_Std15_ReferStatus = http://terms.sil-th.org/ValueSet/vs-std15-refer-status

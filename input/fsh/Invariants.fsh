@@ -97,6 +97,21 @@ Description: "LocalRefer identifier shall be https://terms.sil-th.org/hcode/5/[X
 Severity: #error
 Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
 
+
+Invariant: ProvincialRefer-uri
+Description: "LocalRefer identifier shall be https://terms.sil-th.org/[XXX]/[YYYY], where [XXX] is a 3-letter province code and [YYYY] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+
+
+Invariant: LocalReferDocument-uri
+Description: "LocalRefer Document identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/ReferDoc, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+
+
+
+
 // location home
 Invariant: HID-uri
 Description: "HID identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/House, where [XXXXX] is a 5-digit HCODE defined by THCC."

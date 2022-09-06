@@ -176,6 +176,7 @@ Alias: $CS_THCC_ReferReason = http://terms.sil-th.org/CodeSystem/cs-thcc-refer-i
 Alias: $CS_PCU_ReferOutcome = http://terms.sil-th.org/CodeSystem/cs-pcu-refer-outcome
 Alias: $CS_43File_ReferCareProcedure = http://terms.sil-th.org/CodeSystem/cs-43file-refer-care-procedure
 Alias: $CS_Std15_ReferCategory = http://terms.sil-th.org/CodeSystem/cs-std15-refer-category
+Alias: $CS_43Plus_ReferReason = http://terms.sil-th.org/CodeSystem/cs-43plus-refer-reason
 Alias: $CS_Std15_ReferReason = http://terms.sil-th.org/CodeSystem/cs-std15-refer-reason
 Alias: $CS_eClaim_ReferReason = http://terms.sil-th.org/CodeSystem/cs-eclaim-refer-reason-eclaim
 Alias: $CS_Std15_ReferStatus = http://terms.sil-th.org/CodeSystem/cs-std15-refer-status
