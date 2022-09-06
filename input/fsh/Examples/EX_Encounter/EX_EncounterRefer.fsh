@@ -5,13 +5,9 @@ Description: "แสดงการรับบริการแผนกฉุ
 Usage: #example
 * extension[0]
   * url = $EX_TH_EncounterReferCategory
-  * valueCodeableConcept = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
-* extension[+]
-  * url = $EX_TH_EncounterReferResultCode
-  * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
-* extension[+]
-  * url = $EX_TH_EncounterReferResultReason
-  * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+  * valueCodeableConcept
+    * coding[0] = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
+    * coding[+] = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 * identifier[0]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"

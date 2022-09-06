@@ -7,29 +7,17 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* extension ^slicing.discriminator[0].type = #value
-* extension ^slicing.discriminator[=].path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_ServiceRequestReferRequesterDetail named requesterDetail 0..1 MS and
     $EX_TH_ServiceRequestReferStatus named referStatus 0..1 MS and
-    $EX_TH_ServiceRequestReferOutcome named referOutcome 0..1 MS and
+    $EX_TH_ServiceRequestReferResultReason named resultReason 0..1 MS and
     $EX_TH_ServiceRequestReferRequestedPeriod named requestedPeriod 0..1 MS and
-    $EX_TH_ServiceRequestReferAnswerType named referAnswerType 0..1 MS and
-    $EX_HL7_PreCondition named preCondition 0..1 MS and
-    $EX_TH_ServiceRequestReferPriorityCode named priorityCode 0..1 and
-    $EX_TH_ServiceRequestEclaimReferType named eclaimReferType 0..1 MS and
-    $EX_TH_ServiceRequestSpecialDiseaseRefer named specialDisease 0..1 MS
+    $EX_HL7_PreCondition named preCondition 0..1 MS
 * extension[requesterDetail] ^short = "รายละเอียดการส่งต่อผู้ป่วย"
 * extension[referStatus] ^short = "สถานะการส่งต่อผู้ป่วย"
-* extension[referOutcome] ^short = "ผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
+* extension[resultReason] ^short = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 * extension[requestedPeriod] ^short = "ช่วงเวลาที่ขอส่งต่อผู้ป่วย"
-* extension[referAnswerType] ^short = "การตอบรับการส่งต่อผู้ป่วย"
 * extension[preCondition] ^short = "สถานะของผู้ป่วยก่อนหรือระหว่างการส่งต่อ"
-* extension[priorityCode] ^short = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
-* extension[eclaimReferType] ^short = "ประเภทการส่งต่อผู้ป่วย"
-* extension[specialDisease] ^short = "การส่งต่อผู้ป่วยโรคเฉพาะทาง"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[=].path = "system"
@@ -59,9 +47,22 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * status MS
 * intent MS
 * category MS
+* category ^slicing.discriminator[0].type = #pattern
+* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.rules = #open
+* category contains
+    thcc 0..1 MS and
+    43plus 0..1 MS and
+    std15 0..1 MS and
+    eclaim 0..1 MS
+* category[thcc] from $VS_THCC_ReferReason (extensible)
+* category[43plus] from $VS_43Plus_ReferReason (extensible)
+* category[std15] from $VS_Std15_ReferReason (extensible)
+* category[eclaim] from $VS_eClaim_ReferReason (extensible)
 * priority
 * extension contains
-  $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS
+  $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS and
+  $EX_TH_ServiceRequestReferPriorityReason named priorityReason 0..1 MS
 * code.coding MS
 * code.coding ^slicing.discriminator[0].type = #pattern
 * code.coding ^slicing.discriminator[=].path = "$this"
@@ -79,4 +80,11 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * authoredOn MS
 * requester MS
 * requester only Reference($SD_Practitioner)
-
+* reasonCode MS
+* reasonCode ^slicing.discriminator[0].type = #pattern
+* reasonCode ^slicing.discriminator[=].path = "$this"
+* reasonCode ^slicing.rules = #open
+* reasonCode contains
+    specialDisease 1..1 MS
+* reasonCode[specialDisease] from $VS_43File_ReferSpecialDisease (extensible)
+* reasonCode[specialDisease] ^short = "การส่งต่อผู้ป่วยโรคเฉพาะทาง"

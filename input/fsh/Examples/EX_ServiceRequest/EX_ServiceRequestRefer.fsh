@@ -1,7 +1,7 @@
 Instance: servicerequest-refer-main
 InstanceOf: ServiceRequest
-Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
-Description: "แสดงการส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
+Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยระหว่างสถานพยาบาล โดยย่อ"
+Description: "แสดงการส่งต่อผู้ป่วยระหว่างสถานพยาบาล โดยย่อ"
 Usage: #example
 * identifier[0]
   * use = #official
@@ -9,8 +9,6 @@ Usage: #example
   * value = "XXXXXXX"
 * status = #active
 * intent = #order
-// * category = $SCT#703978000 "Referral to primary care service"
-// * code = $CS_THCC_ReferReason#4 "เพื่อการดูแลต่อใกล้บ้าน"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * encounter = Reference(Encounter/encounter-opd1)
 * authoredOn = "2021-03-31T12:30:02+07:00"
@@ -33,25 +31,20 @@ Usage: #example
     * valueReference.display = "แผนกเวชศาสตร์ฉุกเฉิน"
 * extension[+]
   * url = $EX_TH_ServiceRequestReferStatus
-  * valueCodeableConcept = $CS_Std15_ReferStatus#A "Accepted"
+  * valueCodeableConcept
+    * coding[0] = $CS_Std15_ReferStatus#A "Accepted"
+    * coding[+] = $CS_Std15_ReferAnswerType#1 "Accepted"
+    * coding[+] = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
+    * coding[+] = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
+* extension[+]
+  * url = $EX_TH_ServiceRequestReferResultReason
+  * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 * extension[+]
   * url = $EX_TH_ServiceRequestReferRequestedPeriod
   * valuePeriod.end = "2021-04-30T12:30:02+07:00"
 * extension[+]
-  * url = $EX_TH_ServiceRequestReferAnswerType
-  * valueCodeableConcept = $CS_Std15_ReferAnswerType#1 "Accepted"
-* extension[+]
   * url = $EX_HL7_PreCondition
   * valueCodeableConcept.text = "สภาพผู้ป่วยก่อนส่งต่อ" 
-* extension[+]
-  * url = $EX_TH_ServiceRequestReferPriorityCode
-  * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
-* extension[+]
-  * url = $EX_TH_ServiceRequestEclaimReferType
-  * valueCodeableConcept = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
-* extension[+]
-  * url = $EX_TH_ServiceRequestSpecialDiseaseRefer
-  * valueCodeableConcept = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
 * identifier[0]
   * use = #official
   * system = $ID_LO_Refer
@@ -66,13 +59,15 @@ Usage: #example
   * value = "XXXXXXX"
 * status = #active
 * intent = #order
-// * category = $CS_Std15_ReferCategory#E "Emergency (ผู้ป่วยฉุกเฉิน)"
 * priority = #stat
-  * extension[+]
+  * extension[0]
     * url = $EX_TH_ServiceRequestThaiReferPriority
     * valueCodeableConcept
       * coding[0] = $CS_THCC_ReferThaiPriority#2 "emergency"
       * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
+  * extension[+]
+    * url = $EX_TH_ServiceRequestReferPriorityReason
+    * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 * code
   * coding[0] = $CS_43Plus_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
   * coding[+] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
@@ -90,4 +85,5 @@ Usage: #example
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * performer[+].display = "แผนกเวชศาสตร์ฉุกเฉิน"
 * locationCode.text = "ห้องฉุกเฉิน"
+* reasonCode = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
 * note.text = "เหตุผลในการส่งต่อ (อื่นๆ)"

@@ -45,7 +45,6 @@ Alias: $EX_TH_EncounterIpdDischargeType = https://fhir-ig.sil-th.org/43filesplus
 Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-fp-case-type
 Alias: $EX_TH_EncounterReferCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-category
 Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-result-code
-Alias: $EX_TH_EncounterReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-result-reason
 Alias: $EX_TH_EncounterLeaveDay = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-leave-day
 Alias: $EX_TH_EncounterProviderType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-provider-type
 Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-out-id
@@ -54,7 +53,6 @@ Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_ConditionChronicDischargeReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-chronic-discharge-reason
 
 // Condition
-// Alias: $EX_TH_ConditionClinicalStatusTH = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-clinical-status-th
 Alias: $EX_TH_ConditionIsChronic = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-condition-is-chronic
 
 // Coverage
@@ -85,15 +83,12 @@ Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/43filespl
 // Alias: $EX_TH_ICFCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-icf-category
 
 // ServiceRequest
-Alias: $EX_TH_ServiceRequestReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-outcome
-Alias: $EX_TH_ServiceRequestReferRequesterDetail = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-requester-detail
 Alias: $EX_TH_ServiceRequestReferStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-status
+Alias: $EX_TH_ServiceRequestReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-result-reason
+Alias: $EX_TH_ServiceRequestReferRequesterDetail = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-requester-detail
 Alias: $EX_TH_ServiceRequestReferRequestedPeriod = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-requested-period
-Alias: $EX_TH_ServiceRequestReferAnswerType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-answer-type
 Alias: $EX_TH_ServiceRequestThaiReferPriority = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-thai-refer-priority
-Alias: $EX_TH_ServiceRequestReferPriorityCode = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-priority-code
-Alias: $EX_TH_ServiceRequestEclaimReferType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-type-eclaim
-Alias: $EX_TH_ServiceRequestSpecialDiseaseRefer = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-special-disease
+Alias: $EX_TH_ServiceRequestReferPriorityReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-priority-reason
 
 // Claim
 Alias: $EX_TH_ClaimItemCost = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-claim-item-cost
@@ -117,7 +112,6 @@ Alias: $EX_TH_ProcedureLaborLocation = https://fhir-ig.sil-th.org/43filesplus/Ex
 Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-procedure-procedure-type
 
 // Observation
-// Alias: $EX_TH_IsCurrentJob = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-is-current-job
 Alias: $EX_TH_ObservationDeviceAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-observation-device-amount
 
 // MedicationRequest

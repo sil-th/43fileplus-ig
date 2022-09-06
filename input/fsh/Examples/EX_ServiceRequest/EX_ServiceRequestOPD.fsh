@@ -6,8 +6,8 @@ Description: "แสดงการส่งต่อผู้ป่วยมา
 Usage: #example
 * status = #active
 * intent = #order
-* category = $SCT#103696004 "Patient referral to specialist"
-* code = $CS_THCC_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
+* category[0] = $SCT#103696004 "Patient referral to specialist"
+* category[+] = $CS_THCC_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * authoredOn = "2021-12-01"
 * requester = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"
@@ -19,12 +19,12 @@ Title: "ตัวอย่าง ServiceRequest: การส่งต่อผ�
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example
 * extension[0]
-  * url = $EX_TH_ServiceRequestReferOutcome 
+  * url = $EX_TH_ServiceRequestReferStatus
   * valueCodeableConcept = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
 * status = #active
 * intent = #order
-* category = $SCT#703978000 "Referral to primary care service"
-* code = $CS_THCC_ReferReason#4 "เพื่อการดูแลต่อใกล้บ้าน"
+* category[0] = $SCT#703978000 "Referral to primary care service"
+* category[+] = $CS_THCC_ReferReason#4 "เพื่อการดูแลต่อใกล้บ้าน"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * encounter = Reference(Encounter/encounter-opd1)
 * authoredOn = "2022-01-01"

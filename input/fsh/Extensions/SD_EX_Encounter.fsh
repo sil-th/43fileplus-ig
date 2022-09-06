@@ -327,10 +327,6 @@ Description: "รหัสชนิดการจำหน่ายผู้ป
 
 
 
-// * extension[0]
-//   * url = $EX_TH_EncounterFpCaseType (exactly)
-//   * valueCodeableConcept = $CS_PCU_FpCaseType#1 "รายใหม่" 
-// Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-fp-case-type
 Extension: EX_TH_EncounterFpCaseType
 Id: ex-encounter-fp-case-type
 Title: "Encounter: Family Planning Case Type"
@@ -356,10 +352,6 @@ Description: "รหัสประเภทการวางแผนครอ
 
 
 
-// * extension[0]
-//   * url = $EX_TH_EncounterReferCategory (exactly)
-//   * valueCodeableConcept = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
-// Alias: $EX_TH_EncounterReferCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-encounter-class
 Extension: EX_TH_EncounterReferCategory
 Id: ex-encounter-refer-category
 Title: "Encounter: Refer Patient Category"
@@ -378,7 +370,14 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 * url = $EX_TH_EncounterReferCategory (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_43File_ReferEncounterClass (extensible)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  43file 0..1 MS and
+  eclaim 0..1 MS
+* valueCodeableConcept.coding[43file] from $VS_eClaim_ReferPriorityCode (required)
+* valueCodeableConcept.coding[eclaim] from $VS_eClaim_ReferTypeEclaim (required)
 
 
 
@@ -388,26 +387,26 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 // * extension[+]
 //   * url = $EX_TH_EncounterReferResult (exactly)
 //   * valueCodeableConcept = $CS_43File_ReferResult#1 "ตอบรับการส่งต่อ"
-// Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
-Extension: EX_TH_EncounterReferResultCode
-Id: ex-encounter-refer-result
-Title: "Encounter: Refer Result"
-Description: "รหัสผลการส่งต่อ"
-* ^url = $EX_TH_EncounterReferResultCode
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "Encounter"
-* . 0..*
-* . ^short = "รหัสผลการส่งต่อ"
-* . ^definition = "รหัสผลการส่งต่อ"
-* url = $EX_TH_EncounterReferResultCode (exactly)
-* value[x] 1..
-* value[x] only CodeableConcept
-* value[x] from $VS_43File_ReferResult (extensible)
+// // Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result
+// Extension: EX_TH_EncounterReferResultCode
+// Id: ex-encounter-refer-result
+// Title: "Encounter: Refer Result"
+// Description: "รหัสผลการส่งต่อ"
+// * ^url = $EX_TH_EncounterReferResultCode
+// * ^version = "4.3.0"
+// * ^status = #draft
+// * ^experimental = false
+// * ^date = "2022-08-23T07:06:13+11:00"
+// * ^publisher = "SIL-TH"
+// * ^context.type = #element
+// * ^context.expression = "Encounter"
+// * . 0..*
+// * . ^short = "รหัสผลการส่งต่อ"
+// * . ^definition = "รหัสผลการส่งต่อ"
+// * url = $EX_TH_EncounterReferResultCode (exactly)
+// * value[x] 1..
+// * value[x] only CodeableConcept
+// * value[x] from $VS_43File_ReferResult (extensible)
 
 
 
@@ -415,24 +414,7 @@ Description: "รหัสผลการส่งต่อ"
 //   * url = $EX_TH_EncounterReferResultReason (exactly)
 //   * valueString = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 // Alias: $EX_TH_EncounterReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-result-reason
-Extension: EX_TH_EncounterReferResultReason
-Id: ex-encounter-refer-result-reason
-Title: "Encounter: Refer Result Reason"
-Description: "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-* ^url = $EX_TH_EncounterReferResultReason
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "Encounter"
-* . 0..*
-* . ^short = "เหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-* . ^definition = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-* url = $EX_TH_EncounterReferResultReason (exactly)
-* value[x] 1..
-* value[x] only string
+
 
 
 

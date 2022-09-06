@@ -1,12 +1,8 @@
-// Alias: $EX_TH_ServiceRequestReferOutcome = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-encounter-refer-outcome
-// * extension[0]
-//   * url = $EX_TH_ServiceRequestReferOutcome 
-//   * valueCodeableConcept = $CS_PCU_ReferOutcome#1 "สถานบริการปลายทางรับการส่งต่อผู้ป่วย"
-Extension: EX_TH_ServiceRequestReferOutcome
-Id: ex-servicerequest-refer-outcome
-Title: "ServiceRequest: Refer Outcome"
-Description: "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-* ^url = $EX_TH_ServiceRequestReferOutcome
+Extension: EX_TH_ServiceRequestReferStatus
+Id: ex-servicerequest-refer-status
+Title: "ServiceRequest: Refer Status"
+Description: "รหัสสถานะหรือผลการส่งต่อผู้ป่วย"
+* ^url = $EX_TH_ServiceRequestReferStatus
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -15,29 +11,47 @@ Description: "รหัสผลการส่งต่อไปรับบร
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
 * . 0..*
-* . ^short = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-* . ^definition = "รหัสผลการส่งต่อไปรับบริการในสถานพยาบาลอื่น"
-* url = $EX_TH_ServiceRequestReferOutcome (exactly)
+* . ^short = "รหัสสถานะหรือผลการส่งต่อผู้ป่วย"
+* . ^definition = "รหัสสถานะหรือผลการส่งต่อผู้ป่วย"
+* url = $EX_TH_ServiceRequestReferStatus (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_PCU_ReferOutcome (extensible)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  43file 0..1 and
+  std15answer 0..1 and
+  std15referStatus 0..1 and
+  pcuReferOutcome 0..1
+* valueCodeableConcept.coding[43file] from $VS_43File_ReferResult (required)
+* valueCodeableConcept.coding[std15answer] from $VS_Std15_ReferAnswerType (required)
+* valueCodeableConcept.coding[std15referStatus] from $VS_Std15_ReferStatus (required)
+* valueCodeableConcept.coding[pcuReferOutcome] from $VS_PCU_ReferOutcome (required)
 
 
 
+Extension: EX_TH_ServiceRequestReferResultReason
+Id: ex-servicerequest-refer-result-reason
+Title: "ServiceRequest: Refer Result Reason"
+Description: "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+* ^url = $EX_TH_ServiceRequestReferResultReason
+* ^version = "4.3.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2022-08-23T07:06:13+11:00"
+* ^publisher = "SIL-TH"
+* ^context.type = #element
+* ^context.expression = "ServiceRequest"
+* . 0..*
+* . ^short = "เหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+* . ^definition = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
+* url = $EX_TH_ServiceRequestReferResultReason (exactly)
+* value[x] 1..
+* value[x] only string
 
 
 
-
-// Alias: $EX_TH_ServiceRequestReferRequesterDetail = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-requester-detail
-// * extension[0]
-//   * url = $EX_TH_ServiceRequestReferRequesterDetail
-//   * extension[0]
-//     * url = "organization"
-//     * valueReference = Reference(Organization/organization-main)
-//       * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
-//   * extension[+]
-//     * url = "department"
-//     * valueReference.display = "แผนกเวชศาสตร์ฉุกเฉิน"
 Extension: EX_TH_ServiceRequestReferRequesterDetail
 Id: ex-servicerequest-refer-requester-detail
 Title: "ServiceRequest: Refer Requester Detail"
@@ -72,38 +86,6 @@ Description: "สถานพยาบาล และแผนกที่ส�
 
 
 
-
-// Alias: $EX_TH_ServiceRequestReferStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-status
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestReferStatus
-//   * valueCodeableConcept = $CS_Std15_ReferStatus#A "Accepted"
-Extension: EX_TH_ServiceRequestReferStatus
-Id: ex-servicerequest-refer-status
-Title: "ServiceRequest: Refer Status"
-Description: "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
-* ^url = $EX_TH_ServiceRequestReferStatus
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "ServiceRequest"
-* . 0..*
-* . ^short = "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
-* . ^definition = "รหัสสถานะของการอ้างอิงการส่งต่อผู้ป่วย"
-* url = $EX_TH_ServiceRequestReferStatus (exactly)
-* value[x] 1..
-* value[x] only CodeableConcept
-* value[x] from $VS_eClaim_ReferReason (extensible)
-
-
-
-
-// Alias: $EX_TH_ServiceRequestReferRequestedPeriod = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-requested-period
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestReferRequestedPeriod
-//   * valuePeriod.end = "2021-04-30T12:30:02+07:00"
 Extension: EX_TH_ServiceRequestReferRequestedPeriod
 Id: ex-servicerequest-refer-requested-period
 Title: "ServiceRequest: Refer Requested Period"
@@ -125,43 +107,6 @@ Description: "วันที่กำหนดสิ้นสุดการต
 
 
 
-
-
-// Alias: $EX_TH_ServiceRequestReferAnswerType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-answer-type
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestReferAnswerType
-//   * valueCodeableConcept = $CS_Std15_ReferAnswerType#1 "Accepted"
-Extension: EX_TH_ServiceRequestReferAnswerType
-Id: ex-servicerequest-refer-answer-type
-Title: "ServiceRequest: Refer Answer Type"
-Description: "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
-* ^url = $EX_TH_ServiceRequestReferAnswerType
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "ServiceRequest"
-* . 0..*
-* . ^short = "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
-* . ^definition = "รหัสประเภทการตอบรับหรือปฎิเสธ อัตโนมัติ"
-* url = $EX_TH_ServiceRequestReferAnswerType (exactly)
-* value[x] 1..
-* value[x] only CodeableConcept
-* value[x] from $VS_Std15_ReferAnswerType (extensible)
-
-
-
-
-
-// Alias: $EX_TH_ServiceRequestThaiReferPriority = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-thai-priority
-// * priority = #stat
-//   * extension[+]
-//     * url = $EX_TH_ServiceRequestThaiReferPriority
-//     * valueCodeableConcept
-//       * coding[0] = $CS_THCC_ReferThaiPriority#2 "emergency"
-//       * coding[+] = $CS_eClaim_ReferThaiPriority#E "Emergency"
 Extension: EX_TH_ServiceRequestThaiReferPriority
 Id: ex-servicerequest-thai-refer-priority
 Title: "ServiceRequest: Thai Refer Priority"
@@ -180,92 +125,41 @@ Description: "รหัสระดับความเร่งด่วน"
 * url = $EX_TH_ServiceRequestThaiReferPriority (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_eClaim_ReferThaiPriority (extensible)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  43file 0..1 and
+  eClaim 0..1
+* valueCodeableConcept.coding[43file] from $VS_THCC_ReferThaiPriority (required)
+* valueCodeableConcept.coding[eClaim] from $VS_eClaim_ReferThaiPriority (required)
 
 
 
 
 
-
-
-
-// Alias: $EX_TH_ServiceRequestReferPriorityCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-priority-code
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestReferPriorityCode
-//   * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
-Extension: EX_TH_ServiceRequestReferPriorityCode
-Id: ex-servicerequest-refer-priority-code
-Title: "ServiceRequest: Refer Priority Code"
-Description: "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
-* ^url = $EX_TH_ServiceRequestReferPriorityCode
+Extension: EX_TH_ServiceRequestReferPriorityReason
+Id: ex-servicerequest-refer-priority-reason
+Title: "ServiceRequest: Refer Priority Reason"
+Description: "ข้อบ่งชี้/ชนิดของการส่งต่อ"
+* ^url = $EX_TH_ServiceRequestReferPriorityReason
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2022-08-23T07:06:13+11:00"
 * ^publisher = "SIL-TH"
 * ^context.type = #element
-* ^context.expression = "ServiceRequest"
+* ^context.expression = "ServiceRequest.priority"
 * . 0..*
 * . ^short = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
 * . ^definition = "รหัสข้อบ่งชี้ของกรณีฉุกเฉินตามเงื่อนไข"
-* url = $EX_TH_ServiceRequestReferPriorityCode (exactly)
+* url = $EX_TH_ServiceRequestReferPriorityReason (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_eClaim_ReferPriorityCode (extensible)
-
-
-
-
-// Alias: $EX_TH_ServiceRequestEclaimReferType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-type-eclaim
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestEclaimReferType
-//   * valueCodeableConcept = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
-Extension: EX_TH_ServiceRequestEclaimReferType
-Id: ex-servicerequest-refer-type-eclaim
-Title: "ServiceRequest: E-claim Refer Type"
-Description: "รหัสสาเหตุการส่งต่อผู้ป่วย"
-* ^url = $EX_TH_ServiceRequestEclaimReferType
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "ServiceRequest"
-* . 0..*
-* . ^short = "รหัสสาเหตุการส่งต่อผู้ป่วย"
-* . ^definition = "รหัสสาเหตุการส่งต่อผู้ป่วย"
-* url = $EX_TH_ServiceRequestEclaimReferType (exactly)
-* value[x] 1..
-* value[x] only CodeableConcept
-* value[x] from $VS_eClaim_ReferTypeEclaim (extensible)
-
-
-
-
-
-// Alias: $EX_TH_ServiceRequestSpecialDiseaseRefer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-refer-special-disease
-// * extension[+]
-//   * url = $EX_TH_ServiceRequestSpecialDiseaseRefer
-//   * valueCodeableConcept = $CS_43File_ReferSpecialDisease#99 "อื่นๆ"
-Extension: EX_TH_ServiceRequestSpecialDiseaseRefer
-Id: ex-servicerequest-refer-special-disease
-Title: "ServiceRequest: Special Disease Refer"
-Description: "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
-* ^url = $EX_TH_ServiceRequestSpecialDiseaseRefer
-* ^version = "4.3.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2022-08-23T07:06:13+11:00"
-* ^publisher = "SIL-TH"
-* ^context.type = #element
-* ^context.expression = "ServiceRequest"
-* . 0..*
-* . ^short = "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
-* . ^definition = "รหัสกลุ่มโรคเฉพาะเพื่อการส่งต่อ"
-* url = $EX_TH_ServiceRequestSpecialDiseaseRefer (exactly)
-* value[x] 1..
-* value[x] only CodeableConcept
-* value[x] from $VS_43File_ReferSpecialDisease (extensible)
-
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  eClaimReason 0..1
+* valueCodeableConcept.coding[eClaimReason] from $VS_eClaim_ReferPriorityCode (required)
 
