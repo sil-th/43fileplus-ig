@@ -91,23 +91,23 @@ Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/VN)$')"
 
 
 
-
+// Refer
 Invariant: LocalRefer-uri
-Description: "LocalRefer identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Refer, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Description: "เลขที่การส่งต่อผู้ป่วย ควรใช้ system เป็น https://terms.sil-th.org/hcode/5/[XXXXX]/Refer หรือ https://terms.sil-th.org/hcode/9/[XXXXX]/Refer โดยที่ [XXXXX] คือรหัส HCODE 5 หลัก หรือ 9 หลัก ซึ่งออกโดยกยผ."
 Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$') or value.matches('^(https://terms.sil-th.org/hcode/9/[0-9]{9}/Refer)$')"
 
 
 Invariant: ProvincialRefer-uri
-Description: "LocalRefer identifier shall be https://terms.sil-th.org/[XXX]/[YYYY], where [XXX] is a 3-letter province code and [YYYY] is a 5-digit HCODE defined by THCC."
+Description: "เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด ควรใช้ system เป็น https://terms.sil-th.org/[XX]/Refer, โดยที่ [XX] คือรหัสจังหวัด 2 หลักของกรมการปกครอง"
 Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+Expression: "value.matches('^(https://terms.sil-th.org/[0-9]{2}/Refer)$')"
 
 
 Invariant: LocalReferDocument-uri
-Description: "LocalRefer Document identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/ReferDoc, where [XXXXX] is a 5-digit HCODE defined by THCC."
+Description: "เลขเอกสารการส่งตัว ควรใช้ system เป็น https://terms.sil-th.org/hcode/5/[XXXXX]/ReferDoc หรือ https://terms.sil-th.org/hcode/9/[XXXXX]/ReferDoc  โดยที่ [XXXXX] คือรหัส HCODE 5 หลัก หรือ 9 หลัก ซึ่งออกโดยกยผ."
 Severity: #error
-Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Refer)$')"
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/ReferDoc)$') or value.matches('^(https://terms.sil-th.org/hcode/9/[0-9]{9}/ReferDoc)$')"
 
 
 

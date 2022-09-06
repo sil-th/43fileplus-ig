@@ -16,8 +16,8 @@ Description: "ข้อมูลคลินิก/หน่วยงาน ใ�
 * identifier[dep] ^short = "รหัสหน่วยงานในสถานพยาบาล"
 * identifier[dep].system 1..
 * identifier[dep].system obeys DEP-uri
-* identifier[dep].system ^example.label = "DEP namespace"
-* identifier[dep].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/DepCode"
+* identifier[dep].system ^example.label = "Department namespace"
+* identifier[dep].system ^example.valueUri = $ID_LO_DepCode
 * identifier[dep].value 1..
 * name MS
 * description MS

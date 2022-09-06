@@ -37,7 +37,7 @@ Usage: #example
     * end = "2022-04-25"
 * identifier[+]
   * use = #official
-  * system = $ID_LO_House
+  * system = $ID_LO_HID
   * value = "XXXXXX"
   * period
     * start = "2018-04-25"

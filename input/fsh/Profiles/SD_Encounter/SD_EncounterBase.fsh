@@ -31,7 +31,7 @@ Description: "การรับบริการ"
   * system 1..
   * system obeys VN-uri
   * system ^example.label = "VN namespace"
-  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/VN"
+  * system ^example.valueUri = $ID_LO_VN
   * value 1..
 * identifier[an] ^short = "เลขที่ผู้่ปวยใน (AN)"
 * identifier[an]
@@ -39,7 +39,7 @@ Description: "การรับบริการ"
   * system 1..
   * system obeys AN-uri
   * system ^example.label = "AN namespace"
-  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/AN"
+  * system ^example.valueUri = $ID_LO_AN
   * value 1..
 * status MS
 * class MS

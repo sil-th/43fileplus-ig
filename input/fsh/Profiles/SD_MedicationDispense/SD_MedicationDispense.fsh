@@ -33,7 +33,7 @@ Description: "การจ่ายยา"
 * medicationCodeableConcept.coding[local].system 1..
 * medicationCodeableConcept.coding[local].system obeys Drug-uri
 * medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
-* medicationCodeableConcept.coding[local].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Drug"
+* medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
 * medicationCodeableConcept.coding[local].code 1..
 * medicationReference only Reference($SD_Medication)
 * medicationReference ^sliceName = "medicationReference"

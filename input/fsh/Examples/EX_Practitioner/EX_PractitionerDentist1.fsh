@@ -11,6 +11,11 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#DDS "Dentist license number"
+  * system = $ID_ThaiDentist
+  * value = "34222"
 * active = true
 * name[0]
   * text = "ทพญ. สมทรวง จริงใจ"
@@ -20,11 +25,6 @@ Usage: #example
 * gender = #female
 * birthDate = "1970-04-25"
 * qualification
-  * identifier
-    * use = #secondary
-    * type = $CS_HL7_IdentifierType#DDS "Dentist license number"
-    * system = $ID_ThaiDentist
-    * value = "34222"
   * code
     * coding[0] = $SCT#106289002 "Dentist"
   * period

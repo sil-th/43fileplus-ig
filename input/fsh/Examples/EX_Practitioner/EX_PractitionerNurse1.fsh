@@ -11,6 +11,11 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#RN "Registered Nurse Number"
+  * system = $ID_ThaiNurse
+  * value = "23222"
 * active = true
 * name[0]
   * extension
@@ -23,11 +28,6 @@ Usage: #example
 * gender = #female
 * birthDate = "1960-04-25"
 * qualification
-  * identifier
-    * use = #secondary
-    * type = $CS_HL7_IdentifierType#RN "Registered Nurse Number"
-    * system = $ID_ThaiNurse
-    * value = "23222"
   * code
     * coding[0] = $SCT#224535009 "Registered nurse"
   * period

@@ -28,13 +28,13 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * identifier[inv].system 1..
 * identifier[inv].system obeys Inv-uri
 * identifier[inv].system ^example.label = "INV namespace"
-* identifier[inv].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Inv"
+* identifier[inv].system ^example.valueUri = $ID_LO_INV
 * identifier[inv].value 1..
 * identifier[invLt] ^short = "เลขที่อ้างอิงชุดข้อมูลใบแจ้งหนี้ ของหน่วยบริการ ถ้าไม่มี ใช้ค่าเดียวกับ identifier.inv"
 * identifier[invLt].system 1..
 * identifier[invLt].system obeys InvLt-uri
 * identifier[invLt].system ^example.label = "INV namespace"
-* identifier[invLt].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/InvLt"
+* identifier[invLt].system ^example.valueUri = $ID_LO_INV_LT
 * identifier[invLt].value 1..
 * status MS
 * type MS

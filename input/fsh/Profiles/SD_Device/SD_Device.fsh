@@ -16,7 +16,7 @@ Description: "อุปกรณ์/เวชภัณฑ์"
 * identifier[local].system 1..
 * identifier[local].system obeys local-device-uri
 * identifier[local].system ^example.label = "local device namespace"
-* identifier[local].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Device"
+* identifier[local].system ^example.valueUri = $ID_LO_Device
 * identifier[local].value 1..
 * serialNumber MS
 * serialNumber ^short = "หมายเลข serial number"

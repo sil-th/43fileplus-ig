@@ -24,12 +24,12 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * identifier[Inv].system 1..
 * identifier[Inv].system obeys Inv-uri
 * identifier[Inv].system ^example.label = "INV namespace"
-* identifier[Inv].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Inv"
+* identifier[Inv].system ^example.valueUri = $ID_LO_INV
 * identifier[Inv].value 1..
 * identifier[InvLt].system 1..
 * identifier[InvLt].system obeys InvLt-uri
 * identifier[InvLt].system ^example.label = "INV namespace"
-* identifier[InvLt].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/InvLt"
+* identifier[InvLt].system ^example.valueUri = $ID_LO_INV_LT
 * identifier[InvLt].value 1..
 * status MS
 * type MS

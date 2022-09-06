@@ -59,7 +59,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * system 1..
   * system obeys PID-uri
   * system ^example.label = "PID namespace"
-  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/PID"
+  * system ^example.valueUri = $ID_LO_PID
   * value 1..
   * value obeys PID-length
   * value ^example.label = "เลขทะเบียนบุคคล"
@@ -94,7 +94,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * system 1..
   * system obeys HN-uri
   * system ^example.label = "HN namespace"
-  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/HN"
+  * system ^example.valueUri = $ID_LO_HN
   * value 1..
   * value obeys HN-length
   * value ^example.label = "เลขประจำตัวผู้ป่วย (HN)"

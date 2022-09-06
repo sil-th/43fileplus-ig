@@ -12,16 +12,20 @@ Description: "ข้อมูลผู้ให้บริการของส
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains
-    cid 0..1 MS
+    cid 0..1 MS and
+    professionalId 0..1 MS
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
 * identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
-  * .system 1..
-  * .system = $ID_ThaiCid (exactly)
-  * .value 1..
-  * .value obeys CID-length
-  * .value ^example.label = "เลขประจำตัวประชาชน"
-  * .value ^example.valueString = "1234567890123"
+  * system 1..
+  * system = $ID_ThaiCid (exactly)
+  * value 1..
+  * value obeys CID-length
+  * value ^example.label = "เลขประจำตัวประชาชน"
+  * value ^example.valueString = "1234567890123"
+* identifier[professionalId] ^short = "เลขที่บัตรประชาชน"
+  * system 1..
+  * value 1..
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
 * name ^slicing.discriminator[0].type = #value
@@ -70,7 +74,8 @@ Description: "ข้อมูลผู้ให้บริการของส
 * birthDate MS
 * birthDate ^short = "วันเกิด"
 * qualification MS
-* qualification.identifier MS
-* qualification.identifier ^short = "หมายเลขทะเบียนวิชาชีพ"
-* qualification.issuer.extension contains $EX_TH_PractitionerQualificationIssuer named qualificationIssuer 0..1 MS
+  * code MS
+  * period MS
+  * issuer MS
+    * extension contains $EX_TH_PractitionerQualificationIssuer named qualificationIssuer 0..1 MS
 

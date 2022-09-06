@@ -20,7 +20,7 @@ Description: "ข้อมูลการปฏิบัติงานผู้
   * system 1..
   * system obeys ProID-uri
   * system ^example.label = "Provider ID namespace"
-  * system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/ProID"
+  * system ^example.valueUri = $ID_LO_Provider
   * value 1..
   * value obeys ProID-length
   * value ^example.label = "เลขที่ผู้ให้บริการ"

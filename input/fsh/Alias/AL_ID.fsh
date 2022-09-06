@@ -15,6 +15,7 @@ Alias: $ID_ThaiPhysio = https://terms.sil-th.org/id/th-physio-id
 Alias: $ID_ThaiVet = https://terms.sil-th.org/id/th-vet-id
 Alias: $ID_ThaiNurse = https://terms.sil-th.org/id/th-nurse-id
 Alias: $ID_ThaiDisability = https://terms.sil-th.org/id/th-disability-no
+Alias: $ID_ThaihealthVolunteer = https://terms.sil-th.org/id/th-hvolunteer
 
 
 // Local identifier system for each provider
@@ -22,7 +23,7 @@ Alias: $ID_LO_HN = https://terms.sil-th.org/hcode/5/XXXXX/HN
 Alias: $ID_LO_VN = https://terms.sil-th.org/hcode/5/XXXXX/VN
 Alias: $ID_LO_AN = https://terms.sil-th.org/hcode/5/XXXXX/AN
 Alias: $ID_LO_PID = https://terms.sil-th.org/hcode/5/XXXXX/PID
-Alias: $ID_LO_House = https://terms.sil-th.org/hcode/5/XXXXX/House
+Alias: $ID_LO_HID = https://terms.sil-th.org/hcode/5/XXXXX/HouseId
 Alias: $ID_LO_Provider = https://terms.sil-th.org/hcode/5/XXXXX/Provider
 Alias: $ID_LO_Drug = https://terms.sil-th.org/hcode/5/XXXXX/Drug
 Alias: $ID_LO_SelfDrug = https://terms.sil-th.org/hcode/5/XXXXX/SelfDrug
@@ -34,7 +35,7 @@ Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
 Alias: $ID_LO_Device = https://terms.sil-th.org/hcode/5/XXXXX/Device
-Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer/XXXXX
+Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer
 Alias: $ID_LO_ReferDocument =  https://terms.sil-th.org/hcode/5/XXXXX/ReferDoc
 
 // This project identifier system

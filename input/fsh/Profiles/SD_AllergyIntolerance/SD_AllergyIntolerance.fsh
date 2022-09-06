@@ -58,9 +58,8 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * code.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * code.coding[local].system 0..
 * code.coding[local].system obeys Local-drug-uri
-* code.coding[local].system ^comment = "กำหนดระบบข้อมูลตามรูปแบบ https://terms.sil-th.org/hcode/5/[XXXXX]/Drug โดย [XXXXX] คือ รหัสสถานพยาบาล 5 หลัก"
 * code.coding[local].system ^example.label = "Local Drug Code namespace"
-* code.coding[local].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/[XXXXX]/Drug"
+* code.coding[local].system ^example.valueUri = $ID_LO_Drug
 * code.coding[local].code 1..
 * code.coding[noAllergies] ^short = "ใช้ในกรณีไม่มีสิ่งที่แพ้ หรือไม่ทราบประวัติแพ้"
 * code.coding[noAllergies] from $VS_IPS_AbsentUnknownAllergies (required)

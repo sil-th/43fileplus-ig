@@ -30,7 +30,7 @@ Description: "ยา"
 * code.coding[local].system 1..
 * code.coding[local].system obeys Drug-uri
 * code.coding[local].system ^example.label = "Drug namespace"
-* code.coding[local].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Drug"
+* code.coding[local].system ^example.valueUri = $ID_LO_Drug
 * code.coding[local].code 1..
 * form MS
 * form.coding ^slicing.discriminator.type = #value

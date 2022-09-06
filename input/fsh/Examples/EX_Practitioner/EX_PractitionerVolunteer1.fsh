@@ -8,6 +8,11 @@ Usage: #example
   * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
   * system = $ID_ThaiCid
   * value = "2650591524440"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#PRN "Provider number"
+  * system = $ID_ThaihealthVolunteer
+  * value = "XXXXXX"
 * name[0]
   * extension
     * url = $EX_HL7_Language

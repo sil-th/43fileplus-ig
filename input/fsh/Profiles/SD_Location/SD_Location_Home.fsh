@@ -29,8 +29,8 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * identifier[hid] ^definition = "รหัสบ้านที่กำหนดโดยโปรแกรมเรียงลำดับไม่ซ้ำกัน"
 * identifier[hid].system 1..
 * identifier[hid].system obeys HID-uri
-* identifier[hid].system ^example.label = "HID namespace"
-* identifier[hid].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/House"
+* identifier[hid].system ^example.label = "House ID namespace"
+* identifier[hid].system ^example.valueUri = ID_LO_HID
 * identifier[hid].value 1..
 * identifier[houseNo] ^short = "รหัสบ้านตามกรมการปกครอง"
 * identifier[houseNo] ^definition = "เลขประจำบ้าน ตามกรมการปกครองกำหนดเป็นรหัสประจำบ้าน"

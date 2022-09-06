@@ -33,7 +33,7 @@ Description: "การมารับบริการฉีดวัคซี
 * vaccineCode.coding[local].system 1..
 * vaccineCode.coding[local].system obeys Local-drug-uri
 * vaccineCode.coding[local].system ^example.label = "Drug namespace"
-* vaccineCode.coding[local].system ^example.valueUri = "https://terms.sil-th.org/hcode/5/XXXXX/Drug"
+* vaccineCode.coding[local].system ^example.valueUri = $ID_LO_Drug
 * vaccineCode.coding[local].code 1..
 * patient only Reference($SD_Patient)
 * patient MS

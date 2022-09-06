@@ -11,6 +11,11 @@ Usage: #example
   * period
     * start = "2018-04-25"
     * end = "2022-04-25"
+* identifier[+]
+  * use = #secondary
+  * type = $CS_HL7_IdentifierType#RPH "Pharmacist license number"
+  * system = $ID_ThaiPharmacist
+  * value = "34222"
 * active = true
 * name[0]
   * text = "ภญ. สมบูรณ์ จริงใจ"
@@ -20,11 +25,6 @@ Usage: #example
 * gender = #female
 * birthDate = "1970-04-25"
 * qualification
-  * identifier
-    * use = #secondary
-    * type = $CS_HL7_IdentifierType#RPH "Pharmacist license number"
-    * system = $ID_ThaiPharmacist
-    * value = "34222"
   * code
     * coding[0] = $SCT#46255001 "Pharmacist"
   * period
