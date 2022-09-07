@@ -9,14 +9,12 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_ServiceRequestReferRequesterDetail named requesterDetail 0..1 MS and
+    $EX_TH_ServiceRequestReferPatientCatagory named patientCategory 0..1 MS and
     $EX_TH_ServiceRequestReferStatus named referStatus 0..1 MS and
     $EX_TH_ServiceRequestReferResultReason named resultReason 0..1 MS and
     $EX_TH_ServiceRequestReferRequestedPeriod named requestedPeriod 0..1 MS and
     $EX_HL7_PreCondition named preCondition 0..1 MS
-* extension[requesterDetail] ^short = "รายละเอียดการส่งต่อผู้ป่วย"
-* extension[referStatus] ^short = "สถานะการส่งต่อผู้ป่วย"
 * extension[resultReason] ^short = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
-* extension[requestedPeriod] ^short = "ช่วงเวลาที่ขอส่งต่อผู้ป่วย"
 * extension[preCondition] ^short = "สถานะของผู้ป่วยก่อนหรือระหว่างการส่งต่อ"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #value
@@ -29,19 +27,19 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * identifier[localReferNo] ^short = "เลขที่การส่งต่อผู้ป่วย"
 * identifier[localReferNo].system 1..
 * identifier[localReferNo].system obeys LocalRefer-uri
-* identifier[localReferNo].system ^example.label = "Local Refer No namespace"
+* identifier[localReferNo].system ^example.label = "ตัวอย่าง namespace เลขที่การส่งต่อผู้ป่วย"
 * identifier[localReferNo].system ^example.valueUri = $ID_LO_Refer
 * identifier[localReferNo].value 1..
 * identifier[ProvincialReferNo] ^short = "เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด"
 * identifier[ProvincialReferNo].system 1..
 * identifier[ProvincialReferNo].system obeys ProvincialRefer-uri
-* identifier[ProvincialReferNo].system ^example.label = "Local Refer No namespace"
+* identifier[ProvincialReferNo].system ^example.label = "ตัวอย่าง namespace เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด"
 * identifier[ProvincialReferNo].system ^example.valueUri = $ID_LO_ReferProvince
 * identifier[ProvincialReferNo].value 1..
-* identifier[localReferDocument] ^short = "เลขเอกสารของสถานพยาบาลที่ส่งไป (ต้นทาง)"
+* identifier[localReferDocument] ^short = "เลขเอกสารของสถานพยาบาลต้นทาง"
 * identifier[localReferDocument].system 1..
 * identifier[localReferDocument].system obeys LocalReferDocument-uri
-* identifier[localReferDocument].system ^example.label = "Local Refer No namespace"
+* identifier[localReferDocument].system ^example.label = "ตัวอย่าง namespace เลขเอกสารของสถานพยาบาลต้นทาง"
 * identifier[localReferDocument].system ^example.valueUri = $ID_LO_ReferDocument
 * identifier[localReferDocument].value 1..
 * status MS
@@ -60,19 +58,10 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * category[std15] from $VS_Std15_ReferReason (extensible)
 * category[eclaim] from $VS_eClaim_ReferReason (extensible)
 * priority
-* extension contains
-  $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS and
-  $EX_TH_ServiceRequestReferPriorityReason named priorityReason 0..1 MS
-* code.coding MS
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    referReason 1..1 MS
-* code.coding[referReason] from $VS_THCC_ReferReason (extensible)
-* code.coding[referReason] ^short = "เหตุผลส่งต่อผู้ป่วย"
-* code.coding[referReason].system 1..
-* code.coding[referReason].code 1..
+  * extension contains
+    $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS and
+    $EX_TH_ServiceRequestReferPriorityReason named priorityReason 0..1 MS
+* code MS
 * subject MS
 * subject only Reference($SD_Patient)
 * encounter MS
@@ -85,6 +74,6 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * reasonCode ^slicing.discriminator[=].path = "$this"
 * reasonCode ^slicing.rules = #open
 * reasonCode contains
-    specialDisease 1..1 MS
+    specialDisease 0..1 MS
 * reasonCode[specialDisease] from $VS_43File_ReferSpecialDisease (extensible)
 * reasonCode[specialDisease] ^short = "การส่งต่อผู้ป่วยโรคเฉพาะทาง"

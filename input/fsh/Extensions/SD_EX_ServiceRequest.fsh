@@ -1,3 +1,38 @@
+
+Extension: EX_TH_ServiceRequestReferPatientCatagory
+Id: ex-servicerequest-refer-patient-category
+Title: "ServiceReques: Refer Patient Category"
+Description: "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
+* ^url = $EX_TH_ServiceRequestReferPatientCatagory
+* ^version = "4.3.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2022-08-23T07:06:13+11:00"
+* ^publisher = "SIL-TH"
+* ^context.type = #element
+* ^context.expression = "ServiceReques"
+* . 0..*
+* . ^short = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
+* . ^definition = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
+* url = $EX_TH_ServiceRequestReferPatientCatagory (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  43file 0..1 MS and
+  eclaim 0..1 MS
+* valueCodeableConcept.coding[43file] from $VS_eClaim_ReferPriorityCode (required)
+* valueCodeableConcept.coding[eclaim] from $VS_eClaim_ReferTypeEclaim (required)
+
+
+
+
+
+
+
+
 Extension: EX_TH_ServiceRequestReferStatus
 Id: ex-servicerequest-refer-status
 Title: "ServiceRequest: Refer Status"

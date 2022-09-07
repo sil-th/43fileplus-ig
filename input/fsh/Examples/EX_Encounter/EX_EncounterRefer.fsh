@@ -3,11 +3,6 @@ InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การรับบริการแผนกฉุกเฉิน และส่งต่อ"
 Description: "แสดงการรับบริการแผนกฉุกเฉิน และส่งต่อ"
 Usage: #example
-* extension[0]
-  * url = $EX_TH_EncounterReferCategory
-  * valueCodeableConcept
-    * coding[0] = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
-    * coding[+] = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 * identifier[0]
   * use = #secondary
   * type = $CS_HL7_IdentifierType#VN "Visit number"

@@ -46,7 +46,7 @@ pages:
 menu:
   หน้าแรก: index.html
   สารบัญ: toc.html
-  # Artifacts Summary: artifacts.html
+  เนื้อหาทั้งหมด: artifacts.html
   Profiles: profiles.html
   Extensions: extensions.html
   43 แฟ้ม plus: files-listing.html

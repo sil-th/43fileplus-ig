@@ -43,7 +43,6 @@ Alias: $EX_TH_EncounterIpdJourney = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_EncounterIpdDischargeStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-ipd-discharge-status
 Alias: $EX_TH_EncounterIpdDischargeType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-ipd-discharge-type
 Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-fp-case-type
-Alias: $EX_TH_EncounterReferCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-category
 Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-refer-result-code
 Alias: $EX_TH_EncounterLeaveDay = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-leave-day
 Alias: $EX_TH_EncounterProviderType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-provider-type
@@ -83,6 +82,7 @@ Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/43filespl
 // Alias: $EX_TH_ICFCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-icf-category
 
 // ServiceRequest
+Alias: $EX_TH_ServiceRequestReferPatientCatagory = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-patient-category
 Alias: $EX_TH_ServiceRequestReferStatus = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-status
 Alias: $EX_TH_ServiceRequestReferResultReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-result-reason
 Alias: $EX_TH_ServiceRequestReferRequesterDetail = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-requester-detail

@@ -4,6 +4,11 @@ InstanceOf: ServiceRequest
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Description: "การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Usage: #example
+* extension[0]
+  * url = $EX_TH_ServiceRequestReferPatientCatagory
+  * valueCodeableConcept
+    * coding[0] = $CS_43File_ReferEncounterClass#3 "ผู้ป่วยฉุกเฉิน (ยกเว้นอุบัติเหตุ)"
+    * coding[+] = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 * identifier[0]
   * use = #secondary
   * system = $ID_LO_Refer
