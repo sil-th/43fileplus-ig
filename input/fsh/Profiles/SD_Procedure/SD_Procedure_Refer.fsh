@@ -1,5 +1,5 @@
 Profile: Moph43pProcedureRefer
-Parent: Procedure
+Parent: $SD_Procedure
 Id: moph43p-procedure-refer
 Title: "MoPH43p Procedure: Refer"
 Description: "การส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
@@ -10,15 +10,13 @@ Description: "การส่งต่อผู้ป่วยไปยังส
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"
-* code.coding ^slicing.discriminator[0].type = #value
-* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.discriminator[0].type = #pattern
+* code.coding ^slicing.discriminator[=].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    snomed 1..1 MS
-* code.coding[snomed] ^short = "รหัสมาตรฐาน SNOMED"
-* code.coding[snomed].system 1..
-* code.coding[snomed].system = $SCT (exactly)
-* code.coding[snomed].code 1..
-* code.coding[snomed].code = #19712007 (exactly)
-* subject 1.. MS
-* subject only Reference($SD_Patient)
+    referProcedure 0..1 MS
+* code.coding[referProcedure] ^short = "หัตถการที่ได้ทำระหว่างการส่งต่อ"
+* code.coding[referProcedure] from $VS_43File_ReferCareProcedure (extensible)
+* code.coding[referProcedure].system 1..
+* code.coding[referProcedure].system = $CS_43File_ReferCareProcedure (exactly)
+* code.coding[referProcedure].code 1..

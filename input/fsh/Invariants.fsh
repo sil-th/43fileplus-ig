@@ -62,6 +62,14 @@ Severity: #error
 Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Drug)$')"
 
 
+Invariant: Local-procedure-uri
+Description: "รหัสหัตถการของสถานพยาบาล ควรใช้ system  เป็น https://terms.sil-th.org/hcode/5/[XXXXX]/Procedure หรือ https://terms.sil-th.org/hcode/9/[XXXXX]/Procedure โดยที่ [XXXXX] คือรหัส HCODE 5 หลัก หรือ 9 หลัก ซึ่งออกโดยกยผ."
+Severity: #error
+Expression: "value.matches('^(https://terms.sil-th.org/hcode/5/[0-9]{5}/Procedure)$') or value.matches('^(https://terms.sil-th.org/hcode/9/[0-9]{9}/Procedure)$')"
+
+
+
+
 Invariant: Inv-uri
 Description: "INV identifier shall be https://terms.sil-th.org/hcode/5/[XXXXX]/Inv, where [XXXXX] is a 5-digit HCODE defined by THCC."
 Severity: #error

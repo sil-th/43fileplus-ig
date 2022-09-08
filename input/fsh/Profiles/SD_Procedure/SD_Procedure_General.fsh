@@ -8,32 +8,36 @@ Description: "การทำหัตถการหรือการรัก
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-  $EX_TH_ProcedureProcedureType named procedureType 0..*
+    $EX_TH_ProcedureProcedureType named procedureType 0..*
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"
-* code.coding ^slicing.discriminator[0].type = #value
-* code.coding ^slicing.discriminator[=].path = "system"
+* code.coding ^slicing.discriminator[0].type = #pattern
+* code.coding ^slicing.discriminator[=].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     snomed 0..1 and
-    thcc 0..1 MS
-* code.coding[snomed] ^short = "รหัสมาตรฐาน SNOMED"
-* code.coding[snomed].system 1..
+    icd9cm 0..1 and
+    icd10tm 0..1 and
+    local 0..1
+* code.coding[snomed] ^short = "รหัสหัตถการมาตรฐานจาก SNOMED CT"
 * code.coding[snomed].system = $SCT (exactly)
-* code.coding[snomed].code 1..
-* code.coding[thcc] from $VS_43File_ReferCareProcedure (extensible)
-* code.coding[thcc] ^short = "รหัสมาตรฐาน THCC"
-* code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_43File_ReferCareProcedure (exactly)
-* code.coding[thcc].code 1..
+* code.coding[icd9cm] ^short = "รหัสหัตถการมาตรฐานจาก ICD-9CM"
+* code.coding[icd9cm].system = $ICD9CM (exactly)
+* code.coding[icd10tm] ^short = "รหัสหัตถการมาตรฐานจาก ICD-10TM"
+* code.coding[icd10tm].system = $CS_TH_ICD10TM (exactly)
+* code.coding[local] ^short = "รหัส local code ของสถานพยาบาล"
+* code.coding[local].system obeys Local-procedure-uri
+* code.coding[local].system ^example.label = "Procedure namespace"
+* code.coding[local].system ^example.valueUri = $ID_LO_Procedure
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient or $SD_Group_Village)
 * performed[x] MS
+* performed[x] only dateTime or Period or string
 * performer MS
-* performedDateTime MS
-* performer.function MS
-* performer.function from $VS_THCC_LaborPerformerRole (extensible)
-* performer.actor only Reference($SD_Practitioner)
+  * function MS
+  * actor only Reference($SD_Practitioner)
+  * onBehalfOf MS
+* location MS
 * outcome MS
 * note MS
