@@ -7,7 +7,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[loinc] = $LNC#11376-1 "Injury location"
+  * coding[code43Plus] = $LNC#11376-1 "Injury location"
   * text = "Injury location"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-01T12:30:02+07:00"

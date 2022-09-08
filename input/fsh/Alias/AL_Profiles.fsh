@@ -28,6 +28,7 @@ Alias: $SD_MedicationAdministration = https://fhir-ig.sil-th.org/43filesplus/Str
 Alias: $SD_MedicationDispense = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-medicationdispense
 Alias: $SD_MedicationRequest = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-medicationrequest
 Alias: $SD_MedicationStatement = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-medicationstatement
+Alias: $SD_Observation_AccidentBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-accident-base
 Alias: $SD_Observation_ChildBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-child-base
 Alias: $SD_Observation_LabBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-base
 Alias: $SD_Observation_NcdBase = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-base

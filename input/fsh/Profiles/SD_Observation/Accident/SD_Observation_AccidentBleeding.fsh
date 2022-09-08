@@ -1,5 +1,5 @@
 Profile: Moph43pObservationAccBleeding
-Parent: Observation
+Parent: $SD_Observation_AccidentBase
 Id: moph43p-observation-accident-bleeding
 Title: "MoPH43p Observation: Accident-Bleeding"
 Description: "การห้ามเลือด"
@@ -7,41 +7,8 @@ Description: "การห้ามเลือด"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* status MS
-* category MS
-* category ^slicing.discriminator[0].type = #value
-* category ^slicing.discriminator[=].path = "coding.code"
-* category ^slicing.discriminator[+].type = #value
-* category ^slicing.discriminator[=].path = "coding.system"
-* category ^slicing.rules = #open
-* category contains Exam 1..1
-* category[Exam].coding.system 1..
-* category[Exam].coding.system = $CS_HL7_ObservationCat (exactly)
-* category[Exam].coding.code 1..
-* category[Exam].coding.code = #exam (exactly)
-* code MS
-* code.coding ^slicing.discriminator[0].type = #value
-* code.coding ^slicing.discriminator[=].path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    thcc 1..1 MS
-* code.coding[thcc] from $VS_Meta_AccidentObs (extensible)
-* code.coding[thcc].system 1..
-* code.coding[thcc].system = $CS_Meta_AccidentObs (exactly)
-* code.coding[thcc].code 1..
-* code.coding[thcc].code = #stop-bleed (exactly)
-* subject 1.. MS
-* subject only Reference($SD_Patient)
-* effective[x] MS
-* value[x] MS
+* category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
+* code.coding[code43Plus] = $CS_Meta_AccidentObs#stop-bleed (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
-* valueCodeableConcept.coding ^slicing.discriminator.type = #value
-* valueCodeableConcept.coding ^slicing.discriminator.path = "system"
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains
-    thcc 0..1 MS
-* valueCodeableConcept.coding[thcc] from $VS_THCC_AccidentBleeding (extensible)
-* valueCodeableConcept.coding[thcc].system 1..
-* valueCodeableConcept.coding[thcc].system = $CS_THCC_AccidentBleeding (exactly)
-* valueCodeableConcept.coding[thcc].code 1..
+* valueCodeableConcept.coding from $VS_THCC_AccidentBleeding (extensible)
+* valueCodeableConcept.coding.system = $CS_THCC_AccidentBleeding (exactly)

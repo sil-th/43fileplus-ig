@@ -1,9 +1,9 @@
-Profile: Moph43pObservationChildBase
+Profile: Moph43pObservationAccidentBase
 Parent: Observation
-Id: moph43p-observation-child-base
-Title: "MoPH43p Observation: Child Development"
-Description: "ข้อมูลการตรวจประเมินทารกและเด็ก"
-* ^url = $SD_Observation_ChildBase
+Id: moph43p-observation-accident-base
+Title: "MoPH43p Observation: Accident"
+Description: "ข้อมูลการตรวจโรคและอาการในกลุ่ม Accident"
+* ^url = $SD_Observation_AccidentBase
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -20,7 +20,7 @@ Description: "ข้อมูลการตรวจประเมินทา
 * code.coding ^slicing.rules = #open
 * code.coding contains
     code43Plus 1..1 MS
-* code.coding[code43Plus] from $VS_Meta_ChildDevelopment_ObsList (extensible)
+* code.coding[code43Plus] from $VS_Meta_Accident_ObsList (extensible)
 * subject 1.. MS
 * subject only Reference($SD_Patient)
 * effective[x] MS

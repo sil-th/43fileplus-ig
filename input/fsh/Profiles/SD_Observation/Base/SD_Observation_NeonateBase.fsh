@@ -14,7 +14,7 @@ Description: "ข้อมูลการตรวจประเมินทา
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7].coding from $CS_HL7_ObservationCat (required)
+* category[hl7].coding from $VS_HL7_ObservationCat (extensible)
 * code MS
 * code.coding ^slicing.discriminator[0].type = #pattern
 * code.coding ^slicing.discriminator[=].path = "$this"
