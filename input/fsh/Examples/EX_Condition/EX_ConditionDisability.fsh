@@ -16,6 +16,6 @@ Usage: #example
 * subject = Reference(Patient/patient-patient3) "นาง สมปอง ใจดี"
 * onsetDateTime = "2018-01-01T12:30:02+07:00" 
 * recordedDate = "2019-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 	

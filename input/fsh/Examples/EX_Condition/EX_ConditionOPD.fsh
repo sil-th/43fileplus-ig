@@ -15,7 +15,7 @@ Usage: #example
   * text = "Streptococcal pharyngitis"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * note.text = "หมายเหตุประกอบการวินิจฉัยโรค"
 
 
@@ -34,5 +34,5 @@ Usage: #example
   * text = "Diabetes mellitus"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * note.text = "หมายเหตุประกอบการวินิจฉัยโรค"

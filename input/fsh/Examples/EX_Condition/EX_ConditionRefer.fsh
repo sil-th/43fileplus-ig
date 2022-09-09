@@ -10,7 +10,7 @@ Usage: #example
   * text = "Transient ischemic attack"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2021-03-31T10:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 
@@ -26,7 +26,7 @@ Usage: #example
   * text = "Transient ischemic attack"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2021-03-31T10:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 
@@ -42,4 +42,4 @@ Usage: #example
   * text = "Transient ischemic attack"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2021-03-31T14:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"

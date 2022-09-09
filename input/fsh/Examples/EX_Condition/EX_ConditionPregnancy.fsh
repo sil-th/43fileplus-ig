@@ -12,4 +12,4 @@ Usage: #example
   * text = "Delivery normal"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * recordedDate = "2022-01-21T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

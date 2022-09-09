@@ -13,7 +13,7 @@ Usage: #example
   * text = "2022-04-25T12:30:02+07:00"
 * subject = Reference(Patient/patient-patient3)
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 Instance: condition-cause-of-death2
@@ -27,4 +27,4 @@ Usage: #example
   * text = "Hypertensive crisis"
 * subject = Reference(Patient/patient-patient3)
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

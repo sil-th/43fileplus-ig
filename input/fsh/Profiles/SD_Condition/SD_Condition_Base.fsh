@@ -31,6 +31,6 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * subject MS
 * onset[x] MS
 * recordedDate MS
-* recorder only Reference($SD_Practitioner)
-* recorder MS
+* asserter only Reference($SD_Practitioner)
+* asserter MS
 * note MS

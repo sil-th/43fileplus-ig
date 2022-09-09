@@ -12,7 +12,7 @@ Usage: #example
   * text = "Diabetes mellitus type 2"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-21T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 Instance: condition-ncd-summary
@@ -28,4 +28,4 @@ Usage: #example
   * text = "เป็นโรคในกลุ่ม NCD"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-21T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

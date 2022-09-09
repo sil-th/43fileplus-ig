@@ -10,7 +10,7 @@ Usage: #example
   * text = "Diabetes mellitus"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 Instance: condition-chronic2
@@ -25,4 +25,4 @@ Usage: #example
   * text = "Essential hypertension (disorder)"
 * subject = Reference(Patient/patient-patient1) "นาย สมชาย ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

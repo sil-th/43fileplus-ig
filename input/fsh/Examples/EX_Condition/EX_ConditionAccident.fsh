@@ -13,6 +13,6 @@ Usage: #example
   * text = "Closed fracture of radius AND ulna"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2022-03-01T14:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * note
   * text = "ข้อความอธิบายรายละเอียดอุบัติเหตุ"

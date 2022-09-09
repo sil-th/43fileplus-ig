@@ -17,7 +17,7 @@ Usage: #example
   * text = "Breast cancer"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * stage
   * summary = $CS_43Plus_CancerStaging#1 "ระยะที่ 1"
   * assessment = Reference(Observation/observation-cancer-grade)

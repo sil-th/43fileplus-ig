@@ -15,7 +15,7 @@ Usage: #example
   * text = "Dengue hemorrhagic fever"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * recordedDate = "2022-01-01T12:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 
 
 
@@ -44,4 +44,4 @@ Usage: #example
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * onsetDateTime = "2021-12-30T14:30:02+07:00"
 * recordedDate = "2022-01-01T14:30:02+07:00"
-* recorder = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+* asserter = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"

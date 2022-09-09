@@ -172,7 +172,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * gender ^short = "เพศ"
 * birthDate MS
 * birthDate ^short = "วันเกิด"
-* birthDate ^comment = "วันเดือนปีเกิด (ระบุในรูปแบบ YYYY-MM-DD) หากไม่ทราบวัน เดือนที่เกิด แต่ทราบ ค.ศ เกิด ให้กำหนดวันเกิดเป็นวันที่ 1 มกราคมของปี ค.ศ.นั้น ๆ"
+* birthDate ^comment = "วันเดือนปีเกิด (ระบุในรูปแบบ YYYY-MM-DD) หากไม่ทราบวัน เดือนที่เกิด แต่ทราบ ค.ศ เกิด ให้ใส่แต่ค.ศ."
 * address MS
 * address ^slicing.discriminator[0].type = #value
 * address ^slicing.discriminator[=].path = "type"
