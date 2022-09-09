@@ -13,12 +13,12 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * extension ^min = 0
 * extension contains
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
-    $EX_TH_MedicationRequestOutNLEM named npc 0..* and
+    $EX_TH_MedicationRequestNedCriteria named npc 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
 // * extension[medicationSource] from $VS_Std15_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
 * extension[medicationSource] ^min = 0
-// * extension[npc] from $VS_eClaim_MedOutNLEM (extensible)
+// * extension[npc] from $VS_eClaim_MedNedCriteria (extensible)
 * extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
 * extension[npc] ^min = 0
 * extension[approvedNo] ^short = "หมายเลขอนุมัติ"

@@ -7,7 +7,7 @@ Description: "ผลการตรวจหมู่เลือด"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc].code = $LNC#34532-2 (exactly)
+* code.coding[loinc] = $LNC#34532-2 (exactly)
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"

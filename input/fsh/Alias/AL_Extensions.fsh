@@ -116,8 +116,10 @@ Alias: $EX_TH_ObservationDeviceAmount = https://fhir-ig.sil-th.org/43filesplus/E
 
 // MedicationRequest
 Alias: $EX_TH_MedicationRequestSource = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationrequest-medication-source
-Alias: $EX_TH_MedicationRequestOutNLEM = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationrequest-out-nlem
+Alias: $EX_TH_MedicationRequestNedCriteria = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationrequest-ned-criteria
 Alias: $EX_TH_MedicationRequestApprovedNo = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationrequest-med-approved-no
+Alias: $EX_TH_MedicationRequestDosageCode = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationrequest-med-dosage-code
+
 
 // MedicationDispense
 Alias: $EX_TH_MedicationDispenseDeliveryMode = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-medicationdispense-med-delivery-mode

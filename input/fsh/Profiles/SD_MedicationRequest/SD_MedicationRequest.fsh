@@ -9,7 +9,7 @@ Description: "การสั่งยา"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
-    $EX_TH_MedicationRequestOutNLEM named outNLEM 0..* and
+    $EX_TH_MedicationRequestNedCriteria named nedCriteria 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
 * status 1.. MS
 * intent 1.. MS
@@ -58,4 +58,5 @@ Description: "การสั่งยา"
 * reasonCode MS
 * note MS
 * dosageInstruction MS
+  * extension contains $EX_TH_MedicationRequestDosageCode named dosageCode 0..1 
 * dosageInstruction.text MS

@@ -48,18 +48,24 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * insurance.coverage only Reference($SD_Coverage)
 * insurance.coverage MS
 * item MS
-* item.extension contains
+  * extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 MS and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 MS and
     $EX_TH_ClaimItemPaid named itemPaid 0..1 MS and
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1 MS
-* item.detail
+  * category MS
+  * category.coding ^slicing.discriminator.type = #pattern
+  * category.coding ^slicing.discriminator.path = "$this"
+  * category.coding ^slicing.rules = #open
+  * category.coding contains
+      thCategory 0..1 MS
+  * category.coding[thCategory] ^short = "หมวดค่าใช้จ่ายบริการสาธารณสุข"
+  * category.coding[thCategory] from $VS_TH_FeeCategory (required)
 * item.detail.extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 and
     $EX_TH_ClaimItemPaid named itemPaid 0..1 and
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
-* item.detail.subDetail 
 * item.detail.subDetail.extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 and

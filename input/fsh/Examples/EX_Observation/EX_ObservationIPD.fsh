@@ -75,6 +75,7 @@ Usage: #example
   * text = "Laboratory"
 * code
   * coding[0] = $SCT#252290000 "Thalassemia screening"
+  * coding[+] = $CS_TMLT#300058 "Hemoglobin E [+/-] in Blood by DCIP"
   * text = "DCIP/E screen"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-01-01T12:30:02+07:00"

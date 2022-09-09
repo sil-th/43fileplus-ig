@@ -7,8 +7,8 @@ Usage: #example
   * url = $EX_TH_MedicationRequestSource
   * valueCodeableConcept = $CS_Std15_MedicationSource#1 "ยาที่ให้จาก รพ.ต้นทาง"
 * extension[+]
-  * url = $EX_TH_MedicationRequestOutNLEM
-  * valueCodeableConcept = $CS_eClaim_MedOutNLEM#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
+  * url = $EX_TH_MedicationRequestNedCriteria
+  * valueCodeableConcept = $CS_eClaim_MedNedCriteria#EA "เกิดอาการไม่พึงประสงค์จากยาหรือแพ้ยาที่สามารถใช้ได้ในบัญชียาหลักแห่งชาติ"
 * extension[+]
   * url = $EX_TH_MedicationRequestApprovedNo
   * valueString = "ApprovedNumber"
@@ -27,7 +27,8 @@ Usage: #example
 * reasonCode = $SCT#43878008 "Streptococcal pharyngitis"
 * note.text = "หมายเหตุเกี่ยวกับการใช้ยา (ถ้ามี)"
 * dosageInstruction
+  * extension
+    * url = $EX_TH_MedicationRequestDosageCode
+    * valueString = "1x3 po"
   * text = "Take one tablet three times a day"
-  * timing
-    * code.text = "TID"
   * route = $SCT#26643006 "Oral route"

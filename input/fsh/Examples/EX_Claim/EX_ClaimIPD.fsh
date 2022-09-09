@@ -128,37 +128,35 @@ Usage: #example
   * focal = true
   * coverage = Reference(Coverage/coverage-uc)
   * preAuthRef = "PP1007991295"
-* item
+* item  
+  * extension[0]
+    * url = $EX_TH_ClaimItemCost
+    * valueMoney
+      * value = 50.0
+      * currency = $ISO4217#THB
+  * extension[+]
+    * url = $EX_TH_ClaimItemCopay
+    * valueMoney
+      * value = 0.0
+      * currency = $ISO4217#THB
   * sequence = 1
-  * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
-  * detail
-    * extension[0]
-      * url = $EX_TH_ClaimItemCost
-      * valueMoney
-        * value = 50.0
-        * currency = $ISO4217#THB
-    * extension[+]
-      * url = $EX_TH_ClaimItemCopay
-      * valueMoney
-        * value = 0.0
-        * currency = $ISO4217#THB
-    * sequence = 1
-    * productOrService
-      * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"
-      * coding[+] = $CS_24Drug#100176000004493120381620 "AMOXICILLIN 500 MG TABLET, ORAL"
-      * coding[+] = $ID_LO_Drug#1233 "Local code amoxycillin 500 mg"
-      * text = "Amoxicillin"
-    * quantity
-      * value = 21
-      * unit = "Capsule"
-      * system = $SCT
-      * code = #732937005
-    * unitPrice
-      * value = 10.0
-      * currency = $ISO4217#THB
-    * net
-      * value = 210.0
-      * currency = $ISO4217#THB
+  * category = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
+  * productOrService
+    * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"
+    * coding[+] = $CS_24Drug#100176000004493120381620 "AMOXICILLIN 500 MG TABLET, ORAL"
+    * coding[+] = $ID_LO_Drug#1233 "Local code amoxycillin 500 mg"
+    * text = "Amoxicillin"
+  * quantity
+    * value = 21
+    * unit = "Capsule"
+    * system = $SCT
+    * code = #732937005
+  * unitPrice
+    * value = 10.0
+    * currency = $ISO4217#THB
+  * net
+    * value = 210.0
+    * currency = $ISO4217#THB
 * total
   * value = 200000
   * currency = $ISO4217#THB
