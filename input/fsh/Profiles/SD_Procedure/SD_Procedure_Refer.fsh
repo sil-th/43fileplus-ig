@@ -2,7 +2,7 @@ Profile: Moph43pProcedureRefer
 Parent: $SD_Procedure
 Id: moph43p-procedure-refer
 Title: "MoPH43p Procedure: Refer"
-Description: "การส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
+Description: "หัตถการที่ได้ทำระหว่างการส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
 * ^url = $SD_Procedure_Refer
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"

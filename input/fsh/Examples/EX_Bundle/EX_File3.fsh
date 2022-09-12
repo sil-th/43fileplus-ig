@@ -23,6 +23,12 @@ Usage: #example
   * fullUrl = "http://example.org/Encounter/encounter-death1"
   * resource = encounter-death1
 * entry[+]
+  * fullUrl = "http://example.org/Observation/observation-death-location"
+  * resource = observation-death-location
+* entry[+]
+  * fullUrl = "http://example.org/Observation/observation-death-pregnancy"
+  * resource = observation-death-pregnancy
+* entry[+]
   * fullUrl = "http://example.org/Organization/organization-main"
   * resource = organization-main
 * entry[+]
@@ -56,4 +62,5 @@ Usage: #example
 * section[+]
   * title = "รายละเอียดเพ่ิมเติม"
   * entry[0] = Reference(Encounter/encounter-death1)
-
+  * entry[+] = Reference(Observation/observation-death-location)
+  * entry[+] = Reference(Observation/observation-death-pregnancy)

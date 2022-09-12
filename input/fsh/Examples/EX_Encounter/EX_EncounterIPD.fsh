@@ -17,7 +17,7 @@ Usage: #example
   * use = #secondary
   * type
     * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
-    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
+    * coding[+] = $CS_TH_IdentifierType#localAn "เลข Admission Number (AN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished
@@ -49,16 +49,6 @@ Usage: #example
   * extension[+]
     * url = $EX_TH_EncounterIpdDischargeType 
     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
-  // * extension[+]
-  //   * url = $EX_TH_EncounterDischargeInstruction
-  //   * valueAnnotation
-  //     * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
-  // * origin = Reference(Organization/organization-second)
-  //   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลเครือข่าย")
-  // * admitSource
-  //   * coding[0] = $CS_HL7_AdmitSource#gp "General Practitioner referral"
-  //   * coding[+] = $CS_THCC_AdmitSource#3 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
-  //   * text = "มารับบริการเอง"
   * destination = Reference(Organization/organization-third)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location[0]
@@ -93,10 +83,6 @@ Usage: #example
     * display = "แผนกอายุรกรรม"
 * serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
-  // * extension
-  //   * url = $EX_TH_EncounterProviderType 
-  //   * valueCodeableConcept = $CS_eClaim_ProviderType#1 "Main Contractor"
-
 
 
 
@@ -130,7 +116,7 @@ Usage: #example
   * use = #secondary
   * type
     * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
-    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Admission Number (AN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished
@@ -157,16 +143,6 @@ Usage: #example
   * extension[+]
     * url = $EX_TH_EncounterIpdDischargeType 
     * valueCodeableConcept = $CS_THCC_IpdDischargeType#1 "With Approval"
-  // * extension[+]
-  //   * url = $EX_TH_EncounterDischargeInstruction
-  //   * valueAnnotation
-  //     * text = "ใส่คำแนะนำหลังการเข้ารับบริการ"
-  // * origin = Reference(Organization/organization-second)
-  //   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลเครือข่าย")
-  // * admitSource
-  //   * coding[0] = $CS_HL7_AdmitSource#gp "General Practitioner referral"
-  //   * coding[+] = $CS_THCC_AdmitSource#3 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
-  //   * text = "มารับบริการเอง"
   * destination = Reference(Organization/organization-third)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
 * location[0]

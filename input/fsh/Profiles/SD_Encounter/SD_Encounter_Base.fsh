@@ -8,13 +8,10 @@ Description: "การรับบริการ"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_TH_EncounterDeathLocType named deathLocationType 0..1 and
-    $EX_TH_EncounterDeathPregnancy named deathPregnancy 0..1 and
     $EX_TH_EncounterPatientLocationType named patientLocationType 0..1 and
     $EX_TH_EncounterServiceHour named serviceHour 0..1 and
     $EX_TH_EncounterServiceTypeTH named serviceTypeTH 0..1 MS and
-    $EX_TH_EncounterFpCaseType named familyPlanningType 0..1 and
-    $EX_TH_EncounterLeaveDay named encounterLeaveDay 0..1
+    $EX_TH_EncounterFpCaseType named familyPlanningType 0..1
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"
@@ -78,6 +75,7 @@ Description: "การรับบริการ"
 * period MS
 * period.extension contains
     $EX_TH_EncounterServiceHour named serviceHour 0..1 MS
+* length MS
 * reasonCode MS
 * reasonCode.coding ^slicing.discriminator.type = #value
 * reasonCode.coding ^slicing.discriminator.path = "system"
@@ -91,13 +89,20 @@ Description: "การรับบริการ"
 * reasonCode.coding[snomed].system 1..
 * reasonCode.coding[snomed].system = $SCT (exactly)
 * reasonCode.coding[snomed].code 1..
+* diagnosis MS
+  * use.coding ^slicing.discriminator.type = #value
+  * use.coding ^slicing.discriminator.path = "system"
+  * use.coding ^slicing.rules = #open
+  * use.coding contains
+      hl7plus 0..1 MS and
+      43plus 0..1 MS
+  * use.coding[hl7plus] from $VS_Meta_ExtendedHL7DiagnosisRole (extensible)
+  * use.coding[43plus] from $VS_43Plus_EncounterDiagnosisRole (extensible)
 * account only Reference($SD_Account)
 * hospitalization MS
 * hospitalization.extension contains
     $EX_TH_EncounterDischargeStatus named dischargeStatus 0..1 MS and
-    $EX_TH_EncounterDischargeInstruction named dischargeInstruction  0..1 MS and
-    $EX_TH_EncounterIpdDischargeStatus named ipdDischargeStatus 0..1 MS and
-    $EX_TH_EncounterIpdDischargeType named ipdDischargeType 0..1 MS
+    $EX_TH_EncounterDischargeInstruction named dischargeInstruction  0..1 MS
 * hospitalization.origin MS
 * hospitalization.origin only Reference($SD_Organization_Provider)
 * hospitalization.admitSource MS
@@ -106,7 +111,8 @@ Description: "การรับบริการ"
 * hospitalization.admitSource.coding ^slicing.rules = #open
 * hospitalization.admitSource.coding contains
     hl7 0..1 and
-    thcc 1..1 MS
+    thcc 1..1 MS and
+    thccAccident 0..1 MS
 * hospitalization.admitSource.coding[hl7] from $VS_HL7_AdmitSource (extensible)
 * hospitalization.admitSource.coding[hl7].system 1..
 * hospitalization.admitSource.coding[hl7].system = $CS_HL7_AdmitSource (exactly)
@@ -115,13 +121,16 @@ Description: "การรับบริการ"
 * hospitalization.admitSource.coding[thcc].system 1..
 * hospitalization.admitSource.coding[thcc].system = $CS_THCC_AdmitSource (exactly)
 * hospitalization.admitSource.coding[thcc].code 1..
+* hospitalization.admitSource.coding[thccAccident] from $VS_THCC_AccidentAdmitSource (extensible)
+* hospitalization.admitSource.coding[thccAccident].system 1..
+* hospitalization.admitSource.coding[thccAccident].system = $CS_THCC_AccidentAdmitSource (exactly)
+* hospitalization.admitSource.coding[thccAccident].code 1..
 * hospitalization.destination only Reference($SD_Organization_Provider)
 * hospitalization.destination.extension contains
     $EX_TH_EncounterReferOutID named referOutId 0..1 MS
 * location MS
 * location.extension contains
-    $EX_TH_EncounterServiceLocationType named serviceLocationType 0..1 MS and
-    $EX_TH_EncounterIpdJourney named ipdJourney 0..* MS
+    $EX_TH_EncounterServiceLocationType named serviceLocationType 0..1 MS
 * serviceProvider MS
 * serviceProvider only Reference($SD_Organization_Provider)
 * serviceProvider.extension contains

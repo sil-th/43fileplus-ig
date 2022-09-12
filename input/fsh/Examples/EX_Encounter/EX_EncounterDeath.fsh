@@ -3,16 +3,6 @@ InstanceOf: Encounter
 Title: "ตัวอย่าง Encounter: การเสียชีวิต"
 Description: "การเสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
 Usage: #example
-* extension[0]
-  * url = $EX_TH_EncounterDeathLocType
-  * valueCodeableConcept
-    * coding[0] = $CS_THCC_DeathLocType#1 "ในสถานพยาบาล"
-    * text = "ในสถานพยาบาล"
-* extension[+]
-  * url = $EX_TH_EncounterDeathPregnancy
-  * valueCodeableConcept
-    * coding[0] = $CS_THCC_DeathPregnancy#3 "ไม่ตั้งครรภ์"
-    * text = "ไม่ตั้งครรภ์"
 * identifier[0]
   * use = #official
   * type
