@@ -51,7 +51,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * code.coding[2digit].system = $CS_THCC_2DigitLab (exactly)
 * code.coding[2digit].code 1..
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * value[x] MS
 * value[x] ^short = "ผลของการตรวจทางห้องปฏิบัติการ"

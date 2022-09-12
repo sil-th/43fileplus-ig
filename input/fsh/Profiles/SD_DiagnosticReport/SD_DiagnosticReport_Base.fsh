@@ -28,7 +28,7 @@ Description: "การรายงานผลการตรวจ"
 * code.coding[tmlt].code 1..
 * code.coding[tmlt].code = #320259 (exactly)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * issued MS
 * performer only Reference($SD_Organization_Provider)

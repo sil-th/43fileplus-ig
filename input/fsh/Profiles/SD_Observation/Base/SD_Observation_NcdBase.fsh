@@ -22,7 +22,7 @@ Description: "ข้อมูลการให้บริการตรวจ
     code43Plus 1..1 MS
 * code.coding[code43Plus] from $VS_Meta_NCD_ObsList (extensible)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * effective[x] ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * value[x] MS

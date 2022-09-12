@@ -133,5 +133,3 @@ Description: "สถานะ/สาเหตุการจำหน่าย"
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $VS_43File_PidRemoveReason (extensible)
-
-

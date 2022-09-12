@@ -25,7 +25,7 @@ Description: "ข้อมูลสิทธิ"
 * type MS
 * policyHolder MS
 * subscriber MS
-* beneficiary only Reference($SD_Patient)
+* beneficiary only Reference($SD_Patient_Base)
 * beneficiary MS
 * period MS
 * payor MS

@@ -22,7 +22,7 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
     quanity 0..1 MS
 * parameter[quanity].value[x] only Quantity
 * parameter[quanity].value[x] MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * encounter MS
 * authoredOn MS

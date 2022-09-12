@@ -66,7 +66,7 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * code.coding[noAllergies].system 1..
 * code.coding[noAllergies].system = $CS_IPS_AbsentUnknownAllergies (exactly)
 * code.coding[noAllergies].code 1..
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * patient MS
 * recordedDate MS
 * recorder only Reference($SD_Practitioner)

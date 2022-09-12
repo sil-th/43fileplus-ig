@@ -12,7 +12,7 @@ Description: "ข้อมูลทางการเงิน"
   $EX_TH_AccountAccidentCoverage named accidentCoverage 0..*
 * status MS
 * name MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * servicePeriod MS
 * coverage MS

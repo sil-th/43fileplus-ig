@@ -66,7 +66,7 @@ Description: "การส่งต่อผู้ป่วยระหว่า
     $EX_TH_ServiceRequestReferPriorityReason named priorityReason 0..1 MS
 * code MS
 * subject MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * encounter MS
 * encounter only Reference($SD_Encounter_Base)
 * authoredOn MS

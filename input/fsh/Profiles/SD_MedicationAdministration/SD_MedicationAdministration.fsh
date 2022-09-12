@@ -37,7 +37,7 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medicationCodeableConcept.coding[local].code 1..
 * medicationReference only Reference($SD_Medication)
 * medicationReference ^sliceName = "medicationReference"
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * context only Reference($SD_Encounter_Base)
 * context MS

@@ -41,7 +41,9 @@ Alias: $SD_Observation_VitalBase = https://fhir-ig.sil-th.org/43filesplus/Struct
 Alias: $SD_Organization_Council = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-council
 Alias: $SD_Organization_Fund = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-fund
 Alias: $SD_Organization_Provider = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-organization-provider
-Alias: $SD_Patient = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient
+Alias: $SD_Patient_Base = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-base
+Alias: $SD_Patient_Foreigner = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-foreigner
+Alias: $SD_Patient_Death = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-death
 Alias: $SD_Practitioner = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-practitioner
 Alias: $SD_PractitionerRole = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-practitionerrole
 Alias: $SD_Procedure = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-procedure
@@ -51,6 +53,11 @@ Alias: $SD_Procedure_Refer = https://fhir-ig.sil-th.org/43filesplus/StructureDef
 Alias: $SD_RelatedPerson = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-relatedperson
 Alias: $SD_ServiceRequest_Refer = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-servicerequest-refer
 Alias: $SD_Specimen = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-specimen
+
+// Profiles on Extensions
+Alias: $SD_Patient_EX_Nationality = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-extension-nationality
+Alias: $SD_Patient_EX_Religion = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-extension-religion
+Alias: $SD_Patient_EX_Disability = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-extension-disability
 
 
 // Observation Details Profile

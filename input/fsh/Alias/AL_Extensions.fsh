@@ -30,6 +30,7 @@ Alias: $EX_TH_PatientPersonStatus = https://fhir-ig.sil-th.org/43filesplus/Exten
 Alias: $EX_TH_PatientForeignerType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-patient-foreigner-type
 Alias: $EX_TH_PatientPidRemoveReason = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-patient-pid-remove-reason
 
+
 // Encounter
 Alias: $EX_TH_EncounterDeathLocType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-death-location-type
 Alias: $EX_TH_EncounterDeathPregnancy = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-death-pregnancy

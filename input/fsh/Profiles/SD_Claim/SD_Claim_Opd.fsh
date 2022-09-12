@@ -44,7 +44,7 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * type.coding.code = #institutional (exactly)
 * use = #claim (exactly)
 * use MS
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * patient MS
 * created MS
 * provider only Reference($SD_Organization_Provider)

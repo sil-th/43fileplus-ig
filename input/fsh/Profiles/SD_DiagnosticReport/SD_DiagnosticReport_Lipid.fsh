@@ -17,7 +17,7 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * code.coding[loinc] = $LNC#57698-3 (exactly)
 * code.coding[tmlt] = $CS_TMLT#320259 (exactly)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * issued MS
 * performer only Reference($SD_Organization_Provider)
 * performer MS

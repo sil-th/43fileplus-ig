@@ -7,7 +7,7 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * patient MS
 * created MS
 * provider only Reference($SD_Organization_Provider)

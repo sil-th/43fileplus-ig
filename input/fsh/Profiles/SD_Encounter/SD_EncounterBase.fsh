@@ -56,7 +56,7 @@ Description: "การรับบริการ"
 * priority.coding[thcc].system = $CS_43Plus_ServicePriority (exactly)
 * priority.coding[thcc].code 1..
 * subject MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * basedOn MS
 * basedOn only Reference($SD_ServiceRequest_Refer)
 * participant MS

@@ -17,7 +17,7 @@ Description: "สรุปภาวะพึ่งพิง"
     loinc 0..1 MS
 * code.coding[loinc] = $LNC#75276-6 (exactly)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * effective[x] ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * value[x] MS

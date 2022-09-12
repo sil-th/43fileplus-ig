@@ -64,7 +64,7 @@ Description: "ข้อมูลผู้ให้บริการของส
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
 * name ^slicing.discriminator[0].type = #value
-* name ^slicing.discriminator[=].path = "extension.value[x]"
+* name ^slicing.discriminator[=].path = "extension('http://hl7.org/fhir/StructureDefinition/language').value"
 * name ^slicing.rules = #open
 * name contains
   thai 0..* MS and

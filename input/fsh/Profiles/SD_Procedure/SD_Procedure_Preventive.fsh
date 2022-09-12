@@ -16,4 +16,4 @@ Description: "กิจกรรมในชุมชนที่อยู่ใ
 * code.coding[thcc] ^short = "รหัสมาตรฐาน THCC"
 * code.coding[thcc].system 1..
 * code.coding[thcc].code 1..
-* subject only Reference($SD_Patient or $SD_Group_Village)
+* subject only Reference($SD_Patient_Base or $SD_Group_Village)

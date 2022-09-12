@@ -37,7 +37,7 @@ Description: "การจ่ายยา"
 * medicationCodeableConcept.coding[local].code 1..
 * medicationReference only Reference($SD_Medication)
 * medicationReference ^sliceName = "medicationReference"
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * performer MS
 * performer.actor only Reference($SD_Practitioner)

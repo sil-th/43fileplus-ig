@@ -31,7 +31,7 @@ Description: "การทำหัตถการหรือการรัก
 * code.coding[local].system ^example.label = "Procedure namespace"
 * code.coding[local].system ^example.valueUri = $ID_LO_Procedure
 * subject 1.. MS
-* subject only Reference($SD_Patient or $SD_Group_Village)
+* subject only Reference($SD_Patient_Base or $SD_Group_Village)
 * performed[x] MS
 * performed[x] only dateTime or Period or string
 * performer MS

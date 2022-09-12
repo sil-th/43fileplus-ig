@@ -35,7 +35,7 @@ Description: "การมารับบริการฉีดวัคซี
 * vaccineCode.coding[local].system ^example.label = "Drug namespace"
 * vaccineCode.coding[local].system ^example.valueUri = $ID_LO_Drug
 * vaccineCode.coding[local].code 1..
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * patient MS
 * encounter only Reference($SD_Encounter_Base)
 * encounter MS

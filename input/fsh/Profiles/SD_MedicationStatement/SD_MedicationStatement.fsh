@@ -62,14 +62,14 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * medicationCodeableConcept.coding[local].code 1..
 * medicationReference only Reference($SD_Medication)
 * medicationReference ^sliceName = "medicationReference"
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * effective[x] MS
 * effective[x] only Period
 * effectivePeriod ^sliceName = "effectivePeriod"
 * effectivePeriod MS
 * dateAsserted MS
-* informationSource only Reference($SD_Patient or $SD_Organization_Provider)
+* informationSource only Reference($SD_Patient_Base or $SD_Organization_Provider)
 * informationSource MS
 * dosage MS
 * dosage.text MS

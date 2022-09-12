@@ -27,7 +27,7 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * subject MS
 * onset[x] MS
 * recordedDate MS

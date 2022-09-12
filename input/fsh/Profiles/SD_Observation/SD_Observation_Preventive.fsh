@@ -15,7 +15,7 @@ Description: "บริการส่งเสริมสุขภาพป้
     code43Plus 1..1 MS
 * code.coding[code43Plus] from $VS_THCC_SpecialPPService (extensible)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * effective[x] ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * value[x] MS

@@ -17,7 +17,7 @@ Description: "ข้อมูลสิ่งส่งตรวจ"
 * type.coding[snomed].system = $SCT (exactly)
 * type.coding[snomed].code 1..
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * receivedTime MS
 * receivedTime ^short = "วัน-เวลาที่ส่งผลไปตรวจ"
 * parent only Reference($SD_Specimen)

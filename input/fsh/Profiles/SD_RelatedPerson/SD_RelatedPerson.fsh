@@ -22,12 +22,12 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
 * identifier[cid].value ^example.label = "เลขประจำตัวประชาชน"
 * identifier[cid].value ^example.valueString = "1234567890123"
 * patient 1.. MS
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * relationship 1.. MS
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
 * name ^slicing.discriminator[0].type = #value
-* name ^slicing.discriminator[=].path = "extension.value[x]"
+* name ^slicing.discriminator[=].path = "extension('http://hl7.org/fhir/StructureDefinition/language').value"
 * name ^slicing.rules = #open
 * name contains
   thai 0..* MS and

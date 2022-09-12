@@ -1,38 +1,30 @@
-Profile: Moph43pPatient
+Profile: Moph43pPatientBase
 Parent: Patient
-Id: moph43p-patient
+Id: moph43p-patient-base
 Title: "MoPH43p Patient"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
-* ^url = $SD_Patient
+* ^url = $SD_Patient_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-  $EX_HL7_Nationality named nationality 0..* and
+  $SD_Patient_EX_Nationality named nationality 0..* and
   $EX_TH_PatientRace named race 0..* and
-  $EX_HL7_Religion named religion 0..1 and
-  $EX_HL7_Disability named disability 0..* and
+  $SD_Patient_EX_Religion named religion 0..1 and
+  $SD_Patient_EX_Disability named disability 0..* and
   $EX_TH_PatientEducationLevel named educationLevel 0..* and
   $EX_TH_PatientPersonStatus named personStatus 0..* and
   $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..* and
   $EX_TH_PatientForeignerType named foreignerType 0..*
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
+
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
 * extension[race] ^definition = "เชื้อชาติของผู้ป่วย"
 * extension[religion] ^short = "ความเชื่อทางศาสนาของผู้ป่วย"
 * extension[religion] ^definition = "ความเชื่อทางศาสนาของผู้ป่วย"
 * extension[disability] ^short = "ประเภทความพิการ"
 * extension[disability] ^definition = "ประเภทความพิการ"
-* extension[disability].valueCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
-* extension[disability].valueCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
-* extension[disability].valueCodeableConcept.coding ^slicing.rules = #open
-* extension[disability].valueCodeableConcept.coding contains
-    thcc 1..1 MS
-* extension[disability].valueCodeableConcept.coding[thcc] from $VS_THCC_DisabilityType (extensible)
-* extension[disability].valueCodeableConcept.coding[thcc].system 1..
-* extension[disability].valueCodeableConcept.coding[thcc].system = $CS_THCC_DisabilityType (exactly)
-* extension[disability].valueCodeableConcept.coding[thcc].code 1..
 * extension[educationLevel] ^short = "ระดับการศึกษาสูงสุดของผู้ป่วย"
 * extension[educationLevel] ^definition = "ระดับการศึกษาสูงสุดของผู้ป่วย"
 * extension[personStatus] ^short = "สถานะบุคคลของผู้ป่วย"
@@ -128,7 +120,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * extension contains $EX_TH_HumanNamePrefixCode named prefixCode 0..1
   * extension[prefixCode] ^short = "รหัสคำนำหน้าชื่อ"
 * name ^slicing.discriminator[0].type = #value
-* name ^slicing.discriminator[=].path = "extension.value[x]"
+* name ^slicing.discriminator[=].path = "extension('http://hl7.org/fhir/StructureDefinition/language').value"
 * name ^slicing.rules = #open
 * name contains
     thai 0..* MS and
@@ -191,14 +183,16 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * type ^short = "ที่อยู่ตามทะเบียนบ้านใช้รหัส \"postal\" ที่อยู่ติดต่อได้ ใช้รหัส \"physical\""
 * maritalStatus MS
 * maritalStatus ^short = "สถานะสมรส"
-* maritalStatus.coding ^slicing.discriminator[0].type = #pattern
+* maritalStatus.coding ^slicing.discriminator[0].type = #value
 * maritalStatus.coding ^slicing.discriminator[=].path = "system"
 * maritalStatus.coding ^slicing.rules = #open
 * maritalStatus.coding contains
     thcc 0..1 and
     hl7 0..1
 * maritalStatus.coding[thcc] from $VS_THCC_Marital (extensible)
+* maritalStatus.coding[thcc].system = $CS_THCC_Marital (exactly)
 * maritalStatus.coding[hl7] from $VS_HL7_MaritalStatus (extensible)
+* maritalStatus.coding[hl7].system = $CS_HL7_MaritalStatus (exactly)
 * generalPractitioner ^short = "แพทย์ประจำตัว"
 * managingOrganization ^short = "สถานพยาบาลปฐมภูมิของบุคคล"
 

@@ -24,7 +24,7 @@ Description: "ข้อมูลการตรวจสัญญาณชีพ
     code43Plus 0..1 MS
 * code.coding[code43Plus] from $VS_Meta_Vital_ObsList (extensible)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * value[x] MS
 * value[x] ^short = "ผลของการตรวจสัญญาณชีพ"

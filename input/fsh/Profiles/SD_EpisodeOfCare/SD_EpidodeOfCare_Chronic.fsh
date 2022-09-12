@@ -12,6 +12,6 @@ Description: "การรับบริการเป็นประจำ"
 * status = #finished (exactly)
 * status MS
 * diagnosis.condition only Reference($SD_Condition_Base)
-* patient only Reference($SD_Patient)
+* patient only Reference($SD_Patient_Base)
 * managingOrganization only Reference($SD_Organization_Provider)
 * period MS

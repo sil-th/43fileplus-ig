@@ -17,7 +17,7 @@ Description: "ค่า Barthel ADL Index"
     loinc 0..1 MS
 * code.coding[loinc] = $LNC#96761-2 (exactly)
 * subject 1.. MS
-* subject only Reference($SD_Patient)
+* subject only Reference($SD_Patient_Base)
 * effective[x] MS
 * effective[x] ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * value[x] MS

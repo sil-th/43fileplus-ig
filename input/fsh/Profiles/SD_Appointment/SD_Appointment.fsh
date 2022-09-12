@@ -54,7 +54,7 @@ Description: "ข้อมูลการนัดมารับบริกา
     patient 1..1 MS and
     practitioner 0..* MS and
     location 0..* MS
-* participant[patient].actor only Reference($SD_Patient)
+* participant[patient].actor only Reference($SD_Patient_Base)
 * participant[practitioner] ^short = "ผู้ให้บริการ ที่นัดไปพบ"
 * participant[practitioner].actor only Reference($SD_Practitioner)
 * participant[location] ^short = "ชื่อคลีนิค หรือห้องตรวจที่นัดรับบริการ"
