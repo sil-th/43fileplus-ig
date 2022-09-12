@@ -14,6 +14,7 @@ Usage: #example
   * valueDate = "2022-07-01"
 * identifier[0]
   * use = #official
+  * type = $CS_TH_IdentifierType#villageNo "รหัสหมู่บ้านของกรมการปกครอง"
   * system = $ID_DopaVillageNo
   * value = "XXXXXX"
 * status = #active

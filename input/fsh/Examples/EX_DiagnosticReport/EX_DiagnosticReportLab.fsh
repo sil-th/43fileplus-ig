@@ -4,6 +4,7 @@ Title: "ตัวอย่าง DiagnosticReport: ผลการตรวจ�
 Description: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 Usage: #example
 * identifier
+  * type = $CS_TH_IdentifierType#localLabTest "เลขการตรวจทางห้องปฏิบัติการ ของหน่วยบริการ"
   * system = $ID_LO_Lab
   * value = "XXXXXX"
 * status = #final

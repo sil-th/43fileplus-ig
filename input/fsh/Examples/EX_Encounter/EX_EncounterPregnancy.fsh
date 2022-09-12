@@ -8,7 +8,9 @@ Usage: #example
   * valueCodeableConcept = $CS_PCU_FpCaseType#1 "รายใหม่" 
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * status = #finished
@@ -39,7 +41,9 @@ Description: "แสดงการรับบริการ OPD Prenatal care
 Usage: #example
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * status = #finished
@@ -70,7 +74,9 @@ Description: "แสดงการรับบริการ OPD ANC"
 Usage: #example
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * status = #finished
@@ -101,7 +107,9 @@ Description: "แสดงการรับบริการทำคลอด
 Usage: #example
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * status = #finished
@@ -132,7 +140,9 @@ Description: "แสดงการรับบริการหลังคล
 Usage: #example
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * status = #finished

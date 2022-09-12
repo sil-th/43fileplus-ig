@@ -14,6 +14,7 @@ Description: "ผลการทดสอบการตั้งครรภ์
     $EX_TH_ObservationDeviceAmount named deviceAmount 0..*
   * identifier MS
   * identifier ^short = "รหัสเวชภัณฑ์ที่ใช้ทดสอบ"
+    * type = $CS_TH_IdentifierType#localDevice
     * system MS
     * value 1.. MS
 * value[x] only CodeableConcept

@@ -48,9 +48,11 @@ Usage: #example
     * url = "version"
     * valueString = "XXXX"
 * identifier[0]
+  * type = $CS_TH_IdentifierType#localInvNo "เลขที่อ้างอิงใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV
   * value = "I056400272662"
 * identifier[+]
+  * type = $CS_TH_IdentifierType#localInvLt "เลขที่อ้างอิงชุดข้อมูลใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV_LT
   * value = "I056400272662"
 * status = #active
@@ -106,9 +108,11 @@ Usage: #example
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]
+  * type = $CS_TH_IdentifierType#localInvNo "เลขที่อ้างอิงใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV
   * value = "I056400272662"
 * identifier[+]
+  * type = $CS_TH_IdentifierType#localInvLt "เลขที่อ้างอิงชุดข้อมูลใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV_LT
   * value = "I056400272662"
 * status = #active
@@ -194,9 +198,11 @@ Usage: #example
   * valueAnnotation
     * text = "รายละเอียดค่าบริการและการรักษาเพิ่มเติม (ถ้ามี)"
 * identifier[0]
+  * type = $CS_TH_IdentifierType#localInvNo "เลขที่อ้างอิงใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV
   * value = "I056400272662"
 * identifier[+]
+  * type = $CS_TH_IdentifierType#localInvLt "เลขที่อ้างอิงชุดข้อมูลใบแจ้งหนี้ของหน่วยบริการ"
   * system = $ID_LO_INV_LT
   * value = "I056400272662"
 * status = #active

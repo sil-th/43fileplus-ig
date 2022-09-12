@@ -11,11 +11,11 @@ Description: "ข้อมูลสิทธิ"
     $EX_TH_CoverageContractedProvider named contractedProvider 0..* MS
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains cid 0..1
 * identifier[cid] ^short = "เลขประจำตัวประชาชน"
-* identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
+* identifier[cid].type = $CS_TH_IdentifierType#cid
 * identifier[cid].system 1..
 * identifier[cid].system = $ID_ThaiCid (exactly)
 * identifier[cid].value 1..

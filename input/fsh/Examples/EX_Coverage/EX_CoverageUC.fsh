@@ -41,6 +41,7 @@ Usage: #example
     * valueReference = Reference(organization-fourth)
       * insert GeneralReference($ID_Hcode, "XXXXX", "สถานพยาบาลปฐมภูมิ")
 * identifier
+  * type = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period

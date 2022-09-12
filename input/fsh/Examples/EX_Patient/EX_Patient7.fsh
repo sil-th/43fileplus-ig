@@ -5,7 +5,9 @@ Description: "แสดงการบันทึกข้อมูลอย่
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period
@@ -13,14 +15,18 @@ Usage: #example
     * end = "2027-01-21"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    * coding[+] = $CS_TH_IdentifierType#localPid "รหัสประจำตัวบุคคลของหน่วยบริการ"
   * system = $ID_LO_PID
   * value = "65-XXXXX"
   * period
     * start = "2022-01-21"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#MR "Medical record number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#MR "Medical record number"
+    * coding[+] = $CS_TH_IdentifierType#localHn "เลข Hospital Number (HN) ของหน่วยบริการ"
   * system = $ID_LO_HN
   * value = "65-XXXXX"
 * active = true

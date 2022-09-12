@@ -8,11 +8,12 @@ Description: "ข้อมูลสถานพยาบาล"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * identifier MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains hcode 0..1
 * identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก"
+* identifier[hcode].type = $CS_TH_IdentifierType#hcode
 * identifier[hcode].system 1..
 * identifier[hcode].system = $ID_Hcode (exactly)
 * identifier[hcode].value 1..

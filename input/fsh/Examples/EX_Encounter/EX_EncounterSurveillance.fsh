@@ -5,12 +5,16 @@ Description: "แสดงการรับบริการของผู้
 Usage: #example
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localAn "เลข Admission Number (AN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished

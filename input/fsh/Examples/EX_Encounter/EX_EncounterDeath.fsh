@@ -15,7 +15,9 @@ Usage: #example
     * text = "ไม่ตั้งครรภ์"
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXXXX"
 * status = #finished

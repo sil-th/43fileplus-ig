@@ -5,12 +5,16 @@ Description: "ข้อมูลอสม. รายที่ 1"
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#PRN "Provider number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#PRN "Provider number"
+    * coding[+] = $CS_TH_IdentifierType#healthVolun "เลขประจำตัวอาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม.)"
   * system = $ID_ThaihealthVolunteer
   * value = "XXXXXX"
 * name[0]

@@ -34,6 +34,7 @@ Usage: #example
     * url = $EX_TH_ObservationDeviceAmount
     * valueQuantity = 1 '{#}' "Number"
   * identifier
+    * type = $CS_TH_IdentifierType#localDevice "เลขระบุเวชภัณฑ์ ของหน่วยบริการ"
     * system = $ID_LO_Device
     * value =  "XXXXX"
   * display = "รหัสเวชภัณฑ์ที่ใช้ทดสอบ"

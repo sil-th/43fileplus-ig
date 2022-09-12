@@ -5,6 +5,7 @@ Description: "แสดงการส่งต่อผู้ป่วยระ
 Usage: #example
 * identifier[0]
   * use = #official
+  * type = $CS_TH_IdentifierType#localReferNo "เลขที่การส่งต่อผู้ป่วย ของหน่วยบริการ"
   * system = $ID_LO_Refer
   * value = "XXXXXXX"
 * status = #active
@@ -52,14 +53,17 @@ Usage: #example
   * valueCodeableConcept.text = "สภาพผู้ป่วยก่อนส่งต่อ" 
 * identifier[0]
   * use = #official
+  * type = $CS_TH_IdentifierType#localReferNo "เลขที่การส่งต่อผู้ป่วย ของหน่วยบริการ"
   * system = $ID_LO_Refer
   * value = "XXXXXXX"
 * identifier[+]
   * use = #official
+  * type = $CS_TH_IdentifierType#localReferPro "เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด"
   * system = $ID_LO_ReferProvince
   * value = "XXXXXXX"
 * identifier[+]
   * use = #official
+  * type = $CS_TH_IdentifierType#localReferDoc "เลขเอกสารของสถานพยาบาลต้นทาง"
   * system = $ID_LO_ReferDocument
   * value = "XXXXXXX"
 * status = #active

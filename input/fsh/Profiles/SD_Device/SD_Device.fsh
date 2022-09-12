@@ -8,11 +8,12 @@ Description: "อุปกรณ์/เวชภัณฑ์"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * identifier MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains local 0..*
 * identifier[local] ^short = "หมายเลขอุปกรณ์ที่สถานพยาบาลกำหนด"
+* identifier[local].type = $CS_TH_IdentifierType#localDevice
 * identifier[local].system 1..
 * identifier[local].system obeys local-device-uri
 * identifier[local].system ^example.label = "local device namespace"

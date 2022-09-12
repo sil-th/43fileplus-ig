@@ -5,7 +5,9 @@ Description: "มารดาของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period
@@ -29,7 +31,9 @@ Description: "บิดาของผู้ป่วยรายที่ 1"
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period
@@ -53,7 +57,9 @@ Description: "คู่สมรสของผู้ป่วยรายที
 Usage: #example
 * identifier[0]
   * use = #official
-  * type = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period

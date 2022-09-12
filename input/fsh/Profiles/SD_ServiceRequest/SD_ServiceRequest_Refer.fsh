@@ -17,26 +17,29 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * extension[resultReason] ^short = "ใช้ในกรณีต้องการอธิบายเหตุผลที่ไม่สามารถรับผู้ป่วยไว้รักษาต่อได้"
 * extension[preCondition] ^short = "สถานะของผู้ป่วยก่อนหรือระหว่างการส่งต่อ"
 * identifier MS
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
+* identifier ^slicing.discriminator[0].type = #pattern
+* identifier ^slicing.discriminator[=].path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     localReferNo 0..1 MS and
     ProvincialReferNo 0..1 MS and
     localReferDocument 0..1 MS
 * identifier[localReferNo] ^short = "เลขที่การส่งต่อผู้ป่วย"
+* identifier[localReferNo].type = $CS_TH_IdentifierType#localReferNo
 * identifier[localReferNo].system 1..
 * identifier[localReferNo].system obeys LocalRefer-uri
 * identifier[localReferNo].system ^example.label = "ตัวอย่าง namespace เลขที่การส่งต่อผู้ป่วย"
 * identifier[localReferNo].system ^example.valueUri = $ID_LO_Refer
 * identifier[localReferNo].value 1..
 * identifier[ProvincialReferNo] ^short = "เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด"
+* identifier[ProvincialReferNo].type = $CS_TH_IdentifierType#localReferPro
 * identifier[ProvincialReferNo].system 1..
 * identifier[ProvincialReferNo].system obeys ProvincialRefer-uri
 * identifier[ProvincialReferNo].system ^example.label = "ตัวอย่าง namespace เลขที่การส่งต่อผู้ป่วยกลางของจังหวัด"
 * identifier[ProvincialReferNo].system ^example.valueUri = $ID_LO_ReferProvince
 * identifier[ProvincialReferNo].value 1..
 * identifier[localReferDocument] ^short = "เลขเอกสารของสถานพยาบาลต้นทาง"
+* identifier[localReferDocument].type = $CS_TH_IdentifierType#localReferDoc
 * identifier[localReferDocument].system 1..
 * identifier[localReferDocument].system obeys LocalReferDocument-uri
 * identifier[localReferDocument].system ^example.label = "ตัวอย่าง namespace เลขเอกสารของสถานพยาบาลต้นทาง"

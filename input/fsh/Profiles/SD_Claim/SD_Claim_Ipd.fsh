@@ -15,17 +15,19 @@ Description: "ค่าใช้จ่ายการรับบริการ
     $EX_TH_ClaimFeeNote named feeNote 0..1 MS and
     $EX_TH_ClaimIpdDRG named drg 0..1 MS
 * identifier MS
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[=].path = "system"
+* identifier ^slicing.discriminator[0].type = #pattern
+* identifier ^slicing.discriminator[=].path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     Inv 0..1 and
     InvLt 0..1
+* identifier[Inv].type = $CS_TH_IdentifierType#localInvNo
 * identifier[Inv].system 1..
 * identifier[Inv].system obeys Inv-uri
 * identifier[Inv].system ^example.label = "INV namespace"
 * identifier[Inv].system ^example.valueUri = $ID_LO_INV
 * identifier[Inv].value 1..
+* identifier[InvLt].type = $CS_TH_IdentifierType#localInvLt
 * identifier[InvLt].system 1..
 * identifier[InvLt].system obeys InvLt-uri
 * identifier[InvLt].system ^example.label = "INV namespace"

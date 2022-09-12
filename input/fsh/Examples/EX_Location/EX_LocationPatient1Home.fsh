@@ -30,6 +30,7 @@ Usage: #example
   * valueCodeableConcept = $CS_THCC_InMunicipality#1 "ในเขตเทศบาล"
 * identifier[0]
   * use = #official
+  * type = $CS_TH_IdentifierType#houseNo "รหัสบ้านของกรมการปกครอง"
   * system = $ID_DopaHouseNo
   * value = "XXXXXX"
   * period
@@ -37,6 +38,7 @@ Usage: #example
     * end = "2022-04-25"
 * identifier[+]
   * use = #official
+  * type = $CS_TH_IdentifierType#localHouse "รหัสประจำบ้าน ซึ่งออกโดยหน่วยบริการ"
   * system = $ID_LO_HID
   * value = "XXXXXX"
   * period

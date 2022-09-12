@@ -8,12 +8,16 @@ Usage: #example
 //   * valueCodeableConcept = $CS_eClaim_ServiceTypeTH#0 "Refer ในบัญชีเครือข่ายเดียวกัน"
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished
@@ -63,6 +67,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "ER"
     * display = "แผนกฉุกเฉิน"
@@ -72,6 +77,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "Sx-ward"
     * display = "แผนกศัลยกรรม"
@@ -81,6 +87,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "Md-ward"
     * display = "แผนกอายุรกรรม"
@@ -114,12 +121,16 @@ Usage: #example
     * valueDuration = 1 'd' "day"
 * identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#VN "Visit number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished
@@ -164,6 +175,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#first "รหัสแผนกที่รับผู้ป่วย"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "ER"
     * display = "แผนกฉุกเฉิน"
@@ -173,6 +185,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#admit "รหัสแผนกที่ส่งผู้ป่วยให้เป็นผู้ป่วยใน (admit clinic)"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "Sx-ward"
     * display = "แผนกศัลยกรรม"
@@ -182,6 +195,7 @@ Usage: #example
     * valueCodeableConcept = $CS_Meta_IpdJourney#discharge "รหัสแผนกที่จำหน่ายผู้ป่วย (discharge clinic)"
   * location
     * identifier
+      * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
       * system = $ID_LO_DepCode
       * value = "Md-ward"
     * display = "แผนกอายุรกรรม"

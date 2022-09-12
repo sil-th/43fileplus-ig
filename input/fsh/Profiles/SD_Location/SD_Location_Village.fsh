@@ -15,11 +15,12 @@ Description: "ข้อมูลหมู่บ้าน"
 * extension[mainHospital] ^short = "โรงพยาบาลหลัก"
 * extension[unlistDate] ^short = "วันที่ชุมชนนี้ แยกไปอยู่นอกเขตรับผิดชอบ กรณีแบ่งพื้นที่ใหม่"
 * identifier MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains village 0..1 MS
 * identifier[village] ^short = "รหัสหมู่บ้าน"
+* identifier[village].type = $CS_TH_IdentifierType#villageNo
 * identifier[village].system 1..
 * identifier[village].system = $ID_DopaVillageNo (exactly)
 * identifier[village].value 1..

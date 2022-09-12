@@ -9,21 +9,56 @@ Description: "ข้อมูลผู้ให้บริการของส
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     cid 0..1 MS and
-    professionalId 0..1 MS
+    doctorId 0..1 MS and
+    nurseId 0..1 MS and
+    pharmId 0..1 MS and
+    dentId 0..1 MS and
+    medtechId 0..1 MS and
+    physioId 0..1 MS and
+    vetId 0..1 MS and
+    volunId 0..1 MS
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
-* identifier[cid] ^comment = "เลขประจำตัวประชาชน"
-* identifier[cid] ^patternIdentifier.type = $CS_HL7_IdentifierType#NI
+  * type = $CS_TH_IdentifierType#cid
   * system 1..
   * system = $ID_ThaiCid (exactly)
   * value 1..
   * value obeys CID-length
   * value ^example.label = "เลขประจำตัวประชาชน"
   * value ^example.valueString = "1234567890123"
-* identifier[professionalId] ^short = "เลขที่บัตรประชาชน"
+* identifier[doctorId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
+  * type = $CS_TH_IdentifierType#proDoc
+  * system 1..
+  * value 1..
+* identifier[nurseId] ^short = "เลขใบอนุญาตประกอบวิชาชีพพยาบาล"
+  * type = $CS_TH_IdentifierType#proNurse
+  * system 1..
+  * value 1..
+* identifier[pharmId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเภสัชกร"
+  * type = $CS_TH_IdentifierType#proPharm
+  * system 1..
+  * value 1..
+* identifier[dentId] ^short = "เลขใบอนุญาตประกอบวิชาชีพทันตกรรม"
+  * type = $CS_TH_IdentifierType#proDent
+  * system 1..
+  * value 1..
+* identifier[medtechId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเทคนิคการแพทย์"
+  * type = $CS_TH_IdentifierType#proMedtech
+  * system 1..
+  * value 1..
+* identifier[physioId] ^short = "เลขใบอนุญาตประกอบวิชาชีพกายภาพบำบัด"
+  * type = $CS_TH_IdentifierType#proPhysio
+  * system 1..
+  * value 1..
+* identifier[vetId] ^short = "เลขใบอนุญาตประกอบวิชาชีพการสัตวแพทย์"
+  * type = $CS_TH_IdentifierType#proVet
+  * system 1..
+  * value 1..
+* identifier[volunId] ^short = "เลขประจำตัวอาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม.)"
+  * type = $CS_TH_IdentifierType#healthVolun
   * system 1..
   * value 1..
 * name MS

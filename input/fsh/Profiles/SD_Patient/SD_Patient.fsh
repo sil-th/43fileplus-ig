@@ -43,7 +43,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
-* identifier ^slicing.discriminator[=].path = "$this"
+* identifier ^slicing.discriminator[=].path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     pid 0..1 MS and
@@ -55,7 +55,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * identifier[pid] ^short = "เลขทะเบียนบุคคล"
 * identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
 * identifier[pid]
-  * type = $CS_HL7_IdentifierType#PN
+  * type = $CS_TH_IdentifierType#localPid
   * system 1..
   * system obeys PID-uri
   * system ^example.label = "PID namespace"
@@ -70,7 +70,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
 * identifier[cid]
-  * type = $CS_HL7_IdentifierType#NI
+  * type = $CS_TH_IdentifierType#cid
   * system 1..
   * system = $ID_ThaiCid (exactly)
   * value 1..
@@ -79,6 +79,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * value ^example.valueString = "1234567890123"
 * identifier[disabilityID] ^short = "เลขประจำตัวคนพิการ"
 * identifier[disabilityID] ^comment = "เลขประจำตัวคนพิการ"
+  * type = $CS_TH_IdentifierType#disability
   * system 1..
   * system = $ID_ThaiDisability (exactly)
   * value 1..
@@ -90,7 +91,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
     * end ^short = "วันหมดอายุบัตรผู้พิการ"
 * identifier[hn] ^short = "เลขประจำตัวผู้ป่วย (HN)"
 * identifier[hn]
-  * type = $CS_HL7_IdentifierType#MR
+  * type = $CS_TH_IdentifierType#localHn
   * system 1..
   * system obeys HN-uri
   * system ^example.label = "HN namespace"

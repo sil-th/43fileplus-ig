@@ -33,6 +33,7 @@ Alias: $ID_LO_Refer = https://terms.sil-th.org/hcode/5/XXXXX/Refer
 Alias: $ID_LO_Procedure = https://terms.sil-th.org/hcode/5/XXXXX/Procedure
 Alias: $ID_LO_Lab = https://terms.sil-th.org/hcode/5/XXXXX/Lab
 Alias: $ID_LO_LabItem = https://terms.sil-th.org/hcode/5/XXXXX/LabItem
+Alias: $ID_LO_Rad = https://terms.sil-th.org/hcode/5/XXXXX/Rad
 Alias: $ID_LO_DepCode = https://terms.sil-th.org/hcode/5/XXXXX/DepCode
 Alias: $ID_LO_Device = https://terms.sil-th.org/hcode/5/XXXXX/Device
 Alias: $ID_LO_ReferProvince = https://terms.sil-th.org/provinceID/Refer

@@ -11,6 +11,7 @@ Usage: #example
     * coding[+] = $CS_eClaim_ReferTypeEclaim#E "ฉุกเฉิน"
 * identifier[0]
   * use = #secondary
+  * type = $CS_TH_IdentifierType#localReferNo "เลขที่การส่งต่อผู้ป่วย ของหน่วยบริการ"
   * system = $ID_LO_Refer
   * value = "XXXXXXXX"
 * status = #active

@@ -44,12 +44,16 @@ Usage: #example
     * end = "2022-04-25"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    * coding[+] = $CS_TH_IdentifierType#localPid "รหัสประจำตัวบุคคลของหน่วยบริการ"
   * system = $ID_LO_PID
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#MR "Medical record number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#MR "Medical record number"
+    * coding[+] = $CS_TH_IdentifierType#localHn "เลข Hospital Number (HN) ของหน่วยบริการ"
   * system = $ID_LO_HN
   * value = "65-XXXXX"
 * active = true

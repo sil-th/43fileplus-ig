@@ -4,6 +4,7 @@ Title: "ตัวอย่าง Location: OPD GP Clinic 1"
 Description: "ข้อมูลคลินิก OPD - GP 1"
 Usage: #example
 * identifier[0]
+  * type = $CS_TH_IdentifierType#localDep "รหัสประจำแผนก ของหน่วยบริการ"
   * system = $ID_LO_DepCode
   * value = "OPDGP1"
 * status = #active

@@ -17,14 +17,14 @@ Description: "การรับบริการ"
     $EX_TH_EncounterLeaveDay named encounterLeaveDay 0..1
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
-* identifier ^slicing.discriminator[=].path = "$this"
+* identifier ^slicing.discriminator[=].path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     vn 0..1 MS and
     an 0..1
 * identifier[vn] ^short = "เลขที่การรับบริการ (VN)"
 * identifier[vn]
-  * type = $CS_HL7_IdentifierType#VN
+  * type = $CS_TH_IdentifierType#localVn
   * system 1..
   * system obeys VN-uri
   * system ^example.label = "VN namespace"
@@ -32,7 +32,7 @@ Description: "การรับบริการ"
   * value 1..
 * identifier[an] ^short = "เลขที่ผู้่ปวยใน (AN)"
 * identifier[an]
-  * type = $CS_HL7_IdentifierType#VN
+  * type = $CS_TH_IdentifierType#localAn
   * system 1..
   * system obeys AN-uri
   * system ^example.label = "AN namespace"

@@ -8,12 +8,13 @@ Description: "ข้อมูลคลินิก/หน่วยงาน ใ�
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * identifier MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     dep 0..1 MS
 * identifier[dep] ^short = "รหัสหน่วยงานในสถานพยาบาล"
+* identifier[dep].type = $CS_TH_IdentifierType#localDep
 * identifier[dep].system 1..
 * identifier[dep].system obeys DEP-uri
 * identifier[dep].system ^example.label = "Department namespace"

@@ -11,12 +11,12 @@ Description: "ข้อมูลการปฏิบัติงานผู้
   $EX_TH_PractitionerRoleProviderMovement named move 0..*
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains proId 0..1 MS
 * identifier[proId] ^short = "เลขที่ผู้ให้บริการ"
 * identifier[proId] ^comment = "เลขที่ผู้ให้บริการ ออกโดยโปรแกรม ไม่ซ้ำกันในสถานพยาบาลเดียวกัน"
-  * type = $CS_HL7_IdentifierType#PN
+  * type = $CS_TH_IdentifierType#localProv
   * system 1..
   * system obeys ProID-uri
   * system ^example.label = "Provider ID namespace"
