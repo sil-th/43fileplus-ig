@@ -11,9 +11,6 @@ Description: "ข้อมูลทั่วไปของประชาชน
   $EX_TH_PatientForeignerType named foreignerType 0..*
 * extension[foreignerType] ^short = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
 * extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
-* identifier ^slicing.discriminator[0].type = #pattern
-* identifier ^slicing.discriminator[=].path = "type"
-* identifier ^slicing.rules = #open
 * identifier contains
     workPermit 0..* 
 * identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน"

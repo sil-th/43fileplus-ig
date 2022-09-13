@@ -16,10 +16,11 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * code[x] MS
 * parameter MS
 * parameter ^slicing.discriminator.type = #pattern
-* parameter ^slicing.discriminator.path = "$this"
+* parameter ^slicing.discriminator.path = "code"
 * parameter ^slicing.rules = #open
 * parameter contains
     quanity 0..1 MS
+* parameter[quanity].code = $SCT#246205007
 * parameter[quanity].value[x] only Quantity
 * parameter[quanity].value[x] MS
 * subject only Reference($SD_Patient_Base)

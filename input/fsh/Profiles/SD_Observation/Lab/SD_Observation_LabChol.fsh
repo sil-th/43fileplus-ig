@@ -7,9 +7,9 @@ Description: "ผลการตรวจ Total Cholesterol"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc] = $LNC#2093-3 (exactly)
-* code.coding[tmlt] = $CS_TMLT#320070 (exactly)
-* code.coding[2digit] = $CS_THCC_2DigitLab#07 (exactly)
+* code.coding[loinc] = $LNC#2093-3
+* code.coding[tmlt] = $CS_TMLT#320070
+* code.coding[2digit] = $CS_THCC_2DigitLab#07
 * value[x] only Quantity
 * valueQuantity.value 1..
 * valueQuantity.unit 0..

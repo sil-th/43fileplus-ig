@@ -7,8 +7,8 @@ Description: "ผลการตรวจ Hepatitis B"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc] = $LNC#16935-9 (exactly)
-* code.coding[tmlt] = $CS_TMLT#350494 (exactly)
+* code.coding[loinc] = $LNC#16935-9
+* code.coding[tmlt] = $CS_TMLT#350494
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"

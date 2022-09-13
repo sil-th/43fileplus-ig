@@ -38,8 +38,8 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * code MS
 * code ^short = "ระบุชนิดยาที่แพ้ หรือสิ่งที่แพ้"
 * code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     24drug 0..1 MS and
@@ -47,18 +47,18 @@ Description: "ข้อมูลประวัติการแพ้ของ
     local 0..1 MS and
     noAllergies 0..1 MS
 * code.coding[24drug] ^short = "รหัสยามาตรฐาน 24 หลัก"
+* code.coding[24drug] from $VS_24Drug (required)
 * code.coding[24drug].system 1..
 * code.coding[24drug].system = $CS_24Drug (exactly)
 * code.coding[24drug].code 1..
 * code.coding[tmt] ^short = "รหัสยามาตรฐาน TMT"
+* code.coding[tmt] from $VS_TMT (required)
 * code.coding[tmt].system 1..
 * code.coding[tmt].system = $CS_TMT (exactly)
 * code.coding[tmt].code 1..
 * code.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * code.coding[local].system 0..
-* code.coding[local].system obeys Local-drug-uri
-* code.coding[local].system ^example.label = "Local Drug Code namespace"
-* code.coding[local].system ^example.valueUri = $ID_LO_Drug
+* code.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * code.coding[local].code 1..
 * code.coding[noAllergies] ^short = "ใช้ในกรณีไม่มีสิ่งที่แพ้ หรือไม่ทราบประวัติแพ้"
 * code.coding[noAllergies] from $VS_IPS_AbsentUnknownAllergies (required)

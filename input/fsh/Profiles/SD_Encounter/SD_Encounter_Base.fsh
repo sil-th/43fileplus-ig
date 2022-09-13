@@ -38,8 +38,8 @@ Description: "การรับบริการโดยทั่วไป"
 * status MS
 * class MS
 * priority MS
-* priority.coding ^slicing.discriminator[0].type = #pattern
-* priority.coding ^slicing.discriminator[=].path = "$this"
+* priority.coding ^slicing.discriminator[0].type = #value
+* priority.coding ^slicing.discriminator[=].path = "system"
 * priority.coding ^slicing.rules = #open
 * priority.coding contains
     hl7 0..1 and
@@ -58,7 +58,7 @@ Description: "การรับบริการโดยทั่วไป"
 * priority.coding[thccAccident].system = $CS_THCC_AccidentPriority (exactly)
 * priority.coding[thccAccident].code 1..
 * subject MS
-* subject only Reference($SD_Patient_Base)
+* subject only Reference($SD_Patient_Base or Group)
 * basedOn MS
 * basedOn only Reference($SD_ServiceRequest_Refer)
 * participant MS
@@ -100,9 +100,14 @@ Description: "การรับบริการโดยทั่วไป"
   * use.coding ^slicing.rules = #open
   * use.coding contains
       hl7plus 0..1 MS and
-      43plus 0..1 MS
-  * use.coding[hl7plus] from $VS_Meta_ExtendedHL7DiagnosisRole (extensible)
+      43plus 0..1 MS and
+      addition 0..1
+  * use.coding[hl7plus] from $VS_HL7_DiagRole (extensible)
+  * use.coding[hl7plus].system = $CS_HL7_DiagRole
   * use.coding[43plus] from $VS_43Plus_EncounterDiagnosisRole (extensible)
+  * use.coding[43plus].system = $CS_43Plus_EncounterDiagnosisRole
+  * use.coding[addition] from $VS_Meta_ExtendedHL7DiagnosisRole (extensible)
+  * use.coding[addition].system = $CS_Meta_ExtendedHL7DiagnosisRole
 * account only Reference($SD_Account_Base)
 * hospitalization MS
 * hospitalization.extension contains

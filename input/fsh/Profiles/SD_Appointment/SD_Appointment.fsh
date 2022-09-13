@@ -23,11 +23,11 @@ Description: "ข้อมูลการนัดมารับบริกา
 * reasonCode.coding contains
     icd10 0..1 MS and
     snomed 0..1 MS
-* reasonCode.coding[icd10] from $ICD10 (extensible)
+* reasonCode.coding[icd10] from $VS_ICD10 (extensible)
 * reasonCode.coding[icd10].system 1..
 * reasonCode.coding[icd10].system = $ICD10 (exactly)
 * reasonCode.coding[icd10].code 1..
-* reasonCode.coding[snomed] from $SCT (extensible)
+* reasonCode.coding[snomed] from $VS_SNOMED_All (extensible)
 * reasonCode.coding[snomed].system 1..
 * reasonCode.coding[snomed].system = $SCT (exactly)
 * reasonCode.coding[snomed].code 1..
@@ -47,15 +47,20 @@ Description: "ข้อมูลการนัดมารับบริกา
 * comment ^short = "Note เพิ่มการเกี่ยวกับการนัด"
 * comment ^definition = "รายละเอียดอื่น ๆ เพิ่มเติมเกี่ยวกับการนัด"
 * participant MS
-* participant ^slicing.discriminator.type = #type
-* participant ^slicing.discriminator.path = "$this"
+* participant.actor.type 1..1 MS
+// Slice by value because not all slice can reference
+* participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.path = "actor.type"
 * participant ^slicing.rules = #open
 * participant contains
     patient 1..1 MS and
     practitioner 0..* MS and
     location 0..* MS
 * participant[patient].actor only Reference($SD_Patient_Base)
+* participant[patient].actor.type = "Patient" (exactly)
 * participant[practitioner] ^short = "ผู้ให้บริการ ที่นัดไปพบ"
 * participant[practitioner].actor only Reference($SD_Practitioner_Base)
+* participant[practitioner].actor.type = "Practitioner" (exactly)
 * participant[location] ^short = "ชื่อคลีนิค หรือห้องตรวจที่นัดรับบริการ"
 * participant[location].actor only Reference($SD_Location_Department)
+* participant[location].actor.type = "Location" (exactly)

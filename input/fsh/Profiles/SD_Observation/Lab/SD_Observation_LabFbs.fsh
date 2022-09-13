@@ -7,8 +7,8 @@ Description: "การตรวจระดับน้ำตาลในเล
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc] = $LNC#1558-6 (exactly)
-* code.coding[tmlt] = $CS_TMLT#320291 (exactly)
+* code.coding[loinc] = $LNC#1558-6
+* code.coding[tmlt] = $CS_TMLT#320291
 * value[x] only Quantity
 * valueQuantity.value 1..
 * valueQuantity.unit 0..

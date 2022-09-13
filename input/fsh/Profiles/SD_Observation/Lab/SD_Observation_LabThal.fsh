@@ -7,7 +7,7 @@ Description: "ผลการตรวจคัดกรอง Thalassaemia"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[snomed] = $SCT#252290000 (exactly)
+* code.coding[snomed] = $SCT#252290000
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding from $VS_Meta_ScreeningResult (extensible)
 * valueCodeableConcept.coding.system = $CS_Meta_ScreeningResult (exactly)

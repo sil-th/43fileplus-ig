@@ -7,7 +7,7 @@ Description: "ผลการตรวจหมู่เลือด ABO"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[loinc] = $LNC#883-9 (exactly)
+* code.coding[loinc] = $LNC#883-9
 * value[x] only CodeableConcept
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value

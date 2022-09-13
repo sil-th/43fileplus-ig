@@ -15,14 +15,18 @@ Usage: #example
 * patientInstruction = "คำแนะนำการปฏิบัติตนของผู้ป่วย"
 * participant[0]
   * actor = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+    * type = "Patient"
   * status = #accepted
 * participant[+]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
   * actor = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+    * type = "Practitioner"
   * status = #accepted
 * participant[+]
-  * actor.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
+  * actor
+    * type = "Location"
+    * display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
   * status = #accepted
 
 
@@ -44,12 +48,16 @@ Usage: #example
 * patientInstruction = "คำแนะนำการปฏิบัติตนของผู้ป่วย"
 * participant[0]
   * actor = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
+    * type = "Patient"
   * status = #accepted
 * participant[+]
   * type
     * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
   * actor = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
+    * type = "Practitioner"
   * status = #accepted
 * participant[+]
-  * actor.display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
+  * actor
+    * type = "Location"
+    * display = "OPD เด็ก Clinic 1 โรงพยาบาลตัวอย่าง"
   * status = #accepted

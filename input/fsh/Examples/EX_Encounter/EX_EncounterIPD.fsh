@@ -116,7 +116,7 @@ Usage: #example
   * use = #secondary
   * type
     * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
-    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Admission Number (AN) ของหน่วยบริการ"
+    * coding[+] = $CS_TH_IdentifierType#localAn "เลข Admission Number (AN) ของหน่วยบริการ"
   * system = $ID_LO_AN
   * value = "65-XXXXX"
 * status = #finished

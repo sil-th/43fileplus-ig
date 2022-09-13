@@ -17,16 +17,14 @@ Description: "การรายงานผลการตรวจ"
 * code.coding contains
     loinc 0..1 and
     tmlt 0..1 MS
-* code.coding[loinc] ^sliceName = "loinc"
+* code.coding[loinc] from $VS_LNC
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
-* code.coding[loinc].code = #57698-3 (exactly)
-* code.coding[tmlt] ^sliceName = "tmlt"
+* code.coding[tmlt] from $VS_TMLT
 * code.coding[tmlt].system 1..
 * code.coding[tmlt].system = $CS_TMLT (exactly)
 * code.coding[tmlt].code 1..
-* code.coding[tmlt].code = #320259 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base)
 * effective[x] MS

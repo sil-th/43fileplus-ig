@@ -22,7 +22,7 @@ Usage: #example
   * rank = 1
 * diagnosis[+]
   * condition = Reference(Condition/condition-cause-of-death1)
-  * use = $CS_Meta_ExtendedHL7DiagnosisRole#CM "Comorbidity diagnosis"
+  * use = $CS_HL7_DiagRole#CM "Comorbidity diagnosis"
   * rank = 2
-* serviceProvider = Reference(Organizaion/organization-main)
+* serviceProvider = Reference(Organization/organization-main)
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")

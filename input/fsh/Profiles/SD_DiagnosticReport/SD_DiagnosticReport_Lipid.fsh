@@ -7,24 +7,10 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* status MS
-* category MS
-* code MS
-* code.coding 1..
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding[loinc] = $LNC#57698-3 (exactly)
-* code.coding[tmlt] = $CS_TMLT#320259 (exactly)
-* subject 1.. MS
-* subject only Reference($SD_Patient_Base)
-* issued MS
-* performer only Reference($SD_Organization_Provider)
-* performer MS
-* specimen 1.. MS
-* specimen only Reference($SD_Specimen_Base)
-* result ^slicing.discriminator.type = #value
-* result ^slicing.discriminator.path = "resolve().code"
+* code.coding[loinc] = $LNC#57698-3
+* code.coding[tmlt] = $CS_TMLT#320259
+* result ^slicing.discriminator.type = #profile
+* result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 * result contains
     Cholesterol 1..1 and

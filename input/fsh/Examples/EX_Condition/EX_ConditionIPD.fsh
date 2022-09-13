@@ -1,5 +1,5 @@
 Instance: condition-ipd2-main
-InstanceOf: $SD_Condition_Base
+InstanceOf: $SD_Condition_Cancer
 Title: "ตัวอย่าง Condition: การวินิจฉัยโรคมะเร็ง ในบริการ IPD"
 Description: "การวินิจฉัยโรคมะเร็ง ในบริการ IPD"
 Usage: #example
@@ -12,7 +12,10 @@ Usage: #example
 * code
   * coding[0] = $SCT#254837009 "Breast cancer"
   * coding[+] = $ICD10#C50.9 "Malignant neoplasm: Breast, unspecified"
-  * coding[+] = $ICDO3#8070/3 "Squamous cell carcinoma, NOS"
+  * coding[+]
+    * system = $ICDO3
+    * code = #8070/3
+    * display = "Squamous cell carcinoma, NOS"
   * coding[+] = $CS_eClaim_CancerType#Br "Breast"
   * text = "Breast cancer"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"

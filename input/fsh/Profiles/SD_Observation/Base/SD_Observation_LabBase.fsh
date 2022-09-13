@@ -10,10 +10,10 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * status MS
 * category MS
 * category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.discriminator[=].path = "coding"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7] = $CS_HL7_ObservationCat#laboratory (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#laboratory
 * code MS
 * code ^short = "รหัสการตรวจทางห้องปฏิบัติการ"
 * code.coding ^slicing.discriminator[0].type = #value

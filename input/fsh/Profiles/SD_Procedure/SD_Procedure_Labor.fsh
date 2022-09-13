@@ -7,15 +7,12 @@ Description: "วิธีการคลอด"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
-* code.coding ^slicing.rules = #open
 * code.coding contains
-    thcc 0..1 MS
-* code.coding[thcc] from $VS_THCC_LaborProcedure (extensible)
-* code.coding[thcc] ^short = "รหัสมาตรฐาน THCC"
-* code.coding[thcc].system 1..
-* code.coding[thcc].code 1..
+    thccLabor 0..1 MS
+* code.coding[thccLabor] from $VS_THCC_LaborProcedure (extensible)
+* code.coding[thccLabor] ^short = "รหัสมาตรฐาน THCC"
+* code.coding[thccLabor].system 1..
+* code.coding[thccLabor].code 1..
 * performer MS
 * performer.function MS
 * performer.function from $VS_THCC_LaborPerformerRole (extensible)

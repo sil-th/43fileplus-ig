@@ -7,12 +7,7 @@ Description: "หัตถการที่ได้ทำระหว่าง
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* status MS
-* code MS
 * code ^short = "รหัสการให้บริการ"
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
-* code.coding ^slicing.rules = #open
 * code.coding contains
     referProcedure 0..1 MS
 * code.coding[referProcedure] ^short = "หัตถการที่ได้ทำระหว่างการส่งต่อ"
