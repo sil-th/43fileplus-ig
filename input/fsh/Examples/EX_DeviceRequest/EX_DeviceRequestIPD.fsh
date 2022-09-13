@@ -1,7 +1,7 @@
 // Remark this resource is trial-use with maturity 1
 
 Instance: devicerequest-ipd-device1
-InstanceOf: DeviceRequest
+InstanceOf: $SD_DeviceRequest_Base
 Title: "ตัวอย่าง DeviceRequest: สั่งจ่ายอุปกรณ์กลับบ้าน"
 Description: "แสดงการสั่งจ่ายอุปกรณ์กลับบ้าน"
 Usage: #example

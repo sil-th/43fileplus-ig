@@ -2,7 +2,7 @@
 // They use Observation for cause of death report, but we switch to Condition
 
 Instance: condition-cause-of-death1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: สาเหตุการเสียชีวิตของผู้ป่วยรายที่ 3"
 Description: "แสดงการเสียชีวิตจาก cardiac arrest"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
 
 
 Instance: condition-cause-of-death2
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: รหัสโรคหรือภาวะอื่นที่เป็นเหตุหนุน"
 Description: "แสดงการมีภาวะความดันโลหิตสูงวิกฤติหนุ่น"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: claim-accident-encounter1
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
 Description: "แสดงค่าใช้จ่ายการรับบริการแผนกฉุกเฉิน"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: condition-chronic1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: โรคเบาหวานของผู้ป่วยรายที่ 4"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 4"
 Usage: #example
@@ -14,7 +14,7 @@ Usage: #example
 
 
 Instance: condition-chronic2
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: โรคเบาหวานของผู้ป่วยรายที่ 1"
 Description: "แสดงการประวัติการเป็นโรคเบาหวานของผู้ป่วยรายที่ 1"
 Usage: #example

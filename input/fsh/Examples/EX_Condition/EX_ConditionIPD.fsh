@@ -1,5 +1,5 @@
 Instance: condition-ipd2-main
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยโรคมะเร็ง ในบริการ IPD"
 Description: "การวินิจฉัยโรคมะเร็ง ในบริการ IPD"
 Usage: #example

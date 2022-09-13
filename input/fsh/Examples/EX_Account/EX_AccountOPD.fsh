@@ -1,6 +1,6 @@
 // Account
 Instance: account-opd-encounter1
-InstanceOf: Account
+InstanceOf: $SD_Account_Base
 Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการ OPD"
 Usage: #example

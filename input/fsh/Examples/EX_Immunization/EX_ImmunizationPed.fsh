@@ -1,5 +1,5 @@
 Instance: immunization-baby1
-InstanceOf: Immunization
+InstanceOf: $SD_Immunization_Base
 Title: "ตัวอย่าง Immunization: การมารับบริการฉีดวัคซีน"
 Description: "การมารับบริการฉีดวัคซีน"
 Usage: #example

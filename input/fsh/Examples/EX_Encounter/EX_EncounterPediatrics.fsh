@@ -1,6 +1,6 @@
 
 Instance: encounter-newborn1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การดูแลทารกหลังคลอด"
 Description: "แสดงการดูแลทารกหลังคลอด"
 Usage: #example
@@ -16,8 +16,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-02-21T15:00:02+07:00"
@@ -34,7 +34,7 @@ Usage: #example
 
 
 Instance: encounter-vaccine1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การมารับบริการฉีดวัคซีน"
 Description: "การมารับบริการฉีดวัคซีน"
 Usage: #example
@@ -50,8 +50,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-03-21T15:00:02+07:00"
@@ -68,7 +68,7 @@ Usage: #example
 
 
 Instance: encounter-nutrition1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การมารับบริการตรวจวัดระดับโภชนาการและพัฒนาการ"
 Description: "การมารับบริการตรวจวัดระดับโภชนาการและพัฒนาการ"
 Usage: #example
@@ -84,8 +84,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-04-21T15:00:02+07:00"

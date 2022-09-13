@@ -1,5 +1,5 @@
 Instance: condition-ncd1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Usage: #example
@@ -16,7 +16,7 @@ Usage: #example
 
 
 Instance: condition-ncd-summary
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Description: "การวินิจฉัยสำหรับการบริการคัดกรองโรค NCD"
 Usage: #example

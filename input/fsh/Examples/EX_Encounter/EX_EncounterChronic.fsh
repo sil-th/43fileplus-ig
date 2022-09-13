@@ -1,5 +1,5 @@
 Instance: encounter-chronic1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการครั้งที่ 1 ของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 1"
 Usage: #example
@@ -13,7 +13,7 @@ Usage: #example
   * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตัวอย่าง")
 
 Instance: encounter-chronic2
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการครั้งที่ 2 ของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานครั้งที่ 2"
 Usage: #example

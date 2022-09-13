@@ -1,5 +1,5 @@
 Instance: coverage-uc
-InstanceOf: Coverage
+InstanceOf: $SD_Coverage_Base
 Title: "ตัวอย่าง Coverage: หลักประกันสุขภาพถ้วนหน้า"
 Description: "แสดงการบันทึกสิทธิหลักประกันสุขภาพถ้วนหน้า"
 Usage: #example

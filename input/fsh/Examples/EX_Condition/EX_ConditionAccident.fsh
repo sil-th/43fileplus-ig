@@ -1,5 +1,5 @@
 Instance: condition-accident1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Accident
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example

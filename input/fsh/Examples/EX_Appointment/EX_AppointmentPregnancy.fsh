@@ -1,5 +1,5 @@
 Instance: appointment-fp
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD Family Planning"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD Family Planning"
 Usage: #example
@@ -27,7 +27,7 @@ Usage: #example
 
 
 Instance: appointment-anc
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD ANC"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD ANC"
 Usage: #example
@@ -55,7 +55,7 @@ Usage: #example
 
 
 Instance: appointment-labor
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
 Usage: #example
@@ -83,7 +83,7 @@ Usage: #example
 
 
 Instance: appointment-postnatal
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
 Usage: #example

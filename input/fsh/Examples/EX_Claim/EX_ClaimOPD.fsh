@@ -1,5 +1,5 @@
 Instance: claim-opd-encounter1
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ OPD"
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD"
 Usage: #example
@@ -60,7 +60,7 @@ Usage: #example
 
 
 Instance: claim-opd-encounter2
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ OPD บริการปฐมภูมิ"
 Description: "แสดงค่าใช้จ่ายการรับบริการ OPD บริการปฐมภูมิ"
 Usage: #example

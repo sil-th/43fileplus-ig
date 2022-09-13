@@ -1,5 +1,5 @@
 Instance: appointment-newborn1
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังคลอด"
 Description: "แสดงการนัดติดตามผลหลังคลอด"
 Usage: #example
@@ -28,7 +28,7 @@ Usage: #example
 
 
 Instance: appointment-nutrition1
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดตรวจวัดระดับโภชนาการและพัฒนาการ"
 Description: "แสดงการนัดตรวจวัดระดับโภชนาการและพัฒนาการ"
 Usage: #example

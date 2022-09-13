@@ -1,5 +1,5 @@
 Instance: encounter-rehab1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Rehab
 Title: "ตัวอย่าง Encounter: การรับบริการฟื้นฟูสมรรถภาพ"
 Description: "การรับบริการฟื้นฟูสมรรถภาพ"
 Usage: #example
@@ -14,8 +14,8 @@ Usage: #example
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * serviceType = $CS_THCC_RehabServiceType#9005602 "Microwave diathermy"
 * priority
-  * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
+  * coding[hl7] = $CS_HL7_Priority#R "routine"
+  * coding[43plus] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * period

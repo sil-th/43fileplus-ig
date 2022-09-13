@@ -1,5 +1,5 @@
 Instance: condition-refer1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example
@@ -15,7 +15,7 @@ Usage: #example
 
 
 Instance: condition-refer2
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยสุดท้าย สำหรับการรับบริการแผนกฉุกเฉิน"
 Description: "การวินิจฉัยสุดท้าย สำหรับการรับบริการแผนกฉุกเฉิน"
 Usage: #example
@@ -31,7 +31,7 @@ Usage: #example
 
 
 Instance: condition-refer3
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ ณ โรงพยาบาลตติยภูมิที่รับการส่งต่อ"
 Description: "การวินิจฉัยแรกรับ ณ โรงพยาบาลตติยภูมิที่รับการส่งต่อ"
 Usage: #example

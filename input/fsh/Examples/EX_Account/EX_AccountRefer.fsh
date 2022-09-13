@@ -1,6 +1,6 @@
 // Account
 Instance: account-refer-encounter1
-InstanceOf: Account
+InstanceOf: $SD_Account_Base
 Title: "ตัวอย่าง Account: ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน และส่งต่อ"
 Description: "ข้อมูลทางการเงินของผู้ป่วยมารับบริการแผนกฉุกเฉิน และส่งต่อ"
 Usage: #example

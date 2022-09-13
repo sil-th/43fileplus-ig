@@ -43,15 +43,20 @@ Description: "การรับบริการโดยทั่วไป"
 * priority.coding ^slicing.rules = #open
 * priority.coding contains
     hl7 0..1 and
-    thcc 1..1 MS
+    43plus 0..1 MS and
+    thccAccident 0..1 MS
 * priority.coding[hl7] from $VS_HL7_Priority (extensible)
 * priority.coding[hl7].system 1..
 * priority.coding[hl7].system = $CS_HL7_Priority (exactly)
 * priority.coding[hl7].code 1..
-* priority.coding[thcc] from $VS_43Plus_ServicePriority (extensible)
-* priority.coding[thcc].system 1..
-* priority.coding[thcc].system = $CS_43Plus_ServicePriority (exactly)
-* priority.coding[thcc].code 1..
+* priority.coding[43plus] from $VS_43Plus_ServicePriority (extensible)
+* priority.coding[43plus].system 1..
+* priority.coding[43plus].system = $CS_43Plus_ServicePriority (exactly)
+* priority.coding[43plus].code 1..
+* priority.coding[thccAccident] from $VS_THCC_AccidentPriority (extensible)
+* priority.coding[thccAccident].system 1..
+* priority.coding[thccAccident].system = $CS_THCC_AccidentPriority (exactly)
+* priority.coding[thccAccident].code 1..
 * subject MS
 * subject only Reference($SD_Patient_Base)
 * basedOn MS
@@ -62,15 +67,15 @@ Description: "การรับบริการโดยทั่วไป"
 * participant.type.coding ^slicing.rules = #open
 * participant.type.coding contains
     hl7 0..1 and
-    thcc 1..1 MS
+    43plus 0..1 MS
 * participant.type.coding[hl7] from $VS_HL7_ParticipantType (extensible)
 * participant.type.coding[hl7].system 1..
 * participant.type.coding[hl7].system = $CS_HL7_ParticipantType (exactly)
 * participant.type.coding[hl7].code 1..
-* participant.type.coding[thcc] from $VS_Meta_ParticipantType (extensible)
-* participant.type.coding[thcc].system 1..
-* participant.type.coding[thcc].system = $CS_Meta_ParticipantType (exactly)
-* participant.type.coding[thcc].code 1..
+* participant.type.coding[43plus] from $VS_Meta_ParticipantType (extensible)
+* participant.type.coding[43plus].system 1..
+* participant.type.coding[43plus].system = $CS_Meta_ParticipantType (exactly)
+* participant.type.coding[43plus].code 1..
 * participant.individual only Reference($SD_Practitioner_Base)
 * period MS
 * period.extension contains
@@ -111,7 +116,7 @@ Description: "การรับบริการโดยทั่วไป"
 * hospitalization.admitSource.coding ^slicing.rules = #open
 * hospitalization.admitSource.coding contains
     hl7 0..1 and
-    thcc 1..1 MS and
+    thcc 0..1 MS and
     thccAccident 0..1 MS
 * hospitalization.admitSource.coding[hl7] from $VS_HL7_AdmitSource (extensible)
 * hospitalization.admitSource.coding[hl7].system 1..

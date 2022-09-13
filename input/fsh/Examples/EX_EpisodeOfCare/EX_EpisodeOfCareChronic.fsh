@@ -1,5 +1,5 @@
 Instance: episodeofcare-chronic1
-InstanceOf: EpisodeOfCare
+InstanceOf: $SD_EpisodeOfCare_Base
 Title: "ตัวอย่าง EpisodeOfCare: การรับบริการเป็นประจำของผู้ป่วยรายที่ 4"
 Description: "แสดงการรับบริการตรวจโรคเบาหวานเป็นประจำ"
 Usage: #example

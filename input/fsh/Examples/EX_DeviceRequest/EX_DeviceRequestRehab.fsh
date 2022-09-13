@@ -1,7 +1,7 @@
 // Remark this resource is trial-use with maturity 1
 
 Instance: devicerequest-rehab-device1
-InstanceOf: DeviceRequest
+InstanceOf: $SD_DeviceRequest_Base
 Title: "ตัวอย่าง DeviceRequest: สั่งจ่ายอุปกรณ์พยุงตัว"
 Description: "แสดงการสั่งจ่ายอุปกรณ์พยุงตัวให้ผู้ป่วย"
 Usage: #example

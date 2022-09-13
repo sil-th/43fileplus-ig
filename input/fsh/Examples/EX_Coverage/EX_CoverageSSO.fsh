@@ -1,5 +1,5 @@
 Instance: coverage-sso
-InstanceOf: Coverage
+InstanceOf: $SD_Coverage_Base
 Title: "ตัวอย่าง Coverage: สิทธิประกันสังคม"
 Description: "แสดงการบันทึกสิทธิประกันสังคม"
 Usage: #example

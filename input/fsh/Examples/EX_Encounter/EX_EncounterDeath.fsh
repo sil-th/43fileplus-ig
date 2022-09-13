@@ -1,5 +1,5 @@
 Instance: encounter-death1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การเสียชีวิต"
 Description: "การเสียชีวิต กรณีเสียชีวิตในสถานพยาบาล"
 Usage: #example

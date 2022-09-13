@@ -1,5 +1,5 @@
 Instance: appointment-opd1
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดติดตามผลหลังรับบริการ OPD"
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD"
 Usage: #example

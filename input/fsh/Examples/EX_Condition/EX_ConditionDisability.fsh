@@ -1,5 +1,5 @@
 Instance: condition-disability1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Disability
 Title: "ตัวอย่าง Condition: ความพิการของผู้ป่วยรายที่ 3"
 Description: "แสดงการประวัติความพิการของผู้ป่วยรายที่ 3"
 Usage: #example

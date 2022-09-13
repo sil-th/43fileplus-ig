@@ -1,5 +1,5 @@
 Instance: condition-surveillance1
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Surveillance
 Title: "ตัวอย่าง Condition: การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยแรกรับ สำหรับการรับบริการ Surveillance"
 Usage: #example
@@ -20,7 +20,7 @@ Usage: #example
 
 
 Instance: condition-surveillance2
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Surveillance
 Title: "ตัวอย่าง Condition: การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
 Description: "การวินิจฉัยล่าสุด สำหรับการรับบริการ Surveillance"
 Usage: #example

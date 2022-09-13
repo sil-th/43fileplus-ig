@@ -1,5 +1,5 @@
 Instance: diagnostic-report-lipid1
-InstanceOf: DiagnosticReport
+InstanceOf: $SD_DiagnosticReport_Lipid
 Title: "ตัวอย่าง DiagnosticReport: ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 Description: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 Usage: #example

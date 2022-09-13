@@ -1,5 +1,5 @@
 Instance: encounter-refer1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการแผนกฉุกเฉิน และส่งต่อ"
 Description: "แสดงการรับบริการแผนกฉุกเฉิน และส่งต่อ"
 Usage: #example
@@ -13,14 +13,14 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#EMER "emergency"
 * priority
-  * coding[0] = $CS_HL7_Priority#EM "emergency"
-  * coding[+] = $CS_THCC_AccidentPriority#2 "emergency"
+  * coding[hl7] = $CS_HL7_Priority#EM "emergency"
+  * coding[thccAccident] = $CS_THCC_AccidentPriority#2 "emergency"
   * text = "emergency"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2021-03-31T10:30:02+07:00"
@@ -57,7 +57,7 @@ Usage: #example
 
 
 Instance: encounter-refer1-accept
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับการส่งต่อ เข้ารับบริการแผนกฉุกเฉิน"
 Description: "แสดงการรับการส่งต่อ เข้ารับบริการแผนกฉุกเฉิน"
 Usage: #example
@@ -78,15 +78,15 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#EMER "emergency"
 * priority
-  * coding[0] = $CS_HL7_Priority#EM "emergency"
-  * coding[+] = $CS_THCC_AccidentPriority#2 "emergency"
+  * coding[hl7] = $CS_HL7_Priority#EM "emergency"
+  * coding[thccAccident] = $CS_THCC_AccidentPriority#2 "emergency"
   * text = "emergency"
 * basedOn = Reference(ServiceRequest/servicerequest-refer-main-full)
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor2) "พญ. สมศรี จริงใจ"
 * period
   * start = "2021-03-31T14:30:02+07:00"

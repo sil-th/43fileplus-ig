@@ -1,5 +1,5 @@
 Instance: location-patient1-home1
-InstanceOf: Location
+InstanceOf: $SD_Location_Home
 Title: "ตัวอย่าง Location: บ้านของผู้ป่วยรายที่ 1"
 Description: "แสดงข้อมูลรายละเอียดบ้านของผู้ป่วยรายที่ 1"
 Usage: #example

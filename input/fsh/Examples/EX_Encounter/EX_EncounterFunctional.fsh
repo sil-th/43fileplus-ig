@@ -1,5 +1,5 @@
 Instance: encounter-functional1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การตรวจประเมินความบกพร่องทางสุขภาพ"
 Description: "การตรวจประเมินความบกพร่องทางสุขภาพ"
 Usage: #example

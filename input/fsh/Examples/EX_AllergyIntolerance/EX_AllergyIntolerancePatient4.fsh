@@ -1,5 +1,5 @@
 Instance: allergyintolerance-patient4
-InstanceOf: AllergyIntolerance
+InstanceOf: $SD_AllergyIntolerance_Base
 Title: "ตัวอย่าง AllergyIntolerance: ประวัติการแพ้ยาและสิ่งอื่น ๆ"
 Description: "ประวัติการแพ้ยา อาหาร เวชภัณฑ์ สิ่งแวดล้อม สารเคมี ฯลฯ"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: device-ipd-device1
-InstanceOf: Device
+InstanceOf: $SD_Device_Base
 Title: "ตัวอย่าง Device: อุปกรณ์ และ serial number"
 Description: "อุปกรณ์ และ serial number"
 Usage: #example

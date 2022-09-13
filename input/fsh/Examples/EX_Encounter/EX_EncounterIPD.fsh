@@ -1,5 +1,5 @@
 Instance: encounter-ipd1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_IPD
 Title: "ตัวอย่าง Encounter: การรับบริการ IPD"
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
@@ -23,8 +23,8 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#IMP "inpatient encounter"
 * priority
-  * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
+  * coding[hl7] = $CS_HL7_Priority#R "routine"
+  * coding[43plus] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
@@ -33,8 +33,8 @@ Usage: #example
 * basedOn = Reference(ServiceRequest/servicerequest-refer-in-opd1)
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) 
     * insert GeneralReference($ID_LO_Provider, "XXXXXXXX", "พญ. สมหญิง จริงใจ")
 * period
@@ -87,7 +87,7 @@ Usage: #example
 
 
 Instance: encounter-ipd2
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_IPD
 Title: "ตัวอย่าง Encounter: การรับบริการ IPD แสดงการลากลับบ้าน"
 Description: "แสดงการรับบริการ IPD โดยทั่วไป"
 Usage: #example
@@ -122,14 +122,14 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#IMP "inpatient encounter"
 * priority
-  * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
+  * coding[hl7] = $CS_HL7_Priority#R "routine"
+  * coding[43plus] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) 
     * insert GeneralReference($ID_LO_Provider, "XXXXXXXX", "พญ. สมหญิง จริงใจ")
 * period

@@ -1,5 +1,5 @@
 Instance: appointment-homevisit1
-InstanceOf: Appointment
+InstanceOf: $SD_Appointment_Base
 Title: "ตัวอย่าง Appointment: การนัดรับบริการในชุมชนครั้งต่อไป"
 Description: "แสดงการนัดรับบริการในชุมชนครั้งต่อไป"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: location-opd-gp-clinic1
-InstanceOf: Location
+InstanceOf: $SD_Location_Department
 Title: "ตัวอย่าง Location: OPD GP Clinic 1"
 Description: "ข้อมูลคลินิก OPD - GP 1"
 Usage: #example

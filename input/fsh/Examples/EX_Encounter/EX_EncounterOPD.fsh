@@ -1,5 +1,5 @@
 Instance: encounter-opd1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการ OPD"
 Description: "แสดงการรับบริการ OPD โดยทั่วไป"
 Usage: #example
@@ -18,8 +18,8 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * priority
-  * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
+  * coding[hl7] = $CS_HL7_Priority#R "routine"
+  * coding[43plus] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
@@ -28,8 +28,8 @@ Usage: #example
 * basedOn = Reference(ServiceRequest/servicerequest-refer-in-opd1)
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
@@ -52,8 +52,8 @@ Usage: #example
   * origin = Reference(Organization/organization-second)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลเครือข่าย")
   * admitSource
-    * coding[0] = $CS_HL7_AdmitSource#gp "General Practitioner referral"
-    * coding[+] = $CS_THCC_AdmitSource#3 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
+    * coding[hl7] = $CS_HL7_AdmitSource#gp "General Practitioner referral"
+    * coding[thcc] = $CS_THCC_AdmitSource#3 "ได้รับการส่งต่อจากสถานพยาบาลอื่น"
     * text = "มารับบริการเอง"
   * destination = Reference(Organization/organization-third)
     * insert GeneralReference($ID_Hcode, "XXXXX", "โรงพยาบาลตติยภูมิ")
@@ -71,7 +71,7 @@ Usage: #example
 
 
 Instance: encounter-opd2
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการ OPD บริการปฐมภูมิ"
 Description: "แสดงการรับบริการ OPD บริการปฐมภูมิ"
 Usage: #example
@@ -85,8 +85,8 @@ Usage: #example
 * status = #finished
 * class = $CS_HL7_EncounterClass#AMB "ambulatory"
 * priority
-  * coding[0] = $CS_HL7_Priority#R "routine"
-  * coding[+] = $CS_43Plus_ServicePriority#1 "ปกติ"
+  * coding[hl7] = $CS_HL7_Priority#R "routine"
+  * coding[43plus] = $CS_43Plus_ServicePriority#1 "ปกติ"
   * text = "ปกติ"
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
   * extension
@@ -94,8 +94,8 @@ Usage: #example
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-01-01T12:30:02+07:00"

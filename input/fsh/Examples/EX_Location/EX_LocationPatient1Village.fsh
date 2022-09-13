@@ -1,5 +1,5 @@
 Instance: location-village1
-InstanceOf: Location
+InstanceOf: $SD_Location_Village
 Title: "ตัวอย่าง Location: หมู่บ้านที่ 1"
 Description: "แสดงข้อมูลหมู่บ้านที่ 1"
 Usage: #example

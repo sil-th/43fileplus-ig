@@ -1,5 +1,5 @@
 Instance: encounter-specialpp1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการส่งเสริมสุขภาพป้องกันโรคเฉพาะ"
 Description: "แสดงการรับบริการส่งเสริมสุขภาพป้องกันโรคเฉพาะ"
 Usage: #example
@@ -18,8 +18,8 @@ Usage: #example
     * valueCodeableConcept = $CS_THCC_PatientLocationType#1 "ในเขตรับผิดชอบ"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * extension
@@ -37,7 +37,7 @@ Usage: #example
 
 
 Instance: encounter-community-activity1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 Description: "แสดงกิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 Usage: #example
@@ -53,7 +53,7 @@ Usage: #example
 
 
 Instance: encounter-homevisit1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การให้บริการในชุมชน"
 Description: "แสดงการให้บริการในชุมชน"
 Usage: #example
@@ -70,8 +70,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-doctor1) "พญ. สมหญิง จริงใจ"
 * period
   * start = "2022-04-10T12:30:02+07:00"

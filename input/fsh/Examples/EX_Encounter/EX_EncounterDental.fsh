@@ -1,5 +1,5 @@
 Instance: encounter-dental1
-InstanceOf: Encounter
+InstanceOf: $SD_Encounter_Base
 Title: "ตัวอย่าง Encounter: การรับบริการทันตกรรม"
 Description: "แสดงการรับบริการทันตกรรม โดยทั่วไป"
 Usage: #example
@@ -15,8 +15,8 @@ Usage: #example
 * subject = Reference(Patient/patient-patient5) "ด.ญ. น่ารัก ใจดี"
 * participant[0]
   * type
-    * coding[0] = $CS_HL7_ParticipantType#PPRF "primary performer"
-    * coding[+] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
+    * coding[hl7] = $CS_HL7_ParticipantType#PPRF "primary performer"
+    * coding[43plus] = $CS_Meta_ParticipantType#PPRF "แพทย์เจ้าของคนไข้"
   * individual = Reference(Practitioner/practitioner-dentist1) "ทพญ. สมทรวง จริงใจ"
 * period
   * extension

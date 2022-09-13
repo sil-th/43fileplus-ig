@@ -1,5 +1,5 @@
 Instance: claim-ipd-encounter1
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ IPD"
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD"
 Usage: #example
@@ -79,7 +79,7 @@ Usage: #example
 
 
 Instance: claim-ipd-encounter2-full
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Usage: #example
@@ -169,7 +169,7 @@ Usage: #example
 
 
 Instance: claim-ipd-encounter3-adp
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Description: "แสดงค่าใช้จ่ายการรับบริการ IPD บริการที่ยังไม่ได้จัดหมวด"
 Usage: #example

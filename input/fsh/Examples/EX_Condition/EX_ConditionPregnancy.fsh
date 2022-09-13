@@ -1,5 +1,5 @@
 Instance: condition-pregnancy-outcome
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: ผลสิ้นสุดการตั้งครรภ์"
 Description: "ผลสิ้นสุดการตั้งครรภ์"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: claim-lab-encounter1
-InstanceOf: Claim
+InstanceOf: $SD_Claim_Base
 Title: "ตัวอย่าง Claim: ค่าใช้จ่ายการรับบริการตรวจทางห้องปฏิบัติการ"
 Description: "ค่าใช้จ่ายการรับบริการตรวจทางห้องปฏิบัติการ"
 Usage: #example

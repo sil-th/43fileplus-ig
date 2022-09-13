@@ -1,5 +1,5 @@
 Instance: medication-opd-amoxicillin
-InstanceOf: Medication
+InstanceOf: $SD_Medication_Base
 Title: "ตัวอย่าง Medication: ยา Amoxicillin หลังการรับบริการ OPD"
 Description: "แสดงยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example

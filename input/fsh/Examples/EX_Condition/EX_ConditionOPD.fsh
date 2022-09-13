@@ -1,5 +1,5 @@
 Instance: condition-opd2-main
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยโรคหลัก ในบริการ OPD บริการปฐมภูมิ"
 Description: "การวินิจฉัยโรคหลัก ในบริการ OPD บริการปฐมภูมิ"
 Usage: #example
@@ -20,7 +20,7 @@ Usage: #example
 
 
 Instance: condition-opd2-comorbid
-InstanceOf: Condition
+InstanceOf: $SD_Condition_Base
 Title: "ตัวอย่าง Condition: การวินิจฉัยโรคร่วม ในบริการ OPD บริการปฐมภูมิ"
 Description: "การวินิจฉัยโรคร่วม ในบริการ OPD บริการปฐมภูมิ"
 Usage: #example
