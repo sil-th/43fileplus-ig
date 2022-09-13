@@ -1,9 +1,9 @@
-Profile: Moph43pMedicationAdministration
+Profile: Moph43pMedicationAdministrationBase
 Parent: MedicationAdministration
-Id: moph43p-medicationadministration
+Id: moph43p-medicationadministration-base
 Title: "MoPH43p MedicationAdministration"
 Description: "การบริหารยาให้ผู้ป่วย"
-* ^url = $SD_MedicationAdministration
+* ^url = $SD_MedicationAdministration_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -35,7 +35,7 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
 * medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
 * medicationCodeableConcept.coding[local].code 1..
-* medicationReference only Reference($SD_Medication)
+* medicationReference only Reference($SD_Medication_Base)
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS

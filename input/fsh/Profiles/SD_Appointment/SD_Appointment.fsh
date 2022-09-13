@@ -1,9 +1,9 @@
-Profile: Moph43pAppointment
+Profile: Moph43pAppointmentBase
 Parent: Appointment
-Id: moph43p-appointment
+Id: moph43p-appointment-base
 Title: "MoPH43p Appointment"
 Description: "ข้อมูลการนัดมารับบริการครั้งต่อไปของผู้ที่มารับบริการ"
-* ^url = $SD_Appointment
+* ^url = $SD_Appointment_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -37,7 +37,7 @@ Description: "ข้อมูลการนัดมารับบริกา
 * supportingInformation ^slicing.discriminator.path = "$this"
 * supportingInformation ^slicing.rules = #open
 * supportingInformation contains coverage 0..* MS
-* supportingInformation[coverage] only Reference($SD_Coverage)
+* supportingInformation[coverage] only Reference($SD_Coverage_Base)
 * start MS
 * start ^short = "วัน-เวลาที่นัดรับบริการ"
 * patientInstruction MS
@@ -56,6 +56,6 @@ Description: "ข้อมูลการนัดมารับบริกา
     location 0..* MS
 * participant[patient].actor only Reference($SD_Patient_Base)
 * participant[practitioner] ^short = "ผู้ให้บริการ ที่นัดไปพบ"
-* participant[practitioner].actor only Reference($SD_Practitioner)
+* participant[practitioner].actor only Reference($SD_Practitioner_Base)
 * participant[location] ^short = "ชื่อคลีนิค หรือห้องตรวจที่นัดรับบริการ"
 * participant[location].actor only Reference($SD_Location_Department)

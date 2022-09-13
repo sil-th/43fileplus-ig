@@ -1,9 +1,9 @@
-Profile: Moph43pCoverage
+Profile: Moph43pCoverageBase
 Parent: Coverage
-Id: moph43p-coverage
+Id: moph43p-coverage-base
 Title: "MoPH43p Coverage"
 Description: "ข้อมูลสิทธิ"
-* ^url = $SD_Coverage
+* ^url = $SD_Coverage_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

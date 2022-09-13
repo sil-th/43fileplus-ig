@@ -1,5 +1,5 @@
 Profile: Moph43pProcedureLabor
-Parent: $SD_Procedure
+Parent: $SD_Procedure_Base
 Id: moph43p-procedure-labor
 Title: "MoPH43p Procedure: Labor"
 Description: "วิธีการคลอด"

@@ -1,28 +1,24 @@
-Profile: Moph43pMedicationStatement
+Profile: Moph43pMedicationStatementBase
 Parent: MedicationStatement
-Id: moph43p-medicationstatement
+Id: moph43p-medicationstatement-base
 Title: "MoPH43p MedicationStatement"
 Description: "ข้อมูลประวัติยาผู้ป่วย"
-* ^url = $SD_MedicationStatement
+* ^url = $SD_MedicationStatement_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension ^slicing.discriminator[0].type = #value
 * extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
     $EX_TH_MedicationRequestNedCriteria named npc 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
 // * extension[medicationSource] from $VS_Std15_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
-* extension[medicationSource] ^min = 0
 // * extension[npc] from $VS_eClaim_MedNedCriteria (extensible)
 * extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
-* extension[npc] ^min = 0
 * extension[approvedNo] ^short = "หมายเลขอนุมัติ"
-* extension[approvedNo] ^min = 0
 * status 1.. MS
 * category MS
 * category.coding ^slicing.discriminator[0].type = #value
@@ -60,7 +56,7 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
 * medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
 * medicationCodeableConcept.coding[local].code 1..
-* medicationReference only Reference($SD_Medication)
+* medicationReference only Reference($SD_Medication_Base)
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS

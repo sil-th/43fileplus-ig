@@ -1,9 +1,9 @@
-Profile: Moph43pMedicationRequest
+Profile: Moph43pMedicationRequestBase
 Parent: MedicationRequest
-Id: moph43p-medicationrequest
+Id: moph43p-medicationrequest-base
 Title: "MoPH43p MedicationRequest"
 Description: "การสั่งยา"
-* ^url = $SD_MedicationRequest
+* ^url = $SD_MedicationRequest_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -46,14 +46,14 @@ Description: "การสั่งยา"
 * medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
 * medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
 * medicationCodeableConcept.coding[local].code 1..
-* medicationReference only Reference($SD_Medication)
+* medicationReference only Reference($SD_Medication_Base)
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * encounter only Reference($SD_Encounter_Base)
 * encounter MS
 * authoredOn MS
-* requester only Reference($SD_Practitioner)
+* requester only Reference($SD_Practitioner_Base)
 * requester MS
 * reasonCode MS
 * note MS

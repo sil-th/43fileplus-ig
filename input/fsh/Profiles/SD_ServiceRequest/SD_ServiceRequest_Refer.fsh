@@ -71,7 +71,7 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * encounter only Reference($SD_Encounter_Base)
 * authoredOn MS
 * requester MS
-* requester only Reference($SD_Practitioner)
+* requester only Reference($SD_Practitioner_Base)
 * reasonCode MS
 * reasonCode ^slicing.discriminator[0].type = #pattern
 * reasonCode ^slicing.discriminator[=].path = "$this"

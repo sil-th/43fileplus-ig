@@ -31,12 +31,12 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * code.coding[tmlt].system = $CS_TMLT (exactly)
 * code.coding[tmlt].code 1..
 * code.coding[loinc] ^short = "รหัสมาตรฐาน LOINC"
-* code.coding[loinc] from $LNC (required)
+* code.coding[loinc] from $VS_LNC (required)
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
 * code.coding[snomed] ^short = "รหัสมาตรฐาน SNOMED CT"
-* code.coding[snomed] from $SCT (required)
+* code.coding[snomed] from $VS_SNOMED_All (required)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
@@ -59,7 +59,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * interpretation ^short = "การแปรผลการตรวจ"
 * note MS
 * note ^short = "หมายเหตุเพิ่มเติม"
-* specimen only Reference($SD_Specimen)
+* specimen only Reference($SD_Specimen_Base)
 * specimen MS
 * specimen ^short = "สิ่งส่งตรวจ"
 * referenceRange MS

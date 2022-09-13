@@ -2,7 +2,7 @@ Profile: Moph43pEncounterBase
 Parent: Encounter
 Id: moph43p-encounter-base
 Title: "MoPH43p Encounter"
-Description: "การรับบริการ"
+Description: "การรับบริการโดยทั่วไป"
 * ^url = $SD_Encounter_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
@@ -71,7 +71,7 @@ Description: "การรับบริการ"
 * participant.type.coding[thcc].system 1..
 * participant.type.coding[thcc].system = $CS_Meta_ParticipantType (exactly)
 * participant.type.coding[thcc].code 1..
-* participant.individual only Reference($SD_Practitioner)
+* participant.individual only Reference($SD_Practitioner_Base)
 * period MS
 * period.extension contains
     $EX_TH_EncounterServiceHour named serviceHour 0..1 MS
@@ -98,7 +98,7 @@ Description: "การรับบริการ"
       43plus 0..1 MS
   * use.coding[hl7plus] from $VS_Meta_ExtendedHL7DiagnosisRole (extensible)
   * use.coding[43plus] from $VS_43Plus_EncounterDiagnosisRole (extensible)
-* account only Reference($SD_Account)
+* account only Reference($SD_Account_Base)
 * hospitalization MS
 * hospitalization.extension contains
     $EX_TH_EncounterDischargeStatus named dischargeStatus 0..1 MS and

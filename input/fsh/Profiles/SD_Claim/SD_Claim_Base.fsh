@@ -1,9 +1,9 @@
-Profile: Moph43pClaimOPD
+Profile: Moph43pClaimBase
 Parent: Claim
-Id: moph43p-claim-opd
-Title: "MoPH43p Claim: OPD"
-Description: "ค่าใช้จ่ายการรับบริการ OPD"
-* ^url = $SD_Claim_Opd
+Id: moph43p-claim-base
+Title: "MoPH43p Claim"
+Description: "ค่าใช้จ่ายการรับบริการ"
+* ^url = $SD_Claim_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -16,7 +16,8 @@ Description: "ค่าใช้จ่ายการรับบริการ
     $EX_TH_ClaimTotalCopay named totalCopay 0..1 MS and
     $EX_TH_ClaimTotalPaid named totalPaid 0..1 MS and
     $EX_TH_ClaimTotalUnpaid named totalUnpaid 0..1 MS and
-    $EX_TH_ClaimFeeNote named feeNote 0..1 MS
+    $EX_TH_ClaimFeeNote named feeNote 0..1 MS and
+    $EX_TH_ClaimIpdDRG named drg 0..1 MS
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"
@@ -52,15 +53,23 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * priority MS
 * supportingInfo MS
 * insurance MS
-* insurance.coverage only Reference($SD_Coverage)
+* insurance.coverage only Reference($SD_Coverage_Base)
 * insurance.coverage MS
 * insurance.preAuthRef MS
 * item MS
-* item.extension contains
+  * extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 MS and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 MS and
     $EX_TH_ClaimItemPaid named itemPaid 0..1 MS and
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1 MS
+  * category MS
+  * category.coding ^slicing.discriminator.type = #pattern
+  * category.coding ^slicing.discriminator.path = "$this"
+  * category.coding ^slicing.rules = #open
+  * category.coding contains
+      thCategory 0..1 MS
+  * category.coding[thCategory] ^short = "หมวดค่าใช้จ่ายบริการสาธารณสุข"
+  * category.coding[thCategory] from $VS_TH_FeeCategory (required)
 * item.detail
 * item.detail.extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 and

@@ -1,9 +1,9 @@
-Profile: Moph43pProcedure
+Profile: Moph43pProcedureBase
 Parent: Procedure
-Id: moph43p-procedure
+Id: moph43p-procedure-base
 Title: "MoPH43p Procedure"
 Description: "การทำหัตถการหรือการรักษา"
-* ^url = $SD_Procedure
+* ^url = $SD_Procedure_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -36,7 +36,7 @@ Description: "การทำหัตถการหรือการรัก
 * performed[x] only dateTime or Period or string
 * performer MS
   * function MS
-  * actor only Reference($SD_Practitioner)
+  * actor only Reference($SD_Practitioner_Base)
   * onBehalfOf MS
 * location MS
 * outcome MS

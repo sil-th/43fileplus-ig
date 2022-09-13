@@ -1,5 +1,5 @@
 Profile: Moph43pProcedurePreventive
-Parent: $SD_Procedure
+Parent: $SD_Procedure_Base
 Id: moph43p-procedure-preventive
 Title: "MoPH43p Procedure: Preventive"
 Description: "กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"

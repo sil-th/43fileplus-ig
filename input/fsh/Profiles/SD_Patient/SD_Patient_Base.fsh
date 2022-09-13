@@ -14,11 +14,9 @@ Description: "ข้อมูลทั่วไปของประชาชน
   $SD_Patient_EX_Disability named disability 0..* and
   $EX_TH_PatientEducationLevel named educationLevel 0..* and
   $EX_TH_PatientPersonStatus named personStatus 0..* and
-  $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..* and
-  $EX_TH_PatientForeignerType named foreignerType 0..*
+  $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..*
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
-
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
 * extension[race] ^definition = "เชื้อชาติของผู้ป่วย"
 * extension[religion] ^short = "ความเชื่อทางศาสนาของผู้ป่วย"
@@ -31,8 +29,6 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension[personStatus] ^definition = "สถานะบุคคลของผู้ป่วย"
 * extension[pidRemoveReason] ^short = "สถานะ/สาเหตุการจำหน่ายจากเขตรับผิดชอบ (ถ้ามี)"
 * extension[pidRemoveReason] ^definition = "สถานะ/สาเหตุการจำหน่ายจากเขตรับผิดชอบ (ถ้ามี)"
-* extension[foreignerType] ^short = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
-* extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"
@@ -42,8 +38,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
     cid 0..1 MS and
     disabilityID 0..1 and
     hn 0..1 MS and
-    passportNo 0..* and
-    workPermit 0..* 
+    passportNo 0..*
 * identifier[pid] ^short = "เลขทะเบียนบุคคล"
 * identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
 * identifier[pid]
@@ -103,16 +98,6 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * value 1..
   * value ^example.label = "Thai passport number"
   * value ^example.valueString = "AA123456"
-* identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน"
-* identifier[workPermit] ^comment = "กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
-* identifier[workPermit]
-  * type = $CS_HL7_IdentifierType#WP
-  * system 1..
-  * system = $ID_ThaiWorkPermit (exactly)
-  * value 1..
-  * value obeys WP-length
-  * value ^example.label = "เลขที่ใบอนุญาตทำงาน"
-  * value ^example.valueString = "1234567890123"
 
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
@@ -193,6 +178,5 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * maritalStatus.coding[thcc].system = $CS_THCC_Marital (exactly)
 * maritalStatus.coding[hl7] from $VS_HL7_MaritalStatus (extensible)
 * maritalStatus.coding[hl7].system = $CS_HL7_MaritalStatus (exactly)
-* generalPractitioner ^short = "แพทย์ประจำตัว"
-* managingOrganization ^short = "สถานพยาบาลปฐมภูมิของบุคคล"
+* generalPractitioner ^short = "แพทย์ประจำตัว หรือสถานพยาบาลปฐมภูมิของบุคคล"
 

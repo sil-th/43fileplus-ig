@@ -1,9 +1,9 @@
-Profile: Moph43pDevice
+Profile: Moph43pDeviceBase
 Parent: Device
-Id: moph43p-device
+Id: moph43p-device-base
 Title: "MoPH43p Device"
 Description: "อุปกรณ์/เวชภัณฑ์"
-* ^url = $SD_Device
+* ^url = $SD_Device_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,5 +30,3 @@ Description: "อุปกรณ์/เวชภัณฑ์"
 * type.coding[snomed].system 1..
 * type.coding[snomed].system = $SCT (exactly)
 * type.coding[snomed].code 1..
-
-//Constraint

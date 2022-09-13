@@ -1,9 +1,9 @@
-Profile: Moph43pPractitionerRole
+Profile: Moph43pPractitionerRoleBase
 Parent: PractitionerRole
-Id: moph43p-practitionerrole
+Id: moph43p-practitionerrole-base
 Title: "MoPH43p PractitionerRole"
 Description: "ข้อมูลการปฏิบัติงานผู้ให้บริการของสถานพยาบาล"
-* ^url = $SD_PractitionerRole
+* ^url = $SD_PractitionerRole_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -30,7 +30,7 @@ Description: "ข้อมูลการปฏิบัติงานผู้
 * period.start ^short = "วันที่เริ่มปฏิบัติงาน"
 * period.end MS
 * period.end ^short = "วันที่สิ้นสุดการปฏิบัติงาน"
-* practitioner only Reference($SD_Practitioner)
+* practitioner only Reference($SD_Practitioner_Base)
 * practitioner MS
 * organization only Reference($SD_Organization_Provider)
 * organization MS

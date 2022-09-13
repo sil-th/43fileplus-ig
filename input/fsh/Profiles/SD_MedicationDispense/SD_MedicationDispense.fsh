@@ -1,9 +1,9 @@
-Profile: Moph43pMedicationDispense
+Profile: Moph43pMedicationDispenseBase
 Parent: MedicationDispense
-Id: moph43p-medicationdispense
+Id: moph43p-medicationdispense-base
 Title: "MoPH43p MedicationDispense"
 Description: "การจ่ายยา"
-* ^url = $SD_MedicationDispense
+* ^url = $SD_MedicationDispense_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -35,15 +35,15 @@ Description: "การจ่ายยา"
 * medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
 * medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
 * medicationCodeableConcept.coding[local].code 1..
-* medicationReference only Reference($SD_Medication)
+* medicationReference only Reference($SD_Medication_Base)
 * medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * performer MS
-* performer.actor only Reference($SD_Practitioner)
+* performer.actor only Reference($SD_Practitioner_Base)
 * performer.actor MS
 * performer.actor ^short = "เภสัชกรที่จ่ายยา"
-* authorizingPrescription only Reference($SD_MedicationRequest)
+* authorizingPrescription only Reference($SD_MedicationRequest_Base)
 * authorizingPrescription MS
 * quantity MS
 * daysSupply MS

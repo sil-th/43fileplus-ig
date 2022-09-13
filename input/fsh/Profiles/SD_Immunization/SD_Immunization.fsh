@@ -1,9 +1,9 @@
-Profile: Moph43pImmunization
+Profile: Moph43pImmunizationBase
 Parent: Immunization
-Id: moph43p-immunization
+Id: moph43p-immunization-base
 Title: "MoPH43p Immunization"
 Description: "การมารับบริการฉีดวัคซีน"
-* ^url = $SD_Immunization
+* ^url = $SD_Immunization_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -48,7 +48,7 @@ Description: "การมารับบริการฉีดวัคซี
 * lotNumber MS
 * expirationDate MS
 * performer MS
-* performer.actor only Reference($SD_Practitioner)
+* performer.actor only Reference($SD_Practitioner_Base)
 * performer.actor MS
 * note MS
 * reaction MS

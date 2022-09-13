@@ -1,9 +1,9 @@
-Profile: Moph43pPractitioner
+Profile: Moph43pPractitionerBase
 Parent: Practitioner
-Id: moph43p-practitioner
+Id: moph43p-practitioner-base
 Title: "MoPH43p Practitioner"
 Description: "ข้อมูลผู้ให้บริการของสถานพยาบาล"
-* ^url = $SD_Practitioner
+* ^url = $SD_Practitioner_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

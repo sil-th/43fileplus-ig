@@ -22,7 +22,7 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * performer only Reference($SD_Organization_Provider)
 * performer MS
 * specimen 1.. MS
-* specimen only Reference($SD_Specimen)
+* specimen only Reference($SD_Specimen_Base)
 * result ^slicing.discriminator.type = #value
 * result ^slicing.discriminator.path = "resolve().code"
 * result ^slicing.rules = #open

@@ -1,5 +1,5 @@
 Profile: Moph43pOrganizationProvider
-Parent: Organization
+Parent: $SD_Organization_Base
 Id: moph43p-organization-provider
 Title: "MoPH43p Organization: Provider"
 Description: "ข้อมูลสถานพยาบาล"
@@ -12,7 +12,7 @@ Description: "ข้อมูลสถานพยาบาล"
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains hcode 0..1
-* identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก"
+* identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก หรือ 9 หลัก"
 * identifier[hcode].type = $CS_TH_IdentifierType#hcode
 * identifier[hcode].system 1..
 * identifier[hcode].system = $ID_Hcode (exactly)

@@ -1,9 +1,9 @@
-Profile: Moph43pDeviceRequest
+Profile: Moph43pDeviceRequestBase
 Parent: DeviceRequest
-Id: moph43p-devicerequest
+Id: moph43p-devicerequest-base
 Title: "MoPH43p DeviceRequest"
 Description: "การสั่งอุปกรณ์/เวชภัณฑ์"
-* ^url = $SD_DeviceRequest
+* ^url = $SD_DeviceRequest_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -26,5 +26,5 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * subject MS
 * encounter MS
 * authoredOn MS
-* requester only Reference($SD_Practitioner)
+* requester only Reference($SD_Practitioner_Base)
 * requester MS

@@ -34,5 +34,5 @@ Description: "การรายงานผลการตรวจ"
 * performer only Reference($SD_Organization_Provider)
 * performer MS
 * specimen 0.. MS
-* specimen only Reference($SD_Specimen)
+* specimen only Reference($SD_Specimen_Base)
 * result MS

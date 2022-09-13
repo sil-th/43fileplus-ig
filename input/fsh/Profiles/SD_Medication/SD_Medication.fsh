@@ -1,15 +1,14 @@
-Profile: Moph43pMedication
+Profile: Moph43pMedicationBase
 Parent: Medication
-Id: moph43p-medication
+Id: moph43p-medication-base
 Title: "MoPH43p Medication"
 Description: "ยา"
-* ^url = $SD_Medication
+* ^url = $SD_Medication_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_MedicationImageUrl named imageUrl 0..*
-* extension[imageUrl] ^min = 0
 * code 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

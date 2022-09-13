@@ -1,9 +1,9 @@
-Profile: Moph43pAccount
+Profile: Moph43pAccountBase
 Parent: Account
-Id: moph43p-account
+Id: moph43p-account-base
 Title: "MoPH43p Account"
 Description: "ข้อมูลทางการเงิน"
-* ^url = $SD_Account
+* ^url = $SD_Account_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -16,7 +16,7 @@ Description: "ข้อมูลทางการเงิน"
 * subject MS
 * servicePeriod MS
 * coverage MS
-* coverage.coverage only Reference($SD_Coverage)
+* coverage.coverage only Reference($SD_Coverage_Base)
 * coverage.coverage MS
 * coverage.priority MS
 * owner only Reference($SD_Organization_Provider)

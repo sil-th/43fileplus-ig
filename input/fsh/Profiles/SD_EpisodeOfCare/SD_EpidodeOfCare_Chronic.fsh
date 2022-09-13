@@ -1,14 +1,15 @@
-Profile: Moph43pEpisodeOfCareChronic
+Profile: Moph43pEpisodeOfCareBase
 Parent: EpisodeOfCare
-Id: moph43p-episodeofcare-chronic
-Title: "MoPH43p EpisodeOfCare: Chronic"
+Id: moph43p-episodeofcare-base
+Title: "MoPH43p EpisodeOfCare"
 Description: "การรับบริการเป็นประจำ"
-* ^url = $SD_EpisodeOfCare_Chronic
+* ^url = $SD_EpisodeOfCare_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_ConditionChronicDischargeReason named chronicDischargeReason 0..1 MS
+* extension[chronicDischargeReason] ^short = "ประเภทการจำหน่าย หรือสถานะของผู้ป่วยที่ทราบผลหลังสุด"
 * status = #finished (exactly)
 * status MS
 * diagnosis.condition only Reference($SD_Condition_Base)

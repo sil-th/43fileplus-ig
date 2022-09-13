@@ -1,9 +1,9 @@
-Profile: Moph43pSpecimen
+Profile: Moph43pSpecimenBase
 Parent: Specimen
-Id: moph43p-specimen
+Id: moph43p-specimen-base
 Title: "MoPH43p Specimen"
 Description: "ข้อมูลสิ่งส่งตรวจ"
-* ^url = $SD_Specimen
+* ^url = $SD_Specimen_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -20,7 +20,7 @@ Description: "ข้อมูลสิ่งส่งตรวจ"
 * subject only Reference($SD_Patient_Base)
 * receivedTime MS
 * receivedTime ^short = "วัน-เวลาที่ส่งผลไปตรวจ"
-* parent only Reference($SD_Specimen)
+* parent only Reference($SD_Specimen_Base)
 * collection MS
 * collection.collected[x] MS
 * collection.collected[x] ^short = "วัน-เวลาที่ตรวจ, วัดค่า, เก็บตัวอย่าง"

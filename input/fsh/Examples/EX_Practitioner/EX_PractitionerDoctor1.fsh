@@ -1,5 +1,5 @@
 Instance: practitioner-doctor1
-InstanceOf: $SD_Practitioner
+InstanceOf: $SD_Practitioner_Base
 Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 1"
 Description: "ข้อมูลแพทย์รายที่ 1"
 Usage: #example

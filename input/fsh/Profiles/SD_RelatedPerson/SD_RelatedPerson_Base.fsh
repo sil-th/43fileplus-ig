@@ -1,9 +1,9 @@
-Profile: Moph43pRelatedPerson
+Profile: Moph43pRelatedPersonBase
 Parent: RelatedPerson
-Id: moph43p-relatedperson
+Id: moph43p-relatedperson-base
 Title: "MoPH43p RelatedPerson"
 Description: "ข้อมูลผู้ญาติของผู้ที่มาใช้บริการ"
-* ^url = $SD_RelatedPerson
+* ^url = $SD_RelatedPerson_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH

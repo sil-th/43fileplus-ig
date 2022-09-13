@@ -1,10 +1,9 @@
-//Profile
-Profile: Moph43pAllergyIntolerance
+Profile: Moph43pAllergyIntoleranceBase
 Parent: AllergyIntolerance
-Id: moph43p-allergyintolerance
+Id: moph43p-allergyintolerance-base
 Title: "MoPH43p AllergyIntolerance"
 Description: "ข้อมูลประวัติการแพ้ของผู้ป่วยที่มารับบริการ"
-* ^url = $SD_AllergyIntolerance
+* ^url = $SD_AllergyIntolerance_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
@@ -69,7 +68,7 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * patient only Reference($SD_Patient_Base)
 * patient MS
 * recordedDate MS
-* recorder only Reference($SD_Practitioner)
+* recorder only Reference($SD_Practitioner_Base)
 * recorder MS
 * asserter MS
 * reaction MS
