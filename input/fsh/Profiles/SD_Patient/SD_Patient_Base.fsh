@@ -36,11 +36,10 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * identifier contains
     pid 0..1 MS and
     cid 0..1 MS and
-    disabilityID 0..1 and
+    pwd 0..1 and
     hn 0..1 MS and
     passportNo 0..*
-* identifier[pid] ^short = "เลขทะเบียนบุคคล"
-* identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
+* identifier[pid] ^short = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ"
 * identifier[pid]
   * type = $CS_TH_IdentifierType#localPid
   * system 1..
@@ -48,14 +47,12 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * system ^example.label = "PID namespace"
   * system ^example.valueUri = $ID_LO_PID
   * value 1..
-  * value obeys PID-length
   * value ^example.label = "เลขทะเบียนบุคคล"
   * value ^example.valueString = "123456789012345"
   * period
     * start ^short = "วันที่ย้ายเข้ามาเขตพื้นที่รับผิดชอบ"
     * end ^short = "วันที่จำหน่าย"
-* identifier[cid] ^short = "เลขที่บัตรประชาชน"
-* identifier[cid] ^comment = "เลขประจำตัวประชาชน"
+* identifier[cid] ^short = "เลขประจำตัวประชาชน"
 * identifier[cid]
   * type = $CS_TH_IdentifierType#cid
   * system 1..
@@ -64,13 +61,11 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * value obeys CID-length
   * value ^example.label = "เลขประจำตัวประชาชน"
   * value ^example.valueString = "1234567890123"
-* identifier[disabilityID] ^short = "เลขประจำตัวคนพิการ"
-* identifier[disabilityID] ^comment = "เลขประจำตัวคนพิการ"
+* identifier[pwd] ^short = "เลขประจำตัวคนพิการ (Person With Disability - PWD)"
   * type = $CS_TH_IdentifierType#disability
   * system 1..
   * system = $ID_ThaiDisability (exactly)
   * value 1..
-  * value obeys PWD-length
   * value ^example.label = "เลขประจำตัวคนพิการ"
   * value ^example.valueString = "1234567890123"
   * period
@@ -84,7 +79,6 @@ Description: "ข้อมูลทั่วไปของประชาชน
   * system ^example.label = "HN namespace"
   * system ^example.valueUri = $ID_LO_HN
   * value 1..
-  * value obeys HN-length
   * value ^example.label = "เลขประจำตัวผู้ป่วย (HN)"
   * value ^example.valueString = "123456"
 * identifier[passportNo] ^short = "เลขที่ passport กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"

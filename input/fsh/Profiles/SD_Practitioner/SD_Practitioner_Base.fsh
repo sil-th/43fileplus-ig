@@ -13,6 +13,7 @@ Description: "ข้อมูลผู้ให้บริการของส
 * identifier ^slicing.rules = #open
 * identifier contains
     cid 0..1 MS and
+    proId 0..1 MS and
     doctorId 0..1 MS and
     nurseId 0..1 MS and
     pharmId 0..1 MS and
@@ -21,7 +22,7 @@ Description: "ข้อมูลผู้ให้บริการของส
     physioId 0..1 MS and
     vetId 0..1 MS and
     volunId 0..1 MS
-* identifier[cid] ^short = "เลขที่บัตรประชาชน"
+* identifier[cid] ^short = "เลขประจำตัวประชาชน"
   * type = $CS_TH_IdentifierType#cid
   * system 1..
   * system = $ID_ThaiCid (exactly)
@@ -29,6 +30,13 @@ Description: "ข้อมูลผู้ให้บริการของส
   * value obeys CID-length
   * value ^example.label = "เลขประจำตัวประชาชน"
   * value ^example.valueString = "1234567890123"
+* identifier[proId] ^short = "เลขที่ผู้ให้บริการ ออกโดยโปรแกรม ไม่ซ้ำกันในสถานพยาบาลเดียวกัน"
+  * type = $CS_TH_IdentifierType#localProv
+  * system 1..
+  * system obeys ProID-uri
+  * system ^example.label = "Provider ID namespace"
+  * system ^example.valueUri = $ID_LO_Provider
+  * value 1..
 * identifier[doctorId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
   * type = $CS_TH_IdentifierType#proDoc
   * system 1..

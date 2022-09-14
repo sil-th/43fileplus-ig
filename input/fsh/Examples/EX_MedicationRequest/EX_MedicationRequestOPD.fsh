@@ -15,7 +15,7 @@ Usage: #example
 * identifier
   * use = #usual
   * type = $CS_TH_IdentifierType#localPresc "รหัสใบสั่งยา ของหน่วยบริการ"
-  * system = $ID_LO_Drug
+  * system = $CS_TH_LocalDrugCode
   * value = "XXXX"
 * status = #completed
 * intent = #order

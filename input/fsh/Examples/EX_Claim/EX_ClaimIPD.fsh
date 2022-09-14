@@ -148,7 +148,7 @@ Usage: #example
   * productOrService
     * coding[0] = $CS_TMT#227162 "AAMOX 500 (ห้างขายยาตราเจ็ดดาว) (amoxicillin 500 mg) film-coated tablet, 1 tablet"
     * coding[+] = $CS_24Drug#100176000004493120381620 "AMOXICILLIN 500 MG TABLET, ORAL"
-    * coding[+] = $ID_LO_Drug#1233 "Local code amoxycillin 500 mg"
+    * coding[+] = $CS_TH_LocalDrugCode#1233 "Local code amoxycillin 500 mg"
     * text = "Amoxicillin"
   * quantity
     * value = 21

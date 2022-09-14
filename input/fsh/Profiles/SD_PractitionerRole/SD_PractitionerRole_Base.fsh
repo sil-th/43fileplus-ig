@@ -10,30 +10,15 @@ Description: "ข้อมูลการปฏิบัติงานผู้
 * extension contains
   $EX_TH_PractitionerRoleProviderMovement named move 0..*
 * identifier MS
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.rules = #open
-* identifier contains proId 0..1 MS
-* identifier[proId] ^short = "เลขที่ผู้ให้บริการ"
-* identifier[proId] ^comment = "เลขที่ผู้ให้บริการ ออกโดยโปรแกรม ไม่ซ้ำกันในสถานพยาบาลเดียวกัน"
-  * type = $CS_TH_IdentifierType#localProv
-  * system 1..
-  * system obeys ProID-uri
-  * system ^example.label = "Provider ID namespace"
-  * system ^example.valueUri = $ID_LO_Provider
-  * value 1..
-  * value obeys ProID-length
-  * value ^example.label = "เลขที่ผู้ให้บริการ"
-  * value ^example.valueString = "123456789012345"
 * period MS
 * period.start MS
 * period.start ^short = "วันที่เริ่มปฏิบัติงาน"
 * period.end MS
 * period.end ^short = "วันที่สิ้นสุดการปฏิบัติงาน"
 * practitioner only Reference($SD_Practitioner_Base)
-* practitioner MS
+* practitioner 1.. MS
 * organization only Reference($SD_Organization_Provider)
-* organization MS
+* organization 1.. MS
 * code MS
 * code ^short = "รหัสประเภทบุคลากร"
 

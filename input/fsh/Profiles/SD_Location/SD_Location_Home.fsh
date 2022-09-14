@@ -26,7 +26,7 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
     hid 0..1 MS and
     houseNo 0..1 MS
 * identifier[hid] ^short = "รหัสบ้าน"
-* identifier[hid] ^definition = "รหัสบ้านที่กำหนดโดยโปรแกรมเรียงลำดับไม่ซ้ำกัน"
+* identifier[hid] ^definition = "รหัสบ้านที่กำหนดโดยโปรแกรม เรียงลำดับไม่ซ้ำกัน"
 * identifier[hid].type = $CS_TH_IdentifierType#localHouse
 * identifier[hid].system 1..
 * identifier[hid].system obeys HID-uri

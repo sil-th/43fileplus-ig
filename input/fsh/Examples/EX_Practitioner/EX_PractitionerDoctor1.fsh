@@ -16,6 +16,15 @@ Usage: #example
 * identifier[+]
   * use = #secondary
   * type
+    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    * coding[+] = $CS_TH_IdentifierType#localProv "รหัสผู้ให้บริการสุขภาพ ของหน่วยบริการ"
+  * system = $ID_LO_Provider
+  * value = "XXXXXXXX"
+  * period
+    * start = "2018-04-25"
+* identifier[+]
+  * use = #secondary
+  * type
     * coding[0] = $CS_HL7_IdentifierType#MD "Medical License number"
     * coding[+] = $CS_TH_IdentifierType#proDoc "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
   * system = $ID_ThaiDoctor

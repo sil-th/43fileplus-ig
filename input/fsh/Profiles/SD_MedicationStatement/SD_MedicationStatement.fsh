@@ -14,9 +14,7 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
     $EX_TH_MedicationRequestSource named medicationSource 0..* and
     $EX_TH_MedicationRequestNedCriteria named npc 0..* and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
-// * extension[medicationSource] from $VS_Std15_MedicationSource (extensible)
 * extension[medicationSource] ^short = "source"
-// * extension[npc] from $VS_eClaim_MedNedCriteria (extensible)
 * extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
 * extension[approvedNo] ^short = "หมายเลขอนุมัติ"
 * status 1.. MS

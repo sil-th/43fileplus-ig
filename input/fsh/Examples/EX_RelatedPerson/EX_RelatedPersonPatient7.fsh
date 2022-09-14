@@ -19,7 +19,7 @@ Usage: #example
     * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
     * coding[+] = $CS_TH_IdentifierType#localPid "รหัสประจำตัวบุคคลของหน่วยบริการ"
   * system = $ID_LO_PID
-  * value = "65-XXXXX"
+  * value = "123456789"
   * period
     * start = "2018-04-25"
 * identifier[+]

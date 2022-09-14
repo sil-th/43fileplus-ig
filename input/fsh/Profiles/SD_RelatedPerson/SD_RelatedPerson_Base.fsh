@@ -49,7 +49,6 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
   * system ^example.label = "HN namespace"
   * system ^example.valueUri = $ID_LO_HN
   * value 1..
-  * value obeys HN-length
   * value ^example.label = "เลขประจำตัวผู้ป่วย (HN)"
   * value ^example.valueString = "123456"
 * identifier[passportNo] ^short = "เลขที่ passport กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"

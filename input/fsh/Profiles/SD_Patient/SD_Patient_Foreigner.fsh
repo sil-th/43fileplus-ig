@@ -13,13 +13,11 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
 * identifier contains
     workPermit 0..* 
-* identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน"
-* identifier[workPermit] ^comment = "กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
+* identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน (Work Permit)"
 * identifier[workPermit]
   * type = $CS_HL7_IdentifierType#WP
   * system 1..
   * system = $ID_ThaiWorkPermit (exactly)
   * value 1..
-  * value obeys WP-length
   * value ^example.label = "เลขที่ใบอนุญาตทำงาน"
   * value ^example.valueString = "1234567890123"
