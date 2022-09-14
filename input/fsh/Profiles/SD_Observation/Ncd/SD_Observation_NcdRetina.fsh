@@ -14,5 +14,10 @@ Description: "การตรวจจอประสาทตา"
   * code 1..1 MS
   * code = #134395001 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_NcdRetinaExam (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_NcdRetinaExam (exactly)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    thcc 0..1 MS
+* valueCodeableConcept.coding[thcc] from $VS_THCC_NcdRetinaExam (extensible)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_NcdRetinaExam (exactly)

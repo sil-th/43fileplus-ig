@@ -26,5 +26,10 @@ Description: "สภาวะการตั้งครรภ์และกา
 * effective[x] ^short = "วัน-เวลาที่ตรวจ/ประเมินผล"
 * value[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_DeathPregnancy (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_DeathPregnancy (exactly)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    thcc 0..1 MS
+* valueCodeableConcept.coding[thcc] from $VS_THCC_DeathPregnancy (extensible)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_DeathPregnancy (exactly)

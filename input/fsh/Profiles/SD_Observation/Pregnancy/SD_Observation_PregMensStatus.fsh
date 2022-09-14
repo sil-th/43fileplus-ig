@@ -14,6 +14,10 @@ Description: "ภาวะประจำเดือน"
   * code 1..1 MS
   * code = #3146-8 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_PCU_PostnatalMens (extensible)
-* valueCodeableConcept.coding.system = $CS_PCU_PostnatalMens (exactly)
-
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    pcu 0..1 MS
+* valueCodeableConcept.coding[pcu] from $VS_PCU_PostnatalMens (extensible)
+* valueCodeableConcept.coding[pcu].system = $CS_PCU_PostnatalMens (exactly)

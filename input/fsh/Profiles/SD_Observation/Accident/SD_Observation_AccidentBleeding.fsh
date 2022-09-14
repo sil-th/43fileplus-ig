@@ -14,5 +14,10 @@ Description: "การห้ามเลือด"
   * code 1..1 MS
   * code = #stop-bleed (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_AccidentBleeding (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_AccidentBleeding (exactly)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    thcc 0..1 MS
+* valueCodeableConcept.coding[thcc] from $VS_THCC_AccidentBleeding (extensible)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_AccidentBleeding (exactly)

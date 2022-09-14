@@ -14,5 +14,10 @@ Description: "สถานที่เกิดอุบัติเหตุ"
   * code 1..1 MS
   * code = #11376-1 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_AccidentLocation (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_AccidentLocation (exactly)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    thcc 0..1 MS
+* valueCodeableConcept.coding[thcc] from $VS_THCC_AccidentLocation (extensible)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_AccidentLocation (exactly)

@@ -14,6 +14,10 @@ Description: "รหัสประเภทผู้บาดเจ็บ"
   * code 1..1 MS
   * code = #injury (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_AccidentPatientType (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_AccidentPatientType (exactly)
-
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    thcc 0..1 MS
+* valueCodeableConcept.coding[thcc] from $VS_THCC_AccidentPatientType (extensible)
+* valueCodeableConcept.coding[thcc].system = $CS_THCC_AccidentPatientType (exactly)
