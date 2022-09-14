@@ -14,19 +14,22 @@ Description: "การสั่งยา"
 * status 1.. MS
 * intent 1.. MS
 * category MS
-* category ^slicing.discriminator[0].type = #value
-* category ^slicing.discriminator[=].path = "coding.code"
-* category ^slicing.discriminator[+].type = #value
-* category ^slicing.discriminator[=].path = "coding.system"
+* category ^slicing.discriminator[0].type = #pattern
+* category ^slicing.discriminator[=].path = "coding"
 * category ^slicing.rules = #open
-* category contains thcc 1..1 MS
-* category[thcc] from $VS_eClaim_MedicationCategory (extensible)
-* category[thcc].coding.system 1..
-* category[thcc].coding.code 1..
+* category contains eclaim 1..1 MS
+* category[eclaim] from $VS_eClaim_MedicationCategory (extensible)
+* category[eclaim].coding.system 1..
+* category[eclaim].coding.system = $CS_eClaim_MedicationCategory
+* category[eclaim].coding.code 1..
 * medication[x] 1.. MS
-* medicationCodeableConcept MS
-* medicationCodeableConcept.coding ^slicing.discriminator[0].type = #pattern
-* medicationCodeableConcept.coding ^slicing.discriminator[=].path = "$this"
+* medication[x] ^slicing.discriminator.type = #type
+* medication[x] ^slicing.discriminator.path = "$this"
+* medication[x] ^slicing.rules = #open
+* medicationCodeableConcept 0..1 MS
+* medicationCodeableConcept only CodeableConcept
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains
     24-digit 0..1 MS and
@@ -42,12 +45,10 @@ Description: "การสั่งยา"
 * medicationCodeableConcept.coding[tmt].code 1..
 * medicationCodeableConcept.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * medicationCodeableConcept.coding[local].system 1..
-* medicationCodeableConcept.coding[local].system obeys Drug-uri
-* medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
-* medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
+* medicationCodeableConcept.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * medicationCodeableConcept.coding[local].code 1..
+* medicationReference 0..1 MS
 * medicationReference only Reference($SD_Medication_Base)
-* medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * encounter only Reference($SD_Encounter_Base)

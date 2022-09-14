@@ -10,8 +10,8 @@ Description: "ยา"
 * extension contains
     $EX_TH_MedicationImageUrl named imageUrl 0..*
 * code 1.. MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     24-digit 0..1 MS and
@@ -27,9 +27,7 @@ Description: "ยา"
 * code.coding[tmt].code 1..
 * code.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * code.coding[local].system 1..
-* code.coding[local].system obeys Drug-uri
-* code.coding[local].system ^example.label = "Drug namespace"
-* code.coding[local].system ^example.valueUri = $ID_LO_Drug
+* code.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * code.coding[local].code 1..
 * form MS
 * form.coding ^slicing.discriminator.type = #value

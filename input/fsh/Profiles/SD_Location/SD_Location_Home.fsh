@@ -27,7 +27,7 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
     houseNo 0..1 MS
 * identifier[hid] ^short = "รหัสบ้าน"
 * identifier[hid] ^definition = "รหัสบ้านที่กำหนดโดยโปรแกรมเรียงลำดับไม่ซ้ำกัน"
-* identifier[hid].type = $CS_TH_IdentifierType#houseNo
+* identifier[hid].type = $CS_TH_IdentifierType#localHouse
 * identifier[hid].system 1..
 * identifier[hid].system obeys HID-uri
 * identifier[hid].system ^example.label = "House ID namespace"
@@ -35,7 +35,7 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * identifier[hid].value 1..
 * identifier[houseNo] ^short = "รหัสบ้านตามกรมการปกครอง"
 * identifier[houseNo] ^definition = "เลขประจำบ้าน ตามกรมการปกครองกำหนดเป็นรหัสประจำบ้าน"
-* identifier[houseNo].type = $CS_TH_IdentifierType#localHouse
+* identifier[houseNo].type = $CS_TH_IdentifierType#houseNo
 * identifier[houseNo].system 1..
 * identifier[houseNo].system = $ID_DopaHouseNo (exactly)
 * identifier[houseNo].value 1..

@@ -30,13 +30,13 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * category.coding[thcc].system 1..
 * category.coding[thcc].code 1..
 * medication[x] 1.. MS
-* medication[x] ^slicing.discriminator[0].type = #type
-* medication[x] ^slicing.discriminator[=].path = "$this"
+* medication[x] ^slicing.discriminator.type = #type
+* medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
+* medicationCodeableConcept 0..1 MS
 * medicationCodeableConcept only CodeableConcept
-* medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept.coding ^slicing.discriminator[0].type = #value
-* medicationCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains
     24-digit 0..1 MS and
@@ -52,12 +52,10 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * medicationCodeableConcept.coding[tmt].code 1..
 * medicationCodeableConcept.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * medicationCodeableConcept.coding[local].system 1..
-* medicationCodeableConcept.coding[local].system obeys Drug-uri
-* medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
-* medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
+* medicationCodeableConcept.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * medicationCodeableConcept.coding[local].code 1..
+* medicationReference 0..1 MS
 * medicationReference only Reference($SD_Medication_Base)
-* medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * effective[x] MS

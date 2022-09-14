@@ -31,9 +31,7 @@ Description: "การมารับบริการฉีดวัคซี
 * vaccineCode.coding[tmt].code 1..
 * vaccineCode.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * vaccineCode.coding[local].system 1..
-* vaccineCode.coding[local].system obeys Local-drug-uri
-* vaccineCode.coding[local].system ^example.label = "Drug namespace"
-* vaccineCode.coding[local].system ^example.valueUri = $ID_LO_Drug
+* vaccineCode.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * vaccineCode.coding[local].code 1..
 * patient only Reference($SD_Patient_Base)
 * patient MS

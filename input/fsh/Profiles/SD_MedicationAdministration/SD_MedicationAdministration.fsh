@@ -12,10 +12,10 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
+* medicationCodeableConcept 0..1 MS
 * medicationCodeableConcept only CodeableConcept
-* medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
-* medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains
     24-digit 0..1 MS and
@@ -31,15 +31,12 @@ Description: "การบริหารยาให้ผู้ป่วย"
 * medicationCodeableConcept.coding[tmt].code 1..
 * medicationCodeableConcept.coding[local] ^short = "รหัสยาของสถานพยาบาล"
 * medicationCodeableConcept.coding[local].system 1..
-* medicationCodeableConcept.coding[local].system obeys Drug-uri
-* medicationCodeableConcept.coding[local].system ^example.label = "Drug namespace"
-* medicationCodeableConcept.coding[local].system ^example.valueUri = $ID_LO_Drug
+* medicationCodeableConcept.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * medicationCodeableConcept.coding[local].code 1..
+* medicationReference 0..1 MS
 * medicationReference only Reference($SD_Medication_Base)
-* medicationReference ^sliceName = "medicationReference"
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * context only Reference($SD_Encounter_Base)
 * context MS
 * effectivePeriod MS
-
