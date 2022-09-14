@@ -89,8 +89,8 @@ Title: "ตัวอย่าง Observation: วันแรกของกา�
 Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย IPD"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
-  * text = "Laboratory"
+* category = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
 * code
   * coding[code43Plus] = $LNC#8665-2 "Last menstrual period start date"
   * text = "Last menstrual period start date"

@@ -7,7 +7,11 @@ Description: "เส้นรอบศีรษะ (Head circumference)"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* code.coding[code43Plus] = $LNC#9843-4 (exactly)
+* code.coding[code43Plus]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #9843-4 (exactly)
 * value[x] only Quantity
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value 1..

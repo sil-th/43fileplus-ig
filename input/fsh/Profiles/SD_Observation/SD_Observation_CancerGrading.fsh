@@ -8,14 +8,18 @@ Description: "ผลการบันทึกระดับความรุ
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * category MS
-* category.coding = $CS_HL7_ObservationCat#procedure (exactly)
+* category.coding = $CS_HL7_ObservationCat#procedure
 * code MS
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 0..1 MS
-* code.coding[loinc] = $LNC#33732-9 (exactly)
+* code.coding[loinc]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #33732-9 (exactly)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value

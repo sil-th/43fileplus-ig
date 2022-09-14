@@ -14,11 +14,11 @@ Description: "การสั่งยา"
 * status 1.. MS
 * intent 1.. MS
 * category MS
-* category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "coding"
+* category ^slicing.discriminator[0].type = #value
+* category ^slicing.discriminator[=].path = "coding.system"
 * category ^slicing.rules = #open
-* category contains eclaim 1..1 MS
-* category[eclaim] from $VS_eClaim_MedicationCategory (extensible)
+* category contains eclaim 0..1 MS
+* category[eclaim].coding from $VS_eClaim_MedicationCategory (extensible)
 * category[eclaim].coding.system 1..
 * category[eclaim].coding.system = $CS_eClaim_MedicationCategory
 * category[eclaim].coding.code 1..

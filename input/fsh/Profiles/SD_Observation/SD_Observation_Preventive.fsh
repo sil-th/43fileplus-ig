@@ -8,12 +8,13 @@ Description: "บริการส่งเสริมสุขภาพป้
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * code MS
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     code43Plus 1..1 MS
 * code.coding[code43Plus] from $VS_THCC_SpecialPPService (extensible)
+* code.coding[code43Plus].system = $CS_THCC_SpecialPPService (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base)
 * effective[x] MS

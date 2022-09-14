@@ -8,14 +8,18 @@ Description: "การบันทึกสถานที่ตาย"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * category MS
-* category.coding = $CS_HL7_ObservationCat#exam (exactly)
+* category.coding = $CS_HL7_ObservationCat#exam
 * code MS
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 0..1 MS
-* code.coding[loinc] = $LNC#58332-8 (exactly)
+* code.coding[loinc]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #58332-8 (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base)
 * effective[x] MS

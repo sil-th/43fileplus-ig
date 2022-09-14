@@ -7,8 +7,12 @@ Description: "ผลการทดสอบการตั้งครรภ์
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* category[hl7].coding = $CS_HL7_ObservationCat#laboratory (exactly)
-* code.coding[code43Plus] = $LNC#2106-3 (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#laboratory
+* code.coding[code43Plus]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #2106-3 (exactly)
 * device MS
   * extension contains
     $EX_TH_ObservationDeviceAmount named deviceAmount 0..*

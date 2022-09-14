@@ -7,8 +7,12 @@ Description: "การประเมินสภาพทารกแรกเ
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* category[hl7].coding = $CS_HL7_ObservationCat#survey (exactly)
-* code.coding[code43Plus] = $LNC#9274-2 (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#survey
+* code.coding[code43Plus]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #9274-2 (exactly)
 * component MS
 * component ^slicing.discriminator[0].type = #pattern
 * component ^slicing.discriminator[=].path = "code"
@@ -28,7 +32,7 @@ Description: "การประเมินสภาพทารกแรกเ
 * component[reflexIrritability].code = $LNC#32414-5
 * component[reflexIrritability].value[x] 1..
 * component[reflexIrritability].value[x] only integer
-* component[muscleTone].code = $LNC#32413-7 (exactly)
+* component[muscleTone].code = $LNC#32413-7
 * component[muscleTone].value[x] 1..
 * component[muscleTone].value[x] only integer
 * component[respiratoryEffort].code = $LNC#32415-2

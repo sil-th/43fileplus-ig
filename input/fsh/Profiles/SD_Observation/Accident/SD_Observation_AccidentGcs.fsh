@@ -7,8 +7,12 @@ Description: "Glasgow coma score"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* category[hl7].coding = $CS_HL7_ObservationCat#survey (exactly)
-* code.coding[code43Plus] = $LNC#9269-2 (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#survey
+* code.coding[code43Plus]
+  * system 1..1 MS
+  * system = $LNC (exactly)
+  * code 1..1 MS
+  * code = #9269-2 (exactly)
 * value[x] only Quantity
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value 1..
@@ -26,16 +30,15 @@ Description: "Glasgow coma score"
     eye 0..1 MS and
     verbal 0..1 MS and
     motor 0..1 MS
-* component[eye].code = $LNC#9267-6 (exactly)
+* component[eye].code = $LNC#9267-6
 * component[eye].value[x] only Quantity
 * component[eye].valueQuantity.system = $UCUM (exactly)
 * component[eye].valueQuantity.code = #{score} (exactly)
-* component[verbal].code = $LNC#9270-0  (exactly)
+* component[verbal].code = $LNC#9270-0
 * component[verbal].value[x] only Quantity
 * component[verbal].valueQuantity.system = $UCUM (exactly)
 * component[verbal].valueQuantity.code = #{score} (exactly)
-* component[motor].code = $LNC#9268-4 (exactly)
-* component[motor].code.coding.code = #9268-4 (exactly)
+* component[motor].code = $LNC#9268-4
 * component[motor].value[x] only Quantity
 * component[motor].valueQuantity.system = $UCUM (exactly)
 * component[motor].valueQuantity.code = #{score} (exactly)
