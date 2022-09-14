@@ -475,8 +475,8 @@ Title: "ตัวอย่าง Observation: ผล BMI (คำนวณจา�
 Description: "ผล BMI (คำนวณจากอายุครรภ์)"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
+  * text = "Vital Signs"
 * code
   * coding[code43Plus] = $LNC#39156-5 "Body mass index (BMI) [Ratio]"
   * text = "Body mass index (BMI) [Ratio]"

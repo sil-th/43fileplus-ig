@@ -12,8 +12,8 @@ Description: "การทำหัตถการหรือการรัก
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     snomed 0..1 and
@@ -27,9 +27,7 @@ Description: "การทำหัตถการหรือการรัก
 * code.coding[icd10tm] ^short = "รหัสหัตถการมาตรฐานจาก ICD-10TM"
 * code.coding[icd10tm].system = $CS_TH_ICD10TM (exactly)
 * code.coding[local] ^short = "รหัส local code ของสถานพยาบาล"
-* code.coding[local].system obeys Local-procedure-uri
-* code.coding[local].system ^example.label = "Procedure namespace"
-* code.coding[local].system ^example.valueUri = $ID_LO_Procedure
+* code.coding[local].system = $CS_TH_LocalProcedureCode (exactly)
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base or $SD_Group_Village)
 * performed[x] MS

@@ -1,5 +1,5 @@
 Instance: organization-nhso
-InstanceOf: Organization
+InstanceOf: $SD_Organization_Base
 Title: "ตัวอย่าง Organization: สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
 Description: "สำนักงานหลักประกันสุขภาพแห่งชาติ (สปสช.)"
 * active = true
@@ -28,7 +28,7 @@ Description: "สำนักงานหลักประกันสุขภ
 
 
 Instance: organization-sso
-InstanceOf: Organization
+InstanceOf: $SD_Organization_Base
 Title: "ตัวอย่าง Organization: สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
 Description: "สำนักงานประกันสังคม (สปส.) กระทรวงแรงงาน"
 Usage: #example

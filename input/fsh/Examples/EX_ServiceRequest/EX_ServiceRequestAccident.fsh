@@ -1,6 +1,6 @@
 // Refer Out
 Instance: servicerequest-refer-out-accident1
-InstanceOf: ServiceRequest
+InstanceOf: $SD_ServiceRequest_Refer
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Description: "การส่งต่อผู้ป่วยหลังจากรับบริการแผนกฉุกเฉิน"
 Usage: #example

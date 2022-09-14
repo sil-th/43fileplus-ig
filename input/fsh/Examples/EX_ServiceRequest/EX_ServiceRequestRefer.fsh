@@ -1,5 +1,5 @@
 Instance: servicerequest-refer-main
-InstanceOf: ServiceRequest
+InstanceOf: $SD_ServiceRequest_Refer
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยระหว่างสถานพยาบาล โดยย่อ"
 Description: "แสดงการส่งต่อผู้ป่วยระหว่างสถานพยาบาล โดยย่อ"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
 
 
 Instance: servicerequest-refer-main-full
-InstanceOf: ServiceRequest
+InstanceOf: $SD_ServiceRequest_Refer
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
 Description: "แสดงการส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
 Usage: #example
@@ -79,7 +79,7 @@ Usage: #example
     * valueCodeableConcept = $CS_eClaim_ReferPriorityCode#1 "ต้องการรักษาเป็นการด่วน"
 * code
   * coding[0] = $CS_43Plus_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
-  * coding[+] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและรักษา"
+  * coding[+] = $CS_Std15_ReferReason#1 "เพื่อการวินิจฉัยและการรักษา"
   * coding[+] = $CS_eClaim_ReferReason#1100 "วินิจฉัย และรักษา"
   * text = "สิ่งที่ต้องการให้สถานพยาบาลปลายทางดำเนินการ (ข้อความ)"
 * quantityQuantity = 1 '{count}' "Count"

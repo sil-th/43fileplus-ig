@@ -12,17 +12,19 @@ Description: "วิธีการคลอด"
 * code.coding[thccLabor] from $VS_THCC_LaborProcedure (extensible)
 * code.coding[thccLabor] ^short = "รหัสมาตรฐาน THCC"
 * code.coding[thccLabor].system 1..
+* code.coding[thccLabor].system = $CS_THCC_LaborProcedure (exactly)
 * code.coding[thccLabor].code 1..
 * performer MS
 * performer.function MS
 * performer.function from $VS_THCC_LaborPerformerRole (extensible)
 * location.extension contains EX_TH_ProcedureLaborLocation named laborLocation 0..1 MS
-* outcome.coding ^slicing.discriminator[0].type = #pattern
-* outcome.coding ^slicing.discriminator[=].path = "$this"
+* outcome.coding ^slicing.discriminator[0].type = #value
+* outcome.coding ^slicing.discriminator[=].path = "system"
 * outcome.coding ^slicing.rules = #open
 * outcome.coding contains
     thcc 0..1 MS
 * outcome.coding[thcc] from $VS_THCC_PregnancyOutcome (extensible)
 * outcome.coding[thcc] ^short = "รหัสมาตรฐาน THCC"
+* outcome.coding[thcc].system = $CS_THCC_PregnancyOutcome (exactly)
 * outcome.coding[thcc].system 1..
 * outcome.coding[thcc].code 1..

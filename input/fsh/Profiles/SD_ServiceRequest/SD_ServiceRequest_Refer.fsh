@@ -48,18 +48,25 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * status MS
 * intent MS
 * category MS
-* category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.discriminator[0].type = #value
+* category ^slicing.discriminator[=].path = "coding.system"
 * category ^slicing.rules = #open
 * category contains
     thcc 0..1 MS and
     43plus 0..1 MS and
     std15 0..1 MS and
-    eclaim 0..1 MS
+    eclaim 0..1 MS and
+    snomed 0..1
 * category[thcc] from $VS_THCC_ReferReason (extensible)
+* category[thcc].coding.system = $CS_THCC_ReferReason (exactly)
 * category[43plus] from $VS_43Plus_ReferReason (extensible)
+* category[43plus].coding.system = $CS_43Plus_ReferReason (exactly)
 * category[std15] from $VS_Std15_ReferReason (extensible)
+* category[std15].coding.system = $CS_Std15_ReferReason (exactly)
 * category[eclaim] from $VS_eClaim_ReferReason (extensible)
+* category[eclaim].coding.system = $CS_eClaim_ReferReason (exactly)
+* category[snomed] from $VS_SNOMED_All (extensible)
+* category[snomed].coding.system = $SCT (exactly)
 * priority
   * extension contains
     $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS and
@@ -73,10 +80,11 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * requester MS
 * requester only Reference($SD_Practitioner_Base)
 * reasonCode MS
-* reasonCode ^slicing.discriminator[0].type = #pattern
-* reasonCode ^slicing.discriminator[=].path = "$this"
+* reasonCode ^slicing.discriminator[0].type = #value
+* reasonCode ^slicing.discriminator[=].path = "coding.system"
 * reasonCode ^slicing.rules = #open
 * reasonCode contains
     specialDisease 0..1 MS
 * reasonCode[specialDisease] from $VS_43File_ReferSpecialDisease (extensible)
 * reasonCode[specialDisease] ^short = "การส่งต่อผู้ป่วยโรคเฉพาะทาง"
+* reasonCode[specialDisease].coding.system = $CS_43File_ReferSpecialDisease (exactly)

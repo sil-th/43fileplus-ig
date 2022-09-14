@@ -32,8 +32,6 @@ Alias: $EX_TH_PatientPidRemoveReason = https://fhir-ig.sil-th.org/43filesplus/Ex
 
 
 // Encounter
-Alias: $EX_TH_EncounterDeathLocType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-death-location-type
-Alias: $EX_TH_EncounterDeathPregnancy = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-death-pregnancy
 Alias: $EX_TH_EncounterPatientLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-patient-location-type
 Alias: $EX_TH_EncounterServiceHour = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-service-hour
 Alias: $EX_TH_EncounterServiceLocationType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-encounter-service-location-type
@@ -79,8 +77,6 @@ Alias: $EX_TH_AllergyIntoleranceCertainy = https://fhir-ig.sil-th.org/43filesplu
 Alias: $EX_TH_AllergyIntoleranceSeverity = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-allergyintolerance-allergy-severity
 Alias: $EX_TH_AllergyIntoleranceAssertType = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-allergyintolerance-allergy-assert-type
 Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-allergyintolerance-allergy-assert-org
-
-// Alias: $EX_TH_ICFCategory = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-icf-category
 
 // ServiceRequest
 Alias: $EX_TH_ServiceRequestReferPatientCatagory = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-servicerequest-refer-patient-category

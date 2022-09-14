@@ -1,6 +1,6 @@
 // Refer In
 Instance: servicerequest-refer-in-opd1
-InstanceOf: ServiceRequest
+InstanceOf: $SD_ServiceRequest_Refer
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยมารับบริการ OPD"
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example
@@ -14,7 +14,7 @@ Usage: #example
 
 // Refer Out
 Instance: servicerequest-refer-out-opd1
-InstanceOf: ServiceRequest
+InstanceOf: $SD_ServiceRequest_Refer
 Title: "ตัวอย่าง ServiceRequest: การส่งต่อผู้ป่วยมารับบริการ OPD"
 Description: "แสดงการส่งต่อผู้ป่วยมารับบริการ OPD"
 Usage: #example

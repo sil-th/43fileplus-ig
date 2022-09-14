@@ -1,5 +1,5 @@
 Instance: organization-medical-council
-InstanceOf: Organization
+InstanceOf: $SD_Organization_Base
 Title: "ตัวอย่าง Organization: แพทยสภา"
 Description: "แพทยสภา"
 * active = true

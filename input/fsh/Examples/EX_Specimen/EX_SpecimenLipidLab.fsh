@@ -1,5 +1,5 @@
 Instance: specimen-lab-lipid
-InstanceOf: Specimen
+InstanceOf: $SD_Specimen_Base
 Title: "ตัวอย่าง Specimen: สิ่งส่งตรวจ Lipid Profile"
 Description: "สิ่งส่งตรวจ Lipid Profile"
 Usage: #example

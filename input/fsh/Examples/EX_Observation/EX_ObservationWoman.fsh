@@ -12,7 +12,7 @@ Usage: #example
 * subject = Reference(Patient/patient-patient4) "นาง สมควร ใจดี"
 * effectiveDateTime = "2022-03-11T12:30:02+07:00"
 * valueCodeableConcept
-  * coding[0] = $CS_THCC_Contraceptive#9 "ไม่คุมกำเนิด"
+  * coding[0] = $CS_THCC_ContraceptiveMethod#9 "ไม่คุมกำเนิด"
   * text = "ไม่คุมกำเนิด"
 
 Instance: observation-woman-no-contraceptive-reason1

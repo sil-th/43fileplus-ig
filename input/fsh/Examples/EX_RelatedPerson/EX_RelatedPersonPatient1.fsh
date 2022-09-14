@@ -1,5 +1,5 @@
 Instance: relatedperson-patient1-mother
-InstanceOf: RelatedPerson
+InstanceOf: $SD_RelatedPerson_Base
 Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 1"
 Description: "มารดาของผู้ป่วยรายที่ 1"
 Usage: #example
@@ -16,6 +16,9 @@ Usage: #example
 * patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#MTH "mother"
 * name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
   * text = "นาง มารดา ใจดี"
   * family = "ใจดี"
   * given = "มารดา"
@@ -25,7 +28,7 @@ Usage: #example
   * value = "088-8888888"
 
 Instance: relatedperson-patient1-father
-InstanceOf: RelatedPerson
+InstanceOf: $SD_RelatedPerson_Base
 Title: "ตัวอย่าง RelatedPerson: บิดาของผู้ป่วยรายที่ 1"
 Description: "บิดาของผู้ป่วยรายที่ 1"
 Usage: #example
@@ -42,6 +45,9 @@ Usage: #example
 * patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#FTH "father"
 * name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
   * text = "นาย บิดา ใจดี"
   * family = "ใจดี"
   * given = "บิดา"
@@ -51,7 +57,7 @@ Usage: #example
   * value = "088-8888888"
 
 Instance: relatedperson-patient1-spouse
-InstanceOf: RelatedPerson
+InstanceOf: $SD_RelatedPerson_Base
 Title: "ตัวอย่าง RelatedPerson: คู่สมรสของผู้ป่วยรายที่ 1"
 Description: "คู่สมรสของผู้ป่วยรายที่ 1"
 Usage: #example
@@ -68,6 +74,9 @@ Usage: #example
 * patient = Reference(Patient/patient-patient1)
 * relationship = $CS_HL7_RelationshipType#SPS "spouse"
 * name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
   * text = "นาง คู่สมรส ใจดี"
   * family = "ใจดี"
   * given = "คู่สมรส"

@@ -57,14 +57,6 @@ Usage: #example
     * start = "2018-04-25"
     * end = "2022-04-25"
 * identifier[+]
-  * use = #usual
-  * type = $CS_HL7_IdentifierType#WP "Work Permit"
-  * system = $ID_ThaiWorkPermit
-  * value = "XXXXXXXXXXX"
-  * period
-    * start = "2018-04-25"
-    * end = "2022-04-25"
-* identifier[+]
   * use = #secondary
   * type
     * coding[0] = $CS_HL7_IdentifierType#PN "Person number"

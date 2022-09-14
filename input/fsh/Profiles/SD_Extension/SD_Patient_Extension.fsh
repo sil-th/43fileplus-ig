@@ -7,6 +7,8 @@ Description: "สัญชาติของผู้ป่วย"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* ^context.type = #element
+* ^context.expression = "Patient"
 * extension[code].valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
 * extension[code].valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
 * extension[code].valueCodeableConcept.coding ^slicing.rules = #open
@@ -32,6 +34,8 @@ Description: "ความเชื่อทางศาสนาของผู
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* ^context.type = #element
+* ^context.expression = "Patient"
 * valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
 * valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open
@@ -59,6 +63,8 @@ Description: "ประเภทความพิการ"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
+* ^context.type = #element
+* ^context.expression = "Patient"
 * valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
 * valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open

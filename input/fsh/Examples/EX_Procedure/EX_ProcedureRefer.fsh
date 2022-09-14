@@ -1,5 +1,5 @@
 Instance: procedure-refer-main
-InstanceOf: Procedure
+InstanceOf: $SD_Procedure_Refer
 Title: "ตัวอย่าง Procedure: การส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
 Description: "การส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
 Usage: #example
@@ -11,7 +11,7 @@ Usage: #example
 
 
 Instance: procedure-refer-breathing
-InstanceOf: Procedure
+InstanceOf: $SD_Procedure_Refer
 Title: "ตัวอย่าง Procedure: การให้การดูแลหรือปฐมพยาบาลผู้ป่วยขณะส่งต่อผู้ป่วย - Breathing"
 Description: "การให้การดูแลหรือปฐมพยาบาลผู้ป่วยขณะส่งต่อผู้ป่วย - Breathing"
 Usage: #example
@@ -24,7 +24,7 @@ Usage: #example
 
 
 Instance: procedure-refer-demo1
-InstanceOf: Procedure
+InstanceOf: $SD_Procedure_Refer
 Title: "ตัวอย่าง Procedure: การได้รับการทำหัตถการและผ่าตัด"
 Description: "การได้รับการทำหัตถการและผ่าตัด"
 Usage: #example

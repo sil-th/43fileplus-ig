@@ -157,10 +157,12 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * address ^slicing.rules = #open
   * extension contains
     $EX_TH_AddressDopaCode named addressCode 0..1 MS and
+    $EX_HL7_Geolocation named geolocation 0..1 MS and
     $EX_TH_AddressStructuredLine named structuredLine 0..1 MS and
     $EX_TH_AddressHomeReference named locationRef 0..1 MS and
     $EX_TH_AddressHouseType named houseType 0..1 MS
   * extension[addressCode] ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
+  * extension[geolocation] ^short = "พิกัดละติจูด ลองจิจูด"
   * extension[structuredLine] ^short = "รายละเอียดที่อยู่"
   * extension[locationRef] ^short = "อ้่างอิงไปยัง Location resource ที่เก็บข้อมูลบ้าน"
   * extension[houseType] ^short = "ลักษณะของที่อยู่"

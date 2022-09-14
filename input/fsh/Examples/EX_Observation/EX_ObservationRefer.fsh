@@ -1,7 +1,7 @@
 Instance: observation-refer-demo1
 InstanceOf: Observation
 Title: "ตัวอย่าง Observation: ตัวอย่างการตรวจประเมินทางคลินิก ในแฟ้ม CLINICAL_REFER"
-Description: " ตัวอย่างการตรวจประเมินทางคลินิก ในแฟ้ม CLINICAL_REFER"
+Description: "ตัวอย่างการตรวจประเมินทางคลินิก ในแฟ้ม CLINICAL_REFER"
 Usage: #example
 * status = #final
 * category = $CS_HL7_ObservationCat#exam "Exam"

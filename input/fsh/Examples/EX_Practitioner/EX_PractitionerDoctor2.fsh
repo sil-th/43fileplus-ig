@@ -1,5 +1,5 @@
 Instance: practitioner-doctor2
-InstanceOf: Practitioner
+InstanceOf: $SD_Practitioner_Base
 Title: "ตัวอย่าง Practitioner: แพทย์ รายที่ 2"
 Description: "ข้อมูลแพทย์รายที่ 2"
 Usage: #example
@@ -22,6 +22,9 @@ Usage: #example
   * value = "34222"
 * active = true
 * name[0]
+  * extension
+    * url = $EX_HL7_Language
+    * valueCode = #th
   * text = "พญ. สมศรี จริงใจ"
   * family = "จริงใจ"
   * given = "สมศรี"

@@ -32,7 +32,7 @@ Description: "รวมผลการตรวจสัญญาณชีพ"
 * hasMember[bodyTemp] only Reference($SD_Observation_VitalBt)
 * hasMember[bloodPressure] only Reference($SD_Observation_VitalBp)
 * hasMember[heartRate] only Reference($SD_Observation_VitalHr)
-* hasMember[respRate] only Reference($SD_Observation_VitalHC)
+* hasMember[respRate] only Reference($SD_Observation_VitalRr)
 * hasMember[headCir] only Reference($SD_Observation_VitalHC)
 * hasMember[chestCir] only Reference($SD_Observation_VitalCC)
 * hasMember[waistCir] only Reference($SD_Observation_VitalWc)

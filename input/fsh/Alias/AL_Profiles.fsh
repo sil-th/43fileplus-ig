@@ -162,7 +162,6 @@ Alias: $SD_Observation_PregMensStatus = https://fhir-ig.sil-th.org/43filesplus/S
 Alias: $SD_Observation_PregNausea = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-nausea
 Alias: $SD_Observation_PregParity = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-parity
 Alias: $SD_Observation_PregPerineum = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-perineum
-// Alias: $SD_Observation_PregPostnatal = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-post-natal
 Alias: $SD_Observation_PregPostnatalStatus = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-postnatal-status
 Alias: $SD_Observation_PregPregTest = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-preg-test
 Alias: $SD_Observation_PregStillbirths = https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-preg-stillbirths

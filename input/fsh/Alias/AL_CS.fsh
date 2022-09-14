@@ -150,7 +150,6 @@ Alias: $CS_THCC_NcdFootExam = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-foo
 Alias: $CS_THCC_NcdRetinaExam = http://terms.sil-th.org/CodeSystem/cs-thcc-ncd-retina-exam
 
 // Woman Health
-Alias: $CS_THCC_Contraceptive = https://terms.sil-th.org/CodeSystem/cs-thcc-contraceptive
 Alias: $CS_THCC_NoContraceptive = https://terms.sil-th.org/CodeSystem/cs-thcc-no-contraceptive
 
 // Pregnancy
@@ -249,3 +248,4 @@ Alias: $CS_TH_IdentifierType = http://terms.sil-th.org/CodeSystem/cs-th-identifi
 
 // Local codes
 Alias: $CS_TH_LocalDrugCode = http://terms.sil-th.org/CodeSystem/cs-th-local-drug-code
+Alias: $CS_TH_LocalProcedureCode = http://terms.sil-th.org/CodeSystem/cs-th-local-procedure-code

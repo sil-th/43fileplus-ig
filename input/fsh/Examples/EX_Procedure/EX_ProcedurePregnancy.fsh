@@ -1,5 +1,5 @@
 Instance: procedure-labor1
-InstanceOf: Procedure
+InstanceOf: $SD_Procedure_Labor
 Title: "ตัวอย่าง Procedure: วิธีการคลอด"
 Description: "วิธีการคลอด"
 Usage: #example

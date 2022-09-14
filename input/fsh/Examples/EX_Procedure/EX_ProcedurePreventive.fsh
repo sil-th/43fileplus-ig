@@ -1,5 +1,5 @@
 Instance: procedure-community-activity1
-InstanceOf: Procedure
+InstanceOf: $SD_Procedure_Preventive
 Title: "ตัวอย่าง Procedure: กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 Description: "กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 Usage: #example

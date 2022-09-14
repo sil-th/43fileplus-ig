@@ -11,6 +11,6 @@ Description: "กิจกรรมในชุมชนที่อยู่ใ
     thccPrev 0..1 MS
 * code.coding[thccPrev] from $VS_THCC_CommunityActivity (extensible)
 * code.coding[thccPrev] ^short = "รหัสมาตรฐาน THCC"
+* code.coding[thccPrev].system = $CS_THCC_CommunityActivity (exactly)
 * code.coding[thccPrev].system 1..
 * code.coding[thccPrev].code 1..
-* subject only Reference($SD_Patient_Base or $SD_Group_Village)

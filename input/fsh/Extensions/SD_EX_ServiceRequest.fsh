@@ -10,7 +10,7 @@ Description: "รหัสประเภทผู้ป่วยสำหรั
 * ^date = "2022-08-23T07:06:13+11:00"
 * ^publisher = "SIL-TH"
 * ^context.type = #element
-* ^context.expression = "ServiceReques"
+* ^context.expression = "ServiceRequest"
 * . 0..*
 * . ^short = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"
 * . ^definition = "รหัสประเภทผู้ป่วยสำหรับการส่งต่อ"

@@ -1,5 +1,5 @@
 Instance: patient-patient5
-InstanceOf: Patient
+InstanceOf: $SD_Patient_Base
 Title: "ตัวอย่าง Patient: ผู้ป่วยรายที่ 5 เด็กหญิงไทย"
 Description: "แสดงการบันทึกข้อมูลอย่างย่อ"
 Usage: #example

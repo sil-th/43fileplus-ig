@@ -9,8 +9,8 @@ Description: "ข้อมูลสิ่งส่งตรวจ"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * type MS
 * type ^short = "ประเภทสิ่งส่งตรวจ"
-* type.coding ^slicing.discriminator.type = #pattern
-* type.coding ^slicing.discriminator.path = "$this"
+* type.coding ^slicing.discriminator.type = #value
+* type.coding ^slicing.discriminator.path = "system"
 * type.coding ^slicing.rules = #open
 * type.coding contains snomed 0..1
 * type.coding[snomed].system 1..

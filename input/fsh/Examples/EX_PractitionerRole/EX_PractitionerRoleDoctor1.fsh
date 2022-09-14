@@ -1,5 +1,5 @@
 Instance: practitionerrole-doctor1
-InstanceOf: PractitionerRole
+InstanceOf: $SD_PractitionerRole_Base
 Title: "ตัวอย่าง PractitionerRole: บทบาทแพทย์ รายที่ 1"
 Description: "บทบาทแพทย์ รายที่ 1 ในสถานพยาบาลหลัก"
 Usage: #example
@@ -16,9 +16,11 @@ Usage: #example
   * extension[+]
     * url = "moveto"
     * valueReference = Reference(Organization/organization-main) "โรงพยาบาลตัวอย่าง"
-* identifier[+]
+* identifier[0]
   * use = #secondary
-  * type = $CS_HL7_IdentifierType#PN "Person number"
+  * type
+    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    * coding[+] = $CS_TH_IdentifierType#localProv "รหัสผู้ให้บริการสุขภาพ ของหน่วยบริการ"
   * system = $ID_LO_Provider
   * value = "XXXXXXXX"
   * period

@@ -198,8 +198,8 @@ Title: "ตัวอย่าง Observation: Glasgow coma score"
 Description: "Glasgow coma score"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
-  * text = "Exam"
+* category = $CS_HL7_ObservationCat#survey "Survey"
+  * text = "Survey"
 * code
   * coding[code43Plus] = $LNC#9269-2 "Glasgow coma score total"
   * text = "Glasgow coma score total"

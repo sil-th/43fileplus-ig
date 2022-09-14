@@ -11,66 +11,98 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
-* identifier contains cid 0..1
+* identifier contains
+    pid 0..1 MS and
+    cid 0..1 MS and
+    hn 0..1 MS and
+    passportNo 0..*
+* identifier[pid] ^short = "เลขทะเบียนบุคคล"
+* identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
+* identifier[pid]
+  * type = $CS_TH_IdentifierType#localPid
+  * system 1..
+  * system obeys PID-uri
+  * system ^example.label = "PID namespace"
+  * system ^example.valueUri = $ID_LO_PID
+  * value 1..
+  * value obeys PID-length
+  * value ^example.label = "เลขทะเบียนบุคคล"
+  * value ^example.valueString = "123456789012345"
+  * period
+    * start ^short = "วันที่ย้ายเข้ามาเขตพื้นที่รับผิดชอบ"
+    * end ^short = "วันที่จำหน่าย"
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
-* identifier[cid].type = $CS_TH_IdentifierType#cid
-* identifier[cid].system 1..
-* identifier[cid].system = $ID_ThaiCid (exactly)
-* identifier[cid].value 1..
-* identifier[cid].value obeys CID-length
-* identifier[cid].value ^example.label = "เลขประจำตัวประชาชน"
-* identifier[cid].value ^example.valueString = "1234567890123"
+* identifier[cid]
+  * type = $CS_TH_IdentifierType#cid
+  * system 1..
+  * system = $ID_ThaiCid (exactly)
+  * value 1..
+  * value obeys CID-length
+  * value ^example.label = "เลขประจำตัวประชาชน"
+  * value ^example.valueString = "1234567890123"
+* identifier[hn] ^short = "เลขประจำตัวผู้ป่วย (HN)"
+* identifier[hn]
+  * type = $CS_TH_IdentifierType#localHn
+  * system 1..
+  * system obeys HN-uri
+  * system ^example.label = "HN namespace"
+  * system ^example.valueUri = $ID_LO_HN
+  * value 1..
+  * value obeys HN-length
+  * value ^example.label = "เลขประจำตัวผู้ป่วย (HN)"
+  * value ^example.valueString = "123456"
+* identifier[passportNo] ^short = "เลขที่ passport กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
+* identifier[passportNo]
+  * type = $CS_HL7_IdentifierType#PPN
+  * system 1..
+  * system obeys Passport-uri
+  * system ^comment = "กำหนดระบบข้อมูลตามรูปแบบ http://hl7.org/fhir/sid/passport-[XXX] โดย [XXX] คือ รหัสประเทศสามตัวอักษร (alpha-3) ตามมาตรฐาน ISO 3166"
+  * system ^example.label = "Thai passport namespace"
+  * system ^example.valueUri = $ID_ThaiPassport
+  * value 1..
+  * value ^example.label = "Thai passport number"
+  * value ^example.valueString = "AA123456"
+
+
+
 * patient 1.. MS
 * patient only Reference($SD_Patient_Base)
 * relationship 1.. MS
+
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
+* name.prefix
+  * extension contains $EX_TH_HumanNamePrefixCode named prefixCode 0..1
+  * extension[prefixCode] ^short = "รหัสคำนำหน้าชื่อ"
 * name ^slicing.discriminator[0].type = #value
 * name ^slicing.discriminator[=].path = "extension('http://hl7.org/fhir/StructureDefinition/language').value"
 * name ^slicing.rules = #open
 * name contains
-  thai 0..* MS and
-  english 0..*
+    thai 0..* MS and
+    english 0..*
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-* name[thai].extension ^slicing.discriminator[0].type = #value
-* name[thai].extension ^slicing.discriminator[=].path = "url"
-* name[thai].extension ^slicing.rules = #open
-* name[thai].extension ^min = 0
-* name[thai].extension contains
-  $EX_HL7_Language named language 1..1 MS
-* name[thai].extension[language] ^short = "ภาษา"  
-* name[thai].extension[language] ^min = 1
-* name[thai].extension[language] ^max = "1"
-* name[thai].extension[language].valueCode = #th (exactly)
-* name[thai].family MS
-* name[thai].family ^short = "ชื่อ ภาษาไทย"
-* name[thai].given MS
-* name[thai].given ^short = "นามสกุล ภาษาไทย"
-* name[thai].prefix MS
-* name[thai].prefix ^short = "คำนำหน้า ภาษาไทย"
+  * extension contains $EX_HL7_Language named language 1..1 MS
+  * extension[language].valueCode = #th (exactly)
+  * family MS
+  * family ^short = "นามสกุล ภาษาไทย"
+  * given MS
+  * given ^short = "ชื่อ ภาษาไทย"
+  * prefix MS
+  * prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-* name[english].extension ^slicing.discriminator[0].type = #value
-* name[english].extension ^slicing.discriminator[=].path = "url"
-* name[english].extension ^slicing.rules = #open
-* name[english].extension ^min = 0
-* name[english].extension contains
-  $EX_HL7_Language named language 1..1 MS
-* name[english].extension[language] ^short = "ภาษา"  
-* name[english].extension[language] ^min = 1
-* name[english].extension[language] ^max = "1"
-* name[english].extension[language].valueCode = #en (exactly)
-* name[english].family MS
-* name[english].family ^short = "ชื่อ ภาษาอังกฤษ"
-* name[english].given MS
-* name[english].given ^short = "นามสกุล ภาษาอังกฤษ"
-* name[english].prefix MS
-* name[english].prefix ^short = "คำนำหน้า ภาษาอังกฤษ"
+  * extension contains $EX_HL7_Language named language 1..1
+  * extension[language].valueCode = #en (exactly)
+  * family MS
+  * family ^short = "นามสกุล ภาษาอังกฤษ"
+  * given MS
+  * given ^short = "ชื่อ ภาษาอังกฤษ"
+  * prefix MS
+  * prefix ^short = "คำนำหน้า ภาษาอังกฤษ"
 * telecom MS
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
 * telecom ^slicing.rules = #open
 * telecom contains phone 0..* MS
-* telecom[phone] ^short = "โทรศัพท์ติดต่อ"
-* telecom[phone] ^comment = "เบอร์โทรศัพท์ที่ใช้ในการติดต่อ"
+* telecom[phone] ^short = "เบอร์โทรศัพท์ที่ใช้ในการติดต่อ"
 * telecom[phone].system = #phone (exactly)
