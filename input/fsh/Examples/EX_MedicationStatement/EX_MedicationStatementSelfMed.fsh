@@ -1,5 +1,5 @@
 Instance: medicationstatement-selfmed
-InstanceOf: MedicationStatement
+InstanceOf: $SD_MedicationStatement_Base
 Title: "ตัวอย่าง MedicationStatement: ยาที่ผู้ป่วยซื้อรับประทานเอง"
 Description: "แสดงประวัติยาที่ผู้ป่วยซื้อรับประทานเอง"
 Usage: #example

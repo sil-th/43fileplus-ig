@@ -1,5 +1,5 @@
 Instance: observation-death-location
-InstanceOf: Observation
+InstanceOf: $SD_Observation_DeathLocation
 Title: "ตัวอย่าง Observation: สถานที่ตาย"
 Description: "ผลการบันทึกสถานที่ตาย"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
 
 
 Instance: observation-death-pregnancy
-InstanceOf: Observation
+InstanceOf: $SD_Observation_DeathPregnancy
 Title: "ตัวอย่าง Observation: สภาวะการตั้งครรภ์และการคลอด ขณะเสียชีวิต"
 Description: "สภาวะการตั้งครรภ์และการคลอด ขณะเสียชีวิต"
 Usage: #example

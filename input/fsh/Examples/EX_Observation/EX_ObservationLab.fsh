@@ -1,5 +1,5 @@
 Instance: observation-lab-chol
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabChol
 Title: "ตัวอย่าง Observation: ผลการตรวจ Cholesterol"
 Description: "ผลการตรวจ Cholesterol"
 Usage: #example
@@ -20,7 +20,7 @@ Usage: #example
 
 
 Instance: observation-lab-tg
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabTg
 Title: "ตัวอย่าง Observation: ผลการตรวจ Triglyceride"
 Description: "ผลการตรวจ Triglyceride"
 Usage: #example
@@ -41,7 +41,7 @@ Usage: #example
 
 
 Instance: observation-lab-ldl
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabLdl
 Title: "ตัวอย่าง Observation: ผลการตรวจ LDL"
 Description: "ผลการตรวจ LDL"
 Usage: #example
@@ -62,7 +62,7 @@ Usage: #example
 
 
 Instance: observation-lab-hdl
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabHdl
 Title: "ตัวอย่าง Observation: ผลการตรวจ HDL"
 Description: "ผลการตรวจ HDL"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: observation-risk-behavior1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_SocialRiskBehavior
 Title: "ตัวอย่าง Observation: พฤติกรรมเสี่ยง"
 Description: "ผลการบันทึกพฤติกรรมเสี่ยง"
 Usage: #example

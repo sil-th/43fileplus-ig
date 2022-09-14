@@ -1,5 +1,5 @@
 Instance: medicationrequest-opd-amoxicillin
-InstanceOf: MedicationRequest
+InstanceOf: $SD_MedicationRequest_Base
 Title: "ตัวอย่าง MedicationRequest: การสั่งยา Amoxicillin หลังการรับบริการ OPD"
 Description: "แสดงการสั่งยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example

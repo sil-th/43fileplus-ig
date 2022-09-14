@@ -1,5 +1,5 @@
 Instance: observation-fp-contraception1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregContraceptionUse
 Title: "ตัวอย่าง Observation: รหัสวิธีการคุมกำเนิดปัจจุบัน"
 Description: "รหัสวิธีการคุมกำเนิดปัจจุบัน"
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#86649-1 "Birth control method at intake Reported"
+  * coding[code43Plus] = $LNC#86649-1 "Birth control method at intake Reported"
   * text = "Birth control method at intake Reported"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-01-21T12:30:02+07:00"
@@ -17,7 +17,7 @@ Usage: #example
 
 
 Instance: observation-fp-preg-test1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregPregTest
 Title: "ตัวอย่าง Observation: ผลการทดสอบการตั้งครรภ์"
 Description: "ผลการทดสอบการตั้งครรภ์"
 Usage: #example
@@ -25,7 +25,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
 * code
-  * coding[0] = $LNC#2106-3 "Choriogonadotropin (pregnancy test) [Presence] in Urine"
+  * coding[code43Plus] = $LNC#2106-3 "Choriogonadotropin (pregnancy test) [Presence] in Urine"
   * text = "Choriogonadotropin (pregnancy test) [Presence] in Urine"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2021-01-21T12:30:02+07:00"

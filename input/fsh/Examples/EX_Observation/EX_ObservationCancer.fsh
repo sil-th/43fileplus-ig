@@ -1,11 +1,11 @@
 Instance: observation-cancer-grade
-InstanceOf: Observation
+InstanceOf: $SD_Observation_CancerGrading
 Title: "ตัวอย่าง Observation: ระดับความรุนแรงของชิ้นเนื้อ"
 Description: "ผลการบันทึกระดับความรุนแรงของชิ้นเนื้อ"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
-  * text = "Laboratory"
+* category = $CS_HL7_ObservationCat#procedure "Procedure"
+  * text = "Procedure"
 * code = $LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
   * text = "Histology grade [Identifier] in Cancer specimen"
 * subject = Reference(Patient/patient-patient4)

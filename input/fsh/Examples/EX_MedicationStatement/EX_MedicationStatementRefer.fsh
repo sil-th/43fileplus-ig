@@ -1,5 +1,5 @@
 Instance: medicationstatement-refer-example1
-InstanceOf: MedicationStatement
+InstanceOf: $SD_MedicationStatement_Base
 Title: "ตัวอย่าง MedicationStatement: ประวัติการได้รับยา ของผู้ป่วยที่ได้รับการส่งต่อ"
 Description: "แสดงประวัติการได้รับยา ของผู้ป่วยที่ได้รับการส่งต่อ"
 Usage: #example

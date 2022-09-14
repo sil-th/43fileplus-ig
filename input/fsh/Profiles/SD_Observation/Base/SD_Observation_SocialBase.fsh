@@ -10,10 +10,10 @@ Description: "ข้อมูลประวัติทางสังคม"
 * status MS
 * category MS
 * category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.discriminator[=].path = "coding"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7].coding = $CS_HL7_ObservationCat#social-history (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#social-history
 * code MS
 * code ^short = "รหัสประวัติทางสังคม"
 * code.coding ^slicing.discriminator[0].type = #value

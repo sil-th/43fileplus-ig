@@ -10,6 +10,13 @@ Description: "รหัสวิธีการคุมกำเนิดปั
 * category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
 * code.coding[code43Plus] = $LNC#86649-1 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_ContraceptiveMethod (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_ContraceptiveMethod (exactly)
-
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  thcc1 0..1 MS and
+  thcc2 0..1 MS
+* valueCodeableConcept.coding[thcc1] from $VS_THCC_ContraceptiveMethod (extensible)
+* valueCodeableConcept.coding[thcc1].system = $CS_THCC_ContraceptiveMethod (exactly)
+* valueCodeableConcept.coding[thcc2] from $VS_THCC_Contraceptive (extensible)
+* valueCodeableConcept.coding[thcc2].system = $CS_THCC_Contraceptive (exactly)

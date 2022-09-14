@@ -1,5 +1,5 @@
 Instance: observation-child-nutrition-weight
-InstanceOf: Observation
+InstanceOf: $SD_Observation_VitalBw
 Title: "ตัวอย่าง Observation: น้ำหนักเด็ก - Nutrition"
 Description: "น้ำหนักเด็ก - Nutrition"
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code
-  * coding[0] = $LNC#29463-7 "Body weight"
+  * coding[code43Plus] = $LNC#29463-7 "Body weight"
   * text = "Body weight"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -16,7 +16,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-height
-InstanceOf: Observation
+InstanceOf: $SD_Observation_VitalHt
 Title: "ตัวอย่าง Observation: ส่วนสูงเด็ก - Nutrition"
 Description: "ส่วนสูงเด็ก - Nutrition"
 Usage: #example
@@ -24,7 +24,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code
-  * coding[0] = $LNC#8302-2 "Body height"
+  * coding[code43Plus] = $LNC#8302-2 "Body height"
   * text = "Body height"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -34,7 +34,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-headcircum
-InstanceOf: Observation
+InstanceOf: $SD_Observation_VitalHC
 Title: "ตัวอย่าง Observation: เส้นรอบศีรษะ - Nutrition"
 Description: "เส้นรอบศีรษะ - Nutrition"
 Usage: #example
@@ -42,7 +42,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#vital-signs "Vital Signs"
   * text = "Vital Signs"
 * code
-  * coding[0] = $LNC#9843-4 "Head Occipital-frontal circumference"
+  * coding[code43Plus] = $LNC#9843-4 "Head Occipital-frontal circumference"
   * text = "Head Occipital-frontal circumference"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -52,7 +52,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-development
-InstanceOf: Observation
+InstanceOf: $SD_Observation_ChildDevelopment
 Title: "ตัวอย่าง Observation: ระดับพัฒนาการเด็ก"
 Description: "ระดับพัฒนาการเด็ก"
 Usage: #example
@@ -60,7 +60,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $SCT#406207000 "Child development by age"
+  * coding[code43Plus] = $SCT#406207000 "Child development by age"
   * text = "Child development by age"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -68,7 +68,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-food
-InstanceOf: Observation
+InstanceOf: $SD_Observation_NeonateFood
 Title: "ตัวอย่าง Observation: อาหารที่รับประทานปัจจุบัน"
 Description: "อาหารที่รับประทานปัจจุบัน"
 Usage: #example
@@ -76,7 +76,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $SCT#226379006 "Food intake"
+  * coding[code43Plus] = $SCT#226379006 "Food intake"
   * text = "Food intake"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -84,7 +84,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-bottle
-InstanceOf: Observation
+InstanceOf: $SD_Observation_ChildBottleFeed
 Title: "ตัวอย่าง Observation: การใช้ขวดนม"
 Description: "การใช้ขวดนม"
 Usage: #example
@@ -92,7 +92,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $SCT#268472006 "Infant bottle fed"
+  * coding[code43Plus] = $SCT#268472006 "Infant bottle fed"
   * text = "Infant bottle fed"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -100,7 +100,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-new-teeth
-InstanceOf: Observation
+InstanceOf: $SD_Observation_ChildNewTeeth
 Title: "ตัวอย่าง Observation: จำนวนฟันขึ้นใหม่ (ซี่)"
 Description: "จำนวนฟันขึ้นใหม่ (ซี่)"
 Usage: #example
@@ -108,7 +108,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $CS_Meta_MiscObsType#002 "จำนวนฟันขึ้นใหม่ (ซี่)"
+  * coding[code43Plus] = $CS_Meta_MiscObsType#002 "จำนวนฟันขึ้นใหม่ (ซี่)"
   * text = "จำนวนฟันขึ้นใหม่ (ซี่)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -117,7 +117,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-caries-teeth
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PhysicalDentalCaries
 Title: "ตัวอย่าง Observation: จำนวนฟันผุ (ซี่)"
 Description: "จำนวนฟันผุ (ซี่)"
 Usage: #example
@@ -125,7 +125,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $SCT#80967001 "Dental caries"
+  * coding[code43Plus] = $SCT#80967001 "Dental caries"
   * text = "จำนวนฟันผุ (ซี่)"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -134,7 +134,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-umbilical-hygiene
-InstanceOf: Observation
+InstanceOf: $SD_Observation_NeonateUmbilicalHygiene
 Title: "ตัวอย่าง Observation: ความสะอาดของสะดือ"
 Description: "ความสะอาดของสะดือ"
 Usage: #example
@@ -142,7 +142,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $SCT#364594006 "Umbilical stump observable"
+  * coding[code43Plus] = $SCT#364594006 "Umbilical stump observable"
   * text = "Umbilical stump observable"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"
@@ -202,7 +202,7 @@ Usage: #example
 
 
 Instance: observation-child-nutrition-remark
-InstanceOf: Observation
+InstanceOf: $SD_Observation_ChildRemark
 Title: "ตัวอย่าง Observation: หมายเหตุเพิ่มเติม"
 Description: "หมายเหตุเพิ่มเติม"
 Usage: #example
@@ -210,7 +210,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#34109-9 "Note"
+  * coding[code43Plus] = $LNC#34109-9 "Note"
   * text = "Note"
 * subject = Reference(Patient/patient-patient7) "ด.ช. สมมิตร ใจดี"
 * effectiveDateTime = "2022-02-21T15:00:02+07:00"

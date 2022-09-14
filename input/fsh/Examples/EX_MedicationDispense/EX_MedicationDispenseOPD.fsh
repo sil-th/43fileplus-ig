@@ -1,5 +1,5 @@
 Instance: medicationdispense-opd-amoxicillin
-InstanceOf: MedicationDispense
+InstanceOf: $SD_MedicationDispense_Base
 Title: "ตัวอย่าง MedicationDispense: การจ่ายยา Amoxicillin หลังการรับบริการ OPD"
 Description: "แสดงการจ่ายยา Amoxicillin หลังการรับบริการ OPD"
 Usage: #example

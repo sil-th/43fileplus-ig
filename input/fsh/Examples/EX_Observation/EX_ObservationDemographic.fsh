@@ -1,5 +1,5 @@
 Instance: observation-blood-group1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabBloodgroup
 Title: "ตัวอย่าง Observation: หมู่เลือด"
 Description: "ผลการตรวจหมู่เลือด"
 Usage: #example
@@ -17,7 +17,7 @@ Usage: #example
   * text = "A"
 
 Instance: observation-blood-group-abo1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabBloodAbo
 Title: "ตัวอย่าง Observation: หมู่เลือด ABO"
 Description: "ผลการตรวจหมู่เลือด ABO"
 Usage: #example
@@ -33,7 +33,7 @@ Usage: #example
   * text = "A"
 
 Instance: observation-blood-group-rh1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_LabBloodRh
 Title: "ตัวอย่าง Observation: หมู่เลือด Rh"
 Description: "ผลการตรวจหมู่เลือด Rh"
 Usage: #example
@@ -50,7 +50,7 @@ Usage: #example
 
 
 Instance: observation-role-in-house1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_SocialRoleInHouse
 Title: "ตัวอย่าง Observation: สถานะในครอบครัว"
 Description: "สถานะในครอบครัว"
 Usage: #example
@@ -66,7 +66,7 @@ Usage: #example
 
 
 Instance: observation-role-in-village1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_SocialRoleInCommunity
 Title: "ตัวอย่าง Observation: สถานะในชุมชน"
 Description: "สถานะในชุมชน"
 Usage: #example
@@ -82,7 +82,7 @@ Usage: #example
   * text = "อื่นๆ"
 
 Instance: observation-occupation1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_SocialOccupation
 Title: "ตัวอย่าง Observation: อาชีพปัจจุบันของผู้ป่วยรายที่ 1"
 Description: "อาชีพปัจจุบันของผู้ป่วยรายที่ 1 พร้อมหน่วยงานที่สังกัด และรายได้เฉลี่ย"
 Usage: #example

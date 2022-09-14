@@ -10,10 +10,10 @@ Description: "ข้อมูลการตรวจร่างกาย"
 * status MS
 * category MS
 * category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.discriminator[=].path = "coding"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
+* category[hl7].coding = $CS_HL7_ObservationCat#exam
 * code MS
 * code ^short = "รหัสการตรวจร่างกาย"
 * code.coding ^slicing.discriminator[0].type = #value

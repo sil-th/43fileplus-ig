@@ -10,5 +10,13 @@ Description: "อาหารที่รับประทาน"
 * category[hl7].coding = $CS_HL7_ObservationCat#exam (exactly)
 * code.coding[code43Plus] = $SCT#226379006 (exactly)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from $VS_THCC_NewbornFood (extensible)
-* valueCodeableConcept.coding.system = $CS_THCC_NewbornFood (exactly)
+* valueCodeableConcept.coding ^slicing.discriminator[0].type = #value
+* valueCodeableConcept.coding ^slicing.discriminator[=].path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+  neonate 0..1 MS and
+  child 0..1 MS
+* valueCodeableConcept.coding[neonate] from $VS_THCC_NewbornFood (extensible)
+* valueCodeableConcept.coding[neonate].system = $CS_THCC_NewbornFood (exactly)
+* valueCodeableConcept.coding[child] from $VS_THCC_ChildFood (extensible)
+* valueCodeableConcept.coding[child].system = $CS_THCC_ChildFood (exactly)

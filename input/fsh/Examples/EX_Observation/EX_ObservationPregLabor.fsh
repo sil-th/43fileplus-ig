@@ -1,5 +1,5 @@
 Instance: observation-labor-gravida1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregGravida
 Title: "ตัวอย่าง Observation: ครรภ์ที่ - Labor"
 Description: "ครรภ์ที่ - Labor"
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#11996-6 "[#] Pregnancies"
+  * coding[code43Plus] = $LNC#11996-6 "[#] Pregnancies"
   * text = "[#] Pregnancies"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -15,7 +15,7 @@ Usage: #example
 
 
 Instance: observation-labor-lmp1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregLmp
 Title: "ตัวอย่าง Observation: วันแรกของการมีประจำเดือนครั้งสุดท้าย"
 Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย"
 Usage: #example
@@ -23,7 +23,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#8665-2 "Last menstrual period start date"
+  * coding[code43Plus] = $LNC#8665-2 "Last menstrual period start date"
   * text = "Last menstrual period start date"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -32,7 +32,7 @@ Usage: #example
 
 
 Instance: observation-labor-edc1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregEdd
 Title: "ตัวอย่าง Observation: วันที่กำหนดคลอด"
 Description: "วันที่กำหนดคลอด"
 Usage: #example
@@ -40,7 +40,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#11778-8 "Delivery date Estimated"
+  * coding[code43Plus] = $LNC#11778-8 "Delivery date Estimated"
   * text = "Delivery date Estimated"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -48,7 +48,7 @@ Usage: #example
 
 
 Instance: observation-labor-ga1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregBirthGA
 Title: "ตัวอย่าง Observation: อายุครรภ์"
 Description: "อายุครรภ์"
 Usage: #example
@@ -56,7 +56,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#85719-3 "Gestational age in weeks--at cessation of pregnancy"
+  * coding[code43Plus] = $LNC#85719-3 "Gestational age in weeks--at cessation of pregnancy"
   * text = "Gestational age in weeks--at cessation of pregnancy"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -64,7 +64,7 @@ Usage: #example
 
 
 Instance: observation-labor-date-time1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregDeliveryDate
 Title: "ตัวอย่าง Observation: วันคลอด / วันสิ้นสุดการตั้งครรภ์"
 Description: "วันคลอด / วันสิ้นสุดการตั้งครรภ์"
 Usage: #example
@@ -72,7 +72,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#93857-1 "Date and time of obstetric delivery"
+  * coding[code43Plus] = $LNC#93857-1 "Date and time of obstetric delivery"
   * text = "Date and time of obstetric delivery"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -80,7 +80,7 @@ Usage: #example
 
 
 Instance: observation-labor-live-birth1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregLiveDeliveries
 Title: "ตัวอย่าง Observation: จำนวนเกิดมีชีพ"
 Description: "จำนวนเกิดมีชีพ"
 Usage: #example
@@ -88,7 +88,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#11636-8 "[#] Births.live"
+  * coding[code43Plus] = $LNC#11636-8 "[#] Births.live"
   * text = "[#] Births.live"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -96,7 +96,7 @@ Usage: #example
 
 
 Instance: observation-labor-stillborn1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregStillbirths
 Title: "ตัวอย่าง Observation: จำนวนตายคลอด"
 Description: "จำนวนตายคลอด"
 Usage: #example
@@ -104,7 +104,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#57062-2 "[#] Births.stillborn"
+  * coding[code43Plus] = $LNC#57062-2 "[#] Births.stillborn"
   * text = "[#] Births.stillborn"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"
@@ -112,7 +112,7 @@ Usage: #example
 
 
 Instance: observation-labor-delivery-presentation
-InstanceOf: Observation
+InstanceOf: $SD_Observation_PregDeliveryPresentation
 Title: "ตัวอย่าง Observation: ท่าเด็กตอนคลอด"
 Description: "ท่าเด็กตอนคลอด"
 Usage: #example
@@ -120,7 +120,7 @@ Usage: #example
 * category = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code
-  * coding[0] = $LNC#57075-4 "Newborn delivery information"
+  * coding[code43Plus] = $LNC#57075-4 "Newborn delivery information"
   * text = "Newborn delivery information"
 * subject = Reference(Patient/patient-patient6) "นาง สมฤทัย ใจดี"
 * effectiveDateTime = "2022-01-21T12:30:02+07:00"

@@ -1,5 +1,5 @@
 Instance: observation-functional-test1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_FunctionalTest
 Title: "ตัวอย่าง Observation: การประเมินความบกพร่อง"
 Description: "การประเมินความบกพร่อง"
 Usage: #example
@@ -16,7 +16,7 @@ Usage: #example
 
 
 Instance: observation-functional-conclusion1
-InstanceOf: Observation
+InstanceOf: $SD_Observation_FunctionalConclusion
 Title: "ตัวอย่าง Observation: ภาวะพึ่งพิงของผู้สูงอายุ"
 Description: "ภาวะพึ่งพิงของผู้สูงอายุ"
 Usage: #example

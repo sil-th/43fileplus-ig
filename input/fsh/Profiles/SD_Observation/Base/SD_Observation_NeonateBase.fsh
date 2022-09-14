@@ -9,15 +9,14 @@ Description: "ข้อมูลการตรวจประเมินทา
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * status MS
 * category MS
-* category MS
 * category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "$this"
+* category ^slicing.discriminator[=].path = "coding"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
 * category[hl7].coding from $VS_HL7_ObservationCat (extensible)
 * code MS
-* code.coding ^slicing.discriminator[0].type = #pattern
-* code.coding ^slicing.discriminator[=].path = "$this"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     code43Plus 1..1 MS

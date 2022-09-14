@@ -1,5 +1,5 @@
 Instance: medicationadministration-opd-amoxicillin
-InstanceOf: MedicationAdministration
+InstanceOf: $SD_MedicationAdministration_Base
 Usage: #example
 * status = #completed
 * medicationReference = Reference(Medication/medication-opd-amoxicillin) "Amoxicillin 500 mg"

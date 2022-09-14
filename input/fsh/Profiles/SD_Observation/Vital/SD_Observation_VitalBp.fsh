@@ -25,10 +25,10 @@ Description: "ความดันโลหิต (Blood pressure)"
 * component[SBP].value[x].code 0..
 * component[SBP].value[x].code = #mm[Hg] (exactly)
 * component[DBP].code = $LNC#8462-4 (exactly)
-* component[SBP].value[x] only Quantity
-* component[SBP].value[x].value 1..
-* component[SBP].value[x].unit 0..
-* component[SBP].value[x].system 0..
-* component[SBP].value[x].system = $UCUM (exactly)
-* component[SBP].value[x].code 0..
-* component[SBP].value[x].code = #mm[Hg] (exactly)
+* component[DBP].value[x] only Quantity
+* component[DBP].value[x].value 1..
+* component[DBP].value[x].unit 0..
+* component[DBP].value[x].system 0..
+* component[DBP].value[x].system = $UCUM (exactly)
+* component[DBP].value[x].code 0..
+* component[DBP].value[x].code = #mm[Hg] (exactly)
