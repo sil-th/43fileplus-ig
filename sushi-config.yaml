@@ -29,7 +29,7 @@ parameters:
   excludettl: true
   excludemap: true
 copyrightYear: 2022+
-releaseLabel: ci-build
+releaseLabel: draft
 
 pages:
   index.md:
