@@ -8,13 +8,13 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-  $SD_Patient_EX_Nationality named nationality 0..* and
-  $EX_TH_PatientRace named race 0..* and
-  $SD_Patient_EX_Religion named religion 0..1 and
-  $SD_Patient_EX_Disability named disability 0..* and
-  $EX_TH_PatientEducationLevel named educationLevel 0..* and
-  $EX_TH_PatientPersonStatus named personStatus 0..* and
-  $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..*
+  $SD_Patient_EX_Nationality named nationality 0..* MS and
+  $EX_TH_PatientRace named race 0..* MS and
+  $SD_Patient_EX_Religion named religion 0..1 MS and
+  $SD_Patient_EX_Disability named disability 0..* MS and
+  $EX_TH_PatientEducationLevel named educationLevel 0..* MS and
+  $EX_TH_PatientPersonStatus named personStatus 0..* MS and
+  $EX_TH_PatientPidRemoveReason named pidRemoveReason 0..* MS
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
 * extension[nationality] ^definition = "สัญชาติของผู้ป่วย"
 * extension[race] ^short = "เชื้อชาติของผู้ป่วย"
@@ -36,9 +36,9 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * identifier contains
     pid 0..1 MS and
     cid 0..1 MS and
-    pwd 0..1 and
+    pwd 0..1 MS and
     hn 0..1 MS and
-    passportNo 0..*
+    passportNo 0..* MS
 * identifier[pid] ^short = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ"
 * identifier[pid]
   * type = $CS_TH_IdentifierType#localPid
@@ -103,7 +103,7 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * name ^slicing.rules = #open
 * name contains
     thai 0..* MS and
-    english 0..*
+    english 0..* MS
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
   * extension contains $EX_HL7_Language named language 1..1 MS
   * extension[language].valueCode = #th (exactly)
@@ -174,5 +174,6 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * maritalStatus.coding[thcc].system = $CS_THCC_Marital (exactly)
 * maritalStatus.coding[hl7] from $VS_HL7_MaritalStatus (extensible)
 * maritalStatus.coding[hl7].system = $CS_HL7_MaritalStatus (exactly)
+* generalPractitioner MS
 * generalPractitioner ^short = "แพทย์ประจำตัว หรือสถานพยาบาลปฐมภูมิของบุคคล"
 

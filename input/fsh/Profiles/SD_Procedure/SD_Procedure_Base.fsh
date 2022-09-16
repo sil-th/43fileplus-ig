@@ -8,7 +8,7 @@ Description: "การทำหัตถการหรือการรัก
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_TH_ProcedureProcedureType named procedureType 0..*
+    $EX_TH_ProcedureProcedureType named procedureType 0..* MS
 * status MS
 * code MS
 * code ^short = "รหัสการให้บริการ"

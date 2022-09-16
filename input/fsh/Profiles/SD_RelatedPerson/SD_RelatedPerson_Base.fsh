@@ -15,7 +15,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
     pid 0..1 MS and
     cid 0..1 MS and
     hn 0..1 MS and
-    passportNo 0..*
+    passportNo 0..* MS
 * identifier[pid] ^short = "เลขทะเบียนบุคคล"
 * identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
 * identifier[pid]
@@ -62,13 +62,9 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
   * value 1..
   * value ^example.label = "Thai passport number"
   * value ^example.valueString = "AA123456"
-
-
-
 * patient 1.. MS
 * patient only Reference($SD_Patient_Base)
 * relationship 1.. MS
-
 * name MS
 * name ^short = "ชื่อ-นามกสุล"
 * name.prefix
@@ -79,7 +75,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
 * name ^slicing.rules = #open
 * name contains
     thai 0..* MS and
-    english 0..*
+    english 0..* MS
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
   * extension contains $EX_HL7_Language named language 1..1 MS
   * extension[language].valueCode = #th (exactly)

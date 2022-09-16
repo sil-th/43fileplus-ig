@@ -9,8 +9,6 @@ Description: "การรับบริการเป็นประจำ"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_ConditionChronicDischargeReason named chronicDischargeReason 0..1 MS
-* extension[chronicDischargeReason] ^short = "ประเภทการจำหน่าย หรือสถานะของผู้ป่วยที่ทราบผลหลังสุด"
-* status = #finished (exactly)
 * status MS
 * diagnosis.condition only Reference($SD_Condition_Base)
 * patient only Reference($SD_Patient_Base)

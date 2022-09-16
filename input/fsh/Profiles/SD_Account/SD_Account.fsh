@@ -9,12 +9,10 @@ Description: "ข้อมูลทางการเงิน"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
   $EX_TH_AccountCoverageUse named coverageUse 0..* MS and 
-  $EX_TH_AccountAccidentCoverage named accidentCoverage 0..*
+  $EX_TH_AccountAccidentCoverage named accidentCoverage 0..* MS
 * status MS
-* name MS
 * subject only Reference($SD_Patient_Base)
 * subject MS
-* servicePeriod MS
 * coverage MS
 * coverage.coverage only Reference($SD_Coverage_Base)
 * coverage.coverage MS

@@ -12,17 +12,15 @@ Description: "ข้อมูลการนัดมารับบริกา
 * serviceCategory MS
 * serviceCategory ^short = "บริการที่นัดรับ"
 * serviceCategory from $VS_Std15_AppointServiceCategory (extensible)
-* serviceType MS
-* serviceType ^short = "ประเภทกิจกรรมที่นัด"
-* serviceType from $VS_THCC_AppointServiceType (extensible)
 * reasonCode MS
-* reasonCode ^short = "รหัสโรคที่นัดมาตรวจ"
+* reasonCode ^short = "รหัสโรคหรือกิจกรรมที่นัด"
 * reasonCode.coding ^slicing.discriminator.type = #value
 * reasonCode.coding ^slicing.discriminator.path = "system"
 * reasonCode.coding ^slicing.rules = #open
 * reasonCode.coding contains
     icd10 0..1 MS and
-    snomed 0..1 MS
+    snomed 0..1 MS and
+    thcc 0..1 MS
 * reasonCode.coding[icd10] from $VS_ICD10 (extensible)
 * reasonCode.coding[icd10].system 1..
 * reasonCode.coding[icd10].system = $ICD10 (exactly)
@@ -31,6 +29,10 @@ Description: "ข้อมูลการนัดมารับบริกา
 * reasonCode.coding[snomed].system 1..
 * reasonCode.coding[snomed].system = $SCT (exactly)
 * reasonCode.coding[snomed].code 1..
+* reasonCode.coding[thcc] from $VS_THCC_AppointServiceType (extensible)
+* reasonCode.coding[thcc].system 1..
+* reasonCode.coding[thcc].system = $CS_THCC_AppointServiceType (exactly)
+* reasonCode.coding[thcc].code 1..
 * description MS
 * supportingInformation MS
 * supportingInformation ^slicing.discriminator.type = #type
@@ -39,13 +41,15 @@ Description: "ข้อมูลการนัดมารับบริกา
 * supportingInformation contains coverage 0..* MS
 * supportingInformation[coverage] only Reference($SD_Coverage_Base)
 * start MS
-* start ^short = "วัน-เวลาที่นัดรับบริการ"
+* start ^short = "วัน-เวลาที่นัดมารับบริการ"
+* end MS
+* end ^short = "วัน-เวลาที่สิ้นสุดการรับบริการในนั้นนัด"
 * patientInstruction MS
 * patientInstruction ^short = "คำแนะนำการปฏิบัติตนของผู้ป่วย"
-* patientInstruction ^definition = "การปฏิบัติตนของผู้ป่วยก่อนเข้ารับบริการ"
+* created MS
+* created ^short = "วัน-เวลาที่สร้างนัดนี้"
 * comment MS
-* comment ^short = "Note เพิ่มการเกี่ยวกับการนัด"
-* comment ^definition = "รายละเอียดอื่น ๆ เพิ่มเติมเกี่ยวกับการนัด"
+* comment ^short = "รายละเอียดอื่น ๆ เพิ่มเติมเกี่ยวกับการนัด"
 * participant MS
 * participant.actor.type 1..1 MS
 // Slice by value because not all slice can reference
@@ -57,10 +61,19 @@ Description: "ข้อมูลการนัดมารับบริกา
     practitioner 0..* MS and
     location 0..* MS
 * participant[patient].actor only Reference($SD_Patient_Base)
+* participant[patient].actor.type MS
 * participant[patient].actor.type = "Patient" (exactly)
+* participant[patient].actor.identifier MS
+* participant[patient].actor.identifier ^short = "รหัสประจำตัวผู้ป่วย"
 * participant[practitioner] ^short = "ผู้ให้บริการ ที่นัดไปพบ"
 * participant[practitioner].actor only Reference($SD_Practitioner_Base)
+* participant[practitioner].actor.type MS
 * participant[practitioner].actor.type = "Practitioner" (exactly)
+* participant[practitioner].actor.identifier MS
+* participant[practitioner].actor.identifier ^short = "รหัสประจำตัวผู้ให้บริการ"
 * participant[location] ^short = "ชื่อคลีนิค หรือห้องตรวจที่นัดรับบริการ"
 * participant[location].actor only Reference($SD_Location_Department)
+* participant[location].actor.type MS
 * participant[location].actor.type = "Location" (exactly)
+* participant[location].actor.identifier MS
+* participant[location].actor.identifier ^short = "รหัสคลินิก หรือห้องตรวจ"

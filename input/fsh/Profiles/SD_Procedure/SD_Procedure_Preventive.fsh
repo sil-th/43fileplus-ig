@@ -10,7 +10,7 @@ Description: "กิจกรรมในชุมชนที่อยู่ใ
 * code.coding contains
     thccPrev 0..1 MS
 * code.coding[thccPrev] from $VS_THCC_CommunityActivity (extensible)
-* code.coding[thccPrev] ^short = "รหัสมาตรฐาน THCC"
+* code.coding[thccPrev] ^short = "รหัสกิจกรรมในชุมชน"
 * code.coding[thccPrev].system = $CS_THCC_CommunityActivity (exactly)
 * code.coding[thccPrev].system 1..
 * code.coding[thccPrev].code 1..

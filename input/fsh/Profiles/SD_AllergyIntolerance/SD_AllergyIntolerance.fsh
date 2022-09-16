@@ -72,4 +72,6 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * recorder MS
 * asserter MS
 * reaction MS
-* reaction.manifestation MS
+  * manifestation MS
+  * severity MS
+// ต้องมี severityTH เพราะ severity ไม่ใช่ CodeableConcept เลย bind หลาย code ไม่ได้

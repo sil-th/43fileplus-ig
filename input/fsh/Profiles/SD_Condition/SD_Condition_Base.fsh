@@ -9,8 +9,8 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_ConditionChronicDischargeReason named dischargeReason 0..1 MS and
-    $EX_HL7_ConditionDueTo named dueTo 0..* and
-    $EX_TH_ConditionIsChronic named isChronic 0..1
+    $EX_HL7_ConditionDueTo named dueTo 0..* MS and
+    $EX_TH_ConditionIsChronic named isChronic 0..1 MS
 * extension[dischargeReason] ^short = "สาเหตุจำหน่ายผู้ป่วย"
 * extension[dueTo] ^short = "สาเหตุการป่วย (ถ้าสามารถระบุได้)"
 * extension[isChronic] ^short = "โรคเรื้อรัง/รักษาต่อเนื่องหรือไม่"

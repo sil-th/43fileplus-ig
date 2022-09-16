@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Observation: สถานที่ตาย"
 Description: "ผลการบันทึกสถานที่ตาย"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
+* category[hl7] = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code = $LNC#58332-8 "Location of death"
   * text = "สถานที่ตาย"
@@ -22,7 +22,7 @@ Title: "ตัวอย่าง Observation: สภาวะการตั้�
 Description: "สภาวะการตั้งครรภ์และการคลอด ขณะเสียชีวิต"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#exam "Exam"
+* category[hl7] = $CS_HL7_ObservationCat#exam "Exam"
   * text = "Exam"
 * code = $LNC#69442-2 "Timing of recent pregnancy in relation to death"
   * text = "สภาวะการตั้งครรภ์และการคลอด ขณะเสียชีวิต"

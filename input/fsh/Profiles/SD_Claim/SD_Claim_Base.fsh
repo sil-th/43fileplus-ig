@@ -41,9 +41,6 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * identifier[invLt].value 1..
 * status MS
 * type MS
-* type.coding.system = $CS_HL7_ClaimType (exactly)
-* type.coding.code = #institutional (exactly)
-* use = #claim (exactly)
 * use MS
 * patient only Reference($SD_Patient_Base)
 * patient MS
@@ -52,6 +49,7 @@ Description: "ค่าใช้จ่ายการรับบริการ
 * provider MS
 * priority MS
 * supportingInfo MS
+* diagnosis MS
 * insurance MS
 * insurance.coverage only Reference($SD_Coverage_Base)
 * insurance.coverage MS
@@ -63,20 +61,25 @@ Description: "ค่าใช้จ่ายการรับบริการ
     $EX_TH_ClaimItemPaid named itemPaid 0..1 MS and
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1 MS
   * category MS
-  * category.coding ^slicing.discriminator.type = #pattern
-  * category.coding ^slicing.discriminator.path = "$this"
+  * category.coding ^slicing.discriminator.type = #value
+  * category.coding ^slicing.discriminator.path = "system"
   * category.coding ^slicing.rules = #open
   * category.coding contains
-      thCategory 0..1 MS
+      thCategory 0..1 MS and
+      adp 0..1 MS
   * category.coding[thCategory] ^short = "หมวดค่าใช้จ่ายบริการสาธารณสุข"
   * category.coding[thCategory] from $VS_TH_FeeCategory (required)
-* item.detail
+  * category.coding[thCategory].system = $CS_TH_FeeCategory (exactly)
+  * category.coding[adp] ^short = "รหัสบริการที่ยังไม่ได้จัดหมวด (ADP) สำหรับ e-Claim"
+  * category.coding[adp] from $VS_eClaim_AdpType (required)
+  * category.coding[adp].system = $CS_eClaim_AdpType (exactly)
+* item.detail MS
 * item.detail.extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 and
     $EX_TH_ClaimItemPaid named itemPaid 0..1 and
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
-* item.detail.subDetail 
+* item.detail.subDetail MS
 * item.detail.subDetail.extension contains
     $EX_TH_ClaimItemCost named itemCost 0..1 and
     $EX_TH_ClaimItemCopay named itemCopay 0..1 and
@@ -84,4 +87,5 @@ Description: "ค่าใช้จ่ายการรับบริการ
     $EX_TH_ClaimItemUnpaid named itemUnpaid 0..1
 * total MS
 * total.value MS
+* total.currency MS
 * total.currency = #THB (exactly)

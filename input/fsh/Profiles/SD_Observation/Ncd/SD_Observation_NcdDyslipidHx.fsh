@@ -7,8 +7,7 @@ Description: "ประวัติไขมันในเลือดสูง
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* category[hl7].coding = $CS_HL7_ObservationCat#exam
-// * code.coding[code43Plus] = $SCT#161450003 //History of raised blood lipids 
+* category[hl7] = $CS_HL7_ObservationCat#exam
 * code.coding[code43Plus]
   * system 1..1 MS
   * system = $SCT (exactly)

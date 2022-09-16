@@ -67,7 +67,7 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * category[eclaim].coding.system = $CS_eClaim_ReferReason (exactly)
 * category[snomed] from $VS_SNOMED_All (extensible)
 * category[snomed].coding.system = $SCT (exactly)
-* priority
+* priority MS
   * extension contains
     $EX_TH_ServiceRequestThaiReferPriority named thaiReferPriority 0..1 MS and
     $EX_TH_ServiceRequestReferPriorityReason named priorityReason 0..1 MS

@@ -34,7 +34,7 @@ Description: "ข้อมูลหมู่บ้าน"
 * position MS
 * position.longitude MS
 * position.longitude ^short = "พิกัดที่ตั้งของหมู่บ้าน (ลองจิจูด)"
-* position.longitude ^definition = "พิกัดลองจิจูดของหมู่บ้าน (ใจกลางหมู่บ้าน) เช่น  13.847719 เป็นต้น"
+* position.longitude ^definition = "พิกัดลองจิจูดของหมู่บ้าน (ใจกลางหมู่บ้าน) เช่น 13.847719 เป็นต้น"
 * position.latitude MS
 * position.latitude ^short = "พิกัดที่ตั้งของหมู่บ้าน (ละติจูด)"
-* position.latitude ^definition = "พิกัดละติจูดของหมู่บ้าน (ใจกลางหมู่บ้าน) เช่น  13.847719 เป็นต้น"
+* position.latitude ^definition = "พิกัดละติจูดของหมู่บ้าน (ใจกลางหมู่บ้าน) เช่น 13.847719 เป็นต้น"

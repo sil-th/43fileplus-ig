@@ -1,13 +1,3 @@
-// Alias: $EX_TH_ClaimItemCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-cost
-// * item
-//   * sequence = 1
-//   * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
-//   * detail
-//     * extension[0]
-//       * url = $EX_TH_ClaimItemCost (exactly)
-//       * valueMoney
-//         * value = 50.0
-//         * currency = $ISO4217#THB
 Extension: EX_TH_ClaimItemCost
 Id: ex-claim-item-cost
 Title: "Claim: Item Cost"
@@ -34,16 +24,6 @@ Description: "ราคาทุนของรายการนั้น"
 
 
 
-// Alias: $EX_TH_ClaimItemCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-self-pay
-// * item
-//   * sequence = 1
-//   * productOrService = $CS_TH_FeeCategory#4 "หมวดที่ 4 ค่ายากลับบ้าน"
-//   * detail
-//     * extension[+]
-//       * url = $EX_TH_ClaimItemCopay (exactly)
-//       * valueMoney
-//         * value = 0.0
-//         * currency = $ISO4217#THB
 Extension: EX_TH_ClaimItemCopay
 Id: ex-claim-item-copay
 Title: "Claim: Item Co-pay"

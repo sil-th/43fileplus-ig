@@ -10,10 +10,8 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * extension contains
     $EX_TH_DeviceRequestUseLocation named productUseLocation 0..* MS
 * extension[productUseLocation] ^short = "ประเภทการใช้"
-* status MS
-* intent MS
-* priority MS
 * code[x] MS
+* code[x] only Reference($SD_Device_Base) or CodeableConcept
 * parameter MS
 * parameter ^slicing.discriminator.type = #pattern
 * parameter ^slicing.discriminator.path = "code"
@@ -25,7 +23,5 @@ Description: "การสั่งอุปกรณ์/เวชภัณฑ�
 * parameter[quanity].value[x] MS
 * subject only Reference($SD_Patient_Base)
 * subject MS
-* encounter MS
-* authoredOn MS
 * requester only Reference($SD_Practitioner_Base)
 * requester MS

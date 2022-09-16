@@ -10,10 +10,10 @@ Description: "ข้อมูลการตรวจประเมินสต
 * status MS
 * category MS
 * category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[=].path = "coding"
+* category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
-* category[hl7].coding from $VS_HL7_ObservationCat (extensible)
+* category[hl7] from $VS_HL7_ObservationCat (extensible)
 * code MS
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"

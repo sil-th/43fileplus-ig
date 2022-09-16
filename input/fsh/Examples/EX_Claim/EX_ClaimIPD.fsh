@@ -224,7 +224,9 @@ Usage: #example
   * preAuthRef = "PP1007991295"
 * item
   * sequence = 1
-  * productOrService = $CS_eClaim_AdpType#3 "ค่าบริการอื่นๆ ที่ยังไม่ได้จัดหมวด"
+  * category = $CS_eClaim_AdpType#3 "ค่าบริการอื่นๆ ที่ยังไม่ได้จัดหมวด"
+  * productOrService
+    * text = "บริการที่ได้รับ"
   * detail
     * extension[0]
       * url = $EX_TH_ClaimItemCost

@@ -9,15 +9,10 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_AddressHouseType named houseType 0..1 MS and
-    $EX_TH_LocationHouseOwner named houseOwner 0..1 and
-    $EX_TH_LocationResponsibleVolunteer named responsibleVolunteer 0..1 and
-    $EX_TH_LocationHouseholdCount named householdCount 0..1 and
-    $EX_TH_LocationInMunicipality named inMunicipality 0..1
-* extension[houseType] ^short = "ประเภทที่อยู่"
-* extension[houseOwner] ^short = "รหัสเจ้าบ้าน"
-* extension[responsibleVolunteer] ^short = "รหัสอสม."
-* extension[householdCount] ^short = "จำนวนครอบครัว"
-* extension[inMunicipality] ^short = "ที่ตั้งอยู่ในเขตเทศบาลหรือไม่"
+    $EX_TH_LocationHouseOwner named houseOwner 0..1 MS and
+    $EX_TH_LocationResponsibleVolunteer named responsibleVolunteer 0..1 MS and
+    $EX_TH_LocationHouseholdCount named householdCount 0..1 MS and
+    $EX_TH_LocationInMunicipality named inMunicipality 0..1 MS
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
@@ -39,6 +34,7 @@ Description: "ข้อมูลที่ตั้งและสุขาภิ
 * identifier[houseNo].system 1..
 * identifier[houseNo].system = $ID_DopaHouseNo (exactly)
 * identifier[houseNo].value 1..
+* name MS
 * type MS
 * type ^slicing.discriminator.type = #value
 * type ^slicing.discriminator.path = "coding.system"

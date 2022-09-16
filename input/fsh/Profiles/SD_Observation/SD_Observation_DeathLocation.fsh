@@ -8,7 +8,11 @@ Description: "การบันทึกสถานที่ตาย"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * category MS
-* category.coding = $CS_HL7_ObservationCat#exam
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains hl7 1..1 MS
+* category[hl7] = $CS_HL7_ObservationCat#exam
 * code MS
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"

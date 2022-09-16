@@ -8,8 +8,8 @@ Description: "ข้อมูลการวินิจฉัยโรคมะ
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * code.coding contains
-    icdo3 0..1 and
-    eClaim 0..1
+    icdo3 0..1 MS and
+    eClaim 0..1 MS
 * code.coding[icdo3] from $VS_INT_ICDO3 (required)
 * code.coding[icdo3].system 1..
 * code.coding[icdo3].system = $ICDO3 (exactly)
@@ -20,3 +20,10 @@ Description: "ข้อมูลการวินิจฉัยโรคมะ
 * code.coding[eClaim].code 1..
 * stage MS
 * evidence MS
+  * code MS
+* evidence.code ^slicing.discriminator.type = #pattern
+* evidence.code ^slicing.discriminator.path = "$this"
+* evidence.code ^slicing.rules = #open
+* evidence.code contains
+    cancer 0..1 MS
+* evidence.code[cancer] from $VS_43Plus_CancerDxSource (required)

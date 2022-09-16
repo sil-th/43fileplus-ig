@@ -8,17 +8,17 @@ Description: "การรับบริการโดยทั่วไป"
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_TH_EncounterPatientLocationType named patientLocationType 0..1 and
-    $EX_TH_EncounterServiceHour named serviceHour 0..1 and
+    $EX_TH_EncounterPatientLocationType named patientLocationType 0..1 MS and
+    $EX_TH_EncounterServiceHour named serviceHour 0..1 MS and
     $EX_TH_EncounterServiceTypeTH named serviceTypeTH 0..1 MS and
-    $EX_TH_EncounterFpCaseType named familyPlanningType 0..1
+    $EX_TH_EncounterFpCaseType named familyPlanningType 0..1 MS
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     vn 0..1 MS and
-    an 0..1
+    an 0..1 MS
 * identifier[vn] ^short = "เลขที่การรับบริการ (VN)"
 * identifier[vn]
   * type = $CS_TH_IdentifierType#localVn
@@ -99,11 +99,11 @@ Description: "การรับบริการโดยทั่วไป"
   * use.coding ^slicing.discriminator.path = "system"
   * use.coding ^slicing.rules = #open
   * use.coding contains
-      hl7plus 0..1 MS and
+      hl7 0..1 MS and
       43plus 0..1 MS and
       addition 0..1
-  * use.coding[hl7plus] from $VS_HL7_DiagRole (extensible)
-  * use.coding[hl7plus].system = $CS_HL7_DiagRole
+  * use.coding[hl7] from $VS_HL7_DiagRole (extensible)
+  * use.coding[hl7].system = $CS_HL7_DiagRole
   * use.coding[43plus] from $VS_43Plus_EncounterDiagnosisRole (extensible)
   * use.coding[43plus].system = $CS_43Plus_EncounterDiagnosisRole
   * use.coding[addition] from $VS_Meta_ExtendedHL7DiagnosisRole (extensible)

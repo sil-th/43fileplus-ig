@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Observation: ผลการตรวจ Lab Co
 Description: "ผลการตรวจ Lab Covid"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#laboratory "Laboratory"
+* category[hl7] = $CS_HL7_ObservationCat#laboratory "Laboratory"
   * text = "Laboratory"
 * code
   * coding[snomed] = $SCT#871562009 "Detection of COVID-19"
@@ -20,7 +20,7 @@ Title: "ตัวอย่าง Observation: ค่า Barthel ADL Index"
 Description: "ค่า Barthel ADL Index"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#survey "Survey"
+* category[hl7] = $CS_HL7_ObservationCat#survey "Survey"
   * text = "Survey"
 * code
   * coding[loinc] = $LNC#96761-2 "Total score Barthel Index"

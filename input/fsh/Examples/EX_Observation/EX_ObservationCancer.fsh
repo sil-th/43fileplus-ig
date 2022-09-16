@@ -4,7 +4,7 @@ Title: "ตัวอย่าง Observation: ระดับความรุ�
 Description: "ผลการบันทึกระดับความรุนแรงของชิ้นเนื้อ"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#procedure "Procedure"
+* category[hl7] = $CS_HL7_ObservationCat#procedure "Procedure"
   * text = "Procedure"
 * code = $LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
   * text = "Histology grade [Identifier] in Cancer specimen"

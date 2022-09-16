@@ -5,11 +5,11 @@ Description: "แสดงการนัดติดตามผลหลัง
 Usage: #example
 * status = #booked
 * serviceCategory[0] = $CS_Std15_AppointServiceCategory#0001 "ตรวจรักษา"
-* serviceType[0] = $CS_THCC_AppointServiceType#181 "ฟังผลการรักษา"
 * reasonCode[0]
   * coding[0] = $SCT#386661006 "Fever"
   * coding[+] = $ICD10#R50.9 "Fever, unspecified"
-  * text = "อาการไข้"
+  * coding[+] = $CS_THCC_AppointServiceType#181 "ฟังผลการรักษา"
+  * text = "นัดติดตามอาการไข้"
 * description = "นัดมาติดตามอาการไข้ 7 วันหลังตรวจ"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2022-01-08T08:30:00+07:00"

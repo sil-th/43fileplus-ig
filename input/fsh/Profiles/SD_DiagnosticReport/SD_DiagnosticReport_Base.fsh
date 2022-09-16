@@ -7,8 +7,6 @@ Description: "การรายงานผลการตรวจ"
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
-* status MS
-* category MS
 * code MS
 * code.coding 1..
 * code.coding ^slicing.discriminator.type = #value
@@ -28,7 +26,6 @@ Description: "การรายงานผลการตรวจ"
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base)
 * effective[x] MS
-* issued MS
 * performer only Reference($SD_Organization_Provider)
 * performer MS
 * specimen 0.. MS

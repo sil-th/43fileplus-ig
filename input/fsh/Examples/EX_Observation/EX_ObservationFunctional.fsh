@@ -4,8 +4,8 @@ Title: "ตัวอย่าง Observation: การประเมินค�
 Description: "การประเมินความบกพร่อง"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#survey "Survey"
-  * text = "Survey"
+* category[hl7] = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
 * code
   * coding[0] = $CS_THCC_FunctionalTest#01 "Barthel ADL Index"
   * text = "Barthel ADL Index"
@@ -21,8 +21,8 @@ Title: "ตัวอย่าง Observation: ภาวะพึ่งพิง�
 Description: "ภาวะพึ่งพิงของผู้สูงอายุ"
 Usage: #example
 * status = #final
-* category = $CS_HL7_ObservationCat#survey "Survey"
-  * text = "Survey"
+* category[hl7] = $CS_HL7_ObservationCat#exam "Exam"
+  * text = "Exam"
 * code
   * coding[0] = $LNC#75276-6 "Functional status [Interpretation]"
   * text = "Functional status Imp"

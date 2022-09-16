@@ -8,11 +8,9 @@ Description: "ข้อมูลทั่วไปของประชาชน
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-  $EX_TH_PatientForeignerType named foreignerType 0..*
-* extension[foreignerType] ^short = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
-* extension[foreignerType] ^definition = "รหัสความเป็นคนต่างด้าว (ถ้ามี)"
+  $EX_TH_PatientForeignerType named foreignerType 0..* MS
 * identifier contains
-    workPermit 0..* 
+    workPermit 0..* MS
 * identifier[workPermit] ^short = "เลขที่ใบอนุญาตทำงาน (Work Permit)"
 * identifier[workPermit]
   * type = $CS_HL7_IdentifierType#WP

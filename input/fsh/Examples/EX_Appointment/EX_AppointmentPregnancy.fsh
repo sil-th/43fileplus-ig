@@ -4,7 +4,9 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD Family Planning"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_AppointServiceType#121 "วางแผนครอบครัว"
+* reasonCode[0]
+  * coding[0] = $CS_THCC_AppointServiceType#121 "วางแผนครอบครัว"
+  * text = "วางแผนครอบครัว"
 * description = "นัดมาติดตามผล 1 เดือน หลังการคุมกำเนิด"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2021-02-21T12:30:02+07:00"
@@ -36,7 +38,9 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังรับบริการ OPD ANC"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_AppointServiceType#131 "ตรวจครรภ์"
+* reasonCode[0]
+  * coding[0] = $CS_THCC_AppointServiceType#131 "ตรวจครรภ์"
+  * text = "ตรวจครรภ์"
 * description = "นัดรับบริการ ANC 1 เดือน"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2021-05-21T12:30:02+07:00"
@@ -68,7 +72,9 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_AppointServiceType#141 "ตรวจหลังคลอด"
+* reasonCode[0]
+  * coding[0] = $CS_THCC_AppointServiceType#141 "ตรวจหลังคลอด"
+  * text = "ตรวจหลังคลอด"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2022-02-21T12:30:02+07:00"
 // Need both start and end in the constraint
@@ -100,7 +106,9 @@ Title: "ตัวอย่าง Appointment: การนัดติดตา�
 Description: "แสดงการนัดติดตามผลหลังรับบริการตรวจติดตามหลังคลอด ครั้งที่ 2"
 Usage: #example
 * status = #booked
-* serviceType[0] = $CS_THCC_AppointServiceType#141 "ตรวจหลังคลอด"
+* reasonCode[0]
+  * coding[0] = $CS_THCC_AppointServiceType#141 "ตรวจหลังคลอด"
+  * text = "ตรวจหลังคลอด"
 * description = "นัดมาติดตามผล 1 เดือน หลังการตรวจครั้งแรก"
 * supportingInformation	= Reference(Coverage/coverage-uc)
 * start = "2022-02-21T12:30:02+07:00"
