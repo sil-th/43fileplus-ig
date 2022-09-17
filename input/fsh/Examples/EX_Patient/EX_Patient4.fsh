@@ -55,10 +55,10 @@ Usage: #example
     * url = $EX_HL7_Geolocation
     * extension[0]
       * url = "latitude"
-      * valueString = "78.31809"
+      * valueDecimal = 78.31809
     * extension[+]
       * url = "longitude"
-      * valueString = "-133.03485"
+      * valueDecimal = -133.03485
   * extension[+]
     * url = $EX_TH_AddressStructuredLine
     * extension[0]
