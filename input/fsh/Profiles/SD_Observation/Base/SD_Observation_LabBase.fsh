@@ -26,17 +26,17 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
     icd10tm 0..1 and
     2digit 0..1
 * code.coding[tmlt] ^short = "รหัสมาตรฐาน TMLT"
-* code.coding[tmlt] from $VS_TMLT (required)
+* code.coding[tmlt] from $VS_TMLT (extensible)
 * code.coding[tmlt].system 1..
 * code.coding[tmlt].system = $CS_TMLT (exactly)
 * code.coding[tmlt].code 1..
 * code.coding[loinc] ^short = "รหัสมาตรฐาน LOINC"
-* code.coding[loinc] from $VS_LNC (required)
+* code.coding[loinc] from $VS_LNC (extensible)
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
 * code.coding[snomed] ^short = "รหัสมาตรฐาน SNOMED CT"
-* code.coding[snomed] from $VS_SNOMED_All (required)
+* code.coding[snomed] from $VS_SNOMED_INT (extensible)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..
@@ -46,7 +46,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * code.coding[icd10tm].system = $CS_TH_ICD10TM_Lab (exactly)
 * code.coding[icd10tm].code 1..
 * code.coding[2digit] ^short = "รหัสการตรวจทางห้องปฏิบัติการมาตรฐานเดิม 2 หลัก"
-* code.coding[2digit] from $VS_THCC_2DigitLab (required)
+* code.coding[2digit] from $VS_THCC_2DigitLab (extensible)
 * code.coding[2digit].system 1..
 * code.coding[2digit].system = $CS_THCC_2DigitLab (exactly)
 * code.coding[2digit].code 1..

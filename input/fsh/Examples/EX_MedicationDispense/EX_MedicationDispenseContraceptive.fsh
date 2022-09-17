@@ -1,5 +1,5 @@
 Instance: medicationdispense-contraception1
-InstanceOf: $SD_MedicationDispense_Base
+InstanceOf: $SD_MedicationDispense_Contraceptive
 Title: "ตัวอย่าง MedicationDispense: การจ่ายยาเม็ดคุมกำเนิดในการรับบริการวางแผนครอบครัว"
 Description: "แสดงการจ่ายยาเม็ดคุมกำเนิดในการรับบริการวางแผนครอบครัว"
 Usage: #example

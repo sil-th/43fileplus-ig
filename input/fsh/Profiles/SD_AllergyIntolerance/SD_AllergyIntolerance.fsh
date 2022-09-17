@@ -47,12 +47,12 @@ Description: "ข้อมูลประวัติการแพ้ของ
     local 0..1 MS and
     noAllergies 0..1 MS
 * code.coding[24drug] ^short = "รหัสยามาตรฐาน 24 หลัก"
-* code.coding[24drug] from $VS_24Drug (required)
+* code.coding[24drug] from $VS_24Drug (extensible)
 * code.coding[24drug].system 1..
 * code.coding[24drug].system = $CS_24Drug (exactly)
 * code.coding[24drug].code 1..
 * code.coding[tmt] ^short = "รหัสยามาตรฐาน TMT"
-* code.coding[tmt] from $VS_TMT (required)
+* code.coding[tmt] from $VS_TMT (extensible)
 * code.coding[tmt].system 1..
 * code.coding[tmt].system = $CS_TMT (exactly)
 * code.coding[tmt].code 1..
@@ -61,7 +61,7 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * code.coding[local].system = $CS_TH_LocalDrugCode (exactly)
 * code.coding[local].code 1..
 * code.coding[noAllergies] ^short = "ใช้ในกรณีไม่มีสิ่งที่แพ้ หรือไม่ทราบประวัติแพ้"
-* code.coding[noAllergies] from $VS_IPS_AbsentUnknownAllergies (required)
+* code.coding[noAllergies] from $VS_IPS_AbsentUnknownAllergies (extensible)
 * code.coding[noAllergies].system 1..
 * code.coding[noAllergies].system = $CS_IPS_AbsentUnknownAllergies (exactly)
 * code.coding[noAllergies].code 1..

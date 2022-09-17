@@ -87,10 +87,12 @@ Description: "การรับบริการโดยทั่วไป"
 * reasonCode.coding ^slicing.rules = #open
 * reasonCode.coding contains
     icd10 0..1 MS and
-    snomed 0..1
+    snomed 0..1 MS
+* reasonCode.coding[icd10] from $VS_ICD10 (extensible)
 * reasonCode.coding[icd10].system 1..
 * reasonCode.coding[icd10].system = $ICD10 (exactly)
 * reasonCode.coding[icd10].code 1..
+* reasonCode.coding[snomed] from $VS_SNOMED_INT (extensible)
 * reasonCode.coding[snomed].system 1..
 * reasonCode.coding[snomed].system = $SCT (exactly)
 * reasonCode.coding[snomed].code 1..

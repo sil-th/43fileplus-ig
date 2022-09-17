@@ -6,7 +6,6 @@ Alias: $LNC = http://loinc.org
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $ISO3166 = urn:iso:std:iso:3166
 Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
-Alias: $ICF = http://hl7.org/fhir/sid/icf-nl	
 Alias: $ISO4217 = urn:iso:std:iso:4217
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $EDQM = http://standardterms.edqm.eu
@@ -41,6 +40,7 @@ Alias: $CS_HL7_DiagServiceCat = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $CS_HL7_DoseForm = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $CS_HL7_SecurityLebel = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
 Alias: $CS_HL7_DataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $CS_HL7_HierarchyMeaning = http://hl7.org/fhir/codesystem-hierarchy-meaning
 
 // From international FHIR community
 Alias: $CS_IPS_AbsentUnknownAllergies = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
@@ -236,6 +236,7 @@ Alias: $CS_QN_Village = http://terms.sil-th.org/CodeSystem/cs-qn-village
 
 // From Thai national codes
 Alias: $CS_INT_ISCED1997 = http://terms.sil-th.org/CodeSystem/cs-int-isced-97
+Alias: $CS_INT_ICF = http://terms.sil-th.org/CodeSystem/cs-int-icf
 Alias: $CS_DOPA_NamePrefix = http://terms.sil-th.org/CodeSystem/cs-dopa-nameprefix
 Alias: $CS_DOPA_Location = http://terms.sil-th.org/CodeSystem/cs-dopa-location
 Alias: $CS_TMT = http://terms.sil-th.org/CodeSystem/th-tmt

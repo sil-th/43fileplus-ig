@@ -25,7 +25,7 @@ Description: "ข้อมูลการนัดมารับบริกา
 * reasonCode.coding[icd10].system 1..
 * reasonCode.coding[icd10].system = $ICD10 (exactly)
 * reasonCode.coding[icd10].code 1..
-* reasonCode.coding[snomed] from $VS_SNOMED_All (extensible)
+* reasonCode.coding[snomed] from $VS_SNOMED_INT (extensible)
 * reasonCode.coding[snomed].system 1..
 * reasonCode.coding[snomed].system = $SCT (exactly)
 * reasonCode.coding[snomed].code 1..

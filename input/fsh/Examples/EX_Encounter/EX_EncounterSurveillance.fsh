@@ -1,5 +1,5 @@
 Instance: encounter-surveillance1
-InstanceOf: $SD_Encounter_Base
+InstanceOf: $SD_Encounter_Surveillance
 Title: "ตัวอย่าง Encounter: การรับบริการ Surveillance"
 Description: "แสดงการรับบริการของผู้ป่วยด้วยโรคที่ต้องเฝ้าระวัง"
 Usage: #example

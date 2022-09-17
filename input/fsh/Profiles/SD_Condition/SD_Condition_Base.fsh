@@ -20,15 +20,15 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * clinicalStatus.coding ^slicing.rules = #open
 * clinicalStatus.coding contains
     hl7 0..1 MS and
-    thcc 0..1 MS
+    pcu 0..1 MS
 * clinicalStatus.coding[hl7] from $VS_HL7_ConditionStatus (required)
 * clinicalStatus.coding[hl7].system 1..
 * clinicalStatus.coding[hl7].system = $CS_HL7_ConditionStatus (exactly)
 * clinicalStatus.coding[hl7].code 1..
-* clinicalStatus.coding[thcc] from $VS_PCU_ClnicalStatus (extensible)
-* clinicalStatus.coding[thcc].system 1..
-* clinicalStatus.coding[thcc].system = $CS_PCU_ClnicalStatus (exactly)
-* clinicalStatus.coding[thcc].code 1..
+* clinicalStatus.coding[pcu] from $VS_PCU_ClnicalStatus (extensible)
+* clinicalStatus.coding[pcu].system 1..
+* clinicalStatus.coding[pcu].system = $CS_PCU_ClnicalStatus (exactly)
+* clinicalStatus.coding[pcu].code 1..
 * category MS
 * code MS
 * code ^short = "รหัสวินิฉัยโรค/ภาวะโรค"
@@ -37,12 +37,12 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     icd10 0..1 MS and
-    snomed 0..1
+    snomed 0..1 MS
 * code.coding[icd10] from $VS_ICD10 (required)
 * code.coding[icd10].system 1..
 * code.coding[icd10].system = $ICD10 (exactly)
 * code.coding[icd10].code 1..
-* code.coding[snomed] from $VS_SNOMED_All (required)
+* code.coding[snomed] from $VS_SNOMED_INT (required)
 * code.coding[snomed].system 1..
 * code.coding[snomed].system = $SCT (exactly)
 * code.coding[snomed].code 1..

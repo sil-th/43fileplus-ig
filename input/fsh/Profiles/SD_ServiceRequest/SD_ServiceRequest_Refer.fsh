@@ -65,7 +65,7 @@ Description: "การส่งต่อผู้ป่วยระหว่า
 * category[std15].coding.system = $CS_Std15_ReferReason (exactly)
 * category[eclaim] from $VS_eClaim_ReferReason (extensible)
 * category[eclaim].coding.system = $CS_eClaim_ReferReason (exactly)
-* category[snomed] from $VS_SNOMED_All (extensible)
+* category[snomed] from $VS_SNOMED_INT (extensible)
 * category[snomed].coding.system = $SCT (exactly)
 * priority MS
   * extension contains

@@ -13,10 +13,10 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 * result contains
-    Cholesterol 1..1 and
-    Triglyceride 1..1 and
-    HDL 1..1 and
-    LDL 1..1
+    Cholesterol 0..1 and
+    Triglyceride 0..1 and
+    HDL 0..1 and
+    LDL 0..1
 * result[Cholesterol] only Reference($SD_Observation_LabChol)
 * result[Triglyceride] only Reference($SD_Observation_LabTg)
 * result[HDL] only Reference($SD_Observation_LabHdl)

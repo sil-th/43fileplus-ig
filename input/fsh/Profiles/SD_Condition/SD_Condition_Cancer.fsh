@@ -10,7 +10,7 @@ Description: "ข้อมูลการวินิจฉัยโรคมะ
 * code.coding contains
     icdo3 0..1 MS and
     eClaim 0..1 MS
-* code.coding[icdo3] from $VS_INT_ICDO3 (required)
+* code.coding[icdo3] from $VS_INT_ICDO3 (extensible)
 * code.coding[icdo3].system 1..
 * code.coding[icdo3].system = $ICDO3 (exactly)
 * code.coding[icdo3].code 1..

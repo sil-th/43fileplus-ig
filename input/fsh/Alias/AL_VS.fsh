@@ -1,11 +1,10 @@
 // External ValueSet
 
-Alias: $VS_TH_ICF = http://terms.sil-th.org/ValueSet/vs-th-icf
+Alias: $VS_SNOMED_INT = http://terms.sil-th.org/ValueSet/vs-snomed-int
 Alias: $VS_SNOMED_Rh = http://terms.sil-th.org/ValueSet/vs-snomed-blood-rh
 Alias: $VS_SNOMED_ABO = http://terms.sil-th.org/ValueSet/vs-snomed-blood-abo
 Alias: $VS_SNOMED_BloodGroup = http://terms.sil-th.org/ValueSet/vs-snomed-bloodgroup
 Alias: $VS_LNC = http://hl7.org/fhir/ValueSet/observation-codes
-Alias: $VS_SNOMED_All = http://snomed.info/sct?fhir_vs
 Alias: $VS_ICD10 = http://hl7.org/fhir/ValueSet/icd-10
 Alias: $VS_INT_ICDO3 = http://terms.sil-th.org/ValueSet/vs-int-icdo3
 
@@ -63,7 +62,6 @@ Alias: $VS_Meta_NCD_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-ncd-obser
 Alias: $VS_Meta_Neonate_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-neonate-observations
 Alias: $VS_Meta_PhysicalExam_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-physical-observations
 Alias: $VS_Meta_Pregnancy_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-pregnancy-observations
-// Alias: $VS_Meta_Prevention = http://terms.sil-th.org/ValueSet/vs-meta-prevention-observations
 Alias: $VS_Meta_Social_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-social-observations
 Alias: $VS_Meta_Vital_ObsList = http://terms.sil-th.org/ValueSet/vs-meta-vital-observations
 
@@ -246,6 +244,7 @@ Alias: $VS_THCC_CommunityService = http://terms.sil-th.org/ValueSet/vs-thcc-comm
 
 // From Thai national codes
 Alias: $VS_INT_ISCED1997 = http://terms.sil-th.org/ValueSet/vs-int-isced-97
+Alias: $VS_INT_ICF = http://terms.sil-th.org/ValueSet/vs-int-icf
 Alias: $VS_DOPA_NamePrefix = http://terms.sil-th.org/ValueSet/vs-dopa-nameprefix
 Alias: $VS_DOPA_Location = http://terms.sil-th.org/ValueSet/vs-dopa-location
 Alias: $VS_TMT = http://terms.sil-th.org/ValueSet/th-tmt
