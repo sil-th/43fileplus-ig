@@ -7,6 +7,9 @@ Alias: $VS_SNOMED_BloodGroup = https://terms.sil-th.org/ValueSet/vs-snomed-blood
 Alias: $VS_LNC = http://hl7.org/fhir/ValueSet/observation-codes
 Alias: $VS_ICD10 = http://hl7.org/fhir/ValueSet/icd-10
 Alias: $VS_INT_ICDO3 = https://terms.sil-th.org/ValueSet/vs-int-icdo3
+Alias: $VS_INT_ISCO08 = https://terms.sil-th.org/ValueSet/vs-int-isco-08
+
+
 
 // From terminology.hl7.org
 Alias: $VS_HL7_IdentifierType = http://hl7.org/fhir/ValueSet/identifier-type
@@ -45,6 +48,8 @@ Alias: $VS_INT_ISO3166 = http://hl7.org/fhir/ValueSet/iso3166-1-3
 Alias: $VS_IPS_MedicineDoseform = http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform
 Alias: $VS_IPS_AbsentUnknownAllergies = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips
 Alias: $VS_SNOMEDCT_FormCodes = http://hl7.org/fhir/ValueSet/medication-form-codes
+
+
 
 
 // From Thai MOPH codes
@@ -124,7 +129,6 @@ Alias: $VS_Meta_IpdJourney = https://terms.sil-th.org/ValueSet/vs-meta-ipd-journ
 Alias: $VS_Meta_ExtendedHL7DiagnosisRole = https://terms.sil-th.org/ValueSet/vs-meta-extended-hl7-diagnosis-role
 Alias: $VS_43Plus_EncounterDiagnosisRole = https://terms.sil-th.org/ValueSet/vs-43plus-encounter-diagnosis-role
 
-
 // Discharge
 Alias: $VS_THCC_DischargeStatus = https://terms.sil-th.org/ValueSet/vs-thcc-discharge-status
 Alias: $VS_THCC_IpdDischargeStatus = https://terms.sil-th.org/ValueSet/vs-thcc-ipd-discharge-status
@@ -186,7 +190,7 @@ Alias: $VS_THCC_ChildFood = https://terms.sil-th.org/ValueSet/vs-thcc-child-food
 
 // Referral
 Alias: $VS_THCC_ReferReason = https://terms.sil-th.org/ValueSet/vs-thcc-refer-in-reason
-Alias: $VS_43Plus_ReferReason = https://terms.sil-th.org/CodeSystem/vs-43plus-refer-reason
+Alias: $VS_43Plus_ReferReason = https://terms.sil-th.org/ValueSet/vs-43plus-refer-reason
 Alias: $VS_Std15_ReferReason = https://terms.sil-th.org/ValueSet/vs-std15-refer-reason
 Alias: $VS_eClaim_ReferReason = https://terms.sil-th.org/ValueSet/vs-eclaim-refer-reason
 Alias: $VS_43File_ReferEncounterClass = https://terms.sil-th.org/ValueSet/vs-43file-refer-encounter-class
@@ -222,7 +226,6 @@ Alias: $VS_43Plus_CancerGrade = https://terms.sil-th.org/ValueSet/vs-43plus-canc
 Alias: $VS_43Plus_CancerStaging = https://terms.sil-th.org/ValueSet/vs-43plus-cancer-staging
 Alias: $VS_eClaim_CancerType = https://terms.sil-th.org/ValueSet/vs-eclaim-cancer-type
 
-
 // Misc Observation
 Alias: $VS_Meta_MiscObsType = https://terms.sil-th.org/ValueSet/vs-meta-misc-obs-type
 
@@ -240,6 +243,8 @@ Alias: $VS_THCC_VaccineCode = https://terms.sil-th.org/ValueSet/vs-thcc-vaccine-
 Alias: $VS_THCC_SpecialPPService = https://terms.sil-th.org/ValueSet/vs-thcc-special-pp-service
 Alias: $VS_THCC_CommunityActivity = https://terms.sil-th.org/ValueSet/vs-thcc-community-activity
 Alias: $VS_THCC_CommunityService = https://terms.sil-th.org/ValueSet/vs-thcc-community-service
+
+
 
 
 // From Thai national codes

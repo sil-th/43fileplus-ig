@@ -10,6 +10,8 @@ Alias: $ISO4217 = urn:iso:std:iso:4217
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $EDQM = http://standardterms.edqm.eu
 
+
+
 // From terminology.hl7.org
 Alias: $CS_HL7_IdentifierType = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $CS_HL7_MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
@@ -212,6 +214,7 @@ Alias: $CS_eClaim_CancerType = https://terms.sil-th.org/CodeSystem/cs-eclaim-can
 // Misc Observation
 Alias: $CS_Meta_MiscObsType = https://terms.sil-th.org/CodeSystem/cs-meta-misc-obs-type
 
+
 // Large CodeSystems
 Alias: $CS_THCC_Occupation = https://terms.sil-th.org/CodeSystem/cs-thcc-occupation
 Alias: $CS_THCC_Nationality = https://terms.sil-th.org/CodeSystem/cs-thcc-nationality
@@ -227,6 +230,8 @@ Alias: $CS_THCC_CommunityActivity = https://terms.sil-th.org/CodeSystem/cs-thcc-
 Alias: $CS_THCC_CommunityService = https://terms.sil-th.org/CodeSystem/cs-thcc-community-service
 
 
+
+
 // Questionnaire Related
 Alias: $CS_Meta_QnType = https://terms.sil-th.org/CodeSystem/cs-meta-qn-type
 Alias: $CS_QN_Dental = https://terms.sil-th.org/CodeSystem/cs-qn-dental
@@ -234,14 +239,15 @@ Alias: $CS_QN_Home = https://terms.sil-th.org/CodeSystem/cs-qn-home
 Alias: $CS_QN_Village = https://terms.sil-th.org/CodeSystem/cs-qn-village
 
 
+
 // From Thai national codes
 Alias: $CS_INT_ISCED1997 = https://terms.sil-th.org/CodeSystem/cs-int-isced-97
 Alias: $CS_INT_ICF = https://terms.sil-th.org/CodeSystem/cs-int-icf
 Alias: $CS_DOPA_NamePrefix = https://terms.sil-th.org/CodeSystem/cs-dopa-nameprefix
 Alias: $CS_DOPA_Location = https://terms.sil-th.org/CodeSystem/cs-dopa-location
-Alias: $CS_TMT = https://terms.sil-th.org/CodeSystem/th-tmt
-Alias: $CS_TMLT = https://terms.sil-th.org/CodeSystem/th-tmlt
-Alias: $CS_24Drug = https://terms.sil-th.org/CodeSystem/th-24drug
+Alias: $CS_TMT = https://terms.sil-th.org/CodeSystem/cs-th-tmt
+Alias: $CS_TMLT = https://terms.sil-th.org/CodeSystem/cs-th-tmlt
+Alias: $CS_24Drug = https://terms.sil-th.org/CodeSystem/cs-th-24drug
 Alias: $CS_TH_ICD10TM = https://terms.sil-th.org/CodeSystem/cs-th-icd10tm
 Alias: $CS_TH_ICD10TM_Lab = https://terms.sil-th.org/CodeSystem/cs-th-icd10tm-lab
 Alias: $CS_TH_FeeCategory = https://terms.sil-th.org/CodeSystem/cs-th-fee-category
