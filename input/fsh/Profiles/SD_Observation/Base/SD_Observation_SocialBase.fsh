@@ -1,6 +1,6 @@
-Profile: Moph43pObservationSocialBase
+Profile: MophPcObservationSocialBase
 Parent: Observation
-Id: moph43p-observation-social-base
+Id: mophpc-observation-social-base
 Title: "MoPH43p Observation: Social"
 Description: "ข้อมูลประวัติทางสังคม"
 * ^url = $SD_Observation_SocialBase

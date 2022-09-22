@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregDeliveryDate
+Profile: MophPcObservationPregDeliveryDate
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-delivery-date
+Id: mophpc-observation-preg-delivery-date
 Title: "MoPH43p Observation: Pregnancy-Delivery Date"
 Description: "วันคลอด / วันสิ้นสุดการตั้งครรภ์"
 * ^url = $SD_Observation_PregDeliveryDate

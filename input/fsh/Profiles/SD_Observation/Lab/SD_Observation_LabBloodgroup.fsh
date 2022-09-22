@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabBldGrp
+Profile: MophPcObservationLabBldGrp
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-bloodgroup
+Id: mophpc-observation-lab-bloodgroup
 Title: "MoPH43p Observation: Lab-Blood group"
 Description: "ผลการตรวจหมู่เลือด"
 * ^url = $SD_Observation_LabBloodgroup
@@ -23,5 +23,5 @@ Description: "ผลการตรวจหมู่เลือด"
 * hasMember contains
     abo 0..1 MS and
     rh 0..1 MS
-* hasMember[abo] only Reference(Moph43pObservationLabBloodABO)
-* hasMember[rh] only Reference(Moph43pObservationLabBloodRH)
+* hasMember[abo] only Reference(MophPcObservationLabBloodABO)
+* hasMember[rh] only Reference(MophPcObservationLabBloodRH)

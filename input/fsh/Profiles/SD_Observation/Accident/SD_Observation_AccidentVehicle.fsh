@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccVehicle
+Profile: MophPcObservationAccVehicle
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-vehicle
+Id: mophpc-observation-accident-vehicle
 Title: "MoPH43p Observation: Accident-Vehicle"
 Description: "ประเภทยานพาหนะที่เกิดเหตุ"
 * ^url = $SD_Observation_AccidentVehicle

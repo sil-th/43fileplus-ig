@@ -1,6 +1,6 @@
-Profile: Moph43pPractitionerBase
+Profile: MophPcPractitionerBase
 Parent: Practitioner
-Id: moph43p-practitioner-base
+Id: mophpc-practitioner-base
 Title: "MoPH43p Practitioner"
 Description: "ข้อมูลผู้ให้บริการของสถานพยาบาล"
 * ^url = $SD_Practitioner_Base

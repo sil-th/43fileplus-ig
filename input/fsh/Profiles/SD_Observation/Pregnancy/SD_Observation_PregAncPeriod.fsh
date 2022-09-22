@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregAncPeriod
+Profile: MophPcObservationPregAncPeriod
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-anc-period
+Id: mophpc-observation-preg-anc-period
 Title: "MoPH43p Observation: Pregnancy-Anc Period"
 Description: "ช่วงของการ ANC"
 * ^url = $SD_Observation_PregAncPeriod

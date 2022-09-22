@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabBase
+Profile: MophPcObservationLabBase
 Parent: Observation
-Id: moph43p-observation-lab-base
+Id: mophpc-observation-lab-base
 Title: "MoPH43p Observation: Lab"
 Description: "ข้อมูลการตรวจทางห้องปฏิบัติการ"
 * ^url = $SD_Observation_LabBase

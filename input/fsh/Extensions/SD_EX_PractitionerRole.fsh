@@ -1,4 +1,4 @@
-// Alias: $EX_TH_PractitionerRoleProviderMovement = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-move
+// Alias: $EX_TH_PractitionerRoleProviderMovement = https://fhir-ig.sil-th.org/mophpc/Extension/TH-provider-move
 // * extension[0]
 //   * url = $EX_TH_PractitionerRoleProviderMovement
 //   * extension[0]

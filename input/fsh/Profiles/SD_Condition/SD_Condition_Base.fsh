@@ -1,6 +1,6 @@
-Profile: Moph43pConditionBase
+Profile: MophPcConditionBase
 Parent: Condition
-Id: moph43p-condition-base
+Id: mophpc-condition-base
 Title: "MoPH43p Condition"
 Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * ^url = $SD_Condition_Base

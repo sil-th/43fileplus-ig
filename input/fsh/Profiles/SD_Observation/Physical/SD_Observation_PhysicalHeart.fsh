@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalHeart
+Profile: MophPcObservationPhysicalHeart
 Parent: $SD_Observation_PhysicalBase
-Id: moph43p-observation-physical-heart
+Id: mophpc-observation-physical-heart
 Title: "MoPH43p Observation: Physical-Heart"
 Description: "Physical findings of Heart"
 * ^url = $SD_Observation_PhysicalHeart

@@ -1,6 +1,6 @@
-Profile: Moph43pConditionSurveillance
+Profile: MophPcConditionSurveillance
 Parent: $SD_Condition_Base
-Id: moph43p-condition-surveillance
+Id: mophpc-condition-surveillance
 Title: "MoPH43p Condition: Surveillance"
 Description: "ข้อมูลการวินิจฉัย สำหรับการรับบริการ Surveillance"
 * ^url = $SD_Condition_Surveillance

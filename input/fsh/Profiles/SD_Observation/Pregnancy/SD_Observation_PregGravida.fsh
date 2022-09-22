@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregGravida
+Profile: MophPcObservationPregGravida
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-gravida
+Id: mophpc-observation-preg-gravida
 Title: "MoPH43p Observation: Pregnancy-Gravida"
 Description: "ครรภ์ที่"
 * ^url = $SD_Observation_PregGravida

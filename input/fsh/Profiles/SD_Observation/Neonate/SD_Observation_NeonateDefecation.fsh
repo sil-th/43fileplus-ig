@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNeonateDefecation
+Profile: MophPcObservationNeonateDefecation
 Parent: $SD_Observation_NeonateBase
-Id: moph43p-observation-neonatal-defecation
+Id: mophpc-observation-neonatal-defecation
 Title: "MoPH43p Observation: Neonate Defecation"
 Description: "ระบบขับถ่ายอุจจาระ"
 * ^url = $SD_Observation_NeonateDefecation

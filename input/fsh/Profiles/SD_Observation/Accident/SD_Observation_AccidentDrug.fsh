@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccDrug
+Profile: MophPcObservationAccDrug
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-drug
+Id: mophpc-observation-accident-drug
 Title: "MoPH43p Observation: Accident-Drug"
 Description: "การใช้ยาสารเสพติดขณะเกิดอุบัติเหตุ"
 * ^url = $SD_Observation_AccidentDrug

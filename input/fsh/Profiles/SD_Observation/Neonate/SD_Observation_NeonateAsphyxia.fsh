@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNeonateAsphyxia
+Profile: MophPcObservationNeonateAsphyxia
 Parent: $SD_Observation_NeonateBase
-Id: moph43p-observation-neonatal-asphyxia
+Id: mophpc-observation-neonatal-asphyxia
 Title: "MoPH43p Observation: Neonate Asphyxia"
 Description: "ภาวะการณ์ขาดออกซิเจน"
 * ^url = $SD_Observation_NeonateAsphyxia

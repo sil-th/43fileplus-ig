@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalDentalCaries
+Profile: MophPcObservationPhysicalDentalCaries
 Parent: $SD_Observation_PhysicalBase
-Id: moph43p-observation-physical-dental-caries
+Id: mophpc-observation-physical-dental-caries
 Title: "MoPH43p Observation: Physical-Dental Caries"
 Description: "จำนวนฟันผุ (ซี่)"
 * ^url = $SD_Observation_PhysicalDentalCaries

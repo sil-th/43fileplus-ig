@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabHbB
+Profile: MophPcObservationLabHbB
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-hepatitis-b
+Id: mophpc-observation-lab-hepatitis-b
 Title: "MoPH43p Observation: Lab-Hepatitis B"
 Description: "ผลการตรวจ Hepatitis B"
 * ^url = $SD_Observation_LabHbB

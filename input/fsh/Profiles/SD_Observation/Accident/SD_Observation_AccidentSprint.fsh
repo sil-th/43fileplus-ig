@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccSprint
+Profile: MophPcObservationAccSprint
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-sprint
+Id: mophpc-observation-accident-sprint
 Title: "MoPH43p Observation: Accident-Sprint"
 Description: "การใส่ splint/ slab"
 * ^url = $SD_Observation_AccidentSprint

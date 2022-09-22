@@ -1,6 +1,6 @@
-Profile: Moph43pEncounterBase
+Profile: MophPcEncounterBase
 Parent: Encounter
-Id: moph43p-encounter-base
+Id: mophpc-encounter-base
 Title: "MoPH43p Encounter"
 Description: "การรับบริการโดยทั่วไป"
 * ^url = $SD_Encounter_Base

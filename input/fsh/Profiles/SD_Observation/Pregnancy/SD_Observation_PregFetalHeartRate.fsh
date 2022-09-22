@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregFetalHeartRate
+Profile: MophPcObservationPregFetalHeartRate
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-fetal-heart-rate
+Id: mophpc-observation-preg-fetal-heart-rate
 Title: "MoPH43p Observation: Pregnancy-Fetal Heart Rate"
 Description: "จำนวนครั้งการเต้นของหัวใจเด็ก"
 * ^url = $SD_Observation_PregFetalHeartRate

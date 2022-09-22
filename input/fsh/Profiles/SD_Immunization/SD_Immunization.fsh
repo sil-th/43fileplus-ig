@@ -1,6 +1,6 @@
-Profile: Moph43pImmunizationBase
+Profile: MophPcImmunizationBase
 Parent: Immunization
-Id: moph43p-immunization-base
+Id: mophpc-immunization-base
 Title: "MoPH43p Immunization"
 Description: "การมารับบริการฉีดวัคซีน"
 * ^url = $SD_Immunization_Base

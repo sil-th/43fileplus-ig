@@ -1,6 +1,6 @@
-Profile: Moph43pPatientExtensionNationality
+Profile: MophPcPatientExtensionNationality
 Parent: $EX_HL7_Nationality
-Id: moph43p-patient-extension-nationality
+Id: mophpc-patient-extension-nationality
 Title: "MoPH43p Patient Extension: Nationality"
 Description: "สัญชาติของผู้ป่วย"
 * ^url = $SD_Patient_EX_Nationality
@@ -25,9 +25,9 @@ Description: "สัญชาติของผู้ป่วย"
 * extension[code].valueCodeableConcept.coding[thcc].code 1..
 
 
-Profile: Moph43pPatientExtensionReligion
+Profile: MophPcPatientExtensionReligion
 Parent: $EX_HL7_Religion
-Id: moph43p-patient-extension-religion
+Id: mophpc-patient-extension-religion
 Title: "MoPH43p Patient Extension: Religion"
 Description: "ความเชื่อทางศาสนาของผู้ป่วย"
 * ^url = $SD_Patient_EX_Religion
@@ -54,9 +54,9 @@ Description: "ความเชื่อทางศาสนาของผู
 
 
 
-Profile: Moph43pPatientExtensionDisability
+Profile: MophPcPatientExtensionDisability
 Parent: $EX_HL7_Disability
-Id: moph43p-patient-extension-disability
+Id: mophpc-patient-extension-disability
 Title: "MoPH43p Patient Extension: Disability"
 Description: "ประเภทความพิการ"
 * ^url = $SD_Patient_EX_Disability

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregEdema
+Profile: MophPcObservationPregEdema
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-edema
+Id: mophpc-observation-preg-edema
 Title: "MoPH43p Observation: Pregnancy-Edema"
 Description: "อาการบวมของแม่"
 * ^url = $SD_Observation_PregEdema

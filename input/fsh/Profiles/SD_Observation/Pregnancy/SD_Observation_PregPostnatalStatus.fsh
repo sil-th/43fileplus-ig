@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregPostnatalStatus
+Profile: MophPcObservationPregPostnatalStatus
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-postnatal-status
+Id: mophpc-observation-preg-postnatal-status
 Title: "MoPH43p Observation: Pregnancy-Postnatal Status"
 Description: "ผลการตรวจมารดาหลังคลอด"
 * ^url = $SD_Observation_PregPostnatalStatus

@@ -1,6 +1,6 @@
-Profile: Moph43pServiceRequestRefer
+Profile: MophPcServiceRequestRefer
 Parent: ServiceRequest
-Id: moph43p-servicerequest-refer
+Id: mophpc-servicerequest-refer
 Title: "MoPH43p ServiceRequest: Refer"
 Description: "การส่งต่อผู้ป่วยระหว่างสถานพยาบาล"
 * ^url = $SD_ServiceRequest_Refer

@@ -1,6 +1,6 @@
-Profile: Moph43pMedicationRequestBase
+Profile: MophPcMedicationRequestBase
 Parent: MedicationRequest
-Id: moph43p-medicationrequest-base
+Id: mophpc-medicationrequest-base
 Title: "MoPH43p MedicationRequest"
 Description: "การสั่งยา"
 * ^url = $SD_MedicationRequest_Base

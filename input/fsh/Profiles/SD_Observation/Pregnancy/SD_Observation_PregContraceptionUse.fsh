@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregContraceptionUse
+Profile: MophPcObservationPregContraceptionUse
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-contraception-use
+Id: mophpc-observation-preg-contraception-use
 Title: "MoPH43p Observation: Pregnancy-Contraception Use"
 Description: "รหัสวิธีการคุมกำเนิดปัจจุบัน"
 * ^url = $SD_Observation_PregContraceptionUse

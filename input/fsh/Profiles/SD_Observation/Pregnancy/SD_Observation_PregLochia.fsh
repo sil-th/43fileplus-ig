@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregLochia
+Profile: MophPcObservationPregLochia
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-lochia
+Id: mophpc-observation-preg-lochia
 Title: "MoPH43p Observation: Pregnancy-Lochia"
 Description: "ลักษณะน้ำคาวปลา"
 * ^url = $SD_Observation_PregLochia

@@ -1,4 +1,4 @@
-// Alias: $EX_TH_CoverageContractedProvider = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-provider-type-coverage
+// Alias: $EX_TH_CoverageContractedProvider = https://fhir-ig.sil-th.org/mophpc/Extension/TH-provider-type-coverage
 // * extension[+]
 //   * url = $EX_TH_CoverageContractedProvider
 //   * extension[0]

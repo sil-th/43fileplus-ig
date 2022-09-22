@@ -1,6 +1,6 @@
-Profile: Moph43pDiagnosticReportLipid
+Profile: MophPcDiagnosticReportLipid
 Parent: $SD_DiagnosticReport_Base
-Id: moph43p-diagnosticreport-lipid
+Id: mophpc-diagnosticreport-lipid
 Title: "MoPH43p DiagnosticReport: Lipid"
 Description: "ผลการตรวจทางห้องปฏิบัติการ Lipid Profile"
 * ^url = $SD_DiagnosticReport_Lipid

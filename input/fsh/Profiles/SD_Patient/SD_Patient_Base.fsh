@@ -1,6 +1,6 @@
-Profile: Moph43pPatientBase
+Profile: MophPcPatientBase
 Parent: Patient
-Id: moph43p-patient-base
+Id: mophpc-patient-base
 Title: "MoPH43p Patient"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * ^url = $SD_Patient_Base

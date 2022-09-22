@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccBreating
+Profile: MophPcObservationAccBreating
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-breathing
+Id: mophpc-observation-accident-breathing
 Title: "MoPH43p Observation: Accident-Breathing"
 Description: "การดูแลการหายใจ"
 * ^url = $SD_Observation_AccidentBreathing

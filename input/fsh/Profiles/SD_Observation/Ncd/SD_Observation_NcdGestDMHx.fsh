@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNcdGestDMHx
+Profile: MophPcObservationNcdGestDMHx
 Parent: $SD_Observation_NcdBase
-Id: moph43p-observation-ncd-gest-dm-hx
+Id: mophpc-observation-ncd-gest-dm-hx
 Title: "MoPH43p Observation: NCD Gestational DM Hx"
 Description: "ประวัติเป็นเบาหวานขณะตั้งครรภ์"
 * ^url = $SD_Observation_NcdGestDMHx

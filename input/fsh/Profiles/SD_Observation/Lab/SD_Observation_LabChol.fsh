@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabChol
+Profile: MophPcObservationLabChol
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-chol
+Id: mophpc-observation-lab-chol
 Title: "MoPH43p Observation: Lab-Chol"
 Description: "ผลการตรวจ Total Cholesterol"
 * ^url = $SD_Observation_LabChol

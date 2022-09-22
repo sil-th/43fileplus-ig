@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregFundalHeight
+Profile: MophPcObservationPregFundalHeight
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-fundal-height
+Id: mophpc-observation-preg-fundal-height
 Title: "MoPH43p Observation: Pregnancy-Fundal Height"
 Description: "ระดับมดลูก"
 * ^url = $SD_Observation_PregFundalHeight

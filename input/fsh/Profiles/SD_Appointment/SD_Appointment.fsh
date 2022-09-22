@@ -1,6 +1,6 @@
-Profile: Moph43pAppointmentBase
+Profile: MophPcAppointmentBase
 Parent: Appointment
-Id: moph43p-appointment-base
+Id: mophpc-appointment-base
 Title: "MoPH43p Appointment"
 Description: "ข้อมูลการนัดมารับบริการครั้งต่อไปของผู้ที่มารับบริการ"
 * ^url = $SD_Appointment_Base

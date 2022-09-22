@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregDeliveryPresentation
+Profile: MophPcObservationPregDeliveryPresentation
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-delivery-presentation
+Id: mophpc-observation-preg-delivery-presentation
 Title: "MoPH43p Observation: Pregnancy-Delivery Presentation"
 Description: "ท่าเด็กตอนคลอด"
 * ^url = $SD_Observation_PregDeliveryPresentation

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregDentalPlaque
+Profile: MophPcObservationPregDentalPlaque
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-dental-plaque
+Id: mophpc-observation-preg-dental-plaque
 Title: "MoPH43p Observation: Pregnancy-DentalPlaque"
 Description: "การพบหินปูน"
 * ^url = $SD_Observation_PregDentalPlaque

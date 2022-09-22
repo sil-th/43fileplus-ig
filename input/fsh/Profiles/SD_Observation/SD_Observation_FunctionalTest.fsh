@@ -1,6 +1,6 @@
-Profile: Moph43pObservationFunctionalTest
+Profile: MophPcObservationFunctionalTest
 Parent: Observation
-Id: moph43p-observation-functional-test
+Id: mophpc-observation-functional-test
 Title: "MoPH43p Observation: Functional Test"
 Description: "การประเมินความบกพร่อง"
 * ^url = $SD_Observation_FunctionalTest

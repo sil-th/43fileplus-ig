@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccIV
+Profile: MophPcObservationAccIV
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-iv-fluid
+Id: mophpc-observation-accident-iv-fluid
 Title: "MoPH43p Observation: Accident-IV"
 Description: "การให้น้ำเกลือ"
 * ^url = $SD_Observation_AccidentIV

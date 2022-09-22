@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabFBS
+Profile: MophPcObservationLabFBS
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-fbs
+Id: mophpc-observation-lab-fbs
 Title: "MoPH43p Observation: Lab-FBS"
 Description: "การตรวจระดับน้ำตาลในเลือด (FBS)"
 * ^url = $SD_Observation_LabFbs

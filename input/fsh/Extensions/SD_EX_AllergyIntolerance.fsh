@@ -1,4 +1,4 @@
-// Alias: $EX_TH_AllergyIntoleranceCertainy = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-certainy
+// Alias: $EX_TH_AllergyIntoleranceCertainy = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-certainy
 // * extension[0]
 //   * url = $EX_TH_AllergyIntoleranceCertainy
 //   * valueCodeableConcept
@@ -28,7 +28,7 @@ Description: "รหัสประเภทการวินิจฉัยก
 
 
 
-// Alias: $EX_TH_AllergyIntoleranceSeverity = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-severity
+// Alias: $EX_TH_AllergyIntoleranceSeverity = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-severity
 // * extension[+]
 //   * url = $EX_TH_AllergyIntoleranceSeverity
 //   * valueCodeableConcept
@@ -58,7 +58,7 @@ Description: "รหัสระดับความรุนแรงของ
 
 
 
-// Alias: $EX_TH_AllergyIntoleranceAssertType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-type
+// Alias: $EX_TH_AllergyIntoleranceAssertType = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-assert-type
 // * extension[+]
 //   * url = $EX_TH_AllergyIntoleranceAssertType
 //   * valueCodeableConcept
@@ -88,7 +88,7 @@ Description: "รหัสผู้ให้ประวัติการแพ
 
 
 
-// Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-allergy-assert-org
+// Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-assert-org
 // * extension[+]
 //   * url = $EX_TH_AllergyIntoleranceAssertOrg
 //   * valueReference = Reference(Organization/organization-main)

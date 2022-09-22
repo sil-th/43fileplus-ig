@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalBase
+Profile: MophPcObservationPhysicalBase
 Parent: Observation
-Id: moph43p-observation-physical-base
+Id: mophpc-observation-physical-base
 Title: "MoPH43p Observation: Physical"
 Description: "ข้อมูลการตรวจร่างกาย"
 * ^url = $SD_Observation_PhysicalBase

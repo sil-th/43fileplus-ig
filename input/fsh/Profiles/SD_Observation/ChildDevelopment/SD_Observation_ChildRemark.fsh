@@ -1,6 +1,6 @@
-Profile: Moph43pObservationChildRemark
+Profile: MophPcObservationChildRemark
 Parent: $SD_Observation_ChildBase
-Id: moph43p-observation-child-remark
+Id: mophpc-observation-child-remark
 Title: "MoPH43p Observation: Child-Remark"
 Description: "หมายเหตุเพิ่มเติมในการตรวจเด็ก"
 * ^url = $SD_Observation_ChildRemark

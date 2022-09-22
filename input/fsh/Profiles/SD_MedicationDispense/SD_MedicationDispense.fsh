@@ -1,6 +1,6 @@
-Profile: Moph43pMedicationDispenseBase
+Profile: MophPcMedicationDispenseBase
 Parent: MedicationDispense
-Id: moph43p-medicationdispense-base
+Id: mophpc-medicationdispense-base
 Title: "MoPH43p MedicationDispense"
 Description: "การจ่ายยา"
 * ^url = $SD_MedicationDispense_Base

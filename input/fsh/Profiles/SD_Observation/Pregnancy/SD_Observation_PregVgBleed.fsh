@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregVgBleed
+Profile: MophPcObservationPregVgBleed
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-vg-bleed
+Id: mophpc-observation-preg-vg-bleed
 Title: "MoPH43p Observation: Pregnancy-Vaginal Bleed"
 Description: "อาการเลือดออกในช่องคลอด"
 * ^url = $SD_Observation_PregVgBleed

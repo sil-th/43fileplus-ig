@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccidentBase
+Profile: MophPcObservationAccidentBase
 Parent: Observation
-Id: moph43p-observation-accident-base
+Id: mophpc-observation-accident-base
 Title: "MoPH43p Observation: Accident"
 Description: "ข้อมูลการตรวจโรคและอาการในกลุ่ม Accident"
 * ^url = $SD_Observation_AccidentBase

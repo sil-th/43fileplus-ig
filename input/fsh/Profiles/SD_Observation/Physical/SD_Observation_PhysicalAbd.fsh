@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalAbd
+Profile: MophPcObservationPhysicalAbd
 Parent: $SD_Observation_PhysicalBase
-Id: moph43p-observation-physical-abd
+Id: mophpc-observation-physical-abd
 Title: "MoPH43p Observation: Physical-Abdomen"
 Description: "Physical findings of Abdomen"
 * ^url = $SD_Observation_PhysicalAbd

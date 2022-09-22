@@ -1,6 +1,6 @@
-Profile: Moph43pEpisodeOfCareBase
+Profile: MophPcEpisodeOfCareBase
 Parent: EpisodeOfCare
-Id: moph43p-episodeofcare-base
+Id: mophpc-episodeofcare-base
 Title: "MoPH43p EpisodeOfCare"
 Description: "การรับบริการเป็นประจำ"
 * ^url = $SD_EpisodeOfCare_Base

@@ -1,6 +1,6 @@
-Profile: Moph43pProcedureBase
+Profile: MophPcProcedureBase
 Parent: Procedure
-Id: moph43p-procedure-base
+Id: mophpc-procedure-base
 Title: "MoPH43p Procedure"
 Description: "การทำหัตถการหรือการรักษา"
 * ^url = $SD_Procedure_Base

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNcdRetina
+Profile: MophPcObservationNcdRetina
 Parent: $SD_Observation_NcdBase
-Id: moph43p-observation-ncd-retina
+Id: mophpc-observation-ncd-retina
 Title: "MoPH43p Observation: NCD Retina Exam"
 Description: "การตรวจจอประสาทตา"
 * ^url = $SD_Observation_NcdRetina

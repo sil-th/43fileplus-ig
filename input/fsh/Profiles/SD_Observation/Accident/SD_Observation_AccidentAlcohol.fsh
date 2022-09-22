@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccAlcohol
+Profile: MophPcObservationAccAlcohol
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-alcohol
+Id: mophpc-observation-accident-alcohol
 Title: "MoPH43p Observation: Accident-Alcohol"
 Description: "การดื่มแอลกอฮอลขณะเกิดอุบัติเหตุ"
 * ^url = $SD_Observation_AccidentAlcohol

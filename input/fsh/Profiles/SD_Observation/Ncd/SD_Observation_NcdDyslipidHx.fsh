@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNcdDyslipidHx
+Profile: MophPcObservationNcdDyslipidHx
 Parent: $SD_Observation_NcdBase
-Id: moph43p-observation-ncd-dyslipid-hx
+Id: mophpc-observation-ncd-dyslipid-hx
 Title: "MoPH43p Observation: NCD Dyslipidemia Hx"
 Description: "ประวัติไขมันในเลือดสูง"
 * ^url = $SD_Observation_NcdDyslipidHx

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregVgDischarge
+Profile: MophPcObservationPregVgDischarge
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-vg-discharge
+Id: mophpc-observation-preg-vg-discharge
 Title: "MoPH43p Observation: Pregnancy-Vaginal Discharge"
 Description: "พบตกขาวหรือไม่"
 * ^url = $SD_Observation_PregVgDischarge

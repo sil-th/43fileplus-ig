@@ -19,7 +19,7 @@ Description: "รหัสการใช้สิทธิ"
 * value[x] from $VS_43Plus_CoverageUse (extensible)
 
 
-// Alias: $EX_TH_AccountAccidentCoverage = https://fhir-ig.sil-th.org/43filesplus/Extension/ex-account-accident-coverage
+// Alias: $EX_TH_AccountAccidentCoverage = https://fhir-ig.sil-th.org/mophpc/Extension/ex-account-accident-coverage
 // * extension[0]
 //   * url = $CS_eClaim_AccidentCoverage
 //   * valueCodeableConcept = $CS_eClaim_AccidentCoverage#V "ใช้ พรบ. ผู้ประสบภัยจากรถ"

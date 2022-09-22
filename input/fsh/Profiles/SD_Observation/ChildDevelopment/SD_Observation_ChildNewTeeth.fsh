@@ -1,6 +1,6 @@
-Profile: Moph43pObservationChildNewTeeth
+Profile: MophPcObservationChildNewTeeth
 Parent: $SD_Observation_ChildBase
-Id: moph43p-observation-child-new-teeth
+Id: mophpc-observation-child-new-teeth
 Title: "MoPH43p Observation: Child-New Teeth"
 Description: "จำนวนฟันขึ้นใหม่ (ซี่)"
 * ^url = $SD_Observation_ChildNewTeeth

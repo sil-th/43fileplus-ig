@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregBreastfeeding
+Profile: MophPcObservationPregBreastfeeding
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-breastfeeding
+Id: mophpc-observation-preg-breastfeeding
 Title: "MoPH43p Observation: Pregnancy-Breastfeeding"
 Description: "น้ำนม Postnatal"
 * ^url = $SD_Observation_PregBreastfeeding

@@ -35,7 +35,7 @@ Description: "รหัสคำนำหน้าชื่อ"
 // * extension[0]
 //   * url = $EX_TH_AddressDopaCode
 //   * valueCodeableConcept = $CS_DOPA_Location#120102 "จังหวัดนนทบุรี อำเภอเมืองนนทบุรี ตำบลตลาดขวัญ"
-// Alias: $EX_TH_AddressDopaCode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-address-code
+// Alias: $EX_TH_AddressDopaCode = https://fhir-ig.sil-th.org/mophpc/Extension/TH-address-code
 
 Extension: EX_TH_AddressDopaCode
 Id: ex-address-address-code
@@ -78,7 +78,7 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 //   * extension[+]
 //     * url = "lane"
 //     * valueString = "ซอยนครอินทร์ 20"
-// Alias: $EX_TH_AddressStructuredLine = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-structure-line
+// Alias: $EX_TH_AddressStructuredLine = https://fhir-ig.sil-th.org/mophpc/Extension/TH-structure-line
 
 Extension: EX_TH_AddressStructuredLine
 Id: ex-address-structured-line
@@ -144,7 +144,7 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
   //   * url = $EX_TH_AddressHomeReference
   //   * valueReference = Reference(location-Address1-home1)
   //     * insert GeneralReference($ID_DopaHouseNo, "XXXXXXXXXXX", "123 คอนโดพัฒนานนท์")
-// Alias: $EX_TH_AddressHomeReference = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-home-reference
+// Alias: $EX_TH_AddressHomeReference = https://fhir-ig.sil-th.org/mophpc/Extension/TH-home-reference
 Extension: EX_TH_AddressHomeReference
 Id: ex-address-home-reference
 Title: "Address: Reference to Home"
@@ -170,7 +170,7 @@ Description: "การอ้างอิง Location resource"
   // * extension[+]
   //   * url = $EX_TH_AddressHouseType
   //   * valueCodeableConcept = $CS_THCC_HouseType#3 "คอนโดมิเนียม"
-// Alias: $EX_TH_AddressHouseType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-type
+// Alias: $EX_TH_AddressHouseType = https://fhir-ig.sil-th.org/mophpc/Extension/TH-house-type
 
 Extension: EX_TH_AddressHouseType
 Id: ex-address-house-type

@@ -1,6 +1,6 @@
-Profile: Moph43pDeviceBase
+Profile: MophPcDeviceBase
 Parent: Device
-Id: moph43p-device-base
+Id: mophpc-device-base
 Title: "MoPH43p Device"
 Description: "อุปกรณ์/เวชภัณฑ์"
 * ^url = $SD_Device_Base

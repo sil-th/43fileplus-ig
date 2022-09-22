@@ -1,4 +1,4 @@
-// Alias: $EX_TH_PractitionerQualificationIssuer = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-qualification-issuer
+// Alias: $EX_TH_PractitionerQualificationIssuer = https://fhir-ig.sil-th.org/mophpc/Extension/TH-qualification-issuer
 // * qualification
 //   * issuer = Reference(Organization/organization-medical-council)
 //     * extension[0]

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregPerineum
+Profile: MophPcObservationPregPerineum
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-perineum
+Id: mophpc-observation-preg-perineum
 Title: "MoPH43p Observation: Pregnancy-Perineum"
 Description: "การตรวจฝีเย็บ"
 * ^url = $SD_Observation_PregPerineum

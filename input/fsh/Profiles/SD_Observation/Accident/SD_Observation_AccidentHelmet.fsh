@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccHelmet
+Profile: MophPcObservationAccHelmet
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-helmet
+Id: mophpc-observation-accident-helmet
 Title: "MoPH43p Observation: Accident-Helmet"
 Description: "การสวมหมวกนิรภัย"
 * ^url = $SD_Observation_AccidentHelmet

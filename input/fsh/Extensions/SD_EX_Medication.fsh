@@ -1,4 +1,4 @@
-// Alias: $EX_TH_MedicationImageUrl = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-image
+// Alias: $EX_TH_MedicationImageUrl = https://fhir-ig.sil-th.org/mophpc/Extension/TH-med-image
 // * extension[0]
 //   * url = $EX_TH_MedicationImageUrl
 //   * valueUri = "http://example.com/image1.jpg"

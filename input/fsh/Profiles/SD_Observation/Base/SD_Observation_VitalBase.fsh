@@ -1,6 +1,6 @@
-Profile: Moph43pObservationVitalBase
+Profile: MophPcObservationVitalBase
 Parent: Observation
-Id: moph43p-observation-vital-base
+Id: mophpc-observation-vital-base
 Title: "MoPH43p Observation: Vital"
 Description: "ข้อมูลการตรวจสัญญาณชีพ"
 * ^url = $SD_Observation_VitalBase

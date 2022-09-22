@@ -17,7 +17,7 @@
 // * value[x] 1..1
 // * value[x] only boolean
 
-// Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-preg-test-amount
+// Alias: $EX_TH_PregTestAmount = https://fhir-ig.sil-th.org/mophpc/Extension/TH-preg-test-amount
 // * device
 //   * extension[0]
 //     * url = $EX_TH_ObservationDeviceAmount

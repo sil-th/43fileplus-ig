@@ -1,6 +1,6 @@
-Profile: Moph43pMedicationStatementBase
+Profile: MophPcMedicationStatementBase
 Parent: MedicationStatement
-Id: moph43p-medicationstatement-base
+Id: mophpc-medicationstatement-base
 Title: "MoPH43p MedicationStatement"
 Description: "ข้อมูลประวัติยาผู้ป่วย"
 * ^url = $SD_MedicationStatement_Base

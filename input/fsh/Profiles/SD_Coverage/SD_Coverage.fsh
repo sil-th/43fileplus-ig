@@ -1,6 +1,6 @@
-Profile: Moph43pCoverageBase
+Profile: MophPcCoverageBase
 Parent: Coverage
-Id: moph43p-coverage-base
+Id: mophpc-coverage-base
 Title: "MoPH43p Coverage"
 Description: "ข้อมูลสิทธิ"
 * ^url = $SD_Coverage_Base

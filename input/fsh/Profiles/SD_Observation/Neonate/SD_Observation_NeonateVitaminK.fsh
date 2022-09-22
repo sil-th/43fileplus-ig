@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNeonateVitaminK
+Profile: MophPcObservationNeonateVitaminK
 Parent: $SD_Observation_NeonateBase
-Id: moph43p-observation-neonatal-vitamink
+Id: mophpc-observation-neonatal-vitamink
 Title: "MoPH43p Observation: Neonate Vitamin K"
 Description: "ได้รับ VIT K หรือไม่"
 * ^url = $SD_Observation_NeonateVitaminK

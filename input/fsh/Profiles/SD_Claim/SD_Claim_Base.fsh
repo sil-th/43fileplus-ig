@@ -1,6 +1,6 @@
-Profile: Moph43pClaimBase
+Profile: MophPcClaimBase
 Parent: Claim
-Id: moph43p-claim-base
+Id: mophpc-claim-base
 Title: "MoPH43p Claim"
 Description: "ค่าใช้จ่ายการรับบริการ"
 * ^url = $SD_Claim_Base

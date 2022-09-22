@@ -1,6 +1,6 @@
-Profile: Moph43pProcedureLabor
+Profile: MophPcProcedureLabor
 Parent: $SD_Procedure_Base
-Id: moph43p-procedure-labor
+Id: mophpc-procedure-labor
 Title: "MoPH43p Procedure: Labor"
 Description: "วิธีการคลอด"
 * ^url = $SD_Procedure_Labor

@@ -1,4 +1,4 @@
-// Alias: $EX_TH_ProcedureLaborLocation = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-labor-location
+// Alias: $EX_TH_ProcedureLaborLocation = https://fhir-ig.sil-th.org/mophpc/Extension/TH-labor-location
 // * location
 //   * extension[0]
 //     * url = $EX_TH_ProcedureLaborLocation
@@ -29,7 +29,7 @@ Description: "รหัสสถานที่คลอด"
 
 
 
-// Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-procedure-type
+// Alias: $EX_TH_ProcedureProcedureType = https://fhir-ig.sil-th.org/mophpc/Extension/TH-procedure-type
 // * extension[0]
 //   * url = $EX_TH_ProcedureProcedureType
 //   * valueCodeableConcept = $CS_eClaim_ProcedureType#1 "Principal procedure"

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalThyroid
+Profile: MophPcObservationPhysicalThyroid
 Parent: $SD_Observation_PhysicalBase
-Id: moph43p-observation-physical-thyroid
+Id: mophpc-observation-physical-thyroid
 Title: "MoPH43p Observation: Physical-Thyroid"
 Description: "สภาพต่อมไทรอยด์"
 * ^url = $SD_Observation_PhysicalThyroid

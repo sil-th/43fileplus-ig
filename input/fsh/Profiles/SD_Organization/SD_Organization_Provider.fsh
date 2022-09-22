@@ -1,6 +1,6 @@
-Profile: Moph43pOrganizationProvider
+Profile: MophPcOrganizationProvider
 Parent: $SD_Organization_Base
-Id: moph43p-organization-provider
+Id: mophpc-organization-provider
 Title: "MoPH43p Organization: Provider"
 Description: "ข้อมูลสถานพยาบาล"
 * ^url = $SD_Organization_Provider

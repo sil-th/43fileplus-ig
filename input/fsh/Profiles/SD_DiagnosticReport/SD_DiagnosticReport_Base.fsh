@@ -1,6 +1,6 @@
-Profile: Moph43pDiagnosticReportBase
+Profile: MophPcDiagnosticReportBase
 Parent: DiagnosticReport
-Id: moph43p-diagnosticreport-base
+Id: mophpc-diagnosticreport-base
 Title: "MoPH43p DiagnosticReport"
 Description: "การรายงานผลการตรวจ"
 * ^url = $SD_DiagnosticReport_Base

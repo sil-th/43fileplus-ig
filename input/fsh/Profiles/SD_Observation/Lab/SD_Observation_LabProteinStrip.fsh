@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabProteinStrip
+Profile: MophPcObservationLabProteinStrip
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-protein-strip
+Id: mophpc-observation-lab-protein-strip
 Title: "MoPH43p Observation: Lab-Protein Strip"
 Description: "ระดับโปรตีนในปัสสาวะ"
 * ^url = $SD_Observation_LabProteinStrip

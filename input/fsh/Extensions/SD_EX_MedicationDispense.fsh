@@ -1,4 +1,4 @@
-// Alias: $EX_TH_MedicationDispenseDeliveryMode = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-med-delivery
+// Alias: $EX_TH_MedicationDispenseDeliveryMode = https://fhir-ig.sil-th.org/mophpc/Extension/TH-med-delivery
 // * extension[0]
 //   * url = $EX_TH_MedicationDispenseDeliveryMode
 //   * valueCodeableConcept = $CS_43Plus_MedDelivery#1 "รับที่ counter ยา"

@@ -1,6 +1,6 @@
-Profile: Moph43pProcedurePreventive
+Profile: MophPcProcedurePreventive
 Parent: $SD_Procedure_Base
-Id: moph43p-procedure-preventive
+Id: mophpc-procedure-preventive
 Title: "MoPH43p Procedure: Preventive"
 Description: "กิจกรรมในชุมชนที่อยู่ในเขตรับผิดชอบ"
 * ^url = $SD_Procedure_Preventive

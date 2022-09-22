@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregGA
+Profile: MophPcObservationPregGA
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-ga
+Id: mophpc-observation-preg-ga
 Title: "MoPH43p Observation: Pregnancy-GA"
 Description: "อายุครรภ์ (GA)"
 * ^url = $SD_Observation_PregGA

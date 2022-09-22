@@ -1,6 +1,6 @@
-Profile: Moph43pObservationChildBase
+Profile: MophPcObservationChildBase
 Parent: Observation
-Id: moph43p-observation-child-base
+Id: mophpc-observation-child-base
 Title: "MoPH43p Observation: Child"
 Description: "ข้อมูลการตรวจประเมินทารกและเด็ก"
 * ^url = $SD_Observation_ChildBase

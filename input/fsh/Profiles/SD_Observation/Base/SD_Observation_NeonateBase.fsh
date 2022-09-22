@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNeonateBase
+Profile: MophPcObservationNeonateBase
 Parent: Observation
-Id: moph43p-observation-neonatal-base
+Id: mophpc-observation-neonatal-base
 Title: "MoPH43p Observation: Neonate"
 Description: "ข้อมูลการตรวจประเมินทารกแรกคลอด"
 * ^url = $SD_Observation_NeonateBase

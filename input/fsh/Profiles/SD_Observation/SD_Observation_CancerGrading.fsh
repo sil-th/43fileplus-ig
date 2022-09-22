@@ -1,6 +1,6 @@
-Profile: Moph43pObservationCancerGrading
+Profile: MophPcObservationCancerGrading
 Parent: Observation
-Id: moph43p-observation-cancer-grading
+Id: mophpc-observation-cancer-grading
 Title: "MoPH43p Observation: Cancer-Grading"
 Description: "ผลการบันทึกระดับความรุนแรงของชิ้นเนื้อ"
 * ^url = $SD_Observation_CancerGrading

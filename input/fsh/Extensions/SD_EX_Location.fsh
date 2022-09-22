@@ -1,4 +1,4 @@
-// Alias: $EX_TH_LocationHouseOwner = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-house-owner
+// Alias: $EX_TH_LocationHouseOwner = https://fhir-ig.sil-th.org/mophpc/Extension/TH-house-owner
 // * extension[+]
 //   * url = $EX_TH_LocationHouseOwner (exactly)
 //   * valueReference = Reference(Patient/patient-patient1)
@@ -38,7 +38,7 @@ Description: "รหัส เจ้าบ้าน"
 
 
 
-// Alias: $EX_TH_ManagingPractitioner = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-managing-practitioner
+// Alias: $EX_TH_ManagingPractitioner = https://fhir-ig.sil-th.org/mophpc/Extension/TH-managing-practitioner
 // * extension[+]
 //   * url = $EX_TH_ManagingPractitioner (exactly)
 //   * valueReference = Reference(Practitioner/practitioner-volunteer1) "นาง ใจดี ชอบช่วย"
@@ -78,7 +78,7 @@ Description: "รหัส อสม."
 
 
 
-// Alias: $EX_TH_LocationHouseholdCount = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-householde-num
+// Alias: $EX_TH_LocationHouseholdCount = https://fhir-ig.sil-th.org/mophpc/Extension/TH-householde-num
 // * extension[+]
 //   * url = $EX_TH_LocationHouseholdCount (exactly)
 //   * valueInteger = 1
@@ -104,7 +104,7 @@ Description: "จำนวนครอบครัว"
 
 
 
-// Alias: $EX_TH_LocationInMunicipality = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-in-municipality
+// Alias: $EX_TH_LocationInMunicipality = https://fhir-ig.sil-th.org/mophpc/Extension/TH-in-municipality
 // * extension[+]
 //   * url = $EX_TH_LocationInMunicipality (exactly)
 //   * valueCodeableConcept = $CS_THCC_InMunicipality#1 "ในเขตเทศบาล"
@@ -131,7 +131,7 @@ Description: "ที่ตั้ง อยู่ในหรือนอกเ�
 
 
 
-// Alias: $EX_TH_LocationVillageArea = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-area
+// Alias: $EX_TH_LocationVillageArea = https://fhir-ig.sil-th.org/mophpc/Extension/TH-village-area
 // * extension[0]
 //   * url = $EX_TH_LocationVillageArea (exactly)
 //   * valueCodeableConcept = $CS_PCU_VillageArea#1 "เทศบาล"
@@ -158,7 +158,7 @@ Description: "เขตที่ตั้ง อยู่ในหรือน�
 
 
 
-// Alias: $EX_TH_LocationVillageMainHospital = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-main-hospital
+// Alias: $EX_TH_LocationVillageMainHospital = https://fhir-ig.sil-th.org/mophpc/Extension/TH-village-main-hospital
 // * extension[+]
 //   * url = $EX_TH_LocationVillageMainHospital (exactly)
 //   * valueReference = Reference(Organization/organization-main)
@@ -184,7 +184,7 @@ Description: "โรงพยาบาลหลัก"
 
 
 
-// Alias: $EX_TH_LocationVillageUnlistDate = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-village-unlist-date
+// Alias: $EX_TH_LocationVillageUnlistDate = https://fhir-ig.sil-th.org/mophpc/Extension/TH-village-unlist-date
 // * extension[+]
 //   * url = $EX_TH_LocationVillageUnlistDate (exactly)
 //   * valueDate = "2022-07-01"

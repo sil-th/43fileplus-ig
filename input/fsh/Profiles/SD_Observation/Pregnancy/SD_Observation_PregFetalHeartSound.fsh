@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregFetalHeartSound
+Profile: MophPcObservationPregFetalHeartSound
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-fetal-heart-sound
+Id: mophpc-observation-preg-fetal-heart-sound
 Title: "MoPH43p Observation: Pregnancy-Fetal Heart Sound"
 Description: "เสียงหัวใจเด็ก"
 * ^url = $SD_Observation_PregFetalHeartSound

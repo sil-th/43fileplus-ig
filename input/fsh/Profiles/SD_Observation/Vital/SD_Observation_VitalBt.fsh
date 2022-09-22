@@ -1,6 +1,6 @@
-Profile: Moph43pObservationVitalBT
+Profile: MophPcObservationVitalBT
 Parent: $SD_Observation_VitalBase
-Id: moph43p-observation-vital-bodytemp
+Id: mophpc-observation-vital-bodytemp
 Title: "MoPH43p Observation: Vital-BT"
 Description: "อุณหภูมิร่างกาย (Body temperature)"
 * ^url = $SD_Observation_VitalBt

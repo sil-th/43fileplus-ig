@@ -50,7 +50,7 @@ Description: "ค่าบริการที่ต้องจ่าย ข�
 
 
 
-// Alias: $EX_TH_ClaimItemPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-actual-self-pay
+// Alias: $EX_TH_ClaimItemPaid = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-item-actual-self-pay
 Extension: EX_TH_ClaimItemPaid
 Id: ex-claim-item-paid
 Title: "Claim: Item Paid"
@@ -77,7 +77,7 @@ Description: "ค่าบริการที่ได้จ่ายไปแ
 
 
 
-// Alias: $EX_TH_ClaimItemUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-item-unpaid
+// Alias: $EX_TH_ClaimItemUnpaid = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-item-unpaid
 Extension: EX_TH_ClaimItemUnpaid
 Id: ex-claim-item-unpaid
 Title: "Claim: Item Unpaid"
@@ -105,7 +105,7 @@ Description: "ค่าบริการที่ยังไม่ได้จ
 
 
 
-// Alias: $EX_TH_ClaimTotalCost = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-cost
+// Alias: $EX_TH_ClaimTotalCost = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-total-cost
 // * extension[0]
 //   * url = $EX_TH_ClaimTotalCost (exactly)
 //   * valueMoney
@@ -136,7 +136,7 @@ Description: "ราคาทุน ทั้งหมด"
 
 
 
-// Alias: $EX_TH_ClaimTotalCopay = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-self-pay
+// Alias: $EX_TH_ClaimTotalCopay = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-total-self-pay
 // * extension[+]
 //   * url = $EX_TH_ClaimTotalCopay (exactly)
 //   * valueMoney
@@ -167,7 +167,7 @@ Description: "ราคาร่วมจ่าย ทั้งหมด"
 
 
 
-// Alias: $EX_TH_ClaimTotalPaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-actual-self-pay
+// Alias: $EX_TH_ClaimTotalPaid = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-total-actual-self-pay
 // * extension[+]
 //   * url = $EX_TH_ClaimTotalPaid (exactly)
 //   * valueMoney
@@ -198,7 +198,7 @@ Description: "จำนวนเงินที่ได้จ่ายไปแ
 
 
 
-// Alias: $EX_TH_ClaimTotalUnpaid = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-total-unpaid
+// Alias: $EX_TH_ClaimTotalUnpaid = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-total-unpaid
 // * extension[+]
 //   * url = $EX_TH_ClaimTotalUnpaid (exactly)
 //   * valueMoney
@@ -229,7 +229,7 @@ Description: "จำนวนเงินที่ยังไม่จ่าย
 
 
 
-// Alias: $EX_TH_ClaimFeeNote = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-claim-fee-note
+// Alias: $EX_TH_ClaimFeeNote = https://fhir-ig.sil-th.org/mophpc/Extension/TH-claim-fee-note
 // * extension[+]
 //   * url = $EX_TH_ClaimFeeNote (exactly)
 //   * valueAnnotation
@@ -259,7 +259,7 @@ Description: "รายละเอียดค่าบริการและ
 
 
 
-// Alias: $EX_TH_ClaimIpdDRG = https://fhir-ig.sil-th.org/43filesplus/Extension/TH-ipd-drg
+// Alias: $EX_TH_ClaimIpdDRG = https://fhir-ig.sil-th.org/mophpc/Extension/TH-ipd-drg
 // * extension[+]
 //   * url = $EX_TH_ClaimIpdDRG (exactly)
 //   * extension[0]

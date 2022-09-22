@@ -1,6 +1,6 @@
-Profile: Moph43pRelatedPersonBase
+Profile: MophPcRelatedPersonBase
 Parent: RelatedPerson
-Id: moph43p-relatedperson-base
+Id: mophpc-relatedperson-base
 Title: "MoPH43p RelatedPerson"
 Description: "ข้อมูลผู้ญาติของผู้ที่มาใช้บริการ"
 * ^url = $SD_RelatedPerson_Base

@@ -1,6 +1,6 @@
-Profile: Moph43pOrganizationBase
+Profile: MophPcOrganizationBase
 Parent: Organization
-Id: moph43p-organization-base
+Id: mophpc-organization-base
 Title: "MoPH43p Organization"
 Description: "ข้อมูลหน่วยงานต่าง ๆ"
 * ^url = $SD_Organization_Base

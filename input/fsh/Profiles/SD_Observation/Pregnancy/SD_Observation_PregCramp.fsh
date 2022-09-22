@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregCramp
+Profile: MophPcObservationPregCramp
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-cramp
+Id: mophpc-observation-preg-cramp
 Title: "MoPH43p Observation: Pregnancy-Cramp"
 Description: "อาการตะคริวของแม่"
 * ^url = $SD_Observation_PregCramp

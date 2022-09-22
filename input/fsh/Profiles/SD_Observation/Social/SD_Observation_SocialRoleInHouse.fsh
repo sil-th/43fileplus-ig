@@ -1,6 +1,6 @@
-Profile: Moph43pObservationSocialRoleInHouse
+Profile: MophPcObservationSocialRoleInHouse
 Parent: $SD_Observation_SocialBase
-Id: moph43p-observation-social-role-in-house
+Id: mophpc-observation-social-role-in-house
 Title: "MoPH43p Observation: Social-Role in House"
 Description: "สถานะในครอบครัว"
 * ^url = $SD_Observation_SocialRoleInHouse

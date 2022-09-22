@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabBloodABO
+Profile: MophPcObservationLabBloodABO
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-blood-abo
+Id: mophpc-observation-lab-blood-abo
 Title: "MoPH43p Observation: Lab-Blood group ABO"
 Description: "ผลการตรวจหมู่เลือด ABO"
 * ^url = $SD_Observation_LabBloodAbo

@@ -3,11 +3,11 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: sil-th-43files-plus
-canonical: https://fhir-ig.sil-th.org/43filesplus
+id: silth.fhir.th.mophpc
+canonical: https://fhir-ig.sil-th.org/mophpc
 version: 0.1.0
 name: Moph43FilesImplementaionGuide
-title: (Draft) MoPH 43 Files Plus on FHIR - Implementation Guide
+title: (Draft) MoPH Primary Care (MoPH-PC) - FHIR Implementation Guide
 status: draft
 publisher: Standards and Interoperability Lab - Thailand (SIL-TH)
 # contact:
@@ -33,9 +33,9 @@ releaseLabel: draft
 
 pages:
   index.md:
-    title: 43 แฟ้ม-plus on FHIR
+    title: MoPH Primary Care (MoPH-PC)
   files-listing.md:
-    title: ตัวอย่าง FHIR Document ตาม 43 แฟ้ม-plus
+    title: ตัวอย่าง FHIR Document ตามแฟ้ม MoPH-PC เดิม
   profiles.md:
     title: รายการ Profiles
   extensions.md:

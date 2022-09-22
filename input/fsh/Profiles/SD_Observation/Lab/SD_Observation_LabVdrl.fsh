@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabVdrl
+Profile: MophPcObservationLabVdrl
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-vdrl
+Id: mophpc-observation-lab-vdrl
 Title: "MoPH43p Observation: Lab-VDRL"
 Description: "ผลการตรวจ VDRL"
 * ^url = $SD_Observation_LabVdrl

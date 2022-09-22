@@ -1,6 +1,6 @@
-Profile: Moph43pConditionAccident
+Profile: MophPcConditionAccident
 Parent: $SD_Condition_Base
-Id: moph43p-condition-accident
+Id: mophpc-condition-accident
 Title: "MoPH43p Condition: Accident"
 Description: "ข้อมูลการวินิจฉัย สำหรับผู้ป่วยอุบัติเหตุ"
 * ^url = $SD_Condition_Accident

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregStillbirths
+Profile: MophPcObservationPregStillbirths
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-stillbirths
+Id: mophpc-observation-preg-stillbirths
 Title: "MoPH43p Observation: Pregnancy-Stillbirth"
 Description: "จำนวนตายคลอด"
 * ^url = $SD_Observation_PregStillbirths

@@ -1,6 +1,6 @@
-Profile: Moph43pAccountBase
+Profile: MophPcAccountBase
 Parent: Account
-Id: moph43p-account-base
+Id: mophpc-account-base
 Title: "MoPH43p Account"
 Description: "ข้อมูลทางการเงิน"
 * ^url = $SD_Account_Base

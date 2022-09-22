@@ -1,6 +1,6 @@
-Profile: Moph43pObservationSocialSmoking
+Profile: MophPcObservationSocialSmoking
 Parent: $SD_Observation_SocialBase
-Id: moph43p-observation-social-smoking
+Id: mophpc-observation-social-smoking
 Title: "MoPH43p Observation: Social Smoking"
 Description: "ประวัติสูบบุหรี่"
 * ^url = $SD_Observation_SocialSmoking

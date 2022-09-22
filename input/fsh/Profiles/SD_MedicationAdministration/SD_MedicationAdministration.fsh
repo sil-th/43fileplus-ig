@@ -1,6 +1,6 @@
-Profile: Moph43pMedicationAdministrationBase
+Profile: MophPcMedicationAdministrationBase
 Parent: MedicationAdministration
-Id: moph43p-medicationadministration-base
+Id: mophpc-medicationadministration-base
 Title: "MoPH43p MedicationAdministration"
 Description: "การบริหารยาให้ผู้ป่วย"
 * ^url = $SD_MedicationAdministration_Base

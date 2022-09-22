@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPhysicalOral
+Profile: MophPcObservationPhysicalOral
 Parent: $SD_Observation_PhysicalBase
-Id: moph43p-observation-physical-oral
+Id: mophpc-observation-physical-oral
 Title: "MoPH43p Observation: Physical-Oral"
 Description: "สถานะการตรวจสุขภาพปาก/ฟัน"
 * ^url = $SD_Observation_PhysicalOral

@@ -1,6 +1,6 @@
-Profile: Moph43pObservationAccidentPtType
+Profile: MophPcObservationAccidentPtType
 Parent: $SD_Observation_AccidentBase
-Id: moph43p-observation-accident-pt-type
+Id: mophpc-observation-accident-pt-type
 Title: "MoPH43p Observation: Accident-Patient Type"
 Description: "รหัสประเภทผู้บาดเจ็บ"
 * ^url = $SD_Observation_AccidentPtType

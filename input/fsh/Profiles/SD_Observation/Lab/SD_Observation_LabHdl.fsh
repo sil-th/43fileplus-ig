@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabHDL
+Profile: MophPcObservationLabHDL
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-hdl
+Id: mophpc-observation-lab-hdl
 Title: "MoPH43p Observation: Lab-HDL"
 Description: "ผลการตรวจ HDL"
 * ^url = $SD_Observation_LabHdl

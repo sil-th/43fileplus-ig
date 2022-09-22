@@ -1,6 +1,6 @@
-Profile: Moph43pLocationDepartment
+Profile: MophPcLocationDepartment
 Parent: Location
-Id: moph43p-location-department
+Id: mophpc-location-department
 Title: "MoPH43p Location: Department"
 Description: "ข้อมูลคลินิก/หน่วยงาน ในสถานพยาบาล"
 * ^url = $SD_Location_Department

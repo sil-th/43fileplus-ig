@@ -1,6 +1,6 @@
-Profile: Moph43pObservationLabGlucoseStrip
+Profile: MophPcObservationLabGlucoseStrip
 Parent: $SD_Observation_LabBase
-Id: moph43p-observation-lab-glucose-strip
+Id: mophpc-observation-lab-glucose-strip
 Title: "MoPH43p Observation: Lab-Glucose Strip"
 Description: "ระดับน้ำตาลในปัสสาวะ"
 * ^url = $SD_Observation_LabGlucoseStrip

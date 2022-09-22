@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregLiveDeliveries
+Profile: MophPcObservationPregLiveDeliveries
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-live-deliveries
+Id: mophpc-observation-preg-live-deliveries
 Title: "MoPH43p Observation: Pregnancy-Live delivery"
 Description: "จำนวนเกิดมีชีพ"
 * ^url = $SD_Observation_PregLiveDeliveries

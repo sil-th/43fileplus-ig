@@ -1,6 +1,6 @@
-Profile: Moph43pObservationPregParity
+Profile: MophPcObservationPregParity
 Parent: $SD_Observation_PregnancyBase
-Id: moph43p-observation-preg-parity
+Id: mophpc-observation-preg-parity
 Title: "MoPH43p Observation: Pregnancy-Parity"
 Description: "จำนวนบุตรทั้งหมดที่เคยมี"
 * ^url = $SD_Observation_PregParity

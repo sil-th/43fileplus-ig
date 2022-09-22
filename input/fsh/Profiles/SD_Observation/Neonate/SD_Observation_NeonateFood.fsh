@@ -1,6 +1,6 @@
-Profile: Moph43pObservationNeonateFood
+Profile: MophPcObservationNeonateFood
 Parent: $SD_Observation_NeonateBase
-Id: moph43p-observation-neonatal-food
+Id: mophpc-observation-neonatal-food
 Title: "MoPH43p Observation: Neonate Food"
 Description: "อาหารที่รับประทาน"
 * ^url = $SD_Observation_NeonateFood
