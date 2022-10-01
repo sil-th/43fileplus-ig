@@ -1,7 +1,7 @@
 Profile: MophPcObservationAccidentPtType
 Parent: $SD_Observation_AccidentBase
 Id: mophpc-observation-accident-pt-type
-Title: "MoPH43p Observation: Accident-Patient Type"
+Title: "MoPH-PC Observation: Accident-Patient Type"
 Description: "รหัสประเภทผู้บาดเจ็บ"
 * ^url = $SD_Observation_AccidentPtType
 * ^status = #draft

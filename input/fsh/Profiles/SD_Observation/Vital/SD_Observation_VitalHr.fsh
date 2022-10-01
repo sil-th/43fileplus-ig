@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalHr
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-heartrate
-Title: "MoPH43p Observation: Vital-HR"
+Title: "MoPH-PC Observation: Vital-HR"
 Description: "อัตราการเต้นของชีพจร (Heart rate)"
 * ^url = $SD_Observation_VitalHr
 * ^status = #draft

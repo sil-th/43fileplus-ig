@@ -1,7 +1,7 @@
 Profile: MophPcEncounterBase
 Parent: Encounter
 Id: mophpc-encounter-base
-Title: "MoPH43p Encounter"
+Title: "MoPH-PC Encounter"
 Description: "การรับบริการโดยทั่วไป"
 * ^url = $SD_Encounter_Base
 * ^status = #draft
@@ -21,14 +21,16 @@ Description: "การรับบริการโดยทั่วไป"
     an 0..1 MS
 * identifier[vn] ^short = "เลขที่การรับบริการ (VN)"
 * identifier[vn]
+  * type from $VS_TH_IdentifierType (extensible)
   * type = $CS_TH_IdentifierType#localVn
   * system 1..
   * system obeys VN-uri
   * system ^example.label = "VN namespace"
   * system ^example.valueUri = $ID_LO_VN
   * value 1..
-* identifier[an] ^short = "เลขที่ผู้่ปวยใน (AN)"
+* identifier[an] ^short = "เลขที่ผู้ปวยใน (AN)"
 * identifier[an]
+  * type from $VS_TH_IdentifierType (extensible)
   * type = $CS_TH_IdentifierType#localAn
   * system 1..
   * system obeys AN-uri
@@ -42,7 +44,7 @@ Description: "การรับบริการโดยทั่วไป"
 * priority.coding ^slicing.discriminator[=].path = "system"
 * priority.coding ^slicing.rules = #open
 * priority.coding contains
-    hl7 0..1 and
+    hl7 0..1 MS and
     43plus 0..1 MS and
     thccAccident 0..1 MS
 * priority.coding[hl7] from $VS_HL7_Priority (extensible)
@@ -78,8 +80,6 @@ Description: "การรับบริการโดยทั่วไป"
 * participant.type.coding[43plus].code 1..
 * participant.individual only Reference($SD_Practitioner_Base)
 * period MS
-* period.extension contains
-    $EX_TH_EncounterServiceHour named serviceHour 0..1 MS
 * length MS
 * reasonCode MS
 * reasonCode.coding ^slicing.discriminator.type = #value
@@ -141,10 +141,10 @@ Description: "การรับบริการโดยทั่วไป"
 * hospitalization.destination.extension contains
     $EX_TH_EncounterReferOutID named referOutId 0..1 MS
 * location MS
-* location.extension contains
+  * extension contains
     $EX_TH_EncounterServiceLocationType named serviceLocationType 0..1 MS
+  * location MS
 * serviceProvider MS
 * serviceProvider only Reference($SD_Organization_Provider)
 * serviceProvider.extension contains
     $EX_TH_EncounterProviderType named providerType 0..1 MS
-* serviceProvider.extension[providerType] ^short = "ประเภทสถานพยาบาลที่รักษา"

@@ -6,8 +6,8 @@ Usage: #example
 * identifier[0]
   * use = #official
   * type
-    * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
-    * coding[+] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
+    // * coding[0] = $CS_HL7_IdentifierType#NI "National unique individual identifier"
+    * coding[0] = $CS_TH_IdentifierType#cid "เลขประจำตัวประชาชนไทย"
   * system = $ID_ThaiCid
   * value = "2650591524440"
   * period
@@ -16,8 +16,8 @@ Usage: #example
 * identifier[+]
   * use = #secondary
   * type
-    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
-    * coding[+] = $CS_TH_IdentifierType#localProv "รหัสผู้ให้บริการสุขภาพ ของหน่วยบริการ"
+    // * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    * coding[0] = $CS_TH_IdentifierType#localProv "รหัสผู้ให้บริการสุขภาพ ของหน่วยบริการ"
   * system = $ID_LO_Provider
   * value = "XXXXXXXX"
   * period
@@ -25,8 +25,8 @@ Usage: #example
 * identifier[+]
   * use = #secondary
   * type
-    * coding[0] = $CS_HL7_IdentifierType#MD "Medical License number"
-    * coding[+] = $CS_TH_IdentifierType#proDoc "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
+    // * coding[0] = $CS_HL7_IdentifierType#MD "Medical License number"
+    * coding[0] = $CS_TH_IdentifierType#proDoc "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
   * system = $ID_ThaiDoctor
   * value = "23222"
 * active = true

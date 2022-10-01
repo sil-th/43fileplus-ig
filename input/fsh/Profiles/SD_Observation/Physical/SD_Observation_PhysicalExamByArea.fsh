@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalExamByArea
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-exam-by-area
-Title: "MoPH43p Observation: Physical-Exam by Area"
+Title: "MoPH-PC Observation: Physical-Exam by Area"
 Description: "ผลการตรวจร่างกายตามแต่ละส่วน"
 * ^url = $SD_Observation_PhysicalExamByArea
 * ^status = #draft

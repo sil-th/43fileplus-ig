@@ -1,7 +1,7 @@
 Profile: MophPcObservationFunctionalBarthel
 Parent: Observation
 Id: mophpc-observation-functional-barthel
-Title: "MoPH43p Observation: Functional Barthel Test"
+Title: "MoPH-PC Observation: Functional Barthel Test"
 Description: "ค่า Barthel ADL Index"
 * ^url = $SD_Observation_FunctionalBarthel
 * ^status = #draft

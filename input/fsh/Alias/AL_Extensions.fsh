@@ -73,7 +73,7 @@ Alias: $EX_TH_PractitionerQualificationIssuer = https://fhir-ig.sil-th.org/mophp
 Alias: $EX_TH_PractitionerRoleProviderMovement = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-practitionerrole-provider-move
 
 // AllergyIntolerance
-Alias: $EX_TH_AllergyIntoleranceCertainy = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-allergyintolerance-allergy-certainy
+Alias: $EX_TH_AllergyIntoleranceCertainty = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-allergyintolerance-allergy-certainty
 Alias: $EX_TH_AllergyIntoleranceSeverity = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-allergyintolerance-allergy-severity
 Alias: $EX_TH_AllergyIntoleranceAssertType = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-allergyintolerance-allergy-assert-type
 Alias: $EX_TH_AllergyIntoleranceAssertOrg = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-allergyintolerance-allergy-assert-org

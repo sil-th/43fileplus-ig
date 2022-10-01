@@ -1,7 +1,7 @@
 Profile: MophPcObservationChildBase
 Parent: Observation
 Id: mophpc-observation-child-base
-Title: "MoPH43p Observation: Child"
+Title: "MoPH-PC Observation: Child"
 Description: "ข้อมูลการตรวจประเมินทารกและเด็ก"
 * ^url = $SD_Observation_ChildBase
 * ^status = #draft

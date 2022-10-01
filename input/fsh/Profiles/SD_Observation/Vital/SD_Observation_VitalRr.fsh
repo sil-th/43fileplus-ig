@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalRR
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-resprate
-Title: "MoPH43p Observation: Vital-RR"
+Title: "MoPH-PC Observation: Vital-RR"
 Description: "อัตราการหายใจ (Respiratory rate)"
 * ^url = $SD_Observation_VitalRr
 * ^status = #draft

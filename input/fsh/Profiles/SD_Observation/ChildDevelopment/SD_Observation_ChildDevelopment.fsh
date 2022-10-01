@@ -1,7 +1,7 @@
 Profile: MophPcObservationChildDevelopment
 Parent: $SD_Observation_ChildBase
 Id: mophpc-observation-child-development
-Title: "MoPH43p Observation: Child-Development"
+Title: "MoPH-PC Observation: Child-Development"
 Description: "ระดับพัฒนาการเด็ก"
 * ^url = $SD_Observation_ChildDevelopment
 * ^status = #draft

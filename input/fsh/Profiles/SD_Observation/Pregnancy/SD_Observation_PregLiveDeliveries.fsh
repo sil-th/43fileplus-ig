@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregLiveDeliveries
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-live-deliveries
-Title: "MoPH43p Observation: Pregnancy-Live delivery"
+Title: "MoPH-PC Observation: Pregnancy-Live delivery"
 Description: "จำนวนเกิดมีชีพ"
 * ^url = $SD_Observation_PregLiveDeliveries
 * ^status = #draft

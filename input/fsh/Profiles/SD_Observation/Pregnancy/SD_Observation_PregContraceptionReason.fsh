@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregContraceptionReason
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-contraception-reason
-Title: "MoPH43p Observation: Pregnancy-Contraception Reason"
+Title: "MoPH-PC Observation: Pregnancy-Contraception Reason"
 Description: "สาเหตุที่ไม่คุมกำเนิด"
 * ^url = $SD_Observation_PregContraceptionReason
 * ^status = #draft

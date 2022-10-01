@@ -1,7 +1,7 @@
 Profile: MophPcObservationNcdFoot
 Parent: $SD_Observation_NcdBase
 Id: mophpc-observation-ncd-foot
-Title: "MoPH43p Observation: NCD Foot Exam"
+Title: "MoPH-PC Observation: NCD Foot Exam"
 Description: "การตรวจเท้า"
 * ^url = $SD_Observation_NcdFoot
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationNeonateAPGAR1
 Parent: $SD_Observation_NeonateBase
 Id: mophpc-observation-neonate-apgar-1
-Title: "MoPH43p Observation: Neonate-APGAR-1"
+Title: "MoPH-PC Observation: Neonate-APGAR-1"
 Description: "การประเมินสภาพทารกแรกเกิดใน 1 นาทีแรก (APGAR 1 นาที)"
 * ^url = $SD_Observation_NeonateAPGAR1
 * ^status = #draft

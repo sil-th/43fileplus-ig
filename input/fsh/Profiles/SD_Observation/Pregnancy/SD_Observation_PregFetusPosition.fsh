@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregFetusPosition
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-fetus-position
-Title: "MoPH43p Observation: Pregnancy-Fetus Position"
+Title: "MoPH-PC Observation: Pregnancy-Fetus Position"
 Description: "ท่าเด็ก"
 * ^url = $SD_Observation_PregFetusPosition
 * ^status = #draft

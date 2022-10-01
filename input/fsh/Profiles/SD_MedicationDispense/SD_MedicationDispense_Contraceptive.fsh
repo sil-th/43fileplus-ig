@@ -1,7 +1,7 @@
 Profile: MophPcMedicationDispenseContraceptive
 Parent: $SD_MedicationDispense_Base
 Id: mophpc-medicationdispense-contraceptive
-Title: "MoPH43p MedicationDispense: Contraceptive"
+Title: "MoPH-PC MedicationDispense: Contraceptive"
 Description: "การจ่ายยาคุมกำเนิด"
 * ^url = $SD_MedicationDispense_Contraceptive
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationSocialRiskBehavior
 Parent: $SD_Observation_SocialBase
 Id: mophpc-observation-social-risk-behavior
-Title: "MoPH43p Observation: Social-Risk Behavior"
+Title: "MoPH-PC Observation: Social-Risk Behavior"
 Description: "ผลการบันทึกพฤติกรรมเสี่ยง"
 * ^url = $SD_Observation_SocialRiskBehavior
 * ^status = #draft

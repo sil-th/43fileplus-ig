@@ -1,7 +1,7 @@
 Profile: MophPcConditionBase
 Parent: Condition
 Id: mophpc-condition-base
-Title: "MoPH43p Condition"
+Title: "MoPH-PC Condition"
 Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * ^url = $SD_Condition_Base
 * ^status = #draft
@@ -11,10 +11,8 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
     $EX_TH_ConditionChronicDischargeReason named dischargeReason 0..1 MS and
     $EX_HL7_ConditionDueTo named dueTo 0..* MS and
     $EX_TH_ConditionIsChronic named isChronic 0..1 MS
-* extension[dischargeReason] ^short = "สาเหตุจำหน่ายผู้ป่วย"
-* extension[dueTo] ^short = "สาเหตุการป่วย (ถ้าสามารถระบุได้)"
-* extension[isChronic] ^short = "โรคเรื้อรัง/รักษาต่อเนื่องหรือไม่"
 * clinicalStatus MS
+* clinicalStatus ^short = "สถานะของโรค"
 * clinicalStatus.coding ^slicing.discriminator.type = #value
 * clinicalStatus.coding ^slicing.discriminator.path = "system"
 * clinicalStatus.coding ^slicing.rules = #open
@@ -31,7 +29,7 @@ Description: "ข้อมูลวินิจฉัย/ภาวะโรค"
 * clinicalStatus.coding[pcu].code 1..
 * category MS
 * code MS
-* code ^short = "รหัสวินิฉัยโรค/ภาวะโรค"
+* code ^short = "คำวินิจฉัยโรค/ภาวะโรค"
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open

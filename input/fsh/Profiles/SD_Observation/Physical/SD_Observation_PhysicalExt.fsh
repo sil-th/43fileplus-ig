@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalExt
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-ext
-Title: "MoPH43p Observation: Physical-Extremities"
+Title: "MoPH-PC Observation: Physical-Extremities"
 Description: "Physical findings of Extremities"
 * ^url = $SD_Observation_PhysicalExt
 * ^status = #draft

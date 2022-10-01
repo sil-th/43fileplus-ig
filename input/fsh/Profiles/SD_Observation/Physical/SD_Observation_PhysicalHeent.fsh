@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalHeent
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-heent
-Title: "MoPH43p Observation: Physical-HEENT"
+Title: "MoPH-PC Observation: Physical-HEENT"
 Description: "Physical findings of Head"
 * ^url = $SD_Observation_PhysicalHeent
 * ^status = #draft

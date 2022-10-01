@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabHIV
 Parent: $SD_Observation_LabBase
 Id: mophpc-observation-lab-hiv
-Title: "MoPH43p Observation: Lab-HIV"
+Title: "MoPH-PC Observation: Lab-HIV"
 Description: "ผลการตรวจ HIV"
 * ^url = $SD_Observation_LabHiv
 * ^status = #draft

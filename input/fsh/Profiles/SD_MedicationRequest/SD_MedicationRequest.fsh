@@ -1,7 +1,7 @@
 Profile: MophPcMedicationRequestBase
 Parent: MedicationRequest
 Id: mophpc-medicationrequest-base
-Title: "MoPH43p MedicationRequest"
+Title: "MoPH-PC MedicationRequest"
 Description: "การสั่งยา"
 * ^url = $SD_MedicationRequest_Base
 * ^status = #draft
@@ -9,7 +9,7 @@ Description: "การสั่งยา"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
     $EX_TH_MedicationRequestSource named medicationSource 0..* MS and
-    $EX_TH_MedicationRequestNedCriteria named nedCriteria 0..* MS and
+    $EX_TH_MedicationRequestNedCriteria named npc 0..* MS and
     $EX_TH_MedicationRequestApprovedNo named approvedNo 0..* MS
 * status 1.. MS
 * intent 1.. MS
@@ -36,10 +36,12 @@ Description: "การสั่งยา"
     tmt 0..1 MS and
     local 0..1 MS
 * medicationCodeableConcept.coding[24-digit] ^short = "รหัสยามาตรฐาน 24 หลัก"
+* medicationCodeableConcept.coding[24-digit] from $VS_24Drug (extensible)
 * medicationCodeableConcept.coding[24-digit].system 1..
 * medicationCodeableConcept.coding[24-digit].system = $CS_24Drug (exactly)
 * medicationCodeableConcept.coding[24-digit].code 1..
 * medicationCodeableConcept.coding[tmt] ^short = "รหัสยามาตรฐาน TMT"
+* medicationCodeableConcept.coding[tmt] from $VS_TMT (extensible)
 * medicationCodeableConcept.coding[tmt].system 1..
 * medicationCodeableConcept.coding[tmt].system = $CS_TMT (exactly)
 * medicationCodeableConcept.coding[tmt].code 1..

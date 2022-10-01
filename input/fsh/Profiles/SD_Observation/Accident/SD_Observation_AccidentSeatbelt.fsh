@@ -1,7 +1,7 @@
 Profile: MophPcObservationAccSeatbelt
 Parent: $SD_Observation_AccidentBase
 Id: mophpc-observation-accident-seatbelt
-Title: "MoPH43p Observation: Accident-Seatbelt"
+Title: "MoPH-PC Observation: Accident-Seatbelt"
 Description: "การคาดเข็มขัดนิรภัย"
 * ^url = $SD_Observation_AccidentSeatbelt
 * ^status = #draft

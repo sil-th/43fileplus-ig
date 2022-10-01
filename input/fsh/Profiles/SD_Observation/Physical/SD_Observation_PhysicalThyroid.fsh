@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalThyroid
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-thyroid
-Title: "MoPH43p Observation: Physical-Thyroid"
+Title: "MoPH-PC Observation: Physical-Thyroid"
 Description: "สภาพต่อมไทรอยด์"
 * ^url = $SD_Observation_PhysicalThyroid
 * ^status = #draft

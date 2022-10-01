@@ -1,7 +1,7 @@
 Profile: MophPcObservationNcdFamDM
 Parent: $SD_Observation_NcdBase
 Id: mophpc-observation-ncd-family-dm
-Title: "MoPH43p Observation: NCD Family DM"
+Title: "MoPH-PC Observation: NCD Family DM"
 Description: "ประวัติเบาหวานในญาติสายตรง"
 * ^url = $SD_Observation_NcdFamDM
 * ^status = #draft

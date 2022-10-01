@@ -1,7 +1,7 @@
 Profile: MophPcObservationAccLocation
 Parent: $SD_Observation_AccidentBase
 Id: mophpc-observation-accident-location
-Title: "MoPH43p Observation: Accident-Location"
+Title: "MoPH-PC Observation: Accident-Location"
 Description: "สถานที่เกิดอุบัติเหตุ"
 * ^url = $SD_Observation_AccidentLocation
 * ^status = #draft

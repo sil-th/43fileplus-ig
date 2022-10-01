@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalHeart
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-heart
-Title: "MoPH43p Observation: Physical-Heart"
+Title: "MoPH-PC Observation: Physical-Heart"
 Description: "Physical findings of Heart"
 * ^url = $SD_Observation_PhysicalHeart
 * ^status = #draft

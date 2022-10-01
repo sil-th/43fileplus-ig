@@ -1,7 +1,7 @@
 Profile: MophPcDeviceBase
 Parent: Device
 Id: mophpc-device-base
-Title: "MoPH43p Device"
+Title: "MoPH-PC Device"
 Description: "อุปกรณ์/เวชภัณฑ์"
 * ^url = $SD_Device_Base
 * ^status = #draft

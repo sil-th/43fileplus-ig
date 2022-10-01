@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalGeneral
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-general
-Title: "MoPH43p Observation: Physical-General Appearance"
+Title: "MoPH-PC Observation: Physical-General Appearance"
 Description: "Physical Exam: General appearance"
 * ^url = $SD_Observation_PhysicalGeneral
 * ^status = #draft

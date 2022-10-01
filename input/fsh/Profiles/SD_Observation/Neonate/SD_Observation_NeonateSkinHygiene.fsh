@@ -1,7 +1,7 @@
 Profile: MophPcObservationNeonateSkinHygiene
 Parent: $SD_Observation_NeonateBase
 Id: mophpc-observation-neonatal-skin-hygiene
-Title: "MoPH43p Observation: Neonate Skin Hygiene"
+Title: "MoPH-PC Observation: Neonate Skin Hygiene"
 Description: "ความสะอาดของผิวหนัง"
 * ^url = $SD_Observation_NeonateSkinHygiene
 * ^status = #draft

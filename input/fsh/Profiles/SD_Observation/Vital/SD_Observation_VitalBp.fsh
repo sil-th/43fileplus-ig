@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalBP
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-bp
-Title: "MoPH43p Observation: Vital-BP"
+Title: "MoPH-PC Observation: Vital-BP"
 Description: "ความดันโลหิต (Blood pressure)"
 * ^url = $SD_Observation_VitalBp
 * ^status = #draft

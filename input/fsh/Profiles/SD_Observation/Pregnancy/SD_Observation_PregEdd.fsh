@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregEdd
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-estimated-delivery
-Title: "MoPH43p Observation: Pregnancy-EDD"
+Title: "MoPH-PC Observation: Pregnancy-EDD"
 Description: "วันที่กำหนดคลอด"
 * ^url = $SD_Observation_PregEdd
 * ^status = #draft

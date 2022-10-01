@@ -1,7 +1,7 @@
 Profile: MophPcObservationFunctionalTest
 Parent: Observation
 Id: mophpc-observation-functional-test
-Title: "MoPH43p Observation: Functional Test"
+Title: "MoPH-PC Observation: Functional Test"
 Description: "การประเมินความบกพร่อง"
 * ^url = $SD_Observation_FunctionalTest
 * ^status = #draft

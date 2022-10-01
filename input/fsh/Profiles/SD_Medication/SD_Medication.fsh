@@ -1,7 +1,7 @@
 Profile: MophPcMedicationBase
 Parent: Medication
 Id: mophpc-medication-base
-Title: "MoPH43p Medication"
+Title: "MoPH-PC Medication"
 Description: "ยา"
 * ^url = $SD_Medication_Base
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalHiC
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-hip-circumference
-Title: "MoPH43p Observation: Vital-HiC"
+Title: "MoPH-PC Observation: Vital-HiC"
 Description: "รอบสะโพก (Hip circumference)"
 * ^url = $SD_Observation_VitalHiC
 * ^status = #draft

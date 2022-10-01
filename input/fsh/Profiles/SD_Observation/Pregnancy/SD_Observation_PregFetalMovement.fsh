@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregFetalMovement
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-fetal-movement
-Title: "MoPH43p Observation: Pregnancy-Fetal Movement"
+Title: "MoPH-PC Observation: Pregnancy-Fetal Movement"
 Description: "เด็กดิ้นหรือไม่"
 * ^url = $SD_Observation_PregFetalMovement
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationAccBleeding
 Parent: $SD_Observation_AccidentBase
 Id: mophpc-observation-accident-bleeding
-Title: "MoPH43p Observation: Accident-Bleeding"
+Title: "MoPH-PC Observation: Accident-Bleeding"
 Description: "การห้ามเลือด"
 * ^url = $SD_Observation_AccidentBleeding
 * ^status = #draft

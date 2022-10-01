@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregBirthLiving
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-birth-living
-Title: "MoPH43p Observation: Pregnancy-Birth Living"
+Title: "MoPH-PC Observation: Pregnancy-Birth Living"
 Description: "จำนวนบุตรที่มีชีวิต"
 * ^url = $SD_Observation_PregBirthLiving
 * ^status = #draft

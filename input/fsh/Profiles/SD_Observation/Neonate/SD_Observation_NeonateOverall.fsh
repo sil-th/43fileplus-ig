@@ -1,7 +1,7 @@
 Profile: MophPcObservationNeonateOverall
 Parent: $SD_Observation_NeonateBase
 Id: mophpc-observation-neonatal-overall
-Title: "MoPH43p Observation: Neonate Overall"
+Title: "MoPH-PC Observation: Neonate Overall"
 Description: "ผลการตรวจทารกหลังคลอด"
 * ^url = $SD_Observation_NeonateOverall
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcEncounterRehab
 Parent: $SD_Encounter_Base
 Id: mophpc-encounter-rehab
-Title: "MoPH43p Encounter: Rehab"
+Title: "MoPH-PC Encounter: Rehab"
 Description: "การรับบริการเวชศาสตร์ฟื้นฟู"
 * ^url = $SD_Encounter_Rehab
 * ^status = #draft

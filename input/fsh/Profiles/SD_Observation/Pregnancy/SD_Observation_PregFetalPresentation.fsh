@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregFetalPresentation
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-fetal-presentation
-Title: "MoPH43p Observation: Pregnancy-Fetal Presentation"
+Title: "MoPH-PC Observation: Pregnancy-Fetal Presentation"
 Description: "ส่วนนำของเด็ก"
 * ^url = $SD_Observation_PregFetalPresentation
 * ^status = #draft

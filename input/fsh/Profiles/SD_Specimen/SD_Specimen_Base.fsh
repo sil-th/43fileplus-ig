@@ -1,7 +1,7 @@
 Profile: MophPcSpecimenBase
 Parent: Specimen
 Id: mophpc-specimen-base
-Title: "MoPH43p Specimen"
+Title: "MoPH-PC Specimen"
 Description: "ข้อมูลสิ่งส่งตรวจ"
 * ^url = $SD_Specimen_Base
 * ^status = #draft

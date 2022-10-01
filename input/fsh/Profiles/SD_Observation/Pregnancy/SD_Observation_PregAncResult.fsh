@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregAncResult
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-anc-result
-Title: "MoPH43p Observation: Pregnancy-Anc Result"
+Title: "MoPH-PC Observation: Pregnancy-Anc Result"
 Description: "ผลการตรวจ ANC"
 * ^url = $SD_Observation_PregAncResult
 * ^status = #draft

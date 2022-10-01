@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregMensStatus
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-mens-status
-Title: "MoPH43p Observation: Pregnancy-MensStatus"
+Title: "MoPH-PC Observation: Pregnancy-MensStatus"
 Description: "ภาวะประจำเดือน"
 * ^url = $SD_Observation_PregMensStatus
 * ^status = #draft

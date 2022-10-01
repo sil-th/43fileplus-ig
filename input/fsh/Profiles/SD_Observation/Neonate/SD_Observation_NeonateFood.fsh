@@ -1,7 +1,7 @@
 Profile: MophPcObservationNeonateFood
 Parent: $SD_Observation_NeonateBase
 Id: mophpc-observation-neonatal-food
-Title: "MoPH43p Observation: Neonate Food"
+Title: "MoPH-PC Observation: Neonate Food"
 Description: "อาหารที่รับประทาน"
 * ^url = $SD_Observation_NeonateFood
 * ^status = #draft

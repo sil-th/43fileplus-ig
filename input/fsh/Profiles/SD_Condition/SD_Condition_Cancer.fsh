@@ -1,7 +1,7 @@
 Profile: MophPcConditionCancer
 Parent: $SD_Condition_Base
 Id: mophpc-condition-cancer
-Title: "MoPH43p Condition: Cancer"
+Title: "MoPH-PC Condition: Cancer"
 Description: "ข้อมูลการวินิจฉัยโรคมะเร็ง"
 * ^url = $SD_Condition_Cancer
 * ^status = #draft

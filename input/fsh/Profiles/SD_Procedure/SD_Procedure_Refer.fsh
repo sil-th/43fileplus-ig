@@ -1,7 +1,7 @@
 Profile: MophPcProcedureRefer
 Parent: $SD_Procedure_Base
 Id: mophpc-procedure-refer
-Title: "MoPH43p Procedure: Refer"
+Title: "MoPH-PC Procedure: Refer"
 Description: "หัตถการที่ได้ทำระหว่างการส่งต่อผู้ป่วยไปยังสถานพยาบาลอื่น"
 * ^url = $SD_Procedure_Refer
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregLMP
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-last-menstrual-period
-Title: "MoPH43p Observation: Pregnancy-LMP"
+Title: "MoPH-PC Observation: Pregnancy-LMP"
 Description: "วันแรกของการมีประจำเดือนครั้งสุดท้าย"
 * ^url = $SD_Observation_PregLmp
 * ^status = #draft

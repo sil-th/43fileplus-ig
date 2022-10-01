@@ -1,7 +1,7 @@
 Profile: MophPcObservationNeonateUmbilicalHygiene
 Parent: $SD_Observation_NeonateBase
 Id: mophpc-observation-neonatal-umbilical-hygiene
-Title: "MoPH43p Observation: Neonate Umbilical Hygiene"
+Title: "MoPH-PC Observation: Neonate Umbilical Hygiene"
 Description: "ความสะอาดของสะดือ"
 * ^url = $SD_Observation_NeonateUmbilicalHygiene
 * ^status = #draft

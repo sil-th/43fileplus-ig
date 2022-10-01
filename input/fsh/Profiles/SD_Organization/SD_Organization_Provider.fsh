@@ -1,7 +1,7 @@
 Profile: MophPcOrganizationProvider
 Parent: $SD_Organization_Base
 Id: mophpc-organization-provider
-Title: "MoPH43p Organization: Provider"
+Title: "MoPH-PC Organization: Provider"
 Description: "ข้อมูลสถานพยาบาล"
 * ^url = $SD_Organization_Provider
 * ^status = #draft
@@ -13,6 +13,7 @@ Description: "ข้อมูลสถานพยาบาล"
 * identifier ^slicing.rules = #open
 * identifier contains hcode 0..1
 * identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก หรือ 9 หลัก"
+* identifier[hcode].type from $VS_TH_IdentifierType (extensible)
 * identifier[hcode].type = $CS_TH_IdentifierType#hcode
 * identifier[hcode].system 1..
 * identifier[hcode].system = $ID_Hcode (exactly)

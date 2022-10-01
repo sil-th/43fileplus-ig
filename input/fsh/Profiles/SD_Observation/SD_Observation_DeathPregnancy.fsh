@@ -1,7 +1,7 @@
 Profile: MophPcObservationDeathPregnancy
 Parent: Observation
 Id: mophpc-observation-death-pregnancy
-Title: "MoPH43p Observation: Death Pregnancy"
+Title: "MoPH-PC Observation: Death Pregnancy"
 Description: "สภาวะการตั้งครรภ์และการคลอด ขณะเสียชีวิต"
 * ^url = $SD_Observation_DeathPregnancy
 * ^status = #draft

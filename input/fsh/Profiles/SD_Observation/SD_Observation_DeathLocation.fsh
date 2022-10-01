@@ -1,7 +1,7 @@
 Profile: MophPcObservationDeathLocation
 Parent: Observation
 Id: mophpc-observation-death-location
-Title: "MoPH43p Observation: Death Location"
+Title: "MoPH-PC Observation: Death Location"
 Description: "การบันทึกสถานที่ตาย"
 * ^url = $SD_Observation_DeathLocation
 * ^status = #draft

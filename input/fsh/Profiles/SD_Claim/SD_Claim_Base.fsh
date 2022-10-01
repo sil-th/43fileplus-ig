@@ -1,7 +1,7 @@
 Profile: MophPcClaimBase
 Parent: Claim
 Id: mophpc-claim-base
-Title: "MoPH43p Claim"
+Title: "MoPH-PC Claim"
 Description: "ค่าใช้จ่ายการรับบริการ"
 * ^url = $SD_Claim_Base
 * ^status = #draft

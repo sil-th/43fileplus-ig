@@ -1,7 +1,7 @@
 Profile: MophPcObservationNcdBase
 Parent: Observation
 Id: mophpc-observation-ncd-base
-Title: "MoPH43p Observation: NCD"
+Title: "MoPH-PC Observation: NCD"
 Description: "ข้อมูลการให้บริการตรวจและคัดกรองโรคในกลุ่ม NCD"
 * ^url = $SD_Observation_NcdBase
 * ^status = #draft

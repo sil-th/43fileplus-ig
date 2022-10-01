@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabTsh
 Parent: $SD_Observation_LabBase
 Id: mophpc-observation-lab-tsh
-Title: "MoPH43p Observation: Lab-TSH"
+Title: "MoPH-PC Observation: Lab-TSH"
 Description: "ผลการตรวจ TSH"
 * ^url = $SD_Observation_LabTsh
 * ^status = #draft

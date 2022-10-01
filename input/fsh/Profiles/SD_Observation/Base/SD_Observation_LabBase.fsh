@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabBase
 Parent: Observation
 Id: mophpc-observation-lab-base
-Title: "MoPH43p Observation: Lab"
+Title: "MoPH-PC Observation: Lab"
 Description: "ข้อมูลการตรวจทางห้องปฏิบัติการ"
 * ^url = $SD_Observation_LabBase
 * ^status = #draft
@@ -13,6 +13,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
+* category[hl7] from $VS_HL7_ObservationCat (extensible)
 * category[hl7] = $CS_HL7_ObservationCat#laboratory
 * code MS
 * code ^short = "รหัสการตรวจทางห้องปฏิบัติการ"
@@ -31,7 +32,7 @@ Description: "ข้อมูลการตรวจทางห้องปฏ
 * code.coding[tmlt].system = $CS_TMLT (exactly)
 * code.coding[tmlt].code 1..
 * code.coding[loinc] ^short = "รหัสมาตรฐาน LOINC"
-* code.coding[loinc] from $VS_LNC (extensible)
+* code.coding[loinc] from $VS_LNC_Obs (extensible)
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..

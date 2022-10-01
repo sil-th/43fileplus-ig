@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalMisc
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-misc
-Title: "MoPH43p Observation: Physical-Misc"
+Title: "MoPH-PC Observation: Physical-Misc"
 Description: "การตรวจอื่น ๆ"
 * ^url = $SD_Observation_PhysicalMisc
 * ^status = #draft

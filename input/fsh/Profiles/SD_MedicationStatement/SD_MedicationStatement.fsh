@@ -1,8 +1,8 @@
 Profile: MophPcMedicationStatementBase
 Parent: MedicationStatement
 Id: mophpc-medicationstatement-base
-Title: "MoPH43p MedicationStatement"
-Description: "ข้อมูลประวัติยาผู้ป่วย"
+Title: "MoPH-PC MedicationStatement"
+Description: "ข้อมูลประวัติการใช้ยาผู้ป่วย"
 * ^url = $SD_MedicationStatement_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
@@ -11,12 +11,9 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * extension ^slicing.discriminator[=].path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    $EX_TH_MedicationRequestSource named medicationSource 0..* and
-    $EX_TH_MedicationRequestNedCriteria named npc 0..* and
-    $EX_TH_MedicationRequestApprovedNo named approvedNo 0..*
-* extension[medicationSource] ^short = "source"
-* extension[npc] ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ"
-* extension[approvedNo] ^short = "หมายเลขอนุมัติ"
+    $EX_TH_MedicationRequestSource named medicationSource 0..* MS and
+    $EX_TH_MedicationRequestNedCriteria named npc 0..* MS and
+    $EX_TH_MedicationRequestApprovedNo named approvedNo 0..* MS
 * status 1.. MS
 * category MS
 * category.coding ^slicing.discriminator[0].type = #value
@@ -41,10 +38,12 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
     tmt 0..1 MS and
     local 0..1 MS
 * medicationCodeableConcept.coding[24-digit] ^short = "รหัสยามาตรฐาน 24 หลัก"
+* medicationCodeableConcept.coding[24-digit] from $VS_24Drug (extensible)
 * medicationCodeableConcept.coding[24-digit].system 1..
 * medicationCodeableConcept.coding[24-digit].system = $CS_24Drug (exactly)
 * medicationCodeableConcept.coding[24-digit].code 1..
 * medicationCodeableConcept.coding[tmt] ^short = "รหัสยามาตรฐาน TMT"
+* medicationCodeableConcept.coding[tmt] from $VS_TMT (extensible)
 * medicationCodeableConcept.coding[tmt].system 1..
 * medicationCodeableConcept.coding[tmt].system = $CS_TMT (exactly)
 * medicationCodeableConcept.coding[tmt].code 1..
@@ -57,8 +56,6 @@ Description: "ข้อมูลประวัติยาผู้ป่วย
 * subject only Reference($SD_Patient_Base)
 * subject MS
 * effective[x] MS
-* effective[x] only Period
-* effectivePeriod ^sliceName = "effectivePeriod"
 * effectivePeriod MS
 * dateAsserted MS
 * informationSource only Reference($SD_Patient_Base or $SD_Organization_Provider)

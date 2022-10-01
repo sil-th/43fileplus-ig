@@ -1,7 +1,7 @@
 Profile: MophPcRelatedPersonBase
 Parent: RelatedPerson
 Id: mophpc-relatedperson-base
-Title: "MoPH43p RelatedPerson"
+Title: "MoPH-PC RelatedPerson"
 Description: "ข้อมูลผู้ญาติของผู้ที่มาใช้บริการ"
 * ^url = $SD_RelatedPerson_Base
 * ^status = #draft
@@ -19,6 +19,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
 * identifier[pid] ^short = "เลขทะเบียนบุคคล"
 * identifier[pid] ^comment = "เลขทะเบียนของบุคคลที่มาขึ้นทะเบียนในสถานบริการนั้นๆ ใช้สำหรับเชื่อมโยงหาตัวบุคคลในแฟ้มอื่นๆ กำหนดได้ตั้งแต่ 1-15 หลัก (program generate)"
 * identifier[pid]
+  * type from $VS_TH_IdentifierType (extensible)
   * type = $CS_TH_IdentifierType#localPid
   * system 1..
   * system obeys PID-uri
@@ -34,6 +35,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
 * identifier[cid] ^short = "เลขที่บัตรประชาชน"
 * identifier[cid] ^comment = "เลขประจำตัวประชาชน"
 * identifier[cid]
+  * type from $VS_TH_IdentifierType (extensible)
   * type = $CS_TH_IdentifierType#cid
   * system 1..
   * system = $ID_ThaiCid (exactly)
@@ -43,6 +45,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
   * value ^example.valueString = "1234567890123"
 * identifier[hn] ^short = "เลขประจำตัวผู้ป่วย (HN)"
 * identifier[hn]
+  * type from $VS_TH_IdentifierType (extensible)
   * type = $CS_TH_IdentifierType#localHn
   * system 1..
   * system obeys HN-uri
@@ -53,6 +56,7 @@ Description: "ข้อมูลผู้ญาติของผู้ที่
   * value ^example.valueString = "123456"
 * identifier[passportNo] ^short = "เลขที่ passport กรณีที่เป็นประชากรต่างด้าวที่มีเลขที่ passport"
 * identifier[passportNo]
+  * type from $VS_HL7_IdentifierType (extensible)
   * type = $CS_HL7_IdentifierType#PPN
   * system 1..
   * system obeys Passport-uri

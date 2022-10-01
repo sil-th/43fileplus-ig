@@ -1,7 +1,7 @@
 Profile: MophPcPractitionerRoleBase
 Parent: PractitionerRole
 Id: mophpc-practitionerrole-base
-Title: "MoPH43p PractitionerRole"
+Title: "MoPH-PC PractitionerRole"
 Description: "ข้อมูลการปฏิบัติงานผู้ให้บริการของสถานพยาบาล"
 * ^url = $SD_PractitionerRole_Base
 * ^status = #draft

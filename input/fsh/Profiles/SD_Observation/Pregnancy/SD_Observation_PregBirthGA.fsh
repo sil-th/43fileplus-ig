@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregBirthGA
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-birth-ga
-Title: "MoPH43p Observation: Pregnancy-Birth GA"
+Title: "MoPH-PC Observation: Pregnancy-Birth GA"
 Description: "อายุครรภ์ (สัปดาห์)"
 * ^url = $SD_Observation_PregBirthGA
 * ^status = #draft

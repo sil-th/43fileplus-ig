@@ -1,7 +1,7 @@
 Profile: MophPcObservationSpecialPP
 Parent: Observation
 Id: mophpc-observation-special-pp
-Title: "MoPH43p Observation: SpecialPP"
+Title: "MoPH-PC Observation: SpecialPP"
 Description: "บริการส่งเสริมสุขภาพป้องกันโรคเฉพาะ"
 * ^url = $SD_Observation_SpecialPP
 * ^status = #draft

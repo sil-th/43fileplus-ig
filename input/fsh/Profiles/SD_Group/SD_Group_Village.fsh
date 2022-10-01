@@ -1,7 +1,7 @@
 Profile: MophPcGroupVillage
 Parent: Group
 Id: mophpc-group-village
-Title: "MoPH43p Group: Village"
+Title: "MoPH-PC Group: Village"
 Description: "ข้อมูลกลุ่มประชากรที่อาศัยอยู่ในหมู่บ้าน"
 * ^url = $SD_Group_Village
 * ^status = #draft

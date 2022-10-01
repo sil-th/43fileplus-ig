@@ -1,7 +1,7 @@
 Profile: MophPcEncounterIPD
 Parent: $SD_Encounter_Base
 Id: mophpc-encounter-ipd
-Title: "MoPH43p Encounter: IPD"
+Title: "MoPH-PC Encounter: IPD"
 Description: "การรับบริการ IPD"
 * ^url = $SD_Encounter_IPD
 * ^status = #draft

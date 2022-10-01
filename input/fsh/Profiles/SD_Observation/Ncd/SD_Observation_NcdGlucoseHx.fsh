@@ -1,7 +1,7 @@
 Profile: MophPcObservationNcdGlucoseHx
 Parent: $SD_Observation_NcdBase
 Id: mophpc-observation-ncd-glucose-hx
-Title: "MoPH43p Observation: NCD High Glucose Hx"
+Title: "MoPH-PC Observation: NCD High Glucose Hx"
 Description: "ประวัติน้ำตาลในเลือดสูง"
 * ^url = $SD_Observation_NcdGlucoseHx
 * ^status = #draft

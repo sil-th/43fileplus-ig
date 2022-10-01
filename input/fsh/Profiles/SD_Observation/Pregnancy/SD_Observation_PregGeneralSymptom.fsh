@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregGeneralSymptom
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-general-symptom
-Title: "MoPH43p Observation: Pregnancy-General Symptom"
+Title: "MoPH-PC Observation: Pregnancy-General Symptom"
 Description: "อาการผิดปกติจากการมาตรวจครั้งก่อนหน้า"
 * ^url = $SD_Observation_PregGeneralSymptom
 * ^status = #draft

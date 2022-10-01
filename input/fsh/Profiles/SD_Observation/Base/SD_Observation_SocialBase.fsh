@@ -1,7 +1,7 @@
 Profile: MophPcObservationSocialBase
 Parent: Observation
 Id: mophpc-observation-social-base
-Title: "MoPH43p Observation: Social"
+Title: "MoPH-PC Observation: Social"
 Description: "ข้อมูลประวัติทางสังคม"
 * ^url = $SD_Observation_SocialBase
 * ^status = #draft
@@ -13,6 +13,7 @@ Description: "ข้อมูลประวัติทางสังคม"
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
+* category[hl7] from $VS_HL7_ObservationCat (extensible)
 * category[hl7] = $CS_HL7_ObservationCat#social-history
 * code MS
 * code ^short = "รหัสประวัติทางสังคม"

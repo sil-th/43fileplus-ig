@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregHeadache
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-headache
-Title: "MoPH43p Observation: Pregnancy-Headache"
+Title: "MoPH-PC Observation: Pregnancy-Headache"
 Description: "อาการปวดศรีษะ"
 * ^url = $SD_Observation_PregHeadache
 * ^status = #draft

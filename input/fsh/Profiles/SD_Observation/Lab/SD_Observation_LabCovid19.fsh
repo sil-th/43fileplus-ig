@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabCovid19
 Parent: $SD_Observation_LabBase
 Id: mophpc-observation-lab-covid19
-Title: "MoPH43p Observation: Lab-Covid19"
+Title: "MoPH-PC Observation: Lab-Covid19"
 Description: "ผลการตรวจ Lab Covid"
 * ^url = $SD_Observation_LabCovid19
 * ^status = #draft

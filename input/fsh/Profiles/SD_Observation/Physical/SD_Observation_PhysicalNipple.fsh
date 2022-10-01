@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalNipple
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-nipple
-Title: "MoPH43p Observation: Physical-Nipple"
+Title: "MoPH-PC Observation: Physical-Nipple"
 Description: "สภาพหัวนม"
 * ^url = $SD_Observation_PhysicalNipple
 * ^status = #draft

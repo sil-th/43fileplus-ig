@@ -4,8 +4,10 @@ Alias: $VS_SNOMED_INT = https://terms.sil-th.org/ValueSet/vs-snomed-int
 Alias: $VS_SNOMED_Rh = https://terms.sil-th.org/ValueSet/vs-snomed-blood-rh
 Alias: $VS_SNOMED_ABO = https://terms.sil-th.org/ValueSet/vs-snomed-blood-abo
 Alias: $VS_SNOMED_BloodGroup = https://terms.sil-th.org/ValueSet/vs-snomed-bloodgroup
-Alias: $VS_LNC = http://hl7.org/fhir/ValueSet/observation-codes
+Alias: $VS_LNC_Obs = http://hl7.org/fhir/ValueSet/observation-codes
+Alias: $VS_LNC_Report = http://hl7.org/fhir/ValueSet/report-codes
 Alias: $VS_ICD10 = http://hl7.org/fhir/ValueSet/icd-10
+Alias: $VS_INT_ICD9CMProcedure = https://terms.sil-th.org/ValueSet/vs-int-icd9cm-procedure
 Alias: $VS_INT_ICDO3 = https://terms.sil-th.org/ValueSet/vs-int-icdo3
 Alias: $VS_INT_ISCO08 = https://terms.sil-th.org/ValueSet/vs-int-isco-08
 
@@ -42,6 +44,7 @@ Alias: $VS_HL7_DiagServiceCat = http://terminology.hl7.org/ValueSet/v2-0074
 Alias: $VS_HL7_DoseForm = http://terminology.hl7.org/ValueSet/v3-OrderableDrugForm
 Alias: $VS_HL7_SecurityLebel = http://hl7.org/fhir/ValueSet/security-labels
 Alias: $VS_HL7_DataAbsentReason = http://hl7.org/fhir/ValueSet/data-absent-reason
+Alias: $VS_HL7_SnomedProcedure = http://hl7.org/fhir/ValueSet/procedure-code
 
 // From international FHIR community
 Alias: $VS_INT_ISO3166 = http://hl7.org/fhir/ValueSet/iso3166-1-3
@@ -110,7 +113,7 @@ Alias: $VS_Meta_ProviderTypeCoverage = https://terms.sil-th.org/ValueSet/vs-meta
 // Allergy
 Alias: $VS_Std15_AllergyVerify = https://terms.sil-th.org/ValueSet/vs-std15-allergy-verify 
 Alias: $VS_THCC_AllergyManifest = https://terms.sil-th.org/ValueSet/vs-thcc-allergy-manifest
-Alias: $VS_THCC_AllergyCertainy = https://terms.sil-th.org/ValueSet/vs-thcc-allergy-certainty
+Alias: $VS_THCC_AllergyCertainty = https://terms.sil-th.org/ValueSet/vs-thcc-allergy-certainty
 Alias: $VS_THCC_AllergySeverity = https://terms.sil-th.org/ValueSet/vs-thcc-allergy-severity
 Alias: $VS_THCC_AllergyAssertType = https://terms.sil-th.org/ValueSet/vs-thcc-allergy-assert-type
 

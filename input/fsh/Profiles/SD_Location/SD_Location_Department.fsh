@@ -1,7 +1,7 @@
 Profile: MophPcLocationDepartment
 Parent: Location
 Id: mophpc-location-department
-Title: "MoPH43p Location: Department"
+Title: "MoPH-PC Location: Department"
 Description: "ข้อมูลคลินิก/หน่วยงาน ในสถานพยาบาล"
 * ^url = $SD_Location_Department
 * ^status = #draft

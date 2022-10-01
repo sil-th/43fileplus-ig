@@ -1,7 +1,7 @@
 Profile: MophPcMedicationAdministrationBase
 Parent: MedicationAdministration
 Id: mophpc-medicationadministration-base
-Title: "MoPH43p MedicationAdministration"
+Title: "MoPH-PC MedicationAdministration"
 Description: "การบริหารยาให้ผู้ป่วย"
 * ^url = $SD_MedicationAdministration_Base
 * ^status = #draft
@@ -22,10 +22,12 @@ Description: "การบริหารยาให้ผู้ป่วย"
     tmt 0..1 MS and
     local 0..1 MS
 * medicationCodeableConcept.coding[24-digit] ^short = "รหัสยามาตรฐาน 24 หลัก"
+* medicationCodeableConcept.coding[24-digit] from $VS_24Drug (extensible)
 * medicationCodeableConcept.coding[24-digit].system 1..
 * medicationCodeableConcept.coding[24-digit].system = $CS_24Drug (exactly)
 * medicationCodeableConcept.coding[24-digit].code 1..
 * medicationCodeableConcept.coding[tmt] ^short = "รหัสยามาตรฐาน TMT"
+* medicationCodeableConcept.coding[tmt] from $VS_TMT (extensible)
 * medicationCodeableConcept.coding[tmt].system 1..
 * medicationCodeableConcept.coding[tmt].system = $CS_TMT (exactly)
 * medicationCodeableConcept.coding[tmt].code 1..

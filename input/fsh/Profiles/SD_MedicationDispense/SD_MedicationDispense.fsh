@@ -1,7 +1,7 @@
 Profile: MophPcMedicationDispenseBase
 Parent: MedicationDispense
 Id: mophpc-medicationdispense-base
-Title: "MoPH43p MedicationDispense"
+Title: "MoPH-PC MedicationDispense"
 Description: "การจ่ายยา"
 * ^url = $SD_MedicationDispense_Base
 * ^status = #draft

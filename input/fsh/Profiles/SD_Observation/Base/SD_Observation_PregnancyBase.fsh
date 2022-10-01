@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregnancyBase
 Parent: Observation
 Id: mophpc-pregnancy-base
-Title: "MoPH43p Observation: Pregnancy"
+Title: "MoPH-PC Observation: Pregnancy"
 Description: "ข้อมูลการตรวจประเมินสตรีวัยเจริญพันธุ์ และสตรีตั้งครรภ์"
 * ^url = $SD_Observation_PregnancyBase
 * ^status = #draft

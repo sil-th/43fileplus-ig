@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabThal
 Parent: $SD_Observation_LabBase
 Id: mophpc-observation-lab-thalassaemia
-Title: "MoPH43p Observation: Lab-Thal"
+Title: "MoPH-PC Observation: Lab-Thal"
 Description: "ผลการตรวจคัดกรอง Thalassaemia"
 * ^url = $SD_Observation_LabThal
 * ^status = #draft

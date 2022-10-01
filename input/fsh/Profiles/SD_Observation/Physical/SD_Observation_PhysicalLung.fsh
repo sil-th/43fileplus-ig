@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalLung
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-lung
-Title: "MoPH43p Observation: Physical-Lung"
+Title: "MoPH-PC Observation: Physical-Lung"
 Description: "Physical findings of Thorax and Lungs"
 * ^url = $SD_Observation_PhysicalLung
 * ^status = #draft

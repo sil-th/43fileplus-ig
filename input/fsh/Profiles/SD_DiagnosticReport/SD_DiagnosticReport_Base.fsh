@@ -1,7 +1,7 @@
 Profile: MophPcDiagnosticReportBase
 Parent: DiagnosticReport
 Id: mophpc-diagnosticreport-base
-Title: "MoPH43p DiagnosticReport"
+Title: "MoPH-PC DiagnosticReport"
 Description: "การรายงานผลการตรวจ"
 * ^url = $SD_DiagnosticReport_Base
 * ^status = #draft
@@ -16,7 +16,7 @@ Description: "การรายงานผลการตรวจ"
     loinc 0..1 MS and
     tmlt 0..1 MS and
     icd10tm 0..1 MS
-* code.coding[loinc] from $VS_LNC (extensible)
+* code.coding[loinc] from $VS_LNC_Report (extensible)
 * code.coding[loinc].system 1..
 * code.coding[loinc].system = $LNC (exactly)
 * code.coding[loinc].code 1..
@@ -31,6 +31,7 @@ Description: "การรายงานผลการตรวจ"
 * subject 1.. MS
 * subject only Reference($SD_Patient_Base)
 * effective[x] MS
+* issued MS
 * performer only Reference($SD_Organization_Provider)
 * performer MS
 * specimen 0.. MS

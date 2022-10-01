@@ -1,24 +1,23 @@
 Profile: MophPcAllergyIntoleranceBase
 Parent: AllergyIntolerance
 Id: mophpc-allergyintolerance-base
-Title: "MoPH43p AllergyIntolerance"
+Title: "MoPH-PC AllergyIntolerance"
 Description: "ข้อมูลประวัติการแพ้ของผู้ป่วยที่มารับบริการ"
 * ^url = $SD_AllergyIntolerance_Base
 * ^status = #draft
 * ^publisher = "Standards and Interoperability Lab - Thailand (SIL-TH)"
 * ^jurisdiction = urn:iso:std:iso:3166#TH
 * extension contains
-    $EX_TH_AllergyIntoleranceCertainy named certainy 0..1 MS and
+    $EX_TH_AllergyIntoleranceCertainty named certainty 0..1 MS and
     $EX_TH_AllergyIntoleranceSeverity named severityTH 0..1 MS and
     $EX_TH_AllergyIntoleranceAssertType named asserterType 0..1 MS and
     $EX_TH_AllergyIntoleranceAssertOrg named asserterOrg 0..1 MS
-* extension[certainy] ^short = "ประเภทการวินิจฉัยการแพ้ยา 5 ประเภท"
-* extension[certainy] ^definition = "ประเภทการวินิจฉัยการแพ้ยา 5 ประเภท"
+* extension[certainty] ^short = "ประเภทการวินิจฉัยการแพ้ยา 5 ประเภท"
 * extension[severityTH] ^short = "ระดับความรุนแรงของการแพ้ยา 8 ระดับ"
-* extension[severityTH] ^definition = "ระดับความรุนแรงของการแพ้ยา 8 ระดับ"
 * extension[asserterType] ^short = "ผู้ให้ประวัติการแพ้ยา"
-* extension[asserterOrg] ^short = "สถานพยาบาลผู้ให้ประวัติการแพ้ยา"
+* extension[asserterOrg] ^short = "สถานพยาบาลที่บันทึกประวัติการแพ้"
 * clinicalStatus MS
+* clinicalStatus ^short = "สถานะการแพ้"
 * clinicalStatus.coding ^slicing.discriminator.type = #pattern
 * clinicalStatus.coding ^slicing.discriminator.path = "$this"
 * clinicalStatus.coding ^slicing.rules = #open
@@ -70,8 +69,13 @@ Description: "ข้อมูลประวัติการแพ้ของ
 * recordedDate MS
 * recorder only Reference($SD_Practitioner_Base)
 * recorder MS
+* recorder ^short = "ผู้บันทึกข้อมูล"
 * asserter MS
+* asserter ^short = "ผู้ยืนยันข้อมูล"
 * reaction MS
   * manifestation MS
+  * manifestation ^short = "ลักษณะอาการแพ้"
   * severity MS
+  * severity ^short = "ระดับความรุนแรงของการแพ้"
+* reaction ^short = "เหตุการณ์ที่เกิดอาการแพ้"
 // ต้องมี severityTH เพราะ severity ไม่ใช่ CodeableConcept เลย bind หลาย code ไม่ได้

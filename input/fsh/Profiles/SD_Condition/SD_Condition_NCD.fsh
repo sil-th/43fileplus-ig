@@ -1,7 +1,7 @@
 Profile: MophPcConditionNCD
 Parent: $SD_Condition_Base
 Id: mophpc-condition-ncd
-Title: "MoPH43p Condition: NCD"
+Title: "MoPH-PC Condition: NCD"
 Description: "ข้อมูลวินิจฉัย/ภาวะโรค สำหรับโรคในกลุ่ม NCD"
 * ^url = $SD_Condition_NCD
 * ^status = #draft

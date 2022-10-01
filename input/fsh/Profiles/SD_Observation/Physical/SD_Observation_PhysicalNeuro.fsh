@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalNeuro
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-neuro
-Title: "MoPH43p Observation: Physical-Neuro"
+Title: "MoPH-PC Observation: Physical-Neuro"
 Description: "Physical findings of Nervous system"
 * ^url = $SD_Observation_PhysicalNeuro
 * ^status = #draft

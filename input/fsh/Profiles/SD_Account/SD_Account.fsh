@@ -1,7 +1,7 @@
 Profile: MophPcAccountBase
 Parent: Account
 Id: mophpc-account-base
-Title: "MoPH43p Account"
+Title: "MoPH-PC Account"
 Description: "ข้อมูลทางการเงิน"
 * ^url = $SD_Account_Base
 * ^status = #draft

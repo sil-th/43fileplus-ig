@@ -1,7 +1,7 @@
 Profile: MophPcObservationFunctionalConclusion
 Parent: Observation
 Id: mophpc-observation-functional-conclusion
-Title: "MoPH43p Observation: Functional Conclusion"
+Title: "MoPH-PC Observation: Functional Conclusion"
 Description: "สรุปภาวะพึ่งพิง"
 * ^url = $SD_Observation_FunctionalConclusion
 * ^status = #draft

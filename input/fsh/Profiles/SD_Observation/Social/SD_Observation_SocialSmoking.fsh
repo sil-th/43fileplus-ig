@@ -1,7 +1,7 @@
 Profile: MophPcObservationSocialSmoking
 Parent: $SD_Observation_SocialBase
 Id: mophpc-observation-social-smoking
-Title: "MoPH43p Observation: Social Smoking"
+Title: "MoPH-PC Observation: Social Smoking"
 Description: "ประวัติสูบบุหรี่"
 * ^url = $SD_Observation_SocialSmoking
 * ^status = #draft

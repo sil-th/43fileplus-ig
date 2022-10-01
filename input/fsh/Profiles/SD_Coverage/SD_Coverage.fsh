@@ -1,7 +1,7 @@
 Profile: MophPcCoverageBase
 Parent: Coverage
 Id: mophpc-coverage-base
-Title: "MoPH43p Coverage"
+Title: "MoPH-PC Coverage"
 Description: "ข้อมูลสิทธิ"
 * ^url = $SD_Coverage_Base
 * ^status = #draft

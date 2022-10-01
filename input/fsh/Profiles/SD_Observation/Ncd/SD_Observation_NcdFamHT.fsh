@@ -1,7 +1,7 @@
 Profile: MophPcObservationNcdFamHT
 Parent: $SD_Observation_NcdBase
 Id: mophpc-observation-ncd-familh-ht
-Title: "MoPH43p Observation: NCD Family HT"
+Title: "MoPH-PC Observation: NCD Family HT"
 Description: "ประวัติโรคความดันโลหิตสูงในญาติสายตรง"
 * ^url = $SD_Observation_NcdFamHT
 * ^status = #draft

@@ -60,30 +60,10 @@ Description: "รหัสที่อยู่ ตามกรมการป�
 
 
 
-
-// * extension[+]
-//   * url = $EX_TH_AddressStructuredLine
-//   * extension[0]
-//     * url = "number"
-//     * valueString = "123"
-//   * extension[+]
-//     * url = "building-village"
-//     * valueString = "คอนโดพัฒนานนท์"
-//   * extension[+]
-//     * url = "village-no"
-//     * valueString = "หมู่ที่ 20"
-//   * extension[+]
-//     * url = "road"
-//     * valueString = "ถนนนครอินทร์"
-//   * extension[+]
-//     * url = "lane"
-//     * valueString = "ซอยนครอินทร์ 20"
-// Alias: $EX_TH_AddressStructuredLine = https://fhir-ig.sil-th.org/mophpc/Extension/TH-structure-line
-
 Extension: EX_TH_AddressStructuredLine
 Id: ex-address-structured-line
 Title: "Address: Structured Address Line"
-Description: "ที่อยู่ แบบแยกข้อมูลย่อย"
+Description: "ที่อยู่ แบบแยกเป็นรายละเอียดข้อมูลย่อย"
 * ^url = $EX_TH_AddressStructuredLine
 * ^version = "4.3.0"
 * ^status = #draft
@@ -93,8 +73,8 @@ Description: "ที่อยู่ แบบแยกข้อมูลย่�
 * ^context.type = #element
 * ^context.expression = "Address"
 * . 0..*
-* . ^short = "ที่อยู่ แบบแยกข้อมูลย่อย"
-* . ^definition = "ที่อยู่ แบบแยกข้อมูลย่อย"
+* . ^short = "ที่อยู่ แบบแยกเป็นรายละเอียดข้อมูลย่อย"
+* . ^definition = "ที่อยู่ แบบแยกเป็นรายละเอียดข้อมูลย่อย"
 * url = $EX_TH_AddressStructuredLine (exactly)
 * extension contains
     number 0..1 and

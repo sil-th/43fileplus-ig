@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregAbortions
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-abortions
-Title: "MoPH43p Observation: Pregnancy-Abortions"
+Title: "MoPH-PC Observation: Pregnancy-Abortions"
 Description: "จำนวนการแท้งบุตร"
 * ^url = $SD_Observation_PregAbortions
 * ^status = #draft

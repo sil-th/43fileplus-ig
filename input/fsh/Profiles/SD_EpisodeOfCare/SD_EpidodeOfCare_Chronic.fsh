@@ -1,7 +1,7 @@
 Profile: MophPcEpisodeOfCareBase
 Parent: EpisodeOfCare
 Id: mophpc-episodeofcare-base
-Title: "MoPH43p EpisodeOfCare"
+Title: "MoPH-PC EpisodeOfCare"
 Description: "การรับบริการเป็นประจำ"
 * ^url = $SD_EpisodeOfCare_Base
 * ^status = #draft

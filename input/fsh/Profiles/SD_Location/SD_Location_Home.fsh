@@ -1,7 +1,7 @@
 Profile: MophPcLocationHome
 Parent: Location
 Id: mophpc-location-home
-Title: "MoPH43p Location: Home"
+Title: "MoPH-PC Location: Home"
 Description: "ข้อมูลที่ตั้งและสุขาภิบาลของหลังคาเรือนในเขตรับผิดชอบ"
 * ^url = $SD_Location_Home
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationChildBottleFeed
 Parent: $SD_Observation_ChildBase
 Id: mophpc-observation-child-bottle-feed
-Title: "MoPH43p Observation: Child-Bottle Feed"
+Title: "MoPH-PC Observation: Child-Bottle Feed"
 Description: "การใช้ขวดนม"
 * ^url = $SD_Observation_ChildBottleFeed
 * ^status = #draft

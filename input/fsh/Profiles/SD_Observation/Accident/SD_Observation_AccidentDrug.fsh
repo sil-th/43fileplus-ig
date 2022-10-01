@@ -1,7 +1,7 @@
 Profile: MophPcObservationAccDrug
 Parent: $SD_Observation_AccidentBase
 Id: mophpc-observation-accident-drug
-Title: "MoPH43p Observation: Accident-Drug"
+Title: "MoPH-PC Observation: Accident-Drug"
 Description: "การใช้ยาสารเสพติดขณะเกิดอุบัติเหตุ"
 * ^url = $SD_Observation_AccidentDrug
 * ^status = #draft

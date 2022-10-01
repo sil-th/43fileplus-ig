@@ -1,7 +1,7 @@
 Profile: MophPcObservationLabVdrl
 Parent: $SD_Observation_LabBase
 Id: mophpc-observation-lab-vdrl
-Title: "MoPH43p Observation: Lab-VDRL"
+Title: "MoPH-PC Observation: Lab-VDRL"
 Description: "ผลการตรวจ VDRL"
 * ^url = $SD_Observation_LabVdrl
 * ^status = #draft

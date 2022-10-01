@@ -1,7 +1,7 @@
 Profile: MophPcConditionDisability
 Parent: $SD_Condition_Base
 Id: mophpc-condition-disability
-Title: "MoPH43p Condition: Disability"
+Title: "MoPH-PC Condition: Disability"
 Description: "ข้อมูลผู้พิการ ทุกคนที่อาศัยอยู่ในเขตรับผิดชอบ"
 * ^url = $SD_Condition_Disability
 * ^status = #draft

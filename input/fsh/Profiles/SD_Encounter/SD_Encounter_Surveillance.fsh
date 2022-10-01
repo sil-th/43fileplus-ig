@@ -1,7 +1,7 @@
 Profile: MophPcEncounterSurveillance
 Parent: $SD_Encounter_Base
 Id: mophpc-encounter-surveillance
-Title: "MoPH43p Encounter: Surveillance"
+Title: "MoPH-PC Encounter: Surveillance"
 Description: "การรับบริการของผู้ป่วยด้วยโรคที่ต้องเฝ้าระวัง"
 * ^url = $SD_Encounter_Surveillance
 * ^status = #draft

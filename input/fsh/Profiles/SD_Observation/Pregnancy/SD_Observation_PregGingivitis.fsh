@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregGingivitis
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-gingivitis
-Title: "MoPH43p Observation: Pregnancy-Gingivitis"
+Title: "MoPH-PC Observation: Pregnancy-Gingivitis"
 Description: "การมีภาวะเหงือกอักเสบ"
 * ^url = $SD_Observation_PregGingivitis
 * ^status = #draft

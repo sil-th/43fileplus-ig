@@ -6,8 +6,8 @@ Usage: #example
 * identifier[0]
   * use = #official
   * type
-    * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
-    * coding[+] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
+    // * coding[0] = $CS_HL7_IdentifierType#VN "Visit number"
+    * coding[0] = $CS_TH_IdentifierType#localVn "เลข Visit Number (VN) ของหน่วยบริการ"
   * system = $ID_LO_VN
   * value = "65-XXXXXXX"
 * status = #finished

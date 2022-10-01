@@ -1,7 +1,7 @@
 Profile: MophPcPatientExtensionNationality
 Parent: $EX_HL7_Nationality
 Id: mophpc-patient-extension-nationality
-Title: "MoPH43p Patient Extension: Nationality"
+Title: "MoPH-PC Patient Extension: Nationality"
 Description: "สัญชาติของผู้ป่วย"
 * ^url = $SD_Patient_EX_Nationality
 * ^status = #draft
@@ -28,7 +28,7 @@ Description: "สัญชาติของผู้ป่วย"
 Profile: MophPcPatientExtensionReligion
 Parent: $EX_HL7_Religion
 Id: mophpc-patient-extension-religion
-Title: "MoPH43p Patient Extension: Religion"
+Title: "MoPH-PC Patient Extension: Religion"
 Description: "ความเชื่อทางศาสนาของผู้ป่วย"
 * ^url = $SD_Patient_EX_Religion
 * ^status = #draft
@@ -57,7 +57,7 @@ Description: "ความเชื่อทางศาสนาของผู
 Profile: MophPcPatientExtensionDisability
 Parent: $EX_HL7_Disability
 Id: mophpc-patient-extension-disability
-Title: "MoPH43p Patient Extension: Disability"
+Title: "MoPH-PC Patient Extension: Disability"
 Description: "ประเภทความพิการ"
 * ^url = $SD_Patient_EX_Disability
 * ^status = #draft

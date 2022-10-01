@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregNausea
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-nausea
-Title: "MoPH43p Observation: Pregnancy-Nausea"
+Title: "MoPH-PC Observation: Pregnancy-Nausea"
 Description: "อาการคลื่นใส้"
 * ^url = $SD_Observation_PregNausea
 * ^status = #draft

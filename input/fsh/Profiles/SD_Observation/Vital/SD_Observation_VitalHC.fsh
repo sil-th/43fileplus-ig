@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalHC
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-head-circumference
-Title: "MoPH43p Observation: Vital-HC"
+Title: "MoPH-PC Observation: Vital-HC"
 Description: "เส้นรอบศีรษะ (Head circumference)"
 * ^url = $SD_Observation_VitalHC
 * ^status = #draft

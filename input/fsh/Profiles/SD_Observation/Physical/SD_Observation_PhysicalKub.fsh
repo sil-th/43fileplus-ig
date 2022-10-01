@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalKub
 Parent: $SD_Observation_PhysicalBase
 Id: mophpc-observation-physical-kub
-Title: "MoPH43p Observation: Physical-KUB"
+Title: "MoPH-PC Observation: Physical-KUB"
 Description: "Physical findings of Genitourinary tract"
 * ^url = $SD_Observation_PhysicalKub
 * ^status = #draft

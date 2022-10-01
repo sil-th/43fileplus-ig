@@ -1,7 +1,7 @@
 Extension: EX_TH_MedicationRequestSource
 Id: ex-medicationrequest-medication-source
 Title: "MedicationRequest: Medication Source"
-Description: "รหัสประเภทยาที่ใช้ปัจจุบัน"
+Description: "ที่มาของยา"
 * ^url = $EX_TH_MedicationRequestSource
 * ^version = "4.3.0"
 * ^status = #draft
@@ -13,8 +13,8 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationStatement"
 * . 0..*
-* . ^short = "รหัสประเภทยาที่ใช้ปัจจุบัน"
-* . ^definition = "รหัสประเภทยาที่ใช้ปัจจุบัน"
+* . ^short = "ที่มาของยา"
+* . ^definition = "ที่มาของยา"
 * url = $EX_TH_MedicationRequestSource (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
@@ -25,7 +25,7 @@ Description: "รหัสประเภทยาที่ใช้ปัจจ
 Extension: EX_TH_MedicationRequestNedCriteria
 Id: ex-medicationrequest-ned-criteria
 Title: "MedicationRequest: Out of NLEM Reason"
-Description: "เหตุผลการใช้ยานอกบัญชียาหลัก"
+Description: "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ (Non-essential drug Prescription Criteria)"
 * ^url = $EX_TH_MedicationRequestNedCriteria
 * ^version = "4.3.0"
 * ^status = #draft
@@ -35,8 +35,8 @@ Description: "เหตุผลการใช้ยานอกบัญชี
 * ^context.type = #element
 * ^context.expression = "MedicationRequest"
 * . 0..*
-* . ^short = "เหตุผลการใช้ยานอกบัญชียาหลัก"
-* . ^definition = "เหตุผลการใช้ยานอกบัญชียาหลัก"
+* . ^short = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ (Non-essential drug Prescription Criteria)"
+* . ^definition = "เหตุผลประกอบการสั่งใช้ยานอกบัญชียาหลักแห่งชาติ (Non-essential drug Prescription Criteria)"
 * url = $EX_TH_MedicationRequestNedCriteria (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept

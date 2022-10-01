@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalBase
 Parent: Observation
 Id: mophpc-observation-vital-base
-Title: "MoPH43p Observation: Vital"
+Title: "MoPH-PC Observation: Vital"
 Description: "ข้อมูลการตรวจสัญญาณชีพ"
 * ^url = $SD_Observation_VitalBase
 * ^status = #draft
@@ -13,6 +13,7 @@ Description: "ข้อมูลการตรวจสัญญาณชีพ
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
+* category[hl7] from $VS_HL7_ObservationCat (extensible)
 * category[hl7] = $CS_HL7_ObservationCat#vital-signs
 * code MS
 * code ^short = "รหัสการตรวจสัญญาณชีพ"

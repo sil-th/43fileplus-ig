@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregPostnatalStatus
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-postnatal-status
-Title: "MoPH43p Observation: Pregnancy-Postnatal Status"
+Title: "MoPH-PC Observation: Pregnancy-Postnatal Status"
 Description: "ผลการตรวจมารดาหลังคลอด"
 * ^url = $SD_Observation_PregPostnatalStatus
 * ^status = #draft

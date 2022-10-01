@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregStillbirths
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-stillbirths
-Title: "MoPH43p Observation: Pregnancy-Stillbirth"
+Title: "MoPH-PC Observation: Pregnancy-Stillbirth"
 Description: "จำนวนตายคลอด"
 * ^url = $SD_Observation_PregStillbirths
 * ^status = #draft

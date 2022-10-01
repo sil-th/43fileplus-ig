@@ -1,7 +1,7 @@
 Profile: MophPcObservationChildRemark
 Parent: $SD_Observation_ChildBase
 Id: mophpc-observation-child-remark
-Title: "MoPH43p Observation: Child-Remark"
+Title: "MoPH-PC Observation: Child-Remark"
 Description: "หมายเหตุเพิ่มเติมในการตรวจเด็ก"
 * ^url = $SD_Observation_ChildRemark
 * ^status = #draft

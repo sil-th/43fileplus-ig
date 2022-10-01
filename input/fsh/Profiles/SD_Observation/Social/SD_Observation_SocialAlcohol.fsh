@@ -1,7 +1,7 @@
 Profile: MophPcObservationSocialAlcohol
 Parent: $SD_Observation_SocialBase
 Id: mophpc-observation-ncd-alcohol
-Title: "MoPH43p Observation: Social-Alcohol"
+Title: "MoPH-PC Observation: Social-Alcohol"
 Description: "ประวัติดื่มเครื่องดื่มแอลกอฮอลล์"
 * ^url = $SD_Observation_SocialAlcohol
 * ^status = #draft

@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalBmi
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-Bmi
-Title: "MoPH43p Observation: Vital-BMI"
+Title: "MoPH-PC Observation: Vital-BMI"
 Description: "ผล BMI"
 * ^url = $SD_Observation_VitalBmi
 * ^status = #draft

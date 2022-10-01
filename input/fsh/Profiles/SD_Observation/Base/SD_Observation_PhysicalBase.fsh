@@ -1,7 +1,7 @@
 Profile: MophPcObservationPhysicalBase
 Parent: Observation
 Id: mophpc-observation-physical-base
-Title: "MoPH43p Observation: Physical"
+Title: "MoPH-PC Observation: Physical"
 Description: "ข้อมูลการตรวจร่างกาย"
 * ^url = $SD_Observation_PhysicalBase
 * ^status = #draft
@@ -13,6 +13,7 @@ Description: "ข้อมูลการตรวจร่างกาย"
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains hl7 0..1
+* category[hl7] from $VS_HL7_ObservationCat (extensible)
 * category[hl7] = $CS_HL7_ObservationCat#exam
 * code MS
 * code ^short = "รหัสการตรวจร่างกาย"

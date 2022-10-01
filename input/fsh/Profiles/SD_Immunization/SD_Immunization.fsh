@@ -1,7 +1,7 @@
 Profile: MophPcImmunizationBase
 Parent: Immunization
 Id: mophpc-immunization-base
-Title: "MoPH43p Immunization"
+Title: "MoPH-PC Immunization"
 Description: "การมารับบริการฉีดวัคซีน"
 * ^url = $SD_Immunization_Base
 * ^status = #draft

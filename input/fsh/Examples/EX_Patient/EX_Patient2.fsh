@@ -45,15 +45,15 @@ Usage: #example
 * identifier[+]
   * use = #secondary
   * type
-    * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
+    // * coding[0] = $CS_HL7_IdentifierType#PN "Person number"
     * coding[+] = $CS_TH_IdentifierType#localPid "รหัสประจำตัวบุคคลของหน่วยบริการ"
   * system = $ID_LO_PID
   * value = "65-XXXXX"
 * identifier[+]
   * use = #secondary
   * type
-    * coding[0] = $CS_HL7_IdentifierType#MR "Medical record number"
-    * coding[+] = $CS_TH_IdentifierType#localHn "เลข Hospital Number (HN) ของหน่วยบริการ"
+    // * coding[0] = $CS_HL7_IdentifierType#MR "Medical record number"
+    * coding[0] = $CS_TH_IdentifierType#localHn "เลข Hospital Number (HN) ของหน่วยบริการ"
   * system = $ID_LO_HN
   * value = "65-XXXXX"
 * active = true

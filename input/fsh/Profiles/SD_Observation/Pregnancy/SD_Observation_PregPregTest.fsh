@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregPregTest
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-preg-test
-Title: "MoPH43p Observation: Pregnancy-Pregancy Test"
+Title: "MoPH-PC Observation: Pregnancy-Pregancy Test"
 Description: "ผลการทดสอบการตั้งครรภ์"
 * ^url = $SD_Observation_PregPregTest
 * ^status = #draft

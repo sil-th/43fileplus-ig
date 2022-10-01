@@ -1,13 +1,13 @@
-// Alias: $EX_TH_AllergyIntoleranceCertainy = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-certainy
+// Alias: $EX_TH_AllergyIntoleranceCertainty = https://fhir-ig.sil-th.org/mophpc/Extension/TH-allergy-certainty
 // * extension[0]
-//   * url = $EX_TH_AllergyIntoleranceCertainy
+//   * url = $EX_TH_AllergyIntoleranceCertainty
 //   * valueCodeableConcept
 //     * coding[0] = $CS_THCC_AllergyCertainty#1 "certain"
-Extension: EX_TH_AllergyIntoleranceCertainy
-Id: ex-allergyintolerance-allergy-certainy
+Extension: EX_TH_AllergyIntoleranceCertainty
+Id: ex-allergyintolerance-allergy-certainty
 Title: "AllergyIntolerance: Certainty"
 Description: "รหัสประเภทการวินิจฉัยการแพ้ยา"
-* ^url = $EX_TH_AllergyIntoleranceCertainy
+* ^url = $EX_TH_AllergyIntoleranceCertainty
 * ^version = "4.3.0"
 * ^status = #draft
 * ^experimental = false
@@ -18,10 +18,10 @@ Description: "รหัสประเภทการวินิจฉัยก
 * . 0..*
 * . ^short = "รหัสประเภทการวินิจฉัยการแพ้ยา"
 * . ^definition = "รหัสประเภทการวินิจฉัยการแพ้ยา"
-* url = $EX_TH_AllergyIntoleranceCertainy (exactly)
+* url = $EX_TH_AllergyIntoleranceCertainty (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] from $VS_THCC_AllergyCertainy (extensible)
+* value[x] from $VS_THCC_AllergyCertainty (extensible)
 
 
 

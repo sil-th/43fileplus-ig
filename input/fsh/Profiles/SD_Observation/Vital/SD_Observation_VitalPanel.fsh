@@ -1,7 +1,7 @@
 Profile: MophPcObservationVitalPanel
 Parent: $SD_Observation_VitalBase
 Id: mophpc-observation-vital-panel
-Title: "MoPH43p Observation: Vital Panel"
+Title: "MoPH-PC Observation: Vital Panel"
 Description: "รวมผลการตรวจสัญญาณชีพ"
 * ^url = $SD_Observation_VitalPanel
 * ^status = #draft

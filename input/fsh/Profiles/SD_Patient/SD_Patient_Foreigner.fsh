@@ -1,7 +1,7 @@
 Profile: MophPcPatientForeigner
 Parent: $SD_Patient_Base
 Id: mophpc-patient-foreigner
-Title: "MoPH43p Patient: Foreigner"
+Title: "MoPH-PC Patient: Foreigner"
 Description: "ข้อมูลทั่วไปของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ ซึ่งเป็นชาวต่างชาติ"
 * ^url = $SD_Patient_Foreigner
 * ^status = #draft

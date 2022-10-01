@@ -18,19 +18,19 @@ ValueSet http://hl7.org/fhir/ValueSet/practitioner-role not found by validator
 The value provided ('th') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#th) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 
 # Ignore no demo
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/ex-claim-item-paid'): The Implementation Guide contains no examples for this extension
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/ex-claim-item-unpaid'): The Implementation Guide contains no examples for this extension
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-patient-extension-disability'): The Implementation Guide contains no examples for this extension
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-diagnosticreport-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-accident-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-child-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-lab-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-ncd-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-neonatal-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-physical-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-social-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-observation-vital-base'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/43filesplus/StructureDefinition/moph43p-pregnancy-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-item-paid'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-item-unpaid'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-patient-extension-disability'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-diagnosticreport-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-accident-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-child-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-lab-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-ncd-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-neonatal-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-physical-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-social-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-observation-vital-base'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://fhir-ig.sil-th.org/mophpc/StructureDefinition/mophpc-pregnancy-base'): The Implementation Guide contains no examples for this profile
 
 # Ignore external code systems
 Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
@@ -43,10 +43,17 @@ Code System URI 'https://terms.sil-th.org/CodeSystem/cs-th-tmlt' is unknown so t
 Code System URI 'https://terms.sil-th.org/CodeSystem/cs-th-tmt' is unknown so the code cannot be validated
 
 # Miscellaneous small issues
-INFORMATION: StructureDefinition/moph43p-medicationdispense-base: StructureDefinition.snapshot.element[59].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/moph43p-medicationdispense-contraceptive: StructureDefinition.snapshot.element[67].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/mophpc-medicationdispense-base: StructureDefinition.snapshot.element[59].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/mophpc-medicationdispense-contraceptive: StructureDefinition.snapshot.element[67].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Ignore preferred value set
 None of the codings provided are in the value set 'Encounter Reason Codes' (http://hl7.org/fhir/ValueSet/encounter-reason), and a coding is recommended to come from this value set)%
 None of the codings provided are in the value set 'Coverage Type and Self-Pay Codes' (http://hl7.org/fhir/ValueSet/coverage-type), and a coding is recommended to come from this value set)%
 None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role), and a coding is recommended to come from this value set)%
+
+
+# URL not resolved
+Canonical URL 'http://hl7.org/fhir/ValueSet/participant-role' does not resolve
+Canonical URL 'http://hl7.org/fhir/ValueSet/practitioner-role' does not resolve
+ERROR: StructureDefinition/mophpc-devicerequest-base: StructureDefinition.snapshot.element[37].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/participant-role' does not resolve
+ERROR: StructureDefinition/mophpc-practitionerrole-base: StructureDefinition.snapshot.element[19].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/practitioner-role' does not resolve

@@ -1,7 +1,7 @@
 Profile: MophPcObservationPregFetalHeartSound
 Parent: $SD_Observation_PregnancyBase
 Id: mophpc-observation-preg-fetal-heart-sound
-Title: "MoPH43p Observation: Pregnancy-Fetal Heart Sound"
+Title: "MoPH-PC Observation: Pregnancy-Fetal Heart Sound"
 Description: "เสียงหัวใจเด็ก"
 * ^url = $SD_Observation_PregFetalHeartSound
 * ^status = #draft

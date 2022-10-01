@@ -1,7 +1,7 @@
 Profile: MophPcObservationSocialOccupation
 Parent: $SD_Observation_SocialBase
 Id: mophpc-observation-social-occupation
-Title: "MoPH43p Observation: Social-Occupation"
+Title: "MoPH-PC Observation: Social-Occupation"
 Description: "ข้อมูลอาชีพของประชาชนในเขตรับผิดชอบ และผู้ที่มาใช้บริการ"
 * ^url = $SD_Observation_SocialOccupation
 * ^status = #draft
