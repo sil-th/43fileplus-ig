@@ -1,7 +1,7 @@
 Instance: relatedperson-patient7-mother
 InstanceOf: $SD_RelatedPerson_Base
-Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 1"
-Description: "มารดาของผู้ป่วยรายที่ 1"
+Title: "ตัวอย่าง RelatedPerson: มารดาของผู้ป่วยรายที่ 7"
+Description: "มารดาของผู้ป่วยรายที่ 7"
 Usage: #example
 * identifier[0]
   * use = #official

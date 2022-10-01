@@ -42,7 +42,6 @@ Alias: $EX_TH_EncounterIpdJourney = https://fhir-ig.sil-th.org/mophpc/StructureD
 Alias: $EX_TH_EncounterIpdDischargeStatus = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-ipd-discharge-status
 Alias: $EX_TH_EncounterIpdDischargeType = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-ipd-discharge-type
 Alias: $EX_TH_EncounterFpCaseType = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-fp-case-type
-Alias: $EX_TH_EncounterReferResultCode = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-refer-result-code
 Alias: $EX_TH_EncounterLeaveDay = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-leave-day
 Alias: $EX_TH_EncounterProviderType = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-provider-type
 Alias: $EX_TH_EncounterReferOutID = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-encounter-refer-out-id
