@@ -347,3 +347,22 @@ Description: "ข้อมูลเกี่ยวกับ DRG"
   * value[x] 1..
   * value[x] only string
 
+
+Extension: EX_TH_ClaimAccidentDateTime
+Id: ex-claim-accident-datetime
+Title: "Claim: Accident Datetime"
+Description: "วันเวลาที่เกิดอุบัติเหตุ"
+* ^url = $EX_TH_ClaimAccidentDateTime
+* ^version = "4.3.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2022-08-23T07:06:13+11:00"
+* ^publisher = "SIL-TH"
+* ^context[0].type = #element
+* ^context[=].expression = "Claim.accident.date"
+* . 0..*
+* . ^short = "วันเวลาที่เกิดอุบัติเหตุ"
+* . ^definition = "วันเวลาที่เกิดอุบัติเหตุ"
+* url = $EX_TH_ClaimAccidentDateTime (exactly)
+* value[x] 1..
+* value[x] only dateTime

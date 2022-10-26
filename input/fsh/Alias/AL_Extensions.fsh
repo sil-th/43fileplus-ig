@@ -97,6 +97,7 @@ Alias: $EX_TH_ClaimTotalPaid = https://fhir-ig.sil-th.org/mophpc/StructureDefini
 Alias: $EX_TH_ClaimTotalUnpaid = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-total-unpaid
 Alias: $EX_TH_ClaimFeeNote = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-fee-note
 Alias: $EX_TH_ClaimIpdDRG = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-ipd-drg
+Alias: $EX_TH_ClaimAccidentDateTime = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-claim-accident-datetime
 
 // Account
 Alias: $EX_TH_AccountCoverageUse = https://fhir-ig.sil-th.org/mophpc/StructureDefinition/ex-account-coverage-use
